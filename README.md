@@ -1,11 +1,9 @@
 
 # Project Cascade Documentaiton
- Real-time collaborative development, using your own tools
 
 ## Collaborative Coding
 
-- Real-time collaborative development,
-using your own tools
+- Real-time collaborative development, using your own tools
 
 
 - Share your context, not your screen, for “opportunistic collaboration”
