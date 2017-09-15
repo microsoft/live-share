@@ -1,5 +1,7 @@
-
 # Project Cascade Documentaiton
+Project Cascade is currently in private preview focusing on collaborative codeing features. Interested in checking it our and contributing to the future of the project?
+
+**[Enroll now!]()** 
 
 ## Collaborative Coding
 
@@ -12,11 +14,13 @@
 - Full-context collaboration that is simple, yet comprehensive enough to support frequent “inner loop” activities
 
 ## Contributing
-There are many ways to contribute.
-- Submit issues or feature requests
+Have a question or feedback? There are many ways to contribute.
+
+- Submit a issue or feature request
 - Contribute to our documentation
-- [Engage with other users and the product group on Slack](http://project-cascade.slack.com)
+- [Join the Slack channel and chat with us!](http://project-cascade.slack.com)
 - [Shoot us a mail with suggestions or questions](mailto:project-cascade@microsoft.com)
+- Hit us up on Twitter using #project-cascade!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
