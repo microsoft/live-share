@@ -14,11 +14,11 @@ Project Cascade is currently running an early private preview focused on collabo
 ## Contributing
 Have a question or feedback? There are many ways to contribute.
 
-- Submit a issue or feature request
-- Contribute to our documentation
-- [Join the Slack channel and chat with us!](http://project-cascade.slack.com)
-- [Shoot us a mail with suggestions or questions](mailto:project-cascade@microsoft.com)
-- Hit us up on Twitter using #project-cascade!
+- [Up-vote a feature or request a new one](CONTRIBUTING.md)
+- [Report an issue](CONTRIBUTING.md)
+- Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
+- Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions
+- Hit us up on Twitter using [#ms-project-cascade](https://twitter.com/search?f=tweets&q=%23ms-project-cascade&src=typd)!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
