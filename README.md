@@ -11,13 +11,23 @@
 
 - Full-context collaboration that is simple, yet comprehensive enough to support frequent “inner loop” activities
 
+## Contributing
+There are many ways to contribute.
+- Submit issues or feature requests
+- Contribute to our documentation
+- [Engage with other users and the product group on Slack](http://project-cascade.slack.com)
+- [Shoot us a mail with suggestions or questions](mailto:project-cascade@microsoft.com)
 
-# Terms of Use
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## Terms of Use
 By downloading and running this project, you agree to the license terms of the third party application software, Microsoft products, and components to be installed.
 
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
-# License
+## License
 Unless otherwise mentioned, the code samples are released under the MIT license.
 
 ```
@@ -43,19 +53,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-# Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-
