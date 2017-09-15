@@ -9,7 +9,7 @@ If you find your issue already exists, make relevant comments and add your [reac
 
 👎 - downvote
 
-If your issue is a question then please ask the question on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using the tag `ms-project-cascade` or connect with us on Slack.
+If your issue is a question then please ask the question on [Stack Overflow](https://stackoverflow.com/questions/tagged/ms-project-cascade) using the tag `ms-project-cascade` or connect with us on Slack.
 
 If you cannot find an existing issue that describes your bug or feature, submit an issue using the guidelines below.
 
