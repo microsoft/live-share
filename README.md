@@ -18,7 +18,7 @@ Have a question or feedback? There are many ways to contribute.
 - [Report an issue](CONTRIBUTING.md)
 - Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions
-- Hit us up on Twitter using [#ms-project-cascade](https://twitter.com/search?f=tweets&q=%23ms-project-cascade&src=typd)!
+- Hit us up on Twitter using [#projectcascade](https://twitter.com/search?f=tweets&q=%23projectcascade&src=typd)!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
