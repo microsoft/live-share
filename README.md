@@ -1,17 +1,15 @@
 # Project Cascade Documentaiton
-Project Cascade is currently in private preview focusing on collaborative codeing features. Interested in checking it our and contributing to the future of the project?
+_Developer services to achieve greater confidence at speed._
+
+Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?
 
 **[Enroll now!]()** 
 
 ## Collaborative Coding
 
-- Real-time collaborative development, using your own tools
-
-
-- Share your context, not your screen, for “opportunistic collaboration”
-
-
-- Full-context collaboration that is simple, yet comprehensive enough to support frequent “inner loop” activities
+- **Real-time collaborative development**, using your own tools
+- **Share your context, not your screen**, for “opportunistic collaboration”
+- **Full-context collaboration** that is simple, yet comprehensive enough to support frequent “inner loop” activities
 
 ## Contributing
 Have a question or feedback? There are many ways to contribute.
