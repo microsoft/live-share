@@ -13,7 +13,7 @@ If your issue is a question then please ask the question on [Stack Overflow](htt
 
 If you cannot find an existing issue that describes your bug or feature, submit an issue using the guidelines below.
 
-## Writing Good Bug Reports and Feature Requests
+### Writing Good Bug Reports and Feature Requests
 
 File a single issue per problem and feature request.
 
@@ -48,3 +48,14 @@ Don't feel bad if we can't reproduce the issue and ask for more information!
 
 Finally, this is our [issue tracking](https://github.com/Microsoft/vscode/wiki/Issue-Tracking) work flow that describes what happens once you submitted an issue.
 
+## Contributing to documentation
+
+You may contribute to documentation by submitting pull requests to this repository. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
+
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
+
+## Discussion Etiquette
+In order to keep the conversation clear and transparent, please limit discussion to English and keep things on topic with the issue. Be considerate to others and try to be courteous and professional at all times. This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
