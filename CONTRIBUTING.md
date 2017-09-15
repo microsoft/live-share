@@ -46,5 +46,3 @@ Please remember to do the following:
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
 
-Finally, this is our [issue tracking](https://github.com/Microsoft/vscode/wiki/Issue-Tracking) work flow that describes what happens once you submitted an issue.
-
