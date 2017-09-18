@@ -1,4 +1,4 @@
-# Project Cascade Documentaiton
+# Project Cascade Documentaiton & Feedback
 _Developer services to achieve greater confidence at speed._
 
 Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?
