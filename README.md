@@ -11,7 +11,16 @@ Project Cascade is currently running an early private preview focused on collabo
 - **Share your context, not your screen**, for “opportunistic collaboration”
 - **Full-context collaboration** that is simple, yet comprehensive enough to support frequent “inner loop” activities
 
-## Contributing
+### Quick Start
+
+### Documentation 
+- [Getting started](docs/getting-started.md)
+- [Visual Studio features and limitations](docs/collab-vs.md)
+- [Visual Studio Code features and limitations](docs/collab-vscode,md)
+- [Roadmap](docs/roadmap.md)
+- [FAQ](docs/faq.md)
+
+## Contributing & Feedback
 Have a question or feedback? There are many ways to contribute.
 
 - [Up-vote a feature or request a new one](CONTRIBUTING.md)
