@@ -3,9 +3,10 @@ _Developer services to achieve greater confidence at speed._
 
 Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?
 
-**[Enroll now!]()** 
+**[Learn more and enroll now!]()** 
 
 ## Collaborative Coding
+_Real-time collaborative development, using your own tools_
 
 ### Quick Start
 
@@ -15,11 +16,11 @@ Team collaboration should be so quick and natural, that it becomes harder not to
 
 #### 1. Register with the "Project Cascade" service
 
-While "Project Cascade" is in private preview, you'll need to request access. We'll be rapidly working through the waitlist, so expect to get an e-mail from us very soon after signing up! While waiting, you can carry on with steps #2 and #3, so that you're ready to share as soon as you're accepted!
+While "Project Cascade" is in private preview, you'll need to request access to share. We'll be rapidly working through the waitlist, so expect to get an e-mail from us very soon after signing up! While waiting, you can carry on with steps #2, so that you're ready to share as soon as you're accepted!
 
 **[Enroll now!]()** 
 
-_This step is only necessary in order to "share". Anyone can "join" a collaboration session, by simply following the steps below. This makes it easy for folks to work together, without everyone needing to explicitly register with "Project Cascade"._
+> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant by simply following the steps below. This makes it easy for folks to work together, without everyone needing to explicitly register._
 
 #### 2. Download the "Project Cascade" extension/installer for your tool
 A core part of "Project Cascade" is enabling rich collaboration directly from your existing tools, and therefore, we provide integration for your favorite IDE/editor: 
