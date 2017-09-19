@@ -10,6 +10,7 @@ This document provides information on the VS Code Project Cascade extension and 
     - Features
     - Limitations
 - Additional Capabilities
+    - Output logs
     - Sharing a local server
 - Known Limitations
     - Extensions

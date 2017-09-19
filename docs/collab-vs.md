@@ -10,7 +10,7 @@ This document provides information on the Visual Studio Project Cascade extensio
     - Features
     - Limitations
 - Additional Capabilities
-    - Sharing a local server
+    - Output logs
 - Known Participant Limitations
     - Explorers
        - Solution Explorer
