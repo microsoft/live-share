@@ -20,35 +20,42 @@ File a single issue per problem and feature request.
 
 The more information you can provide, the more likely someone will be successful reproducing the issue and finding a fix. 
 
-* Reproducible steps (1... 2... 3...) and what you expected versus what you actually saw. * Images, animations, or a link to a video. 
+* Reproducible steps (1... 2... 3...) and what you expected versus what you actually saw. 
+* Images, animations, or a link to a video. 
 * A code snippet that demonstrates the issue or a link to a code repository we can easily pull down onto our machine to recreate the issue. 
 
 > **Note:** Because we need to copy and paste the code snippet, including a code snippet as a media file (i.e. .gif) is not sufficient. 
 
 Please remember to do the following:
 
-* Search the issue repository to see if there exists a duplicate. 
-* Simplify your code around the issue so we can better isolate the problem. 
+* Search the [issue repository](https://github.com/Microsoft/project-cascade/issues) to see if there exists a duplicate. 
+* If code related, simplify your code around the issue so we can better isolate the problem. 
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
 
-### Filing Visual Studio Issues
+### Filing Visual Studio Bugs
 
-Visual Studio has a built in feedback mechanism via the "Report a Problem..." that provides the engineering team detailed information about your installation that you should use to log bugs or problems.
+Visual Studio has a built in feedback mechanism via the "Report a Problem..." tool that provides the engineering team detailed information about your installation that you should use to log bugs or problems you encounter when using VS.
 
 ![Image of Report a Problem...](docs/media/vs-feedback.png) 
 
-As always, first search for existing issues to see if the problem has already been logged.  You may search for existing issues using "project-cascade".
+Steps: 
+1. As always, first search existing problem reports to see if one already exists using the Visual Studio Feedback tool.  
+    - You may search for existing issues using "**Project Cascade**".
+    - Be aware your problem may be related to multiple clients and therefore is logged in the GitHub [issue repository](https://github.com/Microsoft/project-cascade/issues).
+2. If you find it, up vote it.
+3. If not, use "**Project Cascade:**" at the start of your title.
+4. Next, follow the guidelines above for writing good bug descriptions.
 
 > NOTE: Suggestions or feature requests should be filed as [GitHub issues](https://github.com/Microsoft/project-cascade/issues) via the process described below instead of "Provide a Suggestion..." as many are broadly applicable to multiple clients.
 
 After it is filed, your issue has been may be moved to a [GitHub issue](https://github.com/Microsoft/project-cascade/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
 
-### Filing VS Code or General Service Issues 
+### Filing VS Code or General Service Bugs 
 
 After ensuring there is not an [existing issue](https://github.com/Microsoft/project-cascade/issues), create an issue in [this repository](https://github.com/Microsoft/project-cascade/issues). 
 
-Please include the following with each issue. 
+Please include the following with each issue in addition to following the guidelines above for writing good bug descriptions.
 
 * The product and version of the tool you are using
 * Your operating system
@@ -61,8 +68,9 @@ Please include the following with each issue.
 ### Filing Feature Requests
 Many feature requests start out life as reported bugs or issues and should therefore follow the processes described above.  However, if you believe you have a feature request that is not a bug, you can follow these steps:
 
-1. Use this [query](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests to see if it already exists.  If so, 👍 (upvote) it.
-2. If not, be as specific as you can be with the problem or scenario you are trying to solve with the requested feature and let us know any painful workarounds you are having to do.
+1. Use this [query](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests to see if it already exists.  
+2. If so, 👍 (upvote) it.
+3. If not, be as specific as you can be with the problem or scenario you are trying to solve with the requested feature and let us know any painful workarounds you are having to do.
 
 As with issues, don't feel bad if we ask for more information while we try to understand your scenario.
 
