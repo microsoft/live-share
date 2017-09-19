@@ -30,7 +30,7 @@ Check out the tips in "Writing Good Problem Reports and Feature Requests" for ad
 
 ### Filing VS Code or General Service Problems 
 
-Create an issue in [this repository](https://github.com/Microsoft/project-cascade/issues) and please include the following in the description.
+Create an issue in [this repository](https://github.com/Microsoft/project-cascade/issues) and please include the following in the description:
 
 * The product and version of the tool you are using
 * Your operating system
