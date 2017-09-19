@@ -1,9 +1,14 @@
+<table style="width: 100%; border-style: none;"><tr>
+<td style="width: 140px; text-align: center;"><img src="http://www.free-icons-download.net/images/share-share-icon-63786.png" style="width: 128px; height: 128px;" /></td>
+<td><strong>Project Cascade - Developer services to achieve greater confidence at speed</strong><br />
+<br />
+<i>Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?</i><br />
+<br />
+<a href="">Learn more and enroll now!</a>
+</td>
+</tr></table>
+
 # Project Cascade Documentaiton & Feedback
-_Developer services to achieve greater confidence at speed._
-
-Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?
-
-**[Learn more and enroll now!]()** 
 
 ## Collaborative Coding
 _Real-time collaborative development, using your own tools_
