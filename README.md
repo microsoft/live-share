@@ -7,10 +7,6 @@ Project Cascade is currently running an early private preview focused on collabo
 
 ## Collaborative Coding
 
-- **Real-time collaborative development**, using your own tools
-- **Share your context, not your screen**, for “opportunistic collaboration”
-- **Full-context collaboration** that is simple, yet comprehensive enough to support frequent “inner loop” activities
-
 ### Quick Start
 
 **TODO: Refine words and instructions**
@@ -23,7 +19,7 @@ While "Project Cascade" is in private preview, you'll need to request access. We
 
 **[Enroll now!]()** 
 
-_This step is only necessary in order to "share". Anyone can "join" a collaboration session, by simply following the steps below. This makes it easy for folks to work together, without everyone needing to explicitly register with "Project Cascade". _
+_This step is only necessary in order to "share". Anyone can "join" a collaboration session, by simply following the steps below. This makes it easy for folks to work together, without everyone needing to explicitly register with "Project Cascade"._
 
 #### 2. Download the "Project Cascade" extension/installer for your tool
 A core part of "Project Cascade" is enabling rich collaboration directly from your existing tools, and therefore, we provide integration for your favorite IDE/editor: 
@@ -54,7 +50,7 @@ Send the link over e-mail, Slack, Skype, etc. and begin immediately editing with
 
 #### 6. Share more as needed
 
-Want some help with a build issue? Let your teammates seen your output logs! Want to demonstrate a tricky bug? Start a collaborative browsing session and walk your teammates through the repro!
+Want some help with a build issue? Let your teammates seen your output logs! Want to collaborativley debug a tricky bug? Start debugging session! See the documentation below for additional details.
 
 _If you find yourself needing to share something that isn't currently supported by "Project Cascade", [please let us know!](CONTRIBUTING.md)_
 
