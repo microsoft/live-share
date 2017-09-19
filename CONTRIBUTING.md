@@ -40,11 +40,11 @@ Visual Studio has a built in feedback mechanism via the "Report a Problem..." to
 ![Image of Report a Problem...](docs/media/vs-feedback.png) 
 
 Steps: 
-1. As always, first search existing problem reports to see if one already exists using the Visual Studio Feedback tool.  
-    - You may search for existing issues using "**Project Cascade**".
-    - Be aware your problem may be related to multiple clients and therefore is logged in the GitHub [issue repository](https://github.com/Microsoft/project-cascade/issues).
+1. As always, first search existing problem reports to see if one already exists.  
+    - You may search for existing issues using "**Project Cascade**" in the Visual Studio Feedback tool.
+    - However, be aware your problem may be related to multiple clients and therefore is logged in the GitHub [issue repository](https://github.com/Microsoft/project-cascade/issues).
 2. If you find it, up vote it.
-3. If not, use "**Project Cascade:**" at the start of your title.
+3. If not, create one using the Visual Studio Feedback tool and use "**Project Cascade:**" at the start of your title.
 4. Next, follow the guidelines above for writing good bug descriptions.
 
 > NOTE: Suggestions or feature requests should be filed as [GitHub issues](https://github.com/Microsoft/project-cascade/issues) via the process described below instead of "Provide a Suggestion..." as many are broadly applicable to multiple clients.
