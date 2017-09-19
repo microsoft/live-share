@@ -1,7 +1,7 @@
 # Contributing 
 
 ## Up-Voting Existing Problem Reports or Feature Requests
-If you are wondering if someone has already encountered a problem or requested a feature you are interested in.  You can check out [open issues](https://github.com/Microsoft/project-cascade/issues) to see if the issue or feature request has already been filed. Use this [query](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests.
+If you are wondering if someone has already encountered a problem or requested a feature, you can check out [open issues](https://github.com/Microsoft/project-cascade/issues) in this repository. You can use this [query](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to specifically search for feature requests.
 
 If you find your issue/feature already exists, feel free to make relevant comments and add your [reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments). Use a reaction in place of a "+1" comment.
 
