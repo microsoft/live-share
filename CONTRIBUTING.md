@@ -53,9 +53,13 @@ Many feature requests start out life as reported problems and should therefore f
 
 As with problem reports, don't feel bad if we ask for more information while we try to understand your scenario.
 
-### Writing Good Problem Reports and Feature Requests
+### Tip: Writing Good Problem Reports and Feature Requests
 
-File a single issue per problem or feature request.
+Here are a few tips that will help us understand your problem or feedback quickly.  
+
+> **Tip:** You may be able to save yourself some time by searching [issue repository](https://github.com/Microsoft/project-cascade/issues) to see if the problem/request already exists so you can simply up-vote it. 
+
+First, try to file a single issue per problem or feature request.
 
 * Do not enumerate multiple bugs or feature requests in the same issue.
 * Do not add your issue as a comment to an existing issue unless it's for the identical input. Many issues look similar, but have different causes.
@@ -65,13 +69,6 @@ The more information you can provide, the more likely someone will be successful
 * Reproducible steps (1... 2... 3...) and what you expected versus what you actually saw. 
 * Images, animations, or a link to a video. 
 * A code snippet that demonstrates the issue or a link to a code repository we can easily pull down onto our machine to recreate the issue. 
-
-> **Note:** Because we need to copy and paste the code snippet, including a code snippet as a media file (i.e. .gif) is not sufficient. 
-
-Please remember to do the following:
-
-* Search the [issue repository](https://github.com/Microsoft/project-cascade/issues) to see if there exists a duplicate. 
-* If code related, simplify your code around the issue so we can better isolate the problem. 
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
 
