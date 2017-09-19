@@ -24,7 +24,7 @@ Steps:
 2. If you find it, up vote it.
 3. If not, create one using the Visual Studio Feedback tool and use "**Project Cascade:**" at the start of your title.
 
-> **Note:** After it is filed, your issue has may be moved to a [GitHub issue](https://github.com/Microsoft/project-cascade/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
+> **Note:** After it is filed, your problem report may be moved to a [GitHub issue](https://github.com/Microsoft/project-cascade/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
 
 Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
 
