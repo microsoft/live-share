@@ -33,18 +33,18 @@ Please remember to do the following:
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
 
-#### Filing Visual Studio Issues
+### Filing Visual Studio Issues
 > NOTE: Suggestions or feature requests should follow the process below as many are broadly applicable to multiple clients.
 
 Visual Studio has a built in feedback mechanism via the "Report a Problem..." that provides the engineering team detailed information about your installation that you should use since it will significantly simplify issue entry.
 
-![Image of Report a Problem...](media/vs-feedback.png) 
+![Image of Report a Problem...](docs/media/vs-feedback.png) 
 
 As always, first search for existing issues to see if the problem has already been logged.  You may search for existing issues using "project-cascade".
 
 However, depending on the resolution your issue has been may be moved to a GitHub issue for future tracking particularly if it applies to any client. We will provide a link to the newly opened or existing issue in your raised issue in this situation.
 
-#### Filing VS Code Issues or General/Common Issues 
+### Filing VS Code or General Service Issues 
 
 After ensuring there is not an [existing issue](https://github.com/Microsoft/project-cascade/issues), create an issue in [this repository](https://github.com/Microsoft/project-cascade/issues). 
 
@@ -56,7 +56,7 @@ Please include the following with each issue.
 
 > **Tip:** You can easily add the list of extensions by creating the issue using `Report Issues` from VS Code's Help menu. 
 
-* Errors in the Dev Tools Console (Help | Toggle Developer Tools)
+* If in VS Code, errors in the Dev Tools Console (Help | Toggle Developer Tools)
 
 #### Filing Feature Requests (All Tools)
 Many feature requests start out life as reported bugs or issues and should therefore follow the processes described above.  However, if you believe you have a feature request that is not a bug, you can follow these steps:
