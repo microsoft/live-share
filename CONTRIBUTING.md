@@ -30,9 +30,7 @@ Check out the tips in "Writing Good Problem Reports and Feature Requests" for ad
 
 ### Filing VS Code or General Service Problems 
 
-After ensuring there is not an [existing issue](https://github.com/Microsoft/project-cascade/issues), create an issue in [this repository](https://github.com/Microsoft/project-cascade/issues). 
-
-Please include the following with each issue in addition to following the guidelines above for writing good bug descriptions.
+Create an issue in [this repository](https://github.com/Microsoft/project-cascade/issues) and please include the following in the description.
 
 * The product and version of the tool you are using
 * Your operating system
