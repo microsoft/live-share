@@ -1,17 +1,59 @@
 # Contributing 
 
-## Before Submitting a Problem or Feature Request
-First, please do a search in [open issues](https://github.com/Microsoft/project-cascade/issues) to see if the issue or feature request has already been filed. Use this [query](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests.
+## Up-Voting Existing Problem Reports or Feature Requests
+If you are wondering if someone has already encountered a problem or requested a feature you are interested in.  You can check out [open issues](https://github.com/Microsoft/project-cascade/issues) to see if the issue or feature request has already been filed. Use this [query](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests.
 
-If you find your issue/feature already exists, make relevant comments and add your [reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments). Use a reaction in place of a "+1" comment.
+If you find your issue/feature already exists, feel free to just make relevant comments and add your [reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments). Use a reaction in place of a "+1" comment.
 
 👍 - upvote
 
 👎 - downvote
 
-If you cannot find an existing issue that describes your bug or feature, submit an issue using the guidelines below.
+## Filing Problem Reports or Feature Requests
 
-## Writing Good Problem Reports and Feature Requests
+### Filing Visual Studio Problems
+
+Visual Studio has a built in feedback mechanism via the "Report a Problem..." tool that provides the engineering team detailed information about your installation that you should use to log bugs or problems you encounter when using VS.
+
+![Image of Report a Problem...](docs/media/vs-feedback.png) 
+
+Steps: 
+1. As always, first search existing problem reports to see if one already exists.  
+    - You may search for existing issues using "**Project Cascade**" in the Visual Studio Feedback tool.
+    - However, be aware your problem may be related to multiple clients and therefore is logged in the GitHub [issue repository](https://github.com/Microsoft/project-cascade/issues).
+2. If you find it, up vote it.
+3. If not, create one using the Visual Studio Feedback tool and use "**Project Cascade:**" at the start of your title.
+
+> **Note:** After it is filed, your issue has may be moved to a [GitHub issue](https://github.com/Microsoft/project-cascade/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
+
+Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
+
+### Filing VS Code or General Service Problems 
+
+After ensuring there is not an [existing issue](https://github.com/Microsoft/project-cascade/issues), create an issue in [this repository](https://github.com/Microsoft/project-cascade/issues). 
+
+Please include the following with each issue in addition to following the guidelines above for writing good bug descriptions.
+
+* The product and version of the tool you are using
+* Your operating system
+* List of extensions that you have installed (if applicable). 
+
+> **Tip:** You can easily add the list of extensions by creating the issue using `Report Issues` from VS Code's Help menu. 
+
+* If in VS Code, errors in the Dev Tools Console (Help | Toggle Developer Tools)
+
+Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
+
+### Filing Feature Requests
+Many feature requests start out life as reported problems and should therefore follow the processes described above.  However, if you believe you have a feature request that is not a bug, you can follow these steps:
+
+1. Use this [query](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests to see if it already exists.  
+2. If so, 👍 (upvote) it.
+3. If not, be as specific as you can be with the problem or scenario you are trying to solve with the requested feature and let us know any painful workarounds you are having to do.
+
+As with problem reports, don't feel bad if we ask for more information while we try to understand your scenario.
+
+### Writing Good Problem Reports and Feature Requests
 
 File a single issue per problem or feature request.
 
@@ -32,47 +74,6 @@ Please remember to do the following:
 * If code related, simplify your code around the issue so we can better isolate the problem. 
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
-
-### Filing Visual Studio Problems
-
-Visual Studio has a built in feedback mechanism via the "Report a Problem..." tool that provides the engineering team detailed information about your installation that you should use to log bugs or problems you encounter when using VS.
-
-![Image of Report a Problem...](docs/media/vs-feedback.png) 
-
-Steps: 
-1. As always, first search existing problem reports to see if one already exists.  
-    - You may search for existing issues using "**Project Cascade**" in the Visual Studio Feedback tool.
-    - However, be aware your problem may be related to multiple clients and therefore is logged in the GitHub [issue repository](https://github.com/Microsoft/project-cascade/issues).
-2. If you find it, up vote it.
-3. If not, create one using the Visual Studio Feedback tool and use "**Project Cascade:**" at the start of your title.
-4. Next, follow the guidelines above for writing good bug descriptions.
-
-> NOTE: Suggestions or feature requests should be filed as [GitHub issues](https://github.com/Microsoft/project-cascade/issues) via the process described below instead of "Provide a Suggestion..." as many are broadly applicable to multiple clients.
-
-After it is filed, your issue has may be moved to a [GitHub issue](https://github.com/Microsoft/project-cascade/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
-
-### Filing VS Code or General Service Problems 
-
-After ensuring there is not an [existing issue](https://github.com/Microsoft/project-cascade/issues), create an issue in [this repository](https://github.com/Microsoft/project-cascade/issues). 
-
-Please include the following with each issue in addition to following the guidelines above for writing good bug descriptions.
-
-* The product and version of the tool you are using
-* Your operating system
-* List of extensions that you have installed (if applicable). 
-
-> **Tip:** You can easily add the list of extensions by creating the issue using `Report Issues` from VS Code's Help menu. 
-
-* If in VS Code, errors in the Dev Tools Console (Help | Toggle Developer Tools)
-
-### Filing Feature Requests
-Many feature requests start out life as reported problems and should therefore follow the processes described above.  However, if you believe you have a feature request that is not a bug, you can follow these steps:
-
-1. Use this [query](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests to see if it already exists.  
-2. If so, 👍 (upvote) it.
-3. If not, be as specific as you can be with the problem or scenario you are trying to solve with the requested feature and let us know any painful workarounds you are having to do.
-
-As with problem reports, don't feel bad if we ask for more information while we try to understand your scenario.
 
 ## Contributing to documentation
 

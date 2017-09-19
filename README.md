@@ -8,7 +8,7 @@
 </td>
 </tr></table>
 
-# Project Cascade Documentaiton & Feedback
+# Project Cascade Documentation & Feedback
 
 ## Collaborative Coding
 _Real-time collaborative development, using your own tools_
