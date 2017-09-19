@@ -49,7 +49,7 @@ Steps:
 
 > NOTE: Suggestions or feature requests should be filed as [GitHub issues](https://github.com/Microsoft/project-cascade/issues) via the process described below instead of "Provide a Suggestion..." as many are broadly applicable to multiple clients.
 
-After it is filed, your issue has been may be moved to a [GitHub issue](https://github.com/Microsoft/project-cascade/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
+After it is filed, your issue has may be moved to a [GitHub issue](https://github.com/Microsoft/project-cascade/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
 
 ### Filing VS Code or General Service Problems 
 
@@ -72,7 +72,7 @@ Many feature requests start out life as reported problems and should therefore f
 2. If so, 👍 (upvote) it.
 3. If not, be as specific as you can be with the problem or scenario you are trying to solve with the requested feature and let us know any painful workarounds you are having to do.
 
-As with issues, don't feel bad if we ask for more information while we try to understand your scenario.
+As with problem reports, don't feel bad if we ask for more information while we try to understand your scenario.
 
 ## Contributing to documentation
 

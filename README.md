@@ -13,6 +13,52 @@ Project Cascade is currently running an early private preview focused on collabo
 
 ### Quick Start
 
+**TODO: Refine words and instructions**
+
+Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, "Project Cascade" makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
+
+#### 1. Register with the "Project Cascade" service
+
+While "Project Cascade" is in private preview, you'll need to request access. We'll be rapidly working through the waitlist, so expect to get an e-mail from us very soon after signing up! While waiting, you can carry on with steps #2 and #3, so that you're ready to share as soon as you're accepted!
+
+**[Enroll now!]()** 
+
+_This step is only necessary in order to "share". Anyone can "join" a collaboration session, by simply following the steps below. This makes it easy for folks to work together, without everyone needing to explicitly register with "Project Cascade". _
+
+#### 2. Download the "Project Cascade" extension/installer for your tool
+A core part of "Project Cascade" is enabling rich collaboration directly from your existing tools, and therefore, we provide integration for your favorite IDE/editor: 
+
+![VS Download](docs/media/vs-icon.png) ![VS Code Download](docs/media/vscode-icon.png)
+
+_Don't see your favorite IDE/editor? [Let us know!](CONTRIBUTING.md) "Project Cascade" is only just getting started, and we plan to add support for additional tools based on community feedback._
+
+#### 3. Sign-in from within your IDE/editor
+
+Once you have the necessary client plugin installed, simply sign-in to the "Project Cascade" service, using the same GitHub or Microsoft account that you registered with. This allows your team to recognize you when collaborating with each other. 
+
+![VS Download](docs/media/vs-sign-in-button.png) ![VS Code Download](docs/media/vscode-sign-in-button.png)
+
+**TODO: Instructions on using GitHub logins with VS, other restrictions**
+
+#### 4. Share your code
+
+Simply click the "Share" button within your tool, which will generate a link that allows others to join in your collaboration session. 
+
+![VS Download](docs/media/vs-share-button.png) ![VS Code Download](docs/media/vscode-share-button.png)
+
+**TODO: Get final screen shots**
+
+#### 5. Send someone the link
+
+Send the link over e-mail, Slack, Skype, etc. and begin immediately editing with your team!
+
+#### 6. Share more as needed
+
+Want some help with a build issue? Let your teammates seen your output logs! Want to demonstrate a tricky bug? Start a collaborative browsing session and walk your teammates through the repro!
+
+_If you find yourself needing to share something that isn't currently supported by "Project Cascade", [please let us know!](CONTRIBUTING.md)_
+
+
 ### Documentation 
 - [Getting started](docs/getting-started.md)
 - [Visual Studio features and limitations](docs/collab-vs.md)
