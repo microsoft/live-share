@@ -85,7 +85,7 @@ By downloading and/or running the contents of this project/repository, you agree
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
 ## License
-Licensed under MIT License (MIT). 
+The contents of this repository are licensed under the MIT License (MIT). 
 
 Copyright (c) Microsoft Corporation
 
