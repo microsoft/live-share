@@ -15,8 +15,6 @@ _Real-time collaborative development, using your own tools_
 
 ### Quick Start
 
-**TODO: Refine words and instructions**
-
 Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, "Project Cascade" makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
 #### 1. Register with the "Project Cascade" service
@@ -32,7 +30,7 @@ A core part of "Project Cascade" is enabling rich collaboration directly from yo
 
 ![VS Download](docs/media/vs-icon.png) ![VS Code Download](docs/media/vscode-icon.png)
 
-_Don't see your favorite IDE/editor? [Let us know!](CONTRIBUTING.md) "Project Cascade" is only just getting started, and we plan to add support for additional tools based on community feedback._
+_Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) "Project Cascade" is only just getting started, and we plan to add support for additional tools based on community feedback._
 
 #### 3. Sign-in from within your IDE/editor
 
@@ -40,7 +38,7 @@ Once you have the necessary client plugin installed, simply sign-in to the "Proj
 
 ![VS Download](docs/media/vs-sign-in-button.png) ![VS Code Download](docs/media/vscode-sign-in-button.png)
 
-**TODO: Instructions on using GitHub logins with VS, other restrictions**
+> **Tip:** Need to use a different sign-in for Visual Studio than your personalization account? Go to Tools &gt; Options &gt; Project Cascade.
 
 #### 4. Share your code
 
@@ -48,17 +46,17 @@ Simply click the "Share" button within your tool, which will generate a link tha
 
 ![VS Download](docs/media/vs-share-button.png) ![VS Code Download](docs/media/vscode-share-button.png)
 
-**TODO: Get final screen shots**
+#### 5. Send someone the invite link
 
-#### 5. Send someone the link
+Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately editing with your team! 
 
-Send the link over e-mail, Slack, Skype, etc. and begin immediately editing with your team!
+> **Note:** The person you invite will be able to download, install needed tools, and join the collaboration session without having to enroll in the private preview.
 
 #### 6. Share more as needed
 
-Want some help with a build issue? Let your teammates seen your output logs! Want to collaborativley debug a tricky bug? Start debugging session! See the documentation below for additional details.
+Want some help with a build issue? Let your teammates seen your output logs! Want to collaboratively debug a tricky bug? Start debugging session! See the documentation below for additional details.
 
-_If you find yourself needing to share something that isn't currently supported by "Project Cascade", [please let us know!](CONTRIBUTING.md)_
+_If you find yourself needing to share something that isn't currently supported by "Project Cascade", [please let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)_
 
 
 ### Documentation 
