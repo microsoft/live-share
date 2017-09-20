@@ -30,7 +30,7 @@ A core part of "Project Cascade" is enabling rich collaboration directly from yo
 
 ![VS Download](docs/media/vs-icon.png) ![VS Code Download](docs/media/vscode-icon.png)
 
-_Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) "Project Cascade" is only just getting started, and we plan to add support for additional tools based on community feedback._
+_Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) We plan to add support for additional tools based on community feedback._
 
 #### 3. Sign-in from within your IDE/editor
 
@@ -56,7 +56,7 @@ Send the link over e-mail, Slack, Skype, etc. and once someone joins you can beg
 
 Want some help with a build issue? Let your teammates seen your output logs! Want to collaboratively debug a tricky bug? Start debugging session! See the documentation below for additional details.
 
-_If you find yourself needing to share something that isn't currently supported by "Project Cascade", [please let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)_
+_If you find yourself needing to share something that isn't currently supported, [please let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)_
 
 
 ### Documentation 
