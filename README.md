@@ -30,7 +30,7 @@ A core part of Project Cascade is enabling rich collaboration directly from your
 
 ![VS Download](docs/media/vs-icon-win.png) ![VS Code Download](docs/media/vscode-icon-win.png) ![VS Code Download](docs/media/vscode-icon-mac.png)
 
-_Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) We plan to add support for additional tools based on community feedback._
+_Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback._
 
 #### 3. Sign-in from within your IDE/editor
 
