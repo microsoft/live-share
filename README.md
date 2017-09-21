@@ -8,7 +8,7 @@
 </tr></table>
 
 # Project Cascade Documentation & Feedback
-Project Cascade is a code name for a collection of developer services that we are investigating intended to enable developers to achieve greater confidence at speed. The inital focus is on Node.js and ASP.NET/ASP.NET Core based web applications and services. [Learn more and enroll now!](https://project-cascade.visualstudio.com)
+Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The inital focus is on Node.js and ASP.NET/ASP.NET Core based web applications and services with more coming in the future. _Interested in other languages or platforms? [Let us know!](https://github.com/Microsoft/project-cascade/issues/12)_
 
 ## Collaborative Coding
 _Real-time collaborative development, using your own tools_
@@ -19,9 +19,9 @@ Team collaboration should be so quick and natural, that it becomes harder not to
 
 #### 1. Register with the Project Cascade service
 
-While Project Cascade is in private preview, you'll need to request access to share. We'll be rapidly working through the wait list, so expect to get an e-mail from us very soon after signing up! While waiting, you can carry on with steps #2, so that you're ready to share as soon as you're accepted!
+While Project Cascade is in private preview, you'll need to request access to share. We'll be rapidly working through the wait list, so expect to get an e-mail from us very soon after signing up! While waiting, you can carry on with step #2, so that you're ready to share as soon as you're accepted!
 
-> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant by simply following the steps below. This makes it easy for folks to work together, without everyone needing to explicitly register._
+> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together, without everyone needing to explicitly register._
 
 **[Enroll now!](https://project-cascade.visualstudio.com)** 
 
