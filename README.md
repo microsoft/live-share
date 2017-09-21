@@ -1,7 +1,6 @@
 <table style="width: 100%; border-style: none;"><tr>
-<td style="width: 140px; text-align: center;"><img src="http://www.free-icons-download.net/images/share-share-icon-63786.png" style="width: 128px; height: 128px;" /></td>
+<td style="width: 140px; text-align: center;"><img src="docs/media/cascade-icon.png" style="width: 128px; height: 128px;" /></td>
 <td><strong>Project Cascade - Developer services to achieve greater confidence at speed</strong><br />
-<br />
 <i>Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?</i><br />
 <br />
 <a href="https://project-cascade.visualstudio.com">Learn more and enroll now!</a>
@@ -9,6 +8,7 @@
 </tr></table>
 
 # Project Cascade Documentation & Feedback
+Project Cascade is a code name for a collection of developer services that we are investigating intended to enable developers to achieve greater confidence at speed. The inital focus is on Node.js and ASP.NET/ASP.NET Core based web applications and services. [Learn more and enroll now!](https://project-cascade.visualstudio.com)
 
 ## Collaborative Coding
 _Real-time collaborative development, using your own tools_
@@ -19,14 +19,14 @@ Team collaboration should be so quick and natural, that it becomes harder not to
 
 #### 1. Register with the Project Cascade service
 
-While Project Cascade is in private preview, you'll need to request access to share. We'll be rapidly working through the waitlist, so expect to get an e-mail from us very soon after signing up! While waiting, you can carry on with steps #2, so that you're ready to share as soon as you're accepted!
+While Project Cascade is in private preview, you'll need to request access to share. We'll be rapidly working through the wait list, so expect to get an e-mail from us very soon after signing up! While waiting, you can carry on with steps #2, so that you're ready to share as soon as you're accepted!
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant by simply following the steps below. This makes it easy for folks to work together, without everyone needing to explicitly register._
 
 **[Enroll now!](https://project-cascade.visualstudio.com)** 
 
 #### 2. Download the Project Cascade extension/installer for your tool
-A core part of "Project Cascade" is enabling rich collaboration directly from your existing tools, and therefore, we will provide integration for your favorite IDE/editors. Currently Visual Studio and Visual Studio Code (Windows, Mac) are supported. 
+A core part of Project Cascade is enabling rich collaboration directly from your existing tools, and therefore, we will provide integration for your favorite IDE/editors. Currently Visual Studio and Visual Studio Code (Windows, Mac) are supported. 
 
 ![VS Download](docs/media/vs-icon-win.png) ![VS Code Download](docs/media/vscode-icon-win.png) ![VS Code Download](docs/media/vscode-icon-mac.png)
 
@@ -34,7 +34,7 @@ _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft
 
 #### 3. Sign-in from within your IDE/editor
 
-Once you have the necessary client plugin installed, simply sign-in to the "Project Cascade" service, using the same GitHub or Microsoft account that you registered with. This allows your team to recognize you when collaborating with each other. 
+Once you have the necessary client and extensions installed, simply sign-in to the Project Cascade service, using the same GitHub or Microsoft account that you registered with. This allows your team to recognize you when collaborating with each other. 
 
 ![VS Download](docs/media/vs-sign-in-button.png) ![VS Code Download](docs/media/vscode-sign-in-button.png)
 
@@ -69,8 +69,8 @@ _If you find yourself needing to share something that isn't currently supported,
 ## Contributing & Feedback
 Have a question or feedback? There are many ways to contribute.
 
-- [Up-vote a feature or request a new one](CONTRIBUTING.md)
-- [Report an issue](CONTRIBUTING.md)
+- [Up-vote a feature or request a new one](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20)
+- [Report a problem](CONTRIBUTING.md#filing-visual-studio-problems)
 - Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions
 - Hit us up on Twitter using [#projectcascade](https://twitter.com/search?f=tweets&q=%23projectcascade&src=typd)!
