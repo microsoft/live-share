@@ -4,7 +4,7 @@
 <br />
 <i>Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?</i><br />
 <br />
-<a href="">Learn more and enroll now!</a>
+<a href="https://project-cascade.visualstudio.com">Learn more and enroll now!</a>
 </td>
 </tr></table>
 
@@ -23,12 +23,12 @@ While "Project Cascade" is in private preview, you'll need to request access to 
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant by simply following the steps below. This makes it easy for folks to work together, without everyone needing to explicitly register._
 
-**[Enroll now!]()** 
+**[Enroll now!](https://project-cascade.visualstudio.com)** 
 
 #### 2. Download the "Project Cascade" extension/installer for your tool
-A core part of "Project Cascade" is enabling rich collaboration directly from your existing tools, and therefore, we provide integration for your favorite IDE/editor: 
+A core part of "Project Cascade" is enabling rich collaboration directly from your existing tools, and therefore, we will provide integration for your favorite IDE/editors. Currently Visual Studio and Visual Studio Code (Windows, Mac) are supported. 
 
-![VS Download](docs/media/vs-icon.png) ![VS Code Download](docs/media/vscode-icon.png)
+![VS Download](docs/media/vs-icon-win.png) ![VS Code Download](docs/media/vscode-icon-win.png) ![VS Code Download](docs/media/vscode-icon-mac.png)
 
 _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) We plan to add support for additional tools based on community feedback._
 
