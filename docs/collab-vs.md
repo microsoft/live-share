@@ -1,6 +1,6 @@
-# Visual Studio Extension Features & Limitations
+# Visual Studio Enabled Features
 
-This document provides information on the Visual Studio Project Cascade extension and the features it enables. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions.
+This document provides information on capabilities enabled by the Visual Studio Project Cascade extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS and other tools.
 
 **Table of Contents**
 - [Recap: Owners and participants](#recap-owners-and-participants)
