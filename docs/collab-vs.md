@@ -46,7 +46,7 @@ To jump start the conversation, the following are some limitations of particular
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
 
 ## Collaborative Debugging
-Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Using it simple.  The owner simply needs to start debugging via the usual means in Visual Studio.
+Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all participants the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. Using it simple.  The owner simply needs to start debugging via the usual means in Visual Studio.
 
 ![VS Debug button](media/vs-debug-button.png)
 
@@ -54,7 +54,7 @@ While the build and deployment is happening, all participants can see progress i
 
 ![VS output window](media/vs-output.png)
 
-Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view.
+Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view. A browser window on connected to the web application also automatically starts up.
 
 ![VS debugger attached](media/vs-debugger.png)
 
@@ -83,24 +83,30 @@ To jump start the conversation, the following are some limitations of particular
 
 ## Additional Capabilities
 
-- Output logs
-- Shared terminals
-- Download a copy
+### Shared terminals / command prompts
+
+Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default, getting one going is simple. Click on the "Share" button in the upper-right hand corner and selected "Shared Terminal".
+
+![VS Shared Terminal Button](media/vs-terminal-button.png)
+
+At this point a shared terminal session with the VS developer command prompt is started on the owners machine and all participants have access.
+
+![VS Shared Terminal](media/vs-terminal.png)
+
+The owner retains control and can terminate the terminal session at any time by simply closing the tool window.
+
+### Download a copy
+
+???
 
 ## Additional known participant limitations
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  Once again, we want to hear from you! See [this query for all open feature requests](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20). Up-vote (👍) those you want the most and feel free to raise new issues if there is another limitation not covered already!
 
-SUMMARY OF LIMITATIONS
-- Explorers
-    - Solution Explorer
-    - Team Explorer
-        - Diffing
-        - Operations
-    - Others
-- Extensions
-- External Tools
-
-
+- Participants cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/project-cascade/issues/15))
+- Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/project-cascade/issues/16))
+- Participants cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/project-cascade/issues/20))
+- Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
+- Visual Studio users cannot currently share additional local servers (ports) with participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/23))
 
 ## More information
 
