@@ -28,7 +28,7 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ![Screen shot showing highlighting](media/vs-highlight.png)
 
-Since you may want to quickly jump to where another collaborator is located, the upper right corner shows you who is currently in the collaboration session and you can quickly go to theire exact location by simply double-clicking on their icon.  
+Since you may want to quickly jump to where another collaborator is located, the upper right corner shows you who is currently in the collaboration session and you can go to their exact location by simply double-clicking on their icon.  
 
 ![Screen shot showing users in upper-right](media/vs-upper-right.png)
 
