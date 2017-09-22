@@ -3,7 +3,7 @@
 <td><strong>Project Cascade - Developer services to achieve greater confidence at speed</strong><br />
 <i>Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?</i><br />
 <br />
-<a href="http://aka.ms/project-cascade">Learn more and enroll now!</a>
+<a href="http://aka.ms/project-cascade">Learn more and register now!</a>
 </td>
 </tr></table>
 
@@ -19,22 +19,21 @@ Team collaboration should be so quick and natural, that it becomes harder not to
 
 #### 1. Register with the Project Cascade service
 
-While Project Cascade is in private preview, you'll need to request access to share. We'll be rapidly working through the wait list, so expect to get an e-mail from us very soon after signing up! While waiting, you can carry on with step #2, so that you're ready to share as soon as you're accepted!
+While Project Cascade is in private preview, you'll need to request access to start a collaboration session. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us after signing up! While waiting, you can carry on with step #2 so that you're ready to go!
 
-> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together, without everyone needing to explicitly register._
+> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
-**[Enroll now!](http://aka.ms/project-cascade)** 
+**[Register now!](http://aka.ms/project-cascade)** 
 
-#### 2. Download the Project Cascade extension/installer for your tool
-A core part of Project Cascade is enabling rich collaboration directly from your existing tools, and therefore, we will provide integration for your favorite IDE/editors. Currently Visual Studio and Visual Studio Code (Windows, Mac) are supported. 
+#### 2. Download the and install the Project Cascade extension for your tool
 
-![VS Download](docs/media/vs-icon-win.png) ![VS Code Download](docs/media/vscode-icon-win.png) ![VS Code Download](docs/media/vscode-icon-mac.png)
+![VS Download](docs/media/vs-icon-win.png) ![VS Code for Windows Download](docs/media/vscode-icon-win.png) ![VS Code for macOS Download](docs/media/vscode-icon-mac.png)
 
 _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback._
 
 #### 3. Sign-in from within your IDE/editor
 
-Once you have the necessary client and extensions installed, simply sign-in to the Project Cascade service, using the same GitHub or Microsoft account that you registered with. This allows your team to recognize you when collaborating with each other. 
+Once installed, start up your tool sign-in to the Project Cascade service with the same creditals you used to register.
 
 ![VS Download](docs/media/vs-sign-in-button.png) ![VS Code Download](docs/media/vscode-sign-in-button.png)
 
@@ -42,15 +41,15 @@ Once you have the necessary client and extensions installed, simply sign-in to t
 
 #### 4. Share your code
 
-Simply click the "Share" button within your tool, which will generate a link that allows others to join in your collaboration session. 
+Simply click "Share" within your tool and you'll get a link that allows others to join in your collaboration session. 
 
-![VS Download](docs/media/vs-share-button.png) ![VS Code Download](docs/media/vscode-share-button.png)
+![VS Share Button](docs/media/vs-share-button.png) ![VS Code Share Button](docs/media/vscode-share-button.png)
 
 #### 5. Send someone the invite link
 
-Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately editing with your team! 
+Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately working with them! 
 
-> **Note:** The person you invite will be able to download, install needed tools, and join the collaboration session without having to enroll in the private preview.
+> **Note:** The person you invite will be able to download, install needed tools, and join the collaboration session without having to register for the private preview.
 
 #### 6. Share more as needed
 
