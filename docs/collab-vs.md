@@ -52,11 +52,11 @@ Project Cascade's collaborative debugging feature is a powerful and unique way t
 
 While the build and deployment is happening, all participants can see progress in the Output window. This is also true if the owner opted to "Start with Debugging" or simply build the project or solution.
 
-![VS output window](media/vs-debug-button.png)
+![VS output window](media/vs-output.png)
 
 Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view.
 
-![VS debugger attached](media/vs-debuger.png)
+![VS debugger attached](media/vs-debugger.png)
 
 Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
 
