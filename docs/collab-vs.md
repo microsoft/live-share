@@ -83,7 +83,6 @@ To jump start the conversation, the following are some limitations of particular
 
 ## Additional Capabilities
 
-- Output logs
 - Shared terminals
 - Download a copy
 
