@@ -1,15 +1,14 @@
 # Visual Studio Code Extension Features & Limitations
 
-This document provides information on the VS Code Project Cascade extension and its current limitations not already covered in the [getting started](getting-started.md) section.
+This document provides information on the VS Code Project Cascade extension and the features it enables. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions.
 
 **Table of Contents**
-- Recap: Owners and participants
-- Collaborative editing
-- Collaborative debugging
-- Additional capabilities
-- Known participant limitations
-- More information
-
+- [Recap: Owners and participants](#recap-owners-and-participants)
+- [Collaborative editing](#collaborative-editing)
+- [Collaborative debugging](#collaborative-debugging)
+- [Additional capabilities](#additional-capabilities)
+- [Additional known participant limitations](#additional-known-participant-limitations)
+- [More information](#more-information)
 ## Recap: Owners and participants
 All collaboration activities in Project Cascade involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but is the content being shared as well.  Participants then are anyone that joins an owner's collaboration session.
 
