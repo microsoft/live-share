@@ -93,7 +93,7 @@ At this point a shared terminal session with the VS developer command prompt is 
 
 ![VS Shared Terminal](media/vs-terminal.png)
 
-The owner retains control and can terminate the terminal session at any time by simply closing the tool window.
+The owner can terminate the terminal session at any time by simply closing the tool window.
 
 ### Download a copy
 
