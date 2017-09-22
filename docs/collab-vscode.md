@@ -22,7 +22,7 @@ The advantage is that the entire solution is available the moment a participant 
 TODO: Note extensions that are required for features - e.g. C#
 
 ### Known co-editing participant limitations
-While Project Cascade's approach provides instance access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
+While Project Cascade's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
 
 We want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-edit%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-editing. Up-vote (👍) those you want the most and feel free to raise new issues if there is another limitation not covered already!
 
