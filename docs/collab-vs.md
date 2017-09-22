@@ -46,7 +46,11 @@ To jump start the conversation, the following are some limitations of particular
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
 
 ## Collaborative Debugging
-Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all participants the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. Using it simple.  The owner simply needs to start debugging via the usual means in Visual Studio.
+Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
+
+> **Note:** All traffic is secured and encrypted and access is limited to only those resources needed to facilitate debug and browser access to the web application. These resources are only available to participants of the collaboration session.
+
+Using it simple. The owner simply needs to start debugging via the usual means in Visual Studio.
 
 ![VS Debug button](media/vs-debug-button.png)
 
@@ -54,7 +58,7 @@ While the build and deployment is happening, all participants can see progress i
 
 ![VS output window](media/vs-output.png)
 
-Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view. A browser window on connected to the web application also automatically starts up.
+Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view. A browser window on connected to the web application running on the owner's machine also automatically starts up.
 
 ![VS debugger attached](media/vs-debugger.png)
 
