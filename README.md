@@ -51,11 +51,11 @@ Send the link over e-mail, Slack, Skype, etc. and once someone joins you can beg
 
 > **Note:** The person you invite will be able to download, install needed tools, and join the collaboration session without having to register for the private preview.
 
-#### 6. Share more as needed
+#### 6. Share and collaborate
 
-Want some help with a build issue? Let your teammates seen your output logs! Want to collaboratively debug a tricky bug? Start debugging session! See the documentation below for additional details.
+Start co-editing, highlight where a problem is, or let your teammates see your output logs! Want to collaboratively debug a tricky issue? Start a co-debugging session! See the documentation below for additional details.
 
-_If you find yourself needing to share something that isn't currently supported, [please let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)_
+_If you find yourself wanting to share something that isn't currently supported, [please let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)_
 
 
 ### Documentation 
