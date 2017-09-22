@@ -18,18 +18,31 @@ Owners can use all of their tools and services as they would normally but partic
 The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session, the content is no longer available to any participant. While content will not be available to participants if the owner's machine has offline/shut down during a session, the collaboration session will automatically start up again for participants when the owner's machine is back online and the tool is re-opened.  
 
 ## Collaborative editing
-Once a participant has joined a collaboration session all collaborators will immediately be able to see each others edits and highlights in real-time. Simply select a file from the Solution Explorer and start editing.
+Once a participant has joined a collaboration session all collaborators will immediately be able to see each others edits and highlights in real-time. Simply select a file from the Solution Explorer and start editing. Participants will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail down solutions.
 
-GIF GOES HERE
+![Screen shot showing co-editing](media/vs-coedit.png)
 
-MORE WORDS
+ Each of you are able to navigate to any file in the shared project and either edit together in the same file or independently in separate files. This gives you the seamless ability to switch between investigation, small tweaks, and collaborative editing with minimal context switching. The resulting edits are persisted on the owner's machine so there is no need to synchronize, push, or send files around once you're done editing. They are ready to go instantly.
+
+Further, to better allow you to highlight where problems might exist or convey ideas, selections are also visible to all participants.
+
+![Screen shot showing highlighting](media/vs-highlight.png)
+
+ The upper right corner also shows you who is currently in the collaboration session and you can quickly go to the exact location another collaborator is currently in a file by simply double-clicking on their icon in this location.  
+
+![Screen shot showing users in upper-right](media/vs-upper-right.png)
 
 ### Known co-editing participant limitations
 While Project Cascade's approach provides instance access and better security, there are currently some shortcoming for participants during the co-editing experience. Owners do not have these limitations.
 
-SUMMARY OF MAJOR LIMITATIONS
-
 We want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-edit%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-editing. Up-vote (👍) those you want the most and feel free to raise new issues if there is another limitation not covered already!
+
+The following are some limitations of particular note for _participants_ (only):
+
+- Participants are currently limited to using "folder view" in the solution explorer ([Up-vote solution view!](https://github.com/Microsoft/project-cascade/issues/5))
+- Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
+- Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
+- The undo and redo stacks are currently combined across all participants ([Up-vote a fix!](https://github.com/Microsoft/project-cascade/issues/7))
 
 ## Collaborative Debugging
 
