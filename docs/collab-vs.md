@@ -43,17 +43,43 @@ To jump start the conversation, the following are some limitations of particular
 - Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
 - The undo and redo stacks are currently combined across all participants ([Up-vote a fix!](https://github.com/Microsoft/project-cascade/issues/7))
+- Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
 
 ## Collaborative Debugging
+Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Using it simple.  The owner simply needs to start debugging via the usual means in Visual Studio.
+
+![VS Debug button](media/vs-debug-button.png)
+
+While the build and deployment is happening, all participants can see progress in the Output window. This is also true if the owner opted to "Start with Debugging" or simply build the project or solution.
+
+![VS output window](media/vs-debug-button.png)
+
+Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view.
+
+![VS debugger attached](media/vs-debuger.png)
+
+Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
+
+Each collaborator can investigate different variables, jump to different files in the call stack, variables, and breakpoints are shared across all participants and can be added by anyone. Co-editing features then allow each collaborator to track where the other is located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
+
+![Animation of concurrent debugging](media/vs-concurrent-debug.gif)
+
+Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Project Cascade also allows them to re-attach by simply launching the debugging session via standard means.
+
+![VS Debug button](media/vs-debug-button-participant.png)
 
 ### Known co-debugging participant limitations
 There are currently some shortcomings participants will experience while co-debugging. (Owners do not have these limitations.)
 
-We want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-debug%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-debugging. Up-vote (👍) those you want the most and feel free to raise new issues if there is another limitation not covered already!
+As before, we want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-debug%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-debugging. Up-vote (👍) those you want the most and feel free to raise new issues if there is another limitation not covered already!
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
-- a limitation ([Up-vote fixing it]())
+- Participants cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/project-cascade/issues/21))
+- Participants can see saved .diagsession results but cannot see or use profilers ([Up-vote](https://github.com/Microsoft/project-cascade/issues/19))
+- Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
+- Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
+- Debugging features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
 
 ## Additional Capabilities
 
