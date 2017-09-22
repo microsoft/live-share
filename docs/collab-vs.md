@@ -39,11 +39,11 @@ We want to hear from you! See [this query](https://github.com/Microsoft/project-
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
-- Participants are currently limited to using "folder view" in the solution explorer ([Up-vote solution view and designer support!](https://github.com/Microsoft/project-cascade/issues/5))
-- Participants need to manually edit configuration files if they want to change package and reference dependencies ([Up-vote UI support!](https://github.com/Microsoft/project-cascade/issues/17)) 
+- Participants are currently limited to using "folder view" in the solution explorer ([Up-vote](https://github.com/Microsoft/project-cascade/issues/5))
+- Participants need to manually edit configuration files if they want to change package and reference dependencies ([Up-vote](https://github.com/Microsoft/project-cascade/issues/17)) 
 - Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
-- The undo and redo stacks are currently combined across all participants ([Up-vote a fix!](https://github.com/Microsoft/project-cascade/issues/7))
+- The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/7))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
 
 ## Collaborative Debugging
