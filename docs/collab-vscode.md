@@ -6,6 +6,7 @@ This document provides information on capabilities enabled by the VS Code Projec
 - [Recap: Owners and participants](#recap-owners-and-participants)
 - [Collaborative editing](#collaborative-editing)
 - [Collaborative debugging](#collaborative-debugging)
+   - [Sharing the running application in a browser](#sharing-the-running-application-in-a-browser)
 - [Additional capabilities](#additional-capabilities)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
@@ -16,10 +17,25 @@ All collaboration activities in Project Cascade involve a single "owner" and one
 Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more. Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_. 
 
 The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session, the content is no longer available to any participant. While content will not be available to participants if the owner's machine is offline/shut down during a session, the collaboration session will automatically start up again for participants when the owner's machine is back online and the tool is re-opened.  
-
 ## Collaborative editing
 
-TODO: Note extensions that are required for features - e.g. C#
+Once a participant has joined a collaboration session all collaborators will immediately be able to see each others edits and highlights in real-time. 
+
+> **Tip:** If you are using VS Code with ASP.NET Core and C#, make sure you have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the owner and all participants should have the extension installed or participants will miss out on capabilities. 
+
+Simply select a file from the file explorer and start editing. Participants will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
+
+![Screen shot showing co-editing](media/vscode-coedit.png)
+
+In addition, each collaborator can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the owner's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
+
+Further, to better allow you to highlight where problems might exist or convey ideas, selections are also visible to all participants.
+
+![Screen shot showing highlighting](media/vscode-highlight.png)
+
+Since you may want to quickly jump to where another collaborator is located and there is only one other person in the session, you can over over a status bar icon to see who is in the session and simply click to jump to their location. If more than one other person is in the collaboration session, clicking on a status bar shows you who is currently in the collaboration session and selecting a collaborator from the resulting list jumps to their location.
+
+![Screen shot showing status bar icon](media/vscode-status-bar.png)
 
 ### Known co-editing participant limitations
 While Project Cascade's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
@@ -32,7 +48,59 @@ To jump start the conversation, the following are some limitations of particular
 
 ## Collaborative debugging
 
-TODO: Note extensions that are required for features - e.g. C#
+Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
+
+Using it simple. 
+
+1. If you are using VS Code with ASP.NET Core or C#, make sure you and all of your collaborators have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the owner and all participants should have the extension installed in order for debugging to work. 
+
+2. Next, if not already done, the owner should [setup launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) just as if they wanted to debug without sharing.
+
+3. Finally, start debugging using the button in the debug tab as normal.
+
+    ![VS Code debug button](media/vscode-debug-button.png)
+
+    > **Tip:** You can participate in VS debugging sessions from VS Code and vice versa! If the owner is using Visual Studio, you can check out the [Visual Studio instructions](collab-vs.md#collaborative-debugging) but the steps are roughly the same. 
+
+While the build and deployment is happening, all participants can see progress in the Output window. This is also true if the owner opted to "Start with Debugging".
+
+> **Note:** All traffic is secured and encrypted and access is limited to only those resources needed to facilitate debug and browser access to the web application. These resources are only available to participants of the collaboration session.
+
+![VS Code output window](media/vscode-output.png)
+
+Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view. 
+
+![VS Code debugger attached](media/vscode-debugger.png)
+
+Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
+
+Each collaborator can investigate different variables, jump to different files in the call stack, variables, and breakpoints are shared across all participants and can be added by anyone. Co-editing features then allow each collaborator to track where the other is located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
+
+![Animation of concurrent debugging](media/vscode-concurrent-debug.gif)
+
+Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Project Cascade also allows them to re-attach by simply launching the debugging session via an the debug tab.
+
+![VS Debug button](media/vscode-debug-button-participant.png)
+
+#### Sharing the running application in a browser
+
+After the application is running (even if not being debugged), the owner can then opt to set up a connection to the running web application for all participants and automatically open a browser by:
+
+1. Clicking on the "broadcast" icon in the status bar 
+    
+    ![Screen shot showing status bar icon](media/vscode-status-bar.png)
+
+2. Selecting "Open Shared Browser".
+
+    ![Screen shot of menu with share browser selected](media/vscode-status-bar.png)
+
+3. If not specified in settings.json or already specified, the owner then needs to let VS Code know what port the application will be running on.
+
+    ![Screen shot of selecting port](media/vscode-status-bar.png)
+
+The default browser is then started on all participant's machines connected to the running application.
+
+> **Tip:** Additional local server ports can also be shared securely such as RESTful endponts or databases if desired.  See [Sharing a local server](#sharing-a-local-server).
 
 ### Known co-debugging participant limitations
 There are currently some shortcomings participants will experience while co-debugging. (Owners do not have these limitations.)
@@ -45,10 +113,29 @@ To jump start the conversation, the following are some limitations of particular
 
 ## Additional capabilities
 
-- Output logs
-- Shared terminals
-- Sharing a local server
-- Download a copy
+### Shared terminals / command prompts
+
+Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default, getting one going is simple. Click on the "Share" button in the upper-right hand corner and selected "Shared Terminal".
+
+![VS Shared Terminal Button](media/vscode-terminal-button.png)
+
+At this point a shared terminal session with the VS developer command prompt is started on the owners machine and all participants have access.
+
+![VS Shared Terminal](media/vscode-terminal.png)
+
+The owner can terminate the terminal session at any time by simply closing the tool window.
+
+### Download a copy
+
+Words
+
+### Sharing a local server
+
+Words
+
+### Settings in settings.json
+
+app port
 
 ## Additional known participant limitations
 
