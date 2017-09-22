@@ -47,11 +47,13 @@ To jump start the conversation, the following are some limitations of particular
 ## Collaborative Debugging
 
 ### Known co-debugging participant limitations
-While Project Cascade's approach provides instance access and better security, there are currently some shortcoming for participants during the co-debugging experience. Owners do not have these limitations.
-
-SUMMARY OF MAJOR LIMITATIONS
+There are currently some shortcomings participants will experience while co-debugging. (Owners do not have these limitations.)
 
 We want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-debug%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-debugging. Up-vote (👍) those you want the most and feel free to raise new issues if there is another limitation not covered already!
+
+To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
+
+- a limitation ([Up-vote fixing it]())
 
 ## Additional Capabilities
 
@@ -60,7 +62,7 @@ We want to hear from you! See [this query](https://github.com/Microsoft/project-
 - Download a copy
 
 ## Additional known participant limitations
-In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.
+In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  Once again, we want to hear from you! See [this query for all open feature requests](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20). Up-vote (👍) those you want the most and feel free to raise new issues if there is another limitation not covered already!
 
 SUMMARY OF LIMITATIONS
 - Explorers
@@ -72,7 +74,7 @@ SUMMARY OF LIMITATIONS
 - Extensions
 - External Tools
 
-We want to hear from you! See [this query for all open feature requests](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20). Up-vote (👍) those you want the most and feel free to raise new issues if there is another limitation not covered already!
+
 
 ## More information
 
