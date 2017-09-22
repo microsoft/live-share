@@ -64,6 +64,6 @@ We want to hear from you! See [this query for all open feature requests](https:/
 ## More information
 
 - [Getting started](getting-started.md)
-- [Visual Studio Code features](collab-vscode,md)
+- [Visual Studio Code features](collab-vscode.md)
 - [Roadmap](roadmap.md)
 - [FAQ](faq.md)
