@@ -55,7 +55,7 @@ Using it simple. The owner simply needs to start debugging via the usual means i
 
 ![VS Debug button](media/vs-debug-button.png)
 
-> **Tip:** You can participate in VS Code debugging sessions from VS and vice versa! If the owner is using Visual Studio, you can check out the [VS Code instructions](collab-vscode.md#collaborative-debugging) but the steps are roughly the same. 
+> **Tip:** You can participate in VS Code debugging sessions from VS and vice versa! If the owner is using VS Code, you can check out the [VS Code instructions](collab-vscode.md#collaborative-debugging) but the steps are roughly the same. 
 
 While the build and deployment is happening, all participants can see progress in the Output window. This is also true if the owner opted to "Start with Debugging" or simply build the project or solution.
 
