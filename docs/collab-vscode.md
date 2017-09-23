@@ -54,7 +54,7 @@ Using it simple.
 
 1. If you are using VS Code with ASP.NET Core or C#, make sure you and all of your collaborators have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the owner and all participants should have the extension installed in order for debugging to work. 
 
-2. Next, if not already done, the owner should [setup launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) just as if they wanted to debug without sharing.
+2. Next, if not already set up for the project, the owner should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from VS Code as you would normally. No special setup is required.
 
 3. Finally, start debugging using the button in the debug tab as normal.
 
@@ -62,7 +62,7 @@ Using it simple.
 
     > **Tip:** You can participate in VS debugging sessions from VS Code and vice versa! If the owner is using Visual Studio, you can check out the [Visual Studio instructions](collab-vs.md#collaborative-debugging) but the steps are roughly the same. 
 
-While the build and deployment is happening, all participants can see progress in the Output window. This is also true if the owner opted to "Start with Debugging".
+While any build, deployment, or other scripts are running, all participants can see progress in the Output window. (In fact, this is also true if the owner opted to "Start with Debugging".)
 
 > **Note:** All traffic is secured and encrypted and access is limited to only those resources needed to facilitate debug and browser access to the web application. These resources are only available to participants of the collaboration session.
 
