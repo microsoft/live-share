@@ -98,13 +98,13 @@ After the application is running (even if not being debugged), the owner can the
 
     ![Screen shot of menu with share browser selected](media/vscode-status-bar.png)
 
-3. If not specified in settings.json or already specified, the owner then needs to let VS Code know what port the application will be running on.
+3. If not set in settings.json or already specified, you will be prompted to enter the port the application is running on.
 
     ![Screen shot of selecting port](media/vscode-status-bar.png)
 
-The default browser is then started on all participant's machines connected to the running application.
+The system default browser is then started on all participant's machines connected to the running application.
 
-> **Tip:** Additional local server ports can also be shared securely such as RESTful endponts or databases if desired.  See [Sharing a local server](#sharing-a-local-server).
+> **Tip:** Additional local server ports can also be shared securely such as RESTful endponts or databases if desired.  See [sharing a local server](#sharing-a-local-server).
 
 ### Known co-debugging participant limitations
 There are currently some shortcomings participants will experience while co-debugging. (Owners do not have these limitations.)
