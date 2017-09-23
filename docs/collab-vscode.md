@@ -33,9 +33,13 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ![Screen shot showing highlighting](media/vscode-highlight.png)
 
-Since you may want to quickly jump to where another collaborator is located and there is only one other person in the session, you can over over a status bar icon to see who is in the session and simply click to jump to their location. If more than one other person is in the collaboration session, clicking on a status bar shows you who is currently in the collaboration session and selecting a collaborator from the resulting list jumps to their location.
+Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon to see the name of the person in the session and their locaiton. Simply clicking on this same icon to jumps the active editor to their exact location. 
 
-![Screen shot showing status bar icon](media/vscode-status-bar.png)
+![Screen shot showing status bar icon with user in hover](media/vscode-status-bar.png)
+
+If there is more than one other person in the collaboration session, clicking on the icon presents a list of those currently in the collaboration session. You may then select a collaborator from the list to jump to their location.
+
+![Screen shot showing list of collaborators](media/vscode-list-collaborators.png)
 
 ### Known co-editing participant limitations
 While Project Cascade's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
