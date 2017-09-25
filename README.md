@@ -25,8 +25,8 @@ While Project Cascade is in private preview, you'll need to request access to st
 
 **[Register now!](http://aka.ms/project-cascade)** 
 
-#### 2. Download the and install Project Cascade
-Longer term you will be able to simply install an extension for any supported tool. However, you will need to follow these directions for your tool of choice during the Private Preview. 
+#### 2. Download and install Project Cascade for your tool
+While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>
