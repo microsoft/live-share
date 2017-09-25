@@ -19,7 +19,7 @@ Team collaboration should be so quick and natural, that it becomes harder not to
 
 #### 1. Register with the Project Cascade service
 
-While Project Cascade is in private preview, you'll need to request access to start a collaboration session. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us after signing up! While waiting, you can carry on with step #2 so that you're ready to go!
+While Project Cascade is in private preview, you'll need to request access to start a collaboration session. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
