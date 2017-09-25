@@ -23,7 +23,7 @@ While Project Cascade is in private preview, you'll need to request access to st
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
-[![Register now!](docs/media/register-now.png)](http://aka.ms/project-cascade) 
+**[Register now!](http://aka.ms/project-cascade)**
 
 #### 2. Download and install Project Cascade for your tool
 While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
