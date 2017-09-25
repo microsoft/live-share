@@ -60,7 +60,7 @@ Once installed, start up your tool sign-in to the Project Cascade service with t
 
 #### 4. Share your code
 
-Simply click "Share" within your tool and you'll get a link that allows others to join in your collaboration session. 
+Once you've been accepted into the preview, you can simply click "Share" within your tool and you'll get a link that allows others to join your collaboration session. 
 
 ![VS Share Button](docs/media/vs-share-button.png) ![VS Code Share Button](docs/media/vscode-share-button.png)
 
