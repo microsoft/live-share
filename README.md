@@ -25,9 +25,29 @@ While Project Cascade is in private preview, you'll need to request access to st
 
 **[Register now!](http://aka.ms/project-cascade)** 
 
-#### 2. Download the and install the Project Cascade extension for your tool
+#### 2. Download the and install Project Cascade
+Longer term you will be able to simply install an extension for any supported tool. However, you will need to follow these directions for your tool of choice during the Private Preview. 
 
-![VS Download](docs/media/vs-icon-win.png) ![VS Code for Windows Download](docs/media/vscode-icon-win.png) ![VS Code for macOS Download](docs/media/vscode-icon-mac.png)
+<table style="width: 100%; border-style: none;">
+<tr>
+    <td style="width: 128px; text-align: center; border:none;"><a href="http://aka.ms/project-cascade"><img src="docs/media/vs-icon.png" /></a></td>
+    <td>
+        <strong>Visual Studio 2017</strong><br />
+        Download and run the Project Cascade installer for VS.<br />
+        <a href="http://aka.ms/project-cascade">Download</a>
+    </td>
+</tr>
+<tr>
+    <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vscode-icon.png" /></td>
+    <td>
+        <strong>Visual Studio Code</strong><br />
+        First, download the Windows or Mac version of VS Code + Project Cascade.<br />
+        <a href="http://aka.ms/project-cascade">Download for Windows</a><br /> 
+        <a href="http://aka.ms/project-cascade">Download for macOS</a><br/>
+        Next, unzip the contents to a preferred location on your machine and launch VS Code from there to complete setup.
+    </td>
+</tr>
+</table>
 
 _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback._
 
