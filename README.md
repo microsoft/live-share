@@ -44,7 +44,7 @@ Longer term you will be able to simply install an extension for any supported to
         <strong>Visual Studio Code</strong><br />
         Download the Windows or Mac version of VS Code + Project Cascade.<br />
         <a href="http://aka.ms/project-cascade" >Download for Windows</a> | <a href="http://aka.ms/project-cascade">Download for macOS</a><br />
-        Unzip the contents to a preferred locatione and launch VS Code from there to complete setup.
+        Unzip the contents to a preferred location and launch VS Code from there to complete setup.
     </td>
 </tr>
 </table>
