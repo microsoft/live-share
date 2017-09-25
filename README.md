@@ -33,19 +33,19 @@ While ultimately an extension, follow these directions for installing Project Ca
     <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-icon.png" /></td>
     <td>
         <strong>Visual Studio 2017</strong><br />
-        After installing Visual Studio 2017, download and run the Project Cascade installer for VS.<br />
-        <a href="http://aka.ms/project-cascade"><img src="docs/media/download-for-win.png"></a><br />
-        Start Visual Studio to complete setup. 
+       Install VS 2017, download and run the Project Cascade installer, then start Visual Studio to complete setup.<br />
+       <br />
+       <a href="http://aka.ms/project-cascade"><img style="padding: 0; spacing: 0;" src="docs/media/download-for-win.png"></a><br />
     </td>
 </tr>
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code</strong><br />
-        Download the Windows or Mac version of VS Code + Project Cascade.<br />
+        Download the Windows or Mac version of VS Code + Project Cascade. Unzip the contents to a preferred location and launch VS Code from there to complete setup.<br />
+        <br/>
         <a href="http://aka.ms/project-cascade"><img src="docs/media/download-for-win.png"></a>
         <a href="http://aka.ms/project-cascade"><img src="docs/media/download-for-mac.png"></a><br />
-        Unzip the contents to a preferred location and launch VS Code from there to complete setup.
     </td>
 </tr>
 </table>
