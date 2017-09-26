@@ -1,6 +1,7 @@
+
 # Welcome to the Project Cascade!
 
-One of the Project Cascade Private Preview members has **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started. Here's some quick start steps so you can get collaborating!
+If you're here, one of the Project Cascade Private Preview members has probably **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started. Here's some quick start steps so you can get collaborating!
 
 ### 1. Download and install Project Cascade for your tool
 While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
@@ -50,7 +51,9 @@ That's it!! In a few moments you'll be connected to your colleague's collaborati
 
 - [Getting started](../docs/getting-started.md)
 - [Visual Studio features](../docs/collab-vs.md)
-- [Visual Studio Code features](../docs/collab-vscode,md)
+- [Visual Studio Code features](../docs/collab-vscode.md)
+- [Quick start: Sharing](welcome-owner.md)
+
 
 Need help and not finding what you need in the docs?
 
