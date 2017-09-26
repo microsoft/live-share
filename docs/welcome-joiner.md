@@ -26,11 +26,9 @@ While ultimately an extension, follow these directions for installing Project Ca
 </table>
 
 ### 2. Open/re-open the invite link in your web browser
-After installing Project Cascade for your tool, simply open (or re-open) the invite web page using the invite link your college sent you. 
+After installing Project Cascade for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
 
-You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
-
-> **Troubleshooting Tip:** If you're finding the web page isn't launching your Project Cascade enabled tool, be sure you've **started the tool at least once** after installing Project Cascade and try again. This will set up the handler. If you're still having trouble, see [manually joining](getting-started.md#manually-joining) in the getting started documentation.
+> **Troubleshooting Tip:** Be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](getting-started.md#manually-joining) in our docs.
 
 ### 3. Sign-in from within your IDE/editor
 
