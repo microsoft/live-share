@@ -32,6 +32,8 @@ While ultimately an extension, follow these directions for installing Project Ca
 </tr>
 </table>
 
+_Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback._
+
 ### 2. Start a discussion with the collaboration session owner
 
 It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, the collaboration session requires the owner to be connected to the service for [a number of good reasons](../docs/getting-started.md#owners-and-participants) to operate so you'll want to check in with them.
