@@ -58,7 +58,7 @@ _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft
 
 ### Quick Starts
 
-- [Start a collaboration session](welcome/welcome-joiner.md) (after you've been accepted into the preview)
+- [Start a collaboration session](welcome/welcome-owner.md) (after you've been accepted into the preview)
 - [Join a collaboration session](welcome/welcome-joiner.md) (no need to register or be accepted)
 
 ### Documentation 
