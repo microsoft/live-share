@@ -8,7 +8,7 @@
 </tr></table>
 
 # Project Cascade Documentation & Feedback
-Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The inital focus is on Node.js and ASP.NET/ASP.NET Core based web applications and services with more coming in the future.
+Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The inital focus is on **Node.js (VS Code) and ASP.NET/ASP.NET Core (VS/VS Code) based web applications** and services with more coming in the future.
 
 _Interested in other languages or platforms? [Let us know!](https://github.com/Microsoft/project-cascade/issues/12)_
 
