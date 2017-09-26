@@ -296,8 +296,8 @@ p {
     max-height: 200px; } }
 
     .glimpse-container > .navbar-header {
-      color: #373277;
-      margin-top: 1.2rem;
+      color: #fff;
+      margin-top: 1.5rem;
       font-size: 16px;
       font-weight: bold;
     }
@@ -557,7 +557,7 @@ p {
 
 /*----- Nav -----*/
 .navbar-fixed-container {
-  background-color: #F2F2F2; }
+  background-color: #373277; }
 
 .navbar {
   font-size: 12px;
@@ -592,7 +592,7 @@ p {
       margin-left: .2rem; } }
 
 .navbar-inverse.navbar-fixed-top {
-  background: #f2f2f2;
+  background-color: #373277; color: #fff;
   border: none;
   margin-bottom: 0;
   transition: transform 0.2s ease-out; }
@@ -657,7 +657,7 @@ p {
 .navbar-inverse .navbar-nav > li {
   margin-left: 2rem; }
   .navbar-inverse .navbar-nav > li > a {
-    color: #4D4D4D; }
+    color: #fff; }
     .navbar-inverse .navbar-nav > li > a.glimpse-callout-button {
       color: #fff; }
       .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:hover, .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:active, .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:focus {
