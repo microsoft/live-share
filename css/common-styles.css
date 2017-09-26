@@ -148,7 +148,7 @@ p {
     outline: none;
     box-shadow: 0.4rem 0.4rem 0 0 rgba(51, 51, 51, 0.075); }
   .glimpse-callout-button--highlight {
-    background: #FAB631;
+    background: #477a32;
     border: none; }
     .glimpse-callout-button--highlight:hover, .glimpse-callout-button--highlight:focus {
       background: #F9C659; }
@@ -722,7 +722,7 @@ p {
     display: block; } }
 
 .glimpse-footer {
-  background: #477a32;
+  background: #373277;
   color: white;
   padding: 2rem 5rem;
   position: relative;

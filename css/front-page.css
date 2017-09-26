@@ -29,7 +29,7 @@
     display: block; }
   .glimpse-header-section__heading {
     font-size: 6rem;
-    color: #477a32;
+    color: #373277;
     font-weight: 400;
     margin-top: 2rem;
     line-height: .9;
@@ -79,7 +79,7 @@
     -moz-appearance: none;
          appearance: none;
     border: none;
-    background-color: #FAB631;
+    background-color: #477a32;
     padding: 1rem 2rem;
     margin: 2rem 1rem 0;
     font-weight: 500;
