@@ -43,11 +43,13 @@ Simply click "Share" within your tool and you'll get a link that allows others t
 
 ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
-### 5. Send someone the invite link
+### 4. Send someone the invite link
 
 Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately working with them! 
 
 Note that the **person you invite does not need to register for the private preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. However, if they want to create their own collaboration sessions, they'll need to register.
+
+### 5. Collaborate!
 
 That's it!! What to learn more about what you can do? Check out our documentation.
 
