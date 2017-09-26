@@ -131,7 +131,7 @@ After downloading and installing Project Cascade, follow these steps to join a c
    That's it!! In a few moments you'll be connected and you can start collaborating.
 
 ### Manually joining
-You can also join from within VS or VS Code rather than clicking on the link which can be useful if the tool is already open or If joining via links is not working for some reason. The process is easy:
+You can also join from within VS or VS Code rather than clicking on the link which can be useful if the tool is already open or if joining via links is not working for some reason. The process is easy:
 
 1. **Sign-in from within your IDE/editor**
     
