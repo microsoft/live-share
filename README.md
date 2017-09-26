@@ -13,19 +13,19 @@ Project Cascade is a code name for a collection of experimental developer servic
 ## Collaborative Coding
 _Real-time collaborative development, using your own tools_
 
-### Quick Start
-
 Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
-#### 1. Register with the Project Cascade service
+#### Register with the Project Cascade service
 
-While Project Cascade is in private preview, you'll need to request access to start a collaboration session. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! If you're a Visual Studio user you should use your personalization account credentials to register.
+While Project Cascade is in private preview, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
+If you're a Visual Studio user be sure to use your [personalization account](https://msdn.microsoft.com/en-us/library/dn457348.aspx) credentials to register to make sign in fast!
+
 **[Register now!](http://aka.ms/project-cascade)**
 
-#### 2. Download and install Project Cascade for your tool
+#### Download and install Project Cascade for your tool
 While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
 
 <table style="width: 100%; border-style: none;">
@@ -54,32 +54,10 @@ While ultimately an extension, follow these directions for installing Project Ca
 
 _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback._
 
-#### 3. Sign-in from within your IDE/editor
+### Quick Starts
 
-Once installed, start up your tool sign-in to the Project Cascade service with the same creditals you used to register.
-
-![VS Download](docs/media/vs-sign-in-button.png) ![VS Code Download](docs/media/vscode-sign-in-button.png)
-
-> **Tip:** Need to use a different sign-in for Visual Studio than your personalization account? Go to Tools &gt; Options &gt; Project Cascade.
-
-#### 4. Share your code
-
-Once you've been accepted into the preview, you can simply click "Share" within your tool and you'll get a link that allows others to join your collaboration session. 
-
-![VS Share Button](docs/media/vs-share-button.png) ![VS Code Share Button](docs/media/vscode-share-button.png)
-
-#### 5. Send someone the invite link
-
-Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately working with them! 
-
-> **Note:** The person you invite will be able to download, install needed tools, and join the collaboration session without having to register for the private preview.
-
-#### 6. Share and collaborate
-
-Start co-editing, highlight where a problem is, or let your teammates see your output logs! Want to collaboratively debug a tricky issue? Start a co-debugging session! See the documentation below for additional details.
-
-_If you find yourself wanting to share something that isn't currently supported, [please let us know!](https://github.com/Microsoft/project-cascade/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)_
-
+- [Start a collaboration session](welcome/welcome-joiner.md) (after you've been accepted into the preview)
+- [Join a collaboration session](welcome/welcome-joiner.md) (no need to register or be accepted)
 
 ### Documentation 
 - [Getting started](docs/getting-started.md)
