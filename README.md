@@ -15,7 +15,7 @@ _Real-time collaborative development, using your own tools_
 
 Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
-#### Register with the Project Cascade service
+### Register with the Project Cascade service
 
 While Project Cascade is in private preview, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
 
@@ -25,7 +25,7 @@ If you're a Visual Studio user be sure to use your [personalization account](htt
 
 **[Register now!](http://aka.ms/project-cascade)**
 
-#### Download and install Project Cascade for your tool
+### Download and install Project Cascade for your tool
 While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
 
 <table style="width: 100%; border-style: none;">
