@@ -5,7 +5,7 @@
 - [Starting a collaboration session](#starting-a-collaboration-session)
 - [Joining a collaboration session](#joining-a-collaboration-session)
    - [Manually joining](#manually-joining)
-- [What can I do with a collaboration session?](#what-can-I-do-with-a-collaboration-session)
+- [What can I do with a collaboration session?](#what-can-i-do-with-a-collaboration-session)
 - [Ending a collaboration session](#ending-a-collaboration-session)
 - [More information](#more-information)
 
@@ -52,11 +52,13 @@ That's it! You should be connected to the collaboration session momentarily.
 Lots of things! Co-editing and co-debugging for example! Take a look at the article for the tool you're using to find out more! 
 
 - [Visual Studio features](collab-vs.md)
-- [Visual Studio Code features](collab-vscode,md)
+- [Visual Studio Code features](collab-vscode.md)
 
 ## Ending a collaboration session
 
 ## More Information
 
+- [Visual Studio features](collab-vs.md)
+- [Visual Studio Code features](collab-vscode.md)
 - [Roadmap](roadmap.md)
 - [FAQ](faq.md)
