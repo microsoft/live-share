@@ -9,8 +9,9 @@ While ultimately an extension, follow these directions for installing Project Ca
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
-        <strong>Visual Studio 2017</strong><br />
-       - Install VS 2017 on Windows (7, 8.1, or 10) then download and run the Project Cascade installer. <br />
+        <strong>Visual Studio 2017 Update 5</strong><br />
+       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10) <br/>
+       - Download and run the Project Cascade installer. <br />
        - Start Visual Studio after install to complete setup.<br />
        <a href="http://aka.ms/project-cascade"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
     </td>
@@ -19,26 +20,31 @@ While ultimately an extension, follow these directions for installing Project Ca
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code</strong><br />
-        - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (macOS Sierra <i>only</i>).<br />
-        - Unzip it where you want the install to live and start VS Code from there to complete setup.<br />
+        - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (<strong>macOS Sierra only</strong>).<br />
+        - Unzip it where you want the install to live.<br/>
+        - Start VS Code from there to complete setup.<br />
         <a href="http://aka.ms/project-cascade"><img src="media/download-for-win.png"></a>
         <a href="http://aka.ms/project-cascade"><img src="media/download-for-mac.png"></a><br />
     </td>
 </tr>
 </table>
 
-### 2. Open/re-open the invite link in your web browser
+### 2. Start a discussion with the collaboration session owner
+
+It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, the collaboration session requires the owner to be connected to the service for [a number of good reasons](getting-started.md#owners-and-participants) to operate so you'll want to check in with them.
+
+### 3. Open/re-open the invite link in your web browser
 After installing Project Cascade for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
 
 > **Troubleshooting Tip:** Be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](getting-started.md#manually-joining) in our docs.
 
-### 3. Sign-in from within your IDE/editor
+### 4. Sign-in from within your IDE/editor
 
 To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. If you are using Visual Studio and have already signed into the tool, Project Cascade will automatically use your personalization account if you've already signed into the tool so you can skip this step!
 
 Any use of your sign in information complies with [Microsoft's privacy statement]().
 
-### 4. Collaborate!
+### 5. Collaborate!
 
 That's it!! In a few moments you'll be connected to your colleague's collaboration session. Want to learn more about what you can do? Check out our documentation.
 

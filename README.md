@@ -19,7 +19,7 @@ Team collaboration should be so quick and natural, that it becomes harder not to
 
 #### 1. Register with the Project Cascade service
 
-While Project Cascade is in private preview, you'll need to request access to start a collaboration session. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
+While Project Cascade is in private preview, you'll need to request access to start a collaboration session. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! If you're a Visual Studio user you should use your personalization account credentials to register.
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
@@ -30,22 +30,24 @@ While ultimately an extension, follow these directions for installing Project Ca
 
 <table style="width: 100%; border-style: none;">
 <tr>
-    <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-icon.png" /></td>
+    <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
-        <strong>Visual Studio 2017</strong><br />
-       - Install VS 2017 on Windows (7, 8.1, or 10) then download and run the Project Cascade installer. <br />
+        <strong>Visual Studio 2017 Update 5</strong><br />
+       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10) <br/>
+       - Download and run the Project Cascade installer. <br />
        - Start Visual Studio after install to complete setup.<br />
-       <a href="http://aka.ms/project-cascade"><img style="padding: 0; spacing: 0;" src="docs/media/download-for-win.png"></a><br />
+       <a href="http://aka.ms/project-cascade"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
     </td>
 </tr>
 <tr>
-    <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vscode-icon.png" /></td>
+    <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code</strong><br />
-        - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (macOS Sierra <i>only</i>).<br />
-        - Unzip it where you want the install to live and start VS Code from there to complete setup.<br />
-        <a href="http://aka.ms/project-cascade"><img src="docs/media/download-for-win.png"></a>
-        <a href="http://aka.ms/project-cascade"><img src="docs/media/download-for-mac.png"></a><br />
+        - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (<strong>macOS Sierra only</strong>).<br />
+        - Unzip it where you want the install to live.<br/>
+        - Start VS Code from there to complete setup.<br />
+        <a href="http://aka.ms/project-cascade"><img src="media/download-for-win.png"></a>
+        <a href="http://aka.ms/project-cascade"><img src="media/download-for-mac.png"></a><br />
     </td>
 </tr>
 </table>
