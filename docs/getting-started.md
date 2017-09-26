@@ -60,8 +60,6 @@ Don't see your favorite IDE/editor? [Up-vote your favorite tool!](https://github
 
 ## Signing into Project Cascade from within your IDE/editor
 
-Signing into the Project Cascade service is simple. Here's how to do it from VS and VS Code.
-
 ### Signing in from Visual Studio
 
 By default Visual Studio uses the your personalization account so if you're already logged in with the same account you can skip this step. Otherwise sign as you would normally.
