@@ -295,6 +295,13 @@ p {
   .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px; } }
 
+    .glimpse-container > .navbar-header {
+      color: #373277;
+      margin-top: 1.2rem;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
 .glimpse-container > .navbar-header,
 .glimpse-container > .navbar-collapse {
   margin-right: -15px;

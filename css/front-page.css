@@ -28,12 +28,14 @@
     margin-top: 2.2rem;
     display: block; }
   .glimpse-header-section__heading {
-    font-size: 6rem;
+    font-size: 4rem;
     color: #373277;
+    width: 700px;
     font-weight: 400;
     margin-top: 2rem;
-    line-height: .9;
-    display: block; }
+    line-height: 6rem;
+    display: block; 
+  text-align: center;}
     @media all and (max-width: 740px) {
       .glimpse-header-section__heading {
         padding: 0 2rem; } }
