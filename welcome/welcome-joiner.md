@@ -32,6 +32,8 @@ While ultimately an extension, follow these directions for installing Project Ca
 </tr>
 </table>
 
+By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+
 _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback._
 
 ### 2. Start a discussion with the collaboration session owner
@@ -45,9 +47,9 @@ After installing Project Cascade for your tool, simply open (or re-open) the inv
 
 ### 4. Sign-in from within your IDE/editor
 
-To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. If you are using Visual Studio and have already signed into the tool, Project Cascade will automatically use your personalization account if you've already signed into the tool so you can skip this step!
+To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. 
 
-Any use of your sign in information complies with [Microsoft's privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+If you are using Visual Studio and have already signed into the tool, Project Cascade will automatically use your personalization account if you've already signed into the tool so you can skip this step!
 
 ### 5. Collaborate!
 

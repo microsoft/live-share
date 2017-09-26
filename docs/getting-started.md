@@ -52,6 +52,8 @@ Download and setup instructions:
 </tr>
 </table>
 
+By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+
 > **Tip:** Be sure to start up VS or VS Code once with Project Cascade installed before attempting to join a collaboration session as this wires up the handler for the join web page.
 
 Don't see your favorite IDE/editor? [Up-vote your favorite tool!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback.
