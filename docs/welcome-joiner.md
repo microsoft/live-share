@@ -1,6 +1,6 @@
 # Welcome to the Project Cascade!
 
-One of the Project Cascade Private Preview members has shared a collaboration session with you. Here's some steps to getting started quickly so you can collaborate with them! Just follow these steps:
+One of the Project Cascade Private Preview members has **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started. Here's some getting started steps so you can start collaborating with them!
 
 ### 1. Download and install Project Cascade for your tool
 While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
@@ -25,8 +25,10 @@ While ultimately an extension, follow these directions for installing Project Ca
 </tr>
 </table>
 
-### 2. Reload the invite link in your web browser
-After installing Project Cascade for your tool, simply reload the invite web page or click on the invite link again. You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
+### 2. Open/re-open the invite link in your web browser
+After installing Project Cascade for your tool, simply open (or re-open) the invite web page using the invite link your college sent you. 
+
+You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
 
 > **Troubleshooting Tip:** If you're finding the web page isn't launching your Project Cascade enabled tool, be sure you've **started the tool at least once** after installing Project Cascade and try again. This will set up the handler. If you're still having trouble, see [manually joining](getting-started.md#manually-joining) in the getting started documentation.
 
@@ -36,7 +38,7 @@ You'll may be asked to sign in during the join process using a GitHub or Microso
 
 > **Note:** Visual Studio will automatically use your personalization account if you've already signed in! No further action is required.
 
-All use of your sign in information adheres to [Microsoft's privacy statement]().
+Any use of your sign in information complies [Microsoft's privacy statement]().
 
 ### 4. Collaborate!
 
@@ -49,6 +51,7 @@ That's it!! In a few moments you'll be connected to your colleague's collaborati
 Need help and not finding what you need in the docs?
 
 - [Report a problem](CONTRIBUTING.md#filing-visual-studio-problems) or just [raise an issue](https://github.com/Microsoft/project-cascade/issues).
+- [Up-vote a feature or request a new one](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20)
 - Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions.
 
