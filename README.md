@@ -84,14 +84,15 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## Terms of Use
-By downloading and/or running the contents of this project/repository, you agree to the license terms of the third party application software, Microsoft products, and components to be installed.
+By downloading and/or running the contents of this repository, you agree to the license terms of the third party application software, Microsoft products, and components to be installed.
 
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
 ## License
-The contents of this repository are licensed under the MIT License (MIT). 
+By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+
+However, the contents of this repository are licensed under the MIT License (MIT). 
 
 Copyright (c) Microsoft Corporation
 
 See [LICENSE](LICENSE).
-
