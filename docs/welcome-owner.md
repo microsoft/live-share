@@ -1,6 +1,6 @@
 # Welcome to the Project Cascade Private Preview!
 
-Now that you've been accepted into the private preview, here's some steps to getting started quickly. Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.  Just follow these steps:
+Now that you've been **accepted into the private preview**, here's some steps to getting started quickly. Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.  Just follow these steps:
 
 ### 1. Download and install Project Cascade for your tool
 While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
@@ -54,5 +54,6 @@ That's it!! What to learn more about what you can do? Check out our documentatio
 Need help and not finding what you need in the docs?
 
 - [Report a problem](CONTRIBUTING.md#filing-visual-studio-problems) or just [raise an issue](https://github.com/Microsoft/project-cascade/issues).
+- [Up-vote a feature or request a new one](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20)
 - Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions.
