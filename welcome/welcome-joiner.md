@@ -31,18 +31,18 @@ While ultimately an extension, follow these directions for installing Project Ca
 
 ### 2. Start a discussion with the collaboration session owner
 
-It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, the collaboration session requires the owner to be connected to the service for [a number of good reasons](../getting-started.md#owners-and-participants) to operate so you'll want to check in with them.
+It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, the collaboration session requires the owner to be connected to the service for [a number of good reasons](../docs/getting-started.md#owners-and-participants) to operate so you'll want to check in with them.
 
 ### 3. Open/re-open the invite link in your web browser
 After installing Project Cascade for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
 
-> **Troubleshooting Tip:** Be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](../getting-started.md#manually-joining) in our docs.
+> **Troubleshooting Tip:** Be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](../docs/getting-started.md#manually-joining) in our docs.
 
 ### 4. Sign-in from within your IDE/editor
 
 To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. If you are using Visual Studio and have already signed into the tool, Project Cascade will automatically use your personalization account if you've already signed into the tool so you can skip this step!
 
-Any use of your sign in information complies with [Microsoft's privacy statement]().
+Any use of your sign in information complies with [Microsoft's privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ### 5. Collaborate!
 
