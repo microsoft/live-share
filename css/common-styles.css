@@ -652,7 +652,7 @@ p {
   .navbar-inverse .navbar-nav > li > a {
     color: #4D4D4D; }
     .navbar-inverse .navbar-nav > li > a.glimpse-callout-button {
-      color: #333333; }
+      color: #fff; }
       .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:hover, .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:active, .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:focus {
         color: #333333; }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:active, .navbar-inverse .navbar-nav > li > a:focus {

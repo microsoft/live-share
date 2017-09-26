@@ -62,7 +62,7 @@
     padding: 0; }
   .glimpse-header-section__item {
     line-height: 2;
-    list-style-type: none; }
+    list-style-type: none; font-size: 1.4rem; }
     .glimpse-header-section__item > img {
       margin-right: 1rem; }
   .glimpse-header-section__buttons {
@@ -97,6 +97,7 @@
     -ms-flex-align: center;
         align-items: center; }
     .glimpse-header-section__button > * {
+      color: #fff;
       display: inline-block; }
     .glimpse-header-section__button > .icon {
       height: 30px;
