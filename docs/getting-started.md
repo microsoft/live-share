@@ -11,6 +11,8 @@ The advantage is that the entire solution is available the moment a participant 
 
 ## Joining a collaboration session
 
+### Manually joining
+
 ## What can I do with a collaboration session?
 
 Lots of things! Co-editing and co-debugging for example! Take a look at the article for the tool you're using to find out more! 
