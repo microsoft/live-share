@@ -260,7 +260,7 @@
     width: 4.1rem;
     height: 2.1rem;
     margin: 0 auto;
-    background-image: url("/img/front-page/arrow.svg");
+    background-image: url("/project-cascade/img/front-page/arrow.svg");
     background-size: 100% auto; }
     .glimpse-how-helps-section__arrow:hover {
       cursor: pointer;
