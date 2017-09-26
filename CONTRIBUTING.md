@@ -71,6 +71,11 @@ The more information you can provide, the more likely someone will be successful
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
 
+## Other ways to contact us!
+
+- Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
+- Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions
+
 ## Contributing to documentation
 
 You may contribute to documentation by submitting pull requests to this repository. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
