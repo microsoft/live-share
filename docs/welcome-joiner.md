@@ -1,6 +1,6 @@
 # Welcome to the Project Cascade!
 
-One of the Project Cascade Private Preview members has **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started. Here's some getting started steps so you can start collaborating with them!
+One of the Project Cascade Private Preview members has **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started. Here's some quick start steps so you can get collaborating!
 
 ### 1. Download and install Project Cascade for your tool
 While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
