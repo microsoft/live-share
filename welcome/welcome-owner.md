@@ -51,13 +51,13 @@ Note that the **person you invite does not need to register for the private prev
 
 That's it!! What to learn more about what you can do? Check out our documentation.
 
-- [Getting started](docs/getting-started.md)
-- [Visual Studio features](docs/collab-vs.md)
-- [Visual Studio Code features](docs/collab-vscode,md)
+- [Getting started](../docs/getting-started.md)
+- [Visual Studio features](../docs/collab-vs.md)
+- [Visual Studio Code features](../docs/collab-vscode,md)
 
 Need help and not finding what you need in the docs?
 
-- [Report a problem](CONTRIBUTING.md#filing-visual-studio-problems) or just [raise an issue](https://github.com/Microsoft/project-cascade/issues).
+- [Report a problem](../CONTRIBUTING.md#filing-visual-studio-problems) or just [raise an issue](https://github.com/Microsoft/project-cascade/issues).
 - [Up-vote a feature or request a new one](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20)
 - Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions.
