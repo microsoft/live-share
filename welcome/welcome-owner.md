@@ -55,7 +55,8 @@ That's it!! What to learn more about what you can do? Check out our documentatio
 
 - [Getting started](../docs/getting-started.md)
 - [Visual Studio features](../docs/collab-vs.md)
-- [Visual Studio Code features](../docs/collab-vscode,md)
+- [Visual Studio Code features](../docs/collab-vscode.md)
+- [Quick start: Joining](welcome-joiner.md)
 
 Need help and not finding what you need in the docs?
 
