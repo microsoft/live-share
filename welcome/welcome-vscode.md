@@ -16,7 +16,7 @@ Click on the "Sign in" status bar item. If you're enrolled in the private previe
 
 Simply click "Share" within your tool and you'll get a link that allows others to join in your collaboration session. 
 
-![VS Share Button](media/vs-share-button.png)
+![VS Share Button](media/vscode-share-button.png)
 
 ### 3. Send someone the invite link
 
