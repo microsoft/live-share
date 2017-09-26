@@ -36,7 +36,7 @@ Download and setup instructions:
        - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10)<br/>
        - Download and run the Project Cascade installer.<br />
        - Start Visual Studio after install to complete setup.<br />
-       <a href="http://aka.ms/project-cascade"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
+       <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
     </td>
 </tr>
 <tr>
@@ -46,8 +46,8 @@ Download and setup instructions:
         - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (<strong>macOS Sierra only</strong>).<br />
         - Unzip it where you want the install to live.<br/>
         - Start VS Code from there to complete setup.<br />
-        <a href="http://aka.ms/project-cascade"><img src="media/download-for-win.png"></a>
-        <a href="http://aka.ms/project-cascade"><img src="media/download-for-mac.png"></a><br />
+        <a href="http://aka.ms/project-cascade/dl/vscode-win"><img src="media/download-for-win.png"></a>
+        <a href="http://aka.ms/project-cascade/dl/vscode-mac"><img src="media/download-for-mac.png"></a><br />
     </td>
 </tr>
 </table>
@@ -58,9 +58,9 @@ Don't see your favorite IDE/editor? [Up-vote your favorite tool!](https://github
 
 ## Signing into Project Cascade from within your IDE/editor
 
-Signing into the Project Cascade service is simple. 
+Signing into the Project Cascade service is simple. Here's how to do it from VS and VS Code.
 
-### Signing into Visual Studio
+### Signing in from Visual Studio
 
 By default Visual Studio uses the your personalization account so if you're already logged in with the same account you can skip this step. Otherwise sign as you would normally.
 
@@ -68,7 +68,7 @@ By default Visual Studio uses the your personalization account so if you're alre
 
 If you are registered for the private preview (owners) you should sign in using the same credentials you used to register. If you need to use a different sign-in for Visual Studio than your personalization account (e.g. you registered for the private preview using a GitHub account) you can go to **Tools &gt; Options &gt; Project Cascade** and sign in that way instead.
 
-### Signing into Visual Studio Code
+### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're enrolled in the private preview (owners), use the same credentials you used to register.
 
  ![VS Code Download](media/vscode-sign-in-button.png)
@@ -118,7 +118,7 @@ After downloading and installing Project Cascade, follow these steps to join a c
 
     After installing Project Cascade for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
 
-    > **Troubleshooting Tip:** Be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](#manually-joining) in our docs.
+    > **Troubleshooting Tip:** Be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](#manually-joining).
 
 3. **Sign-in from within your IDE/editor**
     
