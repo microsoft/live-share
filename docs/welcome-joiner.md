@@ -34,15 +34,13 @@ You should be notified that your browser wants to launching your Project Cascade
 
 ### 3. Sign-in from within your IDE/editor
 
-You'll may be asked to sign in during the join process using a GitHub or Microsoft account. This lets the person you are collaborating with know who you are. 
+To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. If you are using Visual Studio and have already signed into the tool, Project Cascade will automatically use your personalization account if you've already signed into the tool so you can skip this step!
 
-> **Note:** Visual Studio will automatically use your personalization account if you've already signed in! No further action is required.
-
-Any use of your sign in information complies [Microsoft's privacy statement]().
+Any use of your sign in information complies with [Microsoft's privacy statement]().
 
 ### 4. Collaborate!
 
-That's it!! In a few moments you'll be connected to your colleague's collaboration session. What to learn more about what you can do? Check out our documentation.
+That's it!! In a few moments you'll be connected to your colleague's collaboration session. Want to learn more about what you can do? Check out our documentation.
 
 - [Getting started](docs/getting-started.md)
 - [Visual Studio features](docs/collab-vs.md)
