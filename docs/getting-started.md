@@ -3,7 +3,7 @@
 **Table of Contents**
 - [Owners and participants](#owners-and-participants)
 - [Downloading and installing](#downloading-and-installing)
-- [Signing into Project Cascade from within your IDE/editor](#signing-into--project-cascade-from-within-your-ide-editor)
+- [Signing into Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor)
 - [Starting a collaboration session](#starting-a-collaboration-session)
 - [Joining a collaboration session](#joining-a-collaboration-session)
    - [Manually joining](#manually-joining)
@@ -86,7 +86,7 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 2. **Sign-in from within your IDE/editor**
     
-    IF you have not already, sign into Project Cascade. See [signing into the Project Cascade from within your IDE/editor](#signing-into--project-cascade-from-within-your-ide-editor). Be sure to use the same sign in information you used to register.
+    IF you have not already, sign into Project Cascade. See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). Be sure to use the same sign in information you used to register.
 
 3. **Start a collaboration session**
 
@@ -122,7 +122,7 @@ After downloading and installing Project Cascade, follow these steps to join a c
 
 3. **Sign-in from within your IDE/editor**
     
-    If you have not done so already, you will be prompted to sign into the Project Cascade service. See [signing into the Project Cascade from within your IDE/editor](#signing-into--project-cascade-from-within-your-ide-editor). You **do not need to be registered** for the private preview to participate in a collaboration session.
+    If you have not done so already, you will be prompted to sign into the Project Cascade service. See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). You **do not need to be registered** for the private preview to participate in a collaboration session.
 
     Any use of your sign in information complies with [Microsoft's privacy statement]().
 
@@ -131,11 +131,11 @@ After downloading and installing Project Cascade, follow these steps to join a c
    That's it!! In a few moments you'll be connected and you can start collaborating.
 
 ### Manually joining
-You can also join from within VS or VS Code rather than clicking on the link which can be useful if the tool is already open or If joining via links is not working for some reason. The process is easy:
+You can also join from within VS or VS Code rather than clicking on the link which can be useful if the tool is already open or if joining via links is not working for some reason. The process is easy:
 
 1. **Sign-in from within your IDE/editor**
     
-    See [signing into the Project Cascade from within your IDE/editor](#signing-into--project-cascade-from-within-your-ide-editor) if you have not already. You do not need to be part of the private preview to join a collaboration session.
+    See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor) if you have not already. You do not need to be part of the private preview to join a collaboration session.
 
 2. **Manually enter the invite link**
 
