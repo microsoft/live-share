@@ -1,5 +1,5 @@
 
-# Welcome to the Project Cascade!
+# Welcome to Project Cascade!
 
 If you're here, one of the Project Cascade Private Preview members has probably **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started. 
 
