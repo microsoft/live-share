@@ -68,4 +68,4 @@ Need help and not finding what you need in the docs?
 - Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions.
 
-Interested in joining the Private Preview so you can create collaboration sessions instead of just joining them? [Register now!](http://aka.ms/project-cascade)
+Interested in joining the Private Preview so you can create collaboration sessions instead of just joining them? [Register now!](http://aka.ms/project-cascade/register)

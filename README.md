@@ -25,7 +25,7 @@ While Project Cascade is in private preview, you'll need to request access to **
 
 If you're a Visual Studio user be sure to use your [personalization account](https://msdn.microsoft.com/en-us/library/dn457348.aspx) credentials to register to make sign in fast!
 
-**[Register now!](http://aka.ms/project-cascade)**
+**[Register now!](http://aka.ms/project-cascade/register)**
 
 ### Download and install Project Cascade for your tool
 While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 

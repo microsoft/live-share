@@ -1,6 +1,6 @@
 # Welcome to the Project Cascade Private Preview!
 
-If you're here, you've probably been **accepted into the private preview**! (If not [register now](http://aka.ms/project-cascade) or see how to [join a collaboration session](welcome-joiner.md)!) Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas. 
+If you're here, you've probably been **accepted into the private preview**! (If not [register now](http://aka.ms/project-cascade/register) or see how to [join a collaboration session](welcome-joiner.md)!) Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas. 
 
 Just follow these steps to start sharing:
 
@@ -53,7 +53,7 @@ Simply click "Share" within your tool and you'll get a link that allows others t
 
 Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately working with them! 
 
-Note that the **person you invite does not need to register for the private preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. However, if they want to create their own collaboration sessions, they'll need to register.
+Note that the **person you invite does not need to register or be accepted in the private preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 
 ### 5. Collaborate!
 
