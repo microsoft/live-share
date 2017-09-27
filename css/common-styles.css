@@ -36,12 +36,12 @@
     -webkit-font-smoothing: antialiased; } }
 
 ::-moz-selection {
-  background: #FAB631;
-  color: #333333; }
+  background: #477a32;
+  color: #fff; }
 
 ::selection {
-  background: #FAB631;
-  color: #333333; }
+  background:#477a32;
+  color: #fff; }
 
 * {
   box-sizing: border-box; }
@@ -297,7 +297,7 @@ p {
 
     .glimpse-container > .navbar-header {
       color: #fff;
-      margin-top: 1.5rem;
+      margin-top: 1.2rem;
       font-size: 16px;
       font-weight: bold;
     }
@@ -657,15 +657,15 @@ p {
 .navbar-inverse .navbar-nav > li {
   margin-left: 2rem; }
   .navbar-inverse .navbar-nav > li > a {
-    color: #fff; }
+    color: #fff; font-size: 14px; }
     .navbar-inverse .navbar-nav > li > a.glimpse-callout-button {
       color: #fff; }
       .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:hover, .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:active, .navbar-inverse .navbar-nav > li > a.glimpse-callout-button:focus {
         color: #333333; }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:active, .navbar-inverse .navbar-nav > li > a:focus {
-      color: #373277; }
+      color: #fff; }
   .navbar-inverse .navbar-nav > li.active a, .navbar-inverse .navbar-nav > li.active a:hover, .navbar-inverse .navbar-nav > li.active a:active, .navbar-inverse .navbar-nav > li.active a:focus {
-    color: #373277;
+    color: #fff;
     cursor: default; }
     .navbar-inverse .navbar-nav > li.active a::after, .navbar-inverse .navbar-nav > li.active a:hover::after, .navbar-inverse .navbar-nav > li.active a:active::after, .navbar-inverse .navbar-nav > li.active a:focus::after {
       content: '';
