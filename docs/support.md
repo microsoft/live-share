@@ -11,7 +11,8 @@ Our docs may have what you need!  [Check them out.](../README.md)
 GitHub issues and problem reports are a great way to connect with us.
 
 - [Up-vote a feature or request a new one](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20)
-- [Report a problem for Visual Studio](CONTRIBUTING.md#filing-visual-studio-problems)
+- [See if someone allready hit your problem by searching logged issues](https://github.com/Microsoft/project-cascade/issues)
+- [Report a problem for Visual Studio](../CONTRIBUTING.md#filing-visual-studio-problems)
 - [Report a problem for VS Code or the overall service](../CONTRIBUTING.md#filing-vs-code-or-general-service-problems)
 - [Check out tips on contributing!](../CONTRIBUTING.md#tip-writing-good-problem-reports-and-feature-requests)
 
