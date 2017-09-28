@@ -10,6 +10,8 @@ This document provides information on capabilities enabled by the VS Code Projec
 - [Additional capabilities](#additional-capabilities)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
+    - [Getting started, sharing, and joining](getting-started.md)
+    - [Visual Studio features](collab-vs.md)
 
 ## Recap: Owners and participants
 All collaboration activities in Project Cascade involve a single "owner" and one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Participants are then anyone that joins an owner's collaboration session. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
@@ -143,7 +145,7 @@ app port
 
 ## Additional known participant limitations
 
-In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  Once again, we want to hear from you! See [this query for all open feature requests](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
+In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/project-cascade/feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 - Extensions
 - Task Running

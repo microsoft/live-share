@@ -1,7 +1,7 @@
 # Contributing 
 
 ## Up-Voting Existing Problem Reports or Feature Requests
-If you are wondering if someone has already encountered a problem or requested a feature, you can check out [open issues](https://github.com/Microsoft/project-cascade/issues). You can also use [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20sort%3Areactions-%2B1%20) to specifically search for feature requests.
+If you are wondering if someone has already encountered a problem or requested a feature, you can check out [open issues](https://github.com/Microsoft/project-cascade/issues). You can also use [this query](https://aka.ms/project-cascade/feature-requests) to specifically search for feature requests.
 
 If you find your issue/feature already exists, feel free to make relevant comments and add your [reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments). Use a reaction in place of a "+1" comment.
 
@@ -41,7 +41,7 @@ Check out the tips in "Writing Good Problem Reports and Feature Requests" for ad
 ### Filing Feature Requests
 Many feature requests start out life as reported problems and should therefore follow the processes described above.  However, if you believe you have a feature request that is not a bug, you can follow these steps:
 
-> Tip: You may be able to save yourself some time by using this [query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20) to see if your request already exists.  If you find it, 👍 (upvote) it.
+> Tip: You may be able to save yourself some time by using this [query](https://aka.ms/project-cascade/feature-requests) to see if your request already exists.  If you find it, 👍 (upvote) it.
 
 Raise an issue in [this repository](https://github.com/Microsoft/project-cascade/issues) and please include the following in the description:
 

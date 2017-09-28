@@ -10,7 +10,8 @@
 - [What can I do with a collaboration session?](#what-can-i-do-with-a-collaboration-session)
 - [Ending a collaboration session](#ending-a-collaboration-session)
 - [More information](#more-information)
-
+    - [Visual Studio features](collab-vs.md)
+    - [Visual Studio Code features](collab-vscode.md)
 ## Owners and Participants
 All collaboration activities in Project Cascade involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but is the content being shared as well.  Participants then are anyone that joins an owner's collaboration session.
 
@@ -33,8 +34,9 @@ Download and setup instructions:
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
-       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10)<br/>
-       - Download and run the Project Cascade installer.<br />
+       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10) <br/>
+       - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
+       - Download and run the Project Cascade installer. <br />
        - Start Visual Studio after install to complete setup.<br />
        <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
     </td>
@@ -46,6 +48,7 @@ Download and setup instructions:
         - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (<strong>macOS Sierra only</strong>).<br />
         - Unzip it where you want the install to live.<br/>
         - Start VS Code from there to complete setup.<br />
+        - [Optional] Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a> to enable .NET Core support. Node.js support is built in.<br />
         <a href="http://aka.ms/project-cascade/dl/vscode-win"><img src="media/download-for-win.png"></a>
         <a href="http://aka.ms/project-cascade/dl/vscode-mac"><img src="media/download-for-mac.png"></a><br />
     </td>
@@ -157,6 +160,8 @@ Lots of things! Co-editing and co-debugging for example! Take a look at the arti
 - [Visual Studio Code features](collab-vscode.md)
 
 ## Ending a collaboration session
+
+Collaboration sessions will be automatically restarted
 
 ## More Information
 

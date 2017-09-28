@@ -62,6 +62,6 @@ What to learn more about what you can do? Check out our documentation.
 Need help and not finding what you need in the docs?
 
 - [Report a problem](../CONTRIBUTING.md#filing-visual-studio-problems) or just [raise an issue](https://github.com/Microsoft/project-cascade/issues).
-- [Up-vote a feature or request a new one](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20)
+- [Up-vote a feature or request a new one](https://aka.ms/project-cascade/feature-requests)
 - Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions.

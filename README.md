@@ -8,7 +8,7 @@
 </tr></table>
 
 # Project Cascade Documentation & Feedback
-Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The inital focus is on **Node.js (VS Code) and ASP.NET/ASP.NET Core (VS/VS Code) based web applications** and services with more coming in the future.
+Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The initial focus is on **Node.js and ASP.NET/ASP.NET Core based web applications and services** with more coming in the future.
 
 _Interested in other languages or platforms? [Let us know!](https://github.com/Microsoft/project-cascade/issues/12)_
 
@@ -36,6 +36,7 @@ While ultimately an extension, follow these directions for installing Project Ca
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
        - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10) <br/>
+       - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        - Download and run the Project Cascade installer. <br />
        - Start Visual Studio after install to complete setup.<br />
        <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download-for-win.png"></a><br />
@@ -48,6 +49,7 @@ While ultimately an extension, follow these directions for installing Project Ca
         - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (<strong>macOS Sierra only</strong>).<br />
         - Unzip it where you want the install to live.<br/>
         - Start VS Code from there to complete setup.<br />
+        - [Optional] Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a> to enable .NET Core support. Node.js support is built in.<br />
         <a href="http://aka.ms/project-cascade/dl/vscode-win"><img src="docs/media/download-for-win.png"></a>
         <a href="http://aka.ms/project-cascade/dl/vscode-mac"><img src="docs/media/download-for-mac.png"></a><br />
     </td>
@@ -73,7 +75,7 @@ _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft
 ## Contributing & Feedback
 Have a question or feedback? There are many ways to contribute.
 
-- [Up-vote a feature or request a new one](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Afeature-request%20sort%3Areactions-%2B1%20)
+- [Up-vote a feature or request a new one](https://aka.ms/project-cascade/feature-requests)
 - [Report a problem](CONTRIBUTING.md#filing-visual-studio-problems)
 - Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions
