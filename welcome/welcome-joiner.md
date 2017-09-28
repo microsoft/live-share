@@ -13,7 +13,7 @@ While ultimately an extension, follow these directions for installing Project Ca
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
-       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10) <br/>
+       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        - Download and run the Project Cascade installer. <br />
        - Start Visual Studio after install to complete setup.<br />
@@ -27,7 +27,7 @@ While ultimately an extension, follow these directions for installing Project Ca
         - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (<strong>macOS Sierra only</strong>).<br />
         - Unzip it where you want the install to live.<br/>
         - Start VS Code from there to complete setup.<br />
-        - [Optional] Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a> to enable .NET Core support. Node.js support is built in.<br />
+        - Optional: Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a> to enable .NET Core support. Node.js support is built in.<br />
         <a href="http://aka.ms/project-cascade/dl/vscode-win"><img src="media/download-for-win.png"></a>
         <a href="http://aka.ms/project-cascade/dl/vscode-mac"><img src="media/download-for-mac.png"></a><br />
     </td>

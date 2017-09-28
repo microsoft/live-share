@@ -82,7 +82,7 @@ Anyone can step through the debugging process which enables seamless switching b
 
 Each collaborator can investigate different variables, jump to different files in the call stack, variables, and breakpoints are shared across all participants and can be added by anyone. Co-editing features then allow each collaborator to track where the other is located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
-![Animation of concurrent debugging](media/vscode-concurrent-debug.gif)
+![Animation of concurrent debugging](media/co-debug.gif)
 
 Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Project Cascade also allows them to re-attach by simply launching the debugging session via an the debug tab.
 
@@ -121,13 +121,14 @@ To jump start the conversation, the following are some limitations of particular
 
 ### Shared terminals / command prompts
 
-Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default, getting one going is simple. Click on the "Share" button in the upper-right hand corner and selected "Shared Terminal".
+Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default, getting one going is simple. Click on the share state item in the status bar and selected "New Shared Terminal".
 
-![VS Shared Terminal Button](media/vscode-terminal-button.png)
+![VS Code share state item](media/vscode-share-state.png)<br />
+![VS Code terminal menu option](media/vscode-new-terminal.png)
 
 At this point a shared terminal session with the VS developer command prompt is started on the owners machine and all participants have access.
 
-![VS Shared Terminal](media/vscode-terminal.png)
+![VS Code shared terminal](media/vscode-terminal.png)
 
 The owner can terminate the terminal session at any time by simply closing the tool window.
 

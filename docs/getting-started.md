@@ -34,7 +34,7 @@ Download and setup instructions:
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
-       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10) <br/>
+       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        - Download and run the Project Cascade installer. <br />
        - Start Visual Studio after install to complete setup.<br />
@@ -48,7 +48,7 @@ Download and setup instructions:
         - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (<strong>macOS Sierra only</strong>).<br />
         - Unzip it where you want the install to live.<br/>
         - Start VS Code from there to complete setup.<br />
-        - [Optional] Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a> to enable .NET Core support. Node.js support is built in.<br />
+        - Optional: Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a> to enable .NET Core support. Node.js support is built in.<br />
         <a href="http://aka.ms/project-cascade/dl/vscode-win"><img src="media/download-for-win.png"></a>
         <a href="http://aka.ms/project-cascade/dl/vscode-mac"><img src="media/download-for-mac.png"></a><br />
     </td>
@@ -93,7 +93,7 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 3. **Start a collaboration session**
 
-    Once you've been accepted into the preview, you can simply click "Share" within your tool and you'll get a link that allows others to join your collaboration session. 
+    Once you've been accepted into the preview, open a folder, project, or solution and simply click "Share" within your tool and you'll get a link that allows others to join in a collaboration session on the contents of the related folders. 
 
     ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
@@ -142,9 +142,12 @@ You can also join from within VS or VS Code rather than clicking on the link whi
 
 2. **Manually enter the invite link**
 
-    In VS, go to File > Join Collaboration Session.
+    In **VS**, go to **File > Join Collaboration Session**.
 
-    For VS Code, you can click on the sign in status bar icon and click "Join Collaboration Session".
+    For **VS Code**, you can click on the sign in/share state status bar item after signing in and select "Join Collaboration Session".
+
+    ![VS Code after sign in status bar item](media/vscode-after-signin-status-bar.png) <br />
+    ![VS Code join collaboration session](media/vscode-join.png) <br />
 
     Paste in the invite URL you were sent and hit go.
 
@@ -161,7 +164,18 @@ Lots of things! Co-editing and co-debugging for example! Take a look at the arti
 
 ## Ending a collaboration session
 
-Collaboration sessions will be automatically restarted
+If the owner closes their tool, goes offline, or simply reboots, the collaboration session will be automatically restart when the owner opens the same folder, project, or solution that was shared. To stop sharing completely and end the collaboration session, you can use the share state button (in the upper right hand corner in VS or the status bar in VS Code) to stop sharing and end the collaboration session.
+
+In VS:
+
+![VS stop sharing](media/vs-stop-sharing.png) 
+
+In VS Code:
+
+![VS Code share state item](media/vscode-share-state.png) <br />
+![VS Code end collaboration session menu option](media/vscode-end-collaboration.png)
+
+This will stop the collaboration session and any participants will be notified that they will no longer be able to access the content. Given nothing is persisted on disk, the participants do not need to preform any additional cleanup.
 
 ## More Information
 
