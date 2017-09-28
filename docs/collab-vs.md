@@ -46,7 +46,7 @@ To jump start the conversation, the following are some limitations of particular
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
 - The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/7))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
 
 ## Collaborative Debugging
 Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
@@ -88,7 +88,7 @@ To jump start the conversation, the following are some limitations of particular
 - Participants open and see saved .diagsession results but cannot see or use profilers directly ([Up-vote](https://github.com/Microsoft/project-cascade/issues/19))
 - Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
 - Participants are not able to use the Task Runner Explorer to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
 - Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
 
 ## Additional Capabilities
@@ -135,7 +135,7 @@ To jump start the conversation, the following are some additional limitations of
 - Visual Studio users cannot currently share additional local servers (ports) with participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/23))
 - Participants cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/project-cascade/issues/20))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
 
 ## More information
 
