@@ -17,6 +17,18 @@ _Real-time collaborative development, using your own tools_
 
 Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
+### Quick Starts
+
+- [Start a collaboration session](welcome/welcome-owner.md) (after you've been accepted into the preview)
+- [Join a collaboration session](welcome/welcome-joiner.md) (no need to register or be accepted)
+
+### Documentation 
+- [Getting started](docs/getting-started.md)
+- [Visual Studio features](docs/collab-vs.md)
+- [Visual Studio Code features](docs/collab-vscode.md)
+- [Roadmap](docs/roadmap.md)
+- [FAQ](docs/faq.md)
+
 ### Register with the Project Cascade service
 
 While Project Cascade is in private preview, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
@@ -59,18 +71,6 @@ While ultimately an extension, follow these directions for installing Project Ca
 By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback._
-
-### Quick Starts
-
-- [Start a collaboration session](welcome/welcome-owner.md) (after you've been accepted into the preview)
-- [Join a collaboration session](welcome/welcome-joiner.md) (no need to register or be accepted)
-
-### Documentation 
-- [Getting started](docs/getting-started.md)
-- [Visual Studio features](docs/collab-vs.md)
-- [Visual Studio Code features](docs/collab-vscode.md)
-- [Roadmap](docs/roadmap.md)
-- [FAQ](docs/faq.md)
 
 ## Contributing & Feedback
 Have a question or feedback? There are many ways to contribute.
