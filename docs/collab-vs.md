@@ -107,13 +107,26 @@ Modern development often involves the use of certain command line tools. Project
 
 3.  The owner can terminate the terminal session at any time by simply closing the tool window.
 
+
+### Sharing a local server
+
+**TODO:** Update with UX details as known
+
+From time to time, as a collaboration session owner you may find that you want to share additional local servers or services with participants. This can range from other RESTful end-points to databases or other servers.  For security purposes, only servers running on ports you specify are available to other participants. Fortunately, its easy to add another one.
+
+1. Click on the share state button in the upper right corner and select "Share Local Server"
+
+2. Enter the port number the server is running on and optionally a name.
+
+That's it!
+
+To **stop** sharing a local server, the owner simply needs to hare state button in the upper right corner as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
+
 ### Download a copy
 
 As a participant, you may get to a point where you need to get a snapshot of the code for either local debugging purposes or to do some deep investigation while the owner is away. This is easy to do.
 
-1. Click on the share state button in the upper right corner.
-
-2. Select "Download a Copy"
+1. Click on the share state button in the upper right corner and select "Download a Copy"
 
 3. Select the destination folder.
 
