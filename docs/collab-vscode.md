@@ -50,7 +50,10 @@ We want to hear from you! See [this query](https://github.com/Microsoft/project-
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
-- a limitation ([Up-vote fixing it!]())
+- Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/8))
+- Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
+- The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/7))
+- Participants are not able to VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
 
 ## Collaborative debugging
 
@@ -115,7 +118,7 @@ We want to hear from you! See [this query](https://github.com/Microsoft/project-
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
-- a limitation ([Up-vote fixing it]())
+- Participants are not able to VS Code's task support against the owner's content ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
 
 ## Additional capabilities
 
@@ -137,13 +140,34 @@ Modern development often involves the use of certain command line tools. Project
 
 4. The owner can terminate the terminal session at any time by simply closing the tool window or typing exit.
 
+### Sharing a local server
+
+From time to time, as a collaboration session owner you may find that you want to share additional local servers or services with participants. This can range from other RESTful end-points to databases or other servers.  For security purposes, only servers running on ports you specify are available to other participants. Fortunately, its easy to add another one.
+
+1. First, the owner should click on the share state status bar item.
+
+    ![VS Code share state item](media/vscode-share-state.png)<br />
+
+2. Select "Share Local Server"
+
+    ![VS Code share local server](media/vscode-share-local-server.png)<br />
+
+3. Enter the port number the server is running on and optionally a name.
+
+    ![Screen shot of port number prompt](media/vscode-enter-port.png)
+
+That's it!
+
+Optionally, participants can see a list of currently shared ports (by name if specified) by clicking on the share state status bar item as above and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
+
+![VS Code access local server](media/vscode-access-local-server.png)<br />
+
+To **stop** sharing a local server, the owner simply needs to click the share state status bar item as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
+
 ### Download a copy
 
 Words
 
-### Sharing a local server
-
-Words
 
 ### Settings in settings.json
 
@@ -153,12 +177,10 @@ app port
 
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/project-cascade/feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
-- Extensions
-- Task Running
-- Source Control
-    - Diffing
-    - Operations
-- External Tools
+- Participants cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/project-cascade/issues/15))
+- Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/project-cascade/issues/16))
+- Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/8))
+- Participants are not able to VS Code's task support against the owner's content ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
 
 ## More information
 
