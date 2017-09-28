@@ -96,11 +96,13 @@ After the application is running (even if not being debugged), the owner can the
     
     ![VS Code share state item](media/vscode-share-state.png)
 
-2. Selecting "Open Shared Browser".
+2. Selecting "Share Web App in Browser".
 
-    ![Screen shot of menu with share browser selected](media/vscode-share-browser.png)
+    ![Screen shot of menu with share browser selected](media/vscode-share-web-app.png)
 
 3. If not set in settings.json or already specified, you will be prompted to enter the port the application is running on.
+
+    ![Screen shot of port number prompt](media/vscode-enter-port.png)
 
 The system default browser is then started on all participant's machines connected to the running application.
 
@@ -119,10 +121,15 @@ To jump start the conversation, the following are some limitations of particular
 
 ### Shared terminals / command prompts
 
-Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default, getting one going is simple. Click on the share state item in the status bar and selected "New Shared Terminal".
+Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default, getting one going is simple. 
 
-![VS Code share state item](media/vscode-share-state.png)<br />
-![VS Code terminal menu option](media/vscode-new-terminal.png)
+1. Click on the share state item in the status bar
+
+    ![VS Code share state item](media/vscode-share-state.png)<br />
+
+2. Selected "New Shared Terminal".
+
+    ![VS Code terminal menu option](media/vscode-new-terminal.png)
 
 At this point a shared terminal session with the VS developer command prompt is started on the owners machine and all participants have access.
 
