@@ -12,7 +12,7 @@ This document provides information on capabilities enabled by the Visual Studio 
     - [Download a copy](#download-a-copy)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
-    - [Getting started, sharing, and joining](getting-started.md)
+    - [Getting started and managing collaboration sessions](getting-started.md)
     - [Visual Studio Code features](collab-vscode.md)
 ## Recap: Owners and participants
 All collaboration activities in Project Cascade involve a single "owner" and one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Participants are then anyone that joins an owner's collaboration session. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
