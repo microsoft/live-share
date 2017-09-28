@@ -8,6 +8,7 @@ This document provides information on capabilities enabled by the Visual Studio 
 - [Collaborative debugging](#collaborative-debugging)
 - [Additional capabilities](#additional-capabilities)
     - [Shared terminals / command prompts](#shared-terminals--command-prompts)
+    - [Sharing a local server](#sharing-a-local-server)
     - [Download a copy](#download-a-copy)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
@@ -147,7 +148,6 @@ To jump start the conversation, the following are some additional limitations of
 - Participants cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/project-cascade/issues/15))
 - Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/project-cascade/issues/16))
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
-- Visual Studio users cannot currently share additional local servers (ports) with participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/23))
 - Participants cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/project-cascade/issues/20))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
     - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
