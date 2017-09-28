@@ -37,7 +37,7 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon to see the name of the person in the session and their locaiton. Simply clicking on this same icon to jumps the active editor to their exact location. 
 
-![Screen shot showing status bar icon with user in hover](media/vscode-status-bar.png)
+![Screen shot showing user status bar item](media/vscode-user-status.png)
 
 If there is more than one other person in the collaboration session, clicking on the icon presents a list of those currently in the collaboration session. You may then select a collaborator from the list to jump to their location.
 
