@@ -25,7 +25,7 @@ While ultimately an extension, follow these directions for installing Project Ca
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code</strong><br />
-        - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or Mac (<strong>macOS Sierra only</strong>).<br />
+        - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or macOS (<strong>Sierra only</strong>).<br />
         - Unzip it where you want the install to live.<br/>
         - Start VS Code from there to complete setup.<br />
         - Optional: Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a> to enable .NET Core support. Node.js support is built in.<br />
