@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Project Cascade by Microsoft</title>        
+    <title>Project Cascade by Microsoft</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <base href="https://microsoft.github.io/project-cascade/" />    
+    <base href="" />
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
@@ -43,7 +42,6 @@
     <link rel="stylesheet" href="css/common-styles.css" />
     <link rel="stylesheet" href="css/front-page.css" />
 </head>
-
 <body>
 
     <div class="navbar-fixed-container">
@@ -51,7 +49,12 @@
             <nav role="navigation" style="width: 1227px; margin: 0 auto">
                 <div class="glimpse-container">
                     <div class="nav navbar-header" style="line-height: 15px">
-                        <svg height="22px" width="22px" style="fill: #fff; margin-right: 5px" viewBox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><g><path d="M352,377.9H102.4V198.2h57.5c0,0,14.1-19.7,42.7-38.2H83.2c-10.6,0-19.2,8.5-19.2,19.1v217.9c0,10.5,8.6,19.1,19.2,19.1   h288c10.6,0,19.2-8.5,19.2-19.1V288L352,319.4V377.9z M320,224v63.9l128-95.5L320,96v59.7C165.2,155.7,160,320,160,320   C203.8,248.5,236,224,320,224z"/></g></svg>
+                        <svg height="22px" width="22px" style="fill: #fff; margin-right: 5px" viewBox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M352,377.9H102.4V198.2h57.5c0,0,14.1-19.7,42.7-38.2H83.2c-10.6,0-19.2,8.5-19.2,19.1v217.9c0,10.5,8.6,19.1,19.2,19.1   h288c10.6,0,19.2-8.5,19.2-19.1V288L352,319.4V377.9z M320,224v63.9l128-95.5L320,96v59.7C165.2,155.7,160,320,160,320   C203.8,248.5,236,224,320,224z"
+                                />
+                            </g>
+                        </svg>
                         Project Cascade
                     </div>
                     <div class="navbar-collapse collapse" id="js-glimpse-navbar-collapse">
@@ -66,7 +69,7 @@
                                 <a href="https://github.com/Microsoft/project-cascade/blob/master/docs/faq.md">FAQ</a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/project-cascade/start" data-glimpse-scroll-to="#glimpse-get-started-section" class="glimpse-callout-button glimpse-callout-button--highlight">
+                                <a href="https://aka.ms/project-cascade/start" class="glimpse-callout-button glimpse-callout-button--highlight">
                                     Get started 
                             </a>
                             </li>
@@ -90,100 +93,107 @@
         </symbol>
     </svg>
 
-    <section style="display: flex; flex-direction: column; align-items: center; margin-top: 60px">
-        <h1 class="glimpse-header-section__heading">Real-time collaborative development using your favorite tools</h1>
-        <img style="margin: 2rem 0; max-width: 900px" src="img/hero.gif" />
-        <h2 style="font-size:18px; color: #373277">Project Cascade is currently in preview, but you can register to get early access!</h2>
-        <div class="glimpse-header-section__buttons js-request-button">
-            <a class="glimpse-header-section__button" href="https://ci.dev.project-cascade.visualstudio.com/auth/identity/github?redirect=http://microsoft.github.io/project-cascade#success">
-                <div class="icon">
-                    <svg viewBox="0 0 30 30" style="fill: white">
-                        <use xlink:href="#github-path"></use>
-                    </svg>
-                </div>
-                <span>Request access with GitHub</span>
+    <header class="hero">
+        <h1 class="hero__title">Real-time collaborative development using your favorite tools</h1>
+        <img class="hero__image" src="img/hero.gif" title="Real-time collaborative development" />
+        <h2 class="hero__subtitle">Project Cascade is currently in preview, but you can register to get early access!</h2>
+        <div class="hero__registration">
+            <a class="hero__registration-button" href="https://ci.dev.project-cascade.visualstudio.com/auth/identity/github?redirect=http://microsoft.github.io/project-cascade#success">
+                <svg class="hero__registration-button__icon" viewBox="0 0 30 30">
+                    <use xlink:href="#github-path"></use>
+                </svg>
+                Request access with GitHub
             </a>
-            <a class="glimpse-header-section__button js-request-button" href="https://ci.dev.project-cascade.visualstudio.com/auth/identity/microsoft?redirect=http://microsoft.github.io/project-cascade#success">
-                <div class="icon">
-                    <svg viewBox="0 0 30 30" style="fill: white">
-                        <use xlink:href="#vs-path"></use>
-                    </svg>
-                </div>
-                <span>Request access with a Microsoft Account</span>
+            <a class="hero__registration-button" href="https://ci.dev.project-cascade.visualstudio.com/auth/identity/microsoft?redirect=http://microsoft.github.io/project-cascade#success">
+                <svg class="hero__registration-button__icon" viewBox="0 0 30 30">
+                    <use xlink:href="#vs-path"></use>
+                </svg>
+                Request access with a Microsoft Account
             </a>
         </div>
-        <p style="font-size:14px; margin: 20px 0 30px 0">By registering, you agree to the <a style="text-decoration: underline" href="https://aka.ms/project-cascade/license">license terms</a> and <a href="https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx" style="text-decoration: underline">privacy statement</a>.</p>
-    </section>
+        <p class="hero__disclaimer">
+            By registering, you agree to the <a href="https://aka.ms/project-cascade/license">license terms</a> and <a href="https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx">privacy statement</a>.
+        </p>
+    </header>
 
     <div id="success">
-        <h1>Thanks for registering! We will keep you informed of any Cascade Project updates.</h1>
+        <h1>Thanks for registering! We'll let you know as soon as you can start collaborating.</h1>
     </div>
 
-    <section style="background-color: #fff; margin-top: 200p; padding: 40px;">
-        <section style="display: flex; align-items: center; width: 1224px; margin: 0 auto;">
-            <div style="flex-grow: 1;">
-                <h3 style="color: #373277; font-size: 20px;margin-bottom: 30px">Share your context, not your screen</h3>
-                <p style="width: 500px; line-height: 30px;">Frequent communication is critical to team success, so your tools should support collaboration that enables it as part of your personal workflow. With "Project Cascade", developers share their project context, not their screen, which allows working together in a way that is immediately familiar for everyone, and <b style="color: #373277">without being forced to look at the exact same file, viewport, stack frame, etc.</b>
-                    <div style="font-size:14px; line-height: 25px; background-color: #373277; padding: 10px; color: white; margin-right: 70px; margin-top: 30px">We plan to add support for more tools and platforms (<a href="https://github.com/Microsoft/project-cascade/issues/24" style="color: white;text-decoration: underline">let us know your favorite!</a>), but currently, Project Cascade supports the following:
-                    <ul style="font-size: 14px; line-height: 25px;margin-bottom: 0">
-                            <li>Visual Studio (ASP.NET and ASP.NET Core projects)</li>
-                            <li>Visual Studio Code (ASP.NET Core and Node.js projects)</li>
-                        </ul>
-                        </div>
+    <!-- Value proposition statements -->
+
+    <section class="value-prop">
+        <div class="value-prop__content">
+            <div class="value-prop__description">
+                <h3>Share your context, not your screen</h3>
+                <p>
+                    Frequent communication is critical to team success, so your tools should support collaboration that enables
+                    it as part of your personal workflow. With "Project Cascade", developers share their project context,
+                    not their screen, which allows working together in a way that is immediately familiar for everyone, and
+                    <em>without being forced to look at the exact same file, viewport, stack frame, etc.</em>
                 </p>
+                <aside class="value-prop__detail">
+                    We plan to add support for more tools and platforms (<a href="https://github.com/Microsoft/project-cascade/issues/24">let us know your favorite!</a>),
+                    but currently, Project Cascade supports the following:
+                    <ul>
+                        <li>Visual Studio (ASP.NET and ASP.NET Core projects)</li>
+                        <li>Visual Studio Code (ASP.NET Core and Node.js projects)</li>
+                    </ul>
+                </aside>
             </div>
-            <img style="max-width: 620px; height: 270px" src="img/side-by-side-edit.png" />
-        </section>
+            <img class="value-prop__image" src="img/side-by-side-edit.png" title="Real-time collaborative editing" />
+        </div>
     </section>
 
-    <section style="background-color: #F2F2F2; margin-top: 200p; padding: 40px;">
-        <section style="display: flex; align-items: center; width: 1224px; margin: 0 auto;">
-            <div style="flex-grow: 1">
-                <img style="width: 590px; height: 270px;" src="img/side-by-side-debug.png" />    
-            </div>
-            <div>
-                <h3 style="color: #373277; font-size: 20px;margin-bottom: 30px">Collaboration that is simple, yet comprehensive</h3>
-                <p style="width: 580px; line-height: 30px;">When seeking or providing assistance, it's important that everyone is on the same page, which unfortunately, isn't always as easy as exchanging code snippets and error messages. With "Project Cascade", you can share your current project, and as needed, seamlessly (and securely!) share additional context, <b style="color: #373277">without ever leaving the comfort of your IDE/editor</b>.<br /><br />
-                    <div style="font-size:14px; line-height: 25px; background-color: #373277; padding: 10px; color: white; margin-right: 20px;">With Project Cascade, you can instantly share access to the following resources:
-                    <ul style="line-height: 30px;margin-bottom:0">
+    <section class="value-prop">
+        <div class="value-prop__content">
+            <img class="value-prop__image" src="img/side-by-side-debug.png" title="Real-time collaborative debugging" />
+            <div class="value-prop__description">
+                <h3>Collaboration that is simple, yet comprehensive</h3>
+                <p>
+                    When seeking or providing assistance, it's important that everyone is on the same page, which unfortunately,
+                    isn't always as easy as exchanging code snippets and error messages. With "Project Cascade", you can
+                    share your current project, and as needed, seamlessly (and securely!) share additional context, <em>without ever leaving the comfort of your IDE/editor</em>.
+                </p>
+                <aside class="value-prop__detail">
+                    With Project Cascade, you can instantly share access to the following resources:
+                    <ul>
                         <li>Your project's entire codebase</li>
                         <li>Application build output</li>
                         <li>Debugging sessions, including shared breakpoints</li>
                         <li>Terminal instances (e.g. because you need some help with Git)</li>
                         <li>Locally running services (e.g. a web app, REST API,<br /> MongoDB database, Jupyter notebook)</li>
                     </ul>
-                </div>
-                </p>
-            </div>  
-        </section>
+                </aside>
+            </div>
+        </div>
     </section>
 
     <script defer async src="js/front-page.js"></script>
     <script defer async src="js/common.js"></script>
 
-    <div class="glimpse-footer">
+    <footer class="glimpse-footer">
         <section style="width: 1224px; margin: 0 auto; display: flex">
-        <ul class="glimpse-footer__menu">
-            <li class="glimpse-footer__menu-item">
-                <a href="https://aka.ms/project-cascade/support">Support</a>
-            </li>
-            <li class="glimpse-footer__menu-item">
-                <a href="https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx">Privacy</a>
-            </li>
-            <li class="glimpse-footer__menu-item">
-                <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx">Terms of use</a>
-            </li>
-            <li class="glimpse-footer__menu-item">
-                <a href="https://aka.ms/project-cascade/license">License</a>
-            </li>
-        </ul>
-        <div class="glimpse-footer__experiment">
-            <span>An experiment by</span>
-            <img class="glimpse-footer__experiment-logo" src="img/ms-logo.svg" alt="Microsoft">
-        </div>
+            <ul class="glimpse-footer__menu">
+                <li class="glimpse-footer__menu-item">
+                    <a href="https://aka.ms/project-cascade/support">Support</a>
+                </li>
+                <li class="glimpse-footer__menu-item">
+                    <a href="https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx">Privacy</a>
+                </li>
+                <li class="glimpse-footer__menu-item">
+                    <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx">Terms of use</a>
+                </li>
+                <li class="glimpse-footer__menu-item">
+                    <a href="https://aka.ms/project-cascade/license">License</a>
+                </li>
+            </ul>
+            <div class="glimpse-footer__experiment">
+                <span>An experiment by</span>
+                <img class="glimpse-footer__experiment-logo" src="img/ms-logo.svg" alt="Microsoft">
+            </div>
         </section>
-    </div>
+    </footer>
 
 </body>
-
 </html>

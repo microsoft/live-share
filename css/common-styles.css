@@ -78,6 +78,10 @@ a {
     outline: 0.2rem solid #3399FF;
     outline-offset: .2rem; }
 
+ul {
+  margin-bottom: 0;
+}
+
 abbr {
   border-bottom: 1px dotted #666666;
   text-decoration: none; }
