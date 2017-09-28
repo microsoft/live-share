@@ -26,11 +26,11 @@
   display: none; }
 
 .cascade-spinner {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   background-color: #fff;
   display: none;
-  margin: 90px auto 0 auto;
+  margin: 80px auto 0 auto;
   animation: cascade-spinner-keyframes 1.2s infinite ease-in-out;
 }
 
@@ -53,16 +53,16 @@
 
 @keyframes cascade-spinner-keyframes {
   0% {
-    transform: perspective(150px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(150px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(175px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(175px) rotateX(0deg) rotateY(0deg);
     background-color: #fff; }
   50% {
-    transform: perspective(150px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(150px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(175px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(175px) rotateX(-180.1deg) rotateY(0deg);
     background-color: #477a32; }
   100% {
-    transform: perspective(150px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(150px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(175px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(175px) rotateX(-180deg) rotateY(-179.9deg);
     background-color: #fff; } }
 
 @keyframes cascade-fade-in {
