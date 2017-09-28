@@ -14,7 +14,7 @@ This document provides information on capabilities enabled by the VS Code Projec
     - [Download a copy](#download-a-copy)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
-    - [Getting started, sharing, and joining](getting-started.md)
+    - [Getting started and managing collaboration sessions](getting-started.md)
     - [Visual Studio features](collab-vs.md)
 
 ## Recap: Owners and participants
