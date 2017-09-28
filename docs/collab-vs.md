@@ -7,6 +7,8 @@ This document provides information on capabilities enabled by the Visual Studio 
 - [Collaborative editing](#collaborative-editing)
 - [Collaborative debugging](#collaborative-debugging)
 - [Additional capabilities](#additional-capabilities)
+    - [Shared terminals / command prompts](#shared-terminals--command-prompts)
+    - [Download a copy](#download-a-copy)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
     - [Getting started, sharing, and joining](getting-started.md)
