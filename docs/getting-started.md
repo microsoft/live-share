@@ -12,6 +12,7 @@
 - [More information](#more-information)
     - [Visual Studio features](collab-vs.md)
     - [Visual Studio Code features](collab-vscode.md)
+
 ## Owners and Participants
 All collaboration activities in Project Cascade involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but is the content being shared as well.  Participants then are anyone that joins an owner's collaboration session.
 
@@ -25,7 +26,7 @@ During the Project Cascade Private Preview both owners and participants will nee
 
 Requirements:
  - **Visual Studio 2017 Update 5** - Any edition of Visual Studio 2017 with update 5 installed (15.5) running on Windows 7, 8.1, or 10.
- - **VS Code** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/roadmap.md#supported-os-versions)._
+ - **VS Code** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
 
 Download and setup instructions:
 
