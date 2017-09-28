@@ -121,9 +121,9 @@ To jump start the conversation, the following are some limitations of particular
 
 ### Shared terminals / command prompts
 
-Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default to ensure security, getting one going is simple. 
+Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default to ensure security, the collaboration session owner can get one going quickly. 
 
-1. Click on the share state item in the status bar
+1. First, the owner should click on the share state item in the status bar.
 
     ![VS Code share state item](media/vscode-share-state.png)<br />
 
