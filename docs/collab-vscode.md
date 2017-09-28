@@ -160,18 +160,31 @@ That's it!
 
 Optionally, participants can see a list of currently shared ports (by name if specified) by clicking on the share state status bar item as above and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
 
-![VS Code access local server](media/vscode-access-local-server.png)<br />
+![VS Code access local server](media/vscode-access-shared-server.png)<br />
 
 To **stop** sharing a local server, the owner simply needs to click the share state status bar item as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
 
 ### Download a copy
 
-Words
+As a participant, you may get to a point where you need to get a snapshot of the code for either local debugging purposes or to do some deep investigation while the owner is away. This is easy to do.
 
+1. Click on the share state status bar item.
+
+    ![VS Code share state item](media/vscode-share-state.png)<br />
+
+2. Select "Download a Copy"
+
+    ![VS Code share local server](media/vscode-download-copy.png)<br />
+
+3. Select the destination folder.
+
+4. Wait for the download to complete.
+
+That's it! You can now unzip the result in a different location. Note that this copy is not kept in sync with the owner's edits.
 
 ### Settings in settings.json
 
-app port
+** TODO **
 
 ## Additional known participant limitations
 
