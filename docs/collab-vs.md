@@ -46,6 +46,7 @@ To jump start the conversation, the following are some limitations of particular
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
 - The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/7))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
 
 ## Collaborative Debugging
 Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
@@ -77,17 +78,18 @@ Since participants could get disconnected for some reason or may wish to stop de
 ![VS Debug button](media/vs-debug-button-participant.png)
 
 ### Known co-debugging participant limitations
-There are currently some shortcomings participants will experience while co-debugging. (Owners do not have these limitations.)
+There are currently some shortcomings participants will experience while building, running, or co-debugging. (Owners do not have these limitations.)
 
 As before, we want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-debug%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
 - Participants cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/project-cascade/issues/21))
-- Participants can see saved .diagsession results but cannot see or use profilers ([Up-vote](https://github.com/Microsoft/project-cascade/issues/19))
+- Participants open and see saved .diagsession results but cannot see or use profilers directly ([Up-vote](https://github.com/Microsoft/project-cascade/issues/19))
 - Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
-- Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
-- Debugging features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
+- Participants are not able to use the Task Runner Explorer to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
+- Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
 
 ## Additional Capabilities
 
@@ -120,13 +122,20 @@ As a participant, you may get to a point where you need to get a snapshot of the
 That's it! You can now unzip the result in a different location. Note that this copy is not kept in sync with the owner's edits.
 
 ## Additional known participant limitations
-In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/project-cascade/feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
+In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  
+
+Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/project-cascade/feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
+
+
+To jump start the conversation, the following are some additional limitations of particular note for _participants_ (only):
 
 - Participants cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/project-cascade/issues/15))
 - Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/project-cascade/issues/16))
-- Participants cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/project-cascade/issues/20))
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/9))
 - Visual Studio users cannot currently share additional local servers (ports) with participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/23))
+- Participants cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/project-cascade/issues/20))
+- Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/project-cascade/issues/18))
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
 
 ## More information
 
