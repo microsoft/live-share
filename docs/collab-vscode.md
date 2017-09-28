@@ -92,17 +92,15 @@ Since participants could get disconnected for some reason or may wish to stop de
 
 After the application is running (even if not being debugged), the owner can then opt to set up a connection to the running web application for all participants and automatically open a browser by:
 
-1. Clicking on the "broadcast" icon in the status bar 
+1. Clicking on the sign in / share state item in the status bar 
     
-    ![Screen shot showing status bar icon](media/vscode-status-bar.png)
+    ![VS Code share state item](media/vscode-share-state.png)
 
 2. Selecting "Open Shared Browser".
 
-    ![Screen shot of menu with share browser selected](media/vscode-status-bar.png)
+    ![Screen shot of menu with share browser selected](media/vscode-share-browser.png)
 
 3. If not set in settings.json or already specified, you will be prompted to enter the port the application is running on.
-
-    ![Screen shot of selecting port](media/vscode-status-bar.png)
 
 The system default browser is then started on all participant's machines connected to the running application.
 
