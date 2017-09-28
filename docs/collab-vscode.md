@@ -37,7 +37,7 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon to see the name of the person in the session and their locaiton. Simply clicking on this same icon to jumps the active editor to their exact location. 
 
-![Screen shot showing user status bar item](media/vscode-user-status.png)
+![Screen shot showing user status bar icon](media/vscode-user-status.png)
 
 If there is more than one other person in the collaboration session, clicking on the icon presents a list of those currently in the collaboration session. You may then select a collaborator from the list to jump to their location.
 
@@ -95,9 +95,9 @@ Since participants could get disconnected for some reason or may wish to stop de
 
 After the application is running (even if not being debugged), the owner can then opt to set up a connection to the running web application for all participants and automatically open a browser by:
 
-1. Clicking on the sign in / share state item in the status bar 
+1. Clicking on the sign in / share state icon in the status bar 
     
-    ![VS Code share state item](media/vscode-share-state.png)
+    ![VS Code share state icon](media/vscode-share-state.png)
 
 2. Selecting "Share Web App in Browser".
 
@@ -126,9 +126,9 @@ To jump start the conversation, the following are some limitations of particular
 
 Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default to ensure security, the collaboration session owner can get one going quickly. 
 
-1. First, the owner should click on the share state item in the status bar.
+1. First, the owner should click on the share state icon in the status bar.
 
-    ![VS Code share state item](media/vscode-share-state.png)<br />
+    ![VS Code share state icon](media/vscode-share-state.png)<br />
 
 2. Selected "New Shared Terminal".
 
@@ -144,9 +144,9 @@ Modern development often involves the use of certain command line tools. Project
 
 From time to time, as a collaboration session owner you may find that you want to share additional local servers or services with participants. This can range from other RESTful end-points to databases or other servers.  For security purposes, only servers running on ports you specify are available to other participants. Fortunately, its easy to add another one.
 
-1. First, the owner should click on the share state status bar item.
+1. First, the owner should click on the share state status bar icon.
 
-    ![VS Code share state item](media/vscode-share-state.png)<br />
+    ![VS Code share state icon](media/vscode-share-state.png)<br />
 
 2. Select "Share Local Server"
 
@@ -158,19 +158,19 @@ From time to time, as a collaboration session owner you may find that you want t
 
 That's it!
 
-Optionally, participants can see a list of currently shared ports (by name if specified) by clicking on the share state status bar item as above and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
+Optionally, participants can see a list of currently shared ports (by name if specified) by clicking on the share state status bar icon as above and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
 
 ![VS Code access local server](media/vscode-access-shared-server.png)<br />
 
-To **stop** sharing a local server, the owner simply needs to click the share state status bar item as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
+To **stop** sharing a local server, the owner simply needs to click the share state status bar icon as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
 
 ### Download a copy
 
 As a participant, you may get to a point where you need to get a snapshot of the code for either local debugging purposes or to do some deep investigation while the owner is away. This is easy to do.
 
-1. Click on the share state status bar item.
+1. Click on the share state status bar icon.
 
-    ![VS Code share state item](media/vscode-share-state.png)<br />
+    ![VS Code share state icon](media/vscode-share-state.png)<br />
 
 2. Select "Download a Copy"
 
