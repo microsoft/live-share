@@ -66,11 +66,11 @@ Don't see your favorite IDE/editor? [Up-vote your favorite tool!](https://github
 
 ### Signing in from Visual Studio
 
-By default Visual Studio uses the your personalization account so if you're already logged in with the same account you can skip this step. Otherwise sign as you would normally.
+By default Visual Studio uses the your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
 
 ![VS sign in](media/vs-sign-in-button.png) 
 
-If you are registered for the private preview (owners) you should sign in using the same credentials you used to register. If you need to use a different sign-in for Visual Studio than your personalization account (e.g. you registered for the private preview using a GitHub account) you can go to **Tools &gt; Options &gt; Project Cascade** and sign in that way instead.
+However, if you are registered for the private preview (owners) you will need to sign in using the same credentials you used to register. If you need to use a different sign-in for Visual Studio than your personalization account (e.g. you registered for the private preview using a GitHub account) you can go to **Tools &gt; Options &gt; Project Cascade** and sign in that way instead.
 
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're enrolled in the private preview (owners), use the same credentials you used to register.
@@ -82,7 +82,7 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 1. **Register with the Project Cascade service**
 
-    In order to start a collaboration session while Project Cascade is in private preview, you'll need to be registered for the Private Preview. Visual Studio users should use their [personalization account] credentials(https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) to register.
+    In order to start a collaboration session while Project Cascade is in private preview, you'll need to be registered for the Private Preview. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register.
 
     > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
