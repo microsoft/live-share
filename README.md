@@ -22,8 +22,8 @@ _Interested in other languages or platforms? [Let us know!](https://github.com/M
 ### Documentation 
 - [Getting started and managing collaboration sessions](docs/getting-started.md)
 - Co-editing, Co-debugging, and more
-    - [Visual Studio features](docs/collab-vs.md) 
-    - [Visual Studio Code features](docs/collab-vscode.md) 
+    - [Visual Studio docs](docs/collab-vs.md) 
+    - [Visual Studio Code docs](docs/collab-vscode.md) 
 - [Roadmap](docs/roadmap.md)
 - [FAQ](docs/faq.md)
 
