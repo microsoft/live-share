@@ -54,7 +54,7 @@ To jump start the conversation, the following are some limitations of particular
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
 - The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/7))
 - Participants are not able to use VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
 
 ## Collaborative debugging
 
@@ -122,7 +122,7 @@ To jump start the conversation, the following are some limitations of particular
 - Participants cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/project-cascade/issues/21))
 - Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))    
 - Participants are not able to use VS Code's task support to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
 - Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/8))
 
 ## Additional capabilities
@@ -204,7 +204,7 @@ To jump start the conversation, the following are some additional limitations of
 - Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/project-cascade/issues/16))
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/8))
 - Participants are not able to use VS Code's task support against the owner's content ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals-command-prompts).
+    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
 
 ## More information
 
