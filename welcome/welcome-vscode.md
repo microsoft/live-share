@@ -6,7 +6,7 @@ Thanks for installing Project Cascade for Visual Studio Code! Team collaboration
 
 You need to be registered in the Project Cascade Private Preview in order to start a collaboration session and share your code. If you're just looking to join a collaboration session, [jump below](#joining). Otherwise follow these steps:
 
-### 1. Sign-in from within your IDE/editor
+### 1. Sign into Project Cascade
 
 Click on the "Sign in" status bar item and follow the instructions. When prompted, be sure use the creditals you used to register when signing in. 
 
