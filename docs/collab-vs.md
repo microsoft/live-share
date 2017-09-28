@@ -107,7 +107,17 @@ Modern development often involves the use of certain command line tools. Project
 
 ### Download a copy
 
-???
+As a participant, you may get to a point where you need to get a snapshot of the code for either local debugging purposes or to do some deep investigation while the owner is away. This is easy to do.
+
+1. Click on the share state button in the upper right corner.
+
+2. Select "Download a Copy"
+
+3. Select the destination folder.
+
+4. Wait for the download to complete.
+
+That's it! You can now unzip the result in a different location. Note that this copy is not kept in sync with the owner's edits.
 
 ## Additional known participant limitations
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/project-cascade/feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
