@@ -68,7 +68,7 @@ _Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft
 ### Documentation 
 - [Getting started](docs/getting-started.md)
 - [Visual Studio features](docs/collab-vs.md)
-- [Visual Studio Code features](docs/collab-vscode,md)
+- [Visual Studio Code features](docs/collab-vscode.md)
 - [Roadmap](docs/roadmap.md)
 - [FAQ](docs/faq.md)
 
