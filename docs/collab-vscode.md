@@ -1,3 +1,4 @@
+
 # Visual Studio Code Enabled Features
 
 This document provides information on capabilities enabled by the VS Code Project Cascade extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS Code and other tools.
@@ -8,6 +9,9 @@ This document provides information on capabilities enabled by the VS Code Projec
 - [Collaborative debugging](#collaborative-debugging)
    - [Sharing the running application in a browser](#sharing-the-running-application-in-a-browser)
 - [Additional capabilities](#additional-capabilities)
+    - [Shared terminals / command prompts](#shared-terminals--command-prompts)
+    - [Sharing a local server](#sharing-a-local-server)
+    - [Download a copy](#download-a-copy)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
     - [Getting started, sharing, and joining](getting-started.md)
