@@ -13,9 +13,6 @@ Project Cascade is a code name for a collection of experimental developer servic
 _Interested in other languages or platforms? [Let us know!](https://github.com/Microsoft/project-cascade/issues/12)_
 
 ## Collaborative Coding
-_Real-time collaborative development, using your own tools_
-
-Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
 ### Quick Starts
 
