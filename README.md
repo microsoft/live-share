@@ -20,9 +20,10 @@ _Interested in other languages or platforms? [Let us know!](https://github.com/M
 - [Join a collaboration session](welcome/welcome-joiner.md) (no need to register or be accepted)
 
 ### Documentation 
-- [Getting started](docs/getting-started.md)
-- [Visual Studio features](docs/collab-vs.md)
-- [Visual Studio Code features](docs/collab-vscode.md)
+- [Getting started and managing collaboration sessions](docs/getting-started.md)
+- Co-editing, Co-debugging, and more
+    - [Visual Studio features](docs/collab-vs.md) 
+    - [Visual Studio Code features](docs/collab-vscode.md) 
 - [Roadmap](docs/roadmap.md)
 - [FAQ](docs/faq.md)
 
