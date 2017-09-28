@@ -121,7 +121,7 @@ To jump start the conversation, the following are some limitations of particular
 
 ### Shared terminals / command prompts
 
-Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default, getting one going is simple. 
+Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default to ensure security, getting one going is simple. 
 
 1. Click on the share state item in the status bar
 
@@ -131,11 +131,11 @@ Modern development often involves the use of certain command line tools. Project
 
     ![VS Code terminal menu option](media/vscode-new-terminal.png)
 
-At this point a shared terminal session with the VS developer command prompt is started on the owners machine and all participants have access.
+3. At this point a shared terminal session with the VS developer command prompt is started on the owners machine and all participants have access and can enter commands.
 
-![VS Code shared terminal](media/vscode-terminal.png)
+    ![VS Code shared terminal](media/vscode-terminal.png)
 
-The owner can terminate the terminal session at any time by simply closing the tool window.
+4. The owner can terminate the terminal session at any time by simply closing the tool window or typing exit.
 
 ### Download a copy
 
