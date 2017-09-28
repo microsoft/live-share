@@ -23,7 +23,7 @@ While Project Cascade is in private preview, you'll need to request access to **
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
-If you're a Visual Studio user be sure to use your [personalization account](https://msdn.microsoft.com/en-us/library/dn457348.aspx) credentials to register to make sign in fast!
+If you're a Visual Studio user be sure to use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register to make sign in fast!
 
 **[Register now!](http://aka.ms/project-cascade/register)**
 

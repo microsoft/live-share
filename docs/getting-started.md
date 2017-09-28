@@ -82,7 +82,7 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 1. **Register with the Project Cascade service**
 
-    In order to start a collaboration session while Project Cascade is in private preview, you'll need to be registered for the Private Preview. Visual Studio users should use their personalization account credentials to register.
+    In order to start a collaboration session while Project Cascade is in private preview, you'll need to be registered for the Private Preview. Visual Studio users should use their [personalization account] credentials(https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) to register.
 
     > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 

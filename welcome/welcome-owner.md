@@ -1,6 +1,8 @@
 # Welcome to the Project Cascade Private Preview!
 
-If you're here, you've probably been **accepted into the private preview**! (If not [register now](http://aka.ms/project-cascade/register) or see how to [join a collaboration session](welcome-joiner.md)!) Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas. 
+If you're here, you've probably been **accepted into the private preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[register now](http://aka.ms/project-cascade/register) so you can share**!
+
+Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas. 
 
 Just follow these steps to start sharing:
 
