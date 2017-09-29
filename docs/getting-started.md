@@ -97,7 +97,7 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 3. **Start a collaboration session**
 
-    Once you've been accepted into the preview, open a folder, project, or solution and simply click "Share" within your tool and you'll get a link that allows others to join in a collaboration session on the contents of the related folders. Once this button is clicked, an invite link is automatically copied to the clipboard when the session starts for your convienence. 
+    Once you've been accepted into the preview, open a folder, project, or solution and simply click "Share" within your tool and you'll get a link that allows others to join in a collaboration session on the contents of the related folders. Once this button is clicked, an invite link is automatically generated and copied to the clipboard for you to use. 
 
     ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
@@ -153,6 +153,8 @@ You can also manually join from within VS or VS Code (rather than clicking on an
 
     In **VS**, go to **File > Join Collaboration Session**.
 
+    ![VS File > Join Collaboration Session](media/vs-join.png) <br />
+
     For **VS Code**, you can click on the sign in/share state status bar item after signing in and select "Join Collaboration Session".
 
     ![VS Code after sign in status bar item](media/vscode-after-signin-status-bar.png) <br />
@@ -175,11 +177,11 @@ Lots of things! Co-editing and co-debugging for example! Take a look at the arti
 
 If the owner closes their tool, goes offline, or simply reboots, the collaboration session will be automatically restart when the owner opens the same folder, project, or solution that was shared. To stop sharing completely and end the collaboration session, you can use the share state button (in the upper right hand corner in VS or the status bar in VS Code) to stop sharing and end the collaboration session.
 
-In VS:
+**In VS:**
 
 ![VS stop sharing](media/vs-stop-sharing.png) 
 
-In VS Code:
+**VS Code:**
 
 ![VS Code share state item](media/vscode-share-state.png) <br />
 ![VS Code end collaboration session menu option](media/vscode-end-collaboration.png)
