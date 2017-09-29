@@ -73,7 +73,7 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 However, if you are registered for the private preview (owners) and want to share you should sign in using the same credentials you used to register. 
 
-**Visual Studio:** If you need to use a different sign-in than your VS personalization account (e.g. you registered for the private preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Project Cascade** and sign in that way instead on an ongoing basis. You can also use different crednetials when sharing Right-Clicking on the Share button and selecting **Share As..**.
+**Visual Studio:** If you need to use a different sign-in than your VS personalization account (e.g. you registered for the private preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Project Cascade** to switch credentials. You can also use different crednetials when sharing by right clicking on the "Share" button and selecting **Share As..**.
 
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're enrolled in the private preview (owners), use the same credentials you used to register.
