@@ -49,7 +49,7 @@ Once installed, start up your tool sign-in to the Project Cascade service with t
 
 ### 3. Start a collaboration session
 
-Open a folder, project, or solution, and simply click "Share" within your tool and you'll get a link that allows others to join in a collaboration session on the contents of the related folders. 
+Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard that, when opened in a browser, allows others to join a new collaboration session that shares contents of these folders with them. 
 
 ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 	
