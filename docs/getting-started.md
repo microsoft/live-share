@@ -194,11 +194,12 @@ The "Share" button in the upper right hand corner in VS and the Project Cascade 
 | State | Visual Studio | Visual Studio Code | Description | 
 |-------|---------------|--------------------|-------------|
 | Nothing Shared | | | No active collaboration session and nothing is shared. |
-| Starting  | | | A new collaboration session is starting. |
-| Sharing | | | Collaboration session active, content is shared. |
-| Joining | | | Joining an existing collaboration session. |
-| Connected | | | Joined and connected to an active collaboration session and recieving shared content. |
-| Disconnected | | | Joined, but connection to collaboration session has been interrupted. Shared content is not available. |
+| Owner: Connecting  | | | A new collaboration session is starting. |
+| Owner: Sharing | | | Collaboration session active, content is shared. |
+| Owner: Disconnected | | | Disconnected from the collaboration service (e.g. due to network availablity).
+| Participant: Joining | | | Joining an existing collaboration session. |
+| Participant: Connected | | | Joined and connected to an active collaboration session and recieving shared content. |
+| Participant: Disconnected | | | Joined, but connection to collaboration session has been interrupted. Shared content is not available. |
 
 ## More Information
 
