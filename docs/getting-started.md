@@ -96,8 +96,8 @@ After downloading and installing Project Cascade, follow these steps to start a 
     IF you have not already, sign into Project Cascade. See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). Be sure to use the same sign in information you used to register.
 
 3. **Start a collaboration session**
-
-    Once you've been accepted into the preview, open a folder, project, or solution and simply click "Share" within your tool and you'll get a link that allows others to join in a collaboration session on the contents of the related folders. Once this button is clicked, an invite link is automatically generated and copied to the clipboard for you to use. 
+    
+    Once you've been accepted into the preview, open a folder, project, or solution, and simply click the "Share" button or status bar icon within your tool and an invite link will be automatically copied to your clipboard. When opened in a browser, this link will allows others to join a new collaboration session that shares contents of these folders with them. 
 
     ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
