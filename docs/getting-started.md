@@ -138,8 +138,6 @@ After downloading and installing Project Cascade, follow these steps to join a c
     
     If you have not done so already, you will be prompted to sign into the Project Cascade service. See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). You **do not need to be registered** for the private preview to participate in a collaboration session.
 
-    Any use of your sign in information complies with [Microsoft's privacy statement]().
-
 4. **Collaborate!**
 
    That's it!! In a few moments you'll be connected and you can start collaborating. You will see the "Share" button (VS) / status bar icons (VS Code) transition to convey a "Share State". See [share states](#share-states) for more information on what this looks like.
