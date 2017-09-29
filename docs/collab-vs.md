@@ -98,6 +98,8 @@ To jump start the conversation, the following are some limitations of particular
 
 ### Shared terminals / command prompts
 
+**TODO:** Update with UX details as known
+
 Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default for security reasons, the collaboration session owner can get one going quickly. 
 
 1. The owner can click on the share state button in the upper-right hand corner and selected "Shared Terminal". 
@@ -126,6 +128,8 @@ That's it!
 To **stop** sharing a local server, the owner simply needs to hare state button in the upper right corner as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
 
 ### Download a copy
+
+**TODO:** Update with UX details as known
 
 As a participant, you may get to a point where you need to get a snapshot of the code for either local debugging purposes or to do some deep investigation while the owner is away. This is easy to do.
 

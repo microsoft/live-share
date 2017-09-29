@@ -70,7 +70,7 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 ![VS sign in](media/vs-sign-in-button.png) 
 
-However, if you are registered for the private preview (owners) you will need to sign in using the same credentials you used to register. If you need to use a different sign-in for Visual Studio than your personalization account (e.g. you registered for the private preview using a GitHub account) you can go to **Tools &gt; Options &gt; Project Cascade** and sign in that way instead.
+However, if you are registered for the private preview (owners) and want to share you should sign in using the same credentials you used to register. If you need to use a different sign-in for Visual Studio than your personalization account (e.g. you registered for the private preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Project Cascade** and sign in that way instead on an ongoing basis or use ["Share As..."](#starting-a-collaboration-session).
 
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're enrolled in the private preview (owners), use the same credentials you used to register.
@@ -98,7 +98,11 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
     ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
-    After the session has started, you can get this same link again by clicking on the share status button (VS) / status bar item (VS Code) and selecting "Copy Link".
+    > **Tip:** If you need to use alternate credentials for this sharing session only in Visual Studio, you can right click on the Share button and select "Share As...".
+
+    If you need to get this link again after you've started sharing, you can copy it to the clipboarda again follows:
+	- VS: Click on the Share status button and select "Copy Link"  
+	- VS Code: Click the share state status bar icon and select "Start a Collaboration Session" again.
 
 4. **Send someone the invite link**
 
