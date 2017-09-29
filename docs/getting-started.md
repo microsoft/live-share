@@ -70,7 +70,9 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 ![VS sign in](media/vs-sign-in-button.png) 
 
-However, if you are registered for the private preview (owners) and want to share you should sign in using the same credentials you used to register. If you need to use a different sign-in for Visual Studio than your personalization account (e.g. you registered for the private preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Project Cascade** and sign in that way instead on an ongoing basis or use ["Share As..."](#starting-a-collaboration-session).
+However, if you are registered for the private preview (owners) and want to share you should sign in using the same credentials you used to register. 
+
+**Visual Studio:** If you need to use a different sign-in than your VS personalization account (e.g. you registered for the private preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Project Cascade** and sign in that way instead on an ongoing basis. You can also use different crednetials when sharing Right-Clicking on the Share button and selecting **Share As..**.
 
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're enrolled in the private preview (owners), use the same credentials you used to register.
@@ -94,15 +96,27 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 3. **Start a collaboration session**
 
-    Once you've been accepted into the preview, open a folder, project, or solution and simply click "Share" within your tool and you'll get a link that allows others to join in a collaboration session on the contents of the related folders. 
+    Once you've been accepted into the preview, open a folder, project, or solution and simply click "Share" within your tool and you'll get a link that allows others to join in a collaboration session on the contents of the related folders. Once this button is clicked, an invite link is automatically copied to the clipboard when the session starts for your convienence. 
 
     ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
-    > **Tip:** If you need to use alternate credentials for this sharing session only in Visual Studio, you can right click on the Share button and select "Share As...".
+    **Visual Studio:** If you need to use alternate credentials for this sharing session only, you can right click on the Share button and select "Share As..." instead.
 
-    If you need to get this link again after you've started sharing, you can copy it to the clipboarda again follows:
-	- VS: Click on the Share status button and select "Copy Link"  
-	- VS Code: Click the share state status bar icon and select "Start a Collaboration Session" again.
+	You will also see the "Share" button (VS) / status bar icons (VS Code) transition to convey a "Share State". States include:
+
+	| State | Visual Studio | Visual Studio Code | Description | 
+	|-------|---------------|--------------------|-------------|
+	| Nothing Shared | | | No active collaboration session and nothing is shared. |
+	| Starting  | | | A new collaboration session is starting. |
+	| Sharing | | | Collaboration session active, content is shared. |
+	| Joining | | | Joining an existing collaboration session. |
+	| Connected | | | Joined and connected to an active collaboration session and recieving shared content. |
+	| Disconnected | | | Joined, but connection to collaboration session has been interrupted. Shared content is not available. |
+
+    Note that if you need to get the invite link again after you've started sharing, you can copy it to the clipboarda once again by doing the following:
+
+	- **VS:** Click on the Share / Share State button and select "Copy Link"  
+	- **VS Code**: Click the share state status bar icon and select "Start a Collaboration Session" again.
 
 4. **Send someone the invite link**
 
