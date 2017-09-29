@@ -37,8 +37,6 @@ While ultimately an extension, follow these directions for installing Project Ca
 
 By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-_Don't see your favorite IDE/editor? [Let us know!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback._
-
 ### 2. Sign-in from within your IDE/editor
 
 Once installed, start up your tool sign-in to the Project Cascade service with the same creditals you used to register.

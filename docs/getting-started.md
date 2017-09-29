@@ -61,8 +61,6 @@ By downloading and using Project Cascade, you agree to the [license terms](http:
 
 > **Tip:** Be sure to start up VS or VS Code once with Project Cascade installed before attempting to join a collaboration session as this wires up the handler for the join web page.
 
-Don't see your favorite IDE/editor? [Up-vote your favorite tool!](https://github.com/Microsoft/project-cascade/issues/24) We plan to add support for additional tools based on community feedback.
-
 ## Signing into Project Cascade from within your IDE/editor
 
 ### Signing in from Visual Studio
