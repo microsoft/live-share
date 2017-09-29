@@ -15,6 +15,20 @@
   text-align: center;
 }
 
+  .main__inner__link {
+    background-color: #477a32;
+    color: #fff;    
+    display: block;
+    padding: 10px;
+  }
+
+  .main__inner__avatar {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+  }
+
     .main h1 {
       font-size: 25px;
       font-weight: bold;
@@ -50,6 +64,45 @@
 
 .cascade-join-blocks.is-spinner .cascade-spinner {
   display: block; }
+
+.cascade-install-cascade-block {
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+  .cascade-install-cascade-block__heading {
+    font-size: 14px;
+    padding: 2px;
+  }
+
+  .cascade-install-cascade-block__install-button {
+    background-color: #fff;
+    padding: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  } 
+
+  .cascade-install-cascade-block__install-button img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .cascade-install-cascade-block__install-button img:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  .cascade-open-cascade-block {
+    margin-top: 50px;
+    padding: 10px;
+    line-height: 30px;
+  }
+
+.cascade-open-cascade-block__disclaimer {
+  font-size: 12px;
+  margin-top: 20px;
+}
 
 @keyframes cascade-spinner-keyframes {
   0% {
