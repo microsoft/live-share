@@ -57,7 +57,18 @@
 
         // TODO: fetch user from token
         document.body.setAttribute('data-authorized', true);
+        
     }
+
+    document.getElementById("select-tool").addEventListener("change", function(ev) {
+      var el = ev.target;
+      if(el.value == "other") {
+          document.getElementById("other").style.display = "block";
+      } else {
+          document.getElementById("other").style.display = "none";                                
+      }  
+});
+
 
     init();
 })();

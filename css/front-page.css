@@ -41,6 +41,18 @@
   align-items: center;
 }
 
+.hero__registration-top-button {
+  background-color: #477a32;
+  color: #fff;
+  display: flex;    
+  font-weight: bold;
+  font-size: 2rem;    
+  margin: 2rem 1rem 0;    
+  padding: 1.5rem 5rem;
+  text-decoration: none;
+  align-items: center;
+}
+
 .hero__registration-button {
   background-color: #477a32;
   color: #fff;
@@ -132,3 +144,71 @@
     body[data-authorized="true"] #success + .glimpse-header-section__buttons {
       display: none;
 }
+
+.reg-form {
+  background-color: #fff;  
+  text-align: center;
+}  
+
+.reg-form h3 {
+  color: #373277;  
+  font-size: 3rem;
+  width: 700px;
+  font-weight: 400;
+  margin-top: 2rem;
+  line-height: 6rem;
+  text-align: center;
+}
+
+.input-fields {
+  padding: 20px;
+}
+
+.input-fields * {
+  display: block;
+  text-align: center;
+}
+
+.instructions {
+  color: #555;
+  font-size: 15px;
+  width: 600px;
+  margin-bottom: 10px;
+}  
+
+.input-fields textarea {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}  
+
+.input-fields select {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.input-fields label {
+  padding-bottom: 5px;
+}
+
+.input-fields input {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}  
+
+#other {
+  display: none;
+}  
+
+.main-form {
+  border: 1px solid;
+  padding: 20px;
+  background-color: #373277;    
+  color: #fff;  
+  font-size: 15px;
+}
+

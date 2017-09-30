@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Project Cascade by Microsoft</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <base href="https://microsoft.github.io/project-cascade/" />
+
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
@@ -97,17 +98,8 @@
         <img class="hero__image" src="img/hero.gif" title="Real-time collaborative development" />
         <h2 class="hero__subtitle">Project Cascade is currently in preview (US only), but you can register to get early access!</h2>
         <div class="hero__registration">
-            <a class="hero__registration-button" href="https://ci.dev.project-cascade.visualstudio.com/auth/identity/github?redirect=http://microsoft.github.io/project-cascade#success">
-                <svg class="hero__registration-button__icon" viewBox="0 0 30 30">
-                    <use xlink:href="#github-path"></use>
-                </svg>
-                Request access with GitHub
-            </a>
-            <a class="hero__registration-button" href="https://ci.dev.project-cascade.visualstudio.com/auth/identity/microsoft?redirect=http://microsoft.github.io/project-cascade#success">
-                <svg class="hero__registration-button__icon" viewBox="0 0 30 30">
-                    <use xlink:href="#vs-path"></use>
-                </svg>
-                Request access with a Microsoft Account
+            <a class="hero__registration-top-button" href="#registration">
+                Register now!
             </a>
         </div>
         <p class="hero__disclaimer">
@@ -116,7 +108,7 @@
     </header>
 
     <div id="success">
-        <h1>Thanks for registering! We'll let you know as soon as you can start collaborating.</h1>
+        <h1>Thanks for registering! We'll send you an email as soon as you've been accepted and can start collaborating.</h1>
     </div>
 
     <!-- Value proposition statements -->
@@ -131,8 +123,7 @@
                     <em>without being forced to look at the exact same file, viewport, stack frame, etc.</em>
                 </p>
                 <aside class="value-prop__detail">
-                    We plan to add support for more tools and platforms (<a href="https://github.com/Microsoft/project-cascade/issues/24">let us know your favorite!</a>),
-                    but currently, Project Cascade supports the following:
+                    The Project Cascade private preview currently supports collaboration using these tools and platforms:
                     <ul>
                         <li>Visual Studio (ASP.NET/ASP.NET Core and Node.js projects)</li>
                         <li>Visual Studio Code (ASP.NET Core and Node.js projects)</li>
@@ -166,6 +157,48 @@
             </div>
         </div>
     </section>
+
+
+    <a name="registration"></a>
+    <section class="reg-form hero">
+        <h3>Project Cascade Private Preview Registration</h2>
+        <p class="instructions">Help shape the future of team collaboration! Register for the private preview by entering the information below and signing in with a GitHub or Microsoft Account .</p>
+        <div class="main-form">
+                <p class="input-fields">     
+                    <label for="tool">Which tool are you most interested in using during the private preview?</label>
+                    <select name="tool" id="select-tool">
+                        <option value="vs">Visual Studio 2017 Update 5 (Windows)</option>
+                        <option value="vscode-win">Visual Studio Code (Windows)
+                        <option value="vscode-mac">Visual Studio Code (macOS Sierra)</option>
+                        <option value="other">Other...</option>
+                    </select>
+                    <span id="other">
+                        <label for="othertool">Which other tool or tool version do are you interested in using?</label>
+                        <input type="text" name="othertool"> </input>                    
+                    </span>
+                    <label for="useitfor">What interests you most about Project Cascade?</label>
+                    <textarea id="useitfor" rows="4"></textarea>            
+                </p>       
+                <p>Visual Studio users should register with their <a href="https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio">personalization account</a> to make sign in easy!</p>
+                <div class="hero__registration">
+                        <a class="hero__registration-button js-request-button" href="https://ci.dev.project-cascade.visualstudio.com/auth/identity/microsoft?redirect=http://microsoft.github.io/project-cascade#success">
+                            <svg class="hero__registration-button__icon " viewBox="0 0 30 30">
+                                <use xlink:href="#vs-path"></use>
+                            </svg>
+                            Register with a Microsoft Account
+                        </a>
+                        <a class="hero__registration-button js-request-button" href="https://ci.dev.project-cascade.visualstudio.com/auth/identity/github?redirect=http://microsoft.github.io/project-cascade#success">
+                        <svg class="hero__registration-button__icon" viewBox="0 0 30 30">
+                            <use xlink:href="#github-path"></use>
+                        </svg>
+                        Register with GitHub
+                    </a>
+                </div>        
+        </div>
+        <p class="hero__disclaimer">
+            By registering, you agree to the <a href="https://aka.ms/project-cascade/license">license terms</a> and <a href="https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx">privacy statement</a>.
+        </p>
+</section>
 
     <script defer async src="js/front-page.js"></script>
 
