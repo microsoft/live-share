@@ -25,15 +25,6 @@
   font-size: 18px;
 }
 
-.hero__disclaimer {
-  font-size: 14px;
-  margin: 20px 0 30px 0;
-}
-
-  .hero__disclaimer a {
-    text-decoration: underline;
-  }
-
 .hero__registration {
   display: flex;
   flex-direction: row;
@@ -47,7 +38,7 @@
   display: flex;    
   font-weight: bold;
   font-size: 2rem;    
-  margin: 2rem 1rem 0;    
+  margin: 2rem 1rem 2rem;    
   padding: 1.5rem 5rem;
   text-decoration: none;
   align-items: center;
@@ -70,6 +61,12 @@
   height: 30px;
   margin-right: 2rem;  
   width: 30px;
+}
+
+
+.hero__preview {
+  font-size: 14px;
+  margin: 20px 0 0 0;
 }
 
 .value-prop {
@@ -148,6 +145,10 @@
 .reg-form {
   background-color: #fff;  
   text-align: center;
+  padding: 100px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }  
 
 .reg-form h3 {
@@ -211,4 +212,14 @@
   color: #fff;  
   font-size: 15px;
 }
+
+.reg-form__disclaimer {
+  font-size: 14px;
+  margin: 20px 0 30px 0;
+}
+
+  .reg-form__disclaimer a {
+    text-decoration: underline;
+  }
+
 
