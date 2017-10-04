@@ -45,7 +45,7 @@ Once installed, start up your tool sign-in to the Project Cascade service with t
 
 > **Tip:** Need to use a different sign-in for Visual Studio than your personalization account? Go to Tools &gt; Options &gt; Project Cascade or use "Share As..." in the next step.
 
-### 3. Start a collaboration session
+### 3. Start a collaboration session and share your content
 
 Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them. 
 
