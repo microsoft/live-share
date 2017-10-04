@@ -9,7 +9,7 @@
    - [Manually joining](#manually-joining)
 - [What can I do with a collaboration session?](#what-can-i-do-with-a-collaboration-session)
 - [Ending a collaboration session](#ending-a-collaboration-session)
-- [Session states](#share-states)
+- [Session states](#session-states)
 - [More information](#more-information)
     - [Visual Studio features](collab-vs.md)
     - [Visual Studio Code features](collab-vscode.md)
