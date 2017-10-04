@@ -4,7 +4,7 @@
 - [Owners and participants](#owners-and-participants)
 - [Downloading and installing](#downloading-and-installing)
 - [Signing into Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor)
-- [Starting a collaboration session](#starting-a-collaboration-session)
+- [Starting a collaboration session](#starting-a-collaboration-session-and-sharing)
 - [Joining a collaboration session](#joining-a-collaboration-session)
    - [Manually joining](#manually-joining)
 - [What can I do with a collaboration session?](#what-can-i-do-with-a-collaboration-session)
@@ -78,7 +78,7 @@ For Visual Studio Code, simply click on the "Sign in" status bar item and follow
 
  ![VS Code Download](media/vscode-sign-in-button.png)
 
-## Starting a collaboration session
+## Starting a collaboration session and sharing
 After downloading and installing Project Cascade, follow these steps to start a collaboration session and invite a colleague to work with you.
 
 1. **Register with the Project Cascade service**
