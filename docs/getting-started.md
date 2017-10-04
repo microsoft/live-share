@@ -193,7 +193,7 @@ The "Share" button in the upper right hand corner in VS and the Project Cascade 
 |-------|---------------|--------------------|-------------|
 | Nothing Shared | | ![VS Code after sign in status bar item](media/vscode-status-share.png) | No active collaboration session and nothing is shared. |
 | Owner: Connecting  | | ![VS Code after sign in status bar item](media/vscode-status-connecting.png)| A new collaboration session is starting. |
-| Owner: Sharing | | ![VS Code after sign in status bar item](media/vscode-status-sharing.png)| Collaboration session active, content is shared. |
+| Owner: Connected & Sharing | | ![VS Code after sign in status bar item](media/vscode-status-sharing.png)| Collaboration session active, content is shared. |
 | Participant: Joining | | ![VS Code after sign in status bar item](media/vscode-status-joining.png)| Joining an existing collaboration session. |
 | Participant: Connected | | ![VS Code after sign in status bar item](media/vscode-status-sharing.png) | Joined and connected to an active collaboration session and recieving shared content. |
 |Reconnecting | | ![VS Code after sign in status bar item](media/vscode-status-reconnecting.png)| Connection interrupted but attempting to reconnect. |
