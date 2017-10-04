@@ -187,7 +187,9 @@ If the owner closes their tool, goes offline, or simply reboots, the collaborati
 This will stop the collaboration session and any participants will be notified that they will no longer be able to access the content. Given nothing is persisted on disk, the participants do not need to preform any additional cleanup.
 
 ## Session states
-The "Share" button in the upper right hand corner in VS and the Project Cascade status bar icons in Visual Studio Code alter their appearance to represent the current state of any active collaboration sessions you are involved with so you can understand at a glance whether your are sharing or recieving content from a collaborator.  The following are the states you will typically see.
+After you have started or joined collaboration session and have access to shared content, the "Share" button in the upper right hand corner in VS and the Project Cascade status bar icons in Visual Studio Code update their appearance to reflect the state of the active collaboration session. 
+
+The following are the states you will typically see:
 
 | State | Visual Studio | Visual Studio Code | Description | 
 |-------|---------------|--------------------|-------------|
