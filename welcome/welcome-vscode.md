@@ -12,11 +12,13 @@ Click on the "Sign in" status bar item and follow the instructions. When prompte
 
 ![VS Code Download](media/vscode-sign-in-button.png)
 
-### 2. Start a collaboration session
+### 2. Start a collaboration session and share your content
 
-Simply click "Share" within your tool and you'll get a link that allows others to join in your collaboration session. 
+Open a folder, project, or solution, and simply click "Share" and an invite link will be automatically copied to your clipboard. 
 
 ![VS Share Button](media/vscode-share-button.png)
+
+When opened in a browser, this link allows others to join a collaboration session that shares contents of these folders with them.
 
 ### 3. Send someone the invite link
 
