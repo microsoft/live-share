@@ -192,11 +192,11 @@ The "Share" button in the upper right hand corner in VS and the Project Cascade 
 | State | Visual Studio | Visual Studio Code | Description | 
 |-------|---------------|--------------------|-------------|
 | Inactive | | ![VS Code status: inactive](media/vscode-status-share.png) | No active collaboration session and nothing is shared. |
-| Owner: Starting  | | ![VS Code status: starting](media/vscode-status-sharing.png)| A new collaboration session is starting and sharing will begin shortly. |
-| Owner: Active | | ![VS Code status: Active - Owner ](media/vscode-status-active.png)| Collaboration session active, content is shared. |
-| Participant: Joining | | ![VS Code status: Joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
-| Participant: Active | | ![VS Code status: Active - Participant](media/vscode-status-active.png) | Joined and connected to an active collaboration session and recieving shared content. |
-| Reconnecting | | ![VS Code status: reconnecting](media/vscode-status-reconnecting.png)| Connection interrupted but attempting to reconnect. |
+| Owner: Starting Session | | ![VS Code status: starting](media/vscode-status-sharing.png)| A collaboration session is starting and sharing will begin shortly. |
+| Owner: Session Active | | ![VS Code status: Active - Owner ](media/vscode-status-active.png)| Collaboration session active, content is shared. |
+| Participant: Joining Session | | ![VS Code status: Joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
+| Participant: Session Active | | ![VS Code status: Active - Participant](media/vscode-status-active.png) | Joined and connected to an active collaboration session and recieving shared content. |
+| Reconnecting | | ![VS Code status: reconnecting](media/vscode-status-reconnecting.png)| Connection to service or owner interrupted, but attempting to reconnect. |
 | Disconnected | | ![VS Code status: disconnected](media/vscode-status-disconnected.png)| Connection to service or owner has been interrupted. Shared content is not available to participants. |
 ## More Information
 
