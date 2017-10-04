@@ -1,10 +1,10 @@
-
 # Visual Studio Code Enabled Features
 
 This document provides information on capabilities enabled by the VS Code Project Cascade extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS Code and other tools.
 
 **Table of Contents**
 - [Recap: Owners and participants](#recap-owners-and-participants)
+- [Command palette and scoped command menu](#command-palette-and-scoped-command-menu)
 - [Collaborative editing](#collaborative-editing)
 - [Collaborative debugging](#collaborative-debugging)
    - [Sharing the running application in a browser](#sharing-the-running-application-in-a-browser)
@@ -23,6 +23,16 @@ All collaboration activities in Project Cascade involve a single "owner" and one
 Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more. Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_. 
 
 The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session, the content is no longer available to any participant. While content will not be available to participants if the owner's machine is offline/shut down during a session, the collaboration session will automatically start up again for participants when the owner's machine is back online and the tool is re-opened.  
+
+## Command palette and scoped command menu
+Nearly all Project Cascade functions are available from the Visual Studio Code "Command Palette" that can be accesed using Ctrl + Shift + P. You can find a complete list of commands by typing "cascade".
+
+However, since this list can get long, you may find it easier to take advantage of a scoped command menu available from the status bar. Clicking on the sign in / session state icon in the status bar will immediatley bring up a contextualized list of commands that are available for you to use.
+
+![VS Code session state icon](media/vscode-share-state.png)
+
+This document will assume you are using this command menu but note that these commands are also available from the VS Code command palette if you prefer.
+
 ## Collaborative editing
 
 Once a participant has joined a collaboration session all collaborators will immediately be able to see each others edits and highlights in real-time. 
