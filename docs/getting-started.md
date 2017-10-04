@@ -191,13 +191,13 @@ The "Share" button in the upper right hand corner in VS and the Project Cascade 
 
 | State | Visual Studio | Visual Studio Code | Description | 
 |-------|---------------|--------------------|-------------|
-| Nothing Shared | | | No active collaboration session and nothing is shared. |
-| Owner: Connecting  | | | A new collaboration session is starting. |
-| Owner: Sharing | | | Collaboration session active, content is shared. |
-| Owner: Disconnected | | | Disconnected from the collaboration service (e.g. due to network availablity).
-| Participant: Joining | | | Joining an existing collaboration session. |
-| Participant: Connected | | | Joined and connected to an active collaboration session and recieving shared content. |
-| Participant: Disconnected | | | Joined, but connection to collaboration session has been interrupted. Shared content is not available. |
+| Nothing Shared | | ![VS Code after sign in status bar item](media/vscode-status-share.png) | No active collaboration session and nothing is shared. |
+| Owner: Connecting  | | ![VS Code after sign in status bar item](media/vscode-status-connecting.png)| A new collaboration session is starting. |
+| Owner: Sharing | | ![VS Code after sign in status bar item](media/vscode-status-sharing.png)| Collaboration session active, content is shared. |
+| Participant: Joining | | ![VS Code after sign in status bar item](media/vscode-status-joining.png)| Joining an existing collaboration session. |
+| Participant: Connected | | ![VS Code after sign in status bar item](media/vscode-status-sharing.png) | Joined and connected to an active collaboration session and recieving shared content. |
+|Reconnecting | | ![VS Code after sign in status bar item](media/vscode-status-reconnecting.png)| Connection interrupted but attempting to reconnect. |
+| Disconnected | | ![VS Code after sign in status bar item](media/vscode-status-disconnected.png)| Connection to service or owner has been interrupted. Shared content is not available to participants. |
 
 ## More Information
 
