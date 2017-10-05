@@ -49,6 +49,8 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ![Screen shot showing highlighting](media/vscode-highlight.png)
 
+### Moving to a collaborator's edit location
+
 Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon to see the name of the person in the session and their locaiton. Simply clicking on this same icon to jumps the active editor to their exact location. 
 
 ![Screen shot showing user status bar icon](media/vscode-user-status.png)
@@ -56,6 +58,18 @@ Since you may want to quickly jump to where another collaborator is located, if 
 If there is more than one other person in the collaboration session, clicking on the icon presents a list of those currently in the collaboration session. You may then select a collaborator from the list to jump to their location.
 
 ![Screen shot showing list of collaborators](media/vscode-list-collaborators.png)
+
+### Pinning to a collaborator's edit location
+
+At times the person you are collaborating with may need to show you a few different places in code to explain a problem or possible solution. While you could repeatedly jump to their location as described above you can also "pin" a tab set to their location.
+
+Simply click on the pin icon in the upper right of the tab set. As above, if more than one other person is in the collaboration session you'll be asked to select the participant you want to follow.
+
+![VS Code pin](media/vscode-pin.png)
+
+The pin is for a tab set so you can use split view to have a set that is pinned and a set that is unpinned if you so desire.
+
+![VS Code pin in split view](media/vscode-pin-split.png)
 
 ### Known co-editing participant limitations
 While Project Cascade's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
