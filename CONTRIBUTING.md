@@ -17,8 +17,7 @@ Visual Studio has a built in feedback mechanism via the "Report a Problem..." to
 
 ![Image of Report a Problem...](docs/media/vs-feedback.png) 
 
-> **Tip:** You may be able to save yourself some time by simply up-voting an existing problem report.  You may search for existing issues using "**Project Cascade**" in the Visual Studio Feedback tool. Be aware your problem may be related to multiple clients and therefore is logged in the GitHub [issue repository](https://github.com/Microsoft/project-cascade/issues).
-
+> **Tip:** You may be able to save yourself some time by simply up-voting an existing problem report.  You may search for existing issue in the Visual Studio Feedback tool but be aware your problem may be related to multiple clients and therefore is logged in the GitHub [issue repository](https://github.com/Microsoft/project-cascade/issues).
 
 Note that after your problem report is filed, it may be converted to a [GitHub issue](https://github.com/Microsoft/project-cascade/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
 
