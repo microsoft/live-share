@@ -151,7 +151,7 @@ You can also manually join from within VS or VS Code (rather than clicking on an
 
     In **VS**, go to **File > Join Collaboration Session**.
 
-    ![VS File > Join Collaboration Session](media/vs-join.png) <br />
+    ![VS File Join Collaboration Session](media/vs-join.png)<br />
 
     For **VS Code**, you can click on the sign in/session state status bar item after signing in and select "Join Collaboration Session".
 
