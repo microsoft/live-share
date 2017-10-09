@@ -25,9 +25,9 @@ Owners can use all of their tools and services as they would normally but partic
 The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session, the content is no longer available to any participant. While content will not be available to participants if the owner's machine is offline/shut down during a session, the collaboration session will automatically start up again for participants when the owner's machine is back online and the tool is re-opened.  
 
 ## Command palette and scoped command menu
-Nearly all Project Cascade functions are available from the Visual Studio Code "Command Palette" that can be accesed using Ctrl + Shift + P. You can find a complete list of commands by typing "cascade".
+Nearly all Project Cascade functions are available from the Visual Studio Code "Command Palette" that can be accessed using Ctrl + Shift + P. You can find a complete list of commands by typing "cascade".
 
-However, since this list can get long, you may find it easier to take advantage of a scoped command menu available from the status bar. Clicking on the sign in / session state icon in the status bar will immediatley bring up a contextualized list of commands that are available for you to use.
+However, since this list can get long, you may find it easier to take advantage of a scoped command menu available from the status bar. Clicking on the sign in / session state icon in the status bar will immediately bring up a contextualized list of commands that are available for you to use.
 
 ![VS Code session state icon](media/vscode-share-state.png)
 
@@ -70,6 +70,13 @@ Simply click on the pin icon in the upper right of the tab set. As above, if mor
 The pin is for a tab set so you can use split view to have a set that is pinned and a set that is unpinned if you so desire.
 
 ![VS Code pin in split view](media/vscode-pin-split.png)
+
+To make it easy to hop in and out of pinning, the tab set is un-pinned if any of the following occurs:
+1. You move the scroll bar
+2. You edit
+3. You click the pin icon again
+
+Simply click the pin icon again to pin once again.
 
 ### Known co-editing participant limitations
 While Project Cascade's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
