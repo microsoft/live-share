@@ -37,9 +37,8 @@ Download and setup instructions:
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
        - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
-       - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        - Download and run the Project Cascade installer. <br />
-       - Start Visual Studio after install to complete setup.<br />
+       - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
     </td>
 </tr>
