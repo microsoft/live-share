@@ -204,10 +204,6 @@ Optionally, participants can see a list of currently shared ports (by name if sp
 
 To **stop** sharing a local server, the owner simply needs to click the session state status bar icon as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
 
-### Settings in settings.json
-
-** TODO **
-
 ## Additional known participant limitations
 
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  

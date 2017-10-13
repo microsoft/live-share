@@ -98,11 +98,9 @@ To jump start the conversation, the following are some limitations of particular
 
 ### Shared terminals / command prompts
 
-**TODO:** Update with UX details as known
-
 Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default for security reasons, the collaboration session owner can get one going quickly. 
 
-1. The owner can click on the session state button in the upper-right hand corner and selected "Shared Terminal". 
+1. The owner can click on the session state button in the upper-right hand corner and selected "Start Shared Terminal". 
 
     ![VS Shared Terminal Button](media/vs-terminal-button.png)
 
@@ -112,26 +110,24 @@ Modern development often involves the use of certain command line tools. Project
 
 3.  The owner can terminate the terminal session at any time by simply closing the tool window.
 
-
 ### Sharing a local server
-
-**TODO:** Update with UX details as known
 
 From time to time, as a collaboration session owner you may find that you want to share additional local servers or services with participants. This can range from other RESTful end-points to databases or other servers.  For security purposes, only servers running on ports you specify are available to other participants. Fortunately, its easy to add another one.
 
-1. Click on the session state button in the upper right corner and select "Share Local Server"
+1. Click on the session state button in the upper right corner and select "Manage Shared Local Servers"
 
-2. Enter the port number the server is running on and optionally a name.
+2. In the dialog that appears, click "Add" and enter the port number the server is running on locally and a name.
 
-That's it!
+That's it! 
 
-To **stop** sharing a local server, the owner simply needs to hare state button in the upper right corner as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
+Participants will now be able to use this same port from their machine to access the server or service if it is free. Otherwise it will be automatically mapped to a free port. You can view shared local servers by clicking the session state button in the upper right corner and selecting "View Shared Local Servers."
+
+To **stop** sharing a local server, the owner simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the port they want to stop sharing.
 
 ## Additional known participant limitations
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  
 
 Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/project-cascade/feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
-
 
 To jump start the conversation, the following are some additional limitations of particular note for _participants_ (only):
 
