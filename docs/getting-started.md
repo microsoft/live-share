@@ -128,7 +128,7 @@ After downloading and installing Project Cascade, follow these steps to join a c
 
     After installing Project Cascade for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
 
-    > **Troubleshooting Tip:** Be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](#manually-joining).
+    > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](#manually-joining).
 
 3. **Sign-in from within your IDE/editor**
     

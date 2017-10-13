@@ -59,9 +59,9 @@ Note that the **person you invite does not need to register or be accepted in th
 
 ### 5. Collaborate!
 
-That's it!! What to learn more about what you can do? Check out our documentation.
+That's it!! Want to learn more about what you can do? Check out our documentation.
 
-- [Getting started](../docs/getting-started.md)
+- [Getting started and managing collaboration sessions](../docs/getting-started.md)
 - [Visual Studio features](../docs/collab-vs.md)
 - [Visual Studio Code features](../docs/collab-vscode.md)
 - [Quick start: Joining](welcome-joiner.md)

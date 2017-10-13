@@ -5,8 +5,8 @@
 <td style="width: 140px; text-align: center;"><a href="http://aka.ms/project-cascade"><img src="docs/media/cascade-icon.png" style="width: 128px; height: 128px;" /></a></td>
 <td><strong>Project Cascade - Developer services to achieve greater confidence at speed</strong><br />
 
-<i>Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The initial focus is on <u>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</u> with more coming in the future.</i><br /><br />
-Interested in checking it out and contributing to the future of the project? <strong><a href="http://aka.ms/project-cascade">Learn more and register now!</a></strong>
+<i>Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The initial focus is on <u>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</u> with more coming in the future. It is currently in a limited, private preview.<br /><br />
+Interested in contributing to the future of the project? <strong><a href="http://aka.ms/project-cascade">Learn more and register now!</a></strong></i>
 </td>
 </tr></table>
 
