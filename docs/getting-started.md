@@ -23,7 +23,7 @@ The advantage is that the entire solution is available the moment a participant 
 
 ## Downloading and installing
 
-During the Project Cascade Private Preview both owners and participants will need to download a custom build of VS Code and an installer for Visual Studio. Project Cascade is ultimately intended to  be a pure extension, so this is not the long term delivery mechanism.
+During the Project Cascade experimental private preview both owners and participants will need to download a custom build of VS Code and/or an installer for Visual Studio. Project Cascade is ultimately intended to be a pure extension, so this is not the long term delivery mechanism.
 
 Requirements:
  - **Visual Studio 2017 Update 5** - Any edition of Visual Studio 2017 with update 5 installed (15.5) running on Windows 7, 8.1, or 10.
@@ -81,15 +81,15 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 1. **Register with the Project Cascade service**
 
-    In order to start a collaboration session while Project Cascade is in private preview, you'll need to be registered for the Private Preview. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register.
+    In order to start a collaboration session while Project Cascade is in experimental private preview, you'll need to be registered and accepted into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register.
 
     > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
-    If you have not done so, **[register now!](http://aka.ms/project-cascade)**
+    If you have not done so, **[register now!](http://aka.ms/project-cascade)** 
 
 2. **Sign-in from within your IDE/editor**
     
-    IF you have not already, sign into Project Cascade. See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). Be sure to use the same sign in information you used to register.
+    If you have not already, sign into Project Cascade. See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). Be sure to use the same sign in information you used to register.
 
 3. **Start a collaboration session**
     
@@ -101,7 +101,7 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 	You will also see the "Share" button (VS) / status bar icons (VS Code) transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
 
-    Note that if you need to get the invite link again after you've started sharing, you can copy it to the clipboarda once again by doing the following:
+    Note that if you need to get the invite link again after you've started sharing, you can copy it to the clipboard once again by doing the following:
 
 	- **VS:** Click on the Share / Session State button and select "Copy Link"  
 	- **VS Code**: Click the session state status bar icon and select "Start a Collaboration Session" again.
@@ -156,7 +156,7 @@ You can also manually join from within VS or VS Code (rather than clicking on an
     ![VS Code after sign in status bar item](media/vscode-after-signin-status-bar.png) <br />
     ![VS Code join collaboration session](media/vscode-join.png) <br />
 
-    Paste in the invite URL you were sent and hit go.
+    Paste in the invite URL you were sent and confirm.
 
 3. **Collaborate!**
 
@@ -171,7 +171,7 @@ Lots of things! Co-editing and co-debugging for example! Take a look at the arti
 
 ## Ending a collaboration session
 
-If the owner closes their tool, goes offline, or simply reboots, the collaboration session will be automatically restart when the owner opens the same folder, project, or solution that was shared. To stop sharing completely and end the collaboration session, you can use the session state button (in the upper right hand corner in VS or the status bar in VS Code) to stop sharing and end the collaboration session.
+If the owner closes their tool, goes offline, or simply reboots, the collaboration session will be automatically restarted when the owner opens the same folder, project, or solution that was shared. To stop sharing completely and end the collaboration session, you can use the session state button (in the upper right hand corner in VS or the status bar in VS Code) to stop sharing and end the collaboration session.
 
 **In VS:**
 

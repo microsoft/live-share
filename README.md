@@ -1,34 +1,30 @@
+
+# Project Cascade Documentation & Feedback
+
 <table style="width: 100%; border-style: none;"><tr>
-<td style="width: 140px; text-align: center;"><img src="docs/media/cascade-icon.png" style="width: 128px; height: 128px;" /></td>
+<td style="width: 140px; text-align: center;"><a href="http://aka.ms/project-cascade"><img src="docs/media/cascade-icon.png" style="width: 128px; height: 128px;" /></a></td>
 <td><strong>Project Cascade - Developer services to achieve greater confidence at speed</strong><br />
-<i>Project Cascade is currently running an early private preview focused on collaborative coding features with additional capabilities coming on line in the coming months. Interested in checking it out and contributing to the future of the project?</i><br />
-<br />
-<a href="http://aka.ms/project-cascade">Learn more and register now!</a>
+
+<i>Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The initial focus is on <u>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</u> with more coming in the future.</i><br /><br />
+Interested in checking it out and contributing to the future of the project? <strong><a href="http://aka.ms/project-cascade">Learn more and register now!</a></strong>
 </td>
 </tr></table>
 
-# Project Cascade Documentation & Feedback
-Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The initial focus is on **Node.js and ASP.NET/ASP.NET Core based web applications and services** with more coming in the future.
-
-_Interested in other languages or platforms? [Let us know!](https://github.com/Microsoft/project-cascade/issues/12)_
-
-## Collaborative Coding
-
-### Quick Starts
+## Quick Starts
 
 - [Start a collaboration session](welcome/welcome-owner.md) (after you've been accepted into the preview)
 - [Join a collaboration session](welcome/welcome-joiner.md) (no need to register or be accepted)
 
-### Documentation 
+## Documentation 
 - [Getting started and managing collaboration sessions](docs/getting-started.md)
 - [Visual Studio enabled features](docs/collab-vs.md) 
 - [Visual Studio Code enabled features](docs/collab-vscode.md) 
 - [Roadmap](docs/roadmap.md)
 - [FAQ](docs/faq.md)
 
-### Register with the Project Cascade service
+## Register with the Project Cascade service
 
-While Project Cascade is in private preview, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
+While Project Cascade is in its experimental private preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
@@ -36,8 +32,8 @@ If you're a Visual Studio user be sure to use your [personalization account](htt
 
 **[Register now!](http://aka.ms/project-cascade/register)**
 
-### Download and install Project Cascade for your tool
-While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
+## Download and install Project Cascade for your tool
+While ultimately an extension, follow these directions for installing Project Cascade for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>

@@ -7,7 +7,7 @@ Team collaboration should be so quick and natural, that it becomes harder not to
 Just follow these steps to start sharing:
 
 ### 1. Download and install Project Cascade for your tool
-While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
+While ultimately an extension, follow these directions for installing Project Cascade for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>

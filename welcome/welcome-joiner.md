@@ -6,7 +6,7 @@ If you're here, one of the Project Cascade Private Preview members has probably 
 Just follow these steps to join a collaboration session:
 
 ### 1. Download and install Project Cascade for your tool
-While ultimately an extension, follow these directions for installing Project Cascade during the Private Preview. 
+While ultimately an extension, follow these directions for installing Project Cascade for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>
