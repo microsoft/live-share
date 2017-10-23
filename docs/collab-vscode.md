@@ -11,7 +11,6 @@ This document provides information on capabilities enabled by the VS Code Visual
 - [Additional capabilities](#additional-capabilities)
     - [Shared terminals / command prompts](#shared-terminals--command-prompts)
     - [Sharing a local server](#sharing-a-local-server)
-    - [Download a copy](#download-a-copy)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
     - [Getting started and managing collaboration sessions](getting-started.md)
