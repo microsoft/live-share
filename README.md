@@ -1,14 +1,15 @@
 
-# Visual Studio Real-Time Collaboration Documentation & Feedback
+# Visual Studio Real-Time Collaboration Docs & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><a href="http://aka.ms/project-cascade"><img src="docs/media/cascade-icon.png" style="width: 128px; height: 128px;" /></a></td>
-<td><strong>Visual Studio Real-Time Collaboration - Developer services to achieve greater confidence at speed</strong><br />
-
-<i>Visual Studio Real-Time Collaboration is a service intended to enable developers to achieve greater confidence at speed by streamlining developer collaboration. The initial focus is on <u>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</u> with more coming in the future. It is currently in a limited, private preview.<br /><br />
-Interested in contributing to the future of the project? <strong><a href="http://aka.ms/project-cascade">Learn more and register now!</a></strong></i>
+<td><strong>Visual Studio Real-Time Collaboration</strong><br />
+<i>Visual Studio Real-Time Collaboration is a service designed to enable developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
+<strong><a href="http://aka.ms/project-cascade">Learn more and sign up for the preview now!</a></strong></i>
 </td>
 </tr></table>
+
+The initial focus of Visual Studio Real-Time Collaboraiton is <strong>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</strong> with more coming in the future. It is currently in a limited, private preview.
 
 ## Quick Starts
 
