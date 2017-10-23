@@ -1,13 +1,13 @@
-# Welcome to the Project Cascade Private Preview!
+# Welcome to the Visual Studio Real-Time Collaboration Private Preview!
 
 If you're here, you've probably been **accepted into the private preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[register now](http://aka.ms/project-cascade/register) so you can share**!
 
-Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Project Cascade makes it simple to get started, so that you can seamlessly begin sharing your work and ideas. 
+Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Real-Time Collaboration makes it simple to get started, so that you can seamlessly begin sharing your work and ideas. 
 
 Just follow these steps to start sharing:
 
-### 1. Download and install Project Cascade for your tool
-While ultimately an extension, follow these directions for installing Project Cascade for supported tools during the experimental private preview. 
+### 1. Download and install Visual Studio Real-Time Collaboration for your tool
+While ultimately an extension, follow these directions for installing Visual Studio Real-Time Collaboration for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>
@@ -15,7 +15,7 @@ While ultimately an extension, follow these directions for installing Project Ca
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
        - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
-       - Download and run the Project Cascade installer. <br />
+       - Download and run the Visual Studio Real-Time Collaboration installer. <br />
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
     </td>
@@ -33,15 +33,15 @@ While ultimately an extension, follow these directions for installing Project Ca
 </tr>
 </table>
 
-By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Real-Time Collaboration, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ### 2. Sign-in from within your IDE/editor
 
-Once installed, start up your tool sign-in to the Project Cascade service with the same creditals you used to register.
+Once installed, start up your tool sign-in to the Visual Studio Real-Time Collaboration service with the same creditals you used to register.
 
 ![VS Download](media/vs-sign-in-button.png) ![VS Code Download](media/vscode-sign-in-button.png)
 
-> **Tip:** Need to use a different sign-in for Visual Studio than your personalization account? Go to Tools &gt; Options &gt; Project Cascade or use "Share As..." in the next step.
+> **Tip:** Need to use a different sign-in for Visual Studio than your personalization account? Go to Tools &gt; Options &gt; Visual Studio Real-Time Collaboration or use "Share As..." in the next step.
 
 ### 3. Start a collaboration session and share your content
 

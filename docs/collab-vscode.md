@@ -1,6 +1,6 @@
 # Visual Studio Code Enabled Features
 
-This document provides information on capabilities enabled by the VS Code Project Cascade extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS Code and other tools.
+This document provides information on capabilities enabled by the VS Code Visual Studio Real-Time Collaboration extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS Code and other tools.
 
 **Table of Contents**
 - [Recap: Owners and participants](#recap-owners-and-participants)
@@ -18,14 +18,14 @@ This document provides information on capabilities enabled by the VS Code Projec
     - [Visual Studio features](collab-vs.md)
 
 ## Recap: Owners and participants
-All collaboration activities in Project Cascade involve a single "owner" and one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Participants are then anyone that joins an owner's collaboration session. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
+All collaboration activities in Visual Studio Real-Time Collaboration involve a single "owner" and one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Participants are then anyone that joins an owner's collaboration session. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
 
 Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more. Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_. 
 
 The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session, the content is no longer available to any participant. While content will not be available to participants if the owner's machine is offline/shut down during a session, the collaboration session will automatically start up again for participants when the owner's machine is back online and the tool is re-opened.  
 
 ## Command palette and scoped command menu
-Nearly all Project Cascade functions are available from the Visual Studio Code "Command Palette" that can be accessed using Ctrl + Shift + P. You can find a complete list of commands by typing "cascade".
+Nearly all Visual Studio Real-Time Collaboration functions are available from the Visual Studio Code "Command Palette" that can be accessed using Ctrl + Shift + P. You can find a complete list of commands by typing "cascade".
 
 However, since this list can get long, you may find it easier to take advantage of a scoped command menu available from the status bar. Clicking on the sign in / session state icon in the status bar will immediately bring up a contextualized list of commands that are available for you to use.
 
@@ -79,7 +79,7 @@ To make it easy to hop in and out of pinning, the tab set is un-pinned if any of
 Simply click the pin icon again to pin once again.
 
 ### Known co-editing participant limitations
-While Project Cascade's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
+While Visual Studio Real-Time Collaboration's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
 
 We want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-edit%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
@@ -93,7 +93,7 @@ To jump start the conversation, the following are some limitations of particular
 
 ## Collaborative debugging
 
-Project Cascade's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
+Visual Studio Real-Time Collaboration's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
 
 Using it simple. 
 
@@ -123,7 +123,7 @@ Each collaborator can investigate different variables, jump to different files i
 
 ![Animation of concurrent debugging](media/co-debug.gif)
 
-Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Project Cascade also allows them to re-attach by simply launching the debugging session via an the debug tab.
+Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Visual Studio Real-Time Collaboration also allows them to re-attach by simply launching the debugging session via an the debug tab.
 
 ![VS Debug button](media/vscode-debug-button-participant.png)
 
@@ -164,7 +164,7 @@ To jump start the conversation, the following are some limitations of particular
 
 ### Shared terminals / command prompts
 
-Modern development often involves the use of certain command line tools. Project Cascade provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default to ensure security, the collaboration session owner can get one going quickly. 
+Modern development often involves the use of certain command line tools. Visual Studio Real-Time Collaboration provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default to ensure security, the collaboration session owner can get one going quickly. 
 
 1. First, the owner should click on the session state icon in the status bar.
 

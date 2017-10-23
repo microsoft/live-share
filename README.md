@@ -1,11 +1,11 @@
 
-# Project Cascade Documentation & Feedback
+# Visual Studio Real-Time Collaboration Documentation & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><a href="http://aka.ms/project-cascade"><img src="docs/media/cascade-icon.png" style="width: 128px; height: 128px;" /></a></td>
-<td><strong>Project Cascade - Developer services to achieve greater confidence at speed</strong><br />
+<td><strong>Visual Studio Real-Time Collaboration - Developer services to achieve greater confidence at speed</strong><br />
 
-<i>Project Cascade is a code name for a collection of experimental developer services intended to enable developers to achieve greater confidence at speed. The initial focus is on <u>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</u> with more coming in the future. It is currently in a limited, private preview.<br /><br />
+<i>Visual Studio Real-Time Collaboration is a service intended to enable developers to achieve greater confidence at speed by streamlining developer collaboration. The initial focus is on <u>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</u> with more coming in the future. It is currently in a limited, private preview.<br /><br />
 Interested in contributing to the future of the project? <strong><a href="http://aka.ms/project-cascade">Learn more and register now!</a></strong></i>
 </td>
 </tr></table>
@@ -22,9 +22,9 @@ Interested in contributing to the future of the project? <strong><a href="http:/
 - [Roadmap](docs/roadmap.md)
 - [FAQ](docs/faq.md)
 
-## Register with the Project Cascade service
+## Register with the Visual Studio Real-Time Collaboration service
 
-While Project Cascade is in its experimental private preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
+While Visual Studio Real-Time Collaboration is in its experimental private preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
@@ -32,8 +32,8 @@ If you're a Visual Studio user be sure to use your [personalization account](htt
 
 **[Register now!](http://aka.ms/project-cascade/register)**
 
-## Download and install Project Cascade for your tool
-While ultimately an extension, follow these directions for installing Project Cascade for supported tools during the experimental private preview. 
+## Download and install Visual Studio Real-Time Collaboration for your tool
+While ultimately an extension, follow these directions for installing Visual Studio Real-Time Collaboration for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>
@@ -41,7 +41,7 @@ While ultimately an extension, follow these directions for installing Project Ca
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
        - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
-       - Download and run the Project Cascade installer. <br />
+       - Download and run the Visual Studio Real-Time Collaboration installer. <br />
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download-for-win.png"></a><br />
     </td>
@@ -59,7 +59,7 @@ While ultimately an extension, follow these directions for installing Project Ca
 </tr>
 </table>
 
-By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Real-Time Collaboration, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ## Contributing & Feedback
 Have a question or feedback? There are many ways to contribute.
@@ -80,7 +80,7 @@ By downloading and/or running the contents of this repository, you agree to the 
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
 ## License
-By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Real-Time Collaboration, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 However, the contents of this repository are licensed under the MIT License (MIT). 
 

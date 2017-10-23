@@ -3,7 +3,7 @@
 **Table of Contents**
 - [Owners and participants](#owners-and-participants)
 - [Downloading and installing](#downloading-and-installing)
-- [Signing into Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor)
+- [Signing into Visual Studio Real-Time Collaboration from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor)
 - [Starting a collaboration session](#starting-a-collaboration-session-and-sharing)
 - [Joining a collaboration session](#joining-a-collaboration-session)
    - [Manually joining](#manually-joining)
@@ -15,7 +15,7 @@
     - [Visual Studio Code features](collab-vscode.md)
 
 ## Owners and Participants
-All collaboration activities in Project Cascade involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but is the content being shared as well.  Participants then are anyone that joins an owner's collaboration session.
+All collaboration activities in Visual Studio Real-Time Collaboration involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but is the content being shared as well.  Participants then are anyone that joins an owner's collaboration session.
 
 Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_. 
 
@@ -23,7 +23,7 @@ The advantage is that the entire solution is available the moment a participant 
 
 ## Downloading and installing
 
-During the Project Cascade experimental private preview both owners and participants will need to download a custom build of VS Code and/or an installer for Visual Studio. Project Cascade is ultimately intended to be a pure extension, so this is not the long term delivery mechanism.
+During the Visual Studio Real-Time Collaboration experimental private preview both owners and participants will need to download a custom build of VS Code and/or an installer for Visual Studio. Visual Studio Real-Time Collaboration is ultimately intended to be a pure extension, so this is not the long term delivery mechanism.
 
 Requirements:
  - **Visual Studio 2017 Update 5** - Any edition of Visual Studio 2017 with update 5 installed (15.5) running on Windows 7, 8.1, or 10.
@@ -37,7 +37,7 @@ Download and setup instructions:
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
        - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
-       - Download and run the Project Cascade installer. <br />
+       - Download and run the Visual Studio Real-Time Collaboration installer. <br />
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
     </td>
@@ -55,11 +55,11 @@ Download and setup instructions:
 </tr>
 </table>
 
-By downloading and using Project Cascade, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Real-Time Collaboration, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-> **Tip:** Be sure to start up VS or VS Code once with Project Cascade installed before attempting to join a collaboration session as this wires up the handler for the join web page.
+> **Tip:** Be sure to start up VS or VS Code once with Visual Studio Real-Time Collaboration installed before attempting to join a collaboration session as this wires up the handler for the join web page.
 
-## Signing into Project Cascade from within your IDE/editor
+## Signing into Visual Studio Real-Time Collaboration from within your IDE/editor
 
 ### Signing in from Visual Studio
 
@@ -69,7 +69,7 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 However, if you are registered for the private preview (owners) and want to share you should sign in using the same credentials you used to register. 
 
-**Visual Studio:** If you need to use a different sign-in than your VS personalization account (e.g. you registered for the private preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Project Cascade** to switch credentials. You can also use different crednetials when sharing by right clicking on the "Share" button and selecting **Share As..**.
+**Visual Studio:** If you need to use a different sign-in than your VS personalization account (e.g. you registered for the private preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Visual Studio Real-Time Collaboration** to switch credentials. You can also use different crednetials when sharing by right clicking on the "Share" button and selecting **Share As..**.
 
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're enrolled in the private preview (owners), use the same credentials you used to register.
@@ -77,11 +77,11 @@ For Visual Studio Code, simply click on the "Sign in" status bar item and follow
  ![VS Code Download](media/vscode-sign-in-button.png)
 
 ## Starting a collaboration session and sharing
-After downloading and installing Project Cascade, follow these steps to start a collaboration session and invite a colleague to work with you.
+After downloading and installing Visual Studio Real-Time Collaboration, follow these steps to start a collaboration session and invite a colleague to work with you.
 
-1. **Register with the Project Cascade service**
+1. **Register with the Visual Studio Real-Time Collaboration service**
 
-    In order to start a collaboration session while Project Cascade is in experimental private preview, you'll need to be registered and accepted into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register.
+    In order to start a collaboration session while Visual Studio Real-Time Collaboration is in experimental private preview, you'll need to be registered and accepted into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register.
 
     > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
@@ -89,7 +89,7 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 2. **Sign-in from within your IDE/editor**
     
-    If you have not already, sign into Project Cascade. See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). Be sure to use the same sign in information you used to register.
+    If you have not already, sign into Visual Studio Real-Time Collaboration. See [signing into the Visual Studio Real-Time Collaboration from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). Be sure to use the same sign in information you used to register.
 
 3. **Start a collaboration session**
     
@@ -114,11 +114,11 @@ After downloading and installing Project Cascade, follow these steps to start a 
 
 5. **Share and collaborate**
 
-    That's it!! Your colleague can now use this link to download Project Cascade if they have not already and join the collaboration session with you!
+    That's it!! Your colleague can now use this link to download Visual Studio Real-Time Collaboration if they have not already and join the collaboration session with you!
 
 ## Joining a collaboration session
 
-After downloading and installing Project Cascade, follow these steps to join a collaboration session a collegue has sent you.
+After downloading and installing Visual Studio Real-Time Collaboration, follow these steps to join a collaboration session a collegue has sent you.
 
 1. **Start a discussion with the owner**
 
@@ -126,13 +126,13 @@ After downloading and installing Project Cascade, follow these steps to join a c
 
 2. **Click on the invite link / open the invite in your browser**
 
-    After installing Project Cascade for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Project Cascade enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
+    After installing Visual Studio Real-Time Collaboration for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Visual Studio Real-Time Collaboration enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
 
-    > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Project Cascade before opening/re-opening the invite page. Still having trouble? See [manually joining](#manually-joining).
+    > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Visual Studio Real-Time Collaboration before opening/re-opening the invite page. Still having trouble? See [manually joining](#manually-joining).
 
 3. **Sign-in from within your IDE/editor**
     
-    If you have not done so already, you will be prompted to sign into the Project Cascade service. See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). You **do not need to be registered** for the private preview to participate in a collaboration session.
+    If you have not done so already, you will be prompted to sign into the Visual Studio Real-Time Collaboration service. See [signing into the Visual Studio Real-Time Collaboration from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor). You **do not need to be registered** for the private preview to participate in a collaboration session.
 
 4. **Collaborate!**
 
@@ -143,7 +143,7 @@ You can also manually join from within VS or VS Code (rather than clicking on an
 
 1. **Sign-in from within your IDE/editor**
     
-    See [signing into the Project Cascade from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor) if you have not already. You do not need to be part of the private preview to join a collaboration session.
+    See [signing into the Visual Studio Real-Time Collaboration from within your IDE/editor](#signing-into-project-cascade-from-within-your-ideeditor) if you have not already. You do not need to be part of the private preview to join a collaboration session.
 
 2. **Manually enter the invite link**
 
@@ -185,7 +185,7 @@ If the owner closes their tool, goes offline, or simply reboots, the collaborati
 This will stop the collaboration session and any participants will be notified that they will no longer be able to access the content. Given nothing is persisted on disk, the participants do not need to preform any additional cleanup.
 
 ## Session states
-After you have started or joined collaboration session and have access to shared content, the "Share" button in the upper right hand corner in VS and the Project Cascade status bar icons in Visual Studio Code update their appearance to reflect the state of the active collaboration session. 
+After you have started or joined collaboration session and have access to shared content, the "Share" button in the upper right hand corner in VS and the Visual Studio Real-Time Collaboration status bar icons in Visual Studio Code update their appearance to reflect the state of the active collaboration session. 
 
 The following are the states you will typically see:
 
