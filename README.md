@@ -1,10 +1,10 @@
 
-# Visual Studio Real-Time Collaboration Docs & Feedback
+# Visual Studio Live Share Docs & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><a href="http://aka.ms/project-cascade"><img src="docs/media/cascade-icon.png" style="width: 128px; height: 128px;" /></a></td>
-<td><strong>Visual Studio Real-Time Collaboration</strong><br />
-<i>Visual Studio Real-Time Collaboration is a service designed to enable developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
+<td><strong>Visual Studio Live Share</strong><br />
+<i>Visual Studio Live Share is a service designed to enable developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
 <strong><a href="http://aka.ms/project-cascade">Learn more and sign up for the preview now!</a></strong></i>
 </td>
 </tr></table>
@@ -23,9 +23,9 @@ The initial focus of Visual Studio Real-Time Collaboraiton is <strong>real-time 
 - [Roadmap](docs/roadmap.md)
 - [FAQ](docs/faq.md)
 
-## Register with the Visual Studio Real-Time Collaboration service
+## Register with the Visual Studio Live Share service
 
-While Visual Studio Real-Time Collaboration is in its experimental private preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
+While Visual Studio Live Share is in its experimental private preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
 
 > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
 
@@ -33,8 +33,8 @@ If you're a Visual Studio user be sure to use your [personalization account](htt
 
 **[Register now!](http://aka.ms/project-cascade/register)**
 
-## Download and install Visual Studio Real-Time Collaboration for your tool
-While ultimately an extension, follow these directions for installing Visual Studio Real-Time Collaboration for supported tools during the experimental private preview. 
+## Download and install Visual Studio Live Share for your tool
+While ultimately an extension, follow these directions for installing Visual Studio Live Share for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>
@@ -42,7 +42,7 @@ While ultimately an extension, follow these directions for installing Visual Stu
     <td>
         <strong>Visual Studio 2017 Update 5</strong><br />
        - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
-       - Download and run the Visual Studio Real-Time Collaboration installer. <br />
+       - Download and run the Visual Studio Live Share installer. <br />
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
        <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download-for-win.png"></a><br />
     </td>
@@ -60,7 +60,7 @@ While ultimately an extension, follow these directions for installing Visual Stu
 </tr>
 </table>
 
-By downloading and using Visual Studio Real-Time Collaboration, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ## Contributing & Feedback
 Have a question or feedback? There are many ways to contribute.
@@ -81,7 +81,7 @@ By downloading and/or running the contents of this repository, you agree to the 
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
 ## License
-By downloading and using Visual Studio Real-Time Collaboration, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 However, the contents of this repository are licensed under the MIT License (MIT). 
 

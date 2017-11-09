@@ -1,12 +1,12 @@
 
-# Welcome to Visual Studio Real-Time Collaboration!
+# Welcome to Visual Studio Live Share!
 
-If you're here, one of the Visual Studio Real-Time Collaboration private preview members has probably **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Real-Time Collaboration makes it simple to get started. 
+If you're here, one of the Visual Studio Live Share private preview members has probably **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started. 
 
 Just follow these steps to join a collaboration session:
 
-### 1. Download and install Visual Studio Real-Time Collaboration for your tool
-While ultimately an extension, follow these directions for installing Visual Studio Real-Time Collaboration for supported tools during the experimental private preview. 
+### 1. Download and install Visual Studio Live Share for your tool
+While ultimately an extension, follow these directions for installing Visual Studio Live Share for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>
@@ -15,7 +15,7 @@ While ultimately an extension, follow these directions for installing Visual Stu
         <strong>Visual Studio 2017 Update 5</strong><br />
        - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
-       - Download and run the Visual Studio Real-Time Collaboration installer. <br />
+       - Download and run the Visual Studio Live Share installer. <br />
        - Start Visual Studio after install to complete setup.<br />
        <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
     </td>
@@ -33,22 +33,22 @@ While ultimately an extension, follow these directions for installing Visual Stu
 </tr>
 </table>
 
-By downloading and using Visual Studio Real-Time Collaboration, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ### 2. Start a discussion with the collaboration session owner
 
 It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. 
 
 ### 3. Open/re-open the invite link in your web browser
-After installing Visual Studio Real-Time Collaboration for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Visual Studio Real-Time Collaboration enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
+After installing Visual Studio Live Share for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
 
-> **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Visual Studio Real-Time Collaboration before opening/re-opening the invite page. Still having trouble? See [manually joining](../docs/getting-started.md#manually-joining) in our docs.
+> **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Visual Studio Live Share before opening/re-opening the invite page. Still having trouble? See [manually joining](../docs/getting-started.md#manually-joining) in our docs.
 
 ### 4. Sign-in from within your IDE/editor
 
 To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. 
 
-If you are using Visual Studio and have already signed into the tool, Visual Studio Real-Time Collaboration will automatically use your personalization account so you can skip this step!
+If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your personalization account so you can skip this step!
 
 ### 5. Collaborate!
 

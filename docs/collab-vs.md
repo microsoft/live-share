@@ -1,6 +1,6 @@
 # Visual Studio Enabled Features
 
-This document provides information on capabilities enabled by the Visual Studio Visual Studio Real-Time Collaboration extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS and other tools.
+This document provides information on capabilities enabled by the Visual Studio Visual Studio Live Share extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS and other tools.
 
 **Table of Contents**
 - [Recap: Owners and participants](#recap-owners-and-participants)
@@ -14,7 +14,7 @@ This document provides information on capabilities enabled by the Visual Studio 
     - [Getting started and managing collaboration sessions](getting-started.md)
     - [Visual Studio Code features](collab-vscode.md)
 ## Recap: Owners and participants
-All collaboration activities in Visual Studio Real-Time Collaboration involve a single "owner" and one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Participants are then anyone that joins an owner's collaboration session. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
+All collaboration activities in Visual Studio Live Share involve a single "owner" and one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Participants are then anyone that joins an owner's collaboration session. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
 
 Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more. Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_. 
 
@@ -36,7 +36,7 @@ Since you may want to quickly jump to where another collaborator is located, the
 ![Screen shot showing users in upper-right](media/vs-upper-right.png)
 
 ### Known co-editing participant limitations
-While Visual Studio Real-Time Collaboration's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
+While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
 
 We want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-edit%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
@@ -51,7 +51,7 @@ To jump start the conversation, the following are some limitations of particular
     - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
 
 ## Collaborative Debugging
-Visual Studio Real-Time Collaboration's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
+Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
 
 > **Note:** All traffic is secured and encrypted and access is limited to only those resources needed to facilitate debug and browser access to the web application. These resources are only available to participants of the collaboration session.
 
@@ -75,7 +75,7 @@ Each collaborator can investigate different variables, jump to different files i
 
 ![Animation of concurrent debugging](media/co-debug.gif)
 
-Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Visual Studio Real-Time Collaboration also allows them to re-attach by simply launching the debugging session via standard means.
+Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Visual Studio Live Share also allows them to re-attach by simply launching the debugging session via standard means.
 
 ![VS Debug button](media/vs-debug-button-participant.png)
 
@@ -97,7 +97,7 @@ To jump start the conversation, the following are some limitations of particular
 
 ### Shared terminals / command prompts
 
-Modern development often involves the use of certain command line tools. Visual Studio Real-Time Collaboration provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default for security reasons, the collaboration session owner can get one going quickly. 
+Modern development often involves the use of certain command line tools. Visual Studio Live Share provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default for security reasons, the collaboration session owner can get one going quickly. 
 
 1. The owner can click on the session state button in the upper-right hand corner and selected "Start Shared Terminal". 
 
