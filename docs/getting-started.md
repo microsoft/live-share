@@ -23,7 +23,7 @@ The advantage is that the entire solution is available the moment a participant 
 
 ## Downloading and installing
 
-During the Visual Studio Live Share experimental private preview both owners and participants will need to download a custom build of VS Code and/or an installer for Visual Studio. Visual Studio Live Share is ultimately intended to be a pure extension, so this is not the long term delivery mechanism.
+During the Visual Studio Live Share private limited preview both owners and participants will need to download a custom build of VS Code and/or an installer for Visual Studio. Visual Studio Live Share is ultimately intended to be a pure extension, so this is not the long term delivery mechanism.
 
 Requirements:
  - **Visual Studio 2017 Update 6** - Any edition of Visual Studio 2017 with update 6 installed (15.6) running on Windows 7, 8.1, or 10.
@@ -68,29 +68,29 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 ![VS sign in](media/vs-sign-in-button.png) 
 
-However, if you are registered for the private preview (owners) and want to share you should sign in using the same credentials you used to register. 
+However, if you've been accepted into for the private limited preview (owners) and want to share you should sign in using the same credentials you used to sign up. 
 
-**Visual Studio:** If you need to use a different sign-in than your VS personalization account (e.g. you registered for the private preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Visual Studio Live Share** to switch credentials. You can also use different crednetials when sharing by right clicking on the "Share" button and selecting **Share As..**.
+**Visual Studio:** If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), you can also go to **Tools &gt; Options &gt; Visual Studio Live Share** to switch credentials. You can also use different credentials when sharing by right clicking on the "Share" button and selecting **Share As..**.
 
 ### Signing in from Visual Studio Code
-For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're enrolled in the private preview (owners), use the same credentials you used to register.
+For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're been accepted into the private limited preview (owners), use the same credentials you used to sign up.
 
  ![VS Code Download](media/vscode-sign-in-button.png)
 
 ## Starting a collaboration session and sharing
 After downloading and installing Visual Studio Live Share, follow these steps to start a collaboration session and invite a colleague to work with you.
 
-1. **Register with the Visual Studio Live Share service**
+1. **Sign up for the Visual Studio Live Share service preview**
 
-    In order to start a collaboration session while Visual Studio Live Share is in experimental private preview, you'll need to be registered and accepted into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register.
+    In order to start a collaboration session while Visual Studio Live Share is in private limited preview, you'll need to be signed up and accepted into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to sign up.
 
-    > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
+    > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
 
-    If you have not done so, **[register now!](http://aka.ms/vsls-signup)** 
+    If you have not done so, **[sign up now!](http://aka.ms/vsls-signup)** 
 
-2. **Sign-in from within your IDE/editor**
+2. **Sign in from within your IDE/editor**
     
-    If you have not already, sign into Visual Studio Live Share. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). Be sure to use the same sign in information you used to register.
+    If you have not already, sign into Visual Studio Live Share. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). Be sure to use the same sign in information you used to sign up.
 
 3. **Start a collaboration session**
     
@@ -111,7 +111,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately working with them! 
 
-    > **Note:** The person you invite will be able to download, install needed tools, and join the collaboration session without having to register for the private preview.
+    > **Note:** The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the private limited preview.
 
 5. **Share and collaborate**
 
@@ -133,7 +133,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 3. **Sign-in from within your IDE/editor**
     
-    If you have not done so already, you will be prompted to sign into the Visual Studio Live Share service. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). You **do not need to be registered** for the private preview to participate in a collaboration session.
+    If you have not done so already, you will be prompted to sign into the Visual Studio Live Share service. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session.
 
 4. **Collaborate!**
 
@@ -144,7 +144,7 @@ You can also manually join from within VS or VS Code (rather than clicking on an
 
 1. **Sign-in from within your IDE/editor**
     
-    See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor) if you have not already. You do not need to be part of the private preview to join a collaboration session.
+    See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor) if you have not already. You do not need to be part of the private limited preview to join a collaboration session.
 
 2. **Manually enter the invite link**
 

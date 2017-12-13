@@ -1,6 +1,6 @@
-# Welcome to the Visual Studio Live Share Private Preview!
+# Welcome to the Visual Studio Live Share private limited preview!
 
-If you're here, you've probably been **accepted into the private preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[register now](http://aka.ms/vsls-signup) so you can share**!
+If you're here, you've probably been **accepted into the private limited preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[sign up now](http://aka.ms/vsls-signup)** and when accepted into the preview you can share!
 
 Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas. 
 
@@ -35,9 +35,9 @@ Just follow these steps to start sharing:
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-### 2. Sign-in from within your IDE/editor
+### 2. Sign in from within your IDE/editor
 
-Once installed, start up your tool sign-in to the Visual Studio Live Share service with the same creditals you used to register.
+Once installed, start up your tool sign-in to the Visual Studio Live Share service with the same creditals you used to sign up.
 
 ![VS Download](media/vs-sign-in-button.png) ![VS Code Download](media/vscode-sign-in-button.png)
 
@@ -55,7 +55,7 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately working with them! 
 
-Note that the **person you invite does not need to register or be accepted in the private preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
+Note that the **person you invite does not need to sign up or be accepted in the private limited preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 
 ### 5. Collaborate!
 

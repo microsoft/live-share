@@ -1,7 +1,7 @@
 
 # Welcome to Visual Studio Live Share!
 
-If you're here, one of the Visual Studio Live Share private preview members has probably **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started. 
+If you're here, one of the Visual Studio Live Share private limited preview members has probably **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started. 
 
 Just follow these steps to join a collaboration session:
 
@@ -65,4 +65,4 @@ Need help and not finding what you need in the docs?
 - Join the [Slack channel](http://live-share.slack.com) and chat with us!
 - Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions.
 
-Interested in joining the Private Preview so you can create collaboration sessions instead of just joining them? [Register now!](http://aka.ms/vsls-signup)
+Interested in joining the private limited preview so you can create collaboration sessions instead of just joining them? [Sign up now!](http://aka.ms/vsls-signup)

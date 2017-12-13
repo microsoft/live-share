@@ -9,12 +9,12 @@
 </td>
 </tr></table>
 
-The initial focus of Visual Studio Live Share is <strong>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</strong> with more coming in the future. It is currently in a limited, private preview.
+The initial focus of Visual Studio Live Share is <strong>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</strong> with more coming in the future. It is currently in a limited, private limited preview.
 
 ## Quick Starts
 
 - [Start a collaboration session](welcome/welcome-owner.md) (after you've been accepted into the preview)
-- [Join a collaboration session](welcome/welcome-joiner.md) (no need to register or be accepted)
+- [Join a collaboration session](welcome/welcome-joiner.md) (no need to sign up or be accepted in the preview)
 
 ## Documentation 
 - [Getting started and managing collaboration sessions](docs/getting-started.md)
@@ -22,15 +22,15 @@ The initial focus of Visual Studio Live Share is <strong>real-time collaborative
 - [Visual Studio Code enabled features](docs/collab-vscode.md) 
 - [FAQ](http://aka.ms/vsls-faq)
 
-## Register with the Visual Studio Live Share service
+## Sign up for the Visual Studio Live Share service preview
 
-While Visual Studio Live Share is in its experimental private preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
+While Visual Studio Live Share is in its private limited preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
 
-> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly register for the preview._
+> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
 
-If you're a Visual Studio user be sure to use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register to make sign in fast!
+If you're a Visual Studio user be sure to use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to sign up to make sign in fast!
 
-**[Register now!](http://aka.ms/vsls-signup)**
+**[Sign up now!](http://aka.ms/vsls-signup)**
 
 ## Download and install Visual Studio Live Share for your tool
 
