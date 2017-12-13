@@ -13,9 +13,9 @@ Just follow these steps to start sharing:
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
         <strong>Visual Studio 2017 Update 6</strong><br />
-       - Install VS 2017 Update 6 (15.6) on Windows (7, 8.1, or 10).<br/>
-       - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
-       - Download the Visual Studio Live Share VSIX and double click to install. <br />
+       1. Install VS 2017 Update 6 (15.6) on Windows (7, 8.1, or 10).<br/>
+       2. Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
+       3. Download the Visual Studio Live Share VSIX and double click to install. <br />
        <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
@@ -23,10 +23,11 @@ Just follow these steps to start sharing:
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code</strong><br />
-        - Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra+ only)</b>. <i>Be sure to place it in the Applications folder</i>.<br />
-        - Download the Visual Studio Live Share extension for Visual Studio Code.<br />
-        - Start Visual Studio Code Insiders.<br/>
-        - Press F1, select "Extensions: Install from VSIX...", select the extension path and wait for the install to complete.<br />
+        1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;macOS users should also be sure to place VS Code in the Applications folder.<br />
+        2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
+        3. Start VS Code Insiders, press F1, select "Extensions: Install from VSIX...", select the extension. <br />
+        4. Wait for the install to complete and reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
