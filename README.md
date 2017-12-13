@@ -2,14 +2,14 @@
 # Visual Studio Live Share Docs & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
-<td style="width: 140px; text-align: center;"><a href="http://aka.ms/project-cascade"><img src="docs/media/cascade-icon.png" style="width: 128px; height: 128px;" /></a></td>
+<td style="width: 140px; text-align: center;"><a href="http://aka.ms/vsls"><img src="docs/media/vsls-icon.png" style="width: 128px; height: 128px;" /></a></td>
 <td><strong>Visual Studio Live Share</strong><br />
 <i>Visual Studio Live Share is a service designed to enable developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
-<strong><a href="http://aka.ms/project-cascade">Learn more and sign up for the preview now!</a></strong></i>
+<strong><a href="http://aka.ms/vsls">Learn more and sign up for the preview now!</a></strong></i>
 </td>
 </tr></table>
 
-The initial focus of Visual Studio Real-Time Collaboraiton is <strong>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</strong> with more coming in the future. It is currently in a limited, private preview.
+The initial focus of Visual Studio Live Share is <strong>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</strong> with more coming in the future. It is currently in a limited, private preview.
 
 ## Quick Starts
 
@@ -31,45 +31,44 @@ While Visual Studio Live Share is in its experimental private preview phase, you
 
 If you're a Visual Studio user be sure to use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to register to make sign in fast!
 
-**[Register now!](http://aka.ms/project-cascade/register)**
+**[Register now!](http://aka.ms/vsls-signup)**
 
 ## Download and install Visual Studio Live Share for your tool
-While ultimately an extension, follow these directions for installing Visual Studio Live Share for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>
-    <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-icon.png" /></td>
+    <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
-        <strong>Visual Studio 2017 Update 5</strong><br />
-       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
-       - Download and run the Visual Studio Live Share installer. <br />
+        <strong>Visual Studio 2017 Update 6</strong><br />
+       - Install VS 2017 Update 6 (15.6) on Windows (7, 8.1, or 10).<br/>
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
-       <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download-for-win.png"></a><br />
+       - Download the Visual Studio Live Share VSIX and double click to install. <br />
+       <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
 <tr>
-    <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vscode-icon.png" /></td>
+    <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code</strong><br />
-        - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or macOS (<strong>Sierra only</strong>).<br />
-        - Unzip it where you want the install to live.<br/>
-        - Start VS Code from there to complete setup.<br />
-        <a href="http://aka.ms/project-cascade/dl/vscode-win"><img src="docs/media/download-for-win.png"></a>
-        <a href="http://aka.ms/project-cascade/dl/vscode-mac"><img src="docs/media/download-for-mac.png"></a><br />
+        - Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra+ only)</b>. <i>Be sure to place it in the Applications folder</i>.<br />
+        - Download the Visual Studio Live Share extension for Visual Studio Code.<br />
+        - Start Visual Studio Code Insiders.<br/>
+        - Press F1, select "Extensions: Install from VSIX...", select the extension path and wait for the install to complete.<br />
+        <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ## Contributing & Feedback
 Have a question or feedback? There are many ways to contribute.
 
-- [Up-vote a feature or request a new one](https://aka.ms/project-cascade/feature-requests)
+- [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - [Report a problem](CONTRIBUTING.md#filing-visual-studio-problems)
-- Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
+- Join the [Slack channel](http://live-share.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions
-- Hit us up on Twitter using [#projectcascade](https://twitter.com/search?f=tweets&q=%23projectcascade&src=typd)!
+- Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
@@ -81,7 +80,7 @@ By downloading and/or running the contents of this repository, you agree to the 
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
 ## License
-By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 However, the contents of this repository are licensed under the MIT License (MIT). 
 

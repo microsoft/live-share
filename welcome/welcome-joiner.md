@@ -6,34 +6,32 @@ If you're here, one of the Visual Studio Live Share private preview members has 
 Just follow these steps to join a collaboration session:
 
 ### 1. Download and install Visual Studio Live Share for your tool
-While ultimately an extension, follow these directions for installing Visual Studio Live Share for supported tools during the experimental private preview. 
 
 <table style="width: 100%; border-style: none;">
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
-        <strong>Visual Studio 2017 Update 5</strong><br />
-       - Install VS 2017 Update 5 (15.5) on Windows (7, 8.1, or 10).<br/>
+        <strong>Visual Studio 2017 Update 6</strong><br />
+       - Install VS 2017 Update 6 (15.6) on Windows (7, 8.1, or 10).<br/>
        - Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
-       - Download and run the Visual Studio Live Share installer. <br />
-       - Start Visual Studio after install to complete setup.<br />
-       <a href="http://aka.ms/project-cascade/dl/vs"><img style="padding: 0; spacing: 0;" src="media/download-for-win.png"></a><br />
+       - Download the Visual Studio Live Share VSIX and double click to install. <br />
+       <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code</strong><br />
-        - Download the combined Code + Cascade zip for Windows (7, 8.1, or 10) or macOS (<strong>Sierra only</strong>).<br />
-        - Unzip it where you want the install to live.<br/>
-        - Start VS Code from there to complete setup.<br />
-        <a href="http://aka.ms/project-cascade/dl/vscode-win"><img src="media/download-for-win.png"></a>
-        <a href="http://aka.ms/project-cascade/dl/vscode-mac"><img src="media/download-for-mac.png"></a><br />
+        - Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra+ only)</b>. <i>Be sure to place it in the Applications folder</i>.<br />
+        - Download the Visual Studio Live Share extension for Visual Studio Code.<br />
+        - Start Visual Studio Code Insiders.<br/>
+        - Press F1, select "Extensions: Install from VSIX...", select the extension path and wait for the install to complete.<br />
+        <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/project-cascade/license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ### 2. Start a discussion with the collaboration session owner
 
@@ -62,9 +60,9 @@ That's it!! In a few moments you'll be connected to your colleague's collaborati
 
 Need help and not finding what you need in the docs?
 
-- [Report a problem](../CONTRIBUTING.md#filing-visual-studio-problems) or just [raise an issue](https://github.com/Microsoft/project-cascade/issues).
-- [Up-vote a feature or request a new one](https://aka.ms/project-cascade/feature-requests)
-- Join the [Slack channel](http://project-cascade.slack.com) and chat with us!
+- [Report a problem](../CONTRIBUTING.md#filing-visual-studio-problems) or just [raise an issue](https://github.com/Microsoft/live-share/issues).
+- [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
+- Join the [Slack channel](http://live-share.slack.com) and chat with us!
 - Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions.
 
-Interested in joining the Private Preview so you can create collaboration sessions instead of just joining them? [Register now!](http://aka.ms/project-cascade/register)
+Interested in joining the Private Preview so you can create collaboration sessions instead of just joining them? [Register now!](http://aka.ms/vsls-signup)

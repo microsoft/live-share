@@ -9,7 +9,6 @@ This document provides information on capabilities enabled by the VS Code Visual
 - [Collaborative debugging](#collaborative-debugging)
    - [Sharing the running application in a browser](#sharing-the-running-application-in-a-browser)
 - [Additional capabilities](#additional-capabilities)
-    - [Shared terminals / command prompts](#shared-terminals--command-prompts)
     - [Sharing a local server](#sharing-a-local-server)
 - [Additional known participant limitations](#additional-known-participant-limitations)
 - [More information](#more-information)
@@ -24,7 +23,7 @@ Owners can use all of their tools and services as they would normally but partic
 The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session, the content is no longer available to any participant. While content will not be available to participants if the owner's machine is offline/shut down during a session, the collaboration session will automatically start up again for participants when the owner's machine is back online and the tool is re-opened.  
 
 ## Command palette and scoped command menu
-Nearly all Visual Studio Live Share functions are available from the Visual Studio Code "Command Palette" that can be accessed using Ctrl + Shift + P. You can find a complete list of commands by typing "cascade".
+Nearly all Visual Studio Live Share functions are available from the Visual Studio Code "Command Palette" that can be accessed using Ctrl + Shift + P or F1. You can find a complete list of commands by typing "live share".
 
 However, since this list can get long, you may find it easier to take advantage of a scoped command menu available from the status bar. Clicking on the sign in / session state icon in the status bar will immediately bring up a contextualized list of commands that are available for you to use.
 
@@ -80,15 +79,14 @@ Simply click the pin icon again to pin once again.
 ### Known co-editing participant limitations
 While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
 
-We want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-edit%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
+We want to hear from you! See [this query](https://github.com/Microsoft/live-share/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-edit%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
-- Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/8))
-- Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))
-- The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/project-cascade/issues/7))
-- Participants are not able to use VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
+- Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
+- Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
+- The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
+- Participants are not able to use VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
 
 ## Collaborative debugging
 
@@ -149,35 +147,18 @@ The system default browser is then started on all participant's machines connect
 ### Known co-debugging participant limitations
 There are currently some shortcomings participants will experience while building, running, or co-debugging. (Owners do not have these limitations.)  
 
-We want to hear from you! See [this query](https://github.com/Microsoft/project-cascade/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-debug%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
+We want to hear from you! See [this query](https://github.com/Microsoft/live-share/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-debug%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
-- Participants cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/project-cascade/issues/21))
-- Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/project-cascade/issues/12))    
-- Participants are not able to use VS Code's task support to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
-- Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/8))
+- Participants cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/live-share/issues/21))
+- Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))    
+- Participants are not able to use VS Code's task support to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
+
+- Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
 
 ## Additional capabilities
 
-### Shared terminals / command prompts
-
-Modern development often involves the use of certain command line tools. Visual Studio Live Share provides a shared terminal capability that allows participants to use these command line tools collaboratively on the owner's machine. While not started by default to ensure security, the collaboration session owner can get one going quickly. 
-
-1. First, the owner should click on the session state icon in the status bar.
-
-    ![VS Code session state icon](media/vscode-share-state.png)<br />
-
-2. Selected "New Shared Terminal".
-
-    ![VS Code terminal menu option](media/vscode-new-terminal.png)
-
-3. At this point a shared terminal session with the VS developer command prompt is started on the owners machine and all participants have access and can enter commands.
-
-     ![VS Code shared terminal](media/vscode-terminal.png)
-
-4. The owner can terminate the terminal session at any time by simply closing the tool window or typing exit.
 
 ### Sharing a local server
 
@@ -207,16 +188,15 @@ To **stop** sharing a local server, the owner simply needs to click the session 
 
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  
 
-Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/project-cascade/feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
+Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/vsls-feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 
 To jump start the conversation, the following are some additional limitations of particular note for _participants_ (only):
 
-- Participants cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/project-cascade/issues/15))
-- Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/project-cascade/issues/16))
-- Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/project-cascade/issues/8))
-- Participants are not able to use VS Code's task support against the owner's content ([Up-vote](https://github.com/Microsoft/project-cascade/issues/6))
-    - However, participants can use a shared terminal / command prompt to run CLI commands.  See [shared terminals](#shared-terminals--command-prompts).
+- Participants cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/live-share/issues/15))
+- Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
+- Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
+- Participants are not able to use VS Code's task support against the owner's content ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
 
 ## More information
 
