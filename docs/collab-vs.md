@@ -124,5 +124,4 @@ To jump start the conversation, the following are some additional limitations of
 
 - [Getting started](getting-started.md)
 - [Visual Studio Code features](collab-vscode.md)
-- [Roadmap](roadmap.md)
-- [FAQ](faq.md)
+- [FAQ](https://aka.ms/vsls-faq)

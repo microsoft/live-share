@@ -71,4 +71,4 @@ Need help and not finding what you need in the docs?
 - [Report a problem](../CONTRIBUTING.md#filing-visual-studio-problems) or just [raise an issue](https://github.com/Microsoft/live-share/issues).
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - Join the [Slack channel](http://live-share.slack.com) and chat with us!
-- Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions.
+- Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions.

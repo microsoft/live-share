@@ -31,8 +31,6 @@ Create an issue in [this repository](https://github.com/Microsoft/live-share/iss
 * Your operating system
 * List of extensions that you have installed (if applicable). 
 
-> **Tip:** You can easily add the list of extensions by creating the issue using `Report Issues` from VS Code's Help menu. 
-
 * If in VS Code, errors in the Dev Tools Console (Help | Toggle Developer Tools)
 
 Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
@@ -73,7 +71,7 @@ Don't feel bad if we can't reproduce the issue and ask for more information!
 ## Other ways to contact us!
 
 - Join the [Slack channel](http://live-share.slack.com) and chat with us!
-- Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions
+- Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
 
 ## Contributing to documentation
 

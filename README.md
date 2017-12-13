@@ -20,8 +20,7 @@ The initial focus of Visual Studio Live Share is <strong>real-time collaborative
 - [Getting started and managing collaboration sessions](docs/getting-started.md)
 - [Visual Studio enabled features](docs/collab-vs.md) 
 - [Visual Studio Code enabled features](docs/collab-vscode.md) 
-- [Roadmap](docs/roadmap.md)
-- [FAQ](docs/faq.md)
+- [FAQ](http://aka.ms/vsls-faq)
 
 ## Register with the Visual Studio Live Share service
 
@@ -68,7 +67,7 @@ Have a question or feedback? There are many ways to contribute.
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - [Report a problem](CONTRIBUTING.md#filing-visual-studio-problems)
 - Join the [Slack channel](http://live-share.slack.com) and chat with us!
-- Shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions
+- Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
 - Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).

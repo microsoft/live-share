@@ -21,7 +21,7 @@ GitHub issues and problem reports are a great way to connect with us.
 
 For those in the private preview, join the [Slack channel](http://live-share.slack.com) and chat with us!
 
-Alternatively, you can shoot us a [mail](mailto:project-cascade@microsoft.com) with suggestions or questions.
+Alternatively, you can shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions.
 
 ## Twitter
 

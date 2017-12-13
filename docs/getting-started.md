@@ -203,5 +203,4 @@ The following are the states you will typically see:
 
 - [Visual Studio features](collab-vs.md)
 - [Visual Studio Code features](collab-vscode.md)
-- [Roadmap](roadmap.md)
-- [FAQ](faq.md)
+- [FAQ](https://aka.ms/vsls-faq)
