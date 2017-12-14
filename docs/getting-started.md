@@ -27,7 +27,7 @@ During the Visual Studio Live Share private limited preview both owners and part
 
 Requirements:
  - **Visual Studio 2017 Update 6** - Any edition of Visual Studio 2017 with update 6 installed (15.6) running on Windows 7, 8.1, or 10.
- - **VS Code (Insiders)** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
+ - **Visual Studio Code Insiders** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
 
 Download and setup instructions:
 
@@ -45,7 +45,7 @@ Download and setup instructions:
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
-        <strong>Visual Studio Code</strong><br />
+        <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
         &nbsp;&nbsp;&nbsp;&nbsp;macOS users should also be sure to place VS Code in the Applications folder.<br />
         2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
@@ -72,7 +72,7 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 However, if you've been accepted into for the private limited preview (owners) and want to share you should sign in using the same credentials you used to sign up. 
 
-**Note:** If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Visual Studio Live Share** to switch credentials. 
+**Note:** If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share** to switch credentials. 
 
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're been accepted into the private limited preview (owners), use the same credentials you used to sign up.

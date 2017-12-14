@@ -48,7 +48,7 @@ If you're a Visual Studio user be sure to use your [personalization account](htt
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vscode-icon.png" /></td>
     <td>
-        <strong>Visual Studio Code</strong><br />
+        <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
         &nbsp;&nbsp;&nbsp;&nbsp;macOS users should also be sure to place VS Code in the Applications folder.<br />
         2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />

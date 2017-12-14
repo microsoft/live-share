@@ -21,7 +21,7 @@ Just follow these steps to join a collaboration session:
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
-        <strong>Visual Studio Code</strong><br />
+        <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
         &nbsp;&nbsp;&nbsp;&nbsp;macOS users should also be sure to place VS Code in the Applications folder.<br />
         2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
@@ -47,7 +47,7 @@ After installing Visual Studio Live Share for your tool, simply open (or re-open
 
 To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. 
 
-If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your personalization account so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Visual Studio Live Share** to switch credentials. 
+If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your personalization account so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share** to switch credentials. 
 
 ### 5. Collaborate!
 
