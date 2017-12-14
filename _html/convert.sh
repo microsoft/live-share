@@ -3,11 +3,10 @@ ghmd -v > /dev/null 2>&1 || { echo  "(!) Installing github-markdown..."; npm i -
 
 echo "(i) Converting markdown..."
 # Move to docs sub-dir
-mkdir docs > /dev/null 2>&1
+rm -rv docs > /dev/null 2>&1
+mkdir docs
 cd docs
 # Delete old HTML
-rm *.html > /dev/null 2>&1
-rm -rv media > /dev/null 2>&1
 # Copy markdown files as temp switching .md => .html along the way
 for FILE in ../../docs/*.md 
 do
