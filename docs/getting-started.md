@@ -72,7 +72,7 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 However, if you've been accepted into for the private limited preview (owners) and want to share you should sign in using the same credentials you used to sign up. 
 
-**Visual Studio:** If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Visual Studio Live Share** to switch credentials. 
+**Note:** If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Visual Studio Live Share** to switch credentials. 
 
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're been accepted into the private limited preview (owners), use the same credentials you used to sign up.
@@ -105,7 +105,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
     Note that if you need to get the invite link again after you've started sharing, you can copy it to the clipboard once again by doing the following:
 
 	- **VS:** Click on the Share / Session State button and select "Copy Link"  
-	- **VS Code**: Click the session state status bar icon and select "Start a Collaboration Session" again.
+	- **VS Code**: Click the session state status bar icon and select "Invite Others (Copy Link)".
 
 4. **Send someone the invite link**
 
@@ -170,13 +170,13 @@ Lots of things! Co-editing and co-debugging for example! Take a look at the arti
 - [Visual Studio features](collab-vs.md)
 - [Visual Studio Code features](collab-vscode.md)
 
-## Ending a collaboration session
+## Ending or leaving a collaboration session
 
-If the owner closes their tool, goes offline, or simply reboots, the collaboration session will be automatically restarted when the owner opens the same folder, project, or solution that was shared. To stop sharing completely and end the collaboration session, you can use the session state button (in the upper right hand corner in VS or the status bar in VS Code) to stop sharing and end the collaboration session.
+To stop sharing completely and end the collaboration session, you can use the session state button (in the upper right hand corner in VS or the status bar in VS Code) to stop sharing and end the collaboration session. All participants will be notified that the session has ended.
 
 **In VS:**
 
-![VS stop sharing](media/vs-stop-sharing.png) 
+![VS end collaboration session](media/vs-stop-sharing.png) 
 
 **VS Code:**
 
@@ -184,6 +184,17 @@ If the owner closes their tool, goes offline, or simply reboots, the collaborati
 ![VS Code end collaboration session menu option](media/vscode-end-collaboration.png)
 
 This will stop the collaboration session and any participants will be notified that they will no longer be able to access the content. Given nothing is persisted on disk, the participants do not need to preform any additional cleanup.
+
+Similarly, individual participants can also leave the collaboration session by closing the tool or selecting "Leave Collaboration Session".
+
+**In VS:**
+
+![VS leave collaboration session](media/vs-leave-session.png) 
+
+**In VS Code:**
+
+![VS Code session state item](media/vscode-share-state.png) <br />
+![VS Code leave collaboration session](media/vscode-leave-session.png) 
 
 ## Session states
 After you have started or joined collaboration session and have access to shared content, the "Share" button in the upper right hand corner in VS and the Visual Studio Live Share status bar icons in Visual Studio Code update their appearance to reflect the state of the active collaboration session. 
@@ -197,8 +208,7 @@ The following are the states you will typically see:
 | Owner: Sharing | | ![VS Code status: sharing active ](media/vscode-status-active.png)| A collaboration session is active and content is shared. |
 | Participant: Joining Session | | ![VS Code status: joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
 | Participant: Joined | | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and recieving shared content. |
-| Reconnecting | | ![VS Code status: reconnecting](media/vscode-status-reconnecting.png)| Connection to service or owner interrupted, but attempting to reconnect. |
-| Disconnected | | ![VS Code status: disconnected](media/vscode-status-disconnected.png)| Connection to service or owner has been interrupted. Shared content is not available to participants. |
+
 ## More Information
 
 - [Visual Studio features](collab-vs.md)
