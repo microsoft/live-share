@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ghmd -v > /dev/null 2>&1 || { echo  "(!) Installing github-markdown..."; npm i -g github-markdown; echo "(i) Done!"; }
 
 echo "(i) Converting markdown..."
@@ -16,12 +16,18 @@ do
 done
 # Convert
 ghmd *.md
+# Use different flag on linux vs Mac
+FLAG="--in-place=''"
+if [ "$(uname)" = "Darwin" ] 
+then
+    FLAG="-i ''"
+fi
 # Fix html tags
-sed -i '' 's/&lt;/</g' *.html
-sed -i '' 's/&gt;/>/g' *.html
-sed -i '' 's/&quot;/"/g' *.html
+sed $FLAG 's/&lt;/</g' *.html
+sed $FLAG 's/&gt;/>/g' *.html
+sed $FLAG 's/&quot;/"/g' *.html
 # Append heading anchor script
-sed -i '' 's/<\/body>/<script> var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6"); headings.forEach(function(heading) { var anchor = document.createElement("a"); anchor.name = heading.textContent.replace(\/\[\^\\w\\s\]\/gi, "").replace(\/ \/gi, "-").toLowerCase(); heading.appendChild(anchor); });<\/script>/g' *.html
+sed $FLAG 's/<\/body>/<script> var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6"); headings.forEach(function(heading) { var anchor = document.createElement("a"); anchor.name = heading.textContent.replace(\/\[\^\\w\\s\]\/gi, "").replace(\/ \/gi, "-").toLowerCase(); heading.appendChild(anchor); });<\/script>/g' *.html
 # Remove temp files
 rm *.md
 
