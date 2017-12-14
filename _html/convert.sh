@@ -27,7 +27,7 @@ sed $FLAG 's/&lt;/</g' *.html
 sed $FLAG 's/&gt;/>/g' *.html
 sed $FLAG 's/&quot;/"/g' *.html
 # Append heading anchor script
-sed $FLAG 's/<\/body>/<script> var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6"); headings.forEach(function(heading) { var anchor = document.createElement("a"); anchor.name = heading.textContent.replace(\/\[\^\\w\\s\]\/gi, "").replace(\/ \/gi, "-").toLowerCase(); heading.appendChild(anchor); });<\/script>/g' *.html
+sed $FLAG 's/<\/body>/<script> var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6"); for (var i=0; i<headings.length; i++ ){ var anchor = document.createElement("a"); anchor.name = headings[i].textContent.replace(\/\[\^\\w\\s\]\/gi, "").replace(\/ \/gi, "-").toLowerCase(); headings[i].appendChild(anchor); };<\/script>/g' *.html
 # Remove temp files
 rm *.md
 rm *.bak
@@ -35,13 +35,3 @@ rm *.bak
 echo "(i) Copying media folder..."
 cp -R ../../docs/media media
 echo "(i) Done!"
-
-
-#   <script>
-#      var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-#      headings.forEach(function(heading) {
-#        var anchor = document.createElement("a");
-#        anchor.name = heading.textContent.replace(/[^\w\s]/gi, "").replace(/ /gi, "-").toLowerCase();
-#        heading.appendChild(anchor);
-#      });
-#    </script>
