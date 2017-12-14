@@ -35,11 +35,10 @@ Since you may want to quickly jump to where another collaborator is located, the
 
 ![Screen shot showing users in upper-right](media/vs-upper-right.png)
 
-<!--
 ### Known co-editing participant limitations
 While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
 
-We want to hear from you! See [this query](https://github.com/Microsoft/live-share/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-edit%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
+We want to hear from you! See [this query](https://aka.ms/vsls-feature-requests/co-edit) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
@@ -49,7 +48,6 @@ To jump start the conversation, the following are some limitations of particular
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
 - The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
--->
 
 ## Collaborative Debugging
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
@@ -62,9 +60,11 @@ Using it simple. The owner simply needs to start debugging via the usual means i
 
 > **Tip:** You can participate in VS Code debugging sessions from VS and vice versa! If the owner is using VS Code, you can check out the [VS Code instructions](collab-vscode.md#collaborative-debugging) but the steps are roughly the same. 
 
+<!--
 While the build and deployment is happening, all participants can see progress in the Output window. This is also true if the owner opted to "Start with Debugging" or simply build the project or solution.
 
 ![VS output window](media/vs-output.png)
+-->
 
 Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view. A browser window on connected to the web application running on the owner's machine also automatically starts up.
 
@@ -80,11 +80,10 @@ Since participants could get disconnected for some reason or may wish to stop de
 
 ![VS Debug button](media/vs-debug-button-participant.png)
 
-<!--
 ### Known co-debugging participant limitations
 There are currently some shortcomings participants will experience while building, running, or co-debugging. (Owners do not have these limitations.)
 
-As before, we want to hear from you! See [this query](https://github.com/Microsoft/live-share/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature-request%20label%3A%22area%3A%20co-debug%22%20sort%3Areactions-%2B1%20) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
+As before, we want to hear from you! See [this query](http://aka.ms/vsls-feature-requests/co-debug) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 To jump start the conversation, the following are some limitations of particular note for _participants_ (only):
 
@@ -93,7 +92,6 @@ To jump start the conversation, the following are some limitations of particular
 - Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
 - Participants are not able to use the Task Runner Explorer to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
 - Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
--->
 
 ## Additional Capabilities
 
@@ -111,7 +109,6 @@ Participants will now be able to use this same port from their machine to access
 
 To **stop** sharing a local server, the owner simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the port they want to stop sharing.
 
-<!--
 ## Additional known participant limitations
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  
 
@@ -124,7 +121,6 @@ To jump start the conversation, the following are some additional limitations of
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
 - Participants cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/live-share/issues/20))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
--->
 
 ## More information
 
