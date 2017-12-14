@@ -10,6 +10,7 @@
 - [What can I do with a collaboration session?](#what-can-i-do-with-a-collaboration-session)
 - [Ending a collaboration session](#ending-a-collaboration-session)
 - [Session states](#session-states)
+- [Known participant limitations](#known-participant-limitations)
 - [More information](#more-information)
     - [Visual Studio features](collab-vs.md)
     - [Visual Studio Code features](collab-vscode.md)
@@ -23,11 +24,9 @@ The advantage is that the entire solution is available the moment a participant 
 
 ## Downloading and installing
 
-During the Visual Studio Live Share private limited preview both owners and participants will need to download a custom build of VS Code and/or an installer for Visual Studio. Visual Studio Live Share is ultimately intended to be a pure extension, so this is not the long term delivery mechanism.
-
 Requirements:
  - **Visual Studio 2017 Update 6** - Any edition of Visual Studio 2017 with update 6 installed (15.6) running on Windows 7, 8.1, or 10.
- - **Visual Studio Code Insiders** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
+ - **Visual Studio Code Insiders** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
 
 Download and setup instructions:
 
@@ -208,6 +207,13 @@ The following are the states you will typically see:
 | Owner: Sharing | | ![VS Code status: sharing active ](media/vscode-status-active.png)| A collaboration session is active and content is shared. |
 | Participant: Joining Session | | ![VS Code status: joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
 | Participant: Joined | | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and recieving shared content. |
+
+## Known participant limitations
+While there are currently some shortcomings participants will experience while using the features described above, collaboration session owners retain the complete functionality of their tool of choice. See the following for more information:
+
+- [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging limitations](http://aka.ms/vsls-feature-requests/co-debug)
+- [Additional limitations](http://aka.ms/vsls-feature-requests)
 
 ## More Information
 

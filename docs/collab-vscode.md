@@ -10,7 +10,8 @@ This document provides information on capabilities enabled by the VS Code Visual
    - [Sharing the running application in a browser](#sharing-the-running-application-in-a-browser)
 - [Additional capabilities](#additional-capabilities)
     - [Sharing a local server](#sharing-a-local-server)
-- [Additional known participant limitations](#additional-known-participant-limitations)
+<!-- - [Additional known participant limitations](#additional-known-participant-limitations) -->
+- [Known participant limitations](#known-participant-limitations)
 - [More information](#more-information)
     - [Getting started and managing collaboration sessions](getting-started.md)
     - [Visual Studio features](collab-vs.md)
@@ -35,7 +36,9 @@ This document will assume you are using this command menu but note that these co
 
 Once a participant has joined a collaboration session all collaborators will immediately be able to see each others edits and highlights in real-time. 
 
+<!--
 > **Tip:** If you are using VS Code with ASP.NET Core and C#, make sure you have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the owner and all participants should have the extension installed or participants will miss out on capabilities. 
+-->
 
 Simply select a file from the file explorer and start editing. Participants will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
 
@@ -73,8 +76,9 @@ To make it easy to hop in and out of pinning, the tab set is un-pinned if any of
 1. You edit or make a selection
 3. You click the pin icon again
 
-Simply click the pin icon again to pin once again.
+Afterwards, simply click the pin icon again to follow them once again.
 
+<!--
 ### Known co-editing participant limitations
 While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
 
@@ -86,18 +90,20 @@ To jump start the conversation, the following are some limitations of particular
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
 - The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
 - Participants are not able to use VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
+-->
 
 ## Collaborative debugging
 
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
 
 Using it simple. 
-
+<!--
 1. If you are using VS Code with ASP.NET Core or C#, make sure you and all of your collaborators have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the owner and all participants should have the extension installed in order for debugging to work. 
+-->
 
-2. Next, if not already set up for the project, the owner should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from VS Code as you would normally. No special setup is required.
+1. If not already set up for the project, the owner should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from VS Code as you would normally. No special setup is required.
 
-3. Finally, start debugging using the button in the debug tab as normal.
+2. Next, start debugging using the button in the debug tab as normal.
 
     ![VS Code debug button](media/vscode-debug-button.png)
 
@@ -145,6 +151,7 @@ The system default browser is then started on all participant's machines connect
 
 > **Tip:** Additional local server ports can also be shared securely such as RESTful endponts or databases if desired.  See [sharing a local server](#sharing-a-local-server).
 
+<!--
 ### Known co-debugging participant limitations
 There are currently some shortcomings participants will experience while building, running, or co-debugging. (Owners do not have these limitations.)  
 
@@ -157,9 +164,9 @@ To jump start the conversation, the following are some limitations of particular
 - Participants are not able to use VS Code's task support to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
 
 - Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
+-->
 
 ## Additional capabilities
-
 
 ### Sharing a local server
 
@@ -185,7 +192,8 @@ Optionally, participants can see a list of currently shared ports (by name if sp
 
 To **stop** sharing a local server, the owner simply needs to click the session state status bar icon as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
 
-## Additional known participant limitations
+<!--
+### Additional known participant limitations
 
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  
 
@@ -198,6 +206,14 @@ To jump start the conversation, the following are some additional limitations of
 - Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
 - Participants are not able to use VS Code's task support against the owner's content ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
+-->
+
+## Known participant limitations
+While there are currently some shortcomings participants will experience while using the features described above, collaboration session owners retain the complete functionality of their tool of choice. See the following for more information:
+
+- [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging limitations](http://aka.ms/vsls-feature-requests/co-debug)
+- [Additional limitations](http://aka.ms/vsls-feature-requests)
 
 ## More information
 

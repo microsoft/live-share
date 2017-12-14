@@ -8,7 +8,8 @@ This document provides information on capabilities enabled by the Visual Studio 
 - [Collaborative debugging](#collaborative-debugging)
 - [Additional capabilities](#additional-capabilities)
     - [Sharing a local server](#sharing-a-local-server)
-- [Additional known participant limitations](#additional-known-participant-limitations)
+<!-- - [Additional known participant limitations](#additional-known-participant-limitations) -->
+- [Known participant limitations](#known-participant-limitations)
 - [More information](#more-information)
     - [Getting started and managing collaboration sessions](getting-started.md)
     - [Visual Studio Code features](collab-vscode.md)
@@ -35,6 +36,27 @@ Since you may want to quickly jump to where another collaborator is located, the
 
 ![Screen shot showing users in upper-right](media/vs-upper-right.png)
 
+### Moving to a collaborator's edit location
+
+Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon to see the name of the person in the session and their locaiton. Simply clicking on this same icon to jumps the active editor to their exact location. 
+
+![Screen shot showing user](media/vs-user-status.png)
+
+### Pinning to a collaborator's edit location
+
+At times the person you are collaborating with may need to show you a few different places in code to explain a problem or possible solution. While you could repeatedly jump to their location as described above you can also "pin" the editor to their location.
+
+Simply hover over a user and you will see a pin icon. Simply click the pin to start following them and as the collaborator moves around or between files you will be moved along with them.
+
+![VS Code pin](media/vs-pin.png)
+
+To make it easy to hop in and out of pinning, the editor is un-pinned if any of the following occurs:
+1. You edit or make a selection
+3. You click the pin icon again
+
+Afterwards you can simply click the pin icon again to follow their location once again.
+
+<!--
 ### Known co-editing participant limitations
 While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
 
@@ -48,6 +70,7 @@ To jump start the conversation, the following are some limitations of particular
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
 - The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
+-->
 
 ## Collaborative Debugging
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
@@ -80,6 +103,7 @@ Since participants could get disconnected for some reason or may wish to stop de
 
 ![VS Debug button](media/vs-debug-button-participant.png)
 
+<!--
 ### Known co-debugging participant limitations
 There are currently some shortcomings participants will experience while building, running, or co-debugging. (Owners do not have these limitations.)
 
@@ -92,6 +116,8 @@ To jump start the conversation, the following are some limitations of particular
 - Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
 - Participants are not able to use the Task Runner Explorer to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
 - Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
+
+-->
 
 ## Additional Capabilities
 
@@ -109,7 +135,8 @@ Participants will now be able to use this same port from their machine to access
 
 To **stop** sharing a local server, the owner simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the port they want to stop sharing.
 
-## Additional known participant limitations
+<!--
+### Additional known participant limitations
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  
 
 Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/vsls-feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
@@ -121,6 +148,14 @@ To jump start the conversation, the following are some additional limitations of
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
 - Participants cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/live-share/issues/20))
 - Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
+-->
+
+## Known participant limitations
+While there are currently some shortcomings participants will experience while using the features described above, collaboration session owners retain the complete functionality of their tool of choice. See the following for more information:
+
+- [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging limitations](http://aka.ms/vsls-feature-requests/co-debug)
+- [Additional limitations](http://aka.ms/vsls-feature-requests)
 
 ## More information
 
