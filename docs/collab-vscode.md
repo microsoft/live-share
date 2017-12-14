@@ -70,12 +70,12 @@ The pin is for a tab set so you can use split view to have a set that is pinned 
 ![VS Code pin in split view](media/vscode-pin-split.png)
 
 To make it easy to hop in and out of pinning, the tab set is un-pinned if any of the following occurs:
-1. You move the scroll bar
-2. You edit
+1. You edit or make a selection
 3. You click the pin icon again
 
 Simply click the pin icon again to pin once again.
 
+<!--
 ### Known co-editing participant limitations
 While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings participants will experience while co-editing. (Owners do not have these limitations.)
 
@@ -87,6 +87,7 @@ To jump start the conversation, the following are some limitations of particular
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
 - The undo and redo stacks are currently combined across all participants ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
 - Participants are not able to use VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
+-->
 
 ## Collaborative debugging
 
@@ -144,6 +145,7 @@ The system default browser is then started on all participant's machines connect
 
 > **Tip:** Additional local server ports can also be shared securely such as RESTful endponts or databases if desired.  See [sharing a local server](#sharing-a-local-server).
 
+<!--
 ### Known co-debugging participant limitations
 There are currently some shortcomings participants will experience while building, running, or co-debugging. (Owners do not have these limitations.)  
 
@@ -156,6 +158,7 @@ To jump start the conversation, the following are some limitations of particular
 - Participants are not able to use VS Code's task support to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
 
 - Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
+-->
 
 ## Additional capabilities
 
@@ -184,6 +187,7 @@ Optionally, participants can see a list of currently shared ports (by name if sp
 
 To **stop** sharing a local server, the owner simply needs to click the session state status bar icon as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
 
+<!--
 ## Additional known participant limitations
 
 In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for participants. As above, owners do not have these limitations.  
@@ -197,6 +201,7 @@ To jump start the conversation, the following are some additional limitations of
 - Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
 - Participants are not able to use VS Code's task support against the owner's content ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
+-->
 
 ## More information
 
