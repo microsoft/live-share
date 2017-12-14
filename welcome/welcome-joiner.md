@@ -31,6 +31,7 @@ Just follow these steps to join a collaboration session:
     </td>
 </tr>
 </table>
+
 By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ### 2. Start a discussion with the collaboration session owner
@@ -42,11 +43,11 @@ After installing Visual Studio Live Share for your tool, simply open (or re-open
 
 > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Visual Studio Live Share before opening/re-opening the invite page. Still having trouble? See [manually joining](../docs/getting-started.md#manually-joining) in our docs.
 
-### 4. Sign-in from within your IDE/editor
+### 4. Sign in from within your IDE/editor
 
 To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. 
 
-If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your personalization account so you can skip this step!
+If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your personalization account so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Visual Studio Live Share** to switch credentials. 
 
 ### 5. Collaborate!
 

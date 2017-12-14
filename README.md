@@ -22,7 +22,7 @@ The initial focus of Visual Studio Live Share is <strong>real-time collaborative
 - [Visual Studio Code enabled features](docs/collab-vscode.md) 
 - [FAQ](http://aka.ms/vsls-faq)
 
-## Sign up for the Visual Studio Live Share service preview
+## Sign up for the Visual Studio Live Share preview
 
 While Visual Studio Live Share is in its private limited preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
 
