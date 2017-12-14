@@ -17,10 +17,10 @@ done
 # Convert
 ghmd *.md
 # Use different flag on linux vs Mac
-FLAG="--in-place=''"
+FLAG="--in-place=.bak"
 if [ "$(uname)" = "Darwin" ] 
 then
-    FLAG="-i ''"
+    FLAG="-i .bak"
 fi
 # Fix html tags
 sed $FLAG 's/&lt;/</g' *.html
@@ -30,6 +30,7 @@ sed $FLAG 's/&quot;/"/g' *.html
 sed $FLAG 's/<\/body>/<script> var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6"); headings.forEach(function(heading) { var anchor = document.createElement("a"); anchor.name = heading.textContent.replace(\/\[\^\\w\\s\]\/gi, "").replace(\/ \/gi, "-").toLowerCase(); heading.appendChild(anchor); });<\/script>/g' *.html
 # Remove temp files
 rm *.md
+rm *.bak
 
 echo "(i) Copying media folder..."
 cp -R ../../docs/media media
