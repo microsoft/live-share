@@ -3,6 +3,7 @@ ghmd -v > /dev/null 2>&1 || { echo  "(!) Installing github-markdown..."; npm i -
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BASEOUT=$BASEDIR/out
+HEADERREPLACECMD="s/<body>/"$(cat $BASEDIR/header.part | tr -d '\n' | tr "'" '"'  | sed 's/\//\\\//g')"/g"
 
 # Delete old HTML
 rm -rv $BASEOUT > /dev/null 2>&1
@@ -37,11 +38,19 @@ do
     sed $FLAG 's/&lt;/</g' *.html
     sed $FLAG 's/&gt;/>/g' *.html
     sed $FLAG 's/&quot;/"/g' *.html
-    # Append heading anchor script
-    sed $FLAG 's/<\/body>/<script> var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6"); for (var i=0; i<headings.length; i++ ){ var anchor = document.createElement("a"); anchor.name = headings[i].textContent.replace(\/\[\^\\w\\s\]\/gi, "").replace(\/ \/gi, "-").toLowerCase(); headings[i].appendChild(anchor); };<\/script>/g' *.html
+    # Add header html part
+    sed $FLAG "$HEADERREPLACECMD" *.html
+    # Replace end tags with footer html part
+    sed $FLAG 's/<\/body>\\n<\/html>//g' *.html
+    for FILE in *.html
+    do
+        echo $FILE
+        cat $BASEDIR/footer.part >> $FILE
+    done
     # Remove temp files
     rm *.md
     rm *.bak
+    # Copy media
     MEDIA=$BASEDIR/../$FOLDER/media
     if [ -d "$MEDIA" ]
     then
@@ -53,5 +62,5 @@ do
     echo "(i) Done!"
 done
 # Create index.html
-echo "<html><head><meta http-equiv='refresh' content='0;url=docs/getting-started.html'> </head></html>" > index.html
+cat $BASEDIR/index.part > index.html
 
