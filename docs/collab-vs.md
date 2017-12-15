@@ -32,15 +32,11 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ![Screen shot showing highlighting](media/vs-highlight.png)
 
-Since you may want to quickly jump to where another collaborator is located, the upper right corner shows you who is currently in the collaboration session and you can go to their exact location by simply double-clicking on their icon.  
-
-![Screen shot showing users in upper-right](media/vs-upper-right.png)
-
 ### Moving to a collaborator's edit location
 
 Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon to see the name of the person in the session and their locaiton. Simply clicking on this same icon to jumps the active editor to their exact location. 
 
-![Screen shot showing user](media/vs-user-status.png)
+![Screen shot showing user](media/vs-person.png)
 
 ### Pinning to a collaborator's edit location
 
@@ -48,7 +44,8 @@ At times the person you are collaborating with may need to show you a few differ
 
 Simply hover over a user and you will see a pin icon. Simply click the pin to start following them and as the collaborator moves around or between files you will be moved along with them.
 
-![VS Code pin](media/vs-pin.png)
+![VS Code pin](media/vs-pin-hover.png)
+![VS Code pin](media/vs-pinned.png)
 
 To make it easy to hop in and out of pinning, the editor is un-pinned if any of the following occurs:
 1. You edit or make a selection
@@ -81,15 +78,15 @@ Using it simple. The owner simply needs to start debugging via the usual means i
 
 ![VS Debug button](media/vs-debug-button.png)
 
-> **Tip:** You can participate in VS Code debugging sessions from VS and vice versa! If the owner is using VS Code, you can check out the [VS Code instructions](collab-vscode.md#collaborative-debugging) but the steps are roughly the same. 
-
 <!--
 While the build and deployment is happening, all participants can see progress in the Output window. This is also true if the owner opted to "Start with Debugging" or simply build the project or solution.
 
 ![VS output window](media/vs-output.png)
 -->
 
-Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view. A browser window on connected to the web application running on the owner's machine also automatically starts up.
+Once the debugger attaches on the owner's side, all participants are also attached. While there is one debugging "session" running on the owner's machine, all collaborators are connected to it and have their own view. 
+
+> **Tip:** If you want to change when and how co-debugging happens, you can change the default behaviors via settings in **Tools > Options > Live Share**.
 
 ![VS debugger attached](media/vs-debugger.png)
 
@@ -97,11 +94,30 @@ Anyone can step through the debugging process which enables seamless switching b
 
 Each collaborator can investigate different variables, jump to different files in the call stack, variables, and breakpoints are shared across all participants and can be added by anyone. Co-editing features then allow each collaborator to track where the other is located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
+> **Tip:** You can participate in VS Code debugging sessions from VS and vice versa! If the owner is using VS Code, you can check out the [VS Code instructions](collab-vscode.md#collaborative-debugging) but the steps are roughly the same. 
+
+
+## Automatic web app sharing during debugging
+
+Even better, by default if the owner's project is configured to automatically start a web browser to connect to the running web application when debugging, Live Share will automatically do the same on each participant's machine!
+
+This is done in a secure way and the remote web application is only available to the participants during the debugging session by default.  See [sharing a local server](#sharing-a-local-server) for information on how to share server access for the duration of the session.
+
+> **Tip:** If you don't like the automated browser sharing behavior and want to change it (either when you are an owner or a participant), you can update settings in **Tools > Options > Live Share**.
+
 ![Animation of concurrent debugging](media/co-debug.gif)
 
-Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Visual Studio Live Share also allows them to re-attach by simply launching the debugging session via standard means.
+## Deattaching and attaching or reattaching to a co-debugging session
 
-![VS Debug button](media/vs-debug-button-participant.png)
+Since participants may wish to stop debugging temporarily, they can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the owner or other participants.
+
+If you've updated settings so that as a participant you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can simply select the desired running debugging session from the "Select Startup Item..." dropdown...
+
+![VS Debug button](media/vs-select-reattach.png)
+
+...and then click it to attach.
+
+![VS Debug button](media/vs-reattach.png)
 
 <!--
 ### Known co-debugging participant limitations
@@ -127,13 +143,19 @@ From time to time, as a collaboration session owner you may find that you want t
 
 1. Click on the session state button in the upper right corner and select "Manage Shared Local Servers"
 
-2. In the dialog that appears, click "Add" and enter the port number the server is running on locally and a name.
+![Manage Shared Local Servers](media/vs-share-local-servers.png)
+
+2. In the dialog that appears, click "Add" and enter the port number the server is running on locally and a name, hit enter, then OK.
+
+![Manage Shared Local Servers](media/vs-manage-local-shared-servers.png)
 
 That's it! 
 
 Participants will now be able to use this same port from their machine to access the server or service if it is free. Otherwise it will be automatically mapped to a free port. You can view shared local servers by clicking the session state button in the upper right corner and selecting "View Shared Local Servers."
 
-To **stop** sharing a local server, the owner simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the port they want to stop sharing.
+![Viw Shared Local Servers](media/vs-view-shared-servers.png)
+
+To **stop** sharing a local server, the owner simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the appropriate port, and click "Remove".
 
 <!--
 ### Additional known participant limitations
