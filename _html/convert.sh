@@ -1,13 +1,13 @@
 #!/bin/bash
 ghmd -v > /dev/null 2>&1 || { echo  "(!) Installing github-markdown..."; npm i -g github-markdown; echo "(i) Done!"; }
 
-BASEDIR=$(pwd)
-BASEOUT=$(pwd)/out
+BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BASEOUT=$BASEDIR/out
 
 # Delete old HTML
-rm -rv out > /dev/null 2>&1
-mkdir out
-cd out
+rm -rv $BASEOUT > /dev/null 2>&1
+mkdir $BASEOUT
+cd $BASEOUT
 # Convert each folder
 for FOLDER in "." "docs" "welcome"
 do
