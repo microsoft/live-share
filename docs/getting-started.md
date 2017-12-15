@@ -171,7 +171,7 @@ Lots of things! Co-editing and co-debugging for example! Take a look at the arti
 
 ## Ending or leaving a collaboration session
 
-To stop sharing completely and end the collaboration session, you can use the session state button (in the upper right hand corner in VS or the status bar in VS Code) to stop sharing and end the collaboration session. All participants will be notified that the session has ended.
+To stop sharing completely and end the collaboration session, you can click the session state button (in the upper right hand corner in VS or the status bar in VS Code) and select "End Collaboration Session" to stop sharing and end the session. All participants will be notified that the session has ended.
 
 **In VS:**
 
@@ -202,11 +202,11 @@ The following are the states you will typically see:
 
 | State | Visual Studio | Visual Studio Code | Description | 
 |-------|---------------|--------------------|-------------|
-| Inactive | | ![VS Code status: inactive](media/vscode-status-share.png) | No active collaboration session and nothing is shared. |
-| Owner: Sharing In-Progress | | ![VS Code status: starting](media/vscode-status-sharing.png)| A collaboration session is starting and content sharing will begin shortly. |
-| Owner: Sharing | | ![VS Code status: sharing active ](media/vscode-status-active.png)| A collaboration session is active and content is shared. |
-| Participant: Joining Session | | ![VS Code status: joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
-| Participant: Joined | | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and recieving shared content. |
+| Inactive | ![VS status: inactive](media/vs-status-share.png) | ![VS Code status: inactive](media/vscode-status-share.png) | No active collaboration session and nothing is shared. |
+| Owner: Sharing In-Progress | ![VS status: share in progress](media/vs-status-sharing.png) | ![VS Code status: share in progress](media/vscode-status-sharing.png)| A collaboration session is starting and content sharing will begin shortly. |
+| Owner: Sharing | ![VS Code status: sharing active ](media/vs-status-active.png) | ![VS Code status: sharing active ](media/vscode-status-active.png)| A collaboration session is active and content is shared. |
+| Participant: Joining Session | ![VS Code status: joining](media/vs-status-joining.png) | ![VS Code status: joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
+| Participant: Joined | ![VS Code status: joined](media/vs-status-joined.png) | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and recieving shared content. |
 
 ## Known participant limitations
 While there are currently some shortcomings participants will experience while using the features described above, collaboration session owners retain the complete functionality of their tool of choice. See the following for more information:
