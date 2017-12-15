@@ -128,12 +128,11 @@ Each collaborator can investigate different variables, jump to different files i
 ![Animation of concurrent debugging](media/co-debug.gif)
 
 
-
 ## Deattaching and attaching or reattaching to a co-debugging session
 
 Since participants may wish to stop debugging temporarily, they can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the owner or other participants.
 
-If you've updated settings so that as a participant you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can use the "Attach " from the scoped command menu.
+If you've updated settings so that as a participant you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can use click on the session state status bar icon and then select the "Attach to a Shared Debugging Session" from the scoped command menu.
 
 ![VS Code session state icon](media/vscode-share-state.png)
 
@@ -142,23 +141,10 @@ If you've updated settings so that as a participant you do not auto-attach to a 
 
 #### Sharing the running application in a browser
 
-After the application is running (even if not being debugged), the owner can then opt to set up a connection to the running web application for all participants and automatically open a browser by:
+Visual Studio Code does not have the concept of an known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session with a VS user that does you will automatically see the default browser appear connected to the owner's running applications. See [Visual Studio features](collab-vs.md#automatic-web-app-sharing-during-debugging) for more details.
 
-1. Clicking on the session state icon in the status bar 
-    
-    ![VS Code session state icon](media/vscode-share-state.png)
 
-2. Selecting "Share Web App in Browser".
-
-    ![Screen shot of menu with share browser selected](media/vscode-share-web-app.png)
-
-3. If not set in settings.json or already specified, you will be prompted to enter the port the application is running on.
-
-    ![Screen shot of port number prompt](media/vscode-enter-port.png)
-
-The system default browser is then started on all participant's machines connected to the running application.
-
-> **Tip:** Additional local server ports can also be shared securely such as RESTful endponts or databases if desired.  See [sharing a local server](#sharing-a-local-server).
+In addition, you can manually share the application or other endpoints like RESTful services using the "Share Local Server" feature. VS and VS Code participants can then open a browser on the same localhost port to see the running appliction.  See [sharing a local server](#sharing-a-local-server) for more details.
 
 <!--
 ### Known co-debugging participant limitations
@@ -191,7 +177,7 @@ From time to time, as a collaboration session owner you may find that you want t
 
 3. Enter the port number the server is running on and optionally a name.
 
-    ![Screen shot of port number prompt](media/vscode-enter-port.png)
+    ![Screen shot of port number prompt](media/vscode-enter-port.png)<br />
 
 That's it!
 
@@ -200,6 +186,9 @@ Optionally, participants can see a list of currently shared ports (by name if sp
 ![VS Code access local server](media/vscode-access-shared-server.png)<br />
 
 To **stop** sharing a local server, the owner simply needs to click the session state status bar icon as above, select "Stop Sharing Local Server", and select the port they want to stop sharing.
+
+![VS Code stop sharing server](media/vscode-stop-sharing-server.png)<br />
+
 
 <!--
 ### Additional known participant limitations
