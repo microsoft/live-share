@@ -52,7 +52,7 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ### Moving to a collaborator's edit location
 
-Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon to see the name of the person in the session and their locaiton. Simply clicking on this same icon to jumps the active editor to their exact location. 
+Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon that shows the number of collaborators to see who is in the collaboration session. Simply clicking on this same icon to jumps the active editor to their exact location. 
 
 ![Screen shot showing user status bar icon](media/vscode-user-status.png)
 
@@ -127,9 +127,18 @@ Each collaborator can investigate different variables, jump to different files i
 
 ![Animation of concurrent debugging](media/co-debug.gif)
 
-Since participants could get disconnected for some reason or may wish to stop debugging temporarily, Visual Studio Live Share also allows them to re-attach by simply launching the debugging session via an the debug tab.
 
-![VS Debug button](media/vscode-debug-button-participant.png)
+
+## Deattaching and attaching or reattaching to a co-debugging session
+
+Since participants may wish to stop debugging temporarily, they can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the owner or other participants.
+
+If you've updated settings so that as a participant you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can use the "Attach " from the scoped command menu.
+
+![VS Code session state icon](media/vscode-share-state.png)
+
+![VS Code attach debugger](media/vscode-reattach.png)
+
 
 #### Sharing the running application in a browser
 

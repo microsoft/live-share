@@ -34,7 +34,7 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ### Moving to a collaborator's edit location
 
-Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon to see the name of the person in the session and their locaiton. Simply clicking on this same icon to jumps the active editor to their exact location. 
+Each collaborator in your the session can be seen in the upper right and you can hover over the avatar to see their full information.  Further, simply clicking on this same icon to jumps the active editor to their exact location. 
 
 ![Screen shot showing user](media/vs-person.png)
 
