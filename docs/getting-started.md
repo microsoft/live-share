@@ -73,6 +73,8 @@ However, if you've been accepted into for the private limited preview (owners) a
 
 **Note:** If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share** to switch credentials. 
 
+![VS Tools Options Live Share](media/vs-tools-options.png)
+
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're been accepted into the private limited preview (owners), use the same credentials you used to sign up.
 
