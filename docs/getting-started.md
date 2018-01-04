@@ -75,9 +75,11 @@ If you've been accepted into for the private limited preview (owners) and want t
 Selecting **External Account** allows you to select an account not supported by Visual Studio's personalizaiton feature like GitHub. A browser will automatically appear the first time you use a Live Share feature so you may complete sign in.
 
 ### Signing in from Visual Studio Code
-For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're been accepted into the private limited preview (owners), use the same credentials you used to sign up.
+For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in. A browser will appear where you can complete the sign-in process.
 
  ![VS Code Download](media/vscode-sign-in-button.png)
+
+If you're been accepted into the private limited preview (owners), **use the same credentials you used to sign up**.
 
 ## Starting a collaboration session and sharing
 After downloading and installing Visual Studio Live Share, follow these steps to start a collaboration session and invite a colleague to work with you.
@@ -110,7 +112,6 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 4. **Send someone the invite link**
 
     Send the link over e-mail, Slack, Skype, etc. and once they joins you can begin immediately working with them! The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the private limited preview.
-
 
 That's it!!
 
