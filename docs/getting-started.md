@@ -68,11 +68,11 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 ![VS sign in](media/vs-sign-in-button.png) 
 
-However, if you've been accepted into for the private limited preview (owners) and want to share you should sign in using the same credentials you used to sign up. 
-
-**Note:** If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share** to switch credentials. 
+If you've been accepted into for the private limited preview (owners) and want to share you should **sign in using the same credentials you used to sign up**. If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials. 
 
 ![VS Tools Options Live Share](media/vs-tools-options.png)
+
+Selecting **External Account** allows you to select an account not supported by Visual Studio's personalizaiton feature like GitHub. A browser will automatically appear the first time you use a Live Share feature so you may complete sign in.
 
 ### Signing in from Visual Studio Code
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in.  If you're been accepted into the private limited preview (owners), use the same credentials you used to sign up.
@@ -157,7 +157,6 @@ You can also manually join from within VS or VS Code (rather than clicking on an
     
     Paste in the invite URL you were sent and confirm.
 
-
 That's it! You should be connected to the collaboration session momentarily.
 
 ## Changing the Connection Mode
@@ -166,9 +165,9 @@ By default Visual Studio Live Share automatically detects whether an owner and a
 
 | Mode | Owner Behavior | Participant Behavior |
 |------|----------------|----------------------|
-| Auto | Accepts secured, authenticated direct connections or via the cloud relay. | Attempts to use a direct connection and falls back to relaying through the cloud if this fails. |
-| Direct Only | Only accepts authenticated, secure direct connections. | Attempts to use a direct connection and fails if it cannot connect. |
-| Relay Only | Does not allow direct connections. No port is opened on the owner's machine. | Always connects via the cloud. |
+| Auto | Accepts secured, authenticated direct connections or via the cloud relay. | Attempts to use a direct connection and falls back to relaying through the if this fails. |
+| Direct | Only accepts authenticated, secure direct connections. | Attempts to use a direct connection and fails if it cannot connect. |
+| Relay | Does not allow direct connections. No port is opened on the owner's machine. | Always connects via the cloud. |
 
 To change the mode:
 
