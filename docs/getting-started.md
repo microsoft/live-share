@@ -45,7 +45,6 @@ Download and setup instructions:
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;macOS users should also be sure to place VS Code in the Applications folder.<br />
         2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
         3. Start VS Code Insiders, press F1, select "Extensions: Install from VSIX...", select the extension. <br />
         4. Wait for the install to complete and reload.<br />
@@ -117,7 +116,7 @@ That's it!!
 
 ## Joining a collaboration session
 
-After downloading and installing Visual Studio Live Share, follow these steps to join a collaboration session a collegue has sent you.
+After downloading and installing Visual Studio Live Share, follow these steps to join a collaboration session a colleague has sent you.
 
 1. **Start a discussion with the owner**
 
@@ -125,7 +124,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 2. **Click on the invite link / open the invite in your browser**
 
-    After installing Visual Studio Live Share for your tool, simply open (or re-open) the invite web page using the invite link your collegue sent you.  You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
+    After installing Visual Studio Live Share for your tool, simply open (or re-open) the invite web page using the invite link your colleague sent you.  You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
 
     > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing the Visual Studio Live Share extension before opening/re-opening the invite page. Still having trouble? See [manually joining](#manually-joining).
 

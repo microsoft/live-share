@@ -1,4 +1,4 @@
-# Welcome to the Visual Studio Live Share private limited preview!
+# Welcome to the Visual Studio Live Share preview!
 
 If you're here, you've probably been **accepted into the private limited preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[sign up now](http://aka.ms/vsls-signup)** and when accepted into the preview you can share!
 
@@ -24,7 +24,6 @@ Just follow these steps to start sharing:
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;macOS users should also be sure to place VS Code in the Applications folder.<br />
         2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
         3. Start VS Code Insiders, press F1, select "Extensions: Install from VSIX...", select the extension. <br />
         4. Wait for the install to complete and reload.<br />
@@ -37,7 +36,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### 2. Sign in from within your IDE/editor
 
-Once installed, start up your tool sign in to the Visual Studio Live Share with the same creditals you used to sign up.
+Once installed, start up your tool sign in to the Visual Studio Live Share with the same credentials you used to sign up.
 
 ![VS Download](media/vs-sign-in-button.png) ![VS Code Download](media/vscode-sign-in-button.png)
 
@@ -45,13 +44,13 @@ Once installed, start up your tool sign in to the Visual Studio Live Share with 
 
 ### 3. Start a collaboration session and share your content
 
-Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them. 
+Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard. 
 
 ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 	
 ### 4. Send someone the invite link
 
-Send the link over e-mail, Slack, Skype, etc. and once someone joins you can begin immediately working with them! 
+Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allows them to join a collaboration session that shares contents of the folder, project, or solution you opened. 
 
 Note that the **person you invite does not need to sign up or be accepted in the private limited preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 

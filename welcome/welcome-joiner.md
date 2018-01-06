@@ -23,7 +23,6 @@ Just follow these steps to join a collaboration session:
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;macOS users should also be sure to place VS Code in the Applications folder.<br />
         2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
         3. Start VS Code Insiders, press F1, select "Extensions: Install from VSIX...", select the extension. <br />
         4. Wait for the install to complete and reload.<br />
@@ -39,13 +38,15 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. 
 
 ### 3. Open/re-open the invite link in your web browser
-After installing Visual Studio Live Share for your tool, simply open (or re-open) the invite web page using the invite link your college sent you.  You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool and if you accept it the tool will launch and automatically start the process of joining the collaboration session.
+After installing Visual Studio Live Share for your IDE/editor, simply open (or re-open) the invite web page using the invite link your colleague sent you.  
+
+You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool and if you accept it the IDE/editor will launch and automatically start the process of joining the collaboration session.
 
 > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Visual Studio Live Share before opening/re-opening the invite page. Still having trouble? See [manually joining](../docs/getting-started.md#manually-joining) in our docs.
 
 ### 4. Sign in from within your IDE/editor
 
-To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account. 
+To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft work, school, or personal account. 
 
 If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your personalization account so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share** to switch credentials. 
 

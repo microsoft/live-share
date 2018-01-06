@@ -9,11 +9,31 @@ If you find your issue/feature already exists, feel free to make relevant commen
 
 👎 - downvote
 
-## Filing Problem Reports or Feature Requests
+## Filing Problem Reports
 
-### Filing Visual Studio Problems
+### Step 1 - Enable Verbose Logging
+
+**In VS:**  
+1. Update Tools > Options > Live Share > Output Verbosity to Verbose.
+2. Restart VS
+3. Repro the issue
+
+**In VS Code:** 
+1. Go to File > Preferences > Settings
+2. Add ``"liveshare.diagnosticLogging": true``
+3. Restart VS Code
+4. Repro the issue
+
+**Log File Locations:**
+- Windows: %TEMP%\VSFeedbackVSRTCLogs 
+- macOS: $TMPDIR/VSFeedbackVSRTCLogs
+    - Type ``open $TMPDIR/VSFeedbackVSRTCLogs`` from the Terminal to have Finder open the location
+
+### Step 2A - Filing Visual Studio Problems
 
 Visual Studio has a built in feedback mechanism via the "Report a Problem..." tool that provides the engineering team detailed information about your installation that you should use to log bugs or problems you encounter when using VS.
+
+Verbose logs will be automatically attached.
 
 ![Image of Report a Problem...](docs/media/vs-feedback.png) 
 
@@ -23,27 +43,35 @@ Note that after your problem report is filed, it may be converted to a [GitHub i
 
 Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
 
-### Filing VS Code or General Service Problems 
+### Step 2B - Filing VS Code or General Service Problems 
 
 Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and please include the following in the description:
 
-* The product and version of the tool you are using
-* Your operating system
-* List of extensions that you have installed (if applicable). 
-
-* If in VS Code, errors in the Dev Tools Console (Help | Toggle Developer Tools)
+- **Tool:** VS, VS Code for Mac, VS Code for Windows
+- **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
+- **Extension version:** Mention the version you installed with your VS/VSCode. 
+- **Project Type:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
+    - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
+- **Repro steps:** Prefix the repro steps with [Owner] or [Participant] to make it easy to repro the bug
+- Attach:
+    - **Logs:** Zip and attach verbose logs from the locations in step 1
+    - **VS Code Dev Tools Console Errors**: Help > Toggle Developer Tools
 
 Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
 
-### Filing Feature Requests
+## Filing Feature Requests
+
 Many feature requests start out life as reported problems and should therefore follow the processes described above.  However, if you believe you have a feature request that is not a bug, you can follow these steps:
 
 > Tip: You may be able to save yourself some time by using this [query](https://aka.ms/vsls-feature-requests) to see if your request already exists.  If you find it, 👍 (upvote) it.
 
 Raise an issue in [this repository](https://github.com/Microsoft/live-share/issues) and please include the following in the description:
 
-* The product and version of the tool you are using
-* Your operating system
+- **Tool:** VS, VS Code for Mac, VS Code for Windows
+- **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
+- **Extension version:** Mention the version you installed with your VS/VSCode. 
+- **Project Type:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
+    - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
 
 Be as specific as you can be with the problem or scenario you are trying to solve with the requested feature and let us know any painful workarounds you are having to do.
 

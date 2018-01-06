@@ -4,12 +4,12 @@
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><a href="http://aka.ms/vsls"><img src="docs/media/vsls-icon.png" style="width: 128px; height: 128px;" /></a></td>
 <td><strong>Visual Studio Live Share</strong><br />
-<i>Visual Studio Live Share is a service designed to enable developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
-<strong><a href="http://aka.ms/vsls">Learn more and sign up for the preview now!</a></strong></i>
+<i>Visual Studio Live Share is designed to enable developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
+<strong><a href="http://aka.ms/vsls">Learn more!</a></strong></i>
 </td>
 </tr></table>
 
-The initial focus of Visual Studio Live Share is <strong>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</strong> with more coming in the future. It is currently in a limited, private limited preview.
+The initial focus of Visual Studio Live Share is <strong>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</strong> with more coming in the future. It is currently in a limited, private preview.
 
 ## Quick Starts
 
@@ -22,17 +22,7 @@ The initial focus of Visual Studio Live Share is <strong>real-time collaborative
 - [Visual Studio Code enabled features](docs/collab-vscode.md) 
 - [FAQ](http://aka.ms/vsls-faq)
 
-## Sign up for the Visual Studio Live Share preview
-
-While Visual Studio Live Share is in its private limited preview phase, you'll need to request access to **start** a collaboration session and share your content. We'll be working through the wait list as fast as we can, so expect to get an e-mail from us when you've been accepted! 
-
-> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
-
-If you're a Visual Studio user be sure to use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to sign up to make sign in fast!
-
-**[Sign up now!](http://aka.ms/vsls-signup)**
-
-## Download and install Visual Studio Live Share for your tool
+## Download and install Visual Studio Live Share
 
 <table style="width: 100%; border-style: none;">
 <tr>

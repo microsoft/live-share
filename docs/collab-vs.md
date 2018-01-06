@@ -15,7 +15,7 @@ This document provides information on capabilities enabled by the Visual Studio 
     - [Visual Studio Code features](collab-vscode.md)
     
 ## Recap: Owners and participants
-All collaboration activities in Visual Studio Live Share involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Anyone that joins an owner's collaboration session is then considered a participant. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
+All collaboration activities in Visual Studio Live Share involve a single "owner" with one or more "participants." The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Anyone that joins an owner's collaboration session is then considered a participant. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
 
 Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up. 
 
@@ -105,7 +105,7 @@ This is done in a secure way and the remote web application is only available to
 
 ![Animation of concurrent debugging](media/co-debug.gif)
 
-## Deattaching and attaching or reattaching to a co-debugging session
+## Detaching and attaching or reattaching to a co-debugging session
 
 Since participants may wish to stop debugging temporarily, they can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the owner or other participants.
 
