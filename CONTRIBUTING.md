@@ -25,8 +25,8 @@ If you find your issue/feature already exists, feel free to make relevant commen
 4. Repro the issue
 
 **Log File Locations:**
-- Windows: %TEMP%\VSFeedbackVSRTCLogs 
-- macOS: $TMPDIR/VSFeedbackVSRTCLogs
+- Windows: ``%TEMP%\VSFeedbackVSRTCLogs``
+- macOS: ``$TMPDIR/VSFeedbackVSRTCLogs``
     - Type ``open $TMPDIR/VSFeedbackVSRTCLogs`` from the Terminal to have Finder open the location
 
 ### Step 2A - Filing Visual Studio Problems
@@ -50,7 +50,7 @@ Create an issue in [this repository](https://github.com/Microsoft/live-share/iss
 - **Tool:** VS, VS Code for Mac, VS Code for Windows
 - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
 - **Extension version:** Mention the version you installed with your VS/VSCode. 
-- **Project Type:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
+- **Taret Platform/Language:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
     - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
 - **Repro steps:** Prefix the repro steps with [Owner] or [Participant] to make it easy to repro the bug
 - Attach:
