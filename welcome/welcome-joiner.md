@@ -32,9 +32,9 @@ Just follow these steps to join a collaboration session:
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-### 2. Start a discussion with the collaboration session owner
+### 2. Start a discussion with the Collaboration Session Host
 
-It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. 
+It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate.
 
 ### 3. Open/re-open the invite link in your web browser
 

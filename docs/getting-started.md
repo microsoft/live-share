@@ -2,33 +2,33 @@
 
 **Table of Contents**
 
-- [Owners and participants](#owners-and-participants)
+- [Collaboration Session Host and Guests](#collaboration-session-host-and-guests)
 - [Downloading and installing](#downloading-and-installing)
 - [Signing into Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor)
 - [Starting a collaboration session](#starting-a-collaboration-session-and-sharing)
 - [Joining a collaboration session](#joining-a-collaboration-session)
- - [Manually joining](#manually-joining)
+  - [Manually joining](#manually-joining)
 - [Changing the Connection Mode](#changing-the-connection-mode)
 - [What can I do with a collaboration session?](#what-can-i-do-with-a-collaboration-session)
 - [Ending a collaboration session](#ending-a-collaboration-session)
 - [Session states](#session-states)
-- [Known participant limitations](#known-participant-limitations)
+- [Known guest limitations](#known-guest-limitations)
 - [More information](#more-information)
   - [Visual Studio features](collab-vs.md)
   - [Visual Studio Code features](collab-vscode.md)
 
-## Owners and Participants
+## Collaboration Session Host and Guests
 
-All collaboration activities in Visual Studio Live Share involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Anyone that joins an owner's collaboration session is then considered a participant.
+All collaboration activities in Visual Studio Live Share involve a single "collaboration session host" with one or more "guest." The host is the person that started the collaboration session and anyone that joins is a guest.
 
-Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up. 
+Collaboration session hosts can use all of their tools and services as they would normally but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up.
 
 ## Downloading and installing
 
 Requirements:
 
- - **Visual Studio 2017 Update 6** - Any edition of Visual Studio 2017 with update 6 installed (15.6) running on Windows 7, 8.1, or 10.
- - **Visual Studio Code Insiders** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
+- **Visual Studio 2017 Update 6** - Any edition of Visual Studio 2017 with update 6 installed (15.6) running on Windows 7, 8.1, or 10.
+- **Visual Studio Code Insiders** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
 
 Download and setup instructions:
 
@@ -70,7 +70,7 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 ![VS sign in](media/vs-sign-in-button.png)
 
-If you've been accepted into for the private limited preview (owners) and want to share you should **sign in using the same credentials you used to sign up**. If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
+If you've been accepted into for the private limited preview (session hosts) and want to share you should **sign in using the same credentials you used to sign up**. If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
 ![VS Tools Options Live Share](media/vs-tools-options.png)
 
@@ -82,7 +82,7 @@ For Visual Studio Code, simply click on the "Sign in" status bar item and follow
 
  ![VS Code Download](media/vscode-sign-in-button.png)
 
-If you're been accepted into the private limited preview (owners), **use the same credentials you used to sign up**.
+If you're been accepted into the private limited preview (session hosts), **use the same credentials you used to sign up**.
 
 ## Starting a collaboration session and sharing
 
@@ -92,7 +92,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     In order to start a collaboration session while Visual Studio Live Share is in private limited preview, you'll need to be signed up and accepted into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to sign up.
 
-    > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a participant. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
+    > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a guest. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
 
     If you have not done so, **[sign up now!](http://aka.ms/vsls-signup)** 
 
@@ -123,9 +123,9 @@ That's it!!
 
 After downloading and installing Visual Studio Live Share, follow these steps to join a collaboration session a colleague has sent you.
 
-1. **Start a discussion with the owner**
+1. **Start a discussion with the Collaboration Session Host**
 
-    It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, as [outlined above](#owners-and-participants) the collaboration session requires the owner to be connected to the service to operate so you'll want to check in with them.
+    It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, as [outlined above](#collaboration-session-host-and-guests) the collaboration session requires the session host to be connected to the service to operate so you'll want to check in with them.
 
 2. **Click on the invite link / open the invite in your browser**
 
@@ -166,13 +166,13 @@ That's it! You should be connected to the collaboration session momentarily.
 
 ## Changing the Connection Mode
 
-By default Visual Studio Live Share automatically detects whether an owner and a participant can communicate directly and only relays via the cloud if there is no route between them. This mixed mode allows some participants to relay through the cloud while others connect directly and the process is transparent to everyone involved and ensures the optimal performance for all involved. The connections are authenticated via a cloud based mechanism to ensure security. However, if you would prefer not to let people direct to your machine or are running into problems with the approach you can force other connection modes.  
+By default Visual Studio Live Share automatically detects whether an collaboration session host and guest can communicate directly and only relays via the cloud if there is no route between them. This mixed mode allows some guests to relay through the cloud while others connect directly and the process is transparent to everyone involved and ensures the optimal performance for all involved. The connections are authenticated via a cloud based mechanism to ensure security. However, if you would prefer not to let people direct to your machine or are running into problems with the approach you can force other connection modes.
 
 | Mode | Owner Behavior | Participant Behavior |
 |------|----------------|----------------------|
-| Auto | Accepts secured, authenticated direct connections or via the cloud relay. | Attempts to use a direct connection and falls back to relaying through the if this fails. |
-| Direct | Only accepts authenticated, secure direct connections. | Attempts to use a direct connection and fails if it cannot connect. |
-| Relay | Does not allow direct connections. No port is opened on the owner's machine. | Always connects via the cloud. |
+| Auto | The host's collaboration session accepts secured, authenticated direct connections or via the cloud relay. | Attempts to use a direct connection and falls back to relaying through the if this fails. |
+| Direct | The host's collaboration session only accepts authenticated, secure direct connections. | Attempts to use a direct connection and fails if it cannot connect. |
+| Relay | The host's collaboration session does not allow direct connections. No port is opened on the host's machine. | Always connects via the cloud. |
 
 To change the mode:
 
@@ -191,7 +191,7 @@ Lots of things! Co-editing and co-debugging for example! Take a look at the arti
 
 ## Ending or leaving a collaboration session
 
-Owners can stop sharing completely and end the collaboration session by clicking the session state button (in the upper right hand corner in VS or the status bar in VS Code) and selecting "End Collaboration Session". All participants will be notified that the session has ended.
+Owners can stop sharing completely and end the collaboration session by clicking the session state button (in the upper right hand corner in VS or the status bar in VS Code) and selecting "End Collaboration Session". All guests will be notified that the session has ended.
 
 **In VS:**
 
@@ -204,7 +204,7 @@ Owners can stop sharing completely and end the collaboration session by clicking
 
 Participants will no longer be able to access the content and any temp files are automatically cleaned up.
 
-Similarly, individual participants can leave the collaboration session without ending it for others by simply closing the tool or selecting "Leave Collaboration Session".
+Similarly, individual guests can leave the collaboration session without ending it for others by simply closing the tool or selecting "Leave Collaboration Session".
 
 **In VS:**
 
@@ -223,17 +223,17 @@ After you have started or joined collaboration session and have access to shared
 
 The following are the states you will typically see:
 
-| State | Visual Studio | Visual Studio Code | Description | 
+| State | Visual Studio | Visual Studio Code | Description |
 |-------|---------------|--------------------|-------------|
 | Inactive | ![VS status: inactive](media/vs-status-share.png) | ![VS Code status: inactive](media/vscode-status-share.png) | No active collaboration session and nothing is shared. |
 | Owner: Sharing In-Progress | ![VS status: share in progress](media/vs-status-sharing.png) | ![VS Code status: share in progress](media/vscode-status-sharing.png)| A collaboration session is starting and content sharing will begin shortly. |
 | Owner: Sharing | ![VS Code status: sharing active ](media/vs-status-active.png) | ![VS Code status: sharing active ](media/vscode-status-active.png)| A collaboration session is active and content is shared. |
 | Participant: Joining Session | ![VS Code status: joining](media/vs-status-joining.png) | ![VS Code status: joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
-| Participant: Joined | ![VS Code status: joined](media/vs-status-joined.png) | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and recieving shared content. |
+| Participant: Joined | ![VS Code status: joined](media/vs-status-joined.png) | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and receiving shared content. |
 
-## Known participant limitations
+## Known guest limitations
 
-While there are currently some shortcomings participants will experience while using the features described above, collaboration session owners retain the complete functionality of their tool of choice. See the following for more information:
+While there are currently some shortcomings guests will experience while using the features described above, collaboration session hosts retain the complete functionality of their tool of choice. See the following for more information:
 
 - [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)
 - [Co-debugging limitations](http://aka.ms/vsls-feature-requests/co-debug)
