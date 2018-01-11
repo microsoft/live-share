@@ -1,4 +1,3 @@
-
 # Visual Studio Live Share Docs & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
@@ -9,17 +8,18 @@
 </td>
 </tr></table>
 
-The initial focus of Visual Studio Live Share is <strong>real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services</strong> with more coming in the future. It is currently in a limited, private preview.
+The initial focus of Visual Studio Live Share is **real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services** with more coming in the future. It is currently in a limited, private preview.
 
 ## Quick Starts
 
 - [Start a collaboration session](welcome/welcome-owner.md) (after you've been accepted into the preview)
 - [Join a collaboration session](welcome/welcome-joiner.md) (no need to sign up or be accepted in the preview)
 
-## Documentation 
+## Documentation
+
 - [Getting started and managing collaboration sessions](docs/getting-started.md)
-- [Visual Studio enabled features](docs/collab-vs.md) 
-- [Visual Studio Code enabled features](docs/collab-vscode.md) 
+- [Visual Studio enabled features](docs/collab-vs.md)
+- [Visual Studio Code enabled features](docs/collab-vscode.md)
 - [FAQ](http://aka.ms/vsls-faq)
 
 ## Download and install Visual Studio Live Share
@@ -51,6 +51,7 @@ The initial focus of Visual Studio Live Share is <strong>real-time collaborative
 By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ## Contributing & Feedback
+
 Have a question or feedback? There are many ways to contribute.
 
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
@@ -64,11 +65,13 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## Terms of Use
+
 By downloading and/or running the contents of this repository, you agree to the license terms of the third party application software, Microsoft products, and components to be installed.
 
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
 ## License
+
 By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 However, the contents of this repository are licensed under the MIT License (MIT). 

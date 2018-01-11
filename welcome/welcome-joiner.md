@@ -1,4 +1,3 @@
-
 # Welcome to Visual Studio Live Share!
 
 If you're here, one of the Visual Studio Live Share private limited preview members has probably **shared a collaboration session with you**! Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started. 
@@ -38,6 +37,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. 
 
 ### 3. Open/re-open the invite link in your web browser
+
 After installing Visual Studio Live Share for your IDE/editor, simply open (or re-open) the invite web page using the invite link your colleague sent you.  
 
 You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool and if you accept it the IDE/editor will launch and automatically start the process of joining the collaboration session.
@@ -58,7 +58,6 @@ That's it!! In a few moments you'll be connected to your colleague's collaborati
 - [Visual Studio features](../docs/collab-vs.md)
 - [Visual Studio Code features](../docs/collab-vscode.md)
 - [Quick start: Sharing](welcome-owner.md)
-
 
 Need help and not finding what you need in the docs?
 

@@ -3,23 +3,26 @@
 This document provides information on capabilities enabled by the Visual Studio Visual Studio Live Share extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS and other tools.
 
 **Table of Contents**
+
 - [Recap: Owners and participants](#recap-owners-and-participants)
 - [Collaborative editing](#collaborative-editing)
 - [Collaborative debugging](#collaborative-debugging)
 - [Additional capabilities](#additional-capabilities)
-    - [Sharing a local server](#sharing-a-local-server)
-<!-- - [Additional known participant limitations](#additional-known-participant-limitations) -->
+  - [Sharing a local server](#sharing-a-local-server)
+  <!-- - [Additional known participant limitations](#additional-known-participant-limitations) -->
 - [Known participant limitations](#known-participant-limitations)
 - [More information](#more-information)
-    - [Getting started and managing collaboration sessions](getting-started.md)
-    - [Visual Studio Code features](collab-vscode.md)
-    
+  - [Getting started and managing collaboration sessions](getting-started.md)
+  - [Visual Studio Code features](collab-vscode.md)
+
 ## Recap: Owners and participants
+
 All collaboration activities in Visual Studio Live Share involve a single "owner" with one or more "participants." The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Anyone that joins an owner's collaboration session is then considered a participant. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
 
-Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up. 
+Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up.
 
 ## Collaborative editing
+
 Once a participant has joined a collaboration session all collaborators will immediately be able to see each others edits and highlights in real-time. Simply select a file from the Solution Explorer and start editing. Participants will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
 
 ![Screen shot showing co-editing](media/vs-coedit.png)
@@ -46,8 +49,9 @@ Simply hover over a user and you will see a pin icon. Simply click the pin to st
 ![VS Code pin](media/vs-pinned.png)
 
 To make it easy to hop in and out of pinning, the editor is un-pinned if any of the following occurs:
+
 1. You edit or make a selection
-3. You click the pin icon again
+2. You click the pin icon again
 
 Afterwards you can simply click the pin icon again to follow their location once again.
 
@@ -68,6 +72,7 @@ To jump start the conversation, the following are some limitations of particular
 -->
 
 ## Collaborative Debugging
+
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
 
 > **Note:** All traffic is secured and encrypted and access is limited to only those resources needed to facilitate debug and browser access to the web application. These resources are only available to participants of the collaboration session.
@@ -94,7 +99,6 @@ Each collaborator can investigate different variables, jump to different files i
 
 > **Tip:** You can participate in VS Code debugging sessions from VS and vice versa! If the owner is using VS Code, you can check out the [VS Code instructions](collab-vscode.md#collaborative-debugging) but the steps are roughly the same. 
 
-
 ## Automatic web app sharing during debugging
 
 Even better, by default if the owner's project is configured to automatically start a web browser to connect to the running web application when debugging, Live Share will automatically do the same on each participant's machine!
@@ -105,7 +109,7 @@ This is done in a secure way and the remote web application is only available to
 
 ![Animation of concurrent debugging](media/co-debug.gif)
 
-## Detaching and attaching or reattaching to a co-debugging session
+## Detaching, attaching, or reattaching to a co-debugging session
 
 Since participants may wish to stop debugging temporarily, they can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the owner or other participants.
 
@@ -147,7 +151,7 @@ From time to time, as a collaboration session owner you may find that you want t
 
 ![Manage Shared Local Servers](media/vs-manage-local-shared-servers.png)
 
-That's it! 
+That's it!
 
 Participants will now be able to use this same port from their machine to access the server or service if it is free. Otherwise it will be automatically mapped to a free port. You can view shared local servers by clicking the session state button in the upper right corner and selecting "View Shared Local Servers."
 
@@ -171,6 +175,7 @@ To jump start the conversation, the following are some additional limitations of
 -->
 
 ## Known participant limitations
+
 While there are currently some shortcomings participants will experience while using the features described above, collaboration session owners retain the complete functionality of their tool of choice. See the following for more information:
 
 - [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)

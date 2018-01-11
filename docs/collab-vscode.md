@@ -3,25 +3,28 @@
 This document provides information on capabilities enabled by the VS Code Visual Studio Live Share extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS Code and other tools.
 
 **Table of Contents**
+
 - [Recap: Owners and participants](#recap-owners-and-participants)
 - [Command palette and scoped command menu](#command-palette-and-scoped-command-menu)
 - [Collaborative editing](#collaborative-editing)
 - [Collaborative debugging](#collaborative-debugging)
-   - [Sharing the running application in a browser](#sharing-the-running-application-in-a-browser)
+  - [Sharing the running application in a browser](#sharing-the-running-application-in-a-browser)
 - [Additional capabilities](#additional-capabilities)
-    - [Sharing a local server](#sharing-a-local-server)
-<!-- - [Additional known participant limitations](#additional-known-participant-limitations) -->
+  - [Sharing a local server](#sharing-a-local-server)
+  <!-- - [Additional known participant limitations](#additional-known-participant-limitations) -->
 - [Known participant limitations](#known-participant-limitations)
 - [More information](#more-information)
-    - [Getting started and managing collaboration sessions](getting-started.md)
-    - [Visual Studio features](collab-vs.md)
+  - [Getting started and managing collaboration sessions](getting-started.md)
+  - [Visual Studio features](collab-vs.md)
 
 ## Recap: Owners and participants
+
 All collaboration activities in Visual Studio Live Share involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Anyone that joins an owner's collaboration session is then considered a participant. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
 
-Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up. 
+Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up.
 
 ## Command palette and scoped command menu
+
 Nearly all Visual Studio Live Share functions are available from the Visual Studio Code "Command Palette" that can be accessed using Ctrl + Shift + P or F1. You can find a complete list of commands by typing "live share".
 
 However, since this list can get long, you may find it easier to take advantage of a scoped command menu available from the status bar. Clicking on the sign in / session state icon in the status bar will immediately bring up a contextualized list of commands that are available for you to use.
@@ -50,7 +53,7 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ### Moving to a collaborator's edit location
 
-Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon that shows the number of collaborators to see who is in the collaboration session. Simply clicking on this same icon to jumps the active editor to their exact location. 
+Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon that shows the number of collaborators to see who is in the collaboration session. Simply clicking on this same icon to jumps the active editor to their exact location.
 
 ![Screen shot showing user status bar icon](media/vscode-user-status.png)
 
@@ -71,8 +74,9 @@ The pin is for a tab set so you can use split view to have a set that is pinned 
 ![VS Code pin in split view](media/vscode-pin-split.png)
 
 To make it easy to hop in and out of pinning, the tab set is un-pinned if any of the following occurs:
+
 1. You edit or make a selection
-3. You click the pin icon again
+2. You click the pin icon again
 
 Afterwards, simply click the pin icon again to follow them once again.
 
@@ -92,9 +96,9 @@ To jump start the conversation, the following are some limitations of particular
 
 ## Collaborative debugging
 
-Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine. 
+Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the owner's machine.
 
-Using it simple. 
+Using it simple.
 <!--
 1. If you are using VS Code with ASP.NET Core or C#, make sure you and all of your collaborators have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the owner and all participants should have the extension installed in order for debugging to work. 
 -->
@@ -125,8 +129,7 @@ Each collaborator can investigate different variables, jump to different files i
 
 ![Animation of concurrent debugging](media/co-debug.gif)
 
-
-## Deattaching and attaching or reattaching to a co-debugging session
+## Detaching, attaching, or reattaching to a co-debugging session
 
 Since participants may wish to stop debugging temporarily, they can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the owner or other participants.
 
@@ -136,11 +139,9 @@ If you've updated settings so that as a participant you do not auto-attach to a 
 
 ![VS Code attach debugger](media/vscode-reattach.png)
 
-
-#### Sharing the running application in a browser
+### Sharing the running application in a browser
 
 Visual Studio Code does not have the concept of an known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session with a VS user that does you will automatically see the default browser appear connected to the owner's running applications. See [Visual Studio features](collab-vs.md#automatic-web-app-sharing-during-debugging) for more details.
-
 
 In addition, you can manually share the application or other endpoints like RESTful services using the "Share Local Server" feature. VS and VS Code participants can then open a browser on the same localhost port to see the running appliction.  See [sharing a local server](#sharing-a-local-server) for more details.
 
@@ -187,7 +188,6 @@ To **stop** sharing a local server, the owner simply needs to click the session 
 
 ![VS Code stop sharing server](media/vscode-stop-sharing-server.png)<br />
 
-
 <!--
 ### Additional known participant limitations
 
@@ -205,6 +205,7 @@ To jump start the conversation, the following are some additional limitations of
 -->
 
 ## Known participant limitations
+
 While there are currently some shortcomings participants will experience while using the features described above, collaboration session owners retain the complete functionality of their tool of choice. See the following for more information:
 
 - [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)

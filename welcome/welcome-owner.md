@@ -2,7 +2,7 @@
 
 If you're here, you've probably been **accepted into the private limited preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[sign up now](http://aka.ms/vsls-signup)** and when accepted into the preview you can share!
 
-Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas. 
+Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
 Just follow these steps to start sharing:
 
@@ -47,7 +47,7 @@ Once installed, start up your tool sign in to the Visual Studio Live Share with 
 Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard. 
 
 ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
-	
+
 ### 4. Send someone the invite link
 
 Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allows them to join a collaboration session that shares contents of the folder, project, or solution you opened. 

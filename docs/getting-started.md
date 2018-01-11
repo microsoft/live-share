@@ -1,22 +1,24 @@
 # Getting Started
 
 **Table of Contents**
+
 - [Owners and participants](#owners-and-participants)
 - [Downloading and installing](#downloading-and-installing)
 - [Signing into Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor)
 - [Starting a collaboration session](#starting-a-collaboration-session-and-sharing)
 - [Joining a collaboration session](#joining-a-collaboration-session)
-   - [Manually joining](#manually-joining)
+ - [Manually joining](#manually-joining)
 - [Changing the Connection Mode](#changing-the-connection-mode)
 - [What can I do with a collaboration session?](#what-can-i-do-with-a-collaboration-session)
 - [Ending a collaboration session](#ending-a-collaboration-session)
 - [Session states](#session-states)
 - [Known participant limitations](#known-participant-limitations)
 - [More information](#more-information)
-    - [Visual Studio features](collab-vs.md)
-    - [Visual Studio Code features](collab-vscode.md)
+  - [Visual Studio features](collab-vs.md)
+  - [Visual Studio Code features](collab-vscode.md)
 
 ## Owners and Participants
+
 All collaboration activities in Visual Studio Live Share involve a single "owner" with one or more "participants."  The owner is the person that started the collaboration session and therefore not only owns the session but the content being shared as well.  Anyone that joins an owner's collaboration session is then considered a participant.
 
 Owners can use all of their tools and services as they would normally but participants are only given access to the specific things the owner has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the owner's machine and not synchronized to the cloud or on the participant's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a participant joins and the moment an owner ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up. 
@@ -24,6 +26,7 @@ Owners can use all of their tools and services as they would normally but partic
 ## Downloading and installing
 
 Requirements:
+
  - **Visual Studio 2017 Update 6** - Any edition of Visual Studio 2017 with update 6 installed (15.6) running on Windows 7, 8.1, or 10.
  - **Visual Studio Code Insiders** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
 
@@ -65,15 +68,16 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 By default Visual Studio uses the your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
 
-![VS sign in](media/vs-sign-in-button.png) 
+![VS sign in](media/vs-sign-in-button.png)
 
-If you've been accepted into for the private limited preview (owners) and want to share you should **sign in using the same credentials you used to sign up**. If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials. 
+If you've been accepted into for the private limited preview (owners) and want to share you should **sign in using the same credentials you used to sign up**. If you need to use a different sign-in than your VS personalization account (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
 ![VS Tools Options Live Share](media/vs-tools-options.png)
 
 Selecting **External Account** allows you to select an account not supported by Visual Studio's personalizaiton feature like GitHub. A browser will automatically appear the first time you use a Live Share feature so you may complete sign in.
 
 ### Signing in from Visual Studio Code
+
 For Visual Studio Code, simply click on the "Sign in" status bar item and follow the directions to sign in. A browser will appear where you can complete the sign-in process.
 
  ![VS Code Download](media/vscode-sign-in-button.png)
@@ -81,6 +85,7 @@ For Visual Studio Code, simply click on the "Sign in" status bar item and follow
 If you're been accepted into the private limited preview (owners), **use the same credentials you used to sign up**.
 
 ## Starting a collaboration session and sharing
+
 After downloading and installing Visual Studio Live Share, follow these steps to start a collaboration session and invite a colleague to work with you.
 
 1. **Sign up for the Visual Studio Live Share preview**
@@ -92,21 +97,21 @@ After downloading and installing Visual Studio Live Share, follow these steps to
     If you have not done so, **[sign up now!](http://aka.ms/vsls-signup)** 
 
 2. **Sign in from within your IDE/editor**
-    
+
     Once you've been accepted into the preview, sign into Visual Studio Live Share with the credentials you used to sign-up. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). 
 
 3. **Start a collaboration session**
-    
+
      Open a folder, project, or solution, and simply click the "Share" button (VS) / status bar icon (VS Code) in your tool and an invite link will be automatically copied to your clipboard. When opened in a browser, this link allow others to join a new collaboration session that shares contents of these folders with them. 
 
     ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
-	You will also see the "Share" button / status bar icon transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
+    You will also see the "Share" button / status bar icon transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
 
     Note that if you need to get the invite link again after you've started sharing, you access it again as follows:
 
-	- **VS:** Click on the share / session state button and select "Copy Link"  
-	- **VS Code**: Click the session state status bar icon and select "Invite Others (Copy Link)".
+    - **VS:** Click on the share / session state button and select "Copy Link"  
+    - **VS Code**: Click the session state status bar icon and select "Invite Others (Copy Link)".
 
 4. **Send someone the invite link**
 
@@ -129,7 +134,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
     > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing the Visual Studio Live Share extension before opening/re-opening the invite page. Still having trouble? See [manually joining](#manually-joining).
 
 3. **Sign in from within your IDE/editor**
-    
+
     To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account if you are not already signed in. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session.
 
 That's it!! In a few moments you'll be connected and you can start collaborating. You will see the "Share" button (VS) / status bar icons (VS Code) transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
@@ -139,7 +144,7 @@ That's it!! In a few moments you'll be connected and you can start collaborating
 You can also manually join from within VS or VS Code (rather than clicking on an invite link) which can be useful in situations where the tool you want to use is already running, you want to use a different tool than you usually do, or if you are having trouble with getting invite links to work for some reason. The process is easy:
 
 1. **Sign in from within your IDE/editor**
-    
+
     See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor) if you have not already. You do not need to be part of the private limited preview to join a collaboration session.
 
 2. **Manually enter the invite link**
@@ -153,8 +158,8 @@ You can also manually join from within VS or VS Code (rather than clicking on an
     ![VS Code after sign in status bar item](media/vscode-after-signin-status-bar.png) <br />
     ![VS Code join collaboration session](media/vscode-join.png) <br />
 
-3. **Paste the invite link** 
-    
+3. **Paste the invite link**
+
     Paste in the invite URL you were sent and confirm.
 
 That's it! You should be connected to the collaboration session momentarily.
@@ -173,9 +178,9 @@ To change the mode:
 
 - **VS:** Go to Tools > Options > Live Share, select the mode from the "Connection Mode" dropdown and then restart VS.
 - **VS Code:** Edit settings.json (File > Preferences > Settings) and add one of the following and then restart VS Code:
-     - ``"liveshare.connectionMode":"auto"``
-     - ``"liveshare.connectionMode":"direct"``
-     - ``"liveshare.connectionMode":"relay"``
+  - ``"liveshare.connectionMode":"auto"``
+  - ``"liveshare.connectionMode":"direct"``
+  - ``"liveshare.connectionMode":"relay"``
 
 ## What can I do with a collaboration session?
 
@@ -213,6 +218,7 @@ Similarly, individual participants can leave the collaboration session without e
 Any temp files are automatically cleaned up so no further action is needed.
 
 ## Session states
+
 After you have started or joined collaboration session and have access to shared content, the "Share" button in the upper right hand corner in VS and the Visual Studio Live Share status bar icons in Visual Studio Code update their appearance to reflect the state of the active collaboration session. 
 
 The following are the states you will typically see:
@@ -226,6 +232,7 @@ The following are the states you will typically see:
 | Participant: Joined | ![VS Code status: joined](media/vs-status-joined.png) | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and recieving shared content. |
 
 ## Known participant limitations
+
 While there are currently some shortcomings participants will experience while using the features described above, collaboration session owners retain the complete functionality of their tool of choice. See the following for more information:
 
 - [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)
