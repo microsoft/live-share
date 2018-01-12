@@ -4,7 +4,7 @@ This document provides information on capabilities enabled by the VS Code Visual
 
 **Table of Contents**
 
-- [Recap: Collaboration Session Host and Guests](#recap-collaboration-session-host-and-guests)
+- [Recap: Collaboration session host and guests](#recap-collaboration-session-host-and-guests)
 - [Command palette and scoped command menu](#command-palette-and-scoped-command-menu)
 - [Collaborative editing](#collaborative-editing)
 - [Collaborative debugging](#collaborative-debugging)
@@ -17,11 +17,11 @@ This document provides information on capabilities enabled by the VS Code Visual
   - [Getting started and managing collaboration sessions](getting-started.md)
   - [Visual Studio features](collab-vs.md)
 
-## Recap: Collaboration Session Host and Guests
+## Recap: Collaboration session host and guests
 
-All collaboration activities in Visual Studio Live Share involve a single "collaboration session host" with one or more "guest." The host is the person that started the collaboration session and anyone that joins is a guest. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
+All collaboration activities in Visual Studio Live Share involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
 
-Collaboration session hosts can use all of their tools and services as they would normally but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up.
+Collaboration session hosts can use all of their tools and services as they would normally but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available. Further, temp files created by the IDE/editor to improve performance for the guest are automatically cleaned up when the session ends.
 
 ## Command palette and scoped command menu
 
@@ -41,7 +41,7 @@ Once a guest has joined a collaboration session all collaborators will immediate
 > **Tip:** If you are using VS Code with ASP.NET Core and C#, make sure you have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the host and all guests should have the extension installed or guests will miss out on capabilities. 
 -->
 
-Simply select a file from the file explorer and start editing. Participants will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
+Simply select a file from the file explorer and start editing. Guests will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
 
 ![Screen shot showing co-editing](media/vscode-coedit.png)
 
@@ -82,7 +82,7 @@ Afterwards, simply click the pin icon again to follow them once again.
 
 <!--
 ### Known co-editing guest limitations
-While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings guests will experience while co-editing. (Owners do not have these limitations.)
+While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings guests will experience while co-editing. (Hosts do not have these limitations.)
 
 We want to hear from you! See [this query](https://aka.ms/vsls-feature-requests/co-edit) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
@@ -91,7 +91,7 @@ To jump start the conversation, the following are some limitations of particular
 - Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
 - The undo and redo stacks are currently combined across all guests ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
-- Participants are not able to use VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
+- Guests are not able to use VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
 -->
 
 ## Collaborative debugging
@@ -147,15 +147,15 @@ In addition, you can manually share the application or other endpoints like REST
 
 <!--
 ### Known co-debugging guest limitations
-There are currently some shortcomings guests will experience while building, running, or co-debugging. (Owners do not have these limitations.)  
+There are currently some shortcomings guests will experience while building, running, or co-debugging. (Hosts do not have these limitations.)  
 
 We want to hear from you! See [this query](http://aka.ms/vsls-feature-requests/co-debug) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 To jump start the conversation, the following are some limitations of particular note for _guests_ (only):
 
-- Participants cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/live-share/issues/21))
+- Guests cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/live-share/issues/21))
 - Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))    
-- Participants are not able to use VS Code's task support to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
+- Guests are not able to use VS Code's task support to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
 
 - Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
 -->
@@ -198,10 +198,10 @@ Once again, we want to hear from you! See [this query for all open feature reque
 
 To jump start the conversation, the following are some additional limitations of particular note for _guests_ (only):
 
-- Participants cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/live-share/issues/15))
-- Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
+- Guests cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/live-share/issues/15))
+- Guests cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
-- Participants are not able to use VS Code's task support against the host's content ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
+- Guests are not able to use VS Code's task support against the host's content ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
 -->
 
 ## Known guest limitations

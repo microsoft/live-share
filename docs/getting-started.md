@@ -2,7 +2,7 @@
 
 **Table of Contents**
 
-- [Collaboration Session Host and Guests](#collaboration-session-host-and-guests)
+- [Collaboration session host and guests](#collaboration-session-host-and-guests)
 - [Downloading and installing](#downloading-and-installing)
 - [Signing into Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor)
 - [Starting a collaboration session](#starting-a-collaboration-session-and-sharing)
@@ -17,11 +17,11 @@
   - [Visual Studio features](collab-vs.md)
   - [Visual Studio Code features](collab-vscode.md)
 
-## Collaboration Session Host and Guests
+## Collaboration session host and guests
 
-All collaboration activities in Visual Studio Live Share involve a single "collaboration session host" with one or more "guest." The host is the person that started the collaboration session and anyone that joins is a guest.
+All collaboration activities in Visual Studio Live Share involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest. 
 
-Collaboration session hosts can use all of their tools and services as they would normally but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up.
+Collaboration session hosts can use all of their tools and services as they would normally but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available. Further, temp files created by the IDE/editor to improve performance for the guest are automatically cleaned up when the session ends.
 
 ## Downloading and installing
 
@@ -168,7 +168,7 @@ That's it! You should be connected to the collaboration session momentarily.
 
 By default Visual Studio Live Share automatically detects whether an collaboration session host and guest can communicate directly and only relays via the cloud if there is no route between them. This mixed mode allows some guests to relay through the cloud while others connect directly and the process is transparent to everyone involved and ensures the optimal performance for all involved. The connections are authenticated via a cloud based mechanism to ensure security. However, if you would prefer not to let people direct to your machine or are running into problems with the approach you can force other connection modes.
 
-| Mode | Owner Behavior | Participant Behavior |
+| Mode | Host Behavior | Guest Behavior |
 |------|----------------|----------------------|
 | Auto | The host's collaboration session accepts secured, authenticated direct connections or via the cloud relay. | Attempts to use a direct connection and falls back to relaying through the if this fails. |
 | Direct | The host's collaboration session only accepts authenticated, secure direct connections. | Attempts to use a direct connection and fails if it cannot connect. |
@@ -191,7 +191,7 @@ Lots of things! Co-editing and co-debugging for example! Take a look at the arti
 
 ## Ending or leaving a collaboration session
 
-Owners can stop sharing completely and end the collaboration session by clicking the session state button (in the upper right hand corner in VS or the status bar in VS Code) and selecting "End Collaboration Session". All guests will be notified that the session has ended.
+Hosts can stop sharing completely and end the collaboration session by clicking the session state button (in the upper right hand corner in VS or the status bar in VS Code) and selecting "End Collaboration Session". All guests will be notified that the session has ended.
 
 **In VS:**
 
@@ -202,7 +202,7 @@ Owners can stop sharing completely and end the collaboration session by clicking
 ![VS Code session state item](media/vscode-share-state.png) <br />
 ![VS Code end collaboration session menu option](media/vscode-end-collaboration.png)
 
-Participants will no longer be able to access the content and any temp files are automatically cleaned up.
+Guests will no longer be able to access the content and any temp files are automatically cleaned up.
 
 Similarly, individual guests can leave the collaboration session without ending it for others by simply closing the tool or selecting "Leave Collaboration Session".
 
@@ -226,10 +226,10 @@ The following are the states you will typically see:
 | State | Visual Studio | Visual Studio Code | Description |
 |-------|---------------|--------------------|-------------|
 | Inactive | ![VS status: inactive](media/vs-status-share.png) | ![VS Code status: inactive](media/vscode-status-share.png) | No active collaboration session and nothing is shared. |
-| Owner: Sharing In-Progress | ![VS status: share in progress](media/vs-status-sharing.png) | ![VS Code status: share in progress](media/vscode-status-sharing.png)| A collaboration session is starting and content sharing will begin shortly. |
-| Owner: Sharing | ![VS Code status: sharing active ](media/vs-status-active.png) | ![VS Code status: sharing active ](media/vscode-status-active.png)| A collaboration session is active and content is shared. |
-| Participant: Joining Session | ![VS Code status: joining](media/vs-status-joining.png) | ![VS Code status: joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
-| Participant: Joined | ![VS Code status: joined](media/vs-status-joined.png) | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and receiving shared content. |
+| Host: Sharing In-Progress | ![VS status: share in progress](media/vs-status-sharing.png) | ![VS Code status: share in progress](media/vscode-status-sharing.png)| A collaboration session is starting and content sharing will begin shortly. |
+| Host: Sharing | ![VS Code status: sharing active ](media/vs-status-active.png) | ![VS Code status: sharing active ](media/vscode-status-active.png)| A collaboration session is active and content is shared. |
+| Guest: Joining Session | ![VS Code status: joining](media/vs-status-joining.png) | ![VS Code status: joining](media/vscode-status-joining.png)| Joining an existing collaboration session. |
+| Guest: Joined | ![VS Code status: joined](media/vs-status-joined.png) | ![VS Code status: joined](media/vscode-status-active.png) | Joined and connected to an active collaboration session and receiving shared content. |
 
 ## Known guest limitations
 

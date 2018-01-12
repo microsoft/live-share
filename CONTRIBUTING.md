@@ -1,6 +1,7 @@
-# Contributing 
+# Contributing
 
 ## Up-Voting Existing Problem Reports or Feature Requests
+
 If you are wondering if someone has already encountered a problem or requested a feature, you can check out [open issues](https://github.com/Microsoft/live-share/issues). You can also use [this query](https://aka.ms/vsls-feature-requests) to specifically search for feature requests.
 
 If you find your issue/feature already exists, feel free to make relevant comments and add your [reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments). Use a reaction in place of a "+1" comment.
@@ -13,12 +14,12 @@ If you find your issue/feature already exists, feel free to make relevant commen
 
 ### Step 1 - Enable Verbose Logging
 
-**In VS:**  
+**In VS:**
 1. Update Tools > Options > Live Share > Output Verbosity to Verbose.
 2. Restart VS
 3. Repro the issue
 
-**In VS Code:** 
+**In VS Code:**
 1. Go to File > Preferences > Settings
 2. Add ``"liveshare.diagnosticLogging": true``
 3. Restart VS Code
@@ -43,16 +44,16 @@ Note that after your problem report is filed, it may be converted to a [GitHub i
 
 Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
 
-### Step 2B - Filing VS Code or General Service Problems 
+### Step 2B - Filing VS Code or General Service Problems
 
 Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and please include the following in the description:
 
 - **Tool:** VS, VS Code for Mac, VS Code for Windows
 - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
-- **Extension version:** Mention the version you installed with your VS/VSCode. 
-- **Taret Platform/Language:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
-    - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
-- **Repro steps:** Prefix the repro steps with [Owner] or [Participant] to make it easy to repro the bug
+- **Extension version:** Mention the version you installed with your VS/VSCode.
+- **Target Platform/Language:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
+  - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
+- **Repro steps:** Prefix the repro steps with [Host] or [Guest] to make it easy to repro the bug
 - Attach:
     - **Logs:** Zip and attach verbose logs from the locations in step 1
     - **VS Code Dev Tools Console Errors**: Help > Toggle Developer Tools
@@ -69,9 +70,9 @@ Raise an issue in [this repository](https://github.com/Microsoft/live-share/issu
 
 - **Tool:** VS, VS Code for Mac, VS Code for Windows
 - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
-- **Extension version:** Mention the version you installed with your VS/VSCode. 
+- **Extension version:** Mention the version you installed with your VS/VSCode.
 - **Project Type:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
-    - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
+  - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
 
 Be as specific as you can be with the problem or scenario you are trying to solve with the requested feature and let us know any painful workarounds you are having to do.
 
@@ -79,9 +80,9 @@ As with problem reports, don't feel bad if we ask for more information while we 
 
 ### Tip: Writing Good Problem Reports and Feature Requests
 
-Here are a few tips that will help us understand your problem or feedback quickly.  
+Here are a few tips that will help us understand your problem or feedback quickly.
 
-> **Tip:** You may be able to save yourself some time by searching the [issue repository](https://github.com/Microsoft/live-share/issues) to see if the problem/request already exists so you can simply up-vote it. 
+> **Tip:** You may be able to save yourself some time by searching the [issue repository](https://github.com/Microsoft/live-share/issues) to see if the problem/request already exists so you can simply up-vote it.
 
 First, try to file a single issue per problem or feature request.
 
@@ -91,7 +92,7 @@ First, try to file a single issue per problem or feature request.
 The more information you can provide, the more likely someone will be successful reproducing the issue and finding a fix. 
 
 * Reproducible steps (1... 2... 3...) and what you expected versus what you actually saw. 
-* Images, animations, or a link to a video. 
+* Images, animations, or a link to a video.
 * A code snippet that demonstrates the issue or a link to a code repository we can easily pull down onto our machine to recreate the issue. 
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
@@ -110,6 +111,7 @@ a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow th
 provided by the bot. You will only need to do this once across all repos using our CLA.
 
 ## Discussion Etiquette
+
 In order to keep the conversation clear and transparent, please limit discussion to English and keep things on topic with the issue. Be considerate to others and try to be courteous and professional at all times. This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

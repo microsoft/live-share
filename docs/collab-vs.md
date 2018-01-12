@@ -4,7 +4,7 @@ This document provides information on capabilities enabled by the Visual Studio 
 
 **Table of Contents**
 
-- [Recap: Collaboration Session Host and Guests](#recap-collaboration-session-host-and-guests)
+- [Recap: Collaboration session host and guests](#recap-collaboration-session-host-and-guests)
 - [Collaborative editing](#collaborative-editing)
 - [Collaborative debugging](#collaborative-debugging)
 - [Additional capabilities](#additional-capabilities)
@@ -15,27 +15,27 @@ This document provides information on capabilities enabled by the Visual Studio 
   - [Getting started and managing collaboration sessions](getting-started.md)
   - [Visual Studio Code features](collab-vscode.md)
 
-## Recap: Collaboration Session Host and Guests
+## Recap: Collaboration session host and guests
 
-All collaboration activities in Visual Studio Live Share involve a single "collaboration session host" with one or more "guest." The host is the person that started the collaboration session and anyone that joins is a guest. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
+All collaboration activities in Visual Studio Live Share involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest. See [getting started](getting-started.md) for information on starting and joining collaboration sessions.
 
-Collaboration session hosts can use all of their tools and services as they would normally but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available since temp files created during the session by the editor to improve performance are automatically cleaned up.
+Collaboration session hosts can use all of their tools and services as they would normally but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available. Further, temp files created by the IDE/editor to improve performance for the guest are automatically cleaned up when the session ends.
 
 ## Collaborative editing
 
-Once a guest has joined a collaboration session all collaborators will immediately be able to see each others edits and highlights in real-time. Simply select a file from the Solution Explorer and start editing. Participants will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
+Once a guest has joined a collaboration session, the host other guests will immediately be able to see each others edits and highlights in real-time. Simply select a file from the Solution Explorer and start editing. Guests will see edits as the host or other guests make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
 
 ![Screen shot showing co-editing](media/vs-coedit.png)
 
-In addition, each collaborator can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
+In addition, each guest can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
 Further, to better allow you to highlight where problems might exist or convey ideas, selections are also visible to all guests.
 
 ![Screen shot showing highlighting](media/vs-highlight.png)
 
-### Moving to a collaborator's edit location
+### Moving to another person's edit location
 
-Each collaborator in your the session can be seen in the upper right and you can hover over the avatar to see their full information.  Further, simply clicking on this same icon to jumps the active editor to their exact location. 
+Each person in your the session can be seen in the upper right and you can hover over the avatar to see their full information.  Further, simply clicking on this same icon to jumps the active editor to their exact location.
 
 ![Screen shot showing user](media/vs-person.png)
 
@@ -57,18 +57,18 @@ Afterwards you can simply click the pin icon again to follow their location once
 
 <!--
 ### Known co-editing guest limitations
-While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings guests will experience while co-editing. (Owners do not have these limitations.)
+While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings guests will experience while co-editing. (Hosts do not have these limitations.)
 
 We want to hear from you! See [this query](https://aka.ms/vsls-feature-requests/co-edit) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 To jump start the conversation, the following are some limitations of particular note for _guests_ (only):
 
-- Participants are currently limited to using "folder view" in the solution explorer ([Up-vote](https://github.com/Microsoft/live-share/issues/5))
-- Participants need to manually edit config files to view or change project dependencies (packages/references) ([Up-vote](https://github.com/Microsoft/live-share/issues/17)) 
+- Guests are currently limited to using "folder view" in the solution explorer ([Up-vote](https://github.com/Microsoft/live-share/issues/5))
+- Guests need to manually edit config files to view or change project dependencies (packages/references) ([Up-vote](https://github.com/Microsoft/live-share/issues/17)) 
 - Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
 - Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
 - The undo and redo stacks are currently combined across all guests ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
-- Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
+- Guests are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
 -->
 
 ## Collaborative Debugging
@@ -123,16 +123,16 @@ If you've updated settings so that as a guest you do not auto-attach to a co-deb
 
 <!--
 ### Known co-debugging guest limitations
-There are currently some shortcomings guests will experience while building, running, or co-debugging. (Owners do not have these limitations.)
+There are currently some shortcomings guests will experience while building, running, or co-debugging. (Hosts do not have these limitations.)
 
 As before, we want to hear from you! See [this query](http://aka.ms/vsls-feature-requests/co-debug) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
 
 To jump start the conversation, the following are some limitations of particular note for _guests_ (only):
 
-- Participants cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/live-share/issues/21))
-- Participants open and see saved .diagsession results but cannot see or use profilers directly ([Up-vote](https://github.com/Microsoft/live-share/issues/19))
+- Guests cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/live-share/issues/21))
+- Guests open and see saved .diagsession results but cannot see or use profilers directly ([Up-vote](https://github.com/Microsoft/live-share/issues/19))
 - Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
-- Participants are not able to use the Task Runner Explorer to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
+- Guests are not able to use the Task Runner Explorer to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
 - Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
 
 -->
@@ -153,7 +153,7 @@ From time to time, as a collaboration session host you may find that you want to
 
 That's it!
 
-Participants will now be able to use this same port from their machine to access the server or service if it is free. Otherwise it will be automatically mapped to a free port. You can view shared local servers by clicking the session state button in the upper right corner and selecting "View Shared Local Servers."
+Guests will now be able to use this same port from their machine to access the server or service if it is free. Otherwise it will be automatically mapped to a free port. You can view shared local servers by clicking the session state button in the upper right corner and selecting "View Shared Local Servers."
 
 ![Viw Shared Local Servers](media/vs-view-shared-servers.png)
 
@@ -167,11 +167,11 @@ Once again, we want to hear from you! See [this query for all open feature reque
 
 To jump start the conversation, the following are some additional limitations of particular note for _guests_ (only):
 
-- Participants cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/live-share/issues/15))
-- Participants cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
+- Guests cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/live-share/issues/15))
+- Guests cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
 - Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
-- Participants cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/live-share/issues/20))
-- Participants are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
+- Guests cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/live-share/issues/20))
+- Guests are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
 -->
 
 ## Known guest limitations
