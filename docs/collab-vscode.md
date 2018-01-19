@@ -1,6 +1,6 @@
 # Visual Studio Code Enabled Features
 
-This document provides information on capabilities enabled by the VS Code Visual Studio Live Share extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS Code and other tools.
+This document provides information on capabilities enabled by the Visual Studio Live Share extension for Visual Studio Code. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS Code and other tools.
 
 **Table of Contents**
 

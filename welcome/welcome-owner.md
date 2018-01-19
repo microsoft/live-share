@@ -15,7 +15,7 @@ Just follow these steps to start sharing:
         <strong>Visual Studio 2017 Preview</strong><br />
        1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Update Preview</a> on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
-       3. Download and install Visual Studio Live Share extension from the marketplace. <br />
+       3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
        <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
@@ -24,7 +24,7 @@ Just follow these steps to start sharing:
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        2. Download and install Visual Studio Live Share extension from the marketplace. <br />
+        2. Download and install the Visual Studio Live Share extension from the marketplace. <br />
         3. Installation can take a moment, so wait for the install to complete and then reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>

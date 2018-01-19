@@ -1,6 +1,6 @@
 # Visual Studio Enabled Features
 
-This document provides information on capabilities enabled by the Visual Studio Visual Studio Live Share extension. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS and other tools.
+This document provides information on capabilities enabled by the Visual Studio Live Share extension for Visual Studio. See [getting started](getting-started.md) for information on sharing and joining collaboration sessions in VS and other tools.
 
 **Table of Contents**
 
