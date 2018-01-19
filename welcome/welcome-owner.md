@@ -6,16 +6,16 @@ Team collaboration should be so quick and natural, that it becomes harder not to
 
 Just follow these steps to start sharing:
 
-### 1. Download and install Visual Studio Live Share for your tool
+### 1. Download and install Visual Studio Live Share 
 
 <table style="width: 100%; border-style: none;">
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
-        <strong>Visual Studio 2017 Update 6</strong><br />
-       1. Install VS 2017 Update 6 (15.6) on Windows (7, 8.1, or 10).<br/>
+        <strong>Visual Studio 2017 Preview</strong><br />
+       1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Update Preview</a> on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
-       3. Download the Visual Studio Live Share VSIX and double click to install. <br />
+       3. Download and install Visual Studio Live Share extension from the marketplace. <br />
        <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
@@ -24,9 +24,8 @@ Just follow these steps to start sharing:
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
-        3. Start VS Code Insiders, press F1, select "Extensions: Install from VSIX...", select the extension. <br />
-        4. Wait for the install to complete and reload.<br />
+        2. Download the Visual Studio Live Share extension for Visual Studio Code from the marketplace.<br />
+        3. This can take a moment, so wait for the install to complete and reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
@@ -46,15 +45,16 @@ Once installed, start up your tool sign in to the Visual Studio Live Share with 
 
 Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard. 
 
+> **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../docs/getting-started.md#changing-the-connection-mode) for details.
+
 ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
-> **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../docs/getting-started.md#changing-the-connection-mode) for details.
 
 ### 4. Send someone the invite link
 
 Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allows them to join a collaboration session that shares contents of the folder, project, or solution you opened. 
 
-Note that the **person you invite does not need to sign up or be accepted in the private limited preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
+Note that the **person you invite does not need to sign up or be accepted into the preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 
 ### 5. Collaborate!
 

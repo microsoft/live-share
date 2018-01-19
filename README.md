@@ -28,10 +28,10 @@ The initial focus of Visual Studio Live Share is **real-time collaborative devel
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-icon.png" /></td>
     <td>
-        <strong>Visual Studio 2017 Update 6</strong><br />
-       1. Install VS 2017 Update 6 (15.6) on Windows (7, 8.1, or 10).<br/>
+        <strong>Visual Studio 2017 Preview</strong><br />
+       1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Update Preview</a> on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
-       3. Download the Visual Studio Live Share VSIX and double click to install. <br />
+       3. Download and install Visual Studio Live Share extension from the marketplace. <br />
        <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download.png"></a><br />
     </td>
 </tr>
@@ -40,9 +40,8 @@ The initial focus of Visual Studio Live Share is **real-time collaborative devel
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
-        3. Start VS Code Insiders, press F1, select "Extensions: Install from VSIX...", select the extension. <br />
-        4. Wait for the install to complete and reload.<br />
+        2. Install the Visual Studio Live Share extension for Visual Studio Code from the marketplace.<br />
+        3. This can take a moment, so wait for the install to complete and reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="docs/media/download.png"></a>
     </td>
 </tr>

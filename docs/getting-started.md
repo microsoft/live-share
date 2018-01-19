@@ -36,10 +36,10 @@ Download and setup instructions:
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
-        <strong>Visual Studio 2017 Update 6</strong><br />
-       1. Install VS 2017 Update 6 (15.6) on Windows (7, 8.1, or 10).<br/>
+        <strong>Visual Studio 2017 Preview</strong><br />
+       1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Update Preview</a> on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
-       3. Download the Visual Studio Live Share VSIX and double click to install. <br />
+       3. Download and install Visual Studio Live Share extension from the marketplace. <br />
        <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
@@ -48,9 +48,8 @@ Download and setup instructions:
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        2. Download the Visual Studio Live Share extension for Visual Studio Code.<br />
-        3. Start VS Code Insiders, press F1, select "Extensions: Install from VSIX...", select the extension. <br />
-        4. Wait for the install to complete and reload.<br />
+        2. Download the Visual Studio Live Share extension for Visual Studio Code from the marketplace.<br />
+        3. This can take a moment, so wait for the install to complete and reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
@@ -104,9 +103,9 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
      Open a folder, project, or solution, and simply click the "Share" button (VS) / status bar icon (VS Code) in your tool and an invite link will be automatically copied to your clipboard. When opened in a browser, this link allow others to join a new collaboration session that shares contents of these folders with them. 
 
-    ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
+    > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](#changing-the-connection-mode) for details.
 
-    > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](#changing-the-connection-mode) for details.
+    ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
     You will also see the "Share" button / status bar icon transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
 
@@ -115,10 +114,9 @@ After downloading and installing Visual Studio Live Share, follow these steps to
     - **VS:** Click on the share / session state button and select "Copy Link"  
     - **VS Code**: Click the session state status bar icon and select "Invite Others (Copy Link)".
 
-
 4. **Send someone the invite link**
 
-    Send the link over e-mail, Slack, Skype, etc. and once they joins you can begin immediately working with them! The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the private limited preview.
+    Send the link over e-mail, Slack, Skype, etc. and once they join you can start collaborating! The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the preview.
 
 
 That's it!!
@@ -172,9 +170,9 @@ That's it! You should be connected to the collaboration session momentarily.
 
 ## Changing the Connection Mode
 
-By default Visual Studio Live Share automatically detects whether a collaboration session host and guest can communicate directly over a network and only relays via the cloud if there is no route between them to ensure optimal performance. This mixed "auto" mode also allows some guests to relay through the cloud while others connect directly for the same collaboration session.
+To ensure, by default Visual Studio Live Share automatically detects whether a collaboration session host machine and guest machine can communicate directly over a network and only relays via the cloud if there is no route between them. This mixed "auto" mode is flexible and allows some guests to relay through the cloud while others connect directly for the same session if needed.
 
-The direct connections are authenticated via a cloud based mechanism to ensure security but require a port between 5990 and 5999 be opened to enable the connectivitiy. As a result, your desktop firewall may prompt you to give access when sharing. Accepting this is optional as ignoring it will simply cause Live Share to always use the relay when in auto mode.
+The direct connections are authenticated via a cloud based mechanism to ensure security but require a port between 5990 and 5999 be opened to enable the connectivitiy. As a result, when sharing for the first time your desktop firewall may prompt you open a port. Accepting this is optional as ignoring it will simply cause Live Share to always use the relay when in auto mode.
 
 If you would prefer to disable direct connections or are running into problems with auto mode you can force other connection modes.
 
