@@ -106,6 +106,8 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
+    > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](#changing-the-connection-mode) for details.
+
     You will also see the "Share" button / status bar icon transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
 
     Note that if you need to get the invite link again after you've started sharing, you access it again as follows:
@@ -113,9 +115,11 @@ After downloading and installing Visual Studio Live Share, follow these steps to
     - **VS:** Click on the share / session state button and select "Copy Link"  
     - **VS Code**: Click the session state status bar icon and select "Invite Others (Copy Link)".
 
+
 4. **Send someone the invite link**
 
     Send the link over e-mail, Slack, Skype, etc. and once they joins you can begin immediately working with them! The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the private limited preview.
+
 
 That's it!!
 
@@ -137,7 +141,9 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account if you are not already signed in. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session.
 
-That's it!! In a few moments you'll be connected and you can start collaborating. You will see the "Share" button (VS) / status bar icons (VS Code) transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
+4. That's it!! In a few moments you'll be connected and you can start collaborating.  
+
+Ater joining, you will see the "Share" button (VS) / status bar icons (VS Code) transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
 
 ### Manually joining
 
@@ -166,12 +172,16 @@ That's it! You should be connected to the collaboration session momentarily.
 
 ## Changing the Connection Mode
 
-By default Visual Studio Live Share automatically detects whether an collaboration session host and guest can communicate directly and only relays via the cloud if there is no route between them. This mixed mode allows some guests to relay through the cloud while others connect directly and the process is transparent to everyone involved and ensures the optimal performance for all involved. The connections are authenticated via a cloud based mechanism to ensure security. However, if you would prefer not to let people direct to your machine or are running into problems with the approach you can force other connection modes.
+By default Visual Studio Live Share automatically detects whether a collaboration session host and guest can communicate directly over a network and only relays via the cloud if there is no route between them to ensure optimal performance. This mixed "auto" mode also allows some guests to relay through the cloud while others connect directly for the same collaboration session.
+
+The direct connections are authenticated via a cloud based mechanism to ensure security but require a port between 5990 and 5999 be opened to enable the connectivitiy. As a result, your desktop firewall may prompt you to give access when sharing. Accepting this is optional as ignoring it will simply cause Live Share to always use the relay when in auto mode.
+
+If you would prefer to disable direct connections or are running into problems with auto mode you can force other connection modes.
 
 | Mode | Host Behavior | Guest Behavior |
 |------|----------------|----------------------|
-| Auto | The host's collaboration session accepts secured, authenticated direct connections or via the cloud relay. | Attempts to use a direct connection and falls back to relaying through the if this fails. |
-| Direct | The host's collaboration session only accepts authenticated, secure direct connections. | Attempts to use a direct connection and fails if it cannot connect. |
+| Auto | The host's collaboration session accepts secured, authenticated direct connections or cloud relayed connections. | Attempts to use a direct connection and falls back to relaying through the cloud if this fails. |
+| Direct | The host's collaboration session only accepts authenticated, secure direct connections. | Attempts to use a direct connection and stops if it cannot connect. |
 | Relay | The host's collaboration session does not allow direct connections. No port is opened on the host's machine. | Always connects via the cloud. |
 
 To change the mode:

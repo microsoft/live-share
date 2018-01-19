@@ -48,6 +48,8 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 ![VS Share Button](media/vs-share-button.png) ![VS Code Share Button](media/vscode-share-button.png)
 
+> **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../docs/getting-started.md#changing-the-connection-mode) for details.
+
 ### 4. Send someone the invite link
 
 Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allows them to join a collaboration session that shares contents of the folder, project, or solution you opened. 
