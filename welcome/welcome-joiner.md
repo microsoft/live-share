@@ -22,8 +22,8 @@ Just follow these steps to join a collaboration session:
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        2. Download the Visual Studio Live Share extension for Visual Studio Code from the marketplace.<br />
-        3. This can take a moment, so wait for the install to complete and reload.<br />
+        2. Download and install Visual Studio Live Share extension from the marketplace. <br />
+        3. Installation can take a moment, so wait for the install to complete and then reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>

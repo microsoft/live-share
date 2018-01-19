@@ -27,7 +27,7 @@ Collaboration session hosts can use all of their tools and services as they woul
 
 Requirements:
 
-- **Visual Studio 2017 Update 6** - Any edition of Visual Studio 2017 with update 6 installed (15.6) running on Windows 7, 8.1, or 10.
+- **Visual Studio 2017 Update Preview** - Any edition of the latest Visual Studio 2017 update preview running on Windows 7, 8.1, or 10.
 - **Visual Studio Code Insiders** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
 
 Download and setup instructions:
@@ -48,8 +48,8 @@ Download and setup instructions:
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
-        2. Download the Visual Studio Live Share extension for Visual Studio Code from the marketplace.<br />
-        3. This can take a moment, so wait for the install to complete and reload.<br />
+        2. Download and install Visual Studio Live Share extension from the marketplace. <br />
+        3. Installation can take a moment, so wait for the install to complete and then reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
