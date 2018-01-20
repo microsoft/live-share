@@ -35,11 +35,11 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### 2. Sign in from within your IDE/editor
 
-Once installed, start up your tool sign in to the Visual Studio Live Share with the same credentials you used to sign up.
+Once installed, start up your tool sign in with the credentials that are associated with the email you used to sign up.
 
 ![VS Download](media/vs-sign-in-button.png) ![VS Code Download](media/vscode-sign-in-button.png)
 
-> **Tip:** Need to use a different sign-in for Visual Studio than your personalization account? Go to Tools &gt; Options &gt; Live Share.
+> **Tip:** Need to use a different sign-in for Visual Studio than your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)? Go to Tools &gt; Options &gt; Live Share &gt; User account.
 
 ### 3. Start a collaboration session and share your content
 

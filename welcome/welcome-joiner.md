@@ -45,9 +45,9 @@ You should be notified that your browser wants to launching your Visual Studio L
 
 ### 4. Sign in from within your IDE/editor
 
-To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft work, school, or personal account. 
+To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft work, school, or personal account.
 
-If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your personalization account so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share** to switch credentials. 
+If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials. 
 
 ### 5. Collaborate!
 
