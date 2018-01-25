@@ -243,9 +243,10 @@ The following are the states you will typically see:
 
 While there are currently some shortcomings guests will experience while using the features described above, collaboration session hosts retain the complete functionality of their tool of choice. See the following for more information:
 
-- [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)
-- [Co-debugging limitations](http://aka.ms/vsls-feature-requests/co-debug)
-- [Additional limitations](http://aka.ms/vsls-feature-requests)
+- [All major bugs, feature requests, and limitations](http://aka.ms/vsls-issues)
+- [All feature requests and limitations](http://aka.ms/vsls-feature-requests)
+- [Co-editing feature requests and limitations](http://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging feature requests and limitations](http://aka.ms/vsls-feature-requests/co-debug)
 
 ## More Information
 

@@ -1,6 +1,6 @@
 # Contributing, Feedback, & Support
 
-Have a question or feedback? There are many ways to contribute.  We want to hear from you!
+Have a question or feedback? There are many ways to contribute. We want to hear from you!
 
 ## Documentation
 
@@ -10,7 +10,7 @@ Our docs may have what you need!  [Check them out.](../README.md)
 
 GitHub issues and VS problem reports are a great way to connect with us.
 
-- [See if someone already hit your problem by searching logged issues](https://github.com/Microsoft/live-share/issues)
+- [See if someone already hit your problem by searching logged issues](http://aka.ms/vsls-issues)
 - [Report a problem for Visual Studio](../CONTRIBUTING.md#filing-visual-studio-problems)
 - [Report a problem for VS Code or the overall service](../CONTRIBUTING.md#filing-vs-code-or-general-service-problems)
 - [Up-vote a feature or request a new one](http://aka.ms/vsls-feature-requests)

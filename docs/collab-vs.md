@@ -9,7 +9,6 @@ This document provides information on capabilities enabled by the Visual Studio 
 - [Collaborative debugging](#collaborative-debugging)
 - [Additional capabilities](#additional-capabilities)
   - [Sharing a local server](#sharing-a-local-server)
-  <!-- - [Additional known guest limitations](#additional-known-guest-limitations) -->
 - [Known guest limitations](#known-guest-limitations)
 - [More information](#more-information)
   - [Getting started and managing collaboration sessions](getting-started.md)
@@ -55,23 +54,7 @@ To make it easy to hop in and out of pinning, the editor is un-pinned if any of 
 
 Afterwards you can simply click the pin icon again to follow their location once again.
 
-<!--
-### Known co-editing guest limitations
-While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings guests will experience while co-editing. (Hosts do not have these limitations.)
-
-We want to hear from you! See [this query](https://aka.ms/vsls-feature-requests/co-edit) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
-
-To jump start the conversation, the following are some limitations of particular note for _guests_ (only):
-
-- Guests are currently limited to using "folder view" in the solution explorer ([Up-vote](https://github.com/Microsoft/live-share/issues/5))
-- Guests need to manually edit config files to view or change project dependencies (packages/references) ([Up-vote](https://github.com/Microsoft/live-share/issues/17)) 
-- Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
-- Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
-- The undo and redo stacks are currently combined across all guests ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
-- Guests are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
--->
-
-## Collaborative Debugging
+## Collaborative debugging
 
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
@@ -80,12 +63,6 @@ Visual Studio Live Share's collaborative debugging feature is a powerful and uni
 Using it simple. The collaboration session host simply needs to start debugging via the usual means in Visual Studio.
 
 ![VS Debug button](media/vs-debug-button.png)
-
-<!--
-While the build and deployment is happening, all guests can see progress in the Output window. This is also true if the collaboration session host opted to "Start with Debugging" or simply build the project or solution.
-
-![VS output window](media/vs-output.png)
--->
 
 Once the debugger attaches on the host's side, all guests are also attached. While there is one debugging "session" running on the host's machine, all collaborators are connected to it and have their own view. 
 
@@ -121,23 +98,7 @@ If you've updated settings so that as a guest you do not auto-attach to a co-deb
 
 ![VS Debug button](media/vs-reattach.png)
 
-<!--
-### Known co-debugging guest limitations
-There are currently some shortcomings guests will experience while building, running, or co-debugging. (Hosts do not have these limitations.)
-
-As before, we want to hear from you! See [this query](http://aka.ms/vsls-feature-requests/co-debug) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
-
-To jump start the conversation, the following are some limitations of particular note for _guests_ (only):
-
-- Guests cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/live-share/issues/21))
-- Guests open and see saved .diagsession results but cannot see or use profilers directly ([Up-vote](https://github.com/Microsoft/live-share/issues/19))
-- Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
-- Guests are not able to use the Task Runner Explorer to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
-- Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
-
--->
-
-## Additional Capabilities
+## Additional capabilities
 
 ### Sharing a local server
 
@@ -159,28 +120,14 @@ Guests will now be able to use this same port from their machine to access the s
 
 To **stop** sharing a local server, the host simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the appropriate port, and click "Remove".
 
-<!--
-### Additional known guest limitations
-In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for guests. As above, hosts do not have these limitations.  
-
-Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/vsls-feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
-
-To jump start the conversation, the following are some additional limitations of particular note for _guests_ (only):
-
-- Guests cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/live-share/issues/15))
-- Guests cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
-- Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/9))
-- Guests cannot currently see results or use the Test Explorer ([Up-vote](https://github.com/Microsoft/live-share/issues/20))
-- Guests are not able to use the Task Runner Explorer or see its output ([Up-vote](https://github.com/Microsoft/live-share/issues/18))
--->
-
 ## Known guest limitations
 
 While there are currently some shortcomings guests will experience while using the features described above, collaboration session hosts retain the complete functionality of their tool of choice. See the following for more information:
 
-- [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)
-- [Co-debugging limitations](http://aka.ms/vsls-feature-requests/co-debug)
-- [Additional limitations](http://aka.ms/vsls-feature-requests)
+- [All major bugs, feature requests, and limitations](http://aka.ms/vsls-issues)
+- [All feature requests and limitations](http://aka.ms/vsls-feature-requests)
+- [Co-editing feature requests and limitations](http://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging feature requests and limitations](http://aka.ms/vsls-feature-requests/co-debug)
 
 ## More information
 

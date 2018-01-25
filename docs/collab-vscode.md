@@ -11,7 +11,6 @@ This document provides information on capabilities enabled by the Visual Studio 
   - [Sharing the running application in a browser](#sharing-the-running-application-in-a-browser)
 - [Additional capabilities](#additional-capabilities)
   - [Sharing a local server](#sharing-a-local-server)
-  <!-- - [Additional known guest limitations](#additional-known-guest-limitations) -->
 - [Known guest limitations](#known-guest-limitations)
 - [More information](#more-information)
   - [Getting started and managing collaboration sessions](getting-started.md)
@@ -36,10 +35,6 @@ This document will assume you are using this command menu but note that these co
 ## Collaborative editing
 
 Once a guest has joined a collaboration session all collaborators will immediately be able to see each others edits and highlights in real-time. 
-
-<!--
-> **Tip:** If you are using VS Code with ASP.NET Core and C#, make sure you have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the host and all guests should have the extension installed or guests will miss out on capabilities. 
--->
 
 Simply select a file from the file explorer and start editing. Guests will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
 
@@ -80,44 +75,21 @@ To make it easy to hop in and out of pinning, the tab set is un-pinned if any of
 
 Afterwards, simply click the pin icon again to follow them once again.
 
-<!--
-### Known co-editing guest limitations
-While Visual Studio Live Share's approach provides instant access and better security, there are currently some shortcomings guests will experience while co-editing. (Hosts do not have these limitations.)
-
-We want to hear from you! See [this query](https://aka.ms/vsls-feature-requests/co-edit) to find a complete list of logged limitations for co-editing. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
-
-To jump start the conversation, the following are some limitations of particular note for _guests_ (only):
-
-- Editing features in extensions that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
-- Full intellisense, fixers, and other advanced editing features are only available to C#, ASP.NET languages/markup, HTML, CSS, JavaScript, and TypeScript. ([Vote on the languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))
-- The undo and redo stacks are currently combined across all guests ([Up-vote](https://github.com/Microsoft/live-share/issues/7))
-- Guests are not able to use VS Code's task support against the remote project ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
--->
-
 ## Collaborative debugging
 
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
 Using it simple.
-<!--
-1. If you are using VS Code with ASP.NET Core or C#, make sure you and all of your collaborators have the [C# extension installed](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). Both the host and all guests should have the extension installed in order for debugging to work. 
--->
 
-1. If not already set up for the project, the host should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from VS Code as you would normally. No special setup is required.
+1. Be sure both the host and all guests have the appropriate debugging extension installed. 
 
-2. Next, start debugging using the button in the debug tab as normal.
+2. If not already set up for the project, the host should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from VS Code as you would normally. No special setup is required.
+
+3. Next, start debugging using the button in the debug tab as normal.
 
     ![VS Code debug button](media/vscode-debug-button.png)
 
     > **Tip:** You can participate in VS debugging sessions from VS Code and vice versa! If the host is using Visual Studio, you can check out the [Visual Studio instructions](collab-vs.md#collaborative-debugging) but the steps are roughly the same. 
-
-<!--
-While any build, deployment, or other scripts are running, all guests can see progress in the Output window. (In fact, this is also true if the host opted to "Start with Debugging".)
-
-> **Note:** All traffic is secured and encrypted and access is limited to only those resources needed to facilitate debug and browser access to the web application. These resources are only available to guests of the collaboration session.
-
-![VS Code output window](media/vscode-output.png)
--->
 
 Once the debugger attaches on the host's side, all guests are also attached. While there is one debugging "session" running on the host's machine, all collaborators are connected to it and have their own view. 
 
@@ -144,21 +116,6 @@ If you've updated settings so that as a guest you do not auto-attach to a co-deb
 Visual Studio Code does not have the concept of an known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session with a VS user that does you will automatically see the default browser appear connected to the host's running applications. See [Visual Studio features](collab-vs.md#automatic-web-app-sharing-during-debugging) for more details.
 
 In addition, you can manually share the application or other endpoints like RESTful services using the "Share Local Server" feature. VS and VS Code guests can then open a browser on the same localhost port to see the running appliction.  See [sharing a local server](#sharing-a-local-server) for more details.
-
-<!--
-### Known co-debugging guest limitations
-There are currently some shortcomings guests will experience while building, running, or co-debugging. (Hosts do not have these limitations.)  
-
-We want to hear from you! See [this query](http://aka.ms/vsls-feature-requests/co-debug) to find a complete list of logged limitations for co-debugging. Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
-
-To jump start the conversation, the following are some limitations of particular note for _guests_ (only):
-
-- Guests cannot currently start a build or debugging session on their own ([Up-vote](https://github.com/Microsoft/live-share/issues/21))
-- Co-debugging is currently limited to .NET/.NET Core and Node.js based applications ([Vote on languages/platforms you want!](https://github.com/Microsoft/live-share/issues/12))    
-- Guests are not able to use VS Code's task support to start, stop, or build the application ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
-
-- Build/run/debug features in extensions that require direct access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
--->
 
 ## Additional capabilities
 
@@ -188,29 +145,14 @@ To **stop** sharing a local server, the host simply needs to click the session s
 
 ![VS Code stop sharing server](media/vscode-stop-sharing-server.png)<br />
 
-<!--
-### Additional known guest limitations
-
-In addition to the co-editing and co-debugging limitations listed above, there are a few others worth noting for guests. As above, hosts do not have these limitations.  
-
-Once again, we want to hear from you! See [this query for all open feature requests](https://aka.ms/vsls-feature-requests). Up-vote (👍) fixes for those you feel are critical or raise new issues if there is something you need missing from the list!
-
-
-To jump start the conversation, the following are some additional limitations of particular note for _guests_ (only):
-
-- Guests cannot currently use source control diffing ([Up-vote](https://github.com/Microsoft/live-share/issues/15))
-- Guests cannot currently perform source control operations ([Up-vote](https://github.com/Microsoft/live-share/issues/16))
-- Extension features that directly access the file system will be unavailable ([Vote on extensions you want!](https://github.com/Microsoft/live-share/issues/8))
-- Guests are not able to use VS Code's task support against the host's content ([Up-vote](https://github.com/Microsoft/live-share/issues/6))
--->
-
 ## Known guest limitations
 
 While there are currently some shortcomings guests will experience while using the features described above, collaboration session hosts retain the complete functionality of their tool of choice. See the following for more information:
 
-- [Co-editing limitations](http://aka.ms/vsls-feature-requests/co-edit)
-- [Co-debugging limitations](http://aka.ms/vsls-feature-requests/co-debug)
-- [Additional limitations](http://aka.ms/vsls-feature-requests)
+- [All major bugs, feature requests, and limitations](http://aka.ms/vsls-issues)
+- [All feature requests and limitations](http://aka.ms/vsls-feature-requests)
+- [Co-editing feature requests and limitations](http://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging feature requests and limitations](http://aka.ms/vsls-feature-requests/co-debug)
 
 ## More information
 
