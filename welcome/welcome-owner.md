@@ -68,8 +68,7 @@ That's it!! Want to learn more about what you can do? Check out our documentatio
 Need help and not finding what you need in the docs?
 
 - [See if someone already hit your problem by searching logged issues](http://aka.ms/vsls-issues)
-- [Report a problem for Visual Studio](../CONTRIBUTING.md#filing-visual-studio-problems)
-- [Report a problem for VS Code or the overall service](../CONTRIBUTING.md#filing-vs-code-or-general-service-problems)
+- [Report a problem](../CONTRIBUTING.md#filing-problem-reports)
 - [Up-vote a feature or request a new one](http://aka.ms/vsls-feature-requests)
 - For those in the  preview, join the [Slack channel](http://live-share.slack.com) and chat with us!
 - Or you can shoot us a [mail](mailto:vsls-feedback@microsoft.com) questions.
