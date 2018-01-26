@@ -11,8 +11,8 @@ Our docs may have what you need!  [Check them out.](../README.md)
 GitHub issues and VS problem reports are a great way to connect with us.
 
 - [See if someone already hit your problem by searching logged issues](http://aka.ms/vsls-issues)
-- [Report a problem for Visual Studio](../CONTRIBUTING.md#step-2a---filing-visual-studio-problems)
-- [Report a problem for VS Code or the overall service](../CONTRIBUTING.md#step-2b---filing-vs-code-or-general-service-problems)
+- [Report a problem for Visual Studio](../CONTRIBUTING.md#step-2a---file-a-visual-studio-problems)
+- [Report a problem for VS Code or the overall service](../CONTRIBUTING.md#step-2b---file-a-vs-code-or-general-service-problems)
 - [Up-vote a feature or request a new one](http://aka.ms/vsls-feature-requests)
 - [Check out tips on contributing!](../CONTRIBUTING.md#tip-writing-good-problem-reports-and-feature-requests)
 

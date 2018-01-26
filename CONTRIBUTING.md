@@ -1,6 +1,6 @@
 # Contributing
 
-## Up-Voting Existing Problem Reports or Feature Requests
+## Up-Vote an existing problem report or feature request
 
 If you are wondering if someone has already encountered a problem or requested a feature, you can check out [open issues](https://github.com/Microsoft/live-share/issues). You can also use [this query](https://aka.ms/vsls-feature-requests) to specifically search for feature requests.
 
@@ -10,9 +10,11 @@ If you find your issue/feature already exists, feel free to make relevant commen
 
 👎 - downvote
 
-## Filing Problem Reports
+## File a problem report
 
-### Step 1 - Enable Verbose Logging
+### Step 1 - [Optional] Enable diagnostic logging
+
+If you want to see whether what you are experiencing is an existing problem, you may want to turn on dignostic logging. Logs will then appear in the "Live Share" stream in the Output window.
 
 **In VS:**
 1. Update Tools > Options > Live Share > Output Verbosity to Verbose.
@@ -25,16 +27,11 @@ If you find your issue/feature already exists, feel free to make relevant commen
 3. Restart VS Code
 4. Repro the issue
 
-**Log File Locations:**
-- Windows: ``%TEMP%\VSFeedbackVSRTCLogs``
-- macOS: ``$TMPDIR/VSFeedbackVSRTCLogs``
-    - Type ``open $TMPDIR/VSFeedbackVSRTCLogs`` from the Terminal to have Finder open the location
-
-### Step 2A - Filing Visual Studio Problems
+### Step 2A - File a Visual Studio problem
 
 Visual Studio has a built in feedback mechanism via the "Report a Problem..." tool that provides the engineering team detailed information about your installation that you should use to log bugs or problems you encounter when using VS.
 
-Verbose logs will be automatically attached.
+Diagnostic logs will be automatically attached.
 
 ![Image of Report a Problem...](docs/media/vs-feedback.png) 
 
@@ -44,7 +41,7 @@ Note that after your problem report is filed, it may be converted to a [GitHub i
 
 Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
 
-### Step 2B - Filing VS Code or General Service Problems
+### Step 2B - File a VS Code or general service problems
 
 Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and please include the following in the description:
 
@@ -54,9 +51,14 @@ Create an issue in [this repository](https://github.com/Microsoft/live-share/iss
 - **Target Platform/Language:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
   - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
 - **Repro steps:** Prefix the repro steps with [Host] or [Guest] to make it easy to repro the bug
-- Attach:
-    - **Logs:** Zip and attach verbose logs from the locations in step 1
-    - **VS Code Dev Tools Console Errors**: Help > Toggle Developer Tools
+
+Next, attach the following:
+
+  - **Logs:** Zip and attach the log files from the following:
+    - Windows: ``%TEMP%\VSFeedbackVSRTCLogs``
+    - macOS: ``$TMPDIR/VSFeedbackVSRTCLogs``
+        - Type ``open $TMPDIR/VSFeedbackVSRTCLogs`` from the Terminal to have Finder open the location
+  - **VS Code Dev Tools Console Errors**: Help > Toggle Developer Tools
 
 Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
 

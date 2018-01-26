@@ -65,7 +65,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Terms of Use
 
-By downloading and/or running the contents of this repository, you agree to the license terms of the third party application software, Microsoft products, and components to be installed.
+By downloading and/or running the contents of this repository, you agree to the license terms of the third party application software,Microsoft products, and components to be installed.
 
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
@@ -73,7 +73,7 @@ The third party software and products are provided to you by third parties. You 
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-However, the contents of this repository are licensed under the MIT License (MIT). 
+However, the documentation in this repository is licensed under the MIT License (MIT). 
 
 Copyright (c) Microsoft Corporation
 
