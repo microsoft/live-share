@@ -1,3 +1,9 @@
+<!--
+Copyright © Microsoft Corporation
+All rights reserved.
+Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
+-->
+
 # Welcome to the Visual Studio Live Share preview!
 
 If you're here, you've probably been **accepted into the private limited preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[sign up now](http://aka.ms/vsls-signup)** and when accepted into the preview you can share!

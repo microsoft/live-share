@@ -1,3 +1,9 @@
+<!--
+Copyright © Microsoft Corporation
+All rights reserved.
+Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
+-->
+
 # Visual Studio Live Share Docs & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
