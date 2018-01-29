@@ -67,4 +67,10 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-The documentation in this repository is licensed under CC BY 4.0. See [LICENSE](LICENSE).
+License for documentation:
+
+    Copyright © Microsoft Corporation
+    All rights reserved.
+    Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
+
+
