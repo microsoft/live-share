@@ -65,9 +65,9 @@ All languages / platforms have same file intellisense (when the respective exten
 | [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
 
 <sup>1</sup> Via [share local server](collab-vscode.md#sharing-a-local-server).<br />
-<sup>2</sup> By sharing back-end.<br />
+<sup>2</sup> By sharing back-end. Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> Would be enabled via shared terminals. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/41)<br />
-<sup>4</sup> Debugging database stored procs is not currently supported <br />
+ <sup>4</sup> Debugging database stored procs is not currently supported <br />
 <sup>5</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
 <sup>6</sup> Cordova apps can be shared via the the "browser" platform<br />
 <sup>7</sup> React Native apps can be shared via Expo and [share local server](collab-vscode.md#sharing-a-local-server).<br />
@@ -125,7 +125,7 @@ All languages / platforms have same file intellisense (when the respective exten
 
 <sup>1</sup> Via [automatic web app sharing](collab-vs.md#automatic-web-app-sharing-during-debugging) or [share local server](collab-vs.md#sharing-a-local-server). <br />
 <sup>2</sup> Python web apps do not support automatic web sharing but do support [share local server](collab-vs.md#sharing-a-local-server). <br />
-<sup>3</sup> By sharing back-end.<br />
+<sup>3</sup> By sharing back-end. Debugging occurs against the host's browser rather than guest.<br />
 <sup>4</sup> Debugging database stored procs is not currently supported <br />
 <sup>5</sup> Via [share local server](collab-vs.md#sharing-a-local-server). <br />
 
