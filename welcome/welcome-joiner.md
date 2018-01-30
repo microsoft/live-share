@@ -62,6 +62,7 @@ That's it!! In a few moments you'll be connected to your colleague's collaborati
 - [Getting started and managing collaboration sessions](../docs/getting-started.md)
 - [Visual Studio features](../docs/collab-vs.md)
 - [Visual Studio Code features](../docs/collab-vscode.md)
+- [Summary of language and platform support](../docs/platform-support.md)
 - [Quick start: Sharing](welcome-owner.md)
 
 Need help and not finding what you need in the docs?

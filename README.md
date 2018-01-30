@@ -26,6 +26,7 @@ The initial focus of Visual Studio Live Share is **real-time collaborative devel
 - [Getting started and managing collaboration sessions](docs/getting-started.md)
 - [Visual Studio enabled features](docs/collab-vs.md)
 - [Visual Studio Code enabled features](docs/collab-vscode.md)
+- [Summary of language and platform support](docs/platform-support.md)
 - [FAQ](http://aka.ms/vsls-faq)
 
 ## Download and install Visual Studio Live Share

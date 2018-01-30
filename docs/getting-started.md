@@ -258,4 +258,5 @@ While there are currently some shortcomings guests will experience while using t
 
 - [Visual Studio features](collab-vs.md)
 - [Visual Studio Code features](collab-vscode.md)
+- [Summary of language and platform support](platform-support.md)
 - [FAQ](https://aka.ms/vsls-faq)

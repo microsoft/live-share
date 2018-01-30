@@ -139,4 +139,5 @@ While there are currently some shortcomings guests will experience while using t
 
 - [Getting started](getting-started.md)
 - [Visual Studio Code features](collab-vscode.md)
+- [Summary of language and platform support](platform-support.md)
 - [FAQ](https://aka.ms/vsls-faq)
