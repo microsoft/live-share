@@ -87,14 +87,16 @@ All languages / platforms have same file intellisense (when the respective exten
 | JavaScript / TypeScript | ✅ | ✅ <sup>4</sup> |
 | Markdown | *N/A* | *N/A* |
 | PowerShell | N/A | ? | 
-| Python | <sup>2</sup> | ✅  |
+| Python | <sup>5</sup> | ✅  |
 | R | | ? |
 | SQL / T-SQL | | |
 
 <sup>1</sup> CSHTML has a known issue around embedded C# support. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/59)<br />
-<sup>2</sup> Guests incorrectly see errors or warnings for valid types, namespaces, and modules defined outside of the current file. <br />
+<sup>2</sup> Bug: Guests see errors for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/64)<br />
 <sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
+<sup>5</sup> Bug: Guests see warnings for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
+
 
 ### App / platform type
 
