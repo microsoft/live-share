@@ -18,7 +18,7 @@ All languages / platforms have same file intellisense (when the respective exten
 ### Languages
 
 | Language | Project-wide language services | Co-Debugging |
-|---------------------|--------------------------------|--------------|
+|----------|--------------------------------|--------------|
 | Bash | *N/A* | ✅ | |
 | C++ | | ✅ | |
 | C# | ✅ | ✅ | |
@@ -36,7 +36,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Python | | ✅ <sup>4 *(Win only)*</sup> |
 | Reason/OCaml | | *N/A* <sup>5</sup> |
 | Ruby | | ✅ | |
-| Rust | | *N/A* <sup>5</sup>
+| Rust | | *N/A* <sup>5</sup> |
 | Swift | | *N/A* <sup>5</sup> |
 | SQL / T-SQL | | |
 
@@ -49,7 +49,7 @@ All languages / platforms have same file intellisense (when the respective exten
 ### Platforms
 
 | App/platform type | Co-debugging | App sharing |
-|----------|------------|------|
+|-------------------|--------------|-------------|
 | Web app / API (Back-end) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ | ✅ <sup>2</sup> |
 | Console / CLI | ✅ | <sup>3</sup> |
@@ -77,37 +77,37 @@ All languages / platforms have same file intellisense (when the respective exten
 ### Languages
 
 | Language | Project-wide language services | Co-Debugging |
-|---------------------|--------------------------------|--------------|
+|----------|--------------------------------|--------------|
 | C++ | | ✅ | |
 | C# | ✅ | ✅ | |
-| CSHTML | <sup>1</sup> | ✅
+| CSHTML | <sup>1</sup> | ✅ |
 | CSS | *N/A* | *N/A* |
-| F# | | ? |
-| HTML | *N/A* | <sup>2</sup> |
-| JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
+| F# | <sup>2</sup> | ✅ |
+| HTML | *N/A* | <sup>3</sup> |
+| JavaScript / TypeScript | ✅ | ✅ <sup>4</sup> |
 | Markdown | *N/A* | *N/A* |
-| PowerShell | N/A | ? | | |
-| Python | | ? |
+| PowerShell | N/A | ? | 
+| Python | <sup>2</sup> | ✅  |
 | R | | ? |
 | SQL / T-SQL | | |
 
 <sup>1</sup> CSHTML has a known issue around embedded C# support. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/59)<br />
-<sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
-<sup>3</sup> JavaScript / TypeScript debugging for Node or browser.<br />
+<sup>2</sup> Guests incorrectly see errors or warnings for valid types, namespaces, and modules defined outside of the current file. <br />
+<sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
+<sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 
 ### App / platform type
 
 | App/platform type | Co-debugging | App sharing |
-|----------|------------|------|
+|-------------------|--------------|-------------|
 | Web app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ | ✅ <sup>2</sup> |
 | Console / CLI | ✅ | |
-| Desktop (WinForms) | ? | |
+| Desktop (WinForms) | ✅ | |
 | Desktop (WPF) | ✅ | |
 | Databases | <sup>3</sup> | ✅ <sup>4</sup> |
-| Games (Native C++) | ? |  |
+| Games (Win32 C++) | ? |  |
 | Games (Unity) | ? | |
-| Linux (C++) | ? | |
 | Mobile (Cordova) | ? | ? |
 | Mobile (Native C++) | ? |  |
 | Mobile (Xamarin) | ? |  |
@@ -119,6 +119,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Azure Stream Analytics | ? | |
 | [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ? | ✅ <sup>1</sup> |
 | Universal Windows Platform | ? |  |
+| Linux (C++) | ? | |
 
 <sup>1</sup> Via [automatic web app sharing](collab-vs.md#automatic-web-app-sharing-during-debugging) or [share local server](collab-vs.md#sharing-a-local-server). <br />
 <sup>2</sup> By sharing back-end via [share local server](collab-vs.md#sharing-a-local-server).<br />
