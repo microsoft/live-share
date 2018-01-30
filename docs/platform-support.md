@@ -51,26 +51,27 @@ All languages / platforms have same file intellisense (when the respective exten
 | App/platform type | Co-debugging | App sharing |
 |-------------------|--------------|-------------|
 | Web app / API (Back-end) | ✅ | ✅ <sup>1</sup> |
-| Web app (Front-end) | ✅ | ✅ <sup>2</sup> |
-| Console / CLI | ✅ | <sup>3</sup> |
+| Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
+| Console / CLI | ✅ | <sup>4</sup> |
 | Desktop (Electron/native) | ✅ | |
-| Databases | <sup>4</sup> | ✅ <sup>1</sup> |
+| Databases | <sup>5</sup> | ✅ <sup>1</sup> |
 | Games (Unity) | ? | |
-| Markdown | *N/A* | ✅ <sup>5</sup> |
-| Mobile (Cordova) | ✅ | ✅ <sup>1,6</sup> |
+| Markdown | *N/A* | ✅ <sup>6</sup> |
+| Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
 | Mobile (Native) |  | |
-| Mobile (React Native) |  | ✅ <sup>1,7</sup> |
+| Mobile (React Native) |  | ✅ <sup>1,8</sup> |
 | VS Code extensions | | |
 | Azure Functions | ✅ | ✅ <sup>1</sup> |
 | [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
 
 <sup>1</sup> Via [share local server](collab-vscode.md#sharing-a-local-server).<br />
-<sup>2</sup> By sharing back-end. Debugging occurs against the host's browser rather than guest.<br />
-<sup>3</sup> Would be enabled via shared terminals. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/41)<br />
- <sup>4</sup> Debugging database stored procs is not currently supported <br />
-<sup>5</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
-<sup>6</sup> Cordova apps can be shared via the the "browser" platform<br />
-<sup>7</sup> React Native apps can be shared via Expo and [share local server](collab-vscode.md#sharing-a-local-server).<br />
+<sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
+<sup>3</sup> By sharing back-end.<br />
+<sup>4</sup> Would be enabled via shared terminals. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/41)<br />
+<sup>5</sup> Debugging database stored procs is not currently supported <br />
+<sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
+<sup>7</sup> Cordova apps can be shared via the the "browser" platform<br />
+<sup>8</sup> React Native apps can be shared via Expo and [share local server](collab-vscode.md#sharing-a-local-server).<br />
 
 ## Visual Studio
 
@@ -102,12 +103,12 @@ All languages / platforms have same file intellisense (when the respective exten
 
 | App/platform type | Co-debugging | App sharing |
 |-------------------|--------------|-------------|
-| Web app / API (Back-End) | ✅ | ✅ <sup>1, 2</sup> |
-| Web app (Front-end) | ✅ | ✅ <sup>3</sup> |
+| Web app / API (Back-End) | ✅ | ✅ <sup>1,2</sup> |
+| Web app (Front-end) | ✅ <sup>3</sup> | ✅ <sup>4</sup> |
 | Console / CLI | ✅ | |
 | Desktop (WinForms) | ✅ | |
 | Desktop (WPF) | ✅ | |
-| Databases | <sup>4</sup> | ✅ <sup>5</sup> |
+| Databases | <sup>5</sup> | ✅ <sup>6</sup> |
 | Games (Win32 C++) | ? |  |
 | Games (Unity) | ? | |
 | Mobile (Cordova) | ? | ? |
@@ -125,9 +126,10 @@ All languages / platforms have same file intellisense (when the respective exten
 
 <sup>1</sup> Via [automatic web app sharing](collab-vs.md#automatic-web-app-sharing-during-debugging) or [share local server](collab-vs.md#sharing-a-local-server). <br />
 <sup>2</sup> Python web apps do not support automatic web sharing but do support [share local server](collab-vs.md#sharing-a-local-server). <br />
-<sup>3</sup> By sharing back-end. Debugging occurs against the host's browser rather than guest.<br />
-<sup>4</sup> Debugging database stored procs is not currently supported <br />
-<sup>5</sup> Via [share local server](collab-vs.md#sharing-a-local-server). <br />
+<sup>3</sup> Debugging occurs against the host's browser rather than guest.<br />
+<sup>4</sup> By sharing back-end.<br />
+<sup>5</sup> Debugging database stored procs is not currently supported <br />
+<sup>6</sup> Via [share local server](collab-vs.md#sharing-a-local-server). <br />
 
 ## More information
 
