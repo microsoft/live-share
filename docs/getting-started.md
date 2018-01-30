@@ -107,7 +107,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 3. **Start a collaboration session**
 
-     Open a folder, project, or solution, and simply click the "Share" button (VS) / status bar icon (VS Code) in your tool and an invite link will be automatically copied to your clipboard. When opened in a browser, this link allow others to join a new collaboration session that shares contents of these folders with them. 
+     Open a folder, project, or solution, and simply click the "Share" button (VS) / status bar icon (VS Code) in your tool and an invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them. 
 
     > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](#changing-the-connection-mode) for details.
 
