@@ -75,6 +75,8 @@ All languages / platforms have same file intellisense (when the respective exten
 
 ## Visual Studio
 
+All languages / platforms have same file intellisense (when the respective workload is installed), as well as colorization and co-editing support. The lists below covers advanced features currently without complete, universal support:
+
 ### Languages
 
 | Language | Project-wide language services | Co-Debugging |
