@@ -43,7 +43,7 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>1</sup> No CSHTML support in C# extension.<br />
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>3</sup> JavaScript / TypeScript debugging for Node or browser.<br />
-<sup>4</sup> There is a blocking issue Python debugger support on Mac. Debugging on Windows works. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/62)<br />
+<sup>4</sup> There is an issue blocking Python debugger support on Mac. Debugging on Windows works. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/62)<br />
 <sup>5</sup> The respective extension for VS Code doesn't currently support debugging. As soon as it does, we will investigate adding co-debugging support to it.
 
 ### Platforms
