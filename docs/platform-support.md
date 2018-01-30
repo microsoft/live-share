@@ -87,7 +87,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | HTML | *N/A* | <sup>3</sup> |
 | JavaScript / TypeScript | ✅ | ✅ <sup>4</sup> |
 | Markdown | *N/A* | *N/A* |
-| PowerShell | N/A | ? | 
+| PowerShell | *N/A* | ? | 
 | Python | <sup>5</sup> | ✅ |
 | R | | ? |
 | SQL / T-SQL | | |
