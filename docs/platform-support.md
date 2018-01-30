@@ -65,7 +65,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
 
 <sup>1</sup> Via [share local server](collab-vscode.md#sharing-a-local-server).<br />
-<sup>2</sup> By sharing back-end via [share local server](collab-vscode.md#sharing-a-local-server).<br />
+<sup>2</sup> By sharing back-end.<br />
 <sup>3</sup> Would be enabled via shared terminals. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/41)<br />
 <sup>4</sup> Debugging database stored procs is not currently supported <br />
 <sup>5</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
@@ -87,7 +87,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | JavaScript / TypeScript | ✅ | ✅ <sup>4</sup> |
 | Markdown | *N/A* | *N/A* |
 | PowerShell | N/A | ? | 
-| Python | <sup>5</sup> | ✅  |
+| Python | <sup>5</sup> | ✅ |
 | R | | ? |
 | SQL / T-SQL | | |
 
@@ -102,12 +102,12 @@ All languages / platforms have same file intellisense (when the respective exten
 
 | App/platform type | Co-debugging | App sharing |
 |-------------------|--------------|-------------|
-| Web app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
-| Web app (Front-end) | ✅ | ✅ <sup>2</sup> |
+| Web app / API (Back-End) | ✅ | ✅ <sup>1, 2</sup> |
+| Web app (Front-end) | ✅ | ✅ <sup>3</sup> |
 | Console / CLI | ✅ | |
 | Desktop (WinForms) | ✅ | |
 | Desktop (WPF) | ✅ | |
-| Databases | <sup>3</sup> | ✅ <sup>4</sup> |
+| Databases | <sup>4</sup> | ✅ <sup>5</sup> |
 | Games (Win32 C++) | ? |  |
 | Games (Unity) | ? | |
 | Mobile (Cordova) | ? | ? |
@@ -124,9 +124,10 @@ All languages / platforms have same file intellisense (when the respective exten
 | Linux (C++) | ? | |
 
 <sup>1</sup> Via [automatic web app sharing](collab-vs.md#automatic-web-app-sharing-during-debugging) or [share local server](collab-vs.md#sharing-a-local-server). <br />
-<sup>2</sup> By sharing back-end via [share local server](collab-vs.md#sharing-a-local-server).<br />
-<sup>3</sup> Debugging database stored procs is not currently supported <br />
-<sup>4</sup> Via [share local server](collab-vs.md#sharing-a-local-server). <br />
+<sup>2</sup> Python web apps do not support automatic web sharing but do support [share local server](collab-vs.md#sharing-a-local-server). <br />
+<sup>3</sup> By sharing back-end.<br />
+<sup>4</sup> Debugging database stored procs is not currently supported <br />
+<sup>5</sup> Via [share local server](collab-vs.md#sharing-a-local-server). <br />
 
 ## More information
 
