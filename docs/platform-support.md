@@ -121,7 +121,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Azure Service Fabric | ? | |
 | Azure Stream Analytics | ? | |
 | [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ? | ✅ <sup>1</sup> |
-| Universal Windows Platform | ? |  |
+| Universal Windows Platform | ✅ |  |
 | Linux (C++) | ? | |
 
 <sup>1</sup> Via [automatic web app sharing](collab-vs.md#automatic-web-app-sharing-during-debugging) or [share local server](collab-vs.md#sharing-a-local-server). <br />
