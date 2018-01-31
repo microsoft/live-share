@@ -18,26 +18,15 @@ If you find your issue/feature already exists, feel free to make relevant commen
 
 ## File a problem report
 
-### Step 1 - [Optional] Enable diagnostic logging
+### Step 1 - [Optional] Check output logs
 
-If you want to see whether what you are experiencing is an existing problem, you may want to turn on dignostic logging. Logs will then appear in the "Live Share" stream in the Output window.
-
-**In VS:**
-1. Update Tools > Options > Live Share > Output Verbosity to Verbose.
-2. Restart VS
-3. Repro the issue
-
-**In VS Code:**
-1. Go to File > Preferences > Settings
-2. Add ``"liveshare.diagnosticLogging": true``
-3. Restart VS Code
-4. Repro the issue
+If you're seeing an error pop up that is not very descriptive, the output logs can help you understand if this is a known issue.  Simply go to the "Output" window and select the "Visual Studio Live Share" log stream.  Verbose logging is on by default.
 
 ### Step 2A - File a Visual Studio problem
 
 Visual Studio has a built in feedback mechanism via the "Report a Problem..." tool that provides the engineering team detailed information about your installation that you should use to log bugs or problems you encounter when using VS.
 
-Diagnostic logs will be automatically attached.
+Logs will be automatically attached.
 
 ![Image of Report a Problem...](docs/media/vs-feedback.png) 
 
@@ -49,22 +38,18 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
 
 ### Step 2B - File a VS Code or general service problems
 
-Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and please include the following in the description:
+1. **Export logs:** Press F1 (or Ctrl-Shift-P), type "export logs" and run the "Live Share: Export Logs" command.
 
-- **Tool:** VS, VS Code for Mac, VS Code for Windows
-- **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
-- **Extension version:** Mention the version you installed with your VS/VSCode.
-- **Target Platform/Language:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
-  - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
-- **Repro steps:** Prefix the repro steps with [Host] or [Guest] to make it easy to repro the bug
+2. **Create issue:** Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and the information requested in the issue template:
 
-Next, attach the following:
+  - **Tool:** VS, VS Code for Mac, VS Code for Windows
+  - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
+  - **Extension version:** Mention the version you installed with your VS/VSCode.
+  - **Target Platform/Language:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
+    - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
+  - **Repro steps:** Prefix the repro steps with [Host] or [Guest] to make it easy to repro the bug
 
-  - **Logs:** Zip and attach the log files from the following:
-    - Windows: ``%TEMP%\VSFeedbackVSRTCLogs``
-    - macOS: ``$TMPDIR/VSFeedbackVSRTCLogs``
-        - Type ``open $TMPDIR/VSFeedbackVSRTCLogs`` from the Terminal to have Finder open the location
-  - **VS Code Dev Tools Console Errors**: Help > Toggle Developer Tools
+3. **Attach logs:** Add a ".txt" extension to the zip file from step 1 and attach it to the bug.
 
 Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-writing-good-problem-reports-and-feature-requests)" for additional suggestions.
 
