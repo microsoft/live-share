@@ -103,7 +103,7 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 <sup>6</sup> Though debugging XAML itself is technically N/A, debugging code-behind is supported.<br />
-<sup>7</sup> Bug: Debugging PowerShell projects hangs VS. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
+<sup>7</sup> Bug: Debugging PowerShell projects hangs VS for host after sharing. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
 <sup>8</sup> Bug: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
 ### App / platform type
