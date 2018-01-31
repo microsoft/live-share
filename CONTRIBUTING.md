@@ -40,7 +40,7 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
 
 1. **Export logs:** Press F1 (or Ctrl-Shift-P), type "export logs" and run the "Live Share: Export Logs" command.
 
-2. **Create issue:** Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and the information requested in the issue template:
+2. **Start a new issue:** Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and the information requested in the issue template:
 
     - **Tool:** VS, VS Code for Mac, VS Code for Windows
     - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
@@ -49,7 +49,9 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
         - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
     - **Repro steps:** Prefix the repro steps with [Host] or [Guest] to make it easy to repro the bug
 
-3. **Attach logs:** Update the file extension for the exported logs from step 1 from ".zip" to ".zip.txt" and drag-and-drop them into the issue to attach.
+3. **Attach logs:** Drag-and-drop the zipped logs from step 1 into the issue text and wait for it to upload.
+
+4. **Click "Submit new issue"**
 
 Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-writing-good-problem-reports-and-feature-requests)" for additional suggestions.
 
