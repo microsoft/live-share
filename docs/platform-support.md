@@ -9,7 +9,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Visual Studio Live Share's features are intended to work across a diverse landscape of languages and application platforms. However, given the sheer number of variations, some platforms and languages are more complete than others. This document covers the current known state of a number of popular languages and platforms for currently supported features.
 
-See a language or platform you need? Want to add one you don't? [Vote here.](https://github.com/MicrosoftDocs/live-share/issues/12)
+See a language or platform you need? Want to add one you don't see? [Vote here.](https://github.com/MicrosoftDocs/live-share/issues/12)
 
 ## Visual Studio Code
 
