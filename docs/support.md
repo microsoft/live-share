@@ -30,16 +30,11 @@ GitHub issues and VS problem reports are a great way to connect with us.
 - [Up-vote a feature or request a new one](http://aka.ms/vsls-feature-requests)
 - [Check out tips on contributing!](../CONTRIBUTING.md#tip-writing-good-problem-reports-and-feature-requests)
 
-## Slack and Email
+## Other
 
-For those in the private limited preview, join the [Slack channel](http://live-share.slack.com) and chat with us!
-
-Alternatively, you can shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions.
-
-## Twitter
-
-Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
-
+ - **Email:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com) 
+ - **Twitter:** Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
+ 
 ## Discussion Etiquette
 
 In order to keep the conversation clear and transparent, please limit discussion to English and keep things on topic with the issue. Be considerate to others and try to be courteous and professional at all times. This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
