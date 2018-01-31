@@ -42,12 +42,12 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
 
 2. **Create issue:** Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and the information requested in the issue template:
 
-  - **Tool:** VS, VS Code for Mac, VS Code for Windows
-  - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
-  - **Extension version:** Mention the version you installed with your VS/VSCode.
-  - **Target Platform/Language:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
-    - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
-  - **Repro steps:** Prefix the repro steps with [Host] or [Guest] to make it easy to repro the bug
+    - **Tool:** VS, VS Code for Mac, VS Code for Windows
+    - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
+    - **Extension version:** Mention the version you installed with your VS/VSCode.
+    - **Target Platform/Language:** Mention the language / project type you were using (e.g. ASP.NET Core, Node.js)
+        - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
+    - **Repro steps:** Prefix the repro steps with [Host] or [Guest] to make it easy to repro the bug
 
 3. **Attach logs:** Add a ".txt" extension to the zip file from step 1 and attach it to the bug.
 
