@@ -44,7 +44,7 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>3</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 <sup>4</sup> Bug: Python debugger support on Mac has a known issue. Debugging on Windows works. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/62)<br />
-<sup>5</sup> The respective extension for VS Code doesn't currently support debugging. As soon as it does, we will investigate adding co-debugging support to it.
+<sup>5</sup> The respective extension for VS Code doesn't currently support debugging. As soon as it does, we will investigate adding co-debugging support to it. <br />
 <sup>?</sup> Not yet validated.
 
 ### Platforms
@@ -104,8 +104,8 @@ All languages / platforms have same file intellisense (when the respective workl
 <sup>2</sup> Bug: Guests see errors for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here for F#.](https://github.com/MicrosoftDocs/live-share/issues/64) [Vote (👍) here for Python.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
 <sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
-<sup>6</sup> Though debugging XAML itself is technically N/A, debugging C# code-behind is supported.
-<sup>7</sup> Bug: Debugging PowerShell projects hangs VS. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71)
+<sup>6</sup> Though debugging XAML itself is technically N/A, debugging C# code-behind is supported.<br />
+<sup>7</sup> Bug: Debugging PowerShell projects hangs VS. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
 <sup>?</sup> Not yet validated.
 
 ### App / platform type
