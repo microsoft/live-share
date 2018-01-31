@@ -40,7 +40,7 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
 
 1. **Export logs:** Press F1 (or Ctrl-Shift-P), type "export logs" and run the "Live Share: Export Logs" command.
 
-2. **Start a new issue:** Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and the information requested in the issue template:
+2. **Start a new issue:** Create an issue in [this repository](https://github.com/Microsoft/live-share/issues) and add the information requested in the issue template:
 
     - **Tool:** VS, VS Code for Mac, VS Code for Windows
     - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
