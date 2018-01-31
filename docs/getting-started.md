@@ -33,8 +33,8 @@ Collaboration session hosts can use all of their tools and services as they woul
 
 Requirements:
 
-- **Visual Studio 2017 Preview** - The latest Visual Studio 2017 Update Preview (any edition) on Windows 7, 8.1, or 10.
-- **Visual Studio Code Insiders** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
+- **Visual Studio 2017 Preview (15.6 Preview 3 or higher)** - The latest Visual Studio 2017 Update Preview (any edition) on Windows 7, 8.1, or 10.
+- **Visual Studio Code Insiders (1.20.0-insiders or higher)** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
 
 Download and setup instructions:
 
@@ -43,8 +43,8 @@ Download and setup instructions:
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td>
         <strong>Visual Studio 2017 Preview</strong><br />
-       1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Update Preview</a> on Windows (7, 8.1, or 10).<br/>
-       2. Install a supported workload: ASP.NET, .NET Core, and/or Node.js<br />
+       1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Preview</a> (15.6 Preview 3+) on Windows (7, 8.1, or 10).<br/>
+       2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
        3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
        <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
@@ -53,7 +53,7 @@ Download and setup instructions:
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
-        1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up only).</b><br />
+        1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> (1.20.0-insiders+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up).</b><br />
         2. Download and install the Visual Studio Live Share extension from the marketplace. <br />
         3. Installation can take a moment, so wait for the install to complete and then reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
