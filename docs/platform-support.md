@@ -77,28 +77,26 @@ All languages / platforms have same file intellisense (when the respective exten
 
 ## Visual Studio
 
-All languages / platforms have same file intellisense (when the respective workload is installed), as well as colorization and co-editing support. The lists below covers advanced features currently without complete, universal support:
-
 ### Languages
 
-| Language | Project-wide language services | Co-Debugging |
-|----------|--------------------------------|--------------|
-| ASPX | <sup>1</sup> | ✅ |
-| C++ | | ✅ | |
-| C# | ✅ | ✅ | |
-| CSHTML | <sup>1</sup> | ✅ |
-| CSS | *N/A* | *N/A* |
-| F# | <sup>2</sup> | ✅ |
-| HTML | *N/A* | <sup>3</sup> |
-| JavaScript / TypeScript | ✅ | ✅ <sup>4</sup> |
-| Markdown | *N/A* | *N/A* |
-| PowerShell | *N/A* | <sup>7</sup> | 
-| Python | <sup>2</sup> | ✅ |
-| R | | ? |
-| SQL / T-SQL | | |
-| VB.NET | | ✅ |
-| VBHTML | <sup>1</sup> | ✅ |
-| XAML | | <sup>6</sup> | 
+| Language | Single-file language services | Project-wide language services | Co-Debugging |
+|----------|-------------------------------|--------------------------------|--------------|
+| ASPX | ✅ <sup>1</sup> |  | ✅ |
+| C++ | ✅ | | ✅ | 
+| C# | ✅ | ✅ | ✅ | 
+| CSHTML | ✅  <sup>1</sup> | | ✅ |
+| CSS | ✅ | *N/A* | *N/A* |
+| F# | ✅ <sup>2</sup>| | ✅ |
+| HTML | ✅ | *N/A* | <sup>3</sup> |
+| JavaScript / TypeScript | ✅ | ✅ | ✅ <sup>4</sup> |
+| Markdown | ✅ | *N/A* | *N/A* |
+| PowerShell | ✅ | *N/A* | <sup>7</sup> | 
+| Python | ✅ <sup>2</sup> | | ✅ |
+| R | <sup>8</sup> | | ✅ |
+| SQL / T-SQL | ✅ | |
+| VB.NET | ✅ | | ✅ |
+| VBHTML | ✅ <sup>1</sup> | | ✅ |
+| XAML | ✅ | *N/A* | <sup>6</sup> | 
 
 <sup>1</sup> Bug: CSHTML, VBHTML, and ASPX have a known issues around embedded C#/VB support given code-behind C#/VB files are not resolved. [Vote (👍) here on CSHTML/VBHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Vote (👍) here on ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
 <sup>2</sup> Bug: Guests see errors for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here for F#.](https://github.com/MicrosoftDocs/live-share/issues/64) [Vote (👍) here for Python.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
@@ -106,7 +104,7 @@ All languages / platforms have same file intellisense (when the respective workl
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 <sup>6</sup> Though debugging XAML itself is technically N/A, debugging C# code-behind is supported.<br />
 <sup>7</sup> Bug: Debugging PowerShell projects hangs VS. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
-<sup>?</sup> Not yet validated.
+<sup>8</sup> Cannot claim support as R language service errors on the guest side on join and after every newline. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
 ### App / platform type
 
