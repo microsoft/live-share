@@ -58,11 +58,11 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
 
 ## Filing Feature Requests
 
-Many feature requests start out life as reported problems and should therefore follow the processes described above.  However, if you believe you have a feature request that is not a bug, you can follow these steps:
+Many feature requests start out life as reported problems and should therefore follow the processes described above.  However, if you believe you have a feature request that is not a bug, you can follow these steps.
 
 > Tip: You may be able to save yourself some time by using this [query](https://aka.ms/vsls-feature-requests) to see if your request already exists.  If you find it, 👍 (upvote) it.
 
-[Click here to draft a new issue](http://aka.ms/vsls-new-issue) and please add following information into the description:
+Simply [click here to draft a new issue](http://aka.ms/vsls-new-issue) and  add as much of the following information into the description as is appropriate:
 
 - **Tool:** VS, VS Code for Mac, VS Code for Windows
 - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
