@@ -94,8 +94,8 @@ Don't feel bad if we can't reproduce the issue and ask for more information!
 
 ## Other ways to contact us!
 
-- Join the [Slack channel](http://live-share.slack.com) and chat with us!
 - Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
+- Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
 
 ## Contributing to documentation
 
