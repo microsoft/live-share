@@ -109,12 +109,12 @@ All languages / platforms have same file intellisense (when the respective workl
 
 | App/platform type | Co-debugging | App sharing |
 |-------------------|--------------|-------------|
-| Web app / API (Back-End) | ✅ | ✅ <sup>1,2</sup> |
-| Web app (Front-end) | ✅ <sup>3</sup> | ✅ <sup>4</sup> |
+| Web app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
+| Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
 | Console / CLI | ✅ | |
 | Desktop (WinForms) | ✅ | |
 | Desktop (WPF) | ✅ | |
-| Databases | <sup>5</sup> | ✅ <sup>6</sup> |
+| Databases | <sup>4</sup> | ✅ <sup>5</sup> |
 | Games (Win32 C++) | ? |  |
 | Games (Unity) | ? | |
 | Mobile (Cordova) | ? | ? |
@@ -130,12 +130,11 @@ All languages / platforms have same file intellisense (when the respective workl
 | Universal Windows Platform | ✅ |  |
 | Linux (C++) | ? | |
 
-<sup>1</sup> Via [automatic web app sharing](collab-vs.md#automatic-web-app-sharing-during-debugging) or [share local server](collab-vs.md#sharing-a-local-server). <br />
-<sup>2</sup> Python web apps do not support automatic web sharing but do support [share local server](collab-vs.md#sharing-a-local-server). <br />
-<sup>3</sup> Debugging occurs against the host's browser rather than guest.<br />
-<sup>4</sup> By sharing back-end.<br />
-<sup>5</sup> Debugging database stored procs is not currently supported <br />
-<sup>6</sup> Via [share local server](collab-vs.md#sharing-a-local-server). <br />
+<sup>1</sup> Via [share local server](collab-vs.md#sharing-a-local-server). ASP.NET Web Apps can also use [automatic web app sharing](collab-vs.md#automatic-web-app-sharing-during-debugging).<br />
+<sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
+<sup>3</sup> By sharing back-end.<br />
+<sup>4</sup> Debugging database stored procs is not currently supported <br />
+<sup>5</sup> Via [share local server](collab-vs.md#sharing-a-local-server). <br />
 
 ## More information
 
