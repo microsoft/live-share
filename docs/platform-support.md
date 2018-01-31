@@ -43,8 +43,9 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>1</sup> No CSHTML support in C# extension.<br />
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>3</sup> JavaScript / TypeScript debugging for Node or browser.<br />
-<sup>4</sup> There is an issue blocking Python debugger support on Mac. Debugging on Windows works. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/62)<br />
+<sup>4</sup> Bug: Python debugger support on Mac has a known issue. Debugging on Windows works. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/62)<br />
 <sup>5</sup> The respective extension for VS Code doesn't currently support debugging. As soon as it does, we will investigate adding co-debugging support to it.
+<sup>?</sup> Not yet validated.
 
 ### Platforms
 
@@ -72,6 +73,7 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
 <sup>7</sup> Cordova apps can be shared via the the "browser" platform<br />
 <sup>8</sup> React Native apps can be shared via Expo and [share local server](collab-vscode.md#sharing-a-local-server).<br />
+<sup>?</sup> Not yet validated.
 
 ## Visual Studio
 
@@ -90,20 +92,21 @@ All languages / platforms have same file intellisense (when the respective workl
 | HTML | *N/A* | <sup>3</sup> |
 | JavaScript / TypeScript | ✅ | ✅ <sup>4</sup> |
 | Markdown | *N/A* | *N/A* |
-| PowerShell | *N/A* | ? | 
-| Python | <sup>5</sup> | ✅ |
+| PowerShell | *N/A* | <sup>7</sup> | 
+| Python | <sup>2/sup> | ✅ |
 | R | | ? |
 | SQL / T-SQL | | |
 | VB.NET | | ✅ |
+| VBHTML | <sup>1</sup> | ✅ |
 | XAML | | <sup>6</sup> | 
 
-<sup>1</sup> CSHTML and ASPX have a known issues around embedded C# support given code-behind C# files are not resolved. [Vote (👍) here on CSHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Vote (👍) here on ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
-<sup>2</sup> Bug: Guests see errors for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/64)<br />
+<sup>1</sup> Bug: CSHTML, VBHTML, and ASPX have a known issues around embedded C#/VB support given code-behind C#/VB files are not resolved. [Vote (👍) here on CSHTML/VBHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Vote (👍) here on ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
+<sup>2</sup> Bug: Guests see errors for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here for F#.](https://github.com/MicrosoftDocs/live-share/issues/64) [Vote (👍) here for Python.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
 <sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
-<sup>5</sup> Bug: Guests see warnings for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
 <sup>6</sup> Though debugging XAML itself is technically N/A, debugging C# code-behind is supported.
-
+<sup>7</sup> Bug: Debugging PowerShell projects hangs VS. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71)
+<sup>?</sup> Not yet validated.
 
 ### App / platform type
 
@@ -135,6 +138,7 @@ All languages / platforms have same file intellisense (when the respective workl
 <sup>3</sup> By sharing back-end.<br />
 <sup>4</sup> Debugging database stored procs is not currently supported <br />
 <sup>5</sup> Via [share local server](collab-vs.md#sharing-a-local-server). <br />
+<sup>?</sup> Not yet validated.
 
 ## More information
 
