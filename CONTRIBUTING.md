@@ -49,7 +49,7 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
         - Be sure to specify whether you are using .NET Core or Full .NET for .NET related scenarios
     - **Repro steps:** Prefix the repro steps with [Host] or [Guest] to make it easy to repro the bug
 
-3. **Attach logs:** Add a ".txt" extension to the zip file from step 1 and attach it to the bug.
+3. **Attach logs:** Update the file extension for the exported logs from step 1 from ".zip" to ".zip.txt" and drag-and-drop them into the issue to attach.
 
 Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-writing-good-problem-reports-and-feature-requests)" for additional suggestions.
 
