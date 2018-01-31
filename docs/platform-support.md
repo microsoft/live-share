@@ -102,9 +102,9 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>2</sup> Bug: Guests see errors for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here for F#.](https://github.com/MicrosoftDocs/live-share/issues/64) [Vote (👍) here for Python.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
 <sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
-<sup>6</sup> Though debugging XAML itself is technically N/A, debugging C# code-behind is supported.<br />
+<sup>6</sup> Though debugging XAML itself is technically N/A, debugging code-behind is supported.<br />
 <sup>7</sup> Bug: Debugging PowerShell projects hangs VS. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
-<sup>8</sup> Cannot claim support as R language service errors on the guest side on join and after every newline. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
+<sup>8</sup> Bug: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
 ### App / platform type
 
