@@ -93,7 +93,7 @@ All languages / platforms have same file intellisense (when the respective workl
 | JavaScript / TypeScript | ✅ | ✅ <sup>4</sup> |
 | Markdown | *N/A* | *N/A* |
 | PowerShell | *N/A* | <sup>7</sup> | 
-| Python | <sup>2/sup> | ✅ |
+| Python | <sup>2</sup> | ✅ |
 | R | | ? |
 | SQL / T-SQL | | |
 | VB.NET | | ✅ |
