@@ -45,7 +45,7 @@ Diagnostic logs will be automatically attached.
 
 Note that after your problem report is filed, it may be converted to a [GitHub issue](https://github.com/Microsoft/live-share/issues) for future tracking if it applies multiple clients or turns out to be a feature request. In this event, a link to the corresponding GitHub issue number will be referenced in comments on your raised problem report. 
 
-Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
+Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-writing-good-problem-reports-and-feature-requests)" for additional suggestions.
 
 ### Step 2B - File a VS Code or general service problems
 
@@ -66,7 +66,7 @@ Next, attach the following:
         - Type ``open $TMPDIR/VSFeedbackVSRTCLogs`` from the Terminal to have Finder open the location
   - **VS Code Dev Tools Console Errors**: Help > Toggle Developer Tools
 
-Check out the tips in "Writing Good Problem Reports and Feature Requests" for additional suggestions.
+Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-writing-good-problem-reports-and-feature-requests)" for additional suggestions.
 
 ## Filing Feature Requests
 
