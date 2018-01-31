@@ -1,9 +1,9 @@
 <!-- 
 For Visual Studio problems/feedback, please use the "Report a Problem..." feature built into the tool. See https://aka.ms/vsls-vsproblem.
 
-For VS Code, or issues that cross VS and VS Code, include the information below and and attach a zip of logs from this location:
-  - Windows: %TEMP%\VSFeedbackVSRTCLogs
-  - macOS: $TMPDIR/VSFeedbackVSRTCLogs (Type "open $TMPDIR/VSFeedbackVSRTCLogs" from the Terminal to have Finder open the location)
+For VS Code issues, attach verbose logs as follows:
+1. Export logs: Press F1 (or Ctrl-Shift-P), type "export logs" and run the "Live Share: Export Logs" command.
+2. Attach: Rename the zip to ".zip.txt" and drag and drop on this screen as an attachment
 
 For feature requests, please include enough of this same info so we know if the request is tool or language/platform specific.
 -->
