@@ -29,7 +29,7 @@ Just follow these steps to start sharing:
     <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td>
         <strong>Visual Studio Code Insiders</strong><br />
-        1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> (1.20.0-insiders+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra and up).</b><br />
+        1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> (1.20.0-insiders+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
         2. Download and install the Visual Studio Live Share extension from the marketplace. <br />
         3. Installation can take a moment, so wait for the install to complete and then reload.<br />
         <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
