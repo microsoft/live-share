@@ -11,6 +11,14 @@ Visual Studio Live Share's features are intended to work across a diverse landsc
 
 See a language or platform you need? Want to add one you don't see? [Vote here.](https://github.com/MicrosoftDocs/live-share/issues/12)
 
+- [VS Code](#visual-studio-code)
+  - [Languages](#languages)
+  - [Platforms](#platforms)
+- [Visual Studio](#visual-studio)
+  - [Languages](#languages-1)
+  - [Platforms](#platforms-1)
+
+
 ## Visual Studio Code
 
 All languages / platforms have same file intellisense (when the respective extension is installed), as well as colorization and co-editing support. The lists below covers advanced features currently without complete, universal support:
@@ -108,7 +116,7 @@ While most languages have some single file Intellisense support, there are some 
 <sup>7</sup> Bug: Debugging PowerShell projects hangs VS for host after sharing. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
 <sup>8</sup> Bug: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
-### App / platform type
+### Platforms
 
 | App/platform type | Co-debugging | App sharing |
 |-------------------|--------------|-------------|
