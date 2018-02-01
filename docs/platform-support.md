@@ -94,8 +94,8 @@ While most languages have some single file Intellisense support, there are some 
 | Markdown | ✅ | *N/A* | *N/A* |
 | PowerShell | ✅ | *N/A* | <sup>7</sup> | 
 | Python | ✅ <sup>2</sup> | | ✅ |
-| R | <sup>8</sup> | | ✅ |
-| SQL / T-SQL | ✅ | |
+| R | <sup>8</sup> | *N/A* | ✅ |
+| SQL / T-SQL | ✅ | *N/A* | |
 | VB.NET | ✅ | | ✅ |
 | VBHTML | ✅ <sup>1</sup> | | ✅ |
 | XAML | ✅ | *N/A* | <sup>6</sup> | 
