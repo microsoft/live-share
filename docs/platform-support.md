@@ -11,6 +11,8 @@ Visual Studio Live Share's features are intended to work across a diverse landsc
 
 See a language or platform you need? Want to add one you don't see? [Vote here.](https://github.com/MicrosoftDocs/live-share/issues/12)
 
+**Contents**
+
 - [VS Code](#visual-studio-code)
   - [Languages](#languages)
   - [Platforms](#platforms)
