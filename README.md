@@ -4,15 +4,17 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Visual Studio Live Share Docs & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><a href="http://aka.ms/vsls"><img src="docs/media/vsls-icon.png" style="width: 128px; height: 128px;" /></a></td>
 <td>
-<i>Visual Studio Live Share is designed to enable developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br /><br />
+<strong>Visual Studio Live Share</strong><br /> 
+<i>Enabling developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
 <strong><a href="http://aka.ms/vsls">Learn more!</a></strong></i>
 </td>
 </tr></table>
+
+# Visual Studio Live Share Docs & Feedback
 
 While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](docs/platform-support.md) and more will be coming in the future. It is currently in a limited, private preview.
 
