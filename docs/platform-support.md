@@ -38,7 +38,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Ruby | | ✅ | |
 | Rust | | *N/A* <sup>5</sup> |
 | Swift | | *N/A* <sup>5</sup> |
-| SQL / T-SQL | | |
+| SQL / T-SQL | *N/A* | |
 
 <sup>1</sup> No CSHTML support in C# extension.<br />
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
