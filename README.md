@@ -8,6 +8,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><a href="http://aka.ms/vsls"><img src="docs/media/vsls-icon.png" style="width: 128px; height: 128px;" /></a></td>
+<td>
 <i>Visual Studio Live Share is designed to enable developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br /><br />
 <strong><a href="http://aka.ms/vsls">Learn more!</a></strong></i>
 </td>
