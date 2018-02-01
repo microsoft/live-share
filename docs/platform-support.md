@@ -77,7 +77,7 @@ All languages / platforms have same file intellisense (when the respective exten
 
 ## Visual Studio
 
-While most languages have some single file Intellisense support, there are some caveats outlined below. The remainder of the lists cover advanced features features currently without complete, universal support:
+While most languages have some single file Intellisense support, there are some caveats outlined below. The remainder of the list covers advanced features features currently without complete, universal support:
 
 ### Languages
 
