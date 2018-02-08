@@ -225,7 +225,7 @@ If you want to use direct mode but found that your firewall does not have an ent
 VS Code (substitue **VERSION** for the extension version):
 
 - **Windows:** %USERPROFILE%\\.vscode-insiders\extensions\ms-vsliveshare.vsliveshare-*VERSION*\dotnet_modules\win7-x86\vsls-agent.exe
-- **macOS:** $HOME/.vscode-insiders/extensionsms-vsliveshare.vsliveshare-*VERSION*/dotnet_modules/osx.10.10-x64/vsls-agent
+- **macOS:** $HOME/.vscode-insiders/extensions/ms-vsliveshare.vsliveshare-*VERSION*/dotnet_modules/osx.10.10-x64/vsls-agent
 
 Visual Studio:  
 - Run a search for vsls-agent.exe in your VS install locaiton under **IDE\Extensions**
