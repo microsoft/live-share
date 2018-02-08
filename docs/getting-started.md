@@ -15,6 +15,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 - [Joining a collaboration session](#joining-a-collaboration-session)
   - [Manually joining](#manually-joining)
 - [Changing the Connection Mode](#changing-the-connection-mode)
+  - [Troubleshooting connections](#troubleshooting-connections)
+  - [Manually adding a firewall entry for direct mode](#manually-adding-a-firewall-entry-for-direct-mode)
 - [What can I do with a collaboration session?](#what-can-i-do-with-a-collaboration-session)
 - [Ending a collaboration session](#ending-a-collaboration-session)
 - [Session states](#session-states)
@@ -196,6 +198,39 @@ To change the mode:
   - ``"liveshare.connectionMode":"direct"``
   - ``"liveshare.connectionMode":"relay"``
 
+### Troubleshooting connections
+
+As outlined above, different connection modes have different requirements to work. The information below can help you troubleshoot if you're having problems signing in, sharing, or joining.
+
+| Mode | Requirements | Troubleshooting |
+|------|----------------|----------------------|
+| All | Access to *.liveshare.vsengsaas.visualstudio.com on port 80/443 | Ensure your corporate or personal network firewall allows you to connect to this domain. Enter http://liveshare.vsengsaas.visualstudio.com in a browser and verify you land at the VS Live Share home page. |
+| Auto | Auto-switches. See direct and relay modes. | Switch to direct or relay mode to troubleshoot. |
+| Direct | A port in the range 5990 - 5999 needs to be open on the host's machine and guests need to be able to directly connect to each other. (See [this feature request](https://github.com/MicrosoftDocs/live-share/issues/60) for a proposed improvement.) | Verify "vsls-agent" is not blocked by your desktop firewall software for this port range and that you can ping one another. While Windows and other desktop software should prompt you the first time the agent starts up, we have seen instances where group policies prevent this from happening and you will need to [manually add the entry](#manually-adding-a-firewall-entry-for-direct-mode). |
+| Relay | Access to *.servicebus.windows.net on port 80/443. | Ensure your corporate or personal network firewall allows you to connect to this domain. |
+
+Specific examples of issues:
+
+| Problem | Possible Cause | 
+|------|----------------|
+| You are unable to sign into VS Live Share | Access to *.liveshare.vsengsaas.visualstudio.com on port 80/443 is blocked by your personal or corporate firewall. | 
+| You are in direct mode and able to sign into VS Live Share but are notified of a timeout when either sharing or joining. | The guest and host cannot directly connect. Try auto or relay mode. |
+| You are in relay mode and able to sign into VS Live Share but are notified of a timeout when either sharing or joining. | Access to *.servicebus.windows.net on port 80/443 is blocked is blocked by your personal or corporate firewall. Try direct mode. |
+| You are in auto mode and able to sign into VS Live Share but are notified of a timeout when either sharing or joining. | Either you are having trouble with both direct and relay mode or there is a bug with auto mode detecting the right connection type. If you are able to switch to direct or relay mode and connect, please raise a bug. |
+
+### Manually adding a firewall entry for direct mode
+
+If you want to use direct mode but found that your firewall does not have an entry for it, you can add it from one of the following locations:
+
+VS Code (substitue **VERSION** for the extension version):
+
+- **Windows:** %USERPROFILE%\\.vscode-insiders\extensions\ms-vsliveshare.vsliveshare-*VERSION*\dotnet_modules\win7-x86\vsls-agent.exe
+- **macOS:** $HOME/.vscode-insiders/extensionsms-vsliveshare.vsliveshare-*VERSION*/dotnet_modules/osx.10.10-x64/vsls-agent
+
+Visual Studio:  
+- Run a search for vsls-agent.exe in your VS install locaiton under **IDE\Extensions**
+- The VS install location is typically C:\Program Files (x86)\Microsoft Visual Studio\Preview\\*EDITION* where **EDITION** is Community, Enterprise, etc 
+
 ## What can I do with a collaboration session?
 
 Lots of things! Co-editing and co-debugging for example! Take a look at the article for the tool you're using to find out more! 
@@ -227,7 +262,7 @@ Similarly, individual guests can leave the collaboration session without ending 
 **In VS Code:**
 
 ![VS Code session state item](media/vscode-share-state.png) <br />
-![VS Code leave collaboration session](media/vscode-leave-session.png) 
+![VS Code leave collaboration session](media/vscode-leave-session.png)
 
 Any temp files are automatically cleaned up so no further action is needed.
 

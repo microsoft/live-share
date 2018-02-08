@@ -29,21 +29,21 @@ All languages / platforms have same file intellisense (when the respective exten
 
 | Language | Project-wide language services | Co-Debugging |
 |----------|--------------------------------|--------------|
-| Bash | *N/A* | ✅ | |
-| C++ | | ✅ | |
+| JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
 | C# | ✅ | ✅ | |
 | CSHTML | *N/A* <sup>1</sup> | ✅
-| CSS | *N/A* | *N/A* |
-| Erlang | | | | |
-| Go | | ✅ | |
-| Haskell | | ? |
 | HTML | *N/A* | <sup>2</sup> |
-| Java | | ✅ | |
-| JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
-| Markdown | *N/A* | *N/A* |
-| PHP | | ✅ |
-| PowerShell | *N/A* | ✅ | | |
+| CSS | *N/A* | *N/A* |
 | Python | | ✅ <sup>4 *(Win only)*</sup> |
+| Markdown | *N/A* | *N/A* |
+| Java | | ✅ | |
+| Go | | ✅ | |
+| C++ | | ✅ | |
+| PowerShell | *N/A* | ✅ | | |
+| Bash | *N/A* | ✅ | |
+| Erlang | | | | |
+| Haskell | | ? |
+| PHP | | ✅ |
 | Reason/OCaml | | *N/A* <sup>5</sup> |
 | Ruby | | ✅ | |
 | Rust | | *N/A* <sup>5</sup> |
@@ -63,17 +63,17 @@ All languages / platforms have same file intellisense (when the respective exten
 |-------------------|--------------|-------------|
 | Web app / API (Back-end) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
-| Console / CLI | ✅ | <sup>4</sup> |
-| Desktop (Electron/native) | ✅ | |
-| Databases | <sup>5</sup> | ✅ <sup>1</sup> |
-| Games (Unity) | ? | |
-| Markdown | *N/A* | ✅ <sup>6</sup> |
-| Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
-| Mobile (Native) |  | |
-| Mobile (React Native) |  | ✅ <sup>1,8</sup> |
-| VS Code extensions | | |
 | Azure Functions | ✅ | ✅ <sup>1</sup> |
 | [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
+| Markdown | *N/A* | ✅ <sup>6</sup> |
+| Databases | <sup>5</sup> | ✅ <sup>1</sup> |
+| Console / CLI | ✅ | <sup>4</sup> |
+| VS Code extensions | | |
+| Mobile (React Native) |  | ✅ <sup>1,8</sup> |
+| Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
+| Mobile (Native) |  | |
+| Desktop (Electron/native) | ✅ | |
+| Games (Unity) | ? | |
 
 <sup>1</sup> Via [share local server](collab-vscode.md#sharing-a-local-server).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
@@ -93,30 +93,30 @@ While most languages have some single file Intellisense support, there are some 
 
 | Language | Single-file language services | Project-wide language services | Co-Debugging |
 |----------|-------------------------------|--------------------------------|--------------|
-| ASPX | ✅ <sup>1</sup> |  | ✅ |
-| C++ | ✅ | | ✅ | 
 | C# | ✅ | ✅ | ✅ | 
 | CSHTML | ✅  <sup>1</sup> | | ✅ |
-| CSS | ✅ | *N/A* | *N/A* |
-| F# | ✅ <sup>2</sup>| | ✅ |
+| ASPX | ✅ <sup>1</sup> |  | ✅ |
 | HTML | ✅ | *N/A* | <sup>3</sup> |
+| CSS | ✅ | *N/A* | *N/A* |
 | JavaScript / TypeScript | ✅ | ✅ | ✅ <sup>4</sup> |
+| C++ | ✅ | | ✅ | 
+| Python | ✅ <sup>2</sup> | | ✅ |
 | Markdown | ✅ | *N/A* | *N/A* |
 | PowerShell | ✅ | *N/A* | <sup>7</sup> | 
-| Python | ✅ <sup>2</sup> | | ✅ |
-| R | <sup>8</sup> | *N/A* | ✅ |
-| SQL / T-SQL | ✅ | *N/A* | |
 | VB.NET | ✅ | | ✅ |
 | VBHTML | ✅ <sup>1</sup> | | ✅ |
 | XAML | ✅ | *N/A* | <sup>6</sup> | 
+| SQL / T-SQL | ✅ | *N/A* | |
+| F# | ✅ <sup>2</sup>| | ✅ |
+| R | <sup>8</sup> | *N/A* | ✅ |
 
-<sup>1</sup> Bug: CSHTML, VBHTML, and ASPX have a known issues around embedded C#/VB support given code-behind C#/VB files are not resolved. [Vote (👍) here on CSHTML/VBHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Vote (👍) here on ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
-<sup>2</sup> Bug: Guests see errors for valid types, namespaces, and modules defined outside of the current file. [Vote (👍) here for F#.](https://github.com/MicrosoftDocs/live-share/issues/64) [Vote (👍) here for Python.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
+<sup>1</sup> Gap: CSHTML, VBHTML, and ASPX have a known issues around embedded C#/VB support given code-behind C#/VB files are not resolved due to full intellisense not being implemented. [Vote (👍) here on CSHTML/VBHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Vote (👍) here on ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
+<sup>2</sup> Gap: Guests see errors for valid types, namespaces, and modules defined outside of the current file due to full intellisense not being implemented. [Vote (👍) here for F#.](https://github.com/MicrosoftDocs/live-share/issues/64) [Vote (👍) here for Python.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
 <sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 <sup>6</sup> Though debugging XAML itself is technically N/A, debugging code-behind is supported.<br />
-<sup>7</sup> Bug: Debugging PowerShell projects hangs VS for host after sharing. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
-<sup>8</sup> Bug: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
+<sup>7</sup> Gap: Debugging PowerShell projects hangs VS for host after sharing. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
+<sup>8</sup> Gap R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
 ### Platforms
 
@@ -124,23 +124,23 @@ While most languages have some single file Intellisense support, there are some 
 |-------------------|--------------|-------------|
 | Web app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
-| Console / CLI | ✅ | |
-| Desktop (WinForms) | ✅ | |
-| Desktop (WPF) | ✅ | |
-| Databases | <sup>4</sup> | ✅ <sup>5</sup> |
-| Games (Win32 C++) | ? |  |
-| Games (Unity) | ? | |
-| Mobile (Cordova) | ? | ? |
-| Mobile (Native C++) | ? |  |
-| Mobile (Xamarin) | ? |  |
-| Office / Sharepoint | ? | |
-| VS Extensions | ✅ |  |
 | Azure Data Lake | ? | |
 | Azure Functions | ? | |
 | Azure Service Fabric | ? | |
 | Azure Stream Analytics | ? | |
 | [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ? | ✅ <sup>1</sup> |
+| Databases | <sup>4</sup> | ✅ <sup>5</sup> |
+| Console / CLI | ✅ | |
+| Desktop (WinForms) | ✅ | |
+| Desktop (WPF) | ✅ | |
 | Universal Windows Platform | ✅ |  |
+| Mobile (Xamarin) | ? |  |
+| Mobile (Cordova) | ? | ? |
+| Mobile (Native C++) | ? |  |
+| Games (Win32 C++) | ? |  |
+| Games (Unity) | ? | |
+| Office / Sharepoint | ? | |
+| VS Extensions | ✅ |  |
 | Linux (C++) | ? | |
 
 <sup>1</sup> Via [share local server](collab-vs.md#sharing-a-local-server). ASP.NET Web Apps can also use [automatic web app sharing](collab-vs.md#automatic-web-app-sharing-during-debugging).<br />
