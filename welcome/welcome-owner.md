@@ -66,11 +66,12 @@ Note that the **person you invite does not need to sign up or be accepted into t
 
 That's it!! Want to learn more about what you can do? Check out our documentation.
 
+- [Quick start: Joining](welcome-joiner.md)
 - [Getting started and managing collaboration sessions](../docs/getting-started.md)
 - [Visual Studio features](../docs/collab-vs.md)
 - [Visual Studio Code features](../docs/collab-vscode.md)
 - [Summary of language and platform support](../docs/platform-support.md)
-- [Quick start: Joining](welcome-joiner.md)
+- [Troubleshooting](troubleshooting.md)
 
 Need help and not finding what you need in the docs?
 

@@ -116,7 +116,7 @@ While most languages have some single file Intellisense support, there are some 
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 <sup>6</sup> Though debugging XAML itself is technically N/A, debugging code-behind is supported.<br />
 <sup>7</sup> Gap: Debugging PowerShell projects hangs VS for host after sharing. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
-<sup>8</sup> Gap R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
+<sup>8</sup> Gap: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
 ### Platforms
 
@@ -155,4 +155,5 @@ While most languages have some single file Intellisense support, there are some 
 - [Getting started and managing collaboration sessions](getting-started.md)
 - [Visual Studio enabled features](collab-vs.md)
 - [Visual Studio Code enabled features](collab-vscode.md)
+- [Troubleshooting](troubleshooting.md)
 - [FAQ](http://aka.ms/vsls-faq)

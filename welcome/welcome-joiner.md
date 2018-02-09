@@ -59,11 +59,12 @@ If you are using Visual Studio and have already signed into the tool, Visual Stu
 
 That's it!! In a few moments you'll be connected to your colleague's collaboration session. Want to learn more about what you can do? Check out our documentation.
 
+- [Quick start: Sharing](welcome-owner.md)
 - [Getting started and managing collaboration sessions](../docs/getting-started.md)
 - [Visual Studio features](../docs/collab-vs.md)
 - [Visual Studio Code features](../docs/collab-vscode.md)
 - [Summary of language and platform support](../docs/platform-support.md)
-- [Quick start: Sharing](welcome-owner.md)
+- [Troubleshooting](troubleshooting.md)
 
 Need help and not finding what you need in the docs?
 
