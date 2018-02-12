@@ -6,7 +6,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Welcome to the Visual Studio Live Share preview!
 
-If you're here, you've probably been **accepted into the private limited preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[sign up now](http://aka.ms/vsls-signup)** and when accepted into the preview you can share!
+If you're here, you've probably been **accepted into the private limited preview**! If not, see how to **[join an existing collaboration session](welcome-joiner.md)** with **no registration required** or **[sign up now](https://aka.ms/vsls-signup)** and when accepted into the preview you can share!
 
 Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
@@ -22,7 +22,7 @@ Just follow these steps to start sharing:
        1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Preview</a> (15.6 Preview 3+) on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
        3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
-       <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
+       <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
 <tr>
@@ -32,12 +32,12 @@ Just follow these steps to start sharing:
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> (1.20.0-insiders+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
         2. Download and install the Visual Studio Live Share extension from the marketplace. <br />
         3. Installation can take a moment, so wait for the install to complete and then reload.<br />
-        <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
+        <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ### 2. Sign in from within your IDE/editor
 
@@ -60,7 +60,7 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened. 
 
-Note that the **person you invite does not need to sign up or be accepted into the preview**. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
+Note that the **person you invite does not need to sign up or be accepted into the preview** and will not receive any email updates by simply signing in. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 
 ### 5. Collaborate!
 
@@ -75,7 +75,7 @@ That's it!! Want to learn more about what you can do? Check out our documentatio
 
 Need help and not finding what you need in the docs?
 
-- [See if someone already hit your problem by searching logged issues](http://aka.ms/vsls-issues)
+- [See if someone already hit your problem by searching logged issues](https://aka.ms/vsls-issues)
 - [Report a problem](../CONTRIBUTING.md#filing-problem-reports)
-- [Up-vote a feature or request a new one](http://aka.ms/vsls-feature-requests)
+- [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - Or you can shoot us a [mail](mailto:vsls-feedback@microsoft.com) questions.

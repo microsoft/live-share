@@ -130,10 +130,10 @@ To **stop** sharing a local server, the host simply needs to hare state button i
 
 While there are currently some shortcomings guests will experience while using the features described above, collaboration session hosts retain the complete functionality of their tool of choice. See the following for more information:
 
-- [All major bugs, feature requests, and limitations](http://aka.ms/vsls-issues)
-- [All feature requests and limitations](http://aka.ms/vsls-feature-requests)
-- [Co-editing feature requests and limitations](http://aka.ms/vsls-feature-requests/co-edit)
-- [Co-debugging feature requests and limitations](http://aka.ms/vsls-feature-requests/co-debug)
+- [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
+- [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
+- [Co-editing feature requests and limitations](https://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging feature requests and limitations](https://aka.ms/vsls-feature-requests/co-debug)
 
 ## More information
 

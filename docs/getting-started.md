@@ -46,7 +46,7 @@ Download and setup instructions:
        1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Preview</a> (15.6 Preview 3+) on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
        3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
-       <a href="http://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
+       <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
 <tr>
@@ -56,12 +56,12 @@ Download and setup instructions:
         1. Install <a href="https://code.visualstudio.com/insiders/">Visual Studio Code Insiders</a> (1.20.0-insiders+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
         2. Download and install the Visual Studio Live Share extension from the marketplace. <br />
         3. Installation can take a moment, so wait for the install to complete and then reload.<br />
-        <a href="http://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
+        <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](http://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 <!--
 > **Tip:** Be sure to start up VS or VS Code once with Visual Studio Live Share installed before attempting to join a collaboration session as this wires up the handler for the join web page.
@@ -103,7 +103,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a guest. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
 
-    If you have not done so, **[sign up now!](http://aka.ms/vsls-signup)** 
+    If you have not done so, **[sign up now!](https://aka.ms/vsls-signup)** 
 
 2. **Sign in from within your IDE/editor**
 
@@ -150,11 +150,11 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 3. **Sign in from within your IDE/editor**
 
-    To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account if you are not already signed in. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session.
+    To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account if you are not already signed in. See [signing into the Visual Studio Live Share from within your IDE/editor](#signing-into-visual-studio-live-share-from-within-your-ideeditor). You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session and will not receive email updates by simply signing into a collaboration session.
 
 4. That's it!! In a few moments you'll be connected and you can start collaborating.  
 
-Ater joining, you will see the "Share" button (VS) / status bar icons (VS Code) transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
+After joining, you will see the "Share" button (VS) / status bar icons (VS Code) transition to convey a "Session State". See [session states](#session-states) for more information on what this looks like.
 
 ### Manually joining
 
@@ -264,10 +264,10 @@ The following are the states you will typically see:
 
 While there are currently some shortcomings guests will experience while using the features described above, collaboration session hosts retain the complete functionality of their tool of choice. See the following for more information:
 
-- [All major bugs, feature requests, and limitations](http://aka.ms/vsls-issues)
-- [All feature requests and limitations](http://aka.ms/vsls-feature-requests)
-- [Co-editing feature requests and limitations](http://aka.ms/vsls-feature-requests/co-edit)
-- [Co-debugging feature requests and limitations](http://aka.ms/vsls-feature-requests/co-debug)
+- [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
+- [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
+- [Co-editing feature requests and limitations](https://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging feature requests and limitations](https://aka.ms/vsls-feature-requests/co-debug)
 
 ## More Information
 

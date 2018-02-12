@@ -121,7 +121,7 @@ If you've updated settings so that as a guest you do not auto-attach to a co-deb
 
 Visual Studio Code does not have the concept of an known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session with a VS user that does you will automatically see the default browser appear connected to the host's running applications. See [Visual Studio features](collab-vs.md#automatic-web-app-sharing-during-debugging) for more details.
 
-In addition, you can manually share the application or other endpoints like RESTful services using the "Share Local Server" feature. VS and VS Code guests can then open a browser on the same localhost port to see the running appliction.  See [sharing a local server](#sharing-a-local-server) for more details.
+In addition, you can manually share the application or other endpoints like RESTful services using the "Share Local Server" feature. VS and VS Code guests can then open a browser on the same localhost port to see the running application.  See [sharing a local server](#sharing-a-local-server) for more details.
 
 ## Additional capabilities
 
@@ -155,10 +155,10 @@ To **stop** sharing a local server, the host simply needs to click the session s
 
 While there are currently some shortcomings guests will experience while using the features described above, collaboration session hosts retain the complete functionality of their tool of choice. See the following for more information:
 
-- [All major bugs, feature requests, and limitations](http://aka.ms/vsls-issues)
-- [All feature requests and limitations](http://aka.ms/vsls-feature-requests)
-- [Co-editing feature requests and limitations](http://aka.ms/vsls-feature-requests/co-edit)
-- [Co-debugging feature requests and limitations](http://aka.ms/vsls-feature-requests/co-debug)
+- [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
+- [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
+- [Co-editing feature requests and limitations](https://aka.ms/vsls-feature-requests/co-edit)
+- [Co-debugging feature requests and limitations](https://aka.ms/vsls-feature-requests/co-debug)
 
 ## More information
 

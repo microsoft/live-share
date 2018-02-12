@@ -64,7 +64,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Web app / API (Back-end) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
 | Azure Functions | ✅ | ✅ <sup>1</sup> |
-| [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
+| [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
 | Markdown | *N/A* | ✅ <sup>6</sup> |
 | Databases | <sup>5</sup> | ✅ <sup>1</sup> |
 | Console / CLI | ✅ | <sup>4</sup> |
@@ -128,7 +128,7 @@ While most languages have some single file Intellisense support, there are some 
 | Azure Functions | ? | |
 | Azure Service Fabric | ? | |
 | Azure Stream Analytics | ? | |
-| [Visual Studio Connected Environment for AKS](http://landinghub.visualstudio.com/vsce) | ? | ✅ <sup>1</sup> |
+| [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ? | ✅ <sup>1</sup> |
 | Databases | <sup>4</sup> | ✅ <sup>5</sup> |
 | Console / CLI | ✅ | |
 | Desktop (WinForms) | ✅ | |
@@ -156,4 +156,4 @@ While most languages have some single file Intellisense support, there are some 
 - [Visual Studio enabled features](collab-vs.md)
 - [Visual Studio Code enabled features](collab-vscode.md)
 - [Troubleshooting](troubleshooting.md)
-- [FAQ](http://aka.ms/vsls-faq)
+- [FAQ](https://aka.ms/vsls-faq)
