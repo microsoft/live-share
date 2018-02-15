@@ -31,10 +31,8 @@ The following are troubleshooting tips for sign in problems.
 | VS Code | A browser window pops up during sign in and the process <strong>appears to succeed on the web page</strong>, the status bar <strong>still says, "Sign in"</strong> after closing the browser. | After signing in, click "Having trouble?" and follow the directions to enter a temporary user code into the tool.<br /><br />We would also love to see what might be happening, so please [log a bug](../CONTRIBUTING.md). |
 | VS Code | When clicking sign-in or joining from a link when not signed in, <strong>no browser window appears to allow you to sign in</strong>. | 1. Sign in at https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login<br />2. After signing in, click "Having trouble?"<br /> 3. Follow the directions to enter a temporary user code into the tool.<br /><br />Please also run the "Live Share: Export Logs" command and include the zip and a comment on [this bug](https://github.com/MicrosoftDocs/live-share/issues/89). |
 | All | You are getting a <strong>timeout or connection error</strong>. | See [connectivity troubleshooting](#connectivity). |
-| All | You signed up and were accepted into the preview using an <strong>email address not tied to a Microsoft work, school, or personal account or GitHub account</strong>. | A simple resolution is to add this email address as a secondary email to your GitHub account and sign in that way. VS Live Share simply validates that an accepted email is in your profile when you sign in with GitHub. (Note: Use Tools > Options > Live Share > User account to sign in via GitHub from Visual Studio.) <br /><br /> If that won't work, send a mail to [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com) and we will switch out your email address.<br /><br />If you have not signed up, you can do so [here](https://aka.ms/vsls-signup) and we will let you know when you've been accepted.
+| All | You signed up and were accepted into the preview using an <strong>email address not tied to a Microsoft work, school, or personal account or GitHub account</strong>. | A simple resolution is to add this email address as a secondary email to your GitHub account and sign in that way. VS Live Share simply validates that an accepted email is in your profile when you sign in with GitHub. (Note: Use Tools > Options > Live Share > User account to sign in via GitHub from Visual Studio.) <br /><br /> If that won't work, send a mail to [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com) and we will switch out your email address.<br /><br />If you have not signed up, you can do so [here](https://aka.ms/vsls-signup) and we will let you know when you've been accepted. |
 
-|
-.
 ## Sharing and Joining
 
 The following are troubleshooting tips for sign in problems.
@@ -53,18 +51,21 @@ The information below can help you troubleshoot if you're having problems relate
 
 As outlined in [getting started](getting-started.md#changing-the-connection-mode), different connection modes have different requirements to function so there are a few different potential issues going on.
 
-| Problem | Probable Cause | 
-|------|----------------|
-| You are <strong>unable to sign into VS Live Share</strong> | You cannot access the internet or access to *.liveshare.vsengsaas.visualstudio.com on port 80/443 is blocked by your personal or corporate firewall. Enter https://insiders.liveshare.vsengsaas.visualstudio.com in a browser and verify you land at the VS Live Share home page. | 
-| You are in <strong>auto mode</strong> (the default), are able to sign in, but see a <strong>timeout or connection error</strong> when either sharing or joining. | Either both direct and relay modes are failing to connect or there is a bug with auto mode. If you are able to connect after [switching to direct or relay mode](getting-started.md#changing-the-connection-mode), please [raise a bug](../CONTRIBUTING.md). |
-| You are in <strong>direct mode</strong>, are able to sign in, but see a <strong>timeout or connection error</strong> when either sharing or joining. | The guest and host cannot directly connect. Try [auto or relay mode](getting-started.md#changing-the-connection-mode) to see if the problem goes away. You may need to [manually allow Live Share through your personal firewall](#manually-adding-a-firewall-entry-for-direct-mode) or simply use relay mode. |
-| You are in <strong>relay mode</strong>, are able to sign in, but are notified of a <strong>timeout or connection error</strong> when either sharing or joining. | Access to *.servicebus.windows.net on port 80/443 is blocked is blocked by your personal or corporate firewall. Try [direct mode](getting-started.md#changing-the-connection-mode). |
+| Tool | Problem | Probable Cause | 
+|------|------|----------------|
+| All | You are using a <strong>proxy</strong> and are seeing a number of connectivity problems | We are investigating a number of possible issues when connecting via a proxy. Please let us know what you are seeing in [this issue](https://github.com/MicrosoftDocs/live-share/issues/86) and be sure to mention if you are in VS or VS Code along with the OS you are running. |
+| VS Code | After installing the extension and starting up VS Code for the first time you get an <strong>an error when "Finishing Installation" appears in the status bar</strong>. |  You cannot access the internet or access to download.visualstudio.microsoft.com and/or download.microsoft.com on port 443 is blocked by your personal or corporate firewall. See [here](https://github.com/MicrosoftDocs/live-share/issues/58) for information on why Live Share needs to download something at this point. | 
+| All | You are <strong>unable to sign into VS Live Share</strong> | You cannot access the internet or access to *.liveshare.vsengsaas.visualstudio.com on port 80/443 is blocked by your personal or corporate firewall. Enter https://insiders.liveshare.vsengsaas.visualstudio.com in a browser and verify you land at the VS Live Share home page. | 
+| All | You are in <strong>auto mode</strong> (the default), are able to sign in, but see a <strong>timeout or connection error</strong> when either sharing or joining. | Either both direct and relay modes are failing to connect or there is a bug with auto mode. If you are able to connect after [switching to direct or relay mode](getting-started.md#changing-the-connection-mode), please [raise a bug](../CONTRIBUTING.md). |
+| All | You are in <strong>direct mode</strong>, are able to sign in, but see a <strong>timeout or connection error</strong> when either sharing or joining. | The guest and host cannot directly connect. Try [auto or relay mode](getting-started.md#changing-the-connection-mode) to see if the problem goes away. You may need to [manually allow Live Share through your personal firewall](#manually-adding-a-firewall-entry-for-direct-mode) or simply use relay mode. |
+| All | You are in <strong>relay mode</strong>, are able to sign in, but are notified of a <strong>timeout or connection error</strong> when either sharing or joining. | Access to *.servicebus.windows.net on port 80/443 is blocked is blocked by your personal or corporate firewall. Try [direct mode](getting-started.md#changing-the-connection-mode). |
 
 Additional specifics on requirements and troubleshooting:
 
 | Mode | Requirements | Troubleshooting |
 |------|----------------|----------------------|
 | All | Access to *.liveshare.vsengsaas.visualstudio.com on port 80/443 | Ensure your corporate or personal network firewall allows you to connect to this domain. Enter https://insiders.liveshare.vsengsaas.visualstudio.com in a browser and verify you land at the VS Live Share home page. |
+| All (VS Code) | Access to download.visualstudio.microsoft.com and download.microsoft.com on port 443 | Ensure your corporate or personal network firewall allows you to connect to this domain. |
 | Auto | Auto-switches. See direct and relay modes. | Switch to direct or relay mode to troubleshoot. |
 | Direct | A port in the range 5990 - 5999 needs to be open on the host's machine and guests need to be able to directly connect to each other. (See [this feature request](https://github.com/MicrosoftDocs/live-share/issues/60) for a proposed improvement.) | Verify "vsls-agent" is not blocked by your desktop firewall software for this port range and that you can ping one another. While Windows and other desktop software should prompt you the first time the agent starts up, we have seen instances where group policies prevent this from happening and you will need to [manually add the entry](#manually-adding-a-firewall-entry-for-direct-mode). |
 | Relay | Access to *.servicebus.windows.net on port 80/443. | Ensure your corporate or personal network firewall allows you to connect to this domain. |
@@ -76,8 +77,8 @@ As outlined above, your personal firewall needs to allow **vsls-agent**to accept
 
 VS Code (substitute **VERSION** for the extension version):
 
-- **Windows:** %USERPROFILE%\\.vscode-insiders\extensions\ms-vsliveshare.vsliveshare-*VERSION*\dotnet_modules\win7-x86\vsls-agent.exe
-- **macOS:** $HOME/.vscode-insiders/extensions/ms-vsliveshare.vsliveshare-*VERSION*/dotnet_modules/osx.10.10-x64/vsls-agent
+- **Windows:** %USERPROFILE%\\.vscode\extensions\ms-vsliveshare.vsliveshare-*VERSION*\dotnet_modules\win7-x86\vsls-agent.exe
+- **macOS:** $HOME/.vscode/extensions/ms-vsliveshare.vsliveshare-*VERSION*/dotnet_modules/osx.10.10-x64/vsls-agent
 
 Visual Studio:  
 - Run a search for vsls-agent.exe in your VS install location under **IDE\Extensions**
