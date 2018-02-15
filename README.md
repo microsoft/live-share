@@ -17,7 +17,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](docs/platform-support.md) and more will be coming in the future. It is currently in a limited, private preview.
 
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/vsliveshare/Lobby)
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://aka.ms/vsls-gitter)
 
 ## Quick Starts
 
@@ -71,7 +71,7 @@ Have a question or feedback? There are many ways to contribute.
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - [Report a problem](CONTRIBUTING.md#filing-problem-reports)
 - Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
-- Jump into our [Gitter channel](https://gitter.im/vsliveshare/Lobby) to chat with the team
+- Jump into our [Gitter channel](https://aka.ms/vsls-gitter) to chat with the team
 - Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
