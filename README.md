@@ -36,6 +36,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 ## Community-created content
 
 - [Visual Studio Code: VS Live Share from Across the World](https://youtu.be/D7w0uGmQEc8)
+- [8 Hour ASP.NET Core Workshop](https://www.twitch.tv/videos/229614321)  ([@csharpfritz](https://github.com/csharpfritz) pairs with other developers via Live Share)
 
 ## Download and install Visual Studio Live Share
 
