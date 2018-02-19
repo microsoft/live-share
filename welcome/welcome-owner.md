@@ -71,7 +71,7 @@ That's it!! Want to learn more about what you can do? Check out our documentatio
 - [Visual Studio features](../docs/collab-vs.md)
 - [Visual Studio Code features](../docs/collab-vscode.md)
 - [Summary of language and platform support](../docs/platform-support.md)
-- [Troubleshooting](troubleshooting.md)
+- [Troubleshooting](../docs/troubleshooting.md)
 
 Need help and not finding what you need in the docs?
 
