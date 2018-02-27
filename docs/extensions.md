@@ -9,7 +9,7 @@ This document covers the current known state for the vast extension ecosystem, a
 - [Visual Studio Code](#user-specific-extensions)
   - [User-Specific Extensions](#user-specific-extensions)
   - [Project-Specific Extensions](#project-specific-extensions)
-  - [Known-Issues](#known-issues)
+  - [Known-Issues (for extension authors)](#known-issues)
 - Visual Studio (**coming soon!**)
   
 ## User-Specific Extensions 
