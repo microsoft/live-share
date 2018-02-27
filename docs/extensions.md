@@ -4,7 +4,7 @@ One of the primary goals of Visual Studio Live Share is to enable developers to 
 
 Additionally, to make the act of joining a collaboration session as instant as possible, while remaining highly-productive, the goal of Visual Studio Live Share is to enable guests to automatically leverage the project-specific tooling their host has shared. This way, you can simply click a link, launch your tool of choice, and begin collaborating, without any extra setup. To achieve this, it is critical that extensions, which power the core [edit, build and debug workflow](#app-supporting-extensions), are transparently "remoted" from the host to the guest, so that things like auto-completion, go-to-definition, and debugging "just work".
 
-> Do you know of an extension that doesn't meet this goals, and is critical to your personal workflow? [Let us know!](https://github.com/MicrosoftDocs/live-share/issues/new)
+This document covers the current known state for the vast extension ecosystem, as well as a "scorecard" for the aforementioned goals. If you now of an extension that doesn't meet this critera, and is critical to your personal workflow, then please [let us know!](https://github.com/MicrosoftDocs/live-share/issues/new)
 
 - [Visual Studio Code](#user-specific-extensions)
   - [User-Specific Extensions](#user-specific-extensions)
