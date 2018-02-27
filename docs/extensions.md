@@ -51,7 +51,7 @@ Additionally, in order to support project-specific extensions that a guest has i
 | Linters | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | ❌ <sup>3</sup> | ✅ <sup>2</sup>  |
 | Formatters | [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) | ❌ <sup>4</sup> | ✅ <sup>2</sup> |
 | Debuggers | [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) | ✅ <sup>5</sup> | ❌ <sup>6</sup> |
-| Test Runners | [Java Test Runner](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test), [Mocha Sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar) | ❌ <sup>7</sup> | ✅ <sup>2</sup> |
+| Test Runners | [Java Test Runner](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test), [Mocha Sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar), [Postman Runner](https://marketplace.visualstudio.com/items?itemName=eridem.vscode-postman) | ❌ <sup>7</sup> | ✅ <sup>2</sup> |
 
 <sup>1</sup> *Currently only C# and JavaScript/TypeScript, with more support coming soon.*
 
@@ -65,7 +65,7 @@ Additionally, in order to support project-specific extensions that a guest has i
 
 <sup>6</sup> *Guests don't have a local copy of the app, and therefore, the running app and any debug sessions need to start on the host's machine.*
 
-<sup>7</sup> *The output of a test run would require that any resulting terminals and errors were also shared with guests.*
+<sup>7</sup> *The output of a test run would require that any resulting terminals, output panes and errors were also shared with guests.*
 
 ## Known Issues
 
