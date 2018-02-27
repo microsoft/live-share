@@ -30,6 +30,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 - [Visual Studio enabled features](docs/collab-vs.md)
 - [Visual Studio Code enabled features](docs/collab-vscode.md) 
 - [Summary of language and platform support](docs/platform-support.md)
+- [Overview of 3rd-party extension support](docs/extensions.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [FAQ](https://aka.ms/vsls-faq)
 
