@@ -4,8 +4,14 @@ One of the primary goals of Visual Studio Live Share is to enable developers to 
 
 Additionally, to make the act of joining a collaboration session as instant as possible, while remaining highly-productive, the goal of Visual Studio Live Share is to enable guests to automatically leverage the project-specific tooling their host has shared. This way, you can simply click a link, launch your tool of choice, and begin collaborating, without any extra setup. To achieve this, it is critical that extensions, which power the core [edit, build and debug workflow](#app-supporting-extensions), are transparently "remoted" from the host to the guest, so that things like auto-completion, go-to-definition, and debugging "just work".
 
-In practice, these goals will take time to be fully realized, and will require support from the Visual Studio Live Share team, the extension ecosystem, as well as end-users (to provide feedback on new scenarios and priority). The following sections outline the high-level state of the world with regards to extension support:
+## Contents
 
+- Visual Studio Code
+  - [User-Specific Extensions](#user-specific-extensions)
+  - [Project-Specific Extensions](#project-specific-extensions)
+  - [Known-Issues](#known-issues)
+- Visual Studio (**coming soon!**)
+  
 ## User-Specific Extensions 
 
 Extensions that support user-specific customizations **must** work for the host, and **should** work for all guests. If an extension doesn't work properly for the host, that would be a regression, and is likely a bug in Visual Studio Live Share (please [file an issue](https://github.com/MicrosoftDocs/live-share/issues/new) if you see one!). If an extension doesn't behave as expected for a guest, it may require [changes in the extension itself](#known-issues), and we'll work with the ecosystem to address/improve these scenarios.
@@ -30,18 +36,6 @@ Extensions that support user-specific customizations **must** work for the host,
 <sup>4</sup> *These require the guest to have the runtime tools installed (e.g. Node.js), and work by running code locally.*
 
 <sup>5</sup> *These work by connecting to a server of some kind, and can work with either centralized servers, servers that the guest has shared.*
-
-### Known Issues
-
-The following are currently known extension issues, that could prevent them from working for guests within the context of a collaboration session (along with their workarounds), and therefore, could impact their workflow:
-
-| Issue | Reason | Workaround |
-|-|-|-|
-| Using the Node.js `fs` module to detect/read files (e.g. a config file), or enumerate directories. | Guests don't have local file access. | 1. Gracefully degrade the user-experience *(if possible).*<br /><br />2. Use the `openTextDocument` and `findFiles` workspace APIs to read and enumerate files. |
-| Using the Node.js `fs` module to create or write files | *Same as above* | Use the `openTextDocument` API to create/open a file and then edit its `text` property. |
-| Depending on a project-bundled library or tool | *Same as above* | 1. Bundle a fallback version of the dependency with the extension<br><br> 2. Support global installation to unblock guests if they choose to explicitly install it.<br><br> 3. Remote the state/action if possible, since the host would have the right dependencies available. |
-| Restricting functionality to documents that use the `file` scheme. | Files on the guest's side use the `vsls` scheme. | Add support for `vsls` documents ([example](https://github.com/CoenraadS/BracketPair/pull/73)) |
-| Using the `Uri.file` method and/or `Uri.fsPath` members to serialize/parse URIs | *Same as above* | Use `Uri.parse` and `Url.toString()` instead. |
 
 ## Project-Specific Extensions
 
@@ -72,3 +66,15 @@ Additionally, in order to support project-specific extensions that a guest has i
 <sup>6</sup> *Guests don't have a local copy of the app, and therefore, the running app and any debug sessions need to start on the host's machine.*
 
 <sup>7</sup> *The output of a test run would require that any resulting terminals and errors were also shared with guests.*
+
+## Known Issues
+
+The following are currently known extension issues, that could prevent them from working for guests within the context of a collaboration session (along with their workarounds), and therefore, could impact their workflow:
+
+| Issue | Reason | Workaround |
+|-|-|-|
+| Using the Node.js `fs` module to detect/read files (e.g. a config file), or enumerate directories. | Guests don't have local file access. | 1. Gracefully degrade the user-experience *(if possible).*<br /><br />2. Use the `openTextDocument` and `findFiles` workspace APIs to read and enumerate files. |
+| Using the Node.js `fs` module to create or write files | *Same as above* | Use the `openTextDocument` API to create/open a file and then edit its `text` property. |
+| Depending on a project-bundled library or tool | *Same as above* | 1. Bundle a fallback version of the dependency with the extension<br><br> 2. Support global installation to unblock guests if they choose to explicitly install it.<br><br> 3. Remote the state/action if possible, since the host would have the right dependencies available. |
+| Restricting functionality to documents that use the `file` scheme. | Files on the guest's side use the `vsls` scheme. | Add support for `vsls` documents ([example](https://github.com/CoenraadS/BracketPair/pull/73)) |
+| Using the `Uri.file` method and/or `Uri.fsPath` members to serialize/parse URIs | *Same as above* | Use `Uri.parse` and `Url.toString()` instead. |
