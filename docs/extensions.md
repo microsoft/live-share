@@ -1,4 +1,4 @@
-# Extensions and ecosystem support
+# Extensions and Ecosystem Support
 
 One of the primary goals of Visual Studio Live Share is to enable developers to collaborate with each other, from the comfort of their favorite, and [**highly-customized**](https://marketplace.visualstudio.com/) tools. This way, ad-hoc interactions can occur frequently, while remaining visually familiar and ergonomic, regardless what you're helping with. To achieve this, it's critical that participants within a collaboration session are able to continue using any extensions which support their [personal preferences and workflows](#user-preference-extensions) (e.g. color themes, key bindings, editor productivity enhancers).
 
