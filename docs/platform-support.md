@@ -41,7 +41,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | C++ | | ✅ | |
 | PowerShell | *N/A* | ✅ | | |
 | Bash | *N/A* | ✅ | |
-| Erlang | | | | |
+| Erlang | | ✅ | 
 | Haskell | | ? |
 | PHP | | ✅ |
 | Reason/OCaml | | *N/A* <sup>5</sup> |
