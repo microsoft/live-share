@@ -14,11 +14,13 @@ The following are troubleshooting tips related to installing VS Live Share.
 
 | Tool | Problem | Resolution / Workaround |
 |------|---------|------------|
-| Visual Studio 2017 | The extension installer <strong>cannot find a version of Visual Studio</strong> to use when trying to install the Visual Studio Live Share extension. | Visual Studio Live Share requires VS 2017 15.6 Preview 3+ for both hosts and guests. Download the latest [preview version of VS](https://visualstudio.com/vs/preview) and retry. |
-| Visual Studio Code | Installing the VS Live Share extension from the marketplace <strong>installs it in the stable version of VS Code</strong> instead of Insiders. | Start VS Code Insiders, click on the "extensions" tab, search for "VS Live Share" and install from there. |
+| Visual Studio 2017 | The extension installer <strong>cannot find a version of Visual Studio</strong> to use when trying to install the Visual Studio Live Share extension. | Visual Studio Live Share requires **VS 2017 version 15.6** or higher for both hosts and guests. Install the latest [update of VS 2017](https://visualstudio.com/vs/) and retry. <br /><br />_Note: VS Preview is **no longer required** as 15.6 is GA._|
 | Visual Studio Code | An error appears when trying to use Visual Studio Live Share with <strong>VS Code on Linux</strong>. | VS Code on Linux is not currently supported. [Up vote this feature](https://github.com/MicrosoftDocs/live-share/issues/24) if you'd like to see support added. |
 | Visual Studio Code | An error appears when trying to use Visual Studio Live Share with VS Code on macOS <strong>El Capitan or below</strong>. | VS Live Share's OS support is dependant on .NET Core which currently [only supports macOS Sierra and up.]((https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md).) |
 | Visual Studio Code | Uninstalling the Live Share extension <strong>never completes</strong>. | Restart VS Code and try again. |
+| Visual Studio Code | A "**Dependencies could not be installed**" error appears the while extension is **finishing installation** on first start or you get errors about **missing or already present files**. | Verify you are on a **good network connection**. If you are, you could be running into a **proxy or firewall** issue. See [connectivity troubleshooting](#connectivity). <br /><br /> Note: If **multiple VS Code windows are open**, uninstall and retry with only one VS Code window open due to a [bug](https://github.com/MicrosoftDocs/live-share/issues/124).|
+| Visual Studio Code | "**Dependencies could not be installed**" error the extension  is downloading dependencies on first start with and **only one** VS Code window is open. |  |
+| Visual Studio Code | Installing the VS Live Share extension from the marketplace <strong>installs it in the stable version of VS Code</strong> instead of Insiders. | Start VS Code Insiders, click on the "extensions" tab, search for "VS Live Share" and install from there. |
 
 ## Sign in
 

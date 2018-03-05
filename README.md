@@ -45,8 +45,8 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 <tr>
     <td style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-icon.png" /></td>
     <td>
-        <strong>Visual Studio 2017 Preview</strong><br />
-       1. Install the latest <a href="https://www.visualstudio.com/vs/preview/">VS 2017 Preview</a> (15.6 Preview 3+) on Windows (7, 8.1, or 10).<br/>
+        <strong>Visual Studio 2017 15.6 or higher</strong><br />
+       1. Install the latest version of <a href="https://www.visualstudio.com/vs/preview/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
        3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download.png"></a><br />
@@ -58,13 +58,13 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
         2. Download and install the Visual Studio Live Share extension from the marketplace. <br />
-        3. Installation can take a moment, so wait for the install to complete and then reload.<br />
+        3. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="docs/media/download.png"></a>
     </td>
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](https://aka.ms/vsls-troubleshooting) if you run into problems.
 
 ## Contributing & Feedback
 
