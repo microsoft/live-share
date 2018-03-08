@@ -45,7 +45,7 @@ Additionally, in order to support project-specific extensions that a guest has i
 
 | Category | Example(s) | Shared? | Guest-Supported? |
 |-------|----------|--------|-----|
-| Grammars / Syntax highlighting | [Nginx](https://marketplace.visualstudio.com/items?itemName=shanoor.vscode-nginx), [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), [DotEnv](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) | ❌ | ✅ |
+| Grammars / Syntax highlighting | [Nginx](https://marketplace.visualstudio.com/items?itemName=shanoor.vscode-nginx), [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), [DotEnv](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv), [ES6 String HTML](https://marketplace.visualstudio.com/items?itemName=hjb2012.vscode-es6-string-html) | ❌ | ✅ |
 | Language Services | [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml), [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | ✅ <sup>1</sup>| ✅ <sup>2</sup> |
 | JSON Schemas | | ❌ | ✅ |
 | Linters | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | ❌ <sup>3</sup> | ✅ <sup>2</sup>  |
