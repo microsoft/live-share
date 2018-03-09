@@ -82,12 +82,10 @@ The following are currently known extension issues, that could prevent them from
 
 ## Extensibility API
 
-In addition to the core goals outlined in the beginning of this document, Live Share also wants to enable extension authors in the following ways:
+In addition to the core goals outlined in the beginning of this document, Live Share also wants to enable extension authors to enhance the default experience in the following ways:
 
-1. Be able to contribute to the existing collaborative feature set (e.g. automatically sharing a started server)
+1. Be able to contribute to the core collaborative feature set (e.g. automatically sharing a started server)
 
 2. Be able to make their own custom experiences collaborative (e.g. syncing bookmarks between participants).
 
-This will require some form of API/SDK, which extensions can use to determine if/when the user is within a Live Share session, and if so, light up additional capabilities and state syncronization.
-
-1. 
+This will require some form of API/SDK, which extensions can use to determine if/when the end-user is within a Live Share session, and if so, light up additional capabilities and state syncronization.
