@@ -11,6 +11,7 @@ This document covers the current known state for the vast extension ecosystem, a
   - [Project-Specific Extensions](#project-specific-extensions)
   - [Known-Issues (for extension authors)](#known-issues)
 - Visual Studio (**coming soon!**)
+- [Extensibility API](#extensibility-api)
   
 ## User-Specific Extensions 
 
@@ -78,3 +79,15 @@ The following are currently known extension issues, that could prevent them from
 | Depending on a project-bundled library or tool | *Same as above* | 1. Bundle a fallback version of the dependency with the extension<br><br> 2. Support global installation to unblock guests if they choose to explicitly install it.<br><br> 3. Remote the state/action if possible, since the host would have the right dependencies available. |
 | Restricting functionality to documents that use the `file` scheme. | Files on the guest's side use the `vsls` scheme. | Add support for `vsls` documents ([example](https://github.com/CoenraadS/BracketPair/pull/73)) |
 | Using the `Uri.file` method and/or `Uri.fsPath` members to serialize/parse URIs | *Same as above* | Use `Uri.parse` and `Url.toString()` instead. |
+
+## Extensibility API
+
+In addition to the core goals outlined in the beginning of this document, Live Share also wants to enable extension authors in the following ways:
+
+1. Be able to contribute to the existing collaborative feature set (e.g. automatically sharing a started server)
+
+2. Be able to make their own custom experiences collaborative (e.g. syncing bookmarks between participants).
+
+This will require some form of API/SDK, which extensions can use to determine if/when the user is within a Live Share session, and if so, light up additional capabilities and state syncronization.
+
+1. 
