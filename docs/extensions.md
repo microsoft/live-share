@@ -79,6 +79,7 @@ The following are currently known extension issues, that could prevent them from
 | Depending on a project-bundled library or tool | *Same as above* | 1. Bundle a fallback version of the dependency with the extension<br><br> 2. Support global installation to unblock guests if they choose to explicitly install it.<br><br> 3. Remote the state/action if possible, since the host would have the right dependencies available. |
 | Restricting functionality to documents that use the `file` scheme. | Files on the guest's side use the `vsls` scheme. | Add support for `vsls` documents ([example](https://github.com/CoenraadS/BracketPair/pull/73)) |
 | Using the `Uri.file` method and/or `Uri.fsPath`/TextDocument.fileName members to serialize/parse URIs | *Same as above* | Use `Uri.parse` and `Url.toString()` instead, which maintain and respect file schemes. |
+| Using the workspace.openTextDocument method with a file path instead of a Uri | *Same as above* | Pass a Uri instead of a raw file path string |
 
 ## Extensibility API
 
