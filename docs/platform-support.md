@@ -34,7 +34,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | CSHTML | *N/A* <sup>1</sup> | ✅
 | HTML | *N/A* | <sup>2</sup> |
 | CSS | *N/A* | *N/A* |
-| Python | | ✅ <sup>4 *(Win only)*</sup> |
+| Python | | ✅ |
 | Markdown | *N/A* | *N/A* |
 | Java | | ✅ | |
 | Go | | ✅ | |
@@ -46,15 +46,14 @@ All languages / platforms have same file intellisense (when the respective exten
 | PHP | | ✅ |
 | Reason/OCaml | | *N/A* <sup>5</sup> |
 | Ruby | | ✅ | |
-| Rust | | *N/A* <sup>5</sup> |
-| Swift | | *N/A* <sup>5</sup> |
+| Rust | | *N/A* <sup>4</sup> |
+| Swift | | *N/A* <sup>4</sup> |
 | SQL / T-SQL | *N/A* | |
 
 <sup>1</sup> No CSHTML support in C# extension.<br />
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>3</sup> JavaScript / TypeScript debugging for Node or browser.<br />
-<sup>4</sup> Bug: Python debugger has a [known issue](https://github.com/Microsoft/vscode-python/issues/760) on Mac that has been resolved and is pending marketplace publishing. Windows already works.<br />
-<sup>5</sup> The respective extension for VS Code doesn't currently support debugging. As soon as it does, we will investigate adding co-debugging support to it. <br />
+<sup>4</sup> The respective extension for VS Code doesn't currently support debugging. As soon as it does, we will investigate adding co-debugging support to it. <br />
 <sup>?</sup> Not yet validated.
 
 ### Platforms
