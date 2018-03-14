@@ -17,7 +17,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](docs/platform-support.md) and more will be coming in the future. It is currently in a limited, private preview.
 
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://aka.ms/vsls-gitter)
+[![Slack](docs/media/Slack_Mark-24x24.png)](https://aka.ms/vsls-slack) [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
 ## Quick Starts
 
@@ -28,7 +28,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 - [Getting started and managing collaboration sessions](docs/getting-started.md)
 - [Visual Studio enabled features](docs/collab-vs.md)
-- [Visual Studio Code enabled features](docs/collab-vscode.md) 
+- [Visual Studio Code enabled features](docs/collab-vscode.md)
 - [Summary of language and platform support](docs/platform-support.md)
 - [Overview of 3rd-party extension support](docs/extensions.md)
 - [Troubleshooting](docs/troubleshooting.md)
@@ -73,7 +73,7 @@ Have a question or feedback? There are many ways to contribute.
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - [Report a problem](CONTRIBUTING.md#filing-problem-reports)
 - Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
-- Jump into our [Gitter channel](https://aka.ms/vsls-gitter) to chat with the team
+- Jump on [Slack](https://aka.ms/vsls-slack) to chat with the team
 - Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
