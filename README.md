@@ -71,7 +71,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 Have a question or feedback? There are many ways to contribute.
 
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
-- [Report a problem](CONTRIBUTING.md#filing-problem-reports)
+- Search [existing bugs](https://aka.ms/vsls-issues) or [Report a problem](CONTRIBUTING.md#filing-problem-reports)
 - Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
 - Jump on [Slack](https://aka.ms/vsls-slack) to chat with the team
 - Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
