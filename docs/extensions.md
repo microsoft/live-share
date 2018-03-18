@@ -46,13 +46,14 @@ Additionally, in order to support project-specific extensions that a guest has i
 
 | Category | Example(s) | Shared? | Guest-Supported? |
 |-------|----------|--------|-----|
-| Grammars / Syntax highlighting | [Nginx](https://marketplace.visualstudio.com/items?itemName=shanoor.vscode-nginx), [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), [DotEnv](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv), [ES6 String HTML](https://marketplace.visualstudio.com/items?itemName=hjb2012.vscode-es6-string-html) | ❌ | ✅ |
+| Grammars / Syntax highlighting | [Nginx](https://marketplace.visualstudio.com/items?itemName=shanoor.vscode-nginx), [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), [DotEnv](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv), [ES6 String HTML](https://marketplace.visualstudio.com/items?itemName=hjb2012.vscode-es6-string-html), [Todo+](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus) | ❌ | ✅ |
 | Language Services | [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml), [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | ✅ <sup>1</sup>| ✅ <sup>2</sup> |
-| JSON Schemas | | ❌ | ✅ |
+| JSON Schemas | [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) | ❌ | ✅ |
 | Linters | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | ❌ <sup>3</sup> | ✅ <sup>2</sup>  |
 | Formatters | [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) | ❌ <sup>4</sup> | ✅ <sup>2</sup> |
 | Debuggers | [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) | ✅ <sup>5</sup> | ❌ <sup>6</sup> |
 | Test Runners | [Java Test Runner](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test), [Mocha Sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar), [Postman Runner](https://marketplace.visualstudio.com/items?itemName=eridem.vscode-postman) | ❌ <sup>7</sup> | ✅ <sup>2</sup> |
+| File/Project Generators | [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions), | ❌ | ❌<sup>8</sup> | 
 
 <sup>1</sup> *Currently only C# and JavaScript/TypeScript, with more support coming soon.*
 
@@ -68,6 +69,8 @@ Additionally, in order to support project-specific extensions that a guest has i
 
 <sup>7</sup> *The output of a test run would require that any resulting terminals, output panes and errors were also shared with guests.*
 
+<sup>8</sup> *Almost all of these would use the Node.js `fs` module directly to create files, which wouldn't work.*
+
 ## Known Issues
 
 The following are currently known extension issues, that could prevent them from working for guests within the context of a collaboration session (along with their workarounds), and therefore, could impact their workflow:
@@ -75,8 +78,9 @@ The following are currently known extension issues, that could prevent them from
 | Issue | Reason | Workaround |
 |-|-|-|
 | Using the Node.js `fs` module to detect/read files (e.g. a config file), or enumerate directories. | Guests don't have local file access. | 1. Gracefully degrade the user-experience *(if possible).*<br /><br />2. Use the `openTextDocument` and `findFiles` workspace APIs to read and enumerate files. |
-| Using the Node.js `fs` module to create or write files | *Same as above* | Use the `openTextDocument` API to create/open a file and then edit its `text` property. |
+| Using the Node.js `fs` module to create or write files | *Same as above* | Use the `openTextDocument(Uri)` API to create/open a file and then edit its `text` property. |
 | Depending on a project-bundled library or tool | *Same as above* | 1. Bundle a fallback version of the dependency with the extension<br><br> 2. Support global installation to unblock guests if they choose to explicitly install it.<br><br> 3. Remote the state/action if possible, since the host would have the right dependencies available. |
+| Using the Node.js `fs` module to create a directory | *Same as above* | *N/A* |
 | Restricting functionality to documents that use the `file` scheme. | Files on the guest's side use the `vsls` scheme. | Add support for `vsls` documents ([example](https://github.com/CoenraadS/BracketPair/pull/73)) |
 | Using the `Uri.file` method and/or `Uri.fsPath`/`TextDocument.fileName` members to serialize/parse URIs | *Same as above* | Use `Uri.parse` and `Url.toString()` instead, which maintain and respect file schemes ([example](https://github.com/micnil/vscode-checkpoints/pull/2)) |
 | Using the `workspace.openTextDocument` method with a file path instead of a Uri | *Same as above* | Provide a `Uri` instance instead of a raw file path string ([example](https://github.com/micnil/vscode-checkpoints/pull/2)) |
