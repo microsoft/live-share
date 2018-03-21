@@ -30,7 +30,7 @@ Just follow these steps to start sharing:
     <td>
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
-        2. Download and install the Visual Studio Live Share extension from the marketplace. <br />
+        2. Download and install the VS Live Share extension from the marketplace. <br />
         3. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
