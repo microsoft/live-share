@@ -49,7 +49,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Rust | | *N/A* <sup>4</sup> |
 | Swift | | *N/A* <sup>4</sup> |
 | Dart | | |
-[ Perl | | |
+| Perl | | |
 | AL | | |
 | SQL / T-SQL | *N/A* | |
 
