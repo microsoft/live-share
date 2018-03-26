@@ -55,6 +55,7 @@ Additionally, in order to support project-specific extensions that a guest has i
 | Test Runners | [Java Test Runner](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test), [Mocha Sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar), [Postman Runner](https://marketplace.visualstudio.com/items?itemName=eridem.vscode-postman), [Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) | ❌ <sup>7</sup> | ✅ <sup>2</sup> |
 | Custom File Previewers | [SVG Preview](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer), [GraphViz](https://marketplace.visualstudio.com/items?itemName=joaompinto.vscode-graphviz) | ❌ |  ✅ |
 | File/Project Generators | [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions), [C/C++ Project Generator](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-project-generator) | ❌ | ❌<sup>8</sup> | 
+| Source control providers | [SVN](https://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm), [Hg](https://marketplace.visualstudio.com/items?itemName=mrcrowl.hg) | ❌ | ❌ |
 
 <sup>1</sup> *Currently only C# and JavaScript/TypeScript, with more support coming soon.*
 
