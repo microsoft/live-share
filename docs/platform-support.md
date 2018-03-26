@@ -104,21 +104,20 @@ While most languages have some single file Intellisense support, there are some 
 | C++ | ✅ | | ✅ | 
 | Python | ✅ <sup>2</sup> | | ✅ |
 | Markdown | ✅ | *N/A* | *N/A* |
-| PowerShell | ✅ | *N/A* | <sup>7</sup> | 
+| PowerShell | ✅ | *N/A* | ✅ | 
 | VB.NET | ✅ | | ✅ |
 | VBHTML | ✅ <sup>1</sup> | | ✅ |
 | XAML | ✅ | *N/A* | <sup>6</sup> | 
 | SQL / T-SQL | ✅ | *N/A* | |
 | F# | ✅ <sup>2</sup>| | ✅ |
-| R | <sup>8</sup> | *N/A* | ✅ |
+| R | <sup>7</sup> | *N/A* | ✅ |
 
 <sup>1</sup> Gap: CSHTML, VBHTML, and ASPX have a known issues around embedded C#/VB support given code-behind C#/VB files are not resolved due to full intellisense not being implemented. [Vote (👍) here on CSHTML/VBHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Vote (👍) here on ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
 <sup>2</sup> Gap: Guests see errors for valid types, namespaces, and modules defined outside of the current file due to full intellisense not being implemented. [Vote (👍) here for F#.](https://github.com/MicrosoftDocs/live-share/issues/64) [Vote (👍) here for Python.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
 <sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 <sup>6</sup> Though debugging XAML itself is technically N/A, debugging code-behind is supported.<br />
-<sup>7</sup> Gap: Debugging PowerShell projects hangs VS for host after sharing. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/71) <br />
-<sup>8</sup> Gap: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
+<sup>7</sup> Gap: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
 ### Platforms
 
