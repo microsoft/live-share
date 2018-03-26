@@ -6,6 +6,12 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Contributing
 
+## TLDR
+
+- **VS Code bugs:** [Log a GitHub issue](http://aka.ms/vsls-new-issue). Use the "Live Share: Export logs" command and drag-and-drop the zip onto the bug to attach. (You can email them to vsls-feedback@microsoft.com if you prefer.)
+- **VS bugs:** [Help > Send Feedback > Report a Problem...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Repro the problem before sending and logs will be attached.
+- **Feature requests:** [Log a GitHub issue](http://aka.ms/vsls-new-issue) or use a 👍 reaction to up-vote an existing one.
+
 ## Up-Vote an existing problem report or feature request
 
 If you are wondering if someone has already encountered a problem or requested a feature, you can check out [open issues](https://github.com/Microsoft/live-share/issues). You can also use [this query](https://aka.ms/vsls-feature-requests) to specifically search for feature requests.
