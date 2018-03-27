@@ -2,8 +2,8 @@
   "docsets_to_publish": [
     {
       "docset_name": "live-share",
-      "build_source_folder": "live-share",
-      "build_output_subfolder": "live-share",
+      "build_source_folder": "docs",
+      "build_output_subfolder": "vslivesharedocs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
