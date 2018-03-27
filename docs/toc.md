@@ -2,16 +2,15 @@
 # Quickstarts
 ## [Share your first project](quick-start-share.md)
 ## [Join your first session](quick-start-join.md)
-# Using Visual Studio Code
+# Visual Studio Code and Live Share
 ## [Overview](collab-vscode.md)
 ## [Sign-in](collab-vscode.md#sign-in)
-## [Scoped command menu](collab-vscode.md#using-the-scoped-command-menu)
 ## [Share a project](collab-vscode.md#share-a-project)
 ## [Join a session](collab-vscode.md#join-a-collaboration-session)
 ## [Co-edit](collab-vscode.md#co-editing)
 ## [Co-debug](collab-vscode.md#co-debuging)
 ## [Share a local server](collab-vscode.md#share-a-local-server)
-# Using Visual Studio
+# Visual Studio and Live Share
 ## [Overview](collab-vs.md)
 ## [Sign-in](collab-vs.md#sign-in)
 ## [Share a project](collab-vs.md#share-a-project)

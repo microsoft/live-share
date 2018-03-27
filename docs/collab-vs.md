@@ -21,7 +21,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Using Live Share with Visual Studio
+# Using Visual Studio with Live Share
 
 Ready to get going with Live Share in Visual Studio?  If so, you're in the right spot! In this article we'll walk you through how to use some of the specific features in the Visual Studio Live Share extension for Visual Studio.
 
