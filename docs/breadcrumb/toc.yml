@@ -7,5 +7,5 @@
     topicHref: /visualstudio/products
     items:
       - name: Live Share
-        tocHref: /live-share/
-        topicHref: /live-share/index.md
+        tocHref: /visualstudio/liveshare/
+        topicHref: /visualstudio/liveshare/index.md
