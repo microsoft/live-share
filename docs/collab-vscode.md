@@ -349,6 +349,6 @@ While there are currently some shortcomings guests will experience while using t
 
 - [Quickstart: Share your first project](quick-start-share.md)
 - [Quickstart: Join your first session](quick-start-join.md)
-- [Visual Studio features and how-tos](collab-vs.md)
+- [Using Visual Studio with Live Share](collab-vs.md)
 - [Provide feedback](support.md)
 - [Troubleshooting](troubleshooting.md)

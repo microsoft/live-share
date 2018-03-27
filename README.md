@@ -26,10 +26,11 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 ## Documentation
 
-- [Visual Studio Code features and how-tos](docs/collab-vscode.md)
-- [Visual Studio features and how-tos](docs/collab-vs.md)
+- [Using Visual Studio Code with Live Share](docs/collab-vscode.md)
+- [Using Visual Studio with Live Share](docs/collab-vs.md)
 
 ## Reference
+
 - [Connectivity requirements](docs/connectivity.md)
 - [Language and platform support](docs/platform-support.md)
 - [Extension support](docs/extensions.md)
@@ -70,7 +71,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](https://aka.ms/vsls-troubleshooting) if you run into problems.
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](docs/troubleshooting.md) if you run into problems.
 
 ## Contributing & Feedback
 

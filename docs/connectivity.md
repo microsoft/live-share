@@ -78,7 +78,7 @@ Having issues with connectivity? Check out [troubleshooting](troubleshooting.md#
 
 ## See also
 
-- [Visual Studio Code features and how-tos](collab-vscode.md)
-- [Visual Studio features and how-tos](collab-vs.md)
+- [Using Visual Studio Code with Live Share](collab-vscode.md)
+- [Using Visual Studio with Live Share](collab-vs.md)
 - [Provide feedback](support.md)
 - [Troubleshooting](troubleshooting.md)

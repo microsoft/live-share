@@ -56,22 +56,14 @@ Installing the extension is easy. Just follow these steps:
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](https://aka.ms/vsls-troubleshooting) if you run into problems.
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](troubleshooting.md) if you run into problems.
 
 ### 2. Sign into Live Share
 
 Once installed, start up your tool sign in with the **credentials that are associated with the email you used to sign up**. 
 
-
 <table style="border: none;">
 <tr style="border: none;">
-    <td width="50%" style="border: none;">
-        <strong>Visual Studio Code</strong>
-    </td>
-    <td width="50%" style="border: none;">
-        <strong>Visual Studio</strong>
-    </td>
-</tr><tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="media/vscode-sign-in-button.png" />
     </td>
@@ -97,13 +89,6 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 <table style="border: none;">
 <tr style="border: none;">
-    <td width="50%" style="border: none;">
-        <strong>Visual Studio Code</strong>
-    </td>
-    <td width="50%" style="border: none;">
-        <strong>Visual Studio</strong>
-    </td>
-</tr><tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="media/vscode-share-button.png" />
     </td>
@@ -126,8 +111,8 @@ That's it!! Once your colleague has joined the collaboration session you'll be u
 ## See also
 
 - [Quickstart: Join your first session](quick-start-join.md)
-- [Visual Studio Code features and how-tos](collab-vscode.md)
-- [Visual Studio features and how-tos](collab-vs.md)
+- [Using Visual Studio Code with Live Share](collab-vscode.md)
+- [Using Visual Studio with Live Share](collab-vs.md)
 
 Reference
 - [Language and platform support](platform-support.md)
