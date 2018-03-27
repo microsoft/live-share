@@ -1,4 +1,4 @@
-# [Overview](/)
+# [Overview](index.md)
 # Quickstarts
 ## [Share your first project](quick-start-share.md)
 ## [Join your first session](quick-start-join.md)

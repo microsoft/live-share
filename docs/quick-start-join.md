@@ -35,23 +35,23 @@ Installing the extension is easy. Just follow these steps:
 
 <table style="width: 100%; border:none;">
 <tr>
-    <td style="width: 128px; text-align: center; border:none;"><img src="../media/vs-icon.png" /></td>
+    <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
        1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
        3. Download and install the VS Live Share extension from the marketplace. <br />
-       <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png"></a><br />
+       <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td style="width: 128px; text-align: center; border:none;"><img src="../media/vscode-icon.png" /></td>
+    <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
         2. Download and install the VS Live Share extension from the marketplace. <br />
         3. Reload and wait for dependencies to download and install (see status bar).<br />
-        <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png"></a>
+        <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
     </td>
 </tr>
 </table>
@@ -71,7 +71,7 @@ You should be notified that your browser wants to launching your Visual Studio L
 
 > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Visual Studio Live Share before opening/re-opening the invite page. Still having trouble? See [join manually](manual-join.md) for details.
 
-![Join page](../media/join-page.png)
+![Join page](media/join-page.png)
 
 ### 4. Sign into Live Share
 

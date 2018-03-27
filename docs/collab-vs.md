@@ -39,7 +39,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio o
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](troubleshooting.md) if you run into problems.
 
-[![Download](../media/download.png)](https://aka.ms/vsls-dl/vs)
+[![Download](media/download.png)](https://aka.ms/vsls-dl/vs)
 
 ## Sign in
 
@@ -47,11 +47,11 @@ In order to collaborate, you'll need sign into Visual Studio Live Share so every
 
 By default Visual Studio uses the your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
 
-![VS sign in](../media/vs-sign-in-button.png)
+![VS sign in](media/vs-sign-in-button.png)
 
 If you've been accepted into the private limited preview (session hosts) and want to share, you should **sign in using the same credentials you used to sign up**. If you need to use a different sign-in than your VS [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
-![VS Tools Options Live Share](../media/vs-tools-options.png)
+![VS Tools Options Live Share](media/vs-tools-options.png)
 
 Selecting **External Account** allows you to select an account not supported by Visual Studio's personalization feature like GitHub. A browser will automatically appear the first time you use a Live Share feature so you may complete sign in.
 
@@ -77,7 +77,7 @@ Once you've been accepted into the preview, sign into Visual Studio Live Share w
 
 Open a solution, project, or folder  you want to share and simply click the "Share" button in the upper right hand corner.
 
-![VS Share button](../media/vs-share-button.png)
+![VS Share button](media/vs-share-button.png)
 
 > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](connectivity.md#changing-the-connection-mode) for details.
 
@@ -97,7 +97,7 @@ That's it!!
 
 As a host, you can can stop sharing completely and end the collaboration session by clicking the share / session state button (in the upper right hand corner in VS or the status bar in VS Code) and selecting "End Collaboration Session". 
 
-![Stop sharing](../media/vs-stop-sharing.png)
+![Stop sharing](media/vs-stop-sharing.png)
 
 All guests will be notified that the session has ended. Once the session has ended, guests will no longer be able to access the content and any temp files are automatically cleaned up.
 
@@ -115,7 +115,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 #### 1. Start a discussion with the Collaboration Session Host
 
-It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, as [outlined in the overview](../index.md#collaboration-sessions) the collaboration session requires the session host to be connected to the service to operate so you'll want to check in with them.
+It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, as [outlined in the overview](index.md#collaboration-sessions) the collaboration session requires the session host to be connected to the service to operate so you'll want to check in with them.
 
 #### 2. Click on the invite link / open the invite in your browser
 
@@ -127,7 +127,7 @@ If you have not yet installed the Live Share extension, you'll be prompted to do
 
 You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
 
-![Join page](../media/join-page.png)
+![Join page](media/join-page.png)
 
 #### 3. Sign in
 
@@ -151,7 +151,7 @@ See [sign in](#sign-in) for more details if you have not already. You do not nee
 
 Simply go to **File > Join Collaboration Session**
 
-![VS Join menu](../media/vs-join.png)
+![VS Join menu](media/vs-join.png)
 
 #### 3. Paste the invite link
 
@@ -163,7 +163,7 @@ That's it! You should be connected to the collaboration session momentarily.
 
 As a guest, you can leave the collaboration session without ending it for others by simply closing the tool or by clicking the share / session state button and selecting "Leave Collaboration Session".
 
-![VS Join menu](../media/vs-leave-session.png)
+![VS Join menu](media/vs-leave-session.png)
 
 Any temp files are automatically cleaned up so no further action is needed.
 
@@ -175,19 +175,19 @@ Having issues with sharing? Check out [troubleshooting](troubleshooting.md#share
 
 Once a guest has joined a collaboration session, the host other guests will immediately be able to see each others edits and highlights in real-time. Simply select a file from the Solution Explorer and start editing. All participants  will see edits as the host or other guests make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
 
-![Screen shot showing co-editing](../media/vs-coedit.png)
+![Screen shot showing co-editing](media/vs-coedit.png)
 
 In addition, each guest can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
 Further, to better allow you to highlight where problems might exist or convey ideas, selections are also visible to all guests.
 
-![Screen shot showing highlighting](../media/vs-highlight.png)
+![Screen shot showing highlighting](media/vs-highlight.png)
 
 ### Moving to another person's edit location
 
 Each person in your the session can be seen in the upper right and you can hover over the avatar to see their full information.  Further, simply clicking on this same icon to jumps the active editor to their exact location.
 
-![Screen shot showing user](../media/vs-person.png)
+![Screen shot showing user](media/vs-person.png)
 
 ### Follow a collaborator via pinning
 
@@ -195,8 +195,8 @@ At times the person you are collaborating with may need to show you a few differ
 
 Simply hover over a user and you will see a pin icon. Simply click the pin to start following them and as the collaborator moves around or between files you will be moved along with them.
 
-![VS Code pin](../media/vs-pin-hover.png)
-![VS Code pin](../media/vs-pinned.png)
+![VS Code pin](media/vs-pin-hover.png)
+![VS Code pin](media/vs-pinned.png)
 
 To make it easy to hop in and out of pinning, the editor is un-pinned if any of the following occurs:
 
@@ -226,13 +226,13 @@ Visual Studio Live Share's collaborative debugging feature is a powerful and uni
 
 Using it simple. The collaboration session host simply needs to start debugging via the usual means in Visual Studio.
 
-![VS Debug button](../media/vs-debug-button.png)
+![VS Debug button](media/vs-debug-button.png)
 
 Once the debugger attaches on the host's side, all guests are also attached. While there is one debugging "session" running on the host's machine, all collaborators are connected to it and have their own view.
 
 > **Tip:** If you want to change when and how co-debugging happens, you can change the default behaviors via settings in **Tools > Options > Live Share**.
 
-![VS debugger attached](../media/vs-debugger.png)
+![VS debugger attached](media/vs-debugger.png)
 
 Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
 
@@ -248,7 +248,7 @@ See [share a local server](#share-a-local-server) for information on how to shar
 
 > **Tip:** If you don't like the automated browser sharing behavior and want to change it (either when you are an host or a guest), you can update settings in **Tools > Options > Live Share**.
 
-![Animation of concurrent debugging](../media/co-debug.gif)
+![Animation of concurrent debugging](media/co-debug.gif)
 
 ### Detaching and reattaching
 
@@ -256,11 +256,11 @@ As a guest, you may wish to stop debugging temporarily. Fortunatley, you can sim
 
 If you've updated settings so that as a guest you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can simply select the desired running debugging session from the "Select Startup Item..." dropdown...
 
-![VS Debug button](../media/vs-select-reattach.png)
+![VS Debug button](media/vs-select-reattach.png)
 
 ...and then click it to attach.
 
-![VS Debug button](../media/vs-reattach.png)
+![VS Debug button](media/vs-reattach.png)
 
 ### Change when VS joins debugging sessions
 
@@ -286,17 +286,17 @@ For security purposes, only servers running on ports you specify are available t
 
 1. Click on the session state button in the upper right corner and select "Manage Shared Local Servers"
 
-    ![Manage Shared Local Servers](../media/vs-share-local-servers.png)
+    ![Manage Shared Local Servers](media/vs-share-local-servers.png)
 
 2. In the dialog that appears, click "Add" and enter the port number the server is running on locally and a name, hit enter, then OK.
 
-    ![Manage Shared Local Servers](../media/vs-manage-local-shared-servers.png)
+    ![Manage Shared Local Servers](media/vs-manage-local-shared-servers.png)
 
 That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port was already occupied)!
 
 If the port is already in use on a guest's machine, a different one is automatically selected. Fortunately, as a guest you can see a list of currently shared ports (by name if specified) by clicking the session state button in the upper right corner and selecting "View Shared Local Servers."
 
-![Viw Shared Local Servers](../media/vs-view-shared-servers.png)
+![Viw Shared Local Servers](media/vs-view-shared-servers.png)
 
 Note that *guests cannot* control which ports on the host's machine are shared for security reasons.
 
@@ -310,11 +310,11 @@ The following are the states you will typically see:
 
 | State | Button | Description |
 |-------|--------|-------------|
-| Inactive | ![VS status: inactive](../media/vs-status-share.png) | No active collaboration session and nothing is shared. |
-| Host: Sharing In-Progress | ![VS status: share in progress](../media/vs-status-sharing.png) | A collaboration session is starting and content sharing will begin shortly. |
-| Host: Sharing | ![VS status: sharing active ](../media/vs-status-active.png) | A collaboration session is active and content is shared. |
-| Guest: Joining Session | ![VS Code status: joining](../media/vs-status-joining.png) | Joining an existing collaboration session. |
-| Guest: Joined | ![VS status: joined](../media/vs-status-joined.png) | Joined and connected to an active collaboration session and receiving shared content. |
+| Inactive | ![VS status: inactive](media/vs-status-share.png) | No active collaboration session and nothing is shared. |
+| Host: Sharing In-Progress | ![VS status: share in progress](media/vs-status-sharing.png) | A collaboration session is starting and content sharing will begin shortly. |
+| Host: Sharing | ![VS status: sharing active ](media/vs-status-active.png) | A collaboration session is active and content is shared. |
+| Guest: Joining Session | ![VS Code status: joining](media/vs-status-joining.png) | Joining an existing collaboration session. |
+| Guest: Joined | ![VS status: joined](media/vs-status-joined.png) | Joined and connected to an active collaboration session and receiving shared content. |
 
 ## Guest limitations
 

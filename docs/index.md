@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Welcome to Visual Studio Live Share! Live Share lets you to achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love, can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
 
-Ready to get going? In this article we'll run you through some concepts and how to install Visual Studio Live Share. If you're looking for an abridged version, check out the [share](main/quick-start-share.md) and [join](main/quick-start-join.md) quickstarts.
+Ready to get going? In this article we'll run you through some concepts and how to install Visual Studio Live Share. If you're looking for an abridged version, check out the [share](quick-start-share.md) and [join](quick-start-join.md) quickstarts.
 
 ## Install Visual Studio Live Share
 
@@ -77,13 +77,13 @@ Collaboration session hosts can use all of their tools and services as they woul
 
 When you "share" as a host, you start up a collaboration session that shares the contents of a project, solution, or a folder that guests can then access through an invitation link. While "share" is short hand for "share a project," it also opens the door for sharing other capabilities like debugging.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#share-a-project) [![VS](media/vs-icon-15x15.png)](main/collab-vs.md#share-a-project)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](collab-vscode.md#share-a-project) [![VS](media/vs-icon-15x15.png)](collab-vs.md#share-a-project)
 
 #### Joining 
 
 Clicking an invitation link from a host enables you to "join" a collaboration session and access any content or capabilities the host has opted to share with you. It provides a quick way hop into a collaboration session and the web link provides getting started information for you if you don't have the needed extension installed.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#join-a-collaboration-session) [![VS](media/vs-icon-15x15.png)](main/collab-vs.md#join-a-collaboration-session)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](collab-vscode.md#join-a-collaboration-session) [![VS](media/vs-icon-15x15.png)](collab-vs.md#join-a-collaboration-session)
 
 ### Features
 
@@ -91,55 +91,55 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#join
 
 When you open the same file as another collaborator, you are instantly able to "collaboratively edit" or "co-edit" the file's contents. You can see each collaborator's edits, their cursors and selections, jump-to their location, and more. Even better, you are not forced into editing the same file at all times so you can opportunistically collaborate and act independantly as you see fit.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](main/collab-vs.md#co-editing)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](collab-vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](collab-vs.md#co-editing)
 
 #### Pin-to and follow mode
 
 Sometimes you need to explain a design or problem that spans multiple files or locations in code. Consequently, it is useful to be able to temporariliy follow a colleague as they move throughout the project when co-editing. Visual Studio Live Share allows you to do this by "pinning" your editor to another collaborator.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#follow-a-collaborator-via-pinning) [![VS](media/vs-icon-15x15.png)](main/collab-vs.md#follow-a-collaborator-via-pinning)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](collab-vscode.md#follow-a-collaborator-via-pinning) [![VS](media/vs-icon-15x15.png)](collab-vs.md#follow-a-collaborator-via-pinning)
 
 #### Co-debugging
 
 When you're tackling tough coding problems or bugs, having an extra pair of eyes when debugging can be really useful. Visual Studio Live Share enables "collaborative debugging" or "co-debugging" by sharing the debugging session with all guests whenever the host starts debugging. You get co-editing features along with the ability to investigate independently as you step through together.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#co-debuging) [![VS](media/vs-icon-15x15.png)](main/collab-vs.md#co-debuging)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](collab-vscode.md#co-debuging) [![VS](media/vs-icon-15x15.png)](collab-vs.md#co-debuging)
 
 #### Share local servers / Share ports
 
 When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a local server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#share-a-local-server) [![VS](media/vs-icon-15x15.png)](main/collab-vs.md#share-a-local-server)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](collab-vscode.md#share-a-local-server) [![VS](media/vs-icon-15x15.png)](collab-vs.md#share-a-local-server)
 <!--
 #### Share a terminal
 
 Modern development makes frequent use of an array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal is fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to use any number of command line tools to run tests, builds, or even triage environment specific problems. Since the terminal is only accessible to collaborators in the session and you can see exactly what everyone is doing, you'll be able to gain additional insights while still being confident that only those you trust have access. 
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#share-a-terminal) [![VS](/vs-icon-15x15.png)](main/collab-vs.md#share-a-terminal)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](collab-vscode.md#share-a-terminal) [![VS](/vs-icon-15x15.png)](collab-vs.md#share-a-terminal)
 -->
 #### Flexible connection modes
 
 To ensure optimal performance, Visual Studio Live Share supports two core "connection modes": "direct" and "relay." In direct mode, guests connect directly to the host without going through the web. Relay mode allows guests located in a completely different network to connect to the host via an internet relay. In all cases connections are SSH or SSL encrypted to ensure only collaborators get access to what is going over the wire. By default, Live Share is in "auto" mode which first attempts a direct connection and then fails over to the relay but if you prefer, you can lock into a single mode.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/connectivity.md#changing-the-connection-mode) [![VS](media/vs-icon-15x15.png)](main/connectivity.md#changing-the-connection-mode)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](connectivity.md#changing-the-connection-mode) [![VS](media/vs-icon-15x15.png)](connectivity.md#changing-the-connection-mode)
 
 #### Scoped command menu
 
 Sometimes searching the command palette in VS Code can be a bit overwhelming. Live Share has a "scoped command menu" that you can access by clicking on the sign in status bar item. You'll be automatically presented list of commands that are available given the current state of your collaboration session so you can get up and running quickly.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](main/collab-vscode.md#using-the-scoped-command-menu)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](collab-vscode.md#using-the-scoped-command-menu)
 ## See also
 
 Quickstarts
-- [Quickstart: Share your first project](main/quick-start-share.md)
-- [Quickstart: Join your first session](main/quick-start-join.md)
+- [Quickstart: Share your first project](quick-start-share.md)
+- [Quickstart: Join your first session](quick-start-join.md)
 
 How-tos
-- [Visual Studio Code How-tos](main/collab-vscode.md)
-- [Visual Studio How-tos](main/collab-vs.md)
+- [Visual Studio Code How-tos](collab-vscode.md)
+- [Visual Studio How-tos](collab-vs.md)
 
 Reference
-- [Language and platform support](main/platform-support.md)
-- [Extension support](main/extensions.md)
-- [Troubleshooting](main/troubleshooting.md)
-- [Provide feedback](main/support.md)
+- [Language and platform support](platform-support.md)
+- [Extension support](extensions.md)
+- [Troubleshooting](troubleshooting.md)
+- [Provide feedback](support.md)

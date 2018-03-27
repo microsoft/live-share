@@ -28,12 +28,12 @@ The exact instructions vary between tools, so pick the tool you intend to use fo
 <tr>
     <td width="50%" style="text-align: center;">
         <a href="#join-from-visual-studio-code">
-            <img src="../media/vs-code.svg" width="100%"><br/>
+            <img src="media/vs-code.svg" width="100%"><br/>
         </a>
     </td>
     <td width="50%" style="text-align: center;">
         <a href="#join-from-visual-studio">
-            <img src="../media/vs-ide.svg" width="100%"><br/>
+            <img src="media/vs-ide.svg" width="100%"><br/>
         </a>
     </td>
 </tr>
@@ -45,7 +45,7 @@ The exact instructions vary between tools, so pick the tool you intend to use fo
 
 In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply click on the "Sign in" status bar item and follow the directions to sign in.
 
- ![VS Code Download](../media/vscode-sign-in-button.png)
+ ![VS Code Download](media/vscode-sign-in-button.png)
 
 A browser will appear where you can complete the sign-in process.
 
@@ -55,7 +55,7 @@ If you are running into problems with VS Code not picking up a successful sign-i
 
 Hit **Ctrl+Shift+P**and select "Live Share: Join collaboration session" or used the scoped command menu by clicking on the session state status bar item and select "Join Collaboration Session".
 
-![Join scoped command menu item](../media/vscode-join.png)
+![Join scoped command menu item](media/vscode-join.png)
 
 #### 3. Paste the invite link
 
@@ -69,7 +69,7 @@ That's it! You should be connected to the collaboration session momentarily.
 
 Once installed, start VS and sign in if you have not already. If you need to use a different sign-in for Visual Studio than your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account**. 
 
-![VS sign in](../media/vs-sign-in-button.png)
+![VS sign in](media/vs-sign-in-button.png)
 
 Still having trouble? See [troubleshooting](troubleshooting.md#sign-in).
 
@@ -77,7 +77,7 @@ Still having trouble? See [troubleshooting](troubleshooting.md#sign-in).
 
 Simply go to **File > Join Collaboration Session**.
 
-![VS Join menu](../media/vs-join.png)
+![VS Join menu](media/vs-join.png)
 
 #### 3. Paste the invite link
 
