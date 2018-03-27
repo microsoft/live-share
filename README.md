@@ -21,19 +21,19 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 ## Quickstarts
 
-- [Share your first project](docs/main/quick-start-share.md) (after you've been accepted into the preview)
-- [Join your first collaboration session](docs/main/quick-start-join.md) (no need to sign up or be accepted in the preview)
+- [Share your first project](docs/quick-start-share.md) (after you've been accepted into the preview)
+- [Join your first collaboration session](docs/quick-start-join.md) (no need to sign up or be accepted in the preview)
 
 ## Documentation
 
-- [Visual Studio Code features and how-tos](docs/main/collab-vscode.md)
-- [Visual Studio features and how-tos](docs/main/collab-vs.md)
+- [Visual Studio Code features and how-tos](docs/collab-vscode.md)
+- [Visual Studio features and how-tos](docs/collab-vs.md)
 
 ## Reference
-- [Connectivity requirements](docs/main/connectivity.md)
-- [Language and platform support](docs/main/platform-support.md)
-- [Extension support](docs/main/extensions.md)
-- [Troubleshooting](docs/main/troubleshooting.md)
+- [Connectivity requirements](docs/connectivity.md)
+- [Language and platform support](docs/platform-support.md)
+- [Extension support](docs/extensions.md)
+- [Troubleshooting](docs/troubleshooting.md)
 
 ## Resources
 
