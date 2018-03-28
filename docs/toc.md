@@ -12,7 +12,7 @@
 ## [Share a local server](use/vscode.md#share-a-local-server)
 # Using Visual Studio
 ## [Overview](use/vs.md)
-## [Sign-in](use/vs.md)
+## [Sign-in](use/vs.md#sign-in)
 ## [Share a project](use/vs.md#share-a-project)
 ## [Join a session](use/vs.md#join-a-collaboration-session)
 ## [Co-edit](use/vs.md#co-editing)
