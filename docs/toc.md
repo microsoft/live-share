@@ -2,7 +2,7 @@
 # Quickstarts
 ## [Share your first project](quick-start-share.md)
 ## [Join your first session](quick-start-join.md)
-# Visual Studio Code and Live Share
+# Visual Studio Code Guide
 ## [Overview](collab-vscode.md)
 ## [Sign-in](collab-vscode.md#sign-in)
 ## [Share a project](collab-vscode.md#share-a-project)
@@ -10,7 +10,7 @@
 ## [Co-edit](collab-vscode.md#co-editing)
 ## [Co-debug](collab-vscode.md#co-debuging)
 ## [Share a local server](collab-vscode.md#share-a-local-server)
-# Visual Studio and Live Share
+# Visual Studio Guide
 ## [Overview](collab-vs.md)
 ## [Sign-in](collab-vs.md#sign-in)
 ## [Share a project](collab-vs.md#share-a-project)
