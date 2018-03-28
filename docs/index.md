@@ -60,7 +60,7 @@ After that, downloading and installing the Visual Studio Live Share extension is
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](https://aka.ms/vsls-troubleshooting) if you run into problems.
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](troubleshooting.md) if you run into problems.
 
 That's all there is to it! You should now see a sign in status bar on the left in VS Code and a share button in the upper left in Visual Studio. Check out the rest of the documentation for what to do next!
 ## Concepts and features
@@ -135,8 +135,8 @@ Quickstarts
 - [Quickstart: Join your first session](quick-start-join.md)
 
 How-tos
-- [Visual Studio Code How-tos](collab-vscode.md)
-- [Visual Studio How-tos](collab-vs.md)
+- [Using Visual Studio Code with Live Share](collab-vscode.md)
+- [Using Visual Studio with Live Share](collab-vs.md)
 
 Reference
 - [Language and platform support](platform-support.md)

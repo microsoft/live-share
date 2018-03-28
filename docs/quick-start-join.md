@@ -56,7 +56,7 @@ Installing the extension is easy. Just follow these steps:
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](https://aka.ms/vsls-troubleshooting) if you run into problems.
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](troubleshooting.md) if you run into problems.
 
 ### 2. Start a discussion with the host
 
@@ -67,7 +67,6 @@ It's always good to start up a conversation via voice or chat in your favorite c
 After installing Visual Studio Live Share for your IDE/editor, simply open (or re-open) the invite web page using the invite link your colleague sent you.
 
 You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool and if you accept it the IDE/editor will launch and automatically start the process of joining the collaboration session.
-
 
 > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Visual Studio Live Share before opening/re-opening the invite page. Still having trouble? See [join manually](manual-join.md) for details.
 
@@ -88,8 +87,8 @@ Interested in joining the private limited preview so you can create collaboratio
 ## See also
 
 - [Quickstart: Share your first project](quick-start-share.md)
-- [Visual Studio Code features and how-tos](collab-vscode.md)
-- [Visual Studio features and how-tos](collab-vs.md)
+- [Using Visual Studio Code with Live Share](collab-vscode.md)
+- [Using Visual Studio with Live Share](collab-vs.md)
 
 Reference
 - [Language and platform support](platform-support.md)

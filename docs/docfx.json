@@ -42,7 +42,7 @@
 			"ms.service": "vs-liveshare",
 			"ms.topic": "article",
 			"searchScope": ["Live Share"],
-			"uhfHeaderId": "MSDocsHeader-LiveShare"
+      "uhfHeaderId": "MSDocsHeader-VisualStudio"
     },
     "fileMetadata": {},
 		"template": [],
