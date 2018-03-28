@@ -74,11 +74,11 @@ Visual Studio:
 
 ## Troubleshooting
 
-Having issues with connectivity? Check out [troubleshooting](troubleshooting.md#connectivity).
+Having issues with connectivity? Check out [troubleshooting](../troubleshooting.md#connectivity).
 
 ## See also
 
-- [Using Visual Studio Code with Live Share](collab-vscode.md)
-- [Using Visual Studio with Live Share](collab-vs.md)
-- [Provide feedback](support.md)
-- [Troubleshooting](troubleshooting.md)
+- [Using Visual Studio Code with Live Share](../use/vscode.md)
+- [Using Visual Studio with Live Share](../use/vs.md)
+- [Provide feedback](../support.md)
+- [Troubleshooting](../troubleshooting.md)

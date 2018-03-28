@@ -15,25 +15,25 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </td>
 </tr></table>
 
-While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](docs/platform-support.md) and more will be coming in the future. *It is currently in a limited, private preview.* [Sign up!](https://aka.ms/vsls-signup)
+While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](docs/reference/platform-support.md) and more will be coming in the future. *It is currently in a limited, private preview.* [Sign up!](https://aka.ms/vsls-signup)
 
 [![Slack](docs/media/Slack_Mark-24x24.png)](https://aka.ms/vsls-slack) [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
 ## Quickstarts
 
-- [Share your first project](docs/quick-start-share.md) (after you've been accepted into the preview)
-- [Join your first collaboration session](docs/quick-start-join.md) (no need to sign up or be accepted in the preview)
+- [Share your first project](docs/quickstart/share.md) (after you've been accepted into the preview)
+- [Join your first collaboration session](docs/quickstart/join.md) (no need to sign up or be accepted in the preview)
 
 ## Documentation
 
-- [Using Visual Studio Code with Live Share](docs/collab-vscode.md)
-- [Using Visual Studio with Live Share](docs/collab-vs.md)
+- [Using Visual Studio Code with Live Share](docs/use/vscode.md)
+- [Using Visual Studio with Live Share](docs/use/vs.md)
 
 ## Reference
 
-- [Connectivity requirements](docs/connectivity.md)
-- [Language and platform support](docs/platform-support.md)
-- [Extension support](docs/extensions.md)
+- [Connectivity requirements](docs/reference/connectivity.md)
+- [Language and platform support](docs/reference/platform-support.md)
+- [Extension support](docs/reference/extensions.md)
 - [Troubleshooting](docs/troubleshooting.md)
 
 ## Resources
