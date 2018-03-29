@@ -35,28 +35,28 @@ Installing the extension is easy. Just follow these steps:
 
 <table style="width: 100%; border:none;">
 <tr>
-    <td style="width: 128px; text-align: center; border:none;"><img src="media/vs-icon.png" /></td>
+    <td style="width: 128px; text-align: center; border:none;"><img src="../media/vs-icon.png" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
        1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
        2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
        3. Download and install the VS Live Share extension from the marketplace. <br />
-       <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png"></a><br />
+       <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png"></a><br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td style="width: 128px; text-align: center; border:none;"><img src="media/vscode-icon.png" /></td>
+    <td style="width: 128px; text-align: center; border:none;"><img src="../media/vscode-icon.png" /></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
         2. Download and install the VS Live Share extension from the marketplace. <br />
         3. Reload and wait for dependencies to download and install (see status bar).<br />
-        <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>
+        <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png"></a>
     </td>
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](troubleshooting.md) if you run into problems.
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
 ### 2. Sign into Live Share
 
@@ -65,10 +65,10 @@ Once installed, start up your tool sign in with the **credentials that are assoc
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="media/vscode-sign-in-button.png" />
+        <img src="../media/vscode-sign-in-button.png" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="media/vs-sign-in-button.png" />
+        <img src="../media/vs-sign-in-button.png" />
     </td>
 </tr>
 </table>
@@ -85,15 +85,15 @@ If you signed up with an email that **is not already tied to a Microsoft persona
 
 Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard. 
 
-> **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [change the connection mode](connectivity.md#changing-the-connection-mode) for details.
+> **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [change the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="media/vscode-share-button.png" />
+        <img src="../media/vscode-share-button.png" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="media/vs-share-button.png" />
+        <img src="../media/vs-share-button.png" />
     </td>
 </tr>
 </table>
@@ -110,12 +110,12 @@ That's it!! Once your colleague has joined the collaboration session you'll be u
 
 ## See also
 
-- [Quickstart: Join your first session](quick-start-join.md)
-- [Using Visual Studio Code with Live Share](collab-vscode.md)
-- [Using Visual Studio with Live Share](collab-vs.md)
+- [Quickstart: Join your first session](join.md)
+- [Using Visual Studio Code with Live Share](../use/vscode.md)
+- [Using Visual Studio with Live Share](../use/vs.md)
 
 Reference
-- [Language and platform support](platform-support.md)
-- [Extension support](extensions.md)
-- [Troubleshooting](troubleshooting.md)
-- [Provide feedback](support.md)
+- [Language and platform support](../reference/platform-support.md)
+- [Extension support](../reference/extensions.md)
+- [Troubleshooting](../troubleshooting.md)
+- [Provide feedback](../support.md)
