@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/enc 
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
-if [ -z "docfx.console" ]; then 
+if [ ! -d "docfx.console" ]; then 
     nuget install docfx.console -ExcludeVersion 
 fi
 cd ../docs

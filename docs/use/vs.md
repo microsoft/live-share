@@ -61,37 +61,39 @@ If you run into trouble, check out [troubleshooting](../troubleshooting.md#sign-
 
 After downloading and installing Visual Studio Live Share, follow these steps to start a collaboration session and invite a colleague to work with you.
 
-#### 1. Sign up for the preview
+1. **Sign up for the preview and wait to be accepted**
 
-In order to start a collaboration session while Visual Studio Live Share is in private limited preview, you'll need to be signed up and accepted into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to sign up.
+    You'll need to be signed up and *accepted* into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to sign up.
 
-> **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a guest. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
+    > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a guest. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
 
-If you have not done so, **[sign up now!](https://aka.ms/vsls-signup)**
+    If you have not done so, **[sign up now!](https://aka.ms/vsls-signup)**
 
-#### 2. Sign in
+2. **Sign in**
 
-Once you've been accepted into the preview, sign into Visual Studio Live Share with the credentials you used to sign-up. See [sign in](#sign-in) for more details.
+    Once you've been accepted into the preview, sign into Visual Studio Live Share with the credentials you used to sign-up. See [sign in](#sign-in) for more details.
 
-#### 3. Start a collaboration session
+3. **Start a collaboration session**
 
-Open a solution, project, or folder  you want to share and simply click the "Share" button in the upper right hand corner.
+    Open a solution, project, or folder  you want to share and simply click the "Share" button in the upper right hand corner.
 
-![VS Share button](../media/vs-share-button.png)
+    ![VS Share button](../media/vs-share-button.png)
 
-> **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
+    > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
-An invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them.
+    An invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them.
 
-You will also see the "Share" button / status bar icon transition to convey a "Session State". See [session state](#session-states) information below on what this looks like.
+    You will also see the "Share" button / status bar icon transition to convey a "Session State". See [session state](#session-states) information below on what this looks like.
 
-Note that if you need to get the invite link again after you've started sharing, you access it again by clicking on the share / session state button and selecting "Copy Link".
+    Note that if you need to get the invite link again after you've started sharing, you access it again by clicking on the share / session state button and selecting "Copy Link".
 
-#### 4. Send someone the link
+4. **Send someone the link**
 
-Send the link over e-mail, Slack, Skype, etc. and once they join you can start collaborating! The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the preview.
+    Send the link over e-mail, Slack, Skype, etc. and once they join you can start collaborating! The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the preview.
 
-That's it!!
+    See [join a collaboration session](#join-a-collaboration-session) for what the guest you invite can expect.
+
+    That's it!!
 
 ### Ending the collaboration session
 
@@ -107,57 +109,65 @@ Having issues with sharing? Check out [troubleshooting](../troubleshooting.md#sh
 
 ## Join a collaboration session
 
-After downloading and installing Visual Studio Live Share, you or a colleague can follow these steps to join a hosted collaboration session as a guest.
+After downloading and installing Visual Studio Live Share, guests only need to take a couple steps to join a hosted collaboration session. There are two ways to join: [via the browser](#join-via-the-browser) and [manually](#join-manually).
 
 ### Join via the browser
 
 The easiest way to join a collaboration session is to simply open the invite link in a web browser. Here's what you can expect when you follow this flow.
 
-#### 1. Start a discussion with the Collaboration Session Host
+1. **Sign in**
 
-It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate. In addition, as [outlined in the overview](../index.md#collaboration-sessions) the collaboration session requires the session host to be connected to the service to operate so you'll want to check in with them.
+    After installing the Live Share extension, want to sign in to let other collaborators know who you are. By default Visual Studio uses your personalization account you may be able to skip this step entirely.
 
-#### 2. Click on the invite link / open the invite in your browser
+    See [sign in](#sign-in) for more details. You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session and will not receive email updates by simply signing into a collaboration session.
 
-After installing Visual Studio Live Share for your tool, simply open (or re-open) the invite web page using the invite link your colleague sent you. 
+2. **Click on the invite link / open the invite in your browser**
 
-If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
+    Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
-> **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing the Visual Studio Live Share extension before opening/re-opening the invite page. Still having trouble? See [join manually](#join-manually).
+    You should be notified that your browser wants to launching a Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
 
-You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
+    ![Join page](../media/join-page.png)
 
-![Join page](../media/join-page.png)
+    If the host is offline, the browser will instead telling you this is the case. You can then contact the host and ask them to share again.
 
-#### 3. Sign in
+    > **Note:** Still having trouble? See [join manually](#join-manually).
 
-To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft account if you are not already signed in. See [sign in](#sign-in) for more details. You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session and will not receive email updates by simply signing into a collaboration session.
+3. **Collaborate**
 
-#### 4. Collaborate
+    That's it!! In a few moments you'll be connected and you can start collaborating.
 
-That's it!! In a few moments you'll be connected and you can start collaborating.
+    You will see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
 
-After joining, you will see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
-
+    You'll then be automatically taken to the file the host is currently editing once the join is complete.
+    
 ### Join manually
 
 You can also manually join without using a web link which can be useful in situations where the tool you want to use is already running, you want to use a different tool than you usually do, or if you are having trouble with getting invite links to work for some reason. The process is easy:
 
-#### 1. Sign in
+1. **Sign in**
 
-See [sign in](#sign-in) for more details if you have not already. You do not need to be part of the private limited preview to join a collaboration session.
+    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process.
 
-#### 2. Use the join command
+    See [sign in](#sign-in) for more details. You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session and will not receive email updates by simply signing into a collaboration session.
 
-Simply go to **File > Join Collaboration Session**
+2. **Use the join command**
 
-![VS Join menu](../media/vs-join.png)
+    Simply go to **File > Join Collaboration Session**
 
-#### 3. Paste the invite link
+    ![VS Join menu](../media/vs-join.png)
 
-Paste in the invite URL you were sent and confirm.
+3. **Paste the invite link**
 
-That's it! You should be connected to the collaboration session momentarily.
+    Paste in the invite URL you were sent and confirm.
+
+4. **Collaborate!**
+
+    That's it! You should be connected to the collaboration session momentarily.
+
+    You will see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
+
+    You'll then be automatically taken to where the host is currently editing once the join has completed.
 
 ### Leave the collaboration session
 
