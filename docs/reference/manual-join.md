@@ -18,26 +18,7 @@ ms.workload:
 
 In addition to opening a link in a browser to join a collaboration session, you can manually join by pasting the link into an already running tool. This can be useful if you want to use a different tool than you usually do or if you are having trouble with getting invite links to work for some reason.
 
-The exact instructions vary between tools, so pick the tool you intend to use for more information.
-
-<table width="100%">
-<tr>
-    <td style="text-align: center;"><strong>Visual Studio Code</strong></td>
-    <td style="text-align: center;"><strong>Visual Studio</strong></td>
-</tr>
-<tr>
-    <td width="50%" style="text-align: center;">
-        <a href="#join-from-visual-studio-code">
-            <img src="../media/vs-code.svg" width="100%"><br/>
-        </a>
-    </td>
-    <td width="50%" style="text-align: center;">
-        <a href="#join-from-visual-studio">
-            <img src="../media/vs-ide.svg" width="100%"><br/>
-        </a>
-    </td>
-</tr>
-</table>
+The exact instructions vary between [Visual Studio](#join-from-visual-studio) and [Visual Studio Code](#join-from-visual-studio-code), so pick the tool you intend to use for more information.
 
 ## Join from Visual Studio Code
 

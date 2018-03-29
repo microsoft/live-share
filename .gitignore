@@ -9,4 +9,6 @@ _repo.*/
 
 .vs
 
+docfx.console
+
 vslivesharedocs

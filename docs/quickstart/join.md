@@ -35,7 +35,7 @@ Installing the extension is easy. Just follow these steps:
 
 <table style="width: 100%; border:none;">
 <tr>
-    <td style="width: 128px; text-align: center; border:none;"><img src="../media/vs-icon.png" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide.svg" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
        1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
@@ -45,7 +45,7 @@ Installing the extension is easy. Just follow these steps:
     </td>
 </tr>
 <tr style="border:none;">
-    <td style="width: 128px; text-align: center; border:none;"><img src="../media/vscode-icon.png" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" /></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
@@ -58,31 +58,49 @@ Installing the extension is easy. Just follow these steps:
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
-### 2. Start a discussion with the host
+### 2. Sign into Live Share
 
-It's always good to start up a conversation via voice or chat in your favorite client before joining a collaboration session since you'll obviously need to communicate to collaborate.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process. Click the "sign in" button / status bar item to get started.
 
-### 3. Open/re-open the invite link in a browser
-
-After installing Visual Studio Live Share for your IDE/editor, simply open (or re-open) the invite web page using the invite link your colleague sent you.
-
-You should be notified that your browser wants to launching your Visual Studio Live Share enabled tool and if you accept it the IDE/editor will launch and automatically start the process of joining the collaboration session.
-
-> **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing Visual Studio Live Share before opening/re-opening the invite page. Still having trouble? See [join manually](../reference/manual-join.md) for details.
-
-![Join page](../media/join-page.png)
-
-### 4. Sign into Live Share
-
-To let other collaborators know who you are, you may be asked to sign in during the join process using a GitHub or Microsoft work, school, or personal account.
+<table style="border: none;">
+<tr style="border: none;">
+    <td width="50%" style="vertical-align: top; border: none;">
+        <img src="../media/vscode-sign-in-button.png" width="100%" />
+    </td>
+    <td width="50%" style="vertical-align: top; border: none;">
+        <img src="../media/vs-sign-in-button.png" width="100%" />
+    </td>
+</tr>
+</table>
 
 If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
+### 3. Open/re-open the invite link in a browser
+
+Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
+
+You should be notified that your browser wants to launching a Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
+
+![Join page](../media/join-page.png)
+
+If the host is offline, the browser will instead telling you this is the case. You can then contact the host and ask them to share again.
+
+> **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing the extension and waited for the dependencies to finish installing (see the status bar) before opening/re-opening the invite page. Still having trouble? See [join manually](../reference/manual-join.md) for details.
+
 ### 5. Collaborate!
 
-That's it!! In a few moments you'll be connected to your colleague's collaboration session. 
+That's it!! In a few moments you'll be connected to your colleague's collaboration session. Here's a few things to try out:
+
+1. Move around the project independently and make some edits
+2. Check out working intellisense for JavaScript, TypeScript, and/or C# code
+3. Jump to the host's location and edit something together
+4. Pin to the host and follow as they make edits in different files
+5. Ask the host to start up a co-debugging session with you
+6. Ask the host to share a local server so you can check out something like a web app running on their machine
 
 Interested in joining the private limited preview so you can create collaboration sessions instead of just joining them? [Sign up now!](https://aka.ms/vsls-signup)
+
+Still having problems? See [troubleshooting](../troubleshooting.md).
 
 ## See also
 
