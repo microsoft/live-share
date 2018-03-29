@@ -60,15 +60,15 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### 2. Sign into Live Share
 
-After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process. Click the "sign in" button / status bar item to get started.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button.png" />
+        <img src="../media/vscode-sign-in-button.png" width="100%" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-sign-in-button.png" />
+        <img src="../media/vs-sign-in-button.png" width="100%" />
     </td>
 </tr>
 </table>
@@ -92,10 +92,11 @@ If the host is offline, the browser will instead telling you this is the case. Y
 That's it!! In a few moments you'll be connected to your colleague's collaboration session. Here's a few things to try out:
 
 1. Move around the project independently and make some edits
-2. Jump to the host's location and edit something together
-3. Pin to the host and follow as they make edits in different files
-4. Ask the host to start up a co-debugging session with you
-5. Ask the host to share a local server so you can check out something like a web app running on their machine
+2. Check out working intellisense for JavaScript, TypeScript, and/or C# code
+3. Jump to the host's location and edit something together
+4. Pin to the host and follow as they make edits in different files
+5. Ask the host to start up a co-debugging session with you
+6. Ask the host to share a local server so you can check out something like a web app running on their machine
 
 Interested in joining the private limited preview so you can create collaboration sessions instead of just joining them? [Sign up now!](https://aka.ms/vsls-signup)
 
