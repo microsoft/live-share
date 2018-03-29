@@ -63,12 +63,13 @@ The following are troubleshooting tips for sign in problems.
 | VS Code | <strong>Join:</strong> You were <strong>not prompted / able to launch VS Code</strong> after opening the join page in a browser. |  Tips: <ul><li>Be sure you've <i>started the VS Code at least once and waited for the install to complete in the status bar.</i></li><li>If that doesn't work, try running the "Live Share: Launcher Setup" command.</li><li>Finally, see [joining manually](reference/manual-join.md) as a workaround.</lu></ul> If you hit this problem, we would love to see what might be happening, so please [log a bug](https://aka.ms/vsls-new-issue). |
 | VS | <strong>Join:</strong> You were <strong>not prompted / able to launch VS </strong> after opening the join page in a browser. |  See [join manually](reference/manual-join.md).<br /><br /> We would also love to see your logs, so please please [log a bug](https://aka.ms/vsls-problem) using VIsual Studio's "Report a Problem..." feature. |
 | All | <strong>Join:</strong> You would prefer to <strong>paste the join link directly into VS / VS Code</strong> rather than clicking on the web link. | See [join manually](reference/manual-join.md). |
+| All | <strong>Join:</strong> You see a message saying, "**the owner of the workspace seems to be offline**," when joining via the browser. | Possible workarounds:<br /><ul><li>Try [joining manually](reference/manual-join.md). We have seen issues with cross-region (e.g. east and west US) joins due to service issues that do not affect manual joins.</li><li>Live Share may be unable to route directly to the host when running in "auto" connection mode. Try [relay mode](reference/connectivity.md).</li></ul>See [connectivity trobuleshooting](#connectivity) for more possibilities |
 
 ## Connectivity
 
-The information below can help you troubleshoot if you're having problems related to connectivity or timeouts when signing in, sharing, or joining. 
+The information below can help you troubleshoot if you're having problems related to connectivity or timeouts when signing in, sharing, or joining.
 
-As outlined in the **[connectivity requirements for Live Share](reference/connectivity.md)** article, different connection modes have different requirements to function so there are a few different potential issues going on.
+As outlined in the [connectivity requirements for Live Share](reference/connectivity.md) article, different connection modes have different requirements to function so there are a few different potential issues going on.
 
 | Tool | Problem | Probable Cause | 
 |------|------|----------------|
@@ -78,6 +79,8 @@ As outlined in the **[connectivity requirements for Live Share](reference/connec
 | All | You are in <strong>auto mode</strong> (the default), are able to sign in, but see a <strong>timeout or connection error</strong> when either sharing or joining. | Either both direct and relay modes are failing to connect or there is a bug with auto mode. If you are able to connect after [switching to direct or relay mode](reference/connectivity.md#changing-the-connection-mode), please [raise a bug](https://aka.ms/vsls-problem). |
 | All | You are in <strong>direct mode</strong>, are able to sign in, but see a <strong>timeout or connection error</strong> when either sharing or joining. | The guest and host cannot directly connect. Try [auto or relay mode](reference/connectivity.md#changing-the-connection-mode) to see if the problem goes away. You may need to [manually allow Live Share through your personal firewall](reference/connectivity.md#manually-adding-a-firewall-entry) or simply use relay mode. |
 | All | You are in <strong>relay mode</strong>, are able to sign in, but are notified of a <strong>timeout or connection error</strong> when either sharing or joining. | Access to *.servicebus.windows.net on port 80/443 is blocked is blocked by your personal or corporate firewall. Try [direct mode](reference/connectivity.md#changing-the-connection-mode). |
+
+See the [connectivity requirements for Live Share](reference/connectivity.md) article, for more information on connectivity requirements.
 
 ## See also
 
