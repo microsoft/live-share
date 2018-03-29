@@ -43,17 +43,27 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ## Sign in
 
-In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does not opt you into any marketing or other research activities. Signing in is easy.
+In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does not opt you into any marketing or other research activities.
+
+
+
+If you're been accepted into the private limited preview (session hosts), **use credentials that are associated with the email you used to sign up**. These can be a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
 
 By default Visual Studio uses the your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
 
 ![VS sign in](../media/vs-sign-in-button.png)
 
-If you've been accepted into the private limited preview (session hosts) and want to share, you should **sign in using the same credentials you used to sign up**. If you need to use a different sign-in than your VS [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
+If you need to use a different sign-in than your VS [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
 ![VS Tools Options Live Share](../media/vs-tools-options.png)
 
 Selecting **External Account** allows you to select an account not supported by Visual Studio's personalization feature like GitHub. A browser will automatically appear the first time you use a Live Share feature so you may complete sign in.
+
+If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
+
+1. Add the email as a secondary address to your GitHub profile
+2. Verify it
+3. Sign out of Live Share (if you've signed in) and back in again using your GitHub profile
 
 If you run into trouble, check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 

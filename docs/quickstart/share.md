@@ -29,7 +29,11 @@ Ready to get going?  Team collaboration should be so quick and natural, that it 
 
 Just follow these steps to start sharing.
 
-### 1. Install the extension
+### 1. Wait for your acceptance email
+
+Anyone can *join* a collaboration session, but you'll need to be accepted into the preview to share. After [signing up](https://aka.ms/vsls-signup) for the Live Share preview, wait to receive your acceptance email. Be sure to check your junk mail from time to time just in case!
+
+### 2. Install the extension
 
 Installing the extension is easy. Just follow these steps:
 
@@ -58,7 +62,7 @@ Installing the extension is easy. Just follow these steps:
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
-### 2. Sign into Live Share
+### 3. Sign in
 
 After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), sign in with **credentials that are associated with the email you used to sign up**. These can be a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Click the "sign in" button / status bar item to get started.
 
@@ -83,7 +87,7 @@ If you signed up with an email that **is not already tied to a Microsoft persona
 
 There are a few other tips in [troubleshooting](../troubleshooting.md#sign-in), but if this still doesn't work, email vsls-feedback@microsoft.com and we can swap your email out.
 
-### 3. Start a collaboration session
+### 4. Start a collaboration session
 
 Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard.
 
@@ -100,7 +104,7 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [change the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
-### 4. Send someone the invite link
+### 5. Send someone the invite link
 
 Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened. 
 
@@ -108,7 +112,7 @@ Note that the **person you invite does not need to sign up or be accepted into t
 
 If they've got more questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
 
-### 5. Collaborate!
+### 6. Collaborate!
 
 That's it!! Here's a few things to try out once a guest has joined you:
 

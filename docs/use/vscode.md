@@ -41,8 +41,7 @@ After that, downloading and installing the Visual Studio Live Share extension is
 1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+)
 2. [Download](https://aka.ms/vsls-dl/vscode) and install the VS Live Share extension from the marketplace.
 3. Reload Visual Studio Code
-4. Wait for dependencies to download and install (see status bar).
-
+4. Wait for dependencies to download and install (see status bar).<br/>
     ![Finishing install](../media/vscode-finishing-install.png)
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
@@ -51,15 +50,27 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ## Sign in
 
-In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does not opt you into any marketing or other research activities. Signing in is easy.
+In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does not opt you into any marketing or other research activities.
 
-You can hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply click on the "Sign in" status bar item and follow the directions to sign in.
+If you're been accepted into the private limited preview (session hosts), **use credentials that are associated with the email you used to sign up**. These can be a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
+
+Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply click on the "Sign in" status bar item and follow the directions to sign in.
 
  ![VS Code Download](../media/vscode-sign-in-button.png)
 
-A browser will appear where you can complete the sign-in process.If you're been accepted into the private limited preview (session hosts), **use the same  credentials you used to sign up**.
+A browser will appear where you can complete the sign-in process.
 
-If you are running into problems with VS Code not picking up a successful sign-in, click on the "Having trouble" link on the success screen in the browser and follow the directions. Check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
+If you are running into problems with VS Code not picking up a successful sign-in, click on the "Having trouble" link on the success screen in the browser and follow the directions.
+
+If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
+
+1. Add the email as a secondary address to your GitHub profile
+2. Verify it
+3. Sign out of Live Share (if you've signed in) and back in again using your GitHub profile
+
+If this does not work, contact vsls-feedback@microsoft.com and we can swap out your email address.
+
+Check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
 ## Using the scoped command menu
 
@@ -109,13 +120,11 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 ### End the collaboration session
 
-As a host, you can can stop sharing completely and end the collaboration session opening the scoped command menu by clicking the session state status bar item and selecting "End Collaboration Session" or hit **Ctrl+Shift+P** and select the "Live Share: End collaboration session".
+As a host, you can can stop sharing completely and end the collaboration session by hitting hit **Ctrl+Shift+P** and select the "Live Share: End collaboration session" command or opening the scoped command menu by clicking the session state status bar item and selecting "End Collaboration Session."
 
 ![Share button](../media/vscode-end-collaboration.png)
 
 All guests will be notified that the session has ended.  Once the session has ended, guests will no longer be able to access the content and any temp files are automatically cleaned up.
-
-### Troubleshooting
 
 Having issues with sharing? Check out [troubleshooting](../troubleshooting.md#share-and-join).
 
@@ -131,7 +140,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
     After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process.
 
-    See [sign in](#sign-in) for more details. You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session and will not receive email updates by simply signing into a collaboration session.
+    See [sign in](#sign-in) for more details. You *do not need to be signed up or accepted* into the private limited preview to participate in a collaboration session and will not receive email updates by simply signing into a Live Share session.
 
 2. **Click on the invite link / open the invite in your browser**
 
@@ -161,7 +170,7 @@ You can also manually join without using a web link which can be useful in situa
 
     After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process.
 
-    See [sign in](#sign-in) for more details. You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session and will not receive email updates by simply signing into a collaboration session.
+    See [sign in](#sign-in) for more details. You *do not need to be signed up or accepted* into the private limited preview to participate in a collaboration session and will not receive email updates by simply signing into a Live Share session.
 
 2. **Use the join command**
 
@@ -183,14 +192,13 @@ You can also manually join without using a web link which can be useful in situa
 
 ### Leave the collaboration session
 
-As a guest, you can leave the collaboration session without ending it for others by simply closing the VS Code window. If you'd prefer to keep the window open, you the scoped command menu by clicking on the session state status bar item and selecting "End Collaboration Session" or hit **Ctrl+Shift+P** and select the "Live Share: End collaboration session".
+As a guest, you can leave the collaboration session without ending it for others by simply closing the VS Code window. If you'd prefer to keep the window open, hit **Ctrl+Shift+P** and select the "Live Share: End collaboration session" command or use the scoped command menu by clicking on the session state status bar item and selecting "Leave Collaboration Session".
 
 ![Share button](../media/vscode-leave-session.png)
 
 Any temp files are automatically cleaned up so no further action is needed.
-### Troubleshooting
 
-Having issues with sharing? Check out [troubleshooting](../troubleshooting.md#share-and-join).
+Having issues with joining? Check out [troubleshooting](../troubleshooting.md#share-and-join).
 
 ## Co-editing
 
@@ -277,9 +285,9 @@ Each collaborator can investigate different variables, jump to different files i
 
 As a guest, you may wish to stop debugging temporarily. Fortunatley, you can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the host or other guests.
 
-If you've updated settings so that as a guest you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can use click on the session state status bar icon and then select the "Attach to a Shared Debugging Session" from the scoped command menu.
+![VS Code debugger stop button](../media/vscode-debug-stop.png)
 
-![VS Code session state icon](../media/vscode-share-state.png)
+If you've updated settings so that as a guest you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can use the scoped command menu by clicking on the session state status bar icon and then selecting "Attach to a Shared Debugging Session".
 
 ![VS Code attach debugger](../media/vscode-reattach.png)
 
