@@ -83,7 +83,7 @@ If you signed up with an email that **is not already tied to a Microsoft persona
 
 ### 3. Start a collaboration session
 
-Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard. 
+Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard.
 
 > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [change the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
@@ -106,7 +106,19 @@ Note that the **person you invite does not need to sign up or be accepted into t
 
 ### 5. Collaborate!
 
-That's it!! Once your colleague has joined the collaboration session you'll be up and running!
+That's it!! You can send the person you invited a link to the "[Quickstart: Join your first session](join.md)" article if they've got questions.
+
+Here's a few things to try out once they've joined:
+
+1. Move around the project independently and make some edits
+2. Jump to the guest's location and edit something together
+3. Pin to the guest and follow as they make edits in different files
+4. Start up a co-debugging session with them
+5. Share a local server so you can check out something like a web app running on their machine
+
+Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/vs.md) extension docs for information on how to do these actions and more.
+
+Still having problems? See [troubleshooting](../troubleshooting.md).
 
 ## See also
 
