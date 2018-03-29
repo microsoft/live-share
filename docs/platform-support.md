@@ -36,20 +36,20 @@ All languages / platforms have same file intellisense (when the respective exten
 | CSS | *N/A* | *N/A* |
 | Python | | ✅ |
 | Markdown | *N/A* | *N/A* |
-| Java | | ✅ | |
-| Go | | ✅ | |
-| C++ | | ✅ | |
-| PowerShell | *N/A* | ✅ | | |
-| Bash | *N/A* | ✅ | |
+| Java | | ✅ |
+| Go | | ✅ |
+| C++ | | ✅ |
+| PowerShell | *N/A* | ✅ | 
+| Bash | *N/A* | ✅ |
 | Erlang | | ✅ | 
 | Haskell | | ? |
 | PHP | | ✅ |
 | Reason/OCaml | | *N/A* <sup>5</sup> |
-| Ruby | | ✅ | |
+| Ruby | | ✅ |
 | Rust | | *N/A* <sup>4</sup> |
 | Swift | | *N/A* <sup>4</sup> |
-| Dart | | |
-| Perl | | |
+| Dart | |  ✅ |
+| Perl | |  ✅ |
 | AL | | |
 | SQL / T-SQL | *N/A* | |
 
