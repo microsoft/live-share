@@ -21,7 +21,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Using Visual Studio with Live Share
+# How-to: Use Visual Studio with Live Share
 
 Ready to get going with Live Share in Visual Studio?  If so, you're in the right spot! In this article we'll walk you through how to use some of the specific features in the Visual Studio Live Share extension for Visual Studio.
 
@@ -33,7 +33,7 @@ Note that all collaboration activities in described here involve a single **coll
 
 ## Installation
 
-Before you begin, you'll need to be sure you've got a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio 2017 (15.6 or higher)** on Windows 7, 8.1, or 10. Getting going is simple:
+Before you begin, you'll need to install **Visual Studio 2017 (15.6 or higher)** on Windows 7, 8.1, or 10. Getting going is simple:
 
 1. Install the latest version of <a href="https://www.visualstudio.com/vs/">Visual Studio 2017</a> (15.6+)<br/>
 2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js
@@ -355,10 +355,18 @@ While there are currently some shortcomings guests will experience while using t
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 - [Troubleshooting](../troubleshooting.md)
 
-## See also
+## Next Steps
+
+Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/join.md)
-- [Using Visual Studio Code with Live Share](vscode.md)
-- [Provide feedback](../support.md)
-- [Troubleshooting](../troubleshooting.md)
+- [How-to: Use Visual Studio Code with Live Share](vscode.md)
+- [How-to: Provide feedback](../support.md)
+
+Reference
+
+- [Language and platform support](../reference/platform-support.md)
+- [Extension support](../reference/extensions.md)
+
+Having problems? See [Troubleshooting](../troubleshooting.md).

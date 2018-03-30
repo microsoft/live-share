@@ -60,7 +60,7 @@ Installing the extension is easy. Just follow these steps:
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
-### 2. Sign into Live Share
+### 2. Sign in
 
 After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process. Click the "sign in" button / status bar item to get started.
 
@@ -108,15 +108,18 @@ Interested in joining the private limited preview so you can create collaboratio
 
 Still having problems? See [troubleshooting](../troubleshooting.md).
 
-## See also
+## Next Steps
+
+Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](share.md)
-- [Using Visual Studio Code with Live Share](../use/vscode.md)
-- [Using Visual Studio with Live Share](../use/vs.md)
+- [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
+- [How-to: Use Visual Studio with Live Share](../use/vs.md)
+- [How-to: Provide feedback](../support.md)
 
 Reference
+
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
-- [Troubleshooting](../troubleshooting.md)
-- [Provide feedback](../support.md)
 
+Having problems? See [Troubleshooting](../troubleshooting.md).

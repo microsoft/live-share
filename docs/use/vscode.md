@@ -21,7 +21,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Using Visual Studio Code with Live Share
+# How-to: Use Visual Studio Code with Live Share
 
 Ready to get going with Live Share in VS Code?  If so, you're in the right spot! In this article we'll walk you through how to use some of the specific features in the Visual Studio Live Share extension for Visual Studio Code.
 
@@ -33,13 +33,13 @@ Note that all collaboration activities in described here involve a single **coll
 
 ## Installation
 
-Before you begin, you'll need to be sure you've got a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.20.0 or higher)** running on:
+Before you begin, you'll need to be sure you've got a version of Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.20.0 or higher)** running on:
 
 - **Windows**: 7, 8.1, or 10
 - **macOS**: Sierra (10.12) and above only. 
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
 - **Linux**: 64-bit Ubuntu Linux 14.04+
-    - Be sure to install [needed Linux prerequisites](#install-linux-prerequistes). 
+    - Be sure to install [needed Linux prerequisites](#install-linux-prerequisites). 
     - Some testing has occurred on 64-bit Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)_
 
@@ -406,10 +406,18 @@ While there are currently some shortcomings guests will experience while using t
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 - [Troubleshooting](../troubleshooting.md)
 
-## See also
+## Next steps
+
+Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/share.md)
-- [Using Visual Studio with Live Share](vs.md)
-- [Provide feedback](../support.md)
-- [Troubleshooting](../troubleshooting.md)
+- [How-to: Use Visual Studio with Live Share](vs.md)
+- [How-to: Provide feedback](../support.md)
+
+Reference
+
+- [Language and platform support](../reference/platform-support.md)
+- [Extension support](../reference/extensions.md)
+
+Having problems? See [Troubleshooting](../troubleshooting.md).

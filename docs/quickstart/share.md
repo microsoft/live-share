@@ -130,14 +130,18 @@ Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/
 
 Still having problems? See [troubleshooting](../troubleshooting.md).
 
-## See also
+## Next Steps
 
-- [Quickstart: Join your first session](join.md)
-- [Using Visual Studio Code with Live Share](../use/vscode.md)
-- [Using Visual Studio with Live Share](../use/vs.md)
+Check out these additional articles for more information.
+
+- [Quickstart: Share your first project](share.md)
+- [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
+- [How-to: Use Visual Studio with Live Share](../use/vs.md)
+- [How-to: Provide feedback](../support.md)
 
 Reference
+
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
-- [Troubleshooting](../troubleshooting.md)
-- [Provide feedback](../support.md)
+
+Having problems? See [Troubleshooting](../troubleshooting.md).

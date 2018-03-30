@@ -84,8 +84,17 @@ See the [connectivity requirements for Live Share](reference/connectivity.md) ar
 
 ## See also
 
-- [Language and platform support](reference/platform-support.md)
-- [Extension support](reference/extensions.md)
+Quickstarts
+- [Share your first project](quickstart/share.md)
+- [Join your first session](quickstart/join.md)
+
+How-tos
+- [Use Visual Studio Code with Live Share](use/vscode.md)
+- [Use Visual Studio with Live Share](use/vs.md)
+- [Provide feedback](support.md)
+
+Reference
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
-- [Provide feedback](support.md)
+- [Language and platform support](reference/platform-support.md)
+- [Extension support](reference/extensions.md)

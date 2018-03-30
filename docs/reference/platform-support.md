@@ -162,5 +162,6 @@ While most languages have some single file Intellisense support, there are some 
 - [Extension support](extensions.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
-- [Provide feedback](../support.md)
-- [Troubleshooting](../troubleshooting.md)
+- [How-to: Provide feedback](../support.md)
+
+Having problems? See [Troubleshooting](../troubleshooting.md).
