@@ -28,18 +28,20 @@ Welcome to Visual Studio Live Share! Live Share lets you to achieve greater conf
 
 Ready to get going? In this article we'll run you through some concepts and how to install Visual Studio Live Share. If you're looking for an abridged version, check out the [share](quickstart/share.md) and [join](quickstart/join.md) quickstarts.
 
+>**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+
 ## Install Visual Studio Live Share
 
 Before you begin, you'll need to be sure you've got a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements.
 
 - **Visual Studio 2017 (15.6 or higher)** - The latest update of Visual Studio 2017 (any edition) on Windows 7, 8.1, or 10.
-- **Visual Studio Code (1.20.0 or higher)** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
+- **Visual Studio Code (1.20.0 or higher)** - Windows 7, 8.1, or 10, macOS *Sierra (10.12) and above only*, 64-bit Linux *(64-bit Ubuntu 14.04+ recommended - [see details](use/vscode.md#installation))*.
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
 <table style="width: 100%; border:none;">
 <tr>
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide.svg" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide.svg" width="128px"/></td>
     <td  style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
        1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
@@ -49,10 +51,10 @@ After that, downloading and installing the Visual Studio Live Share extension is
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-code.svg" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-code.svg" width="128px"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
-        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
+        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> 
         2. Download and install the VS Live Share extension from the marketplace. <br />
         3. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png"></a>

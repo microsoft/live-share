@@ -19,6 +19,8 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 [![Slack](docs/media/Slack_Mark-24x24.png)](https://aka.ms/vsls-slack) [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
+>**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+
 ## Quickstarts
 
 - [Share your first project](docs/quickstart/share.md) (after you've been accepted into the preview)
@@ -50,7 +52,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 <table style="width: 100%; border:none;">
 <tr>
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-ide.svg" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-ide.svg" width="128px"/></td>
     <td style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
        1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
@@ -60,10 +62,10 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-code.svg" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-code.svg" width="128px"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
-        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
+        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="docs/use/vscode.md#installation">details</a>)</b><br />
         2. Download and install the VS Live Share extension from the marketplace. <br />
         3. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="docs/media/download.png"></a>
