@@ -355,10 +355,18 @@ While there are currently some shortcomings guests will experience while using t
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 - [Troubleshooting](../troubleshooting.md)
 
-## See also
+## Next Steps
+
+Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/join.md)
-- [Using Visual Studio Code with Live Share](vscode.md)
+- [Tutorial: Using Visual Studio Code with Live Share](vscode.md)
 - [Provide feedback](../support.md)
-- [Troubleshooting](../troubleshooting.md)
+
+Reference
+
+- [Language and platform support](../reference/platform-support.md)
+- [Extension support](../reference/extensions.md)
+
+Having problems? See [Troubleshooting](../troubleshooting.md).

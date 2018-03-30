@@ -108,15 +108,18 @@ Interested in joining the private limited preview so you can create collaboratio
 
 Still having problems? See [troubleshooting](../troubleshooting.md).
 
-## See also
+## Next Steps
+
+Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](share.md)
-- [Using Visual Studio Code with Live Share](../use/vscode.md)
-- [Using Visual Studio with Live Share](../use/vs.md)
-
-Reference
-- [Language and platform support](../reference/platform-support.md)
-- [Extension support](../reference/extensions.md)
-- [Troubleshooting](../troubleshooting.md)
+- [Tutorial: Using Visual Studio Code with Live Share](../use/vscode.md)
+- [Tutorial: Using Visual Studio with Live Share](../use/vs.md)
 - [Provide feedback](../support.md)
 
+Reference
+
+- [Language and platform support](../reference/platform-support.md)
+- [Extension support](../reference/extensions.md)
+
+Having problems? See [Troubleshooting](../troubleshooting.md).
