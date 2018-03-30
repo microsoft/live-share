@@ -133,8 +133,8 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#using-the-sc
 ## See also
 
 Quickstarts
-- [Quickstart: Share your first project](quickstart/share.md)
-- [Quickstart: Join your first session](quickstart/join.md)
+- [Share your first project](quickstart/share.md)
+- [Join your first session](quickstart/join.md)
 
 How-tos
 - [Use Visual Studio Code with Live Share](use/vscode.md)
