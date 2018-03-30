@@ -52,7 +52,7 @@ Installing the extension is easy. Just follow these steps:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" /></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
-        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+) for Windows (7, 8.1, or 10) or macOS <b>(Sierra & up).</b><br />
+        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux (<a href="../use/vscode.md#installation">see details</a>)<br />
         2. Download and install the VS Live Share extension from the marketplace. <br />
         3. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png"></a>
@@ -76,6 +76,8 @@ After installing the Live Share extension, restarting, and waiting for dependenc
     </td>
 </tr>
 </table>
+
+In VS Code, a browser will appear for you use to sign in. If you are using VS Code on Linux, you'll be prompted to enter a user code once that will be displayed in the browser once you've signed in. Otherwise you can simply close the browser.
 
 If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 

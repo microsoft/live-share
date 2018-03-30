@@ -33,8 +33,13 @@ Note that all collaboration activities in described here involve a single **coll
 
 Before you begin, you'll need to be sure you've got a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.20.0 or higher)** running on:
 
-- Windows 7, 8.1, or 10
-- macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
+- **Windows**: 7, 8.1, or 10
+- **macOS**: Sierra (10.12) and above only. _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
+- **Linux**: 
+    - Ubuntu Linux 14.04+ 64-bit
+    - Initial testing has also been done on 64-bit Fedora 27, CentOS 7, and SuSE 12 but your mileage may vary. 
+    - Be sure to install [needed Linux prerequisites](#install-linux-prerequistes). 
+    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -48,6 +53,37 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 [![Download](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
+### Linux install steps
+
+In addition to the common steps above, Linux users will need to verify two more things.
+
+#### Install Linux prerequisites
+
+Visual Studio Live Share uses the .NET Core runtime which requires the following packages libraries be installed for Ubunutu:
+
+- libunwind8
+- liblttng-ust0
+- libcurl3
+- libssl1.0.0
+- libuuid1
+- libkrb5-3
+- zlib1g
+- libicu52 (for 14.X)
+- libicu55 (for 16.X)
+- libicu57 (for 17.X)
+
+You can [read more about these prerequisites here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
+
+#### Linux browser integration
+
+To enable joining via the browser on Linux, Once Live Share completes the installation process, you will be prompted to run a command like this (where <VERSION> is replaced by the Live Share extension version):
+
+`sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-<VERSION>/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-<VERSION>/cascade.json `
+
+If you skip this step, you can generate the command later by hitting **Ctrl+Shift+P** and running the "Live Share: Launcher Setup" command.
+
+Note that you can also  force a re-instlall by by deleting `/usr/share/applications/vsls-launcher.desktop`
+
 ## Sign in
 
 In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does not opt you into any marketing or other research activities.
@@ -58,9 +94,9 @@ Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply clic
 
  ![VS Code Download](../media/vscode-sign-in-button.png)
 
-A browser will appear where you can complete the sign-in process.
+A browser will appear where you can complete the sign-in process and then close the browser when you are done.
 
-If you are running into problems with VS Code not picking up a successful sign-in, click on the "Having trouble" link on the success screen in the browser and follow the directions.
+If you are running Linux or are running into problems with VS Code not picking up a successful sign-in, click on the "Having trouble" link on the success screen in the browser and follow the directions.
 
 If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
 
@@ -143,6 +179,8 @@ The easiest way to join a collaboration session is to simply open the invite lin
     See [sign in](#sign-in) for more details. You *do not need to be signed up or accepted* into the private limited preview to participate in a collaboration session and will not receive email updates by simply signing into a Live Share session.
 
 2. **Click on the invite link / open the invite in your browser**
+
+    > **Linux users:** Be sure to run the browser integration terminal command when prompted before executing this step. See [here](#linux-browser-integration) for additional details.
 
     Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
@@ -238,8 +276,9 @@ The pin is for a tab set so you can use split view to have a set that is pinned 
 
 To make it easy to hop in and out of pinning, the tab set is un-pinned if any of the following occurs:
 
-1. You edit or make a selection
-2. You click the pin icon again
+1. You edit, move your cursor, or make a selection
+2. You select another file
+3. You click the pin icon again
 
 Afterwards, simply click the pin icon again to follow them once again.
 

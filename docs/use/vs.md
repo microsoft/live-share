@@ -45,8 +45,6 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does not opt you into any marketing or other research activities.
 
-
-
 If you're been accepted into the private limited preview (session hosts), **use credentials that are associated with the email you used to sign up**. These can be a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
 
 By default Visual Studio uses the your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
@@ -215,13 +213,22 @@ At times the person you are collaborating with may need to show you a few differ
 
 Simply hover over a user and you will see a pin icon. Simply click the pin to start following them and as the collaborator moves around or between files you will be moved along with them.
 
-![VS Code pin](../media/vs-pin-hover.png)
-![VS Code pin](../media/vs-pinned.png)
+<table style="border: none;">
+<tr style="border: none;">
+    <td width="50%" style="vertical-align: top; border: none;">
+        <img src="../media/vs-pin-hover.png" width="100%" />
+    </td>
+    <td width="50%" style="vertical-align: top; border: none;">
+        <img src="../media/vs-pinned.png" width="100%" />
+    </td>
+</tr>
+</table>
 
 To make it easy to hop in and out of pinning, the editor is un-pinned if any of the following occurs:
 
-1. You edit or make a selection
-2. You click the pin icon again
+1. You edit, move your cursor, or make a selection
+2. You select another file
+3. You click the pin icon again
 
 Afterwards you can simply click the pin icon again to follow their location once again.
 
