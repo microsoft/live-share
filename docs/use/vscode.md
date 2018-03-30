@@ -61,7 +61,12 @@ In addition to the common steps above, Linux users will need to verify two more 
 
 #### Install Linux prerequisites
 
-Visual Studio Live Share uses the .NET Core runtime which requires the following packages libraries be installed for Ubunutu:
+While typically already present, the following required libraries may be missing from some stripped down distributions:
+
+- gnome-keyring
+- xsel
+
+In addition, Visual Studio Live Share uses the .NET Core runtime which requires the following libraries that may be missing from stripped down Ubuntu distributions:
 
 - libunwind8
 - liblttng-ust0
@@ -74,7 +79,7 @@ Visual Studio Live Share uses the .NET Core runtime which requires the following
 - libicu55 (for 16.X)
 - libicu57 (for 17.X)
 
-You can [read more about these prerequisites here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
+You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
 #### Linux browser integration
 
