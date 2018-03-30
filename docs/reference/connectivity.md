@@ -78,7 +78,8 @@ Having issues with connectivity? Check out [troubleshooting](../troubleshooting.
 
 ## See also
 
-- [Using Visual Studio Code with Live Share](../use/vscode.md)
-- [Using Visual Studio with Live Share](../use/vs.md)
-- [Provide feedback](../support.md)
-- [Troubleshooting](../troubleshooting.md)
+- [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
+- [How-to: Use Visual Studio with Live Share](../use/vs.md)
+- [How-to: Provide feedback](../support.md)
+
+Having problems? See [Troubleshooting](../troubleshooting.md).

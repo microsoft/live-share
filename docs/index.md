@@ -137,11 +137,12 @@ Quickstarts
 - [Quickstart: Join your first session](quickstart/join.md)
 
 How-tos
-- [Using Visual Studio Code with Live Share](use/vscode.md)
-- [Using Visual Studio with Live Share](use/vs.md)
+- [Use Visual Studio Code with Live Share](use/vscode.md)
+- [Use Visual Studio with Live Share](use/vs.md)
+- [Provide feedback](support.md)
 
 Reference
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
-- [Troubleshooting](troubleshooting.md)
-- [Provide feedback](support.md)
+
+Having problems? See [Troubleshooting](troubleshooting.md).

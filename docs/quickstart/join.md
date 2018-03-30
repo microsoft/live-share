@@ -113,9 +113,9 @@ Still having problems? See [troubleshooting](../troubleshooting.md).
 Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](share.md)
-- [Tutorial: Using Visual Studio Code with Live Share](../use/vscode.md)
-- [Tutorial: Using Visual Studio with Live Share](../use/vs.md)
-- [Provide feedback](../support.md)
+- [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
+- [How-to: Use Visual Studio with Live Share](../use/vs.md)
+- [How-to: Provide feedback](../support.md)
 
 Reference
 

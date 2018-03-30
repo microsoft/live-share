@@ -72,7 +72,21 @@ Still having issues? Check out [troubleshooting](../troubleshooting.md#share-and
 
 ## See also
 
-- [Using Visual Studio Code with Live Share](../use/vscode.md)
-- [Using Visual Studio with Live Share](../use/vs.md)
-- [Provide feedback](../support.md)
-- [Troubleshooting](../troubleshooting.md)
+Quickstarts
+
+- [Quickstart: Share your first project](../quickstart/share.md)
+- [Quickstart: Join your first session](../quickstart/join.md)
+
+How-tos
+
+- [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
+- [How-to: Use Visual Studio with Live Share](../use/vscode.md)
+- [How-to: Provide feedback](../support.md)
+
+Reference
+
+- [Language and platform support](../reference/platform-support.md)
+- [Extension support](../reference/extensions.md)
+
+Having problems? See [Troubleshooting](../troubleshooting.md).
+

@@ -21,7 +21,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Using Visual Studio Code with Live Share
+# How-to: Use Visual Studio Code with Live Share
 
 Ready to get going with Live Share in VS Code?  If so, you're in the right spot! In this article we'll walk you through how to use some of the specific features in the Visual Studio Live Share extension for Visual Studio Code.
 
@@ -412,8 +412,8 @@ Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/share.md)
-- [Tutorial: Using Visual Studio with Live Share](vs.md)
-- [Provide feedback](../support.md)
+- [How-to: Use Visual Studio with Live Share](vs.md)
+- [How-to: Provide feedback](../support.md)
 
 Reference
 
