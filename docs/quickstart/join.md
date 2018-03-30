@@ -51,7 +51,6 @@ Installing the extension is easy. Just follow these steps:
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux (<a href="../use/vscode.md#installation">see details</a>)<br />
         2. Download and install the VS Live Share extension from the marketplace. <br />
         3. Reload and wait for dependencies to download and install (see status bar).<br />
-        4. <b>Linux users</b>: <a href="(../use/vscode.md#linux-install-steps">Follow these extra steps.</a><br/>
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png"></a>
     </td>
 </tr>
