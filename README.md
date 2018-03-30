@@ -19,6 +19,8 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 [![Slack](docs/media/Slack_Mark-24x24.png)](https://aka.ms/vsls-slack) [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
+>**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+
 ## Quickstarts
 
 - [Share your first project](docs/quickstart/share.md) (after you've been accepted into the preview)

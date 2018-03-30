@@ -27,6 +27,8 @@ Welcome to Visual Studio Live Share! Live Share lets you to achieve greater conf
 
 Ready to get going? Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
+>**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+
 Just follow these steps to join a collaboration session.
 
 ### 1. Install the extension
