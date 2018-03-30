@@ -34,10 +34,10 @@ Note that all collaboration activities in described here involve a single **coll
 Before you begin, you'll need to be sure you've got a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.20.0 or higher)** running on:
 
 - **Windows**: 7, 8.1, or 10
-- **macOS**: Sierra (10.12) and above only. _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
-- **Linux**: 
-    - Ubuntu Linux 14.04+ 64-bit
-    - Initial testing has also been done on 64-bit Fedora 27, CentOS 7, and SuSE 12 but your mileage may vary. 
+- **macOS**: Sierra (10.12) and above only. 
+    - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
+- **Linux**: Ubuntu Linux 14.04+ 64-bit
+    - Initial testing has been done on 64-bit Fedora 27, CentOS 7, and SuSE 12 but mileage may vary.
     - Be sure to install [needed Linux prerequisites](#install-linux-prerequistes). 
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)_
 
@@ -94,9 +94,7 @@ Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply clic
 
  ![VS Code Download](../media/vscode-sign-in-button.png)
 
-A browser will appear where you can complete the sign-in process and then close the browser when you are done.
-
-If you are running Linux or are running into problems with VS Code not picking up a successful sign-in, click on the "Having trouble" link on the success screen in the browser and follow the directions.
+A browser will appear where you can complete the sign-in process. If you are using VS Code on Linux, you'll be prompted to enter a user code once that will be displayed in the browser once you've signed in. Otherwise you can simply close the browser.
 
 If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
 

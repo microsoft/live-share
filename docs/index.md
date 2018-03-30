@@ -33,7 +33,7 @@ Ready to get going? In this article we'll run you through some concepts and how 
 Before you begin, you'll need to be sure you've got a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements.
 
 - **Visual Studio 2017 (15.6 or higher)** - The latest update of Visual Studio 2017 (any edition) on Windows 7, 8.1, or 10.
-- **Visual Studio Code (1.20.0 or higher)** - Windows 7, 8.1, or 10 or macOS Sierra (10.12) and above only.  _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)._
+- **Visual Studio Code (1.20.0 or higher)** - Windows 7, 8.1, or 10, macOS *Sierra (10.12) and above only*, 64-bit Linux (64-bit Ubuntu 14.04+ recommended - [see details](use/vscode.md#installation)).
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
