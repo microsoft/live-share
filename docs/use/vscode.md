@@ -38,7 +38,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio o
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
 - **Linux**: 64-bit Ubuntu Linux 14.04+
     - Be sure to install [needed Linux prerequisites](#install-linux-prerequistes). 
-    - Some testing has been done on 64-bit Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
+    - Some testing has occurred on 64-bit Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
