@@ -133,15 +133,19 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#using-the-sc
 ## See also
 
 Quickstarts
+
 - [Share your first project](quickstart/share.md)
 - [Join your first session](quickstart/join.md)
 
 How-tos
+
 - [Use Visual Studio Code with Live Share](use/vscode.md)
 - [Use Visual Studio with Live Share](use/vs.md)
 - [Provide feedback](support.md)
 
 Reference
+
+- [Connectivity requirements for Live Share](reference/connectivity.md)
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
 

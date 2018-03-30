@@ -119,6 +119,7 @@ Check out these additional articles for more information.
 
 Reference
 
+- [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
 

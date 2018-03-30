@@ -96,5 +96,6 @@ How-tos
 Reference
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
+- [Connectivity requirements for Live Share](reference/connectivity.md)
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)

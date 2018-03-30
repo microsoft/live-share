@@ -29,9 +29,10 @@ Have a question or feedback? There are many ways to contribute. We want to hear 
 
 Our docs may have what you need!
 
-- [Troubleshooting](troubleshooting.md)
+- [Connectivity requirements for Live Share](reference/connectivity.md)
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
+- [Troubleshooting](troubleshooting.md)
 - [FAQ](https://aka.ms/vsls-faq)
 
 ## Issues and Requests
@@ -58,10 +59,3 @@ Quickstarts
 How-tos
 - [Use Visual Studio Code with Live Share](use/vscode.md)
 - [Use Visual Studio with Live Share](use/vs.md)
-- [Provide feedback](support.md)
-
-Reference
-- [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
-- [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
-- [Language and platform support](reference/platform-support.md)
-- [Extension support](reference/extensions.md)

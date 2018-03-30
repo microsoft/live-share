@@ -85,8 +85,9 @@ How-tos
 
 Reference
 
-- [Language and platform support](../reference/platform-support.md)
-- [Extension support](../reference/extensions.md)
+- [Connectivity requirements for Live Share](connectivity.md)
+- [Language and platform support](platform-support.md)
+- [Extension support]*extensions.md)
 
 Having problems? See [Troubleshooting](../troubleshooting.md).
 

@@ -353,7 +353,6 @@ While there are currently some shortcomings guests will experience while using t
 - [Extension support](../reference/extensions.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
-- [Troubleshooting](../troubleshooting.md)
 
 ## Next Steps
 
@@ -363,10 +362,6 @@ Check out these additional articles for more information.
 - [Quickstart: Join your first session](../quickstart/join.md)
 - [How-to: Use Visual Studio Code with Live Share](vscode.md)
 - [How-to: Provide feedback](../support.md)
-
-Reference
-
-- [Language and platform support](../reference/platform-support.md)
-- [Extension support](../reference/extensions.md)
+- [Connectivity requirements for Live Share](../reference/connectivity.md)
 
 Having problems? See [Troubleshooting](../troubleshooting.md).
