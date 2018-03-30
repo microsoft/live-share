@@ -36,9 +36,9 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio o
 - **Windows**: 7, 8.1, or 10
 - **macOS**: Sierra (10.12) and above only. 
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
-- **Linux**: Ubuntu Linux 14.04+ 64-bit
-    - Initial testing has been done on 64-bit Fedora 27, CentOS 7, and SuSE 12 but mileage may vary.
+- **Linux**: 64-bit Ubuntu Linux 14.04+
     - Be sure to install [needed Linux prerequisites](#install-linux-prerequistes). 
+    - Some testing has been done on 64-bit Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
@@ -76,13 +76,15 @@ You can [read more about these prerequisites here](https://docs.microsoft.com/en
 
 #### Linux browser integration
 
-To enable joining via the browser on Linux, Once Live Share completes the installation process, you will be prompted to run a command like this (where <VERSION> is replaced by the Live Share extension version):
+To enable joining via the browser on Linux, Once Live Share completes the installation process, you will be prompted to run a command that has been copied to the clipboard in a Terminal window. You'll need to specify your sudo password when prompted.
 
-`sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-<VERSION>/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-<VERSION>/cascade.json `
+The command will look like this (where VERSION is replaced by the Live Share extension version):
 
-If you skip this step, you can generate the command later by hitting **Ctrl+Shift+P** and running the "Live Share: Launcher Setup" command.
+`sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json `
 
-Note that you can also  force a re-instlall by by deleting `/usr/share/applications/vsls-launcher.desktop`
+If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser.
+
+You can always access the command again later, by hitting **Ctrl+Shift+P** and running the "Live Share: Launcher Setup" command. The command will be copied to your clipboard.
 
 ## Sign in
 
