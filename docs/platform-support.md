@@ -51,6 +51,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Dart | |  ✅ |
 | Perl | |  ✅ |
 | AL | | |
+| Julia | | *N/A* <sup>4</sup> |
 | SQL / T-SQL | *N/A* | |
 
 <sup>1</sup> No CSHTML support in C# extension.<br />
