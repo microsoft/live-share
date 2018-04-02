@@ -60,8 +60,6 @@ If you are using Visual Studio and have already signed into the tool, Visual Stu
 
 ### 3. Open/re-open the invite link in a browser
 
-> **Linux users:** Be sure to run the browser integration terminal command when prompted before executing this step. See [here](../docs/getting-started.md#linux-browser-integration) for additional details.
-
 Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
 You should be notified that your browser wants to launching a Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
