@@ -61,7 +61,7 @@ The specific ports and URLs that need to be available for Live Share to function
 
 ## Manually adding a firewall entry
 
-As outlined above, your personal firewall needs to allow **vsls-agent**to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it from one of the following locations:
+As outlined above, your personal firewall needs to allow **vsls-agent** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it from one of the following locations:
 
 VS Code (substitute **VERSION** for the extension version):
 
@@ -71,6 +71,8 @@ VS Code (substitute **VERSION** for the extension version):
 Visual Studio:
 - Run a search for vsls-agent.exe in your VS install location under **IDE\Extensions**
 - The VS install location is typically C:\Program Files (x86)\Microsoft Visual Studio\Preview\\*EDITION* where **EDITION** is Community, Enterprise, etc 
+
+How you do this will vary based on your firewall software, but you can find information about [configuring the Windows Firewall here](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/create-an-inbound-program-or-service-rule).
 
 ## Troubleshooting
 

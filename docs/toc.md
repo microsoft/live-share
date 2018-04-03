@@ -22,6 +22,7 @@
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
+## [Release Notes](reference/releases.md)
 # Resources
 ## [Troubleshooting](troubleshooting.md)
 ## [Provide feedback](support.md)

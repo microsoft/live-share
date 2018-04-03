@@ -148,5 +148,6 @@ Reference
 - [Connectivity requirements for Live Share](reference/connectivity.md)
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
+- [Release Notes](reference/releases.md)
 
 Having problems? See [Troubleshooting](troubleshooting.md).

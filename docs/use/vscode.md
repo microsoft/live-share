@@ -85,6 +85,8 @@ You can [read more about .NET Core 2.0 prerequisites for other distributions her
 
 Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
 
+> **Note:** If you do not see this notification you may be missing the "xsel" or other libraries Live Share depends. Be sure to install the needed [Linux prerequisites](#install-linux-prerequisites).
+
 The command will look like this (where VERSION is replaced by the Live Share extension version):
 
 `sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json `
