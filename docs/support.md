@@ -57,5 +57,5 @@ Quickstarts
 - [Join your first session](quickstart/join.md)
 
 How-tos
-- [Use Visual Studio Code with Live Share](use/vscode.md)
-- [Use Visual Studio with Live Share](use/vs.md)
+- [Collaborate using Visual Studio Code](use/vscode.md)
+- [Collaborate using Visual Studio](use/vs.md)

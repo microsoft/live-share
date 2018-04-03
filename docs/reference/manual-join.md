@@ -79,8 +79,8 @@ Quickstarts
 
 How-tos
 
-- [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
-- [How-to: Use Visual Studio with Live Share](../use/vscode.md)
+- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+- [How-to: Collaborate using Visual Studio](../use/vscode.md)
 - [How-to: Provide feedback](../support.md)
 
 Reference

@@ -1,6 +1,6 @@
 ---
 title: "Share quickstart - Visual Studio Live Share | Microsoft Docs"
-description: "An abridged walkthrough on sharing your first project in Visual Studio Live Share."
+description: "An abridged walkthrough on sharing your first project using a Visual Studio Live Share collaboration session."
 ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
@@ -135,8 +135,8 @@ Still having problems? See [troubleshooting](../troubleshooting.md).
 Check out these additional articles for more information.
 
 - [Quickstart: Join your first collaboration session](join.md)
-- [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
-- [How-to: Use Visual Studio with Live Share](../use/vs.md)
+- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+- [How-to: Collaborate using Visual Studio](../use/vs.md)
 
 Reference
 

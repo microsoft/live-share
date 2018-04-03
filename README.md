@@ -28,8 +28,8 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 ## How-tos
 
-- [Use Visual Studio Code with Live Share](docs/use/vscode.md)
-- [Use Visual Studio with Live Share](docs/use/vs.md)
+- [Collaborate using Visual Studio Code](docs/use/vscode.md)
+- [Collaborate using Visual Studio](docs/use/vs.md)
 
 ## Reference
 
