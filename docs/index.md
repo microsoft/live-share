@@ -6,13 +6,13 @@ ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
-ms.topic: "getting-started"
+  - "liveshare"
+ms.topic: "overview"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 
@@ -141,7 +141,6 @@ How-tos
 
 - [Use Visual Studio Code with Live Share](use/vscode.md)
 - [Use Visual Studio with Live Share](use/vs.md)
-- [Provide feedback](support.md)
 
 Reference
 
@@ -150,4 +149,5 @@ Reference
 - [Extension support](reference/extensions.md)
 - [Release Notes](reference/releases.md)
 
-Having problems? See [Troubleshooting](troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
+

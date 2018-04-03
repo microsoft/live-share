@@ -6,13 +6,13 @@ ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
+  - "liveshare"
 ms.topic: "reference"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 # Visual Studio Live Share Release Notes
@@ -28,9 +28,9 @@ This release is a mix of features, foundational changes, and bug-fixes and which
 2. **Improved Debugger Compatibility** - A number of foundational updates have been made that should improve overall compatibility along with support for using the `postDebugTask` option. This should unblock a number of scenarios including the following platforms:
 
     - C++ and Unreal Engine 4 (#170)
-    - Dynamics AL (#138)
     - Dart
     - IoT Edge
+    - Dynamics AL (#138)
 
 ### GitHub Reported Issues Fixed (VS Code) 🚀
 
@@ -118,11 +118,11 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 This is a patch release for a critical issue when installing the Live Share extension with the 32-bit version of VS Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 🤕🛠😃💯
 
-### GitHub Reported Issues Fixed (VS Code) 🚀 
+### GitHub Reported Issues Fixed (VS Code) �� 
 
 1. **VS Code x86** - No Sign In and Share Button (#102)
 
-## v0.2.131 (Visual Studio / VS Code)
+## v0.2.131 (VS Code / Visual Studio)
 
 This is mostly a bug-fix release *for both Visual Studio 2017 and Visual Studio Code*, however, we also addressed a couple of highly-requested Visual Studio Code enhancements as well. Thanks for all the amazing feedback thus far, and please keep it coming! 💯
 
@@ -130,11 +130,11 @@ This is mostly a bug-fix release *for both Visual Studio 2017 and Visual Studio 
 
 1. **Breakpoint synchronization** (#42) - Upon joining, guests will now be able to see any existing breakpoints that the host has set. Additionally, all participants will be able to add/remove breakpoints, and have them synchronized with everyone else within the collaboration session. This was already supported in Visual Studio, and now works correctly between Visual Studio and Visual Studio Code.
 
-   ![test6](https://user-images.githubusercontent.com/116461/36178789-e6e4b3ee-10ce-11e8-9f77-79099919e9f9.gif)
+   ![Breakpoint synchronization animation](https://user-images.githubusercontent.com/116461/36178789-e6e4b3ee-10ce-11e8-9f77-79099919e9f9.gif)
 
 2. **Extension size reduction** (#58) - In order to make your initial installation quicker, we no longer package our platform-specific dependencies in the extension, and instead, delay-download them once you reload VS Code. This behavior is more inline with how other extensions behave (e.g. C#) and provides an overall smoother acquisition experience.
 
-## v0.2.64 (Visual Studio / VS Code)
+## v0.2.64 (VS Code / Visual Studio)
 
 This is the initial "insiders" build for the private preview release of Visual Studio Live Share. This release includes support for:
 
@@ -175,7 +175,6 @@ How-tos
 
 - [Use Visual Studio Code with Live Share](../use/vscode.md)
 - [Use Visual Studio with Live Share](../use/vs.md)
-- [Provide feedback](../support.md)
 
 Reference
 
@@ -183,4 +182,4 @@ Reference
 - [Language and platform support](platform-support.md)
 - [Extension support](extensions.md)
 
-Having problems? See [Troubleshooting](troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

@@ -6,13 +6,13 @@ ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
-ms.topic: "article"
+  - "liveshare"
+ms.topic: "reference"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 <!--
@@ -82,6 +82,5 @@ Having issues with connectivity? Check out [troubleshooting](../troubleshooting.
 
 - [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
 - [How-to: Use Visual Studio with Live Share](../use/vs.md)
-- [How-to: Provide feedback](../support.md)
 
-Having problems? See [Troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

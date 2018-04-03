@@ -6,13 +6,13 @@ ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
-ms.topic: "article"
+  - "liveshare"
+ms.topic: "conceptual"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 <!--
@@ -420,7 +420,6 @@ Check out these additional articles for more information.
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/share.md)
 - [How-to: Use Visual Studio with Live Share](vs.md)
-- [How-to: Provide feedback](../support.md)
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 
-Having problems? See [Troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

@@ -6,13 +6,13 @@ ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
-ms.topic: "reference"
+  - "liveshare"
+ms.topic: "troubleshooting"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 <!--
@@ -91,7 +91,6 @@ Quickstarts
 How-tos
 - [Use Visual Studio Code with Live Share](use/vscode.md)
 - [Use Visual Studio with Live Share](use/vs.md)
-- [Provide feedback](support.md)
 
 Reference
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
@@ -99,3 +98,5 @@ Reference
 - [Connectivity requirements for Live Share](reference/connectivity.md)
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
+
+Still having problems? You can [provide feedback](../support.md).

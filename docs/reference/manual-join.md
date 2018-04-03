@@ -6,13 +6,13 @@ ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
+  - "liveshare"
 ms.topic: "reference"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 # Join a session manually
 
@@ -87,7 +87,6 @@ Reference
 
 - [Connectivity requirements for Live Share](connectivity.md)
 - [Language and platform support](platform-support.md)
-- [Extension support]*extensions.md)
+- [Extension support](extensions.md)
 
-Having problems? See [Troubleshooting](../troubleshooting.md).
-
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
