@@ -149,5 +149,5 @@ Reference
 - [Extension support](reference/extensions.md)
 - [Release Notes](reference/releases.md)
 
-Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
+Having problems? See [troubleshooting](troubleshooting.md) or [provide feedback](support.md).
 

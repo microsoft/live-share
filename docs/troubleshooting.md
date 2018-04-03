@@ -99,4 +99,4 @@ Reference
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
 
-Still having problems? You can [provide feedback](../support.md).
+Still having problems? You can [provide feedback](support.md).
