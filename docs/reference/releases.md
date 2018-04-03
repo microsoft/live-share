@@ -1,4 +1,3 @@
-
 ---
 title: "Release Notes -  Visual Studio Live Share | Microsoft Docs"
 description: "A breakdown of changes by release for Visual Studio Live Share for VS and VS Code."
@@ -33,15 +32,15 @@ This release is a mix of features, foundational changes, and bug-fixes and which
     - Dart
     - IoT Edge
 
-### Reported Issues Fixed (Visual Studio Code) 🚀
+### GitHub Reported Issues Fixed (VS Code) 🚀
 
 1. **Joining a session via the browser does not join if VS Code not in Applications** (#174) - We had various reports of joining not working from the browser if VS Code was present outside of the Applications folder when the extension was installed on macOS 10.12 and up due to "[App Translocation](http://krypted.com/mac-security/app-translocation-services-os-x-10-12/)". This should now be resolved.
 
 2. **Installation validation improvements** (#112) - We've received a number of reports of users hitting a `Could not load file or assembly 'XXXXXX, Version=X.X.X.X` error after installing dependencies. We've added validations to ensure the needed dependencies are on disk before calling the install successful.
 
-## v0.2.306 (VS)
+## v0.2.306 (Visual Studio)
 
-This release is a mix of minor features, foundational changes, and bug-fixes and which addresses a number of user-reported *Visual Studio* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve!  💯
+This release is a mix of minor features, foundational changes, and bug-fixes and which addresses a number of user-reported *Visual Studio 2017* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve!  💯
 
 ### Enhancements
 
@@ -57,7 +56,7 @@ This release is a mix of minor features, foundational changes, and bug-fixes and
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio Code* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
   
-### GitHub Reported Issues Fixed (Visual Studio Code) 🚀
+### GitHub Reported Issues Fixed (VS Code) 🚀
  
 1. **Synchronizing conditional breakpoints** (#65) 🎉- We had previously enabled participants to synchronize breakpoints, and in this release, you can share conditional breakpoints as well (using either condition expressions and/or hit counts). Additionally, if you disable/enable breakpoints, that state will also be reflected in all participant's IDE.
 
@@ -73,7 +72,7 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 ## v0.2.258 (Visual Studio)
 
-This is another bug-fix release, which addresses a number of user-reported *Visual Studio* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+This is another bug-fix release, which addresses a number of user-reported *Visual Studio 2017* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
  
 ### GitHub Reported Issues Fixed (Visual Studio) 🚀 
  
@@ -87,18 +86,15 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 1. **Windows firewall notification** - When sharing for the first time, the Live Share extension will determine whether it can accept incoming connections from guests, and if not, notify you about the need to grant it permissions with the Windows firewall. This way, users aren't surprised with the firewall dialog, without understanding why they're getting it.
 
-
 ## v0.2.208 (Visual Studio)
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio 2017* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
  
-### GitHub Reported Issues Fixed (Visual Studio) 🚀 
+### Reported Issues Fixed (Visual Studio) 🚀 
  
-1. Proxy support (#86) - VS now uses  default credentials when authenticating to proxies.  However, we are leaving the issue open while we track down a more consistent and permanent fix.
+1. **Proxy support** (#86) - VS now uses  default credentials when authenticating to proxies.  However, we are leaving the issue open while we track down a more consistent and permanent fix.
 
-### Other Fixes
-
-The release also fixes a number of other issues including ensuring the locals pane is populated when VS is the host, improving the reliability of using direct connections in "auto" mode, improved connection error messages, and a number of telemetry reported issues.
+1. **Stability fixes** - The release also fixes a number of other issues including ensuring the locals pane is populated when VS is the host, improving the reliability of using direct connections in "auto" mode, improved connection error messages, and a number of telemetry reported issues.
 
 ## v0.2.206 (VS Code)
 
@@ -106,32 +102,29 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
  
 ### GitHub Reported Issues Fixed (VS Code) 🚀 
  
-1. Launcher fails to start VS Code after clicking “Open” in Chrome on Windows 7 (#103)
+1. **Launcher fails to start VS Code after clicking “Open” in Chrome on Windows 7** (#103)
 
-1. "Dependencies could not be installed" error when installing the VS Live Share w/multiple windows open (#124)
+1. **"Dependencies could not be installed" error** when installing the VS Live Share w/multiple windows open (#124)
 
-1. "Could not update extension binaries execution permissions" error when running VS Code after installing the Live Share extension (#107)
+1. **"Could not update extension binaries execution permissions" error** when running VS Code after installing the Live Share extension (#107)
 
-1. Live Share does not properly activate when run on Mac with a case sensitive file system (#119)
+1. **Live Share does not properly activate** when run on Mac with a case sensitive file system (#119)
  
-1. Proxy support (#86) - We discovered this bug is partly due to a VS Code issue (Microsoft/vscode#12588) and setting the HTTP_PROXY and HTTPS_PROXY environment variables globally can resolve the issue for some Live Share users. We are, however, leaving the issue open while we track down a more consistent and permanent fix.
+1. **Proxy support** (#86) - We discovered this bug is partly due to a VS Code issue (Microsoft/vscode#12588) and setting the HTTP_PROXY and HTTPS_PROXY environment variables globally can resolve the issue for some Live Share users. We are, however, leaving the issue open while we track down a more consistent and permanent fix.
 
-1. Recent folder/file list shows temp locations of ended collaboration sessions (#66)
+1. **Recent folder/file list shows temp locations** of ended collaboration sessions (#66)
 
 ## v0.2.151 (VS Code)
 
 This is a patch release for a critical issue when installing the Live Share extension with the 32-bit version of VS Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 🤕🛠😃💯
 
-## GitHub Reported Issues Fixed (VS Code) 🚀 
+### GitHub Reported Issues Fixed (VS Code) 🚀 
 
-1. VS Code x86 - No Sign In and Share Button (#102)
+1. **VS Code x86** - No Sign In and Share Button (#102)
 
+## v0.2.131 (Visual Studio / VS Code)
 
-## v0.2.131 (VS Code)
-
-This is mostly a bug-fix release *(for both Visual Studio and Visual Studio Code)*, however, we also addressed a couple of highly-requested Visual Studio Code enhancements as well. Thanks for all the amazing feedback thus far, and please keep it coming! 💯 
-
-**Note: Assets are for [documentation](http://aka.ms/vsls-docs) not the product source code.**
+This is mostly a bug-fix release *for both Visual Studio 2017 and Visual Studio Code*, however, we also addressed a couple of highly-requested Visual Studio Code enhancements as well. Thanks for all the amazing feedback thus far, and please keep it coming! 💯
 
 ### Feature Enhancements (VS Code) 🚀 
 
@@ -141,26 +134,33 @@ This is mostly a bug-fix release *(for both Visual Studio and Visual Studio Code
 
 2. **Extension size reduction** (#58) - In order to make your initial installation quicker, we no longer package our platform-specific dependencies in the extension, and instead, delay-download them once you reload VS Code. This behavior is more inline with how other extensions behave (e.g. C#) and provides an overall smoother acquisition experience.
 
-
-## 0.2.64 (VS and VS Code) - Initial "Private Preview" insiders release
+## v0.2.64 (Visual Studio / VS Code)
 
 This is the initial "insiders" build for the private preview release of Visual Studio Live Share. This release includes support for:
 
 1. **Sharing and joining** using a Microsoft work, school, or personal account or GitHub account
+
 2. **Co-editing for up to 5 people**
+
 3. **Full intellisenese** for C#, JavaScript, and TypeScript with basic support for others ([see here for details](http://aka.ms/vsls-docs/platform-support))
+
 4. **Ability to "pin"** to another participant to follow them as they edit
+
 5. **Co-debugging**
+
 6. **Sharing local servers**
+
 7. **Automatic web app sharing** from VS
+
 8. **File explorer integration** 
 
-See [documentation](http://aka.ms/vsls-docs) for more details.
-
 Other limitations of note:
-- **Breakpoint sync'ing** is not working for VS Code
-- **Solution view** is not available for guests in Visual Studio
-- **File operations** (add, remove, rename) are not supported for guests
+
+1. **Breakpoint sync'ing** is not working for VS Code
+
+2. **Solution view** is not available for guests in Visual Studio
+
+3. **File operations** (add, remove, rename) are not supported for guests
 
 See [language/platform support](http://aka.ms/vsls-docs/platform-support) and [known issues](http://aka.ms/vsls-issues) for full details.
 
@@ -168,19 +168,19 @@ See [language/platform support](http://aka.ms/vsls-docs/platform-support) and [k
 
 Quickstarts
 
-- [Share your first project](quickstart/share.md)
-- [Join your first session](quickstart/join.md)
+- [Share your first project](../quickstart/share.md)
+- [Join your first session](../quickstart/join.md)
 
 How-tos
 
-- [Use Visual Studio Code with Live Share](use/vscode.md)
-- [Use Visual Studio with Live Share](use/vs.md)
-- [Provide feedback](support.md)
+- [Use Visual Studio Code with Live Share](../use/vscode.md)
+- [Use Visual Studio with Live Share](../use/vs.md)
+- [Provide feedback](../support.md)
 
 Reference
 
-- [Connectivity requirements for Live Share](reference/connectivity.md)
-- [Language and platform support](reference/platform-support.md)
-- [Extension support](reference/extensions.md)
+- [Connectivity requirements for Live Share](connectivity.md)
+- [Language and platform support](platform-support.md)
+- [Extension support](extensions.md)
 
 Having problems? See [Troubleshooting](troubleshooting.md).
