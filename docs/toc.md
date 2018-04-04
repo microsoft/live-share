@@ -2,8 +2,8 @@
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
-## [Collaborate on a Node.js app](quickstart/nodejs.md)
-## [Collaborate on an ASP.NET app](quickstart/aspdotnet.md)
+## [VS Code and Node.js](quickstart/nodejs.md)
+## [Visual Studio and ASP.NET](quickstart/aspdotnet.md)
 # Using Visual Studio Code
 ## [Overview](use/vscode.md)
 ## [Sign-in](use/vscode.md#sign-in)
