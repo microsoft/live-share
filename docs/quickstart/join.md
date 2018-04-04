@@ -1,18 +1,18 @@
 ---
 title: "Join quickstart - Visual Studio Live Share | Microsoft Docs"
-description: "An abridged walkthrough on joining your first Visual Studio Live Share session."
+description: "An abridged walkthrough on joining your first Visual Studio Live Share collaboration session."
 ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
+  - "liveshare"
 ms.topic: "quickstart"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 <!--
@@ -113,13 +113,15 @@ Still having problems? See [troubleshooting](../troubleshooting.md).
 Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](share.md)
-- [How-to: Use Visual Studio Code with Live Share](../use/vscode.md)
-- [How-to: Use Visual Studio with Live Share](../use/vs.md)
-- [How-to: Provide feedback](../support.md)
+- [Quickstart: Collaborate on a Node.js app in VS Code](nodejs.md)
+- [Quickstart: Collaborate on a ASP.NET app in Visual Studio](aspdotnet.md)
+- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+- [How-to: Collaborate using Visual Studio](../use/vs.md)
 
 Reference
 
+- [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
 
-Having problems? See [Troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

@@ -1,18 +1,18 @@
 ---
-title: "Using Visual Studio Code -  Visual Studio Live Share | Microsoft Docs"
-description: "A set of useful how-tos for using Visual Studio Code with Live Share."
+title: "Collaborate using Visual Studio Code -  Visual Studio Live Share | Microsoft Docs"
+description: "A set of collaboration how-tos for Visual Studio Code and Live Share."
 ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
-ms.topic: "article"
+  - "liveshare"
+ms.topic: "conceptual"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 <!--
@@ -21,9 +21,9 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# How-to: Use Visual Studio Code with Live Share
+# How-to: Collaborate using Visual Studio Code
 
-Ready to get going with Live Share in VS Code?  If so, you're in the right spot! In this article we'll walk you through how to use some of the specific features in the Visual Studio Live Share extension for Visual Studio Code.
+Ready to get collaborating with Live Share in VS Code?  If so, you're in the right spot! In this article we'll walk you through how to use some of the specific features in the Visual Studio Live Share extension for Visual Studio Code.
 
 Note that all collaboration activities in described here involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest.
 
@@ -41,7 +41,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **Linux**: 64-bit Ubuntu Linux 14.04+
     - Be sure to install [needed Linux prerequisites](#install-linux-prerequisites). 
     - Some testing has occurred on 64-bit Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
-    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)_
+    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -61,7 +61,12 @@ In addition to the common steps above, Linux users will need to verify two more 
 
 #### Install Linux prerequisites
 
-Visual Studio Live Share uses the .NET Core runtime which requires the following packages libraries be installed for Ubunutu:
+While typically already present, the following required libraries may be missing from some stripped down distributions:
+
+- gnome-keyring
+- xsel
+
+In addition, Visual Studio Live Share uses the .NET Core runtime which requires the following libraries that may be missing from stripped down Ubuntu distributions:
 
 - libunwind8
 - liblttng-ust0
@@ -74,17 +79,19 @@ Visual Studio Live Share uses the .NET Core runtime which requires the following
 - libicu55 (for 16.X)
 - libicu57 (for 17.X)
 
-You can [read more about these prerequisites here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
+You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
 #### Linux browser integration
 
-To enable joining via the browser on Linux, Once Live Share completes the installation process, you will be prompted to run a command that has been copied to the clipboard in a Terminal window. You'll need to specify your sudo password when prompted.
+Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
+
+> **Note:** If you do not see this notification you may be missing the "xsel" or other libraries Live Share depends. Be sure to install the needed [Linux prerequisites](#install-linux-prerequisites).
 
 The command will look like this (where VERSION is replaced by the Live Share extension version):
 
 `sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json `
 
-If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser.
+Run the script in a Terminal and enter your sudo password when prompted. If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser.
 
 You can always access the command again later, by hitting **Ctrl+Shift+P** and running the "Live Share: Launcher Setup" command. The command will be copied to your clipboard.
 
@@ -412,12 +419,9 @@ Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/share.md)
-- [How-to: Use Visual Studio with Live Share](vs.md)
-- [How-to: Provide feedback](../support.md)
+- [Quickstart: Collaborate on a Node.js app in VS Code](../quickstart/nodejs.md)
+- [Quickstart: Collaborate on a ASP.NET app in Visual Studio](../quickstart/aspdotnet.md)
+- [How-to: Collaborate using Visual Studio](vs.md)
+- [Connectivity requirements for Live Share](../reference/connectivity.md)
 
-Reference
-
-- [Language and platform support](../reference/platform-support.md)
-- [Extension support](../reference/extensions.md)
-
-Having problems? See [Troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

@@ -6,13 +6,13 @@ ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
+  - "liveshare"
 ms.topic: "reference"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 <!--
@@ -160,8 +160,8 @@ While most languages have some single file Intellisense support, there are some 
 ## See also
 
 - [Extension support](extensions.md)
+- [Connectivity requirements for Live Share](connectivity.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
-- [How-to: Provide feedback](../support.md)
 
-Having problems? See [Troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

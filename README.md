@@ -26,10 +26,10 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 - [Share your first project](docs/quickstart/share.md) (after you've been accepted into the preview)
 - [Join your first collaboration session](docs/quickstart/join.md) (no need to sign up or be accepted in the preview)
 
-## Documentation
+## How-tos
 
-- [Using Visual Studio Code with Live Share](docs/use/vscode.md)
-- [Using Visual Studio with Live Share](docs/use/vs.md)
+- [Collaborate using Visual Studio Code](docs/use/vscode.md)
+- [Collaborate using Visual Studio](docs/use/vs.md)
 
 ## Reference
 

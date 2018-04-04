@@ -2,6 +2,8 @@
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
+## [VS Code and Node.js](quickstart/nodejs.md)
+## [Visual Studio and ASP.NET](quickstart/aspdotnet.md)
 # Using Visual Studio Code
 ## [Overview](use/vscode.md)
 ## [Sign-in](use/vscode.md#sign-in)
@@ -22,6 +24,7 @@
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
+## [Release Notes](reference/releases.md)
 # Resources
 ## [Troubleshooting](troubleshooting.md)
 ## [Provide feedback](support.md)

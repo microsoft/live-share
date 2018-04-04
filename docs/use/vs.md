@@ -1,18 +1,18 @@
 ---
-title: "Using Visual Studio - Visual Studio Live Share | Microsoft Docs"
-description: "A set of useful how-tos for using Visual Studio with Live Share."
+title: "Collaborate using Visual Studio - Visual Studio Live Share | Microsoft Docs"
+description: "A set of collaboration how-tos for Visual Studio and Live Share."
 ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
-ms.topic: "article"
+  - "liveshare"
+ms.topic: "conceptual"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 <!--
@@ -21,9 +21,9 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# How-to: Use Visual Studio with Live Share
+# How-to: Collaborate using Visual Studio
 
-Ready to get going with Live Share in Visual Studio?  If so, you're in the right spot! In this article we'll walk you through how to use some of the specific features in the Visual Studio Live Share extension for Visual Studio.
+Ready to get collaborating with Live Share in Visual Studio? If so, you're in the right spot! In this article we'll walk you through how to use some of the specific features in the Visual Studio Live Share extension for Visual Studio.
 
 Note that all collaboration activities in described here involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest.
 
@@ -353,7 +353,6 @@ While there are currently some shortcomings guests will experience while using t
 - [Extension support](../reference/extensions.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
-- [Troubleshooting](../troubleshooting.md)
 
 ## Next Steps
 
@@ -361,12 +360,9 @@ Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/join.md)
-- [How-to: Use Visual Studio Code with Live Share](vscode.md)
-- [How-to: Provide feedback](../support.md)
+- [Quickstart: Collaborate on a Node.js app in VS Code](../quickstart/nodejs.md)
+- [Quickstart: Collaborate on a ASP.NET app in Visual Studio](../quickstart/aspdotnet.md)
+- [How-to: Collaborate using Visual Studio Code](vscode.md)
+- [Connectivity requirements for Live Share](../reference/connectivity.md)
 
-Reference
-
-- [Language and platform support](../reference/platform-support.md)
-- [Extension support](../reference/extensions.md)
-
-Having problems? See [Troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

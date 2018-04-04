@@ -6,13 +6,13 @@ ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "live-share"
-ms.topic: "getting-started"
+  - "liveshare"
+ms.topic: "overview"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
 ms.workload: 
-  - "live-share"
+  - "liveshare"
 ---
 
 
@@ -133,16 +133,23 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#using-the-sc
 ## See also
 
 Quickstarts
+
 - [Share your first project](quickstart/share.md)
 - [Join your first session](quickstart/join.md)
+- [Collaborate on a Node.js app in VS Code](quickstart/nodejs.md)
+- [Collaborate on a ASP.NET app in Visual Studio](quickstart/aspdotnet.md)
 
 How-tos
-- [Use Visual Studio Code with Live Share](use/vscode.md)
-- [Use Visual Studio with Live Share](use/vs.md)
-- [Provide feedback](support.md)
+
+- [Collaborate using Visual Studio Code](use/vscode.md)
+- [Collaborate using Visual Studio](use/vs.md)
 
 Reference
+
+- [Connectivity requirements for Live Share](reference/connectivity.md)
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
+- [Release Notes](reference/releases.md)
 
-Having problems? See [Troubleshooting](troubleshooting.md).
+Having problems? See [troubleshooting](troubleshooting.md) or [provide feedback](support.md).
+
