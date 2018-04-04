@@ -14,6 +14,11 @@ manager: "AmandaSilver"
 ms.workload: 
   - "liveshare"
 ---
+<!--
+Copyright © Microsoft Corporation
+All rights reserved.
+Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
+-->
 
 # Visual Studio Live Share Release Notes
 
@@ -170,6 +175,8 @@ Quickstarts
 
 - [Share your first project](../quickstart/share.md)
 - [Join your first session](../quickstart/join.md)
+- [Collaborate on a Node.js app in VS Code](../quickstart/nodejs.md)
+- [Collaborate on a ASP.NET app in Visual Studio](../quickstart/aspdotnet.md)
 
 How-tos
 

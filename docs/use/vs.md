@@ -360,6 +360,8 @@ Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/join.md)
+- [Quickstart: Collaborate on a Node.js app in VS Code](../quickstart/nodejs.md)
+- [Quickstart: Collaborate on a ASP.NET app in Visual Studio](../quickstart/aspdotnet.md)
 - [How-to: Collaborate using Visual Studio Code](vscode.md)
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 

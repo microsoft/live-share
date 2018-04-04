@@ -113,6 +113,8 @@ Still having problems? See [troubleshooting](../troubleshooting.md).
 Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](share.md)
+- [Quickstart: Collaborate on a Node.js app in VS Code](nodejs.md)
+- [Quickstart: Collaborate on a ASP.NET app in Visual Studio](aspdotnet.md)
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
 - [How-to: Collaborate using Visual Studio](../use/vs.md)
 
