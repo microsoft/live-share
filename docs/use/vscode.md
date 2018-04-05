@@ -28,7 +28,7 @@ Ready to get collaborating with Live Share in VS Code?  If so, you're in the rig
 Note that all collaboration activities in described here involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest.
 
 *Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts instead.*
- 
+
 >**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Installation
@@ -36,10 +36,10 @@ Note that all collaboration activities in described here involve a single **coll
 Before you begin, you'll need to be sure you've got a version of Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.20.0 or higher)** running on:
 
 - **Windows**: 7, 8.1, or 10
-- **macOS**: Sierra (10.12) and above only. 
+- **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
 - **Linux**: 64-bit Ubuntu Linux 14.04+
-    - Be sure to install [needed Linux prerequisites](#install-linux-prerequisites). 
+    - Be sure to install [needed Linux prerequisites](#install-linux-prerequisites).
     - Some testing has occurred on 64-bit Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x)_
 
@@ -89,7 +89,7 @@ Once Live Share completes the installation process on Linux, you will be prompte
 
 The command will look like this (where VERSION is replaced by the Live Share extension version):
 
-`sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json `
+    sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
 
 Run the script in a Terminal and enter your sudo password when prompted. If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser.
 
@@ -309,7 +309,7 @@ Visual Studio Live Share's collaborative debugging feature is a powerful and uni
 
 Using it simple.
 
-1. Be sure both the host and all guests have the appropriate debugging extension installed. 
+1. Be sure both the host and all guests have the appropriate debugging extension installed.
 
 2. If not already set up for the project, the host should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from VS Code as you would normally. No special setup is required.
 
@@ -317,9 +317,9 @@ Using it simple.
 
     ![VS Code debug button](../media/vscode-debug-button.png)
 
-    > **Tip:** You can participate in VS debugging sessions from VS Code and vice versa! If the host is using Visual Studio, you can check out the [Visual Studio instructions](vs.md#co-debuging) but the steps are roughly the same. 
+    > **Tip:** You can participate in VS debugging sessions from VS Code and vice versa! If the host is using Visual Studio, you can check out the [Visual Studio instructions](vs.md#co-debuging) but the steps are roughly the same.
 
-Once the debugger attaches on the host's side, all guests are also attached. While there is one debugging "session" running on the host's machine, all collaborators are connected to it and have their own view. 
+Once the debugger attaches on the host's side, all guests are also attached. While there is one debugging "session" running on the host's machine, all collaborators are connected to it and have their own view.
 
 ![VS Code debugger attached](../media/vscode-debugger.png)
 
@@ -355,13 +355,13 @@ Simply **edit settings.json** (File > Preferences > Settings), add one of the fo
 |---------|----------|
 |``"liveshare.joinDebugSessionOption":"Automatic"`` | The default. As a guest, you'll automatically join any shared debugging session the host starts. |
 | ``"liveshare.joinDebugSessionOption":"Prompt"`` | As a guest, you are prompted as to whether you want to join a shared debugging session when it is started by the host. |
-| ``"liveshare.joinDebugSessionOption":"Manual"`` | As a guest, you'll need to manually join any  debugging sessions. See [detaching and reattaching](#detaching-and-reattaching). | 
+| ``"liveshare.joinDebugSessionOption":"Manual"`` | As a guest, you'll need to manually join any  debugging sessions. See [detaching and reattaching](#detaching-and-reattaching). |
 
 ## Share a local server
 
 From time to time, as a collaboration session host you may find that you want to share additional local servers or services with guests. This can range from other RESTful end-points to databases or other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
 
-The guests will then be able to access the server you shared on that port from their own local machine on the exact same port. For example, if you shared a web server running on port 3000, the guest can access that same running web server on their own machine at http://localhost:3000! This is accomplished via a secure SSH or SSL tunnel between the host and guests and authenticated via the service so you can be sure that only those in the collaboration session have access.
+The guests will then be able to access the server you shared on that port from their own local machine on the exact same port. For example, if you shared a web server **running on port 3000**, the guest can access that same running web server on their **own machine** at [http://localhost:3000](http://localhost:3000)! This is accomplished via a secure SSH or SSL tunnel between the host and guests and authenticated via the service so you can be sure that only those in the collaboration session have access.
 
 For security purposes, only servers running on ports you specify are available to other guests. Fortunately, its easy to add one as the collaboration session **host**. Here's how:
 
@@ -377,7 +377,7 @@ For security purposes, only servers running on ports you specify are available t
 
     ![Screen shot of port number prompt](../media/vscode-enter-port.png)<br />
 
-That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port was already occupied)! 
+That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port was already occupied)!
 
 If the port is already in use on the guests machine, a different one is automatically selected. Fortunately, as a guest you can see a list of currently shared ports (by name if specified) by clicking on the session state status bar icon as above and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
 
