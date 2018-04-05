@@ -1,0 +1,31 @@
+{
+    "cSpell.words": [
+        "Capitan",
+        "aspdotnet",
+        "chuxel",
+        "clantz",
+        "coedit",
+        "debuging",
+        "keyring",
+        "libcurl",
+        "libicu",
+        "libkrb",
+        "liblttng",
+        "libssl",
+        "libunwind",
+        "libuuid",
+        "liveshare",
+        "quickstart",
+        "quickstarts",
+        "res",
+        "tful",
+        "vsliveshare",
+        "walkthrough",
+        "xsel"
+    ],
+    "markdownlint.config": {
+        "default": true,
+        "MD007": { "indent": 4 },
+        "MD033": false
+    }
+}

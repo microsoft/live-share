@@ -4,16 +4,18 @@
 ## [Join your first session](quickstart/join.md)
 ## [VS Code and Node.js](quickstart/nodejs.md)
 ## [Visual Studio and ASP.NET](quickstart/aspdotnet.md)
-# Using Visual Studio Code
+# How-tos: VS Code
 ## [Overview](use/vscode.md)
+## [Install](use/vscode.md#installation)
 ## [Sign-in](use/vscode.md#sign-in)
 ## [Share a project](use/vscode.md#share-a-project)
 ## [Join a session](use/vscode.md#join-a-collaboration-session)
 ## [Co-edit](use/vscode.md#co-editing)
 ## [Co-debug](use/vscode.md#co-debuging)
 ## [Share a local server](use/vscode.md#share-a-local-server)
-# Using Visual Studio
+# How-tos: Visual Studio
 ## [Overview](use/vs.md)
+## [Install](use/vs.md#installation)
 ## [Sign-in](use/vs.md#sign-in)
 ## [Share a project](use/vs.md#share-a-project)
 ## [Join a session](use/vs.md#join-a-collaboration-session)
