@@ -15,6 +15,7 @@
         "libunwind",
         "libuuid",
         "liveshare",
+        "markdownlint",
         "quickstart",
         "quickstarts",
         "res",
