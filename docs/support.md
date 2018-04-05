@@ -8,6 +8,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Have a question or feedback? There are many ways to contribute. We want to hear from you!
 
+## TLDR
+
 In short:
 
 - **Known issues:** See [bugs](https://aka.ms/vsls-bugs) or [feature requests](https://aka.ms/vsls-feature-requests) and up-vote using a 👍 reaction.
