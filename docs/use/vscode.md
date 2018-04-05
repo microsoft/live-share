@@ -28,7 +28,7 @@ Ready to get collaborating with Live Share in VS Code?  If so, you're in the rig
 Note that all collaboration activities in described here involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest.
 
 *Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts instead.*
-
+ 
 >**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Installation
@@ -331,7 +331,7 @@ Each collaborator can investigate different variables, jump to different files i
 
 ### Detaching and reattaching
 
-As a guest, you may wish to stop debugging temporarily. Fortunatley, you can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the host or other guests.
+As a guest, you may wish to stop debugging temporarily. Fortunately, you can simply click the "stop" icon in the debug toolbar to detach the debugger without affecting the host or other guests.
 
 ![VS Code debugger stop button](../media/vscode-debug-stop.png)
 

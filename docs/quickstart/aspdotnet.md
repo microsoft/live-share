@@ -21,7 +21,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Quickstart: Collaborate on a ASP.NET app in Visual Studio
+# Quickstart: Collaborate on an ASP.NET app in Visual Studio
 
 STUB
 
