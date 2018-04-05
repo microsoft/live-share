@@ -8,6 +8,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Have a question or feedback? There are many ways to contribute. We want to hear from you!
 
+In short:
+
+- **Known issues:** See [bugs](https://aka.ms/vsls-bugs) or [feature requests](https://aka.ms/vsls-feature-requests) and up-vote using a 👍 reaction.
+- **VS Code bugs:** [Log a new issue](https://aka.ms/vsls-new-issue). Use the "Live Share: Export logs" command and [drag-and-drop the zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) onto the bug or [email them](mailto:vsls-feedback@microsoft.com).
+- **VS bugs:** [Help > Send Feedback > Report a Problem...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Repro the problem before sending and logs will be auto-attached.
+- **Feature requests:** [Log a new request](https://aka.ms/vsls-new-issue) or use a 👍 reaction to [up-vote an existing one](https://aka.ms/vsls-feature-requests).
+- **Contact us:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter), or [Slack](https://aka.ms/vsls-slack).
+
+More details below.
+
 ## Documentation
 
 Our docs may have what you need!
