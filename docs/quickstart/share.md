@@ -128,7 +128,7 @@ That's it!! Here's a few things to try out once a guest has joined you:
 
 Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/vs.md) extension docs for information on how to do these actions and more.
 
-Still having problems? See [troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
 
 ## Next Steps
 
@@ -145,5 +145,3 @@ Reference
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
-
-Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

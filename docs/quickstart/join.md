@@ -106,7 +106,7 @@ That's it!! In a few moments you'll be connected to your colleague's collaborati
 
 Interested in joining the private limited preview so you can create collaboration sessions instead of just joining them? [Sign up now!](https://aka.ms/vsls-signup)
 
-Still having problems? See [troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
 
 ## Next Steps
 
@@ -123,5 +123,3 @@ Reference
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
-
-Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

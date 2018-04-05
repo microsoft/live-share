@@ -74,10 +74,6 @@ Visual Studio:
 
 How you do this will vary based on your firewall software, but you can find information about [configuring the Windows Firewall here](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/create-an-inbound-program-or-service-rule).
 
-## Troubleshooting
-
-Having issues with connectivity? Check out [troubleshooting](../troubleshooting.md#connectivity).
-
 ## See also
 
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)

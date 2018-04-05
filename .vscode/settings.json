@@ -20,9 +20,11 @@
         "quickstarts",
         "res",
         "tful",
+        "tldr",
         "vsliveshare",
         "walkthrough",
-        "xsel"
+        "xsel",
+        "TLDR"
     ],
     "markdownlint.config": {
         "default": true,
