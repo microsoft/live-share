@@ -66,7 +66,7 @@ While typically already present, the following required libraries may be missing
 - gnome-keyring
 - xsel
 
-In addition, Visual Studio Live Share uses the .NET Core runtime which requires the following libraries that may be missing from stripped down Ubuntu distributions:
+In addition, Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Ubuntu distributions:
 
 - libunwind8
 - liblttng-ust0
@@ -85,15 +85,15 @@ You can [read more about .NET Core 2.0 prerequisites for other distributions her
 
 Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
 
-> **Note:** If you do not see this notification you may be missing the "xsel" or other libraries Live Share depends. Be sure to install the needed [Linux prerequisites](#install-linux-prerequisites).
+> **Note:** If you do not see this notification you may be missing "xsel" or other libraries that Live Share requires. Verify tou have installed the needed [Linux prerequisites](#install-linux-prerequisites).
 
 The command will look like this (where VERSION is replaced by the Live Share extension version):
 
     sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
 
-Run the script in a Terminal and enter your sudo password when prompted. If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser.
+Run the script in a Terminal and enter your sudo password when prompted.
 
-You can always access the command again later, by hitting **Ctrl+Shift+P** and running the "Live Share: Launcher Setup" command. The command will be copied to your clipboard.
+If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and terminal command will be copied to your clipboard again.
 
 ## Sign in
 

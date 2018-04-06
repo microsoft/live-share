@@ -1,5 +1,5 @@
 ---
-title: "Node.js Quickstart - Visual Studio Live Share | Microsoft Docs"
+title: "Node.js quickstart - Visual Studio Live Share | Microsoft Docs"
 description: "An abridged walkthrough for collaborating on a Node.js project in Visual Studio Code using a Live Share collaboration session."
 ms.custom:
 ms.date: 03/22/2018
