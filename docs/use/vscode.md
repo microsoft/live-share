@@ -80,7 +80,7 @@ The following are libraries Live Share itself depends on that may be missing fro
 - gnome-keyring
 - xsel
 
-In addition, Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Debian/Ubuntu distributions or derivative:
+In addition, Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Debian/Ubuntu distributions or derivatives:
 
 - libunwind8
 - liblttng-ust0
@@ -92,6 +92,8 @@ In addition, Visual Studio Live Share uses the .NET Core runtime which requires 
 - libicu52 (for Ubuntu 14.X)
 - libicu55 (for Ubuntu 16.X)
 - libicu57 (for Ubuntu 17.X)
+
+Libraries may be installed on Debian/Ubuntu based distros by running `sudo apt install <library-name>` in a terminal.
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
