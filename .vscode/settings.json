@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "Capitan",
+        "TLDR",
         "aspdotnet",
         "chuxel",
         "clantz",
@@ -15,16 +16,19 @@
         "libunwind",
         "libuuid",
         "liveshare",
+        "mailto",
         "markdownlint",
         "quickstart",
         "quickstarts",
         "res",
+        "servicebus",
         "tful",
         "tldr",
+        "visualstudio",
+        "vsengsaas",
         "vsliveshare",
         "walkthrough",
-        "xsel",
-        "TLDR"
+        "xsel"
     ],
     "markdownlint.config": {
         "default": true,
