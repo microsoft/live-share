@@ -61,7 +61,21 @@ In addition to the common steps above, Linux users will need to verify two more 
 
 #### Install Linux prerequisites
 
-While typically already present, the following required libraries may be missing from some stripped down distributions:
+Some distributions of Linux are missing needed libraries for Live Share. The following is a list of distros and the known missing requirements when installed. Additional details can be found below.
+
+| Distro | Missing libraries |
+|--------|-------------------|
+| Ubuntu 17.10, 16.04 (64-bit) | &lt;none&gt; |
+| Mint 18.3 - Cinnamon (64-bit) | libcurl3, xsel |
+| Fedora 27 (64-bit) | xsel |
+| openSuSE 12 (64-bit) | &lt;none&gt; |
+| CentOS 7 | &lt;none&gt; |
+
+##### List of needed libraries
+
+Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
+
+The following are libraries Live Share itself depends on that may be missing from some stripped down distributions:
 
 - gnome-keyring
 - xsel
