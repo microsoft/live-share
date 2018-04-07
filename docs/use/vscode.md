@@ -61,7 +61,7 @@ In addition to the common steps above, Linux users will need to verify two more 
 
 #### Install Linux prerequisites
 
-Some distributions of Linux are missing needed libraries for Live Share. The following is a list of distros and the known missing requirements when installed. Additional details can be found below.
+Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distros in their vanilla installation. Your results may vary, so additional details can be found below.
 
 | Distro | Missing libraries |
 |--------|-------------------|
@@ -80,7 +80,7 @@ The following are libraries Live Share itself depends on that may be missing fro
 - gnome-keyring
 - xsel
 
-In addition, Visual Studio Live Share uses the .NET Core runtime which requires the following libraries that may be missing from stripped down Ubuntu distributions:
+In addition, Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Debian/Ubuntu distributions or derivative:
 
 - libunwind8
 - liblttng-ust0
@@ -89,9 +89,9 @@ In addition, Visual Studio Live Share uses the .NET Core runtime which requires 
 - libuuid1
 - libkrb5-3
 - zlib1g
-- libicu52 (for 14.X)
-- libicu55 (for 16.X)
-- libicu57 (for 17.X)
+- libicu52 (for Ubuntu 14.X)
+- libicu55 (for Ubuntu 16.X)
+- libicu57 (for Ubuntu 17.X)
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
