@@ -40,7 +40,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
 - **Linux**: 64-bit Ubuntu Linux 14.04+
     - Be sure to install [needed Linux prerequisites](#install-linux-prerequisites).
-    - Some testing has occurred on 64-bit Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
+    - Some testing has occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
@@ -61,13 +61,13 @@ In addition to the common steps above, Linux users will need to verify two more 
 
 #### Install Linux prerequisites
 
-Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distros in their vanilla installation. Your results may vary, so additional details can be found below.
+Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distributions in their vanilla installation. Your results may vary, so additional details can be found below.
 
-| Distro | Missing libraries |
+| Distribution | Missing libraries |
 |--------|-------------------|
 | Ubuntu 17.10, 16.04 (64-bit) | &lt;none&gt; |
-| Mint 18.3 - Cinnamon (64-bit) | libcurl3, xsel |
-| Fedora 27 (64-bit) | xsel |
+| Mint 18.3 - Cinnamon (64-bit) | libcurl3 |
+| Fedora 27 (64-bit) | &lt;none&gt; |
 | openSuSE 12 (64-bit) | &lt;none&gt; |
 | CentOS 7 | &lt;none&gt; |
 
@@ -75,12 +75,7 @@ Some distributions of Linux are missing needed libraries for Live Share. The fol
 
 Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
 
-The following are libraries Live Share itself depends on that may be missing from some stripped down distributions:
-
-- gnome-keyring
-- xsel
-
-In addition, Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Debian/Ubuntu distributions or derivatives:
+Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Debian/Ubuntu distributions or derivatives:
 
 - libunwind8
 - liblttng-ust0
@@ -93,7 +88,11 @@ In addition, Visual Studio Live Share uses the .NET Core runtime which requires 
 - libicu55 (for Ubuntu 16.X)
 - libicu57 (for Ubuntu 17.X)
 
-Libraries may be installed on Debian/Ubuntu based distros by running `sudo apt install <library-name>` in a terminal.
+In addition, the following are libraries Live Share itself depends on that may be missing in some instances (e.g. distributions not using Gnome):
+
+- gnome-keyring
+
+Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal.
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
@@ -101,15 +100,15 @@ You can [read more about .NET Core 2.0 prerequisites for other distributions her
 
 Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
 
-> **Note:** If you do not see this notification you may be missing the "xsel" or other libraries Live Share depends. Be sure to install the needed [Linux prerequisites](#install-linux-prerequisites).
+> **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify you have installed the needed [Linux prerequisites](#install-linux-prerequisites).
 
 The command will look like this (where VERSION is replaced by the Live Share extension version):
 
     sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
 
-Run the script in a Terminal and enter your sudo password when prompted. If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser.
+Run the script in a Terminal and enter your sudo password when prompted.
 
-You can always access the command again later, by hitting **Ctrl+Shift+P** and running the "Live Share: Launcher Setup" command. The command will be copied to your clipboard.
+If you skip this step, you can still [join collaboration sessions manually](#manually-joining), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
 
 ## Sign in
 
@@ -377,7 +376,7 @@ Simply **edit settings.json** (File > Preferences > Settings), add one of the fo
 
 From time to time, as a collaboration session host you may find that you want to share additional local servers or services with guests. This can range from other RESTful end-points to databases or other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
 
-The guests will then be able to access the server you shared on that port from their own local machine on the exact same port. For example, if you shared a web server **running on port 3000**, the guest can access that same running web server on their **own machine** at [http://localhost:3000](http://localhost:3000)! This is accomplished via a secure SSH or SSL tunnel between the host and guests and authenticated via the service so you can be sure that only those in the collaboration session have access.
+The guests will then be able to access the server you shared on that port from their own local machine on the exact same port. For example, if you shared a web server **running on port 3000**, the guest can access that same running web server on their **own machine** at http://localhost:3000! This is accomplished via a secure SSH or SSL tunnel between the host and guests and authenticated via the service so you can be sure that only those in the collaboration session have access.
 
 For security purposes, only servers running on ports you specify are available to other guests. Fortunately, its easy to add one as the collaboration session **host**. Here's how:
 

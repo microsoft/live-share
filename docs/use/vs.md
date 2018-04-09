@@ -107,13 +107,11 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 ### Ending the collaboration session
 
-As a host, you can can stop sharing completely and end the collaboration session by clicking the share / session state button (in the upper right hand corner in VS or the status bar in VS Code) and selecting "End Collaboration Session". 
+As a host, you can can stop sharing completely and end the collaboration session by clicking the share / session state button (in the upper right hand corner in VS or the status bar in VS Code) and selecting "End Collaboration Session".
 
 ![Stop sharing](../media/vs-stop-sharing.png)
 
 All guests will be notified that the session has ended. Once the session has ended, guests will no longer be able to access the content and any temp files are automatically cleaned up.
-
-### Troubleshooting
 
 Having issues with sharing? Check out [troubleshooting](../troubleshooting.md#share-and-join).
 
@@ -150,7 +148,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
     You will see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
 
     You'll then be automatically taken to the file the host is currently editing once the join is complete.
-    
+
 ### Join manually
 
 You can also manually join without using a web link which can be useful in situations where the tool you want to use is already running, you want to use a different tool than you usually do, or if you are having trouble with getting invite links to work for some reason. The process is easy:
@@ -187,9 +185,7 @@ As a guest, you can leave the collaboration session without ending it for others
 
 Any temp files are automatically cleaned up so no further action is needed.
 
-### Troubleshooting
-
-Having issues with sharing? Check out [troubleshooting](../troubleshooting.md#share-and-join).
+Having issues with joining? Check out [troubleshooting](../troubleshooting.md#share-and-join).
 
 ## Co-editing
 
@@ -271,7 +267,7 @@ Each collaborator can investigate different variables, jump to different files i
 
 ### Automatic web app sharing
 
-Even better, for ASP.NET Web App projects, by default if the host's project is configured to automatically start a web browser to connect to the running web application when debugging, Live Share will automatically do the same on each guest's machine!  This is done in a secure way and the remote web application is only available to the guests during the debugging session by default.  
+Even better, for ASP.NET Web App projects, by default if the host's project is configured to automatically start a web browser to connect to the running web application when debugging, Live Share will automatically do the same on each guest's machine!  This is done in a secure way and the remote web application is only available to the guests during the debugging session by default.
 
 See [share a local server](#share-a-local-server) for information on how to share server access for other project types and/or for the duration of the session.
 
@@ -281,9 +277,9 @@ See [share a local server](#share-a-local-server) for information on how to shar
 
 ### Detaching and reattaching
 
-As a guest, you may wish to stop debugging temporarily. Fortunatley, you can simply click the "stop" icon in the debug toolbar to detatch the debugger without affecting the host or other guests.
+As a guest, you may wish to stop debugging temporarily. Fortunately, you can simply click the "stop" icon in the debug toolbar to detach the debugger without affecting the host or other guests.
 
-If you've updated settings so that as a guest you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can simply select the desired running debugging session from the "Select Startup Item..." dropdown...
+If you've updated settings so that as a guest you do not auto-attach to a co-debugging session or if you simply want to re-attach later, you can simply select the desired running debugging session from the "Select Startup Item..." drop down...
 
 ![VS Debug button](../media/vs-select-reattach.png)
 
@@ -308,10 +304,9 @@ By default as a guest, you'll be automatically attached to debugging sessions wh
 
 From time to time, as a collaboration session host you may find that you want to share additional local servers or services with guests. This can range from other RESTful end-points to databases or other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
 
-The guests will then be able to access the server you shared on that port from their own local machine on the exact same port. For example, if you shared a web server running on port 3000, the guest can access that same running web server on their own machine at http://localhost:3000! This is accomplished via a secure SSH or SSL tunnel between the host and guests and authenticated via the service so you can be sure that only those in the collaboration session have access.
+The guests will then be able to access the server you shared on that port from their own local machine on the exact same port. For example, if you shared a web server **running on port 3000**, the guest can access that same running web server on their **own machine** at http://localhost:3000! This is accomplished via a secure SSH or SSL tunnel between the host and guests and authenticated via the service so you can be sure that only those in the collaboration session have access.
 
 For security purposes, only servers running on ports you specify are available to other guests. Fortunately, its easy to add one as the collaboration session **host**. Here's how:
-
 
 1. Click on the session state button in the upper right corner and select "Manage Shared Local Servers"
 

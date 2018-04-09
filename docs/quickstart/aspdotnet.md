@@ -1,5 +1,5 @@
 ---
-title: "ASP.NET Quickstart - Visual Studio Live Share | Microsoft Docs"
+title: "ASP.NET quickstart - Visual Studio Live Share | Microsoft Docs"
 description: "An abridged walkthrough for collaborating on a ASP.NET project in Visual Studio using a Live Share collaboration session."
 ms.custom:
 ms.date: 03/22/2018

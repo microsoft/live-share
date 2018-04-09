@@ -51,8 +51,9 @@ Installing the extension is easy. Just follow these steps:
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="../use/vscode.md#installation">details</a>)</b><br />
-        2. Download and install the VS Live Share extension from the marketplace. <br />
-        3. Reload and wait for dependencies to download and install (see status bar).<br />
+        2. <i>Linux users</i>: Be sure you have installed the needed <a href="../use/vscode.md#install-linux-prerequisites">prerequisite libraries</a>.<br />
+        3. Download and install the VS Live Share extension from the marketplace. <br />
+        4. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png"></a>
     </td>
 </tr>
@@ -106,7 +107,7 @@ That's it!! In a few moments you'll be connected to your colleague's collaborati
 
 Interested in joining the private limited preview so you can create collaboration sessions instead of just joining them? [Sign up now!](https://aka.ms/vsls-signup)
 
-Still having problems? See [troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
 
 ## Next Steps
 
@@ -123,5 +124,3 @@ Reference
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
-
-Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

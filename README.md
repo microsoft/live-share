@@ -9,7 +9,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><a href="https://aka.ms/vsls"><img src="docs/media/vsls-icon.png" style="width: 128px; height: 128px;" /></a></td>
 <td>
-<strong>Visual Studio Live Share</strong><br /> 
+<strong>Visual Studio Live Share</strong><br />
 <i>Enabling developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
 <strong><a href="https://aka.ms/vsls">Learn more!</a></strong></i>
 </td>
@@ -66,8 +66,9 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="docs/use/vscode.md#installation">details</a>)</b><br />
-        2. Download and install the VS Live Share extension from the marketplace. <br />
-        3. Reload and wait for dependencies to download and install (see status bar).<br />
+        2. <i>Linux users</i>: Be sure you have installed the needed <a href="docs/use/vscode.md#install-linux-prerequisites">prerequisite libraries</a>.<br />
+        3. Download and install the VS Live Share extension from the marketplace. <br />
+        4. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="docs/media/download.png"></a>
     </td>
 </tr>

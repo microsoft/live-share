@@ -66,10 +66,6 @@ Paste in the invite URL you were sent and confirm.
 
 That's it! You should be connected to the collaboration session momentarily.
 
-## Troubleshooting
-
-Still having issues? Check out [troubleshooting](../troubleshooting.md#share-and-join).
-
 ## See also
 
 Quickstarts

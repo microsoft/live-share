@@ -55,8 +55,9 @@ Installing the extension is easy. Just follow these steps:
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="../use/vscode.md#installation">details</a>)</b><br />
-        2. Download and install the VS Live Share extension from the marketplace. <br />
-        3. Reload and wait for dependencies to download and install (see status bar).<br />
+        2. <i>Linux users</i>: Be sure you have installed the needed <a href="../use/vscode.md#install-linux-prerequisites">prerequisite libraries</a>.<br />
+        3. Download and install the VS Live Share extension from the marketplace. <br />
+        4. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png"></a>
     </td>
 </tr>
@@ -110,7 +111,7 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 ### 5. Send someone the invite link
 
-Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened. 
+Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened.
 
 Note that the **person you invite does not need to sign up or be accepted into the preview** and will not receive any email updates by simply signing in. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 
@@ -128,7 +129,7 @@ That's it!! Here's a few things to try out once a guest has joined you:
 
 Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/vs.md) extension docs for information on how to do these actions and more.
 
-Still having problems? See [troubleshooting](../troubleshooting.md).
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
 
 ## Next Steps
 
@@ -145,5 +146,3 @@ Reference
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
-
-Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
