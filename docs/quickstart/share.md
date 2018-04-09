@@ -29,7 +29,7 @@ Ready to get going?  Team collaboration should be so quick and natural, that it 
 
 >**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
-**Linux users: Be sure you have installed the needed [library prerequisites installed](../use/vscode.md#install-linux-prerequisites).**
+**Linux users: Be sure you have the needed [library prerequisites installed](../use/vscode.md#install-linux-prerequisites).**
 
 Just follow these steps to start sharing.
 
