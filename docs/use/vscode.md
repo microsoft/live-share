@@ -92,7 +92,7 @@ In addition, the following are libraries Live Share itself depends on that may b
 
 - gnome-keyring
 
-Libraries may be installed on Debian/Ubuntu based distros by running `sudo apt install <library-name>` in a terminal.
+Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal.
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
@@ -100,13 +100,13 @@ You can [read more about .NET Core 2.0 prerequisites for other distributions her
 
 Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
 
-> **Note:** If you do not see this notification you may be libraries that Live Share requires. Verify tou have installed the needed [Linux prerequisites](#install-linux-prerequisites).
+> **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify tou have installed the needed [Linux prerequisites](#install-linux-prerequisites).
 
 The command will look like this (where VERSION is replaced by the Live Share extension version):
 
     sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
 
-Run the script in a Terminal and enter your sudo password when prompted. 
+Run the script in a Terminal and enter your sudo password when prompted.
 
 If you skip this step, you can still [join collaboration sessions manually](#manually-joining), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
 
