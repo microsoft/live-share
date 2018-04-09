@@ -40,7 +40,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
 - **Linux**: 64-bit Ubuntu Linux 14.04+
     - Be sure to install [needed Linux prerequisites](#install-linux-prerequisites).
-    - Some testing has occurred on 64-bit Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
+    - Some testing has occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
@@ -61,12 +61,21 @@ In addition to the common steps above, Linux users will need to verify two more 
 
 #### Install Linux prerequisites
 
-While typically already present, the following required libraries may be missing from some stripped down distributions:
+Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distros in their vanilla installation. Your results may vary, so additional details can be found below.
 
-- gnome-keyring
-- xsel
+| Distribution | Missing libraries |
+|--------|-------------------|
+| Ubuntu 17.10, 16.04 (64-bit) | &lt;none&gt; |
+| Mint 18.3 - Cinnamon (64-bit) | libcurl3 |
+| Fedora 27 (64-bit) | &lt;none&gt; |
+| openSuSE 12 (64-bit) | &lt;none&gt; |
+| CentOS 7 | &lt;none&gt; |
 
-In addition, Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Ubuntu distributions:
+##### List of needed libraries
+
+Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
+
+Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Debian/Ubuntu distributions or derivatives:
 
 - libunwind8
 - liblttng-ust0
@@ -75,9 +84,15 @@ In addition, Visual Studio Live Share uses the .NET Core runtime which requires 
 - libuuid1
 - libkrb5-3
 - zlib1g
-- libicu52 (for 14.X)
-- libicu55 (for 16.X)
-- libicu57 (for 17.X)
+- libicu52 (for Ubuntu 14.X)
+- libicu55 (for Ubuntu 16.X)
+- libicu57 (for Ubuntu 17.X)
+
+In addition, the following are libraries Live Share itself depends on that may be missing in some instances (e.g. distros not using Gnome):
+
+- gnome-keyring
+
+Libraries may be installed on Debian/Ubuntu based distros by running `sudo apt install <library-name>` in a terminal.
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
@@ -85,15 +100,15 @@ You can [read more about .NET Core 2.0 prerequisites for other distributions her
 
 Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
 
-> **Note:** If you do not see this notification you may be missing "xsel" or other libraries that Live Share requires. Verify tou have installed the needed [Linux prerequisites](#install-linux-prerequisites).
+> **Note:** If you do not see this notification you may be libraries that Live Share requires. Verify tou have installed the needed [Linux prerequisites](#install-linux-prerequisites).
 
 The command will look like this (where VERSION is replaced by the Live Share extension version):
 
     sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
 
-Run the script in a Terminal and enter your sudo password when prompted.
+Run the script in a Terminal and enter your sudo password when prompted. 
 
-If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and terminal command will be copied to your clipboard again.
+If you skip this step, you can still [join collaboration sessions manually](#manually-joining), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
 
 ## Sign in
 
