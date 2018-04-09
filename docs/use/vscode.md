@@ -61,7 +61,7 @@ In addition to the common steps above, Linux users will need to verify two more 
 
 #### Install Linux prerequisites
 
-Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distros in their vanilla installation. Your results may vary, so additional details can be found below.
+Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distributions in their vanilla installation. Your results may vary, so additional details can be found below.
 
 | Distribution | Missing libraries |
 |--------|-------------------|
@@ -88,7 +88,7 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 - libicu55 (for Ubuntu 16.X)
 - libicu57 (for Ubuntu 17.X)
 
-In addition, the following are libraries Live Share itself depends on that may be missing in some instances (e.g. distros not using Gnome):
+In addition, the following are libraries Live Share itself depends on that may be missing in some instances (e.g. distributions not using Gnome):
 
 - gnome-keyring
 
@@ -100,7 +100,7 @@ You can [read more about .NET Core 2.0 prerequisites for other distributions her
 
 Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
 
-> **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify tou have installed the needed [Linux prerequisites](#install-linux-prerequisites).
+> **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify you have installed the needed [Linux prerequisites](#install-linux-prerequisites).
 
 The command will look like this (where VERSION is replaced by the Live Share extension version):
 
