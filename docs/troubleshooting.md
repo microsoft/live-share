@@ -36,7 +36,7 @@ The following are troubleshooting tips related to installing VS Live Share.
 | VS Code | Uninstalling the Live Share extension <strong>never completes</strong>. | Restart VS Code and try again. |
 | VS Code | A "**Dependencies could not be installed**" error appears the while extension is **finishing installation** on first start or you get errors about **missing or already present files**. | Verify you are on a **good network connection**. If you are, you could be running into a **proxy or firewall** issue. See [connectivity troubleshooting](#connectivity). <br /><br />|
 | VS Code | Installing the VS Live Share extension from the marketplace <strong>installs it in the stable/insiders version of VS Code</strong> instead of the version I want. | Start VS Code stable or insiders depending on your preference, click on the "extensions" tab, search for "VS Live Share" and install from there. |
-| VS Code (**Linux**) | The Live Share extension does not activate and **no status bar items appear** after installing the extension on **Linux**. | Visual Studio Live Share depends on .NET Core 2.0 which has a number of Linux prerequisites that may not be met on certain distributions of Linux by default. See [here for details](use/vscode.md#Installation) on what should be installed. |
+| VS Code (**Linux**) | The Live Share extension does not activate and **no status bar items appear** after installing the extension on **Linux**. | Visual Studio Live Share depends on .NET Core 2.0 which has a number of Linux prerequisites that may not be met on certain distributions of Linux by default. See [here for details](use/vscode.md#installation) on what should be installed. |
 
 ## Sign in
 
