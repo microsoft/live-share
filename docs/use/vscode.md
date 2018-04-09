@@ -65,7 +65,8 @@ Some distributions of Linux are missing needed libraries for Live Share. The fol
 
 | Distribution | Missing libraries |
 |--------|-------------------|
-| Ubuntu 17.10, 16.04 (64-bit) | &lt;none&gt; |
+| Ubuntu 17.10 (64-bit) | libunwind8, liblttng-ust0 |
+| Ubuntu 16.04 (64-bit) | &lt;none&gt; |
 | Mint 18.3 - Cinnamon (64-bit) | libcurl3 |
 | Fedora 27 (64-bit) | &lt;none&gt; |
 | openSuSE 12 (64-bit) | &lt;none&gt; |
