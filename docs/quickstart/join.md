@@ -29,6 +29,8 @@ Ready to get going? Team collaboration should be so quick and natural, that it b
 
 >**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
+**Linux users: Be sure you have the needed [library prerequisites installed](../use/vscode.md#install-linux-prerequisites).**
+
 Just follow these steps to join a collaboration session.
 
 ### 1. Install the extension
@@ -51,7 +53,7 @@ Installing the extension is easy. Just follow these steps:
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="../use/vscode.md#installation">details</a>)</b><br />
-        2. <i>Linux users</i>: Be sure you have installed the needed <a href="../use/vscode.md#install-linux-prerequisites">prerequisite libraries</a>.<br />
+        2. <strong>Linux users</strong>: Be sure you have installed the needed <a href="../use/vscode.md#install-linux-prerequisites">prerequisite libraries</a>.<br />
         3. Download and install the VS Live Share extension from the marketplace. <br />
         4. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png"></a>

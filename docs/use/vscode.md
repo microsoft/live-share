@@ -39,8 +39,8 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
 - **Linux**: 64-bit Ubuntu Linux 14.04+
-    - Be sure to install [needed Linux prerequisites](#install-linux-prerequisites).
     - Some testing has occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
+    - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
@@ -65,7 +65,8 @@ Some distributions of Linux are missing needed libraries for Live Share. The fol
 
 | Distribution | Missing libraries |
 |--------|-------------------|
-| Ubuntu 17.10, 16.04 (64-bit) | &lt;none&gt; |
+| Ubuntu 17.10 (64-bit) | libunwind8, liblttng-ust0 |
+| Ubuntu 16.04 (64-bit) | &lt;none&gt; |
 | Mint 18.3 - Cinnamon (64-bit) | libcurl3 |
 | Fedora 27 (64-bit) | &lt;none&gt; |
 | openSuSE 12 (64-bit) | &lt;none&gt; |
@@ -75,7 +76,7 @@ Some distributions of Linux are missing needed libraries for Live Share. The fol
 
 Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
 
-Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. While typically present, the following libraries may be missing from certain Debian/Ubuntu distributions or derivatives:
+Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries may be missing from certain **Debian/Ubuntu** distributions or derivatives:
 
 - libunwind8
 - liblttng-ust0
@@ -88,11 +89,28 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 - libicu55 (for Ubuntu 16.X)
 - libicu57 (for Ubuntu 17.X)
 
-In addition, the following are libraries Live Share itself depends on that may be missing in some instances (e.g. distributions not using Gnome):
+In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
 
 - gnome-keyring
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal.
+
+**Fedora/CentOS/RHL** requires similar packages but with slightly different names:
+
+- libunwind
+- lttng-ust
+- libcurl
+- openssl-libs
+- libuuid
+- krb5-libs
+- libicu
+- zlib
+
+As with Debian/Ubuntu, **Live Share itself** depends on the following:
+
+- gnome-keyring
+
+Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal.
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
