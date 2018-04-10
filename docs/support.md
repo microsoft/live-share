@@ -59,16 +59,18 @@ GitHub issues and VS problem reports are a great way to connect with us.
 
 ## Other
 
-- **Email:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com) 
+- **Email:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
 - **Twitter:** Hit us up on Twitter using [#vsliveshare](https://aka.ms/vsls-twitter)!
 - **Slack:** Chat with us on [Slack](https://aka.ms/vsls-slack).
 
 ## See also
 
 Quickstarts
+
 - [Share your first project](quickstart/share.md)
 - [Join your first session](quickstart/join.md)
 
 How-tos
+
 - [Collaborate using Visual Studio Code](use/vscode.md)
 - [Collaborate using Visual Studio](use/vs.md)

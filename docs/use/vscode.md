@@ -126,7 +126,7 @@ The command will look like this (where VERSION is replaced by the Live Share ext
 
 Run the script in a Terminal and enter your sudo password when prompted.
 
-If you skip this step, you can still [join collaboration sessions manually](#manually-joining), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
+If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
 
 ## Sign in
 

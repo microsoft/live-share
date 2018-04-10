@@ -43,9 +43,10 @@ To change the mode:
 
 - **VS:** Go to Tools > Options > Live Share, select the mode from the "Connection Mode" dropdown and then restart VS.
 - **VS Code:** Edit settings.json (File > Preferences > Settings) and add one of the following and then restart VS Code:
-  - ``"liveshare.connectionMode":"auto"``
-  - ``"liveshare.connectionMode":"direct"``
-  - ``"liveshare.connectionMode":"relay"``
+
+    - ``"liveshare.connectionMode":"auto"``
+    - ``"liveshare.connectionMode":"direct"``
+    - ``"liveshare.connectionMode":"relay"``
 
 ## Requirements for connection modes
 
@@ -69,8 +70,9 @@ VS Code (substitute **VERSION** for the extension version):
 - **macOS:** $HOME/.vscode/extensions/ms-vsliveshare.vsliveshare-*VERSION*/dotnet_modules/osx.10.10-x64/vsls-agent
 
 Visual Studio:
+
 - Run a search for vsls-agent.exe in your VS install location under **IDE\Extensions**
-- The VS install location is typically C:\Program Files (x86)\Microsoft Visual Studio\Preview\\*EDITION* where **EDITION** is Community, Enterprise, etc 
+- The VS install location is typically C:\Program Files (x86)\Microsoft Visual Studio\Preview\\*EDITION* where **EDITION** is Community, Enterprise, etc
 
 How you do this will vary based on your firewall software, but you can find information about [configuring the Windows Firewall here](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/create-an-inbound-program-or-service-rule).
 

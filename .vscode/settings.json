@@ -6,7 +6,9 @@
         "chuxel",
         "clantz",
         "coedit",
+        "customizations",
         "debuging",
+        "deterministically",
         "keyring",
         "libcurl",
         "libicu",
@@ -16,14 +18,19 @@
         "libunwind",
         "libuuid",
         "liveshare",
+        "lostintangent",
+        "lttng",
         "mailto",
         "markdownlint",
+        "openssl",
         "quickstart",
         "quickstarts",
+        "remoted",
         "res",
         "servicebus",
         "tful",
         "tldr",
+        "userprofile",
         "visualstudio",
         "vsengsaas",
         "vsliveshare",
@@ -33,6 +40,9 @@
     "markdownlint.config": {
         "default": true,
         "MD007": { "indent": 4 },
-        "MD033": false
+        "MD033": false,
+        "MD013": false,
+        "MD034": false,
+        "MD026": false
     }
 }
