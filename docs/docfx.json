@@ -1,0 +1,53 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "vslivesharedocs/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "vslivesharedocs/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+		"externalReference": [],
+    "globalMetadata": {
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/live-share",
+      "feedback_product_url": "https://aka.ms/vsls-issues/",
+      "titleSuffix": "Visual Studio Live Share",
+			"breadcrumb_path": "breadcrumb/toc.yml",
+			"extendBreadcrumb": true,
+			"manager": "amandasilver",
+			"audience": "developer",
+            "ms.service": "vs-liveshare",
+            "ms.prod": "visual-studio-family",
+			"ms.topic": "article",
+			"searchScope": ["Live Share"],
+      "uhfHeaderId": "MSDocsHeader-VisualStudio"
+    },
+    "fileMetadata": {},
+		"template": [],
+    "dest": "vslivesharedocs",
+    "markdownEngineName": "markdig"
+  }
+}

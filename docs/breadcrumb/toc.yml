@@ -1,0 +1,11 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Visual Studio
+    tocHref: /visualstudio/products/
+    topicHref: /visualstudio/products
+    items:
+      - name: Live Share
+        tocHref: /visualstudio/liveshare/
+        topicHref: /visualstudio/liveshare

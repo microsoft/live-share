@@ -1,0 +1,15 @@
+<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="130 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #007acc;
+      }
+    </style>
+  </defs>
+  <title>vs-code</title>
+  <path class="cls-2" d="M252.8,28.18v83.64l-26.4,11L147.2,96.13l79.2,11.76V17.2ZM153.8,77l14.86-14.69L153.8,47.64l6-2,14.6,11,24.26-24,14.52,6.17v47L198.68,92,174.42,68l-14.6,11ZM182,62.33l16.69,12.57V49.76Z"/>
+</svg>
