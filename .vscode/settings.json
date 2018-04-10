@@ -33,6 +33,9 @@
     "markdownlint.config": {
         "default": true,
         "MD007": { "indent": 4 },
-        "MD033": false
+        "MD033": false,
+        "MD013": false,
+        "MD034": false,
+        "MD026": false
     }
 }
