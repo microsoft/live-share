@@ -1,0 +1,7 @@
+{
+    "name": "vsliveshare-docs",
+    "version": "0.0.1",
+    "dependencies": {
+        "markdownlint-cli": "^0.8.1"
+    }
+}

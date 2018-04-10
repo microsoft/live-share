@@ -1,0 +1,15 @@
+<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="130 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #865fc5;
+      }
+    </style>
+  </defs>
+  <title>vs-ide</title>
+  <path class="cls-2" d="M226.4,17.2h0v90.7L147.2,96.13,226.4,122.8l26.4-11V28.18Zm-52,50.8,24.25,24,14.52-6.18v-47L198.67,32.6l-24.25,24-14.6-11-6,2V77l6,2Zm23.93-18.21V74.95L181.66,62.37ZM160.4,53.5l8.84,8.74L160.4,71Z"/>
+</svg>

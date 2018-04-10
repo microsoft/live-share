@@ -6,3 +6,9 @@ _themes*/
 _repo.*/
 
 .openpublishing.buildcore.ps1
+
+.vs
+
+docfx.console
+
+vslivesharedocs
