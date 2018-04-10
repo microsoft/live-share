@@ -25,7 +25,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 This article covers troubleshooting tips, workarounds, and answers for common problems and questions. You may also want to take a look at the [FAQ](https://aka.ms/vsls-faq).
 
-## Installation / tool requirements
+## Installation / tool requirements 
 
 The following are troubleshooting tips related to installing VS Live Share.
 
