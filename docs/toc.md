@@ -3,8 +3,6 @@
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
-## [VS Code and Node.js](quickstart/nodejs.md)
-## [Visual Studio and ASP.NET](quickstart/aspdotnet.md)
 # How-tos: VS Code
 ## [Overview](use/vscode.md)
 ## [Install](use/vscode.md#installation)
