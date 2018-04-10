@@ -214,10 +214,10 @@ Simply hover over a user and you will see a pin icon. Simply click the pin to st
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-pin-hover.png" width="100%" />
+        <img src="../media/vs-pin-hover.png" width="100%" alt="Visual Studio unpinned user" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-pinned.png" width="100%" />
+        <img src="../media/vs-pinned.png" width="100%" alt="Visual Studio pinned user"/>
     </td>
 </tr>
 </table>
