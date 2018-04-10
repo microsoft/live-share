@@ -29,8 +29,6 @@ Ready to get going? Team collaboration should be so quick and natural, that it b
 
 >**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
-**Linux users: Be sure you have the needed [library prerequisites installed](../use/vscode.md#install-linux-prerequisites).**
-
 Just follow these steps to join a collaboration session.
 
 ### 1. Install the extension
@@ -52,8 +50,7 @@ Installing the extension is easy. Just follow these steps:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
-        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="../use/vscode.md#installation">details</a>)</b><br />
-        2. <strong>Linux users</strong>: Be sure you have installed the needed <a href="../use/vscode.md#install-linux-prerequisites">prerequisite libraries</a>.<br />
+        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b><br />
         3. Download and install the VS Live Share extension from the marketplace. <br />
         4. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode" alt="Download button"><img src="../media/download.png"></a>
@@ -78,13 +75,11 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 </tr>
 </table>
 
-In VS Code, a browser will appear for you use to sign in. If you are using VS Code on Linux, you'll be prompted to enter a user code once that will be displayed in the browser once you've signed in. Otherwise you can simply close the browser.
+In VS Code, a browser will appear for you use to sign in. You can simply close the browser when you are done.
 
 If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
 ### 3. Open/re-open the invite link in a browser
-
-> **Linux users:** Be sure to run the browser integration terminal command when prompted before executing this step. See [here](../use/vscode.md#linux-browser-integration) for additional details.
 
 Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
