@@ -2,8 +2,8 @@
   "docsets_to_publish": [
     {
       "docset_name": "live-share",
-      "build_source_folder": "live-share",
-      "build_output_subfolder": "live-share",
+      "build_source_folder": "docs",
+      "build_output_subfolder": "vslivesharedocs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -20,7 +20,8 @@
   "notification_subscribers": [
     "mikejo@microsoft.com",
     " clantz@microsoft.com",
-    " mschulz@microsoft.com"
+    " mschulz@microsoft.com",
+    "joncart@microsoft.com"
   ],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/microsoftdocs/live-share",
