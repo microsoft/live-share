@@ -59,6 +59,8 @@ All languages / platforms have same file intellisense (when the respective exten
 | Kotlin | *N/A* | *N/A* <sup>4</sup> |
 | HLSL | | *N/A* <sup>4</sup> |
 | AL | | |
+| Clojure | | *N/A* <sup>4</sup> |
+| Scala | | *N/A* <sup>4</sup> |
 | SQL / T-SQL | *N/A* | |
 
 <sup>1</sup> No CSHTML support in C# extension.<br />
