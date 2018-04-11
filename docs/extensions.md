@@ -1,3 +1,3 @@
 # Moved
 
-This document has moved to [a new location](reference/extensions.md).
+This document has moved to [a new location](https://aka.ms/vsls-docs/extensions).
