@@ -8,8 +8,8 @@ ms.suite: ""
 ms.technology: 
   - "liveshare"
 ms.topic: "reference"
-author: "chuxel"
-ms.author: "clantz"
+author: "lostintangent"
+ms.author: "joncart"
 manager: "AmandaSilver"
 ms.workload: 
   - "liveshare"
@@ -56,6 +56,8 @@ All languages / platforms have same file intellisense (when the respective exten
 | Swift | | *N/A* <sup>4</sup> |
 | Dart | | |
 | Perl | | |
+| Kotlin | *N/A* | *N/A* <sup>4</sup> |
+| HLSL | | *N/A* <sup>4</sup> |
 | AL | | |
 | SQL / T-SQL | *N/A* | |
 
