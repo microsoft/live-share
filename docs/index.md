@@ -139,8 +139,6 @@ Quickstarts
 
 - [Share your first project](quickstart/share.md)
 - [Join your first session](quickstart/join.md)
-- [Collaborate on a Node.js app in VS Code](quickstart/nodejs.md)
-- [Collaborate on a ASP.NET app in Visual Studio](quickstart/aspdotnet.md)
 
 How-tos
 
