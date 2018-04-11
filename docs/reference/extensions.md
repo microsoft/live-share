@@ -8,8 +8,8 @@ ms.suite: ""
 ms.technology: 
   - "liveshare"
 ms.topic: "reference"
-author: "chuxel"
-ms.author: "clantz"
+author: "lostintangent"
+ms.author: "joncart"
 manager: "AmandaSilver"
 ms.workload: 
   - "liveshare"
@@ -102,6 +102,8 @@ The following are currently known extension issues, that could prevent them from
 | Restricting functionality to documents that use the `file` scheme. | Files on the guest's side use the `vsls` scheme. | Add support for `vsls` documents ([example](https://github.com/CoenraadS/BracketPair/pull/73)) |
 | Using the `Uri.file` method and/or `Uri.fsPath`/`TextDocument.fileName` members to serialize/parse URIs | *Same as above* | Use `Uri.parse` and `Url.toString()` instead, which maintain and respect file schemes ([example](https://github.com/micnil/vscode-checkpoints/pull/2)) |
 | Using the `workspace.openTextDocument` method with a file path instead of a Uri | *Same as above* | Provide a `Uri` instance instead of a raw file path string ([example](https://github.com/micnil/vscode-checkpoints/pull/2)) |
+| Guests see duplicate entries when viewing completion lists, quick info, etc. | Guests receive the language service results from both their local extensions, and the host | Restrict the language client to only `file` and `untitled` schemes ([example](https://github.com/vuejs/vetur/pull/756/files)) | 
+| Guests see duplicated task definitions when both they and the host have an extension installed | Guests display all remote and local tasks  | Only return `Tasks` for `WorkspaceFolder`s whose `Uri.scheme` === `file` ([example](https://github.com/Microsoft/vscode-eslint/blob/0fdb7c74b093cae9dc08355e7235582a254f24c2/client/src/tasks.ts#L42)) |
 
 ## Extensibility API
 
