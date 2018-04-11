@@ -38,6 +38,10 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **Windows**: 7, 8.1, or 10
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
+- **Linux**: 64-bit Ubuntu Linux 14.04+
+    - Some testing has occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
+    - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
+    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -51,6 +55,79 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 [![Download](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
+### Linux install steps
+
+In addition to the common steps above, Linux users will need to verify two more things.
+
+#### Install Linux prerequisites
+
+Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distributions in their vanilla installation. Your results may vary, so additional details can be found below.
+
+| Distribution | Missing libraries |
+|--------|-------------------|
+| Ubuntu 17.10 (64-bit) | libunwind8, liblttng-ust0 |
+| Ubuntu 16.04 (64-bit) | &lt;none&gt; |
+| Mint 18.3 - Cinnamon (64-bit) | libcurl3 |
+| Fedora 27 (64-bit) | &lt;none&gt; |
+| openSuSE 12 (64-bit) | &lt;none&gt; |
+| CentOS 7 | &lt;none&gt; |
+
+##### List of needed libraries
+
+Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
+
+Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries may be missing from certain **Debian/Ubuntu** distributions or derivatives:
+
+- libunwind8
+- liblttng-ust0
+- libcurl3
+- libssl1.0.0
+- libuuid1
+- libkrb5-3
+- zlib1g
+- libicu52 (for Ubuntu 14.X)
+- libicu55 (for Ubuntu 16.X)
+- libicu57 (for Ubuntu 17.X)
+
+In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
+
+- gnome-keyring
+
+Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal.
+
+**Fedora/CentOS/RHL** requires similar packages but with slightly different names:
+
+- libunwind
+- lttng-ust
+- libcurl
+- openssl-libs
+- libuuid
+- krb5-libs
+- libicu
+- zlib
+
+As with Debian/Ubuntu, **Live Share itself** depends on the following:
+
+- gnome-keyring
+
+Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal.
+
+You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
+
+#### Linux browser integration
+
+Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
+
+> **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify you have installed the needed [Linux prerequisites](#install-linux-prerequisites).
+
+The command will look like this (where VERSION is replaced by the Live Share extension version):
+
+    sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
+
+Run the script in a Terminal and enter your sudo password when prompted.
+
+If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
+
 ## Sign in
 
 In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does not opt you into any marketing or other research activities.
@@ -61,7 +138,7 @@ Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply clic
 
  ![VS Code Download](../media/vscode-sign-in-button.png)
 
-A browser will appear where you can complete the sign-in process. You can simply close the browser when done.
+A browser will appear where you can complete the sign-in process. If you are using VS Code on Linux, you'll be prompted to enter a user code once that will be displayed in the browser once you've signed in. Otherwise you can simply close the browser.
 
 If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
 
@@ -144,6 +221,8 @@ The easiest way to join a collaboration session is to simply open the invite lin
     See [sign in](#sign-in) for more details. You *do not need to be signed up or accepted* into the private limited preview to participate in a collaboration session and will not receive email updates by simply signing into a Live Share session.
 
 2. **Click on the invite link / open the invite in your browser**
+
+    > **Linux users:** Be sure to run the browser integration terminal command when prompted before executing this step. See [here](#linux-browser-integration) for additional details.
 
     Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 

@@ -34,7 +34,7 @@ Ready to get going? In this article we'll run you through some concepts and how 
 Before you begin, you'll need to be sure you've got a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements.
 
 - **Visual Studio 2017 (15.6 or higher)** - The latest update of Visual Studio 2017 (any edition) on Windows 7, 8.1, or 10.
-- **Visual Studio Code (1.20.0 or higher)** - Windows 7, 8.1, or 10, macOS *Sierra (10.12) and above only*.
+- **Visual Studio Code (1.20.0 or higher)** - Windows 7, 8.1, or 10, macOS *Sierra (10.12) and above only*, 64-bit Linux *(64-bit Ubuntu 14.04+ recommended - [see details](use/vscode.md#installation))*.
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -53,9 +53,10 @@ After that, downloading and installing the Visual Studio Live Share extension is
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
-        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b><br />
-        2. Download and install the VS Live Share extension from the marketplace. <br />
-        3. Reload and wait for dependencies to download and install (see status bar).<br />
+        1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="use/vscode.md#installation">details</a>)</b><br />
+        2. <strong>Linux users</strong>: Be sure you have installed the needed <a href="use/vscode.md#install-linux-prerequisites">prerequisite libraries</a>.<br />
+        3. Download and install the VS Live Share extension from the marketplace. <br />
+        4. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png" alt="Download button"></a>
     </td>
 </tr>
