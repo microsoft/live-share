@@ -15,7 +15,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </td>
 </tr></table>
 
-While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](docs/reference/platform-support.md) and more will be coming in the future. *It is currently in a limited, private preview.* [Sign up!](https://aka.ms/vsls-signup)
+While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](https://aka.ms/vsls-docs/platform-support) and more will be coming in the future. *It is currently in a limited, private preview.* [Sign up!](https://aka.ms/vsls-signup)
 
 [![Slack](docs/media/Slack_Mark-24x24.png)](https://aka.ms/vsls-slack) [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
@@ -23,24 +23,24 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 ## Quickstarts
 
-- [Share your first project](docs/quickstart/share.md) (after you've been accepted into the preview)
-- [Join your first collaboration session](docs/quickstart/join.md) (no need to sign up or be accepted in the preview)
+- [Share your first project](https://aka.ms/vsls-docs/share) (after you've been accepted into the preview)
+- [Join your first collaboration session](https://aka.ms/vsls-docs/join) (no need to sign up or be accepted in the preview)
 
 ## How-tos
 
-- [Collaborate using Visual Studio Code](docs/use/vscode.md)
-- [Collaborate using Visual Studio](docs/use/vs.md)
+- [Collaborate using Visual Studio Code](https://aka.ms/vsls-docs/vscode)
+- [Collaborate using Visual Studio](https://aka.ms/vsls-docs/vs)
 
 ## Reference
 
-- [Connectivity requirements](docs/reference/connectivity.md)
-- [Language and platform support](docs/reference/platform-support.md)
-- [Extension support](docs/reference/extensions.md)
-- [Troubleshooting](docs/troubleshooting.md)
+- [Connectivity requirements](https://aka.ms/vsls-docs/connection-mode)
+- [Language and platform support](https://aka.ms/vsls-docs/platform-support)
+- [Extension support](https://aka.ms/vsls-docs/extensions)
+- [Troubleshooting](https://aka.ms/vsls-troubleshooting)
 
 ## Resources
 
-- [Provide feedback](support.md)
+- [Provide feedback](https://aka.ms/vsls-support)
 - [FAQ](https://aka.ms/vsls-faq)
 
 ## Community-created content
@@ -73,7 +73,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 </tr>
 </table>
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](docs/troubleshooting.md) if you run into problems.
+By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](https://aka.ms/vsls-troubleshootin) if you run into problems.
 
 ## Contributing & Feedback
 
@@ -91,10 +91,15 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## License
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+By downloading and using Visual Studio Live Share, you agree to the product [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 License for documentation:
 
     Copyright © Microsoft Corporation
     All rights reserved.
     Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
+
+License for documentation code samples:
+
+    The MIT License (MIT)
+    Copyright (c) Microsoft Corporation
