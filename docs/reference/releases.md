@@ -22,13 +22,48 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Visual Studio Live Share Release Notes
 
+## v0.2.XXX (Visual Studio / VS Code)
+
+This release introduces new platform support, some experimental features , and a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+To **enable experimental features** outlined below, create a **.vs-liveshare-settings.json** in your home folder (%USERPROFILE% on Windows, "~" on Mac/Linux) in the following format:
+
+    {
+        "experimentalFeatures": {
+            "name-of-feature": true
+        }
+    }
+
+See below for the name of the property to add to light up the feature. These features are still undergoing testing, so we are not turning them on by default.
+
+## Enhancements
+
+1. **VS Code Linux Support** (#24) 🐧👏🎉 - As our most requested feature, this is the first release to introduce support for VS Code on Linux. There are some **pre-requisites** that need to be installed so check out the **[installation documentation](https://aka.ms/vsls-docs/vscode/install)** for details.
+
+2. **Experimental features** 🔬⚗ - This release includes some experimental features that you can opt to turn on that are partially complete. Bug reports and feedback is still welcome.
+
+    1. **Shared terminal** (#41) - Shared terminal support has been added and is available from the command palette / scoped command in VS Code or from the share button dropdown in VS. Shared terminals currently have fixed dimensions across all participants. To enable, add `"sharedTerminals": true` to .vs-liveshare-settings.json.
+
+    2. **Add/delete/rename files** (#44) - Hosts and guests can now add and remove files in the file explorer. VS Code users can also rename/move. (VS does not yet have rename support). To enable, add `"anyCodePortable": true` to .vs-liveshare-settings.json.
+
+<!--    3. **Task sharing** (#40) -  `"workspaceTask": true` to .vs-liveshare-settings.json. -->
+<!--2. **Join notifications** (#95) - You are now notified when someone joins the collaboration session.-->
+<!--3. **Accept/reject guest** (#110) - To improve security, you can now turn on the ability to be notified when a guest and decide to either or "accept" or "reject" their request to join. To enable add `"key": true` to .vs-liveshare-settings.json. -->
+
+### Reported Issues Fixed
+
+1. **Users not prompted to sign in when joining** (#167, #89) - A series of issues prevented the browser from appearing when a user has not signed in when joining via a browser link. This should now be resolved.
+2. **VS Code Insiders crash** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. This was rolled back, but we have now made adjustments to prevent it from happening in the future.
+3. **Collaboration session prematurely expired** - Live Share was incorrectly cleaning up collaboration sessions that were still running after several days. The logic now checks for inactivity rather than just elapsed time.
+
+<!-- 2. **Proxy issues** (#86) - We continue to make improvements around proxy support. This release XXXXXYYYYYY.-->
 ## v0.2.307 (VS Code)
 
 This release is a mix of features, foundational changes, and bug-fixes and which addresses a number of user-reported *Visual Studio Code* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
 ### Enhancements
 
-1. **Pin and follow by default** 🎉 - Historically you've had to explicitly pin to start following the host when you join a collaboration session. To reduce a step, this is now on by default when you join. As before, clicking, selecting, editing, switching files, or clicking the pin icon unpins the host so you can operate independently.
+1. **Pin and follow by default** (#82) 🎉 - Historically you've had to explicitly pin to start following the host when you join a collaboration session. To reduce a step, this is now on by default when you join. As before, clicking, selecting, editing, switching files, or clicking the pin icon unpins the host so you can operate independently.
 
 2. **Improved Debugger Compatibility** - A number of foundational updates have been made that should improve overall compatibility along with support for using the `postDebugTask` option. This should unblock a number of scenarios including the following platforms:
 
@@ -49,7 +84,7 @@ This release is a mix of minor features, foundational changes, and bug-fixes and
 
 ### Enhancements
 
-1. **Pin and follow by default** 🎉 - Historically you've had to explicitly pin to start following the host when you join a collaboration session. To reduce a step, this is now on by default when you join. As before, clicking, selecting, editing, switching files, or clicking the pin icon unpins the host so you can operate independently.
+1. **Pin and follow by default** (#82) 🎉 - Historically you've had to explicitly pin to start following the host when you join a collaboration session. To reduce a step, this is now on by default when you join. As before, clicking, selecting, editing, switching files, or clicking the pin icon unpins the host so you can operate independently.
 
 ### Reported Issues Fixed (Visual Studio) 🚀
 
@@ -60,9 +95,9 @@ This release is a mix of minor features, foundational changes, and bug-fixes and
 ## v0.2.260 (VS Code)
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio Code* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
-  
+
 ### GitHub Reported Issues Fixed (VS Code) 🚀
- 
+
 1. **Synchronizing conditional breakpoints** (#65) 🎉- We had previously enabled participants to synchronize breakpoints, and in this release, you can share conditional breakpoints as well (using either condition expressions and/or hit counts). Additionally, if you disable/enable breakpoints, that state will also be reflected in all participant's IDE.
 
 1. **System proxy support** (#86) - VS Code now respects the standard proxy environment variables (e.g. `http_proxy`) when making network calls. We believe this will unblock a bunch of users behind proxies, however, we still need to add support for authenticated proxies, so we're leaving this issue open.
@@ -78,7 +113,7 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 ## v0.2.258 (Visual Studio)
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio 2017* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
- 
+
 ### GitHub Reported Issues Fixed (Visual Studio) 🚀 
  
 1. **Synchronizing conditional breakpoints** (#65) 🎉- We had previously enabled participants to synchronize breakpoints, and in this release, you can share conditional breakpoints as well (using either condition expressions and/or hit counts). Additionally, if you disable/enable breakpoints, that state will also be reflected in all participant's IDE.
