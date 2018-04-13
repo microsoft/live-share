@@ -1,3 +1,3 @@
 # Moved
 
-This document has moved to [a new location](use/vs.md).
+This document has moved to [a new location](https://aka.ms/vsls-docs/vs).
