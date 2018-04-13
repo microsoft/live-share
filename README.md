@@ -52,16 +52,6 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 
 <table style="width: 100%; border:none;">
 <tr>
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-ide.svg" width="128px" alt="Visual Studio logo"/></td>
-    <td style="border:none;">
-        <strong>Visual Studio 2017 15.6 or higher</strong><br />
-       1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
-       2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
-       3. Download and install the VS Live Share extension from the marketplace. <br />
-       <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download.png" alt="Download button"></a><br />
-    </td>
-</tr>
-<tr style="border:none;">
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code</strong><br />
@@ -70,6 +60,16 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
         3. Download and install the VS Live Share extension from the marketplace. <br />
         4. Reload and wait for dependencies to download and install (see status bar).<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="docs/media/download.png" alt="Download button"></a>
+    </td>
+</tr>
+<tr style="border:none;">
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-ide.svg" width="128px" alt="Visual Studio logo"/></td>
+    <td style="border:none;">
+        <strong>Visual Studio 2017 15.6 or higher</strong><br />
+        1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
+        2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
+        3. Download and install the VS Live Share extension from the marketplace. <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download.png" alt="Download button"></a><br />
     </td>
 </tr>
 </table>
