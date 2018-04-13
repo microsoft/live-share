@@ -25,6 +25,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Welcome to Visual Studio Live Share! Live Share lets you to achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love, can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
 
+> **Note:** Visual Studio Live Share is currently in a **limited, private preview**. During the preview period, you will need to be _accepted_ into the program to share but _not to join_. Anyone may install the extension and join an accepted "host" as a "guest." [Sign up now](https://aka.ms/vsls-signup) if you are interested in sharing. Acceptances will occur in waves over the preview period and you will be notified once accepted.
+
 Ready to get going? In this article we'll run you through some concepts and how to install Visual Studio Live Share. If you're looking for an abridged version, check out the [share](quickstart/share.md) and [join](quickstart/join.md) quickstarts.
 
 >**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
