@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD022 MD025 -->
-# [Overview](index.md)
+# Overview
+## [Overview](index.md)
+## [Concepts and features](index.md#concepts-and-features)
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)

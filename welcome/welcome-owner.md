@@ -1,3 +1,3 @@
 # Moved
 
-This document has moved to [a new location](../docs/quickstart/share.md).
+This document has moved to [a new location](https://aka.ms/vsls-docs/share).

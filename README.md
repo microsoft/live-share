@@ -72,6 +72,16 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download.png" alt="Download button"></a><br />
     </td>
 </tr>
+<tr style="border:none;">
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-ide.svg" width="128px" alt="Visual Studio logo"/></td>
+    <td style="border:none;">
+        <strong>Visual Studio 2017 15.6 or higher</strong><br />
+        1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
+        2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js<br />
+        3. Download and install the VS Live Share extension from the marketplace. <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download.png" alt="Download button"></a><br />
+    </td>
+</tr>
 </table>
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](https://aka.ms/vsls-troubleshootin) if you run into problems.
