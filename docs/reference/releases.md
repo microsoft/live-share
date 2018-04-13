@@ -34,9 +34,9 @@ This release introduces new platform support, some experimental features , and a
 
 2. **Experimental features** 🔬⚗ - To enable experimental features for VS Code, add `"liveshare.experimentalFeaturesEnabled": true` to settings.json in VS Code. To enable experimental features for VS, go to Tools > Options > Live Share and set "Experimental features enabled" to true. Bug reports and feedback is still welcome.
 
-    1. **Shared terminal** (#41) - Shared terminal support has been added and is available from the command palette / scoped command in VS Code or from the share button dropdown in VS. Shared terminals currently have fixed dimensions across all participants. To enable, add `"sharedTerminals": true` to .vs-liveshare-settings.json.
+    1. **Shared terminal** (#41) - Shared terminal support has been added and is available from the command palette / scoped command in VS Code or from the share button dropdown in VS. Shared terminals currently have fixed dimensions across all participants.
 
-    2. **Add/delete/rename files** (#44) - Hosts and guests can now add and remove files in the file explorer. VS Code users can also rename/move. (VS does not yet have rename support). To enable, add `"anyCodePortable": true` to .vs-liveshare-settings.json.
+    2. **Add/delete/rename files** (#44) - Hosts and guests can now add and remove files in the file explorer. VS Code users can also rename/move. (VS does not yet have rename support).
 
 <!--    3. **Task sharing** (#40) -  `"workspaceTask": true` to .vs-liveshare-settings.json. -->
 <!--2. **Join notifications** (#95) - You are now notified when someone joins the collaboration session.-->
