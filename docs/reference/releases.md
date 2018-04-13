@@ -30,17 +30,7 @@ This release introduces new platform support, some experimental features , and a
 
 ### Enhancements
 
-1. **VS Code Linux Support** (#24) 🐧👏🎉 - As our most requested feature, this is the first release to introduce support for VS Code on Linux. There are some **pre-requisites** that need to be installed so check out the **[installation documentation](https://aka.ms/vsls-docs/vscode/install)** for details.
-
-2. **Experimental features** 🔬⚗ - To enable experimental features for VS Code, add `"liveshare.experimentalFeaturesEnabled": true` to settings.json in VS Code. To enable experimental features for VS, go to Tools > Options > Live Share and set "Experimental features enabled" to true. Bug reports and feedback is still welcome.
-
-    1. **Shared terminal** (#41) - Shared terminal support has been added and is available from the command palette / scoped command in VS Code or from the share button dropdown in VS. Shared terminals currently have fixed dimensions across all participants.
-
-    2. **Add/delete/rename files** (#44) - Hosts and guests can now add and remove files in the file explorer. VS Code users can also rename/move. (VS does not yet have rename support).
-
-<!--    3. **Task sharing** (#40) -  `"workspaceTask": true` to .vs-liveshare-settings.json. -->
-<!--2. **Join notifications** (#95) - You are now notified when someone joins the collaboration session.-->
-<!--3. **Accept/reject guest** (#110) - To improve security, you can now turn on the ability to be notified when a guest and decide to either or "accept" or "reject" their request to join. To enable add `"key": true` to .vs-liveshare-settings.json. -->
+**VS Code Linux Support!** (#24) 🐧👏🎉 - As our most requested feature, this is the first release to introduce support for VS Code on Linux. There are some **pre-requisites** that need to be installed so check out the **[installation documentation](https://aka.ms/vsls-docs/vscode/install)** for details.
 
 ### Reported Issues Fixed
 
@@ -50,7 +40,7 @@ This release introduces new platform support, some experimental features , and a
 
 3. **VS Code corrupted extension installs** (#180, #107, #112) - More work has gone into detecting and relediating corrupted installations. We are leaving these issues open until we have confirmed from telemetry and reports that the issues are gone.
 
-4. **VS Code Insiders crash** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. This was rolled back, but we have now made adjustments to prevent it from happening in the future.
+4. **VS Code Insiders crash and debugging issues** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. This was rolled back, but we have now made adjustments to prevent it from happening in the future. We also encountered unexpected debugging issues that are now resolved.
 
 5. **Collaboration session prematurely expired** - Live Share was incorrectly cleaning up collaboration sessions that were still running after several days. The logic now checks for inactivity rather than just elapsed time.
 
