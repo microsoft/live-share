@@ -24,16 +24,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).  
 
-Some versions below talk about experimental features. To **enable an experimental feature** outlined below, create a **.vs-liveshare-settings.json** in your home folder (%USERPROFILE% on Windows, "~" on Mac/Linux) in the following format:
-
-    {
-        "experimentalFeatures": {
-            "name-of-feature": true
-        }
-    }
-
-See below for the name of the property to add to light up the feature. These features are still undergoing testing, so we are not turning them on by default.
-
 ## v0.2.388 (Visual Studio / VS Code)
 
 This release introduces new platform support, some experimental features , and a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
@@ -42,7 +32,7 @@ This release introduces new platform support, some experimental features , and a
 
 1. **VS Code Linux Support** (#24) 🐧👏🎉 - As our most requested feature, this is the first release to introduce support for VS Code on Linux. There are some **pre-requisites** that need to be installed so check out the **[installation documentation](https://aka.ms/vsls-docs/vscode/install)** for details.
 
-2. **Experimental features** 🔬⚗ - This release includes some experimental features that are not yet feature complete that you can opt to turn on. Bug reports and feedback is still welcome.
+2. **Experimental features** 🔬⚗ - To enable experimental features for VS Code, add `"liveshare.experimentalFeaturesEnabled": true` to settings.json in VS Code. To enable experimental features for VS, go to Tools > Options > Live Share and set "Experimental features enabled" to true. Bug reports and feedback is still welcome.
 
     1. **Shared terminal** (#41) - Shared terminal support has been added and is available from the command palette / scoped command in VS Code or from the share button dropdown in VS. Shared terminals currently have fixed dimensions across all participants. To enable, add `"sharedTerminals": true` to .vs-liveshare-settings.json.
 
@@ -54,13 +44,15 @@ This release introduces new platform support, some experimental features , and a
 
 ### Reported Issues Fixed
 
-1. **Users not prompted to sign in when joining** (#167, #89) - A series of issues prevented the browser from appearing when a user has not signed in when joining via a browser link. This should now be resolved.
+1. **VS Code users not prompted to sign in when joining** (#167, #89) - A series of issues prevented the browser from appearing when a user has not signed in when joining via a browser link. This should now be resolved.
 
-2. **VS Code Insiders crash** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. This was rolled back, but we have now made adjustments to prevent it from happening in the future.
+2. **Proxy issues** (#86) - We continue to chip away at proxy issues. This release includes support for using the HTTP_PROXY and HTTPS_PROXY environment variables for accessing the cloud relay (in addition to other operations as before) and adds in support for authenticated proxies (e.g. via https://username:password@proxy-ip-or-name:port). However, we are leaving this issue open as we are not yet automatically respecting OS proxy settings.
 
-3. **Collaboration session prematurely expired** - Live Share was incorrectly cleaning up collaboration sessions that were still running after several days. The logic now checks for inactivity rather than just elapsed time.
+3. **VS Code corrupted extension installs** (#180, #107, #112) - More work has gone into detecting and relediating corrupted installations. We are leaving these issues open until we have confirmed from telemetry and reports that the issues are gone.
 
-<!-- 2. **Proxy issues** (#86) - We continue to make improvements around proxy support. This release XXXXXYYYYYY.-->
+4. **VS Code Insiders crash** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. This was rolled back, but we have now made adjustments to prevent it from happening in the future.
+
+5. **Collaboration session prematurely expired** - Live Share was incorrectly cleaning up collaboration sessions that were still running after several days. The logic now checks for inactivity rather than just elapsed time.
 
 ## v0.2.307 (VS Code)
 
