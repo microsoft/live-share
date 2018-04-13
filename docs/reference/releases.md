@@ -22,11 +22,9 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Visual Studio Live Share Release Notes
 
-## v0.2.XXX (Visual Studio / VS Code)
+What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).  
 
-This release introduces new platform support, some experimental features , and a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
-
-To **enable experimental features** outlined below, create a **.vs-liveshare-settings.json** in your home folder (%USERPROFILE% on Windows, "~" on Mac/Linux) in the following format:
+Some versions below talk about experimental features. To **enable an experimental feature** outlined below, create a **.vs-liveshare-settings.json** in your home folder (%USERPROFILE% on Windows, "~" on Mac/Linux) in the following format:
 
     {
         "experimentalFeatures": {
@@ -36,11 +34,15 @@ To **enable experimental features** outlined below, create a **.vs-liveshare-set
 
 See below for the name of the property to add to light up the feature. These features are still undergoing testing, so we are not turning them on by default.
 
-## Enhancements
+## v0.2.388 (Visual Studio / VS Code)
+
+This release introduces new platform support, some experimental features , and a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+### Enhancements
 
 1. **VS Code Linux Support** (#24) 🐧👏🎉 - As our most requested feature, this is the first release to introduce support for VS Code on Linux. There are some **pre-requisites** that need to be installed so check out the **[installation documentation](https://aka.ms/vsls-docs/vscode/install)** for details.
 
-2. **Experimental features** 🔬⚗ - This release includes some experimental features that you can opt to turn on that are partially complete. Bug reports and feedback is still welcome.
+2. **Experimental features** 🔬⚗ - This release includes some experimental features that are not yet feature complete that you can opt to turn on. Bug reports and feedback is still welcome.
 
     1. **Shared terminal** (#41) - Shared terminal support has been added and is available from the command palette / scoped command in VS Code or from the share button dropdown in VS. Shared terminals currently have fixed dimensions across all participants. To enable, add `"sharedTerminals": true` to .vs-liveshare-settings.json.
 
@@ -53,10 +55,13 @@ See below for the name of the property to add to light up the feature. These fea
 ### Reported Issues Fixed
 
 1. **Users not prompted to sign in when joining** (#167, #89) - A series of issues prevented the browser from appearing when a user has not signed in when joining via a browser link. This should now be resolved.
+
 2. **VS Code Insiders crash** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. This was rolled back, but we have now made adjustments to prevent it from happening in the future.
+
 3. **Collaboration session prematurely expired** - Live Share was incorrectly cleaning up collaboration sessions that were still running after several days. The logic now checks for inactivity rather than just elapsed time.
 
 <!-- 2. **Proxy issues** (#86) - We continue to make improvements around proxy support. This release XXXXXYYYYYY.-->
+
 ## v0.2.307 (VS Code)
 
 This release is a mix of features, foundational changes, and bug-fixes and which addresses a number of user-reported *Visual Studio Code* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
