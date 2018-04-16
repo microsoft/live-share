@@ -22,11 +22,11 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Visual Studio Live Share Release Notes
 
-What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).  
+What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
-## v0.2.388 (Visual Studio / VS Code)
+## v0.2.39X (Visual Studio / VS Code)
 
-This release introduces new platform support, some experimental features , and a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+This release introduces new platform support and fixes a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
 ### Enhancements
 
@@ -36,9 +36,9 @@ This release introduces new platform support, some experimental features , and a
 
 1. **VS Code users not prompted to sign in when joining** (#167, #89) - A series of issues prevented the browser from appearing when a user has not signed in when joining via a browser link. This should now be resolved.
 
-2. **Proxy issues** (#86) - We continue to chip away at proxy issues. This release includes support for using the HTTP_PROXY and HTTPS_PROXY environment variables for accessing the cloud relay (in addition to other operations as before) and adds in support for authenticated proxies (e.g. via https://username:password@proxy-ip-or-name:port). However, we are leaving this issue open as we are not yet automatically respecting OS proxy settings.
+2. **Proxy support in direct mode** (#86) - We continue to chip away at proxy issues. This release includes support for using the HTTP_PROXY and HTTPS_PROXY environment variables for authenticated proxies (e.g. via https://username:password@proxy-ip-or-name:port) while in **[direct mode](https://aka.ms/vsls-docs/connection-mode)**. However, we are leaving this issue open as we using a **proxy with the cloud relay is not working** due to an external client library issue and we are not yet automatically respecting OS proxy settings.
 
-3. **VS Code corrupted extension installs** (#180, #107, #112) - More work has gone into detecting and relediating corrupted installations. We are leaving these issues open until we have confirmed from telemetry and reports that the issues are gone.
+3. **VS Code corrupted extension installs** (#180, #107, #112) - More work has gone into detecting and preventing corrupted installations. We are leaving these issues open until we have confirmed from telemetry and reports that the issues are gone.
 
 4. **VS Code Insiders crash and debugging issues** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. This was rolled back, but we have now made adjustments to prevent it from happening in the future. We also encountered unexpected debugging issues that are now resolved.
 
@@ -116,9 +116,9 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 ## v0.2.208 (Visual Studio)
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio 2017* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
- 
+
 ### Reported Issues Fixed (Visual Studio) 🚀 
- 
+
 1. **Proxy support** (#86) - VS now uses  default credentials when authenticating to proxies.  However, we are leaving the issue open while we track down a more consistent and permanent fix.
 
 1. **Stability fixes** - The release also fixes a number of other issues including ensuring the locals pane is populated when VS is the host, improving the reliability of using direct connections in "auto" mode, improved connection error messages, and a number of telemetry reported issues.
@@ -126,7 +126,7 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 ## v0.2.206 (VS Code)
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio Code* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
- 
+
 ### GitHub Reported Issues Fixed (VS Code) 🚀 
  
 1. **Launcher fails to start VS Code after clicking “Open” in Chrome on Windows 7** (#103)
