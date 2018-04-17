@@ -144,7 +144,11 @@ Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply clic
 
  ![VS Code Download](../media/vscode-sign-in-button.png)
 
-A browser will appear where you can complete the sign-in process. If you are using VS Code on Linux, you'll be prompted to enter a user code once that will be displayed in the browser once you've signed in. Otherwise you can simply close the browser.
+In VS Code, a browser will appear for you use to complete the sign in process.
+
+> **Linux users:** You'll be [prompted to enter a user code](../use/vscode.md#sign-in-using-a-user-code) that can be found by clicking on the link "Click here for user code directions" in the resulting "Ready to collaborate!" page after you have signed in via the browser. Enter the code in the input window that appears in VS Code to complete the process.
+
+Simply close the browser when done.
 
 If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
 
@@ -154,7 +158,29 @@ If you signed up with an email that **is not already tied to a Microsoft persona
 
 If this does not work, contact vsls-feedback@microsoft.com and we can swap out your email address.
 
-Check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
+If Visual Studio Code is not picking up your sign in after you complete the sign in process in the browser, see [sign in using a user code](#sign-in-using-a-user-code) Check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
+
+### Sign in using a user code
+
+If you are on Linux or are running into problems with VS Code not picking up the fact that you have completed sign in, you can enter a user code to complete the sign in process.
+
+1. If you have not already signed in via the browser, click the "Sign in" status bar item or **Ctrl+Shift+P** "Live Share: Sign in via Browser".
+
+2. A browser will appear for you use to complete the sign in process.
+
+3. Once you are done, click, "Having trouble? Click here for user code directions."
+
+    ![Picture of user code in browser](../media/vscode-user-code-browser.png)
+
+4. Copy the user code that appears.
+
+5. Next, enter the user code
+
+    1. **On Linux**, you will already see a window to enter your user code.
+
+    2. On other platforms, hit **Ctrl+Shift+P** and run the "Live Share: Sign in with user code command" and enter in the code.
+
+    ![Picture of user code input field](../media/vscode-user-code.png)
 
 ## Using the scoped command menu
 
