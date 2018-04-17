@@ -144,11 +144,9 @@ Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply clic
 
  ![VS Code Download](../media/vscode-sign-in-button.png)
 
-In VS Code, a browser will appear for you use to complete the sign in process.
+A browser will appear for you use to complete the sign in process. Simply close the browser when done.
 
-> **Linux users:** You'll be [prompted to enter a user code](../use/vscode.md#sign-in-using-a-user-code) that can be found by clicking on the link "Click here for user code directions" in the resulting "Ready to collaborate!" page after you have signed in via the browser. Enter the code in the input window that appears in VS Code to complete the process.
-
-Simply close the browser when done.
+> **Linux users:** You'll be [prompted to enter a user code](../use/vscode.md#sign-in-using-a-user-code) that can be found by clicking on the link that says "Having trouble? Click here for user code directions" in the "Ready to collaborate!" page that appears after you've signed in. Enter the code in the input window that appears in VS Code and hit enter.
 
 If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
 
@@ -158,27 +156,27 @@ If you signed up with an email that **is not already tied to a Microsoft persona
 
 If this does not work, contact vsls-feedback@microsoft.com and we can swap out your email address.
 
-If Visual Studio Code is not picking up your sign in after you complete the sign in process in the browser, see [sign in using a user code](#sign-in-using-a-user-code) Check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
+If Visual Studio Code is not picking up your sign in after you complete the sign in process in the browser, see [sign in using a user code](#sign-in-using-a-user-code). Otherwise, check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
 ### Sign in using a user code
 
 If you are on Linux or are running into problems with VS Code not picking up the fact that you have completed sign in, you can enter a user code to complete the sign in process.
 
-1. If you have not already signed in via the browser, click the "Sign in" status bar item or **Ctrl+Shift+P** "Live Share: Sign in via Browser".
+1. If you have not already signed in via the browser, click the **Sign in** status bar item or hit **Ctrl+Shift+P** and run the "Live Share: Sign in via Browser" command.
 
 2. A browser will appear for you use to complete the sign in process.
 
-3. Once you are done, click, "Having trouble? Click here for user code directions."
+3. Once you are done, click "Having trouble? Click here for user code directions" to see the user code.
 
     ![Picture of user code in browser](../media/vscode-user-code-browser.png)
 
-4. Copy the user code that appears.
+4. Copy the user code.
 
-5. Next, enter the user code
+5. Finally, paste the user code into VS Code.
 
-    1. **On Linux**, you will already see a window to enter your user code.
+    1. **On Linux**, you will already see an input field where you can paste in the user code and hit enter to finish.
 
-    2. On other platforms, hit **Ctrl+Shift+P** and run the "Live Share: Sign in with user code command" and enter in the code.
+    2. On other platforms, hit **Ctrl+Shift+P** and run the "Live Share: Sign in with user code" command, paste in the code in the input field that appears, and hit enter to finish.
 
     ![Picture of user code input field](../media/vscode-user-code.png)
 

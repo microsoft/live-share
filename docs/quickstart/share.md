@@ -82,13 +82,11 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 </tr>
 </table>
 
-In VS Code, a browser will appear for you use to sign in.
+In **VS Code**, a browser will appear for you use to sign in. Simply close the browser when done.
 
-> **VS Code Linux users:** You'll be [prompted to enter a user code](../use/vscode.md#sign-in-using-a-user-code) that can be found by clicking on the link "Click here for user code directions" in the resulting "Ready to collaborate!" page after you have signed in via the browser. Enter the code in the input window that appears in VS Code to complete the process.
+> **Linux users:** You'll be [prompted to enter a user code](../use/vscode.md#sign-in-using-a-user-code) that can be found by clicking on the link that says "Having trouble? Click here for user code directions" in the "Ready to collaborate!" page that appears after you've signed in. Enter the code in the input window that appears in VS Code and hit enter.
 
-Simply close the browser when done.
-
-If you are using Visual Studio and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
+If you are using **Visual Studio** and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step! If prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
 If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
 
