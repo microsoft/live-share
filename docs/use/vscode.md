@@ -142,7 +142,7 @@ If you're been accepted into the private limited preview (session hosts), **use 
 
 Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply click on the "Sign in" status bar item and follow the directions to sign in.
 
- ![VS Code Download](../media/vscode-sign-in-button.png)
+![VS Code sign in button](../media/vscode-sign-in-button.png)
 
 A browser will appear for you use to complete the sign in process. Simply close the browser when done.
 
@@ -163,6 +163,8 @@ If Visual Studio Code is not picking up your sign in after you complete the sign
 If you are on Linux or are running into problems with VS Code not picking up the fact that you have completed sign in, you can enter a user code to complete the sign in process.
 
 1. If you have not already signed in via the browser, click the **Sign in** status bar item or hit **Ctrl+Shift+P** and run the "Live Share: Sign in via Browser" command.
+
+    ![VS Code sign in button](../media/vscode-sign-in-button.png)
 
 2. A browser will appear for you use to complete the sign in process.
 
