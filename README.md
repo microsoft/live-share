@@ -54,7 +54,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 <tr>
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
-        <strong>Visual Studio Code</strong><br />
+        <strong>Visual Studio Code (1.22.0+)</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="https://aka.ms/vsls-docs/vscode/install">details</a>)</b><br />
         2. <strong>Linux users</strong>: Be sure you have installed the needed <a href="https://aka.ms/vsls-docs/linux-prerequisites">prerequisite libraries</a>.<br />
         3. Download and install the VS Live Share extension from the marketplace. <br />

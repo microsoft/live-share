@@ -33,7 +33,7 @@ Note that all collaboration activities in described here involve a single **coll
 
 ## Installation
 
-Before you begin, you'll need to be sure you've got a version of Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.20.0 or higher)** running on:
+Before you begin, you'll need to be sure you've got a version of Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.22.0 or higher)** running on:
 
 - **Windows**: 7, 8.1, or 10
 - **macOS**: Sierra (10.12) and above only.
@@ -45,7 +45,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
-1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.20.0+)
+1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.22.0+)
 2. [Download](https://aka.ms/vsls-dl/vscode) and install the VS Live Share extension from the marketplace.
 3. Reload Visual Studio Code
 4. Wait for dependencies to download and install (see status bar).<br/>
