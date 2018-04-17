@@ -38,14 +38,14 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **Windows**: 7, 8.1, or 10
 
 - **macOS**: Sierra (10.12) and above only.
-    - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
+    - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315)._
 
 - **Linux**: 64-bit Ubuntu Linux 16.04+, see [below](#linux-install-steps) for information on other distributions.
 
     - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
-    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x)_
     - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though Arch and Manjaro are not officially supported by either VS Code or .NET Core).
     - However, given the rate of change in the Linux world, your mileage may vary. See [below](#linux-install-steps) for details.
+    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -61,7 +61,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
-In addition to the common steps above, as a Linux user, you will need to run a command in the terminal when prompted to enable browser integrations and may need to install some missing libraries for certain distributions.
+As a Linux user, in addition to the steps above, you will need to run a command in the terminal when prompted to enable browser integrations and may need to install some missing libraries for certain distributions.
 
 #### Install Linux prerequisites
 
