@@ -40,7 +40,7 @@ This release introduces new platform support and fixes a number of user-reported
 
 3. **VS Code corrupted extension installs** (#180, #107, #112) - More work has gone into detecting and preventing corrupted installations. We are leaving these issues open until we have confirmed from telemetry and reports that the issues are gone.
 
-4. **VS Code Insiders crash and debugging issues** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. This was rolled back, but we have now made adjustments to prevent it from happening in the future. We also encountered unexpected debugging issues that are now resolved.
+4. **VS Code Insiders crash and debugging issues** (#182) - The upgrade to Electron 2.0 in VS Code Insiders 1.23 caused crashes in a number of extensions including Live Share. We have now made adjustments to prevent this from happening.
 
 5. **Collaboration session prematurely expired** - Live Share was incorrectly cleaning up collaboration sessions that were still running after several days. The logic now checks for inactivity rather than just elapsed time.
 
