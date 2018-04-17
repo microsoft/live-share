@@ -36,16 +36,19 @@ Note that all collaboration activities in described here involve a single **coll
 Before you begin, you'll need to be sure you've got a version of Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.22.0 or higher)** running on:
 
 - **Windows**: 7, 8.1, or 10
+
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)._
-- **Linux**: 64-bit Ubuntu Linux 14.04+
-    - Some testing has occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, but mileage may vary.
+
+- **Linux**: 64-bit Ubuntu Linux 16.04+
+
     - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x)_
+    - Limited testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though Manjaro is not officially supported by either VS Code or .NET Core). However, given the rate of change in the Linux world, your mileage may vary. See [below](#linux-install-steps) for details.
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
-1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> (1.22.0+)
+1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a>
 2. [Download](https://aka.ms/vsls-dl/vscode) and install the VS Live Share extension from the marketplace.
 3. Reload Visual Studio Code
 4. Wait for dependencies to download and install (see status bar).<br/>
@@ -57,11 +60,11 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
-In addition to the common steps above, Linux users will need to verify two more things.
+In addition to the common steps above, as a Linux user, you will need to run a command in the terminal when prompted to enable browser integrations and may need to install some missing libraries for certain distributions.
 
 #### Install Linux prerequisites
 
-Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distributions in their vanilla installation. Your results may vary, so additional details can be found below.
+Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distributions in their vanilla installation.
 
 | Distribution | Missing libraries |
 |--------|-------------------|
@@ -71,6 +74,8 @@ Some distributions of Linux are missing needed libraries for Live Share. The fol
 | Fedora 27 (64-bit) | &lt;none&gt; |
 | openSuSE 12 (64-bit) | &lt;none&gt; |
 | CentOS 7 | &lt;none&gt; |
+
+Note that the Linux ecosystem moves quickly, and your results may vary. Additional details can be found below on the libraries typically required.
 
 ##### List of needed libraries
 
@@ -116,7 +121,7 @@ You can [read more about .NET Core 2.0 prerequisites for other distributions her
 
 #### Linux browser integration
 
-Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser.
+Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser. **You will be prompted to do this each time the extension is installed or updated.**
 
 > **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify you have installed the needed [Linux prerequisites](#install-linux-prerequisites).
 
