@@ -146,7 +146,7 @@ Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply clic
 
 A browser will appear for you use to complete the sign in process. Simply close the browser when done.
 
-> **Linux users:** You'll be [prompted to enter a user code](../use/vscode.md#sign-in-using-a-user-code) that can be found by clicking on the link that says "Having trouble? Click here for user code directions" in the "Ready to collaborate!" page that appears after you've signed in. Enter the code in the input window that appears in VS Code and hit enter.
+> **Linux users:** VS Code will also [prompt you to enter a user code](../use/vscode.md#sign-in-using-a-user-code) when opening the browser window. The code can be found by clicking on the "Having trouble? Click here for user code directions" link that appears in the "Ready to collaborate!" page after you've signed into Live Share via the browser. Simply paste this user code in the prompt's input field in VS Code and hit enter to finish.
 
 If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
 

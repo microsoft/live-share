@@ -80,7 +80,7 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 
 In **VS Code**, a browser will appear for you to use to complete the sign in process. Simply close the browser when done.
 
-> **Linux users:** You'll be [prompted to enter a user code](../use/vscode.md#sign-in-using-a-user-code) that can be found by clicking on the link that says "Having trouble? Click here for user code directions" in the "Ready to collaborate!" page that appears after you've signed in. Enter the code in the input window that appears in VS Code and hit enter.
+> **Linux users:** VS Code will also [prompt you to enter a user code](../use/vscode.md#sign-in-using-a-user-code) when opening the browser window. The code can be found by clicking on the "Having trouble? Click here for user code directions" link that appears in the "Ready to collaborate!" page after you've signed into Live Share via the browser. Simply paste this user code in the prompt's input field in VS Code and hit enter to finish.
 
 If you are using **Visual Studio** and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step or simply sign in as you would normally. If you'd prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
