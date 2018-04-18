@@ -36,7 +36,7 @@ This release introduces new platform support and fixes a number of user-reported
 
 1. **VS Code users not prompted to sign in when joining** (#167, #89) - A series of issues prevented the browser from appearing when a user has not signed in when joining via a browser link. This should now be resolved.
 
-2. **Proxy support in direct mode** (#86) - We continue to chip away at proxy issues. This release includes support for using the HTTP_PROXY and HTTPS_PROXY environment variables for authenticated proxies (e.g. via https://username:password@proxy-ip-or-name:port) along with Windows integrated credentials while in **[direct mode only](https://aka.ms/vsls-docs/connection-mode)**. However, we are However, there are **still issues for traffic that needs to route through the cloud relay.** Specifically, proxy settings are not respected if "auto" mode falls back on the cloud relay or you are in "relay" mode.
+2. **Proxy support in direct mode** (#86) - We continue to chip away at proxy issues. This release includes support for using the HTTP_PROXY and HTTPS_PROXY environment variables for authenticated proxies (e.g. via https://username:password@proxy-ip-or-name:port) along with Windows integrated credentials while in **[direct mode only](https://aka.ms/vsls-docs/connection-mode)**. However, there are **still issues for traffic that needs to route through the cloud relay.** Specifically, proxy settings are not respected if "auto" mode falls back on the cloud relay or you are in "relay" mode.
 
 3. **VS Code corrupted extension installs** (#180, #107, #112) - More work has gone into detecting and preventing corrupted installations. We are leaving these issues open until we have confirmed from telemetry and reports that the issues are gone.
 
