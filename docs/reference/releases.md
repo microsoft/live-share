@@ -24,7 +24,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
-## v0.2.400 (Visual Studio / VS Code)
+## v0.2.399 / v0.2.400 (VS Code / Visual Studio)
 
 This release introduces new platform support and fixes a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
