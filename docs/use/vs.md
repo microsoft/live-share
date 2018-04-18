@@ -51,7 +51,7 @@ If you're been accepted into the private limited preview (session hosts), **use 
 
 By default Visual Studio uses the your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
 
-![VS sign in](../media/vs-sign-in-button.png)
+![VS sign in button](../media/vs-sign-in-button.png)
 
 If you need to use a different sign-in than your VS [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
