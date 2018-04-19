@@ -102,7 +102,11 @@ In addition, the following are libraries **Live Share itself depends on** that m
 - gnome-keyring
 - desktop-file-utils
 
-Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal.
+Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu/Xubuntu/Kubuntu 16.04 or Mint 18.3:
+
+    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring desktop-file-utils libicu55
+
+You will need to replace the last library (libicu55) with the appropriate version for your distribution (e.g. libicu57 for Ubuntu 17.10).
 
 **Fedora/CentOS/RHL** requires similar packages but with slightly different names:
 
@@ -120,7 +124,9 @@ As with Debian/Ubuntu, **Live Share itself** depends on the following:
 - gnome-keyring
 - desktop-file-utils
 
-Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal.
+Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything: 
+
+    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring desktop-file-utils
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
