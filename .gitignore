@@ -12,3 +12,5 @@ _repo.*/
 docfx.console
 
 vslivesharedocs
+
+.vsls.json
