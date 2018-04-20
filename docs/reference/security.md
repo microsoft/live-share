@@ -27,17 +27,17 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. By default, Live Share attempts a direct connection and falls back on a cloud relay if a direct connection between a given guest and the host cannot be established. In addition, Live Share's cloud relay does not persist any traffic routed through it and does not "snoop" the traffic in any way.
 
-You can find more information about connectivity requirements and how to tweak these behaviors in the **[Connectivity requirements for Live Share](connectivity.md)** article.
+You can find more information about connectivity requirements and how to tweak these behaviors in the [connectivity requirements for Live Share](connectivity.md) article.
 
 ## Invite links and accept / reject mode
 
 ## Controlling file access and visibility
 
-As a guest, Live Share's remote model gives you quick access to files and folders the host has shared without the need to sync the entire contents of a project. As a host, an added advantage of this model is that you can opt to either "hide" or "exclude" files you do not want to share thereby improving security while still allowing the guest to build and perform other operations that they would need to perform.
+As a guest, Live Share's remote model gives you quick access to files and folders the host has shared with you without having to sync the entire contents of a project. As a host, an added advantage of this model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debuging sessions that would normally require access to these files to perform on their own.
 
-Currently, you can take advantage of a **.vsls.json** file to alter Live Share's default behaviors. You can even add these files to source control so you can share the settings with other colleagues.
+Live Share currently uses a **.vsls.json** file to alter its default behaviors around hiding or "excluding" files. In addition to providing control, these files can be committed to source control so anyone cloning a project will be able to take advantage of these rules with no additional effort on their part.
 
-Here's an example:
+Here's an example .vsls.json file:
 
     {
         "gitignore":"none",
