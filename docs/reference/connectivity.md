@@ -27,7 +27,7 @@ To ensure optimal performance, by default Visual Studio Live Share automatically
 
 The direct connections are authenticated via a cloud based mechanism to ensure security but require a port between 5990 and 5999 be opened to enable the connectivity. As a result, when sharing for the first time your desktop firewall may prompt you open a port. Accepting this is optional as ignoring it will simply cause Live Share to always use the relay when in auto mode.
 
-All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. In addition, Live Share's internet relay does not persist any traffic routed through it and does not "snoop" the traffic in any way.
+All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. In addition, Live Share's cloud relay does not persist any traffic routed through it and does not "snoop" the traffic in any way.
 
 ## Proxies
 
@@ -76,19 +76,31 @@ The specific ports and URLs that need to be available for Live Share to function
 
 ## Manually adding a firewall entry
 
-As outlined above, your personal firewall needs to allow **vsls-agent** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it from one of the following locations:
-
-VS Code (substitute **VERSION** for the extension version):
-
-- **Windows:** %USERPROFILE%\\.vscode\extensions\ms-vsliveshare.vsliveshare-*VERSION*\dotnet_modules\win7-x86\vsls-agent.exe
-- **macOS:** $HOME/.vscode/extensions/ms-vsliveshare.vsliveshare-*VERSION*/dotnet_modules/osx.10.10-x64/vsls-agent
-
-Visual Studio:
-
-- Run a search for vsls-agent.exe in your VS install location under **IDE\Extensions**
-- The VS install location is typically C:\Program Files (x86)\Microsoft Visual Studio\\*EDITION* where **EDITION** is Community, Enterprise, etc
+As outlined above, your personal firewall needs to allow **vsls-agent** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add manually.
 
 How you do this will vary based on your firewall software, but you can find information about [configuring the Windows Firewall here](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/create-an-inbound-program-or-service-rule).
+
+You can find the agent executable in one of the following locations.
+
+### VS Code Agent Location
+
+Substitute **VERSION** for the extension version number in one of the paths below:
+
+**macOS, Linux**
+
+    $HOME/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/dotnet_modules/vsls-agent
+
+**Windows**
+
+    %USERPROFILE%\\.vscode\extensions\ms-vsliveshare.vsliveshare-VERSION\dotnet_modules\vsls-agent.exe`
+
+### Visual Studio Agent Location
+
+Execute these steps to find `vsls-agent.exe`:
+
+1. Navigate to your VS install location. This is typically `C:\Program Files (x86)\Microsoft Visual Studio\\EDITION` where **EDITION** is Community, Enterprise, etc
+
+2. Run a search for `vsls-agent.exe` in under the **IDE\Extensions** sub-folder.
 
 ## See also
 
