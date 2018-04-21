@@ -80,7 +80,7 @@ Some distributions of Linux are missing needed libraries for Live Share. The fol
 
 Note that the Linux ecosystem moves quickly, and your results may vary. Note that the package names may vary in certain distributions as well. Additional details can be found below on the libraries typically required.
 
-For example, *ArchLinux* is not officially supported by VS Code or .NET Core (and thus by extension Live Share), but there are community packages for them and we have found that the `gnome-keyring` and `libsecret` libraries are often missing from these distributions as the community has tried out Live Share.
+For example, *ArchLinux* is not officially supported by VS Code or .NET Core (and thus by extension Live Share), but there are community packages for them and we have found that the `gnome-keyring` and `libsecret` libraries are often missing from these as the community has opted to try out Live Share. You should also be aware libraries like gnome-keyring may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments so check your distribution's documentation for details.
 
 ##### List of needed libraries
 
