@@ -43,7 +43,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **Linux**: 64-bit Ubuntu Linux 16.04+, see [below](#linux-install-steps) for information on other distributions.
 
     - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
-    - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though Arch and Manjaro are not officially supported by either VS Code or .NET Core).
+    - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though ArchLinux and Manjaro are not officially supported by either VS Code or .NET Core).
     - However, given the rate of change in the Linux world, your mileage may vary. See [below](#linux-install-steps) for details.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
 
@@ -102,6 +102,7 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
 
 - gnome-keyring
+- libsecret-1-0
 - desktop-file-utils
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu/Xubuntu/Kubuntu 16.04 or Mint 18.3:
@@ -124,11 +125,14 @@ You will need to replace the last library (libicu55) with the appropriate versio
 As with Debian/Ubuntu, **Live Share itself** depends on the following:
 
 - gnome-keyring
+- libsecret
 - desktop-file-utils
 
-Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything: 
+Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything:
 
-    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring desktop-file-utils
+    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
+
+Other distributions will require the same libraries, but the package names may be subtly different.
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
