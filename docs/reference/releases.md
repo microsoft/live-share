@@ -24,6 +24,12 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
+## v0.2.404 / v0.2.405 (VS Code)
+
+v0.2.404 was a proactive release of Live Share for Visual Studio Code that adapted to an upcoming breaking API change that will be landing in Visual Studio Code Insiders soon.  No other changes were included.
+
+Unfortunately, there was an underlying bug for Linux users that this update uncovered. Linux users should be prompted on each extension update to re-run the browser integration command. Sadly, this was not happening after the update (#225). v0.2.405 fixed this check and users will now be prompted on each install to run the command as originally intended.
+
 ## v0.2.399 / v0.2.400 (VS Code / Visual Studio)
 
 This release introduces new platform support and fixes a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
