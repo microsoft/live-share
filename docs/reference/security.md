@@ -105,7 +105,7 @@ The **excludeFiles** property allows you to specify a list of glob file patterns
 
 The **hideFiles** property is similar, but not quite as strict. These files are simply hidden from the file tree. If you happened to step into one of these files during debugging for example, it is still opened in the editor. This property is primarily useful if you do not have a .gitignore file setup (as would be the case if you are using a different source control system) or if you simply want augment what is already there to avoid clutter or confusion.
 
-The **gitignore** setting establishes how Live Share should process the contents of .gitignore files in shared folders. By default, rules established in .gitignore files are treated as if they were specified in "hideFiles". Options are:
+The **gitignore** setting establishes how Live Share should process the contents of .gitignore files in shared folders. By default, and globs found in .gitignore files are treated as if they were specified in the "hideFiles" properties. However, you can choose a different behavior by setting this property to one of the following:
 
 | Option | Result |
 |--------|--------|
