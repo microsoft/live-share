@@ -199,36 +199,35 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ![Screen shot showing highlighting](../media/vs-highlight.png)
 
-### Moving to another person's edit location
+### Following and moving to another person's edit location
 
-Each person in your the session can be seen in the upper right and you can hover over the avatar to see their full information.  Further, simply clicking on this same icon to jumps the active editor to their exact location.
+Whenever you are in a collaboration session, you'll be able can see each participant's initials in icons in upper right and hovering over the initials shows you their full information.
 
 ![Screen shot showing user](../media/vs-person.png)
 
-### Follow a collaborator via pinning
+When you join as a guest, you will automatically be "following" the host and your current editor and scroll position will follow their cursor as they move between files. This can useful since the host may need to jump around quickly between different files to help you orient yourself.
 
-At times the person you are collaborating with may need to show you a few different places in code to explain a problem or possible solution. While you could repeatedly jump to their location as described above you can also "pin" the editor to their location.
+To make it easy to switch out of "follow mode", you'll stop following if any of the following happens:
 
-Simply hover over a user and you will see a pin icon. Simply click the pin to start following them and as the collaborator moves around or between files you will be moved along with them.
+1. You edit, move your cursor, or make a selection
+2. You select another file
+
+You can also stop following by clicking the initials of the person you are following in the upper right hand corner. A circle around the initials will go away when you are no longer following.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-pin-hover.png" width="100%" alt="Visual Studio unpinned user" />
+        <img src="../media/vs-pinned.png" width="100%" alt="Visual Studio pinned user"/>
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-pinned.png" width="100%" alt="Visual Studio pinned user"/>
+        <img src="../media/vs-pin-hover.png" width="100%" alt="Visual Studio unpinned user" />
     </td>
 </tr>
 </table>
 
-To make it easy to hop in and out of pinning, the editor is un-pinned if any of the following occurs:
+Clicking on this same location will allow you to follow any participant in the collaboration session whether they are a guest or a host. Hosts can also follow guests if needed.
 
-1. You edit, move your cursor, or make a selection
-2. You select another file
-3. You click the pin icon again
-
-Afterwards you can simply click the pin icon again to follow their location once again.
+Finally, sometimes you just want to jump to someone's location rather than following them. You can do this as well by simply double-clicking on their initials.
 
 ### Changing participant flag behaviors
 
