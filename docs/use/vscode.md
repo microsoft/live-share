@@ -43,7 +43,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **Linux**: 64-bit Ubuntu Linux 16.04+, see [below](#linux-install-steps) for information on other distributions.
 
     - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
-    - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though Arch and Manjaro are not officially supported by either VS Code or .NET Core).
+    - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though ArchLinux and Manjaro are not officially supported by either VS Code or .NET Core).
     - However, given the rate of change in the Linux world, your mileage may vary. See [below](#linux-install-steps) for details.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
 
@@ -69,16 +69,18 @@ Some distributions of Linux are missing needed libraries for Live Share. The fol
 
 | Distribution | Missing libraries |
 |--------|-------------------|
-| Ubuntu 17.10 (64-bit) | libunwind8, liblttng-ust0 |
+| Ubuntu 17.10 (64-bit) | `libunwind8 liblttng-ust0` |
 | Ubuntu 16.04 (64-bit) | &lt;none&gt; |
-| Kubuntu 16.04 (64-bit) | libunwind8, liblttng-ust0, gnome-keyring, desktop-file-utils |
-| Xubuntu 16.04 (64-bit) | libunwind8, liblttng-ust0 |
-| Mint 18.3 - Cinnamon (64-bit) | libcurl3 |
+| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` |
+| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` |
+| Mint 18.3 - Cinnamon (64-bit) | `libcurl3` |
 | Fedora 27 (64-bit) | &lt;none&gt; |
 | openSuSE 12 (64-bit) | &lt;none&gt; |
 | CentOS 7 | &lt;none&gt; |
 
-Note that the Linux ecosystem moves quickly, and your results may vary. Additional details can be found below on the libraries typically required.
+Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries typically required.
+
+For example, *ArchLinux* is not officially supported by VS Code or .NET Core (and thus by extension Live Share), but there are community packages for them and we have found that the `gnome-keyring` and `libsecret` libraries are often missing from these as the community has opted to try out Live Share. You should also be aware libraries like gnome-keyring may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments so check your distribution's documentation for details.
 
 ##### List of needed libraries
 
@@ -102,13 +104,14 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
 
 - gnome-keyring
+- libsecret-1-0
 - desktop-file-utils
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu/Xubuntu/Kubuntu 16.04 or Mint 18.3:
 
-    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring desktop-file-utils gettext apt-transport-https libicu55
+    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libicu55
 
-You will need to replace the last library (libicu55) with the appropriate version for your distribution (e.g. libicu57 for Ubuntu 17.10).
+You will need to replace the last library (`libicu55`) with the appropriate version for your distribution (e.g. `libicu57` for Ubuntu 17.10).
 
 **Fedora/CentOS/RHL** requires similar packages but with slightly different names:
 
@@ -124,13 +127,14 @@ You will need to replace the last library (libicu55) with the appropriate versio
 As with Debian/Ubuntu, **Live Share itself** depends on the following:
 
 - gnome-keyring
+- libsecret
 - desktop-file-utils
 
-Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything: 
+Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything:
 
-    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring desktop-file-utils
+    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
 
-You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
+Other distributions will require the same libraries, but the package names may be subtly different. You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
 #### Linux browser integration
 
