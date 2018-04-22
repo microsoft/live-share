@@ -160,7 +160,7 @@ Modern development makes frequent use of an array of command line tools. Fortuna
 
 Terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves.)
 
-When a shared terminal is started, you can specify whether it should be read-only or read/write. While you can see what people are typing, you should **only give read/write access to guest when you know they actually need it** and stick with read-only terminals for scenarios like seeing the output command like executed test runs.
+When a shared terminal is started, you can specify whether it should be read-only or read/write. While you can see what people are typing, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
 Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
