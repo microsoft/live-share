@@ -23,7 +23,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Security features of Live Share
 
-Collaboration sessions in Visual Studio Live Share are powerful in that they allow any number of people to join in a session and collaboratively edit, debug, share terminals, and more. However, given this level of access, you may want to more about the security features Live Share provides things should you wish to lock things down. This article will provide you with information about the different options you have for keeping your source code safe.
+Collaboration sessions in Visual Studio Live Share are powerful in that they allow any number of people to join in a session and collaboratively edit, debug, share terminals, and more. However, given this level of access, you undoubtedly will want to learn to more about the security features Live Share provides. This article will provide you with information about the different options you have for securing your environment and cautions for when you should and should not use certain features.
 
 **Regardless, remember that you should only send Live Share invitation links to people you trust.**
 
@@ -31,11 +31,11 @@ Collaboration sessions in Visual Studio Live Share are powerful in that they all
 
 All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. By default, Live Share attempts a direct connection and falls back on a cloud relay if a direct connection between a given guest and the host cannot be established. In addition, Live Share's cloud relay does not persist any traffic routed through it and does not "snoop" the traffic in any way.
 
-You can find more information about connectivity requirements and how to tweak these behaviors in the [connectivity requirements for Live Share](connectivity.md) article. For example, you can opt to only use "direct" connections if you would prefer.
+To find out more about how to tweak these behaviors and Live Share's connectivity requirements, see the **[connectivity requirements for Live Share](connectivity.md)** article.
 
 ## Invitations and join access
 
-Live Share's invitation links are generated for each collaboration session and ending the session results in the generation of a new invitation link. Therefore, the combination of time and the size and nature of the identifier in the link provides a solid overall base for security.
+Each time you start a new collaboration session, Live Share generates a new unique identifier that is placed in the invitation link. These links provide a solid foundation to invite those you trust given that collaboration sessions do not typically last a long time and that the identifier is designed to not be "guessable".
 
 As a host, you are also notified whenever a guest joins the collaboration session and the fact that each participant needs to sign in using an existing Microsoft work or school account (AAD), personal Microsoft account, or a GitHub account means that you can feel confident that the person who has joined is in fact who they say they are.
 
@@ -50,7 +50,7 @@ As a host, you are also notified whenever a guest joins the collaboration sessio
 </tr>
 </table>
 
-Better still, the notification gives you the ability to "remove" a guest that has joined if for some reason you do not know who they are by simply hitting the remove button. (For example, if you posted your link on a company-wide chat system and a random employee joined).
+Better still, the notification gives you the ability to remove a guest that has joined if for some reason you do not know them. (For example, if you accidentally posted your link on a company-wide chat system and a random employee joined.) Simply click on the "Remove" button that appears and they will be removed from the collaboration session.
 
 ### Requiring guest approval
 
@@ -60,7 +60,7 @@ While this default provides a good mix of speed and control, you may want to loc
 
         "liveshare.guestApprovalRequired": true
 
-* In **Visual Studio**, set Tools > Options > Live Share > Require guest approval to True.
+* In **Visual Studio**, set Tools > Options > Live Share > "Require guest approval" to True.
 
     ![Visual Studio settings window with guest approval setting highlighted](../media/vs-setting-guestapproval.png)
 
@@ -83,9 +83,9 @@ As a guest, if you join a session where the host has this setting enabled, you'l
 
 ## Controlling file access and visibility
 
-As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. However, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debuging sessions that would normally require access to these files if they wanted to do so on their own.
+As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. You can independently navigate and edit files in the file tree. **However, this freedom does pose some risks to the host as a developer could opt to go in and modify source code without your knowledge or see sensitive source code or "secrets".** Consequently, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debuging sessions that would normally require access to these files if they wanted to do so on their own.
 
-You can accomplish this by adding a **.vsls.json** file to the folder or project you are sharing. Any settings you add to this json formatted file then changes how Live Share processes files. In addition to providing you direct control, these files can also be committed to source control so anyone cloning a project will be able to take advantage of these rules with no additional effort on their part.
+You can accomplish this by adding a **.vsls.json** file to the folder or project you are sharing. Any settings you add to this json formatted file changes how Live Share processes files. In addition to providing you direct control, these files can also be committed to source control so anyone cloning a project will be able to take advantage of these rules with no additional effort on their part.
 
 Here's an example .vsls.json file:
 
@@ -109,17 +109,17 @@ Let's walk through how these properties change what guests can do.
 
 ### Properties
 
-The **excludeFiles** property allows you to specify a list of glob file patterns (very much like those found .gitignore files) that should be excluded from ever being sent to guests. Be aware that this is inclusive of the guest *follows or jumping to your edit location, a file opening during collaborative debugging, or any code navigation features like go to definition, and more.* It is intended for files you never want to share under any circumstances like those containing secrets, certificates, or passwords. For example, since they control security, .vsls.json files are always excluded.
+The **excludeFiles** property allows you to specify a list of glob file patterns (very much like those found .gitignore files) that prevents Live Share from ever transmitting certain files or folders to guests. Be aware that this is inclusive of scenarios like a guest *following or jumping to your edit location, stepping into a file during collaborative debugging, any code navigation features like go to definition, and more.* It is intended for files you never want to share under any circumstances like those containing secrets, certificates, or passwords. For example, since they control security, .vsls.json files are always excluded.
 
-The **hideFiles** property is similar, but not quite as strict. These files are simply hidden from the file tree. If you happened to step into one of these files during debugging for example, it is still opened in the editor. This property is primarily useful if you do not have a .gitignore file setup (as would be the case if you are using a different source control system) or if you simply want augment what is already there to avoid clutter or confusion.
+The **hideFiles** property is similar, but not quite as strict. These files are simply hidden from the file tree. For example, if you happened to step into one of these files during debugging, it is still opened in the editor. This property is primarily useful if you do not have a .gitignore file setup (as would be the case if you are using a different source control system) or if you simply want augment what is already there to avoid clutter or confusion.
 
-The **gitignore** setting establishes how Live Share should process the contents of .gitignore files in shared folders. By default, and globs found in .gitignore files are treated as if they were specified in the "hideFiles" properties. However, you can choose a different behavior by setting this property to one of the following:
+The **gitignore** setting establishes how Live Share should process the contents of .gitignore files in shared folders. By default, any globs found in .gitignore files are treated as if they were specified in the "hideFiles" properties. However, you can choose a different behavior by setting this property to one of the following:
 
 | Option | Result |
 |--------|--------|
-| `none` | .gitignore contents are not considered. |
-| `hide` | **The default.** .gitignore contents are processed as if they were in the "hideFiles" property. |
-| `exclude` | .gitignore contents are processed as if they were in the "excludeFiles" property. |
+| `none` | .gitignore contents are visible to guests in the file tree (assuming they are not filtered by a guest editor setting). |
+| `hide` | **The default.** Globs inside .gitignores are processed as if they were in the "hideFiles" property. |
+| `exclude` | Globs inside .gitignores are processed as if they were in the "excludeFiles" property. |
 
 A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability reverse a rule using "!" in the excludeFiles property. For example:
 
@@ -132,7 +132,7 @@ A downside of the `exclude` setting is that the contents of folders like node_mo
 
 ### .vsls.json files in sub-folders
 
-Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Rules determined by starting with the .vsls.json file in the root folder you have shared (if present) and looking at each sub-folder leading to a given file to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree supplement (or override) rules established at higher levels and are applied to the files at the appropriate level.
+Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hide/exclude rules are determined by starting with the .vsls.json file in the root folder you have shared (if present) and then walking through at each sub-folder from there leading to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree then supplement (or override) rules established at higher levels.
 
 ## Co-debugging
 
