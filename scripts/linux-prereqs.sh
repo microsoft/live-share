@@ -70,3 +70,5 @@ if [ $? -eq 0 ]; then
     exit 0
 fi
 
+echo "(!) There is no pre-requisite install script for your version of Linux. See https://aka.ms/vsls-docs/linux-prerequisites information."
+exit 1
