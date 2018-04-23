@@ -1,7 +1,8 @@
 #
 # Copyright © Microsoft Corporation
 # All rights reserved.
-# Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
+# 
+# Licensed under the MIT License. See LICENSE-CODE in the project root for details.
 #
 #!/usr/bin/env bash
 
