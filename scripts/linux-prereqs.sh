@@ -5,17 +5,17 @@
 #
 #!/usr/bin/env bash
 
-echo "-----------------------------------------------------------------------------"
+echo "-------------------------------------------------------------------------------"
 echo ""
 echo "Visual Studio Live Share Linux Dependency Installer"
 echo ""
 echo "Visual Studio Live Share requires a number of pre-requisites that this script"
-echo "will attempt to install them for you. Note you may be prompted for your admin"
-echo "(sudo) password during the installation process."
+echo "will attempt to install for you. Note you may be prompted for your admin (sudo)"
+echo "password during the installation process."
 echo ""
 echo "See https://aka.ms/vsls-docs/linux-prerequisites for manual instructions."
 echo ""
-echo "-----------------------------------------------------------------------------"
+echo "-------------------------------------------------------------------------------"
 echo ""
 read -p "Contine [Y/n]? " yn
 if [ "$yn" != "y" ] &&  [ "$yn" != "Y" ] && [ "$yn" != "" ] && [ "$yn" != "yes" ] && [ "$yn" != "Yes" ] && [ "$yn" != "YES" ]; then
