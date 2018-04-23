@@ -35,7 +35,7 @@ To find out more about how to tweak these behaviors and Live Share's connectivit
 
 ## Invitations and join access
 
-Each time you start a new collaboration session, Live Share generates a new unique identifier that is placed in the invitation link. These links provide a solid foundation to invite those you trust given that collaboration sessions do not typically last a long time and that the identifier is designed to not be "guessable".
+Each time you start a new collaboration session, Live Share generates a new unique identifier that is placed in the invitation link. These links provide a solid, secure foundation to invite those you trust since the identifier in the link is "non-guessable" and is only valid for the duration of a single collaboration session.
 
 As a host, you are also notified whenever a guest joins the collaboration session and the fact that each participant needs to sign in using an existing Microsoft work or school account (AAD), personal Microsoft account, or a GitHub account means that you can feel confident that the person who has joined is in fact who they say they are.
 
@@ -50,11 +50,11 @@ As a host, you are also notified whenever a guest joins the collaboration sessio
 </tr>
 </table>
 
-Better still, the notification gives you the ability to remove a guest that has joined if for some reason you do not know them. (For example, if you accidentally posted your link on a company-wide chat system and a random employee joined.) Simply click on the "Remove" button that appears and they will be removed from the collaboration session.
+Better still, the notification gives you the ability to remove a guest that has joined if for some reason you do not know them. (For example, if you accidentally posted your link on a company-wide chat system and a random employee joined.) Simply click on the "Remove" button in the notification that appears and they will be ejected from the collaboration session.
 
 ### Requiring guest approval
 
-While this default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling it is easy.
+While this default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
 
 * In **VS Code**, add the following to settings.json (File > Preferences > Settings):
 
@@ -83,7 +83,7 @@ As a guest, if you join a session where the host has this setting enabled, you'l
 
 ## Controlling file access and visibility
 
-As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. You can independently navigate and edit files in the file tree. **However, this freedom does pose some risks to the host as a developer could opt to go in and modify source code without your knowledge or see sensitive source code or "secrets".** Consequently, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debuging sessions that would normally require access to these files if they wanted to do so on their own.
+As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. You can therefore independently navigate and edit files in the entire shared file tree. **However, this freedom does pose some risks to the host.** In concept, a developer could opt to go in and modify source code without your knowledge or see sensitive source code or "secrets" located somewhere in the shared file tree. Consequently, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debuging sessions that would normally require access to these files if they wanted to do so on their own.
 
 You can accomplish this by adding a **.vsls.json** file to the folder or project you are sharing. Any settings you add to this json formatted file changes how Live Share processes files. In addition to providing you direct control, these files can also be committed to source control so anyone cloning a project will be able to take advantage of these rules with no additional effort on their part.
 
