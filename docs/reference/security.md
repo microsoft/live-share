@@ -138,9 +138,9 @@ Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hi
 
 When you're tackling tough coding problems or bugs, having an extra pair of eyes when debugging can be really useful. Visual Studio Live Share enables "collaborative debugging" or "co-debugging" by sharing the debugging session with all guests whenever the host starts debugging.
 
-As a host, you are in complete control over when a debugging session starts or stops, but co-debugging does pose some risks if you are sharing with someone you do not trust. Live Share allows guests you invite to **run console/REPL commands** and there is therefore a **risk of a malicious actor running a command you would not want them to run**.
+As a host, you are in complete control over when a debugging session starts or stops, but co-debugging does pose some risks if you are sharing with someone you do not trust. Live Share allows guests you invite to run console/REPL commands and there is therefore **a risk of a malicious actor running a command you would not want them to run**.
 
-**Only co-debug with those you trust.**
+Consequently, you should **only co-debug with those you trust.**
 
 Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debuging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debuging)
 
