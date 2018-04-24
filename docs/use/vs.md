@@ -139,7 +139,7 @@ Having issues with sharing? Check out [troubleshooting](../troubleshooting.md#sh
 
 After downloading and installing Visual Studio Live Share, guests only need to take a couple steps to join a hosted collaboration session. There are two ways to join: [via the browser](#join-via-the-browser) and [manually](#join-manually).
 
-> **Security Tip:** It's important to understand that hosts may restrict your access to certain files or features. Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
+> **Security Tip:** As a guest joining a collaboration session, it's important to understand that hosts may restrict your access to certain files or features. Want to understand the security implications of some of Live Share's features and settings? Check out the [security](../reference/security.md) article.
 
 ### Join via the browser
 
