@@ -228,11 +228,11 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 3. **Open a folder**
 
-    Open a folder you would like to share as you would normally using the file menu.
+    Open a folder you would like to share as you would normally using the file menu, using the terminal, or the explorer context menu.
 
-4. **[Optional] Lock down file access**
+4. **[Optional] Hide or exclude files**
 
-    If you would prefer to lock down access or hide certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file access-and-visibility) for details.
+    If you would prefer to hide or lock down access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 5. **Start a collaboration session**
 
@@ -360,7 +360,7 @@ Simply select a file from the file explorer and start editing. Guests will see e
 
 In addition, each collaborator can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
-> **Tip:** As a host, you can change which files guests can see in the file explorer and even prevent guests from ever seeing certain files. As a guest, you may not see certain files as a result. See [controlling file access and visibility](../reference/security.md#controlling-file access-and-visibility) for details.
+> **Tip:** As a host, you can change which files guests can see in the file explorer and even prevent guests from ever seeing certain files. As a guest, you may not see certain files as a result. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 Further, to better allow you to highlight where problems might exist or convey ideas, selections are also visible to all guests.
 
@@ -412,7 +412,7 @@ Simply **edit settings.json** (File > Preferences > Settings), add one of the fo
 
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
-> **Tip:** As a host, prevent guests from ever seeing certain files. As a guest, you may not see certain files the debugger steps into as a result. See [controlling file access and visibility](../reference/security.md#controlling-file access-and-visibility) for details.
+> **Tip:** As a host, prevent guests from ever seeing certain files. As a guest, you may not see certain files the debugger steps into as a result. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 Using it simple.
 

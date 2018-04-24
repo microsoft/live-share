@@ -98,11 +98,11 @@ There are a few other tips in [troubleshooting](../troubleshooting.md#sign-in), 
 
 ### 3. Open a folder, project, or solution
 
-Open a folder, project, or solution you would like to share as you would normally via the file menu or a explorer context menu.
+Open a folder, project, or solution you would like to share in Visual Studio or Visual Studio Code as you would normally (via the file menu, a terminal, a explorer context menu, etc).
 
-### 4. [Optional] Lock down file access
+### 4. [Optional] Hide or exclude files
 
-If you would prefer to lock down access or hide certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file access-and-visibility) for details.
+If you would prefer to hide or lock down access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 ### 5. Start a collaboration session
 
