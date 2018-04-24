@@ -73,20 +73,22 @@ Assuming it completes successfully, you should be all set!
 
 ##### Known libraries missing from specific distributions
 
-If the install script fails for whatever reason, the following is a list of libraries that are missing from distributions in their vanilla installation that you can install manually.
+Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distributions in their vanilla installation.
 
 | Distribution | Missing libraries |
 |--------|-------------------|
-| Ubuntu 17.10 (64-bit) | libunwind8, liblttng-ust0 |
+| Ubuntu 17.10 (64-bit) | `libunwind8 liblttng-ust0` |
 | Ubuntu 16.04 (64-bit) | &lt;none&gt; |
-| Kubuntu 16.04 (64-bit) | libunwind8, liblttng-ust0, gnome-keyring, desktop-file-utils |
-| Xubuntu 16.04 (64-bit) | libunwind8, liblttng-ust0 |
-| Mint 18.3 - Cinnamon (64-bit) | libcurl3 |
+| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` |
+| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` |
+| Mint 18.3 - Cinnamon (64-bit) | `libcurl3` |
 | Fedora 27 (64-bit) | &lt;none&gt; |
 | openSuSE 12 (64-bit) | &lt;none&gt; |
 | CentOS 7 | &lt;none&gt; |
 
-Note that the Linux ecosystem moves quickly, and your results may vary. Additional details can be found below on the libraries typically required.
+Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries typically required.
+
+For example, *ArchLinux* is not officially supported by VS Code or .NET Core (and thus by extension Live Share), but there are community packages for them and we have found that the `gnome-keyring` and `libsecret` libraries are often missing from these as the community has opted to try out Live Share. You should also be aware libraries like gnome-keyring may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments so check your distribution's documentation for details.
 
 ##### Details on required libraries
 
@@ -140,7 +142,7 @@ Libraries may be installed on Fedora/CentOS/RHL based distributions by running `
 
     sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
 
-You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
+Other distributions will require the same libraries, but the package names may be subtly different. You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
 #### Linux browser integration
 
