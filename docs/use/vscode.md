@@ -65,6 +65,14 @@ As a Linux user, in addition to the steps above, you will need to run a command 
 
 #### Install Linux prerequisites
 
+Some distributions of Linux are missing needed libraries for Live Share. To install these dependencies quickly on supported distributions, run this command from a Terminal window:
+
+    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && sh ~/vsls-reqs
+
+Assuming it completes successfully, you should be all set!
+
+##### Known libraries missing from specific distributions
+
 Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distributions in their vanilla installation.
 
 | Distribution | Missing libraries |
@@ -82,7 +90,7 @@ Note that the Linux ecosystem moves quickly and that the package names may vary 
 
 For example, *ArchLinux* is not officially supported by VS Code or .NET Core (and thus by extension Live Share), but there are community packages for them and we have found that the `gnome-keyring` and `libsecret` libraries are often missing from these as the community has opted to try out Live Share. You should also be aware libraries like gnome-keyring may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments so check your distribution's documentation for details.
 
-##### List of needed libraries
+##### Details on required libraries
 
 Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
 
@@ -109,9 +117,9 @@ In addition, the following are libraries **Live Share itself depends on** that m
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu/Xubuntu/Kubuntu 16.04 or Mint 18.3:
 
-    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libicu55
+    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https $(apt-cache search libicu | grep -o "libicu[0-9][0-9]\s")
 
-You will need to replace the last library (`libicu55`) with the appropriate version for your distribution (e.g. `libicu57` for Ubuntu 17.10).
+The last part of the command automatically determines which version of libicu to install.
 
 **Fedora/CentOS/RHL** requires similar packages but with slightly different names:
 
