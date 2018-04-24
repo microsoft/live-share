@@ -506,6 +506,10 @@ To **stop** sharing a local server as the host, you simply click the session sta
 
 ![VS Code stop sharing server](../media/vscode-stop-sharing-server.png)<br />
 
+## Share a terminal
+
+**TEXT GOES HERE**
+
 ## Session states
 
 After you have started or joined collaboration session and have access to shared content, the Visual Studio Live Share status bar items updates  its appearance to reflect the state of the active collaboration session.

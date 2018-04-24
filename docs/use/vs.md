@@ -351,6 +351,10 @@ Note that *guests cannot* control which ports on the host's machine are shared f
 
 To **stop** sharing a local server, the host simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the appropriate port, and click "Remove".
 
+## Share a terminal
+
+**TEXT GOES HERE**
+
 ## Session states
 
 After you have started or joined collaboration session and have access to shared content, the "Share" button in the upper right hand corner updates its appearance to reflect the state of the active collaboration session.

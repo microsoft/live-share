@@ -115,13 +115,12 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debuging)
 When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a local server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
 
 Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-local-server) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-local-server)
-<!--
-#### Share a terminal
 
-Modern development makes frequent use of an array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal is fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to use any number of command line tools to run tests, builds, or even triage environment specific problems. Since the terminal is only accessible to collaborators in the session and you can see exactly what everyone is doing, you'll be able to gain additional insights while still being confident that only those you trust have access. 
+#### Shared terminals
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-terminal) [![VS](/vs-icon-15x15.png)](use/vs.md#share-a-terminal)
--->
+Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
+
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-terminal) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-terminal)
 
 #### Flexible connection modes
 
