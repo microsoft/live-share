@@ -110,11 +110,12 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
 
 - gnome-keyring
+- libsecret-1-0
 - desktop-file-utils
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu/Xubuntu/Kubuntu 16.04 or Mint 18.3:
 
-    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring desktop-file-utils gettext apt-transport-https $(apt-cache search libicu | grep -o "libicu[0-9][0-9]\s")
+    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https $(apt-cache search libicu | grep -o "libicu[0-9][0-9]\s")
 
 The last part of the command automatically determines which version of libicu to install.
 
@@ -132,11 +133,12 @@ The last part of the command automatically determines which version of libicu to
 As with Debian/Ubuntu, **Live Share itself** depends on the following:
 
 - gnome-keyring
+- libsecret
 - desktop-file-utils
 
-Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything: 
+Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything:
 
-    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring desktop-file-utils
+    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
 
 You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
