@@ -83,13 +83,13 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     Once you've been accepted into the preview, sign into Visual Studio Live Share with the credentials you used to sign-up. See [sign in](#sign-in) for more details.
 
-3. **Open a folder**
+3. **Open a solution, project, or folder**
 
-    Open a solution, project, or folder you would like to share as you would normally using the file menu or double clicking on the solution file.
+    Open a solution, project, or folder you would like to share in Visual Studio as you would normally (via the file menu, double clicking on the solution file, etc).
 
 4. **[Optional] Hide or exclude files**
 
-    If you would prefer to hide or lock down access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+    If you would prefer to hide or prevent guest access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 5. **Start a collaboration session**
 
@@ -109,7 +109,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     Send the link over e-mail, Slack, Skype, etc. and once they join you can start collaborating! The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the preview. However, given the level of access Live Share sessions can provide to guests, **be sure you only share with people you trust** and think through the implications of what you are sharing.
 
-    > **Tip:** Want to understand the security implications of some of Live Share's features and how to better lock down access? Check out the [security](../reference/security.md) article.
+    > **Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
     See [join a collaboration session](#join-a-collaboration-session) for what the guest you invite can expect.
 
@@ -117,11 +117,13 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     By default, guests will automatically join your collaboration session and you'll be notified when they've ready to work with you. While this notification gives you the option to remove them from the session, you can also opt to instead require an explicit "approval" for anyone joining.
 
-    See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to set this up.
+    Simply change **Tools > Options > Live Share > Require guest approval** to True to enable the feature. Once you have this setting turned on, a notification will prompt you to approve the guest before they can join.
 
-    ![Visual Studio Code join approval request](../media/vs-join-approval.png)
+    ![Visual Studio join approval request](../media/vs-join-approval.png)
 
-    That's it!!
+    See [invitations and join access](../reference/security.md#invitations-and-join-access) for additional details on invitation security considerations.
+
+That's it!!
 
 ### Ending the collaboration session
 
@@ -213,13 +215,13 @@ Once a guest has joined a collaboration session, the host other guests will imme
 
 In addition, each guest can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
-> **Tip:** As a host, you can change which files guests can see in the file explorer and even prevent guests from ever seeing certain files. As a guest, you may not see certain files as a result. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details
+> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 Further, to better allow you to highlight where problems might exist or convey ideas, selections are also visible to all guests.
 
 ![Screen shot showing highlighting](../media/vs-highlight.png)
 
-### Following and moving to another person's edit location
+### Following another participant's edits
 
 Whenever you are in a collaboration session, you'll be able can see each participant's initials in icons in upper right and hovering over the initials shows you their full information.
 
@@ -266,7 +268,7 @@ By default, Visual Studio Live Share automatically displays a "flag" next to a p
 
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
-> **Tip:** As a host, you can change which files guests can see in the file explorer and even prevent guests from ever seeing certain files. As a guest, you may not see certain files as a result. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not be able to follow the debugger as it step into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 Using it simple. The collaboration session host simply needs to start debugging via the usual means in Visual Studio.
 
@@ -324,6 +326,8 @@ By default as a guest, you'll be automatically attached to debugging sessions wh
 From time to time, as a collaboration session host you may find that you want to share additional local servers or services with guests. This can range from other RESTful end-points to databases or other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
 
 The guests will then be able to access the server you shared on that port from their own local machine on the exact same port. For example, if you shared a web server **running on port 3000**, the guest can access that same running web server on their **own machine** at http://localhost:3000! This is accomplished via a secure SSH or SSL tunnel between the host and guests and authenticated via the service so you can be sure that only those in the collaboration session have access.
+
+> **Security Tip:** As a host, you should be very selective with the ports you share with guests and stick to application ports (rather than sharing a system port). For guests, shared ports will behave exactly like the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky.
 
 For security purposes, only servers running on ports you specify are available to other guests. Fortunately, its easy to add one as the collaboration session **host**. Here's how:
 

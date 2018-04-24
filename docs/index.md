@@ -98,11 +98,11 @@ When you open the same file as another collaborator, you are instantly able to "
 
 Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-editing)
 
-#### Pin-to and follow mode
+#### Follow mode
 
-Sometimes you need to explain a design or problem that spans multiple files or locations in code. Consequently, it is useful to be able to temporarily follow a colleague as they move throughout the project when co-editing. Visual Studio Live Share allows you to do this by "pinning" your editor to another collaborator.
+Sometimes you need to explain a design or problem that spans multiple files or locations in code. So, it can useful to be able to temporarily follow a colleague as they move throughout the project when co-editing. Visual Studio Live Share allows you to do this by "pinning" your editor to another participant.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#follow-a-collaborator-via-pinning) [![VS](media/vs-icon-15x15.png)](use/vs.md#follow-a-collaborator-via-pinning)
+Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#following-another-participants-edits) [![VS](media/vs-icon-15x15.png)](use/vs.md#following-another-participants-edits)
 
 #### Co-debugging
 

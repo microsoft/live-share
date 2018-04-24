@@ -102,7 +102,7 @@ Open a folder, project, or solution you would like to share in Visual Studio or 
 
 ### 4. [Optional] Hide or exclude files
 
-If you would prefer to hide or lock down access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+If you would prefer to hide or prevent guest access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 ### 5. Start a collaboration session
 
@@ -121,13 +121,11 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [change the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
-If you would prefer to lock down access or hide certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file access-and-visibility) for details.
-
 ### 6. Send someone the invite link
 
 Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened. However, given the level of access Live Share sessions can provide to guests, **be sure you only share with people you trust** and think through the implications of what you are sharing.
 
-> **Tip:** Want to understand the security implications of some of Live Share's features and how to better lock down access? Check out the [security](../reference/security.md) article.
+> **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
 Note that the **person you invite does not need to sign up or be accepted into the preview** and will not receive any email updates by simply signing in. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 
@@ -148,9 +146,9 @@ By default, guests will automatically join your collaboration session and you'll
 </tr>
 </table>
 
-While this notification gives you the option to remove them from the session, you can also opt to instead require an explicit "approval" for anyone joining. If you have that setting turned on, you'll need to approve them at this point.
+While this notification gives you the option to remove them from the session, you can also opt to instead require an explicit "approval" for anyone joining. If you have this setting turned on, a notification will prompt you to approve the guest before they can join.
 
-See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to set this up.
+See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to turn this feature on.
 
 ### 6. Collaborate!
 
