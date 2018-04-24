@@ -166,8 +166,8 @@ Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-
 
 ## See also
 
-- [Connectivity requirements for Live Share](reference/connectivity.md)
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
 - [How-to: Collaborate using Visual Studio](../use/vs.md)
+- [Connectivity requirements for Live Share](connectivity.md)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

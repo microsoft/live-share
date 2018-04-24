@@ -129,6 +129,7 @@ This will require some form of API/SDK, which extensions can use to determine if
 
 - [Language and platform support](platform-support.md)
 - [Connectivity requirements for Live Share](connectivity.md)
+- [Security features of Live Share](security.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 

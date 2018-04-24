@@ -96,7 +96,15 @@ If you signed up with an email that **is not already tied to a Microsoft persona
 
 There are a few other tips in [troubleshooting](../troubleshooting.md#sign-in), but if this still doesn't work, email vsls-feedback@microsoft.com and we can swap your email out.
 
-### 4. Start a collaboration session
+### 3. Open a folder, project, or solution
+
+Open a folder, project, or solution you would like to share as you would normally via the file menu or a explorer context menu.
+
+### 4. [Optional] Lock down file access
+
+If you would prefer to lock down access or hide certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file access-and-visibility) for details.
+
+### 5. Start a collaboration session
 
 Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard.
 
@@ -113,13 +121,36 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [change the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
-### 5. Send someone the invite link
+If you would prefer to lock down access or hide certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file access-and-visibility) for details.
 
-Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened.
+### 6. Send someone the invite link
+
+Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened. However, given the level of access Live Share sessions can provide to guests, **be sure you only share with people you trust** and think through the implications of what you are sharing.
+
+> **Tip:** Want to understand the security implications of some of Live Share's features and how to better lock down access? Check out the [security](../reference/security.md) article.
 
 Note that the **person you invite does not need to sign up or be accepted into the preview** and will not receive any email updates by simply signing in. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 
 If they've got more questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
+
+### 7. [Optional] Approve the guest
+
+By default, guests will automatically join your collaboration session and you'll be notified when they're ready to work with you.
+
+<table style="border: none;">
+<tr style="border: none;">
+    <td width="50%" style="vertical-align: top; border: none;">
+        <img src="../media/vscode-join-notification.png" width="100%" alt="Visual Studio Code join notification" />
+    </td>
+    <td width="50%" style="vertical-align: top; border: none;">
+        <img src="../media/vs-join-notification.png" width="100%" alt="Visual Studio join notification"/>
+    </td>
+</tr>
+</table>
+
+While this notification gives you the option to remove them from the session, you can also opt to instead require an explicit "approval" for anyone joining. If you have that setting turned on, you'll need to approve them at this point.
+
+See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to set this up.
 
 ### 6. Collaborate!
 
@@ -146,5 +177,6 @@ Check out these additional articles for more information.
 Reference
 
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
+- [Security features of Live Share](../reference/security.md)
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)

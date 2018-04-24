@@ -165,6 +165,7 @@ While most languages have some single file Intellisense support, there are some 
 
 - [Extension support](extensions.md)
 - [Connectivity requirements for Live Share](connectivity.md)
+- [Security features of Live Share](security.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 

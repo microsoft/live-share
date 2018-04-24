@@ -107,5 +107,6 @@ If you have an authenticating proxy, you can add your user and password as follo
 
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
 - [How-to: Collaborate using Visual Studio](../use/vs.md)
+- [Security features of Live Share](security.md)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

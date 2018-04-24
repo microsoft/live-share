@@ -100,7 +100,11 @@ If the host is offline, the browser will instead telling you this is the case. Y
 
 ### 5. Collaborate!
 
-That's it!! In a few moments you'll be connected to your colleague's collaboration session. Here's a few things to try out:
+That's it!! In a few moments you'll be connected to your colleague's collaboration session. By default the host will auto-accept people that join, but if the host is setup to [require guest approval](../reference/security.md#requiring-guest-approval) you will see the status bar / join dialog mention that Live Share is waiting on the host to approve your request to join.
+
+> **Tip:** Want to understand the security implications of some of Live Share's features and how to better lock down access? Check out the [security](../reference/security.md) article.
+
+Here's a few things to try out:
 
 1. Move around the project independently and make some edits
 2. Check out working intellisense for JavaScript, TypeScript, and/or C# code
@@ -124,5 +128,6 @@ Check out these additional articles for more information.
 Reference
 
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
+- [Security features of Live Share](../reference/security.md)
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)

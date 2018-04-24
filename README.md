@@ -34,6 +34,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 ## Reference
 
 - [Connectivity requirements](https://aka.ms/vsls-docs/connection-mode)
+- [Security features](https://aka.ms/vsls-security)
 - [Language and platform support](https://aka.ms/vsls-docs/platform-support)
 - [Extension support](https://aka.ms/vsls-docs/extensions)
 - [Troubleshooting](https://aka.ms/vsls-troubleshooting)
