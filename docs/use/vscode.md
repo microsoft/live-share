@@ -43,7 +43,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **Linux**: 64-bit Ubuntu Linux 16.04+, see [below](#linux-install-steps) for information on other distributions.
 
     - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
-    - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though Arch and Manjaro are not officially supported by either VS Code or .NET Core).
+    - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though ArchLinux and Manjaro are not officially supported by either VS Code or .NET Core).
     - However, given the rate of change in the Linux world, your mileage may vary. See [below](#linux-install-steps) for details.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
 
