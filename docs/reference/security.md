@@ -2,7 +2,7 @@
 title: "Security - Visual Studio Live Share | Microsoft Docs"
 description: "Information on the security features of Visual Studio Live Share."
 ms.custom:
-ms.date: 04/19/2018
+ms.date: 04/25/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,19 +23,21 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Security features of Live Share
 
-Collaboration sessions in Visual Studio Live Share are powerful in that they allow any number of people to join in a session and collaboratively edit, debug, share terminals, and more. However, given this level of access, you undoubtedly will want to learn to more about the security features Live Share provides. This article will provide you with information about the different options you have for securing your environment and cautions for when you should and should not use certain features.
+Collaboration sessions in Visual Studio Live Share are powerful in that they allow any number of people to join in a session and collaboratively edit, debug and more. However, given this level of access, you undoubtedly will be interested in the security features Live Share provides. In this article, we'll provide some recommendations and options for securing your environment as needed.
 
-**Regardless, remember that you should only send Live Share invitation links to people you trust.**
+**As with any collaboration tool, remember that you should only share your code, content, and applications with people you trust.**
 
 ## Connectivity
 
-All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. By default, Live Share attempts a direct connection and falls back on a cloud relay if a direct connection between a given guest and the host cannot be established. In addition, Live Share's cloud relay does not persist any traffic routed through it and does not "snoop" the traffic in any way.
+All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. By default, Live Share attempts a direct connection and falls back on a cloud relay if a connection between the guest and the host cannot be established. Note that Live Share's cloud relay does not persist any traffic routed through it and does not "snoop" the traffic in any way.
 
-To find out more about how to tweak these behaviors and Live Share's connectivity requirements, see the **[connectivity requirements for Live Share](connectivity.md)** article.
+To find out more about altering these behaviors and Live Share's connectivity requirements, see **[connectivity requirements for Live Share](connectivity.md)**.
 
 ## Invitations and join access
 
-Each time you start a new collaboration session, Live Share generates a new unique identifier that is placed in the invitation link. These links provide a solid, secure foundation to invite those you trust since the identifier in the link is "non-guessable" and is only valid for the duration of a single collaboration session.
+Each time you start a new collaboration session, Live Share generates a **new unique identifier** that is placed in the invitation link. These links provide a solid, secure foundation to invite those you trust since the identifier in the link is "non-guessable" and is *only valid for the duration of a single collaboration session*.
+
+### Removing an unexpected guest
 
 As a host, you are also notified whenever a guest joins the collaboration session and the fact that each participant needs to sign in using an existing Microsoft work or school account (AAD), personal Microsoft account, or a GitHub account means that you can feel confident that the person who has joined is in fact who they say they are.
 
@@ -54,7 +56,7 @@ Better still, the notification gives you the ability to remove a guest that has 
 
 ### Requiring guest approval
 
-While this default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
+While the "notification + remove" default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
 
 * In **VS Code**, add the following to settings.json (File > Preferences > Settings):
 
@@ -111,7 +113,7 @@ Let's walk through how these properties change what guests can do.
 
 The **excludeFiles** property allows you to specify a list of glob file patterns (very much like those found .gitignore files) that prevents Live Share from ever transmitting certain files or folders to guests. Be aware that this is inclusive of scenarios like a guest *following or jumping to your edit location, stepping into a file during collaborative debugging, any code navigation features like go to definition, and more.* It is intended for files you never want to share under any circumstances like those containing secrets, certificates, or passwords. For example, since they control security, .vsls.json files are always excluded.
 
-The **hideFiles** property is similar, but not quite as strict. These files are simply hidden from the file tree. For example, if you happened to step into one of these files during debugging, it is still opened in the editor. This property is primarily useful if you do not have a .gitignore file setup (as would be the case if you are using a different source control system) or if you simply want augment what is already there to avoid clutter or confusion.
+The **hideFiles** property is similar, but not quite as strict. These files are simply hidden from the file tree. For example, if you happened to step into one of these files during debugging, it is still opened in the editor. This property is primarily useful if you do not have a .gitignore file setup (as would be the case if you are using a different source control system) or if you simply want to augment what is already there to avoid clutter or confusion.
 
 The **gitignore** setting establishes how Live Share should process the contents of .gitignore files in shared folders. By default, any globs found in .gitignore files are treated as if they were specified in the "hideFiles" properties. However, you can choose a different behavior by setting this property to one of the following:
 
@@ -160,9 +162,9 @@ Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-deb
 
 When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a local server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
 
-However, as a host, you should **be very selective with the ports you share** with guests and stick to application ports (rather than sharing a system port). For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky. For this reason, Live Share does not make any assumptions about what should or should not be shared without the host performing an action.
+However, as a host, you should **be very selective with the ports you share** with guests and only share application ports rather system ports. For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky. For this reason, Live Share does not make any assumptions about what should or should not be shared without a configuration setting and the host performing an action.
 
-As a host using Visual Studio Code, you can rest assured no ports are shared unless you decide to share them via the command palette / scoped command menu. You simply need to exercise care when sharing with those you do not know well. In Visual Studio, the web application port specified in ASP.NET projects is automatically shared during debugging (only) but you can turn off this automation if you prefer. Regardless, you will want to exercise the same caution you would if you were using VS Code when sharing other ports.
+Visual Studio, the **web application port** specified in ASP.NET projects is **automatically shared during debugging only** to facilitate guest access to the web app when running.  However, you can turn off this automation by setting Tools > Options > Live Share > "Share web app on debug" to "False" if you prefer. In Visual Studio Code, **no ports** are shared unless you decide to share them via the command palette / scoped command menu. In either case, exercise care when sharing additional ports.
 
 You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-local-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-local-server)
 

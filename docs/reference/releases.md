@@ -2,7 +2,7 @@
 title: "Release Notes -  Visual Studio Live Share | Microsoft Docs"
 description: "A breakdown of changes by release for Visual Studio Live Share for VS and VS Code."
 ms.custom:
-ms.date: 03/22/2018
+ms.date: 04/25/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,35 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # Visual Studio Live Share Release Notes
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
+
+## v0.2.487 (VS Code / Visual Studio)
+
+This release is a mix of features, foundational changes, and bug-fixes which addresses a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+### Features
+
+1. **Synchronized scroll position in follow mode** (#115) - A fairly common request has been to keep the scroll position lined up while you are in follow mode.
+
+2. **No more VS Code "double reload"** - When joining via the browser, VS Code originally had to first open a new window and then reload once the join process began. This has now been resolved when using recent versions of VS Code.
+
+3. **Improved visibility to participants in VS** - This release has the first of a few UX tweaks that are coming to follow mode and participant avatars in VS.
+
+#### Experimental Features
+
+This release introduces a number of experimental features. To enable them:
+
+- **VS Code:** Add "liveshare.features":"experimental" to settings.json.
+- **VS:** Set Tools > Options > Live Share > Features to "Experimental"
+
+Note that these features are still in progress and may have bugs or change before they are released. You can read about a number of these features in the [updated security article](https://aka.ms/vsls-security).
+
+### Reported Issues Fixed
+
+1. **VS Code Insiders activation issue** - An unexpected change in the insiders version of VS Code broke Live Share. This release resolves the problem.
+
+2. **React Native Debugging in VS Code** (#164) - We've finally gotten through the issues associated with debugging react native apps.
+
+3. **Proxy support** (#86) - We continue to chip away at proxy issues. This release adds some additional fixes and the start of relay support.
 
 ## v0.2.404 / v0.2.405 (VS Code)
 
@@ -52,7 +81,7 @@ This release introduces new platform support and fixes a number of user-reported
 
 ## v0.2.307 (VS Code)
 
-This release is a mix of features, foundational changes, and bug-fixes and which addresses a number of user-reported *Visual Studio Code* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+This release is a mix of features, foundational changes, and bug-fixes which addresses a number of user-reported *Visual Studio Code* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
 ### Enhancements
 
