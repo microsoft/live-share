@@ -35,17 +35,13 @@ To find out more about how to tweak these behaviors and Live Share's connectivit
 
 ## Invitations and join access
 
-**This section describes an experimental feature.**
-
-> **To enable:** In VS Code, add "liveshare.features":"experimental" to settings.json. In Visual Studio, set Tools > Options > Live Share > Features to Experimental. Be aware that these features are still in flight and subject to change.
-
-Each time you start a new collaboration session, Live Share generates a new unique identifier that is placed in the invitation link. These links provide a solid, secure foundation to invite those you trust since the identifier in the link is "non-guessable" and is only valid for the duration of a single collaboration session.
+Each time you start a new collaboration session, Live Share generates a **new unique identifier** that is placed in the invitation link. These links provide a solid, secure foundation to invite those you trust since the identifier in the link is "non-guessable" and is only **valid for the duration of a single collaboration session**.
 
 ### Removing an unexpected guest
 
-**This section describes an experimental feature.**
+*This section describes an experimental feature.*
 
-> **To enable:** In VS Code, add "liveshare.features":"experimental" to settings.json. In Visual Studio, set Tools > Options > Live Share > Features to Experimental. Be aware that these features are still in flight and subject to change.
+> **To enable:** VS Code: Set "liveshare.features":"experimental" in settings.json. VS: Set Tools > Options > Live Share > Features to Experimental.
 
 As a host, you are also notified whenever a guest joins the collaboration session and the fact that each participant needs to sign in using an existing Microsoft work or school account (AAD), personal Microsoft account, or a GitHub account means that you can feel confident that the person who has joined is in fact who they say they are.
 
@@ -64,9 +60,9 @@ Better still, the notification gives you the ability to remove a guest that has 
 
 ### Requiring guest approval
 
-**This section describes an experimental feature.**
+*This section describes an experimental feature.*
 
-> **To enable:** In VS Code, add "liveshare.features":"experimental" to settings.json. In Visual Studio, set Tools > Options > Live Share > Features to Experimental. Be aware that these features are still in flight and subject to change.
+> **To enable:** VS Code: Set "liveshare.features":"experimental" in settings.json. VS: Set Tools > Options > Live Share > Features to Experimental.
 
 While this default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
 
@@ -97,9 +93,9 @@ As a guest, if you join a session where the host has this setting enabled, you'l
 
 ## Controlling file access and visibility
 
-**This section describes an experimental feature.**
+*This section describes an experimental feature.*
 
-> **To enable:** In VS Code, add "liveshare.features":"experimental" to settings.json. In Visual Studio, set Tools > Options > Live Share > Features to Experimental. Be aware that these features are still in flight and subject to change.
+> **To enable:** VS Code: Set "liveshare.features":"experimental" in settings.json. VS: Set Tools > Options > Live Share > Features to Experimental.
 
 As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. You can therefore independently navigate and edit files in the entire shared file tree. **However, this freedom does pose some risks to the host.** In concept, a developer could opt to go in and modify source code without your knowledge or see sensitive source code or "secrets" located somewhere in the shared file tree. Consequently, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debuging sessions that would normally require access to these files if they wanted to do so on their own.
 
@@ -186,9 +182,9 @@ You can learn more about configuring the feature here: [![VS Code](../media/vsco
 
 ## Sharing a terminal
 
-**This section describes an experimental feature.**
+*This section describes an experimental feature.*
 
-> **To enable:** In VS Code, add "liveshare.features":"experimental" to settings.json. In Visual Studio, set Tools > Options > Live Share > Features to Experimental. Be aware that these features are still in flight and subject to change.
+> **To enable:** VS Code: Set "liveshare.features":"experimental" in settings.json. VS: Set Tools > Options > Live Share > Features to Experimental.
 
 Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
 
