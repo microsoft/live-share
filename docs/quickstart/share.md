@@ -23,6 +23,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Quickstart: Share your first project
 
+> **Note: Visual Studio Live Share is currently in a public preview. Features and UX should not be considered final.**
+
 Welcome to Visual Studio Live Share! Live Share lets you to achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love, can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
 
 Ready to get going?  Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
@@ -33,11 +35,7 @@ Ready to get going?  Team collaboration should be so quick and natural, that it 
 
 Just follow these steps to start sharing.
 
-### 1. Wait for your acceptance email
-
-Anyone can *join* a collaboration session, but you'll need to be accepted into the preview to share. After [signing up](https://aka.ms/vsls-signup) for the Live Share preview, wait to receive your acceptance email. Be sure to check your junk mail from time to time just in case!
-
-### 2. Install the extension
+### 1. Install the extension
 
 Installing the extension is easy. Just follow these steps:
 
@@ -67,9 +65,9 @@ Installing the extension is easy. Just follow these steps:
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
-### 3. Sign in
+### 2. Sign in
 
-After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), sign in with **credentials that are associated with the email you used to sign up**. These can be a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Click the "sign in" button / status bar item to get started.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. Simply click the "sign in" button / status bar item to get started.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -87,12 +85,6 @@ In **VS Code**, a browser will appear for you to use to complete the sign in pro
 > **Linux users:** VS Code will also [prompt you to enter a user code](../use/vscode.md#sign-in-using-a-user-code) when opening the browser window. The code can be found by clicking on the "Having trouble? Click here for user code directions" link that appears in the "Ready to collaborate!" page after you've signed into Live Share via the browser. Simply paste this user code in the prompt's input field in VS Code and hit enter to finish.
 
 If you are using **Visual Studio** and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step or simply sign in as you would normally. If you'd prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
-
-If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
-
-1. Add the email as a secondary address to your GitHub profile
-2. Verify it
-3. Sign out of Live Share (if you've signed in) and back in again using your GitHub profile
 
 There are a few other tips in [troubleshooting](../troubleshooting.md#sign-in), but if this still doesn't work, email vsls-feedback@microsoft.com and we can swap your email out.
 
@@ -126,8 +118,6 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened. However, given the level of access Live Share sessions can provide to guests, **be sure you only share with people you trust** and think through the implications of what you are sharing.
 
 > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
-
-Note that the **person you invite does not need to sign up or be accepted into the preview** and will not receive any email updates by simply signing in. The web page for the invite link contains everything they need to know to download, install needed tools, and join the collaboration session. (However, they will not be able to _create_ their own collaboration sessions until they've been accepted in the preview.)
 
 If they've got more questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
 

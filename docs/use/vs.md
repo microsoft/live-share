@@ -45,25 +45,17 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ## Sign in
 
-In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does not opt you into any marketing or other research activities.
-
-If you're been accepted into the private limited preview (session hosts), **use credentials that are associated with the email you used to sign up**. These can be a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
+In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
 
 By default Visual Studio uses the your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
 
 ![VS sign in button](../media/vs-sign-in-button.png)
 
-If you need to use a different sign-in than your VS [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) (e.g. you signed up for the private limited preview using a GitHub account), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
+If you want to use a different sign-in than your VS [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
 ![VS Tools Options Live Share](../media/vs-tools-options.png)
 
 Selecting **External Account** allows you to select an account not supported by Visual Studio's personalization feature like GitHub. A browser will automatically appear the first time you use a Live Share feature so you may complete sign in.
-
-If you signed up with an email that **is not already tied to a Microsoft personal, work, or school account or a GitHub account**, use this trick to unblock yourself:
-
-1. Add the email as a secondary address to your GitHub profile
-2. Verify it
-3. Sign out of Live Share (if you've signed in) and back in again using your GitHub profile
 
 If you run into trouble, check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
@@ -71,27 +63,21 @@ If you run into trouble, check out [troubleshooting](../troubleshooting.md#sign-
 
 After downloading and installing Visual Studio Live Share, follow these steps to start a collaboration session and invite a colleague to work with you.
 
-1. **Sign up for the preview and wait to be accepted**
+1. **Sign in**
 
-    You'll need to be signed up and *accepted* into the preview to be able to share. Visual Studio users should use their [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) credentials to sign up.
+    After installing the Live Share extension, you'll want to sign in to let other collaborators know who you are. By default Visual Studio uses your personalization account, so you may be able to skip this step entirely.
 
-    > **Note:** _This step is only necessary in order to "share". Anyone can "join" a collaboration session as a guest. This makes it easy for folks to work together without everyone needing to explicitly sign up or be accepted into the preview._
+    See [sign in](#sign-in) for more details.
 
-    If you have not done so, **[sign up now!](https://aka.ms/vsls-signup)**
-
-2. **Sign in**
-
-    Once you've been accepted into the preview, sign into Visual Studio Live Share with the credentials you used to sign-up. See [sign in](#sign-in) for more details.
-
-3. **Open a solution, project, or folder**
+2. **Open a solution, project, or folder**
 
     Open a solution, project, or folder you would like to share in Visual Studio as you would normally (via the file menu, double clicking on the solution file, etc).
 
-4. **[Optional] Hide or exclude files**
+3. **[Optional] Hide or exclude files**
 
     If you would prefer to hide or prevent guest access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-5. **Start a collaboration session**
+4. **Start a collaboration session**
 
     Now, simply click the "Share" button in the upper right hand corner.
 
@@ -105,15 +91,15 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     Note that if you need to get the invite link again after you've started sharing, you access it again by clicking on the share / session state button and selecting "Copy Link".
 
-6. **Send someone the link**
+5. **Send someone the link**
 
-    Send the link over e-mail, Slack, Skype, etc. and once they join you can start collaborating! The person you invite will be able to download, install needed tools, and join the collaboration session without having to sign up or be accepted into the preview. However, given the level of access Live Share sessions can provide to guests, **be sure you only share with people you trust** and think through the implications of what you are sharing.
+    Send the link over e-mail, Slack, Skype, etc. and once they join you can start collaborating! The person you invite will be able to download, install needed tools, and join the collaboration session. However, given the level of access Live Share sessions can provide to guests, **be sure you only share with people you trust** and think through the implications of what you are sharing.
 
     > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
     See [join a collaboration session](#join-a-collaboration-session) for what the guest you invite can expect.
 
-7. **[Optional] Approve the guest**
+6. **[Optional] Approve the guest**
 
     By default, guests will automatically join your collaboration session and you'll be notified when they've ready to work with you. While this notification gives you the option to remove them from the session, you can also opt to instead require an explicit "approval" for anyone joining.
 
@@ -147,9 +133,9 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 1. **Sign in**
 
-    After installing the Live Share extension, want to sign in to let other collaborators know who you are. By default Visual Studio uses your personalization account you may be able to skip this step entirely.
+    After installing the Live Share extension, you'll want to sign in to let other collaborators know who you are. By default Visual Studio uses your personalization account, so you may be able to skip this step entirely.
 
-    See [sign in](#sign-in) for more details. You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session and will not receive email updates by simply signing into a collaboration session.
+    See [sign in](#sign-in) for more details.
 
 2. **Click on the invite link / open the invite in your browser**
 
@@ -177,9 +163,9 @@ You can also manually join without using a web link which can be useful in situa
 
 1. **Sign in**
 
-    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process.
+    After installing the Live Share extension, you'll want to sign in to let other collaborators know who you are. By default Visual Studio uses your personalization account, so you may be able to skip this step entirely.
 
-    See [sign in](#sign-in) for more details. You **do not need to be signed up or accepted into the private limited preview** to participate in a collaboration session and will not receive email updates by simply signing into a collaboration session.
+    See [sign in](#sign-in) for more details.
 
 2. **Use the join command**
 

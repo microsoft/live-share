@@ -23,6 +23,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Quickstart: Join your first collaboration session
 
+> **Note: Visual Studio Live Share is currently in a public preview. Features and UX should not be considered final.**
+
 Welcome to Visual Studio Live Share! Live Share lets you to achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love, can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
 
 Ready to get going? Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
@@ -65,7 +67,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### 2. Sign in
 
-After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other collaborators know who you are. If you skip this step, you will asked to sign in during the join process. Click the "sign in" button / status bar item to get started.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you will asked to sign in during the join process. Click the "sign in" button / status bar item to get started.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -112,8 +114,6 @@ Here's a few things to try out:
 4. Pin to the host and follow as they make edits in different files
 5. Ask the host to start up a co-debugging session with you
 6. Ask the host to share a local server so you can check out something like a web app running on their machine
-
-Interested in joining the private limited preview so you can create collaboration sessions instead of just joining them? [Sign up now!](https://aka.ms/vsls-signup)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
 
