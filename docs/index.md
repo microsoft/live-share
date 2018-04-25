@@ -23,9 +23,9 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Visual Studio Live Share
 
-> **Note: Visual Studio Live Share is currently in a public preview. Features and UX should not be considered final.**
+> **Note: Visual Studio Live Share is currently in preview. Features and UX are not final.**
 
-Welcome to Visual Studio Live Share! Live Share lets you to achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love, can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
+Welcome to Visual Studio Live Share! Live Share lets you achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love. You can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
 
 Ready to get going? In this article we'll run you through some concepts and how to install Visual Studio Live Share. If you're looking for an abridged version, check out the [share](quickstart/share.md) and [join](quickstart/join.md) quickstarts.
 
