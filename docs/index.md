@@ -70,13 +70,13 @@ That's all there is to it! You should now see a sign in status bar in the lower 
 
 ## Concepts and features
 
-As with any product, Visual Studio Live Share provides a set of powerful built up from some core concepts. We'll also be using some  some short hand terms for features that we'll summarize briefly.
+As with any product, Visual Studio Live Share provides a set of powerful features built up from some core concepts. This section will run you some concepts and brief tour of features.
 
 ### Collaboration sessions
 
 All collaboration activities in Visual Studio Live Share involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest.
 
-Collaboration session hosts can use all of their tools and services as they would normally but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more.  Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_.  The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available. Further, temp files created by the IDE/editor to improve performance for the guest are automatically cleaned up when the session ends.
+Collaboration session hosts can use all of their tools and services but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more. Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_. The advantage is that the entire solution is available the moment a guest joins and the moment a host ends a collaboration session the content is no longer available. Further, temp files created by the IDE/editor to improve performance for the guest are automatically cleaned up when the session ends.
 
 #### Sharing
 
@@ -86,7 +86,7 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-proj
 
 #### Joining
 
-Clicking an invitation link from a host enables you to "join" a collaboration session and access any content or capabilities the host has opted to share with you. It provides a quick way hop into a collaboration session and the web link provides getting started information for you if you don't have the needed extension installed.
+Clicking an invitation link sent to you by a host allows you to "join" a collaboration session and access any content or capabilities the host has opted to share with you. The web link provides a quick way to hop into a collaboration session if you already have the extension installed and setup information if you do not.
 
 Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#join-a-collaboration-session) [![VS](media/vs-icon-15x15.png)](use/vs.md#join-a-collaboration-session)
 
@@ -96,44 +96,35 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#join-a-colla
 
 When you open the same file as another collaborator, you are instantly able to "collaboratively edit" or "co-edit" the file's contents. You can see each collaborator's edits, their cursors and selections, jump-to their location, and more. Even better, you are not forced into editing the same file at all times so you can opportunistically collaborate and act independently as you see fit.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-editing)
+> **Note:** Currently solutions or projects in VS that reference files at a different "root" than the solution are not shared due to a limitation. This is also the case for "multi-root workspaces" in VS Code. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/46).
 
-#### Pin-to and follow mode
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-editing)
 
-Sometimes you need to explain a design or problem that spans multiple files or locations in code. Consequently, it is useful to be able to temporarily follow a colleague as they move throughout the project when co-editing. Visual Studio Live Share allows you to do this by "pinning" your editor to another collaborator.
+#### Follow mode
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#follow-a-collaborator-via-pinning) [![VS](media/vs-icon-15x15.png)](use/vs.md#follow-a-collaborator-via-pinning)
+Sometimes you need to explain a design or problem that spans multiple files or locations in code. So, it can useful to temporarily follow a colleague as they move throughout the project when co-editing. As a guest, when you join a collaboration session you are set to automatically "follow" the host edit location. Hosts and guests can hop in and out of following one another with a simple mouse click.
+
+> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/54).
+
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#following-another-participants-edits) [![VS](media/vs-icon-15x15.png)](use/vs.md#following-another-participants-edits)
 
 #### Co-debugging
 
-When you're tackling tough coding problems or bugs, having an extra pair of eyes when debugging can be really useful. Visual Studio Live Share enables "collaborative debugging" or "co-debugging" by sharing the debugging session with all guests whenever the host starts debugging. You get co-editing features along with the ability to investigate independently as you step through together.
+When you're debugging tough coding problems or bugs, having an extra pair of eyes can be really useful. As a host, Live Share automatically enables "collaborative debugging" or "co-debugging" by sharing the debugging session with all guests. You each get co-editing features along with the ability to investigate independently as you step through together.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debuging) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-debuging)
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debuging) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-debuging)
 
 #### Share local servers / Share ports
 
 When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a local server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-local-server) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-local-server)
-<!--
-#### Share a terminal
-
-Modern development makes frequent use of an array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal is fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to use any number of command line tools to run tests, builds, or even triage environment specific problems. Since the terminal is only accessible to collaborators in the session and you can see exactly what everyone is doing, you'll be able to gain additional insights while still being confident that only those you trust have access. 
-
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-terminal) [![VS](/vs-icon-15x15.png)](use/vs.md#share-a-terminal)
--->
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-local-server) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-local-server)
 
 #### Flexible connection modes
 
 To ensure optimal performance, Visual Studio Live Share supports two core "connection modes": "direct" and "relay." In direct mode, guests connect directly to the host without going through the web. Relay mode allows guests located in a completely different network to connect to the host via an internet relay. In all cases connections are SSH or SSL encrypted to ensure only collaborators get access to what is going over the wire. By default, Live Share is in "auto" mode which first attempts a direct connection and then fails over to the relay but if you prefer, you can lock into a single mode.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](reference/connectivity.md#changing-the-connection-mode) [![VS](media/vs-icon-15x15.png)](reference/connectivity.md#changing-the-connection-mode)
-
-#### Scoped command menu
-
-Sometimes searching the command palette in VS Code can be a bit overwhelming. Live Share has a "scoped command menu" that you can access by clicking on the sign in status bar item. You'll be automatically presented list of commands that are available given the current state of your collaboration session so you can get up and running quickly.
-
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#using-the-scoped-command-menu)
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](reference/connectivity.md#changing-the-connection-mode) [![VS](media/vs-icon-15x15.png)](reference/connectivity.md#changing-the-connection-mode)
 
 ## See also
 
