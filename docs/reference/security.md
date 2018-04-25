@@ -2,7 +2,7 @@
 title: "Security - Visual Studio Live Share | Microsoft Docs"
 description: "Information on the security features of Visual Studio Live Share."
 ms.custom:
-ms.date: 04/19/2018
+ms.date: 04/25/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -179,7 +179,7 @@ When co-debugging, it can be really useful to get access to different parts of t
 
 However, as a host, you should **be very selective with the ports you share** with guests and only share application ports rather system ports. For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky. For this reason, Live Share does not make any assumptions about what should or should not be shared without a configuration setting and the host performing an action.
 
-Visual Studio, the web application port specified in ASP.NET projects is **automatically shared during debugging only** to facilitate guest access to the web app when running.  However, you can turn off this automation by setting Tools > Options > Live Share > "Share web app on debug" to "False" if you prefer. In Visual Studio Code, **no ports** are shared unless you decide to share them via the command palette / scoped command menu. In either case, exercise care when sharing additional ports.
+Visual Studio, the **web application port** specified in ASP.NET projects is **automatically shared during debugging only** to facilitate guest access to the web app when running.  However, you can turn off this automation by setting Tools > Options > Live Share > "Share web app on debug" to "False" if you prefer. In Visual Studio Code, **no ports** are shared unless you decide to share them via the command palette / scoped command menu. In either case, exercise care when sharing additional ports.
 
 You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-local-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-local-server)
 
