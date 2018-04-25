@@ -24,6 +24,7 @@
 ## [Co-debug](use/vs.md#co-debuging)
 ## [Share a local server](use/vs.md#share-a-local-server)
 # Reference
+## [Security](reference/security.md)
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
