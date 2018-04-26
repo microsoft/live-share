@@ -113,7 +113,7 @@ Here's a few things to try out:
 3. Jump to the host's location and edit something together
 4. Pin to the host and follow as they make edits in different files
 5. Ask the host to start up a co-debugging session with you
-6. Ask the host to share a local server so you can check out something like a web app running on their machine
+6. Ask the host to share a server so you can check out something like a web app running on their machine
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
 

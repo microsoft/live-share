@@ -116,13 +116,13 @@ When you're debugging tough coding problems or bugs, having an extra pair of eye
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debuging) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-debuging)
 
-#### Share local servers / Share ports
+#### Share server / Share port
 
-When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a local server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
+When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
 
-**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-local-server) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-local-server)
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-server) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-server)
 
-#### Shared terminals
+#### Share terminals
 
 Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're always in control and can decide whether other collaborators can run commands themselves or just see command output. In fact, anything you want to keep to yourself you can run in an unshared terminal.
 

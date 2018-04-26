@@ -160,13 +160,13 @@ Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-deb
 
 ## Sharing a local server
 
-When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a local server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
+When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
 
 However, as a host, you should **be very selective with the ports you share** with guests and only share application ports rather system ports. For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky. For this reason, Live Share does not make any assumptions about what should or should not be shared without a configuration setting and the host performing an action.
 
 Visual Studio, the **web application port** specified in ASP.NET projects is **automatically shared during debugging only** to facilitate guest access to the web app when running.  However, you can turn off this automation by setting Tools > Options > Live Share > "Share web app on debug" to "False" if you prefer. In Visual Studio Code, **no ports** are shared unless you decide to share them via the command palette / scoped command menu. In either case, exercise care when sharing additional ports.
 
-You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-local-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-local-server)
+You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
 
 ## Sharing a terminal
 

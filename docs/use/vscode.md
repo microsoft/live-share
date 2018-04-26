@@ -406,6 +406,11 @@ To quickly jump to a collaborator's location (without following), you can simply
 
 ## Focusing
 
+![Focus scoped command palette menu option](../media/vscode-focus.png)
+
+![Focus toast notification](../media/vscode-focus-toast.png)
+
+
 **TEXT GOES HERE**
 
 ## Co-debuging
@@ -452,7 +457,7 @@ If you've updated settings so that as a guest you do not auto-attach to a co-deb
 
 Visual Studio Code does not have the concept of an known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session with a VS user that does you will automatically see the default browser appear connected to the host's running applications. See [Visual Studio features](vs.md#automatic-web-app-sharing) for more details.
 
-In addition, you can manually share the application or other endpoints like RESTful services using the "Share Local Server" feature. VS and VS Code guests can then open a browser on the same localhost port to see the running application.  See [share a local server](#share-a-local-server) for more details.
+In addition, you can manually share the application or other endpoints like RESTful services using the "Share Local Server" feature. VS and VS Code guests can then open a browser on the same localhost port to see the running application.  See [share a server](#share-a-server) for more details.
 
 ### Change when VS Code joins debugging sessions
 
@@ -466,7 +471,7 @@ Simply **edit settings.json** (File > Preferences > Settings), add one of the fo
 | ``"liveshare.joinDebugSessionOption":"Prompt"`` | As a guest, you are prompted as to whether you want to join a shared debugging session when it is started by the host. |
 | ``"liveshare.joinDebugSessionOption":"Manual"`` | As a guest, you'll need to manually join any  debugging sessions. See [detaching and reattaching](#detaching-and-reattaching). |
 
-## Share a local server
+## Share a server
 
 From time to time, as a collaboration session host you may find that you want to share additional local servers or services with guests. This can range from other RESTful end-points to databases or other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
 
@@ -501,6 +506,13 @@ To **stop** sharing a local server as the host, you simply click the session sta
 ![VS Code stop sharing server](../media/vscode-stop-sharing-server.png)<br />
 
 ## Share a terminal
+
+![Share terminal menu option](../media/vscode-share-terminal.png)<br />
+
+![Read-only or read/write selection](../media/vscode-share-terminal-ro-rw.png)<br />
+
+![Shared terminal running](../media/vscode-share-terminal-up.png)<br />
+
 
 **TEXT GOES HERE**
 

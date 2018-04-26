@@ -13,7 +13,7 @@
 ## [Join a session](use/vscode.md#join-a-collaboration-session)
 ## [Co-edit](use/vscode.md#co-editing)
 ## [Co-debug](use/vscode.md#co-debuging)
-## [Share a local server](use/vscode.md#share-a-local-server)
+## [Share a server](use/vscode.md#share-a-server)
 # How-tos: Visual Studio
 ## [Overview](use/vs.md)
 ## [Install](use/vs.md#installation)
@@ -22,7 +22,7 @@
 ## [Join a session](use/vs.md#join-a-collaboration-session)
 ## [Co-edit](use/vs.md#co-editing)
 ## [Co-debug](use/vs.md#co-debuging)
-## [Share a local server](use/vs.md#share-a-local-server)
+## [Share a server](use/vs.md#share-a-server)
 # Reference
 ## [Security](reference/security.md)
 ## [Connectivity](reference/connectivity.md)

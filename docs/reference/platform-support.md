@@ -87,14 +87,14 @@ All languages / platforms have same file intellisense (when the respective exten
 | Desktop (Electron/native) | ✅ | |
 | Games (Unity) | ? | |
 
-<sup>1</sup> Via [share local server](../use/vscode.md#share-a-local-server).<br />
+<sup>1</sup> Via [share local server](../use/vscode.md#share-a-server).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
 <sup>4</sup> Would be enabled via shared terminals. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/41)<br />
 <sup>5</sup> Debugging database stored procs is not currently supported <br />
 <sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
 <sup>7</sup> Cordova apps can be shared via the the "browser" platform<br />
-<sup>8</sup> React Native apps can be shared via Expo and [share local server](../use/vscode.md#share-a-local-server).<br />
+<sup>8</sup> React Native apps can be shared via Expo and [share local server](../use/vscode.md#share-a-server).<br />
 <sup>?</sup> Not yet validated.
 
 ## Visual Studio
@@ -154,11 +154,11 @@ While most languages have some single file Intellisense support, there are some 
 | VS Extensions | ✅ |  |
 | Linux (C++) | ? | |
 
-<sup>1</sup> Via [share local server](../use/vs.md#share-a-local-server). ASP.NET Web Apps can also use [automatic web app sharing](../use/vs.md#automatic-web-app-sharing).<br />
+<sup>1</sup> Via [share local server](../use/vs.md#share-a-server). ASP.NET Web Apps can also use [automatic web app sharing](../use/vs.md#automatic-web-app-sharing).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
 <sup>4</sup> Debugging database stored procs is not currently supported <br />
-<sup>5</sup> Via [share local server](../use/vs.md#share-a-local-server). <br />
+<sup>5</sup> Via [share local server](../use/vs.md#share-a-server). <br />
 <sup>?</sup> Not yet validated.
 
 ## See also

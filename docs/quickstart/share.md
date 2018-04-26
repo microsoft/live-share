@@ -148,7 +148,7 @@ That's it!! Here's a few things to try out once a guest has joined you:
 2. Jump to the guest's location and edit something together
 3. Pin to the guest and follow as they make edits in different files
 4. Start up a co-debugging session with them
-5. Share a local server so you can check out something like a web app running on their machine
+5. Share a server so you can check out something like a web app running on their machine
 
 Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/vs.md) extension docs for information on how to do these actions and more.
 

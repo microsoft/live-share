@@ -281,7 +281,7 @@ Each collaborator can investigate different variables, jump to different files i
 
 Even better, for ASP.NET Web App projects, by default if the host's project is configured to automatically start a web browser to connect to the running web application when debugging, Live Share will automatically do the same on each guest's machine!  This is done in a secure way and the remote web application is only available to the guests during the debugging session by default.
 
-See [share a local server](#share-a-local-server) for information on how to share server access for other project types and/or for the duration of the session.
+See [share a server](#share-a-server) for information on how to share server access for other project types and/or for the duration of the session.
 
 > **Tip:** If you don't like the automated browser sharing behavior and want to change it (either when you are an host or a guest), you can update settings in **Tools > Options > Live Share**.
 
@@ -312,7 +312,7 @@ By default as a guest, you'll be automatically attached to debugging sessions wh
 | Prompted | As a guest, you are prompted as to whether you want to join a shared debugging session when it is started by the host. |
 | Manual | As a guest, you'll need to manually join any  debugging sessions. See [detaching and reattaching](#detaching-and-reattaching).|
 
-## Share a local server
+## Share a server
 
 From time to time, as a collaboration session host you may find that you want to share additional local servers or services with guests. This can range from other RESTful end-points to databases or other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
 
