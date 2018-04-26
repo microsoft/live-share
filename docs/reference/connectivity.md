@@ -41,15 +41,17 @@ If you would prefer to disable direct or relayed connections or are simply troub
 
 To change the mode:
 
-**VS:** 
+**VS:**
+
 1. Go to Tools > Options > Live Share
 2. Select the mode from the "Connection Mode" dropdown
 3. Restart VS.
 
 **VS Code:**:
+
 1. Edit settings.json (File > Preferences > Settings)
-2.  Set `"liveshare.connectionMode"` to `"auto"`, `"direct"`, or `"relay"` depending on your preference.
-3.  Restart VS Code.
+2. Set `"liveshare.connectionMode"` to `"auto"`, `"direct"`, or `"relay"` depending on your preference.
+3. Restart VS Code.
 
 ## Requirements for connection modes
 
@@ -69,7 +71,7 @@ As outlined above, your personal firewall needs to allow **vsls-agent** to accep
 
 You can find the agent executable in one of the following locations.
 
-**VS Code Agent Location**
+**VS Code agent location**
 
 Substitute **VERSION** for the extension version number in one of the paths below:
 
@@ -81,7 +83,7 @@ Substitute **VERSION** for the extension version number in one of the paths belo
 
     `%USERPROFILE%\.vscode\extensions\ms-vsliveshare.vsliveshare-VERSION\dotnet_modules\vsls-agent.exe`
 
-**Visual Studio Agent Location**
+**Visual Studio agent location**
 
 The Visual Studio location is more dynamic, but you can follow these steps to find the executable:
 

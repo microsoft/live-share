@@ -2,7 +2,7 @@
 title: "Overview - Visual Studio Live Share | Microsoft Docs"
 description: "An overview of Visual Studio Live Share and its capabilities."
 ms.custom:
-ms.date: 03/22/2018
+ms.date: 04/26/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -96,7 +96,7 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#join-a-colla
 
 When you open the same file as another collaborator, you are instantly able to "collaboratively edit" or "co-edit" the file's contents. You can see each collaborator's edits, their cursors and selections, jump-to their location, and more. Even better, you are not forced into editing the same file at all times so you can opportunistically collaborate and act independently as you see fit.
 
-> **Note:** Currently solutions or projects in VS that reference files at a different "root" than the solution are not shared due to a limitation. This is also the case for "multi-root workspaces" in VS Code. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/46).
+> **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(vote)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(vote)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS or "multi-root workspaces" in VS Code are not shared [(vote)](https://github.com/MicrosoftDocs/live-share/issues/46).
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-editing)
 
@@ -104,13 +104,15 @@ When you open the same file as another collaborator, you are instantly able to "
 
 Sometimes you need to explain a design or problem that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project when co-editing. For this reason, as a guest, when you join a collaboration session you automatically "follow" the host's edit location. Hosts and guests can hop in and out of following one another with a simple mouse click. 
 
-> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root. [Vote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/54).
+> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(vote)](https://github.com/MicrosoftDocs/live-share/issues/54).
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#follow-a-collaborator-via-pinning) [![VS](media/vs-icon-15x15.png)](use/vs.md#follow-a-collaborator-via-pinning)
 
 #### Co-debugging
 
 When you're debugging tough coding problems or bugs, having an extra pair of eyes can be really useful. As a host, Live Share automatically enables "collaborative debugging" or "co-debugging" by sharing the debugging session with all guests. You each get co-editing features along with the ability to investigate independently as you step through together.
+
+> **Note:** See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debuging) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-debuging)
 
