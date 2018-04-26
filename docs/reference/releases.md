@@ -24,6 +24,15 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
+## v0.2.489 (VS Code / Visual Studio)
+
+This release few critical issue with VS Code issues:
+
+1. Users were seeing a `Agent terminated with exit code: 2 and signal null` error on startup (#252).
+2. Users were seeing an intermittent join error `Must call ProcessMessagesAsync first so responses can be recieved`.
+
+Apologies for the inconvience! 😭
+
 ## v0.2.487 (VS Code / Visual Studio)
 
 This release is a mix of features, foundational changes, and bug-fixes which addresses a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
