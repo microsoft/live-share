@@ -2,7 +2,7 @@
 title: "Extensions and ecosystem support -  Visual Studio Live Share | Microsoft Docs"
 description: "An overview of extension support for Visual Studio Live share."
 ms.custom:
-ms.date: 03/22/2018
+ms.date: 04/25/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

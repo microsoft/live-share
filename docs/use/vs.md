@@ -2,7 +2,7 @@
 title: "Collaborate using Visual Studio - Visual Studio Live Share | Microsoft Docs"
 description: "A set of collaboration how-tos for Visual Studio and Live Share."
 ms.custom:
-ms.date: 03/22/2018
+ms.date: 04/25/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
