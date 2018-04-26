@@ -28,7 +28,7 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 This release is a mix of features, foundational changes, and bug-fixes which addresses a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### Features
+### Enhancements
 
 1. **Synchronized scroll position in follow mode** (#115) - A fairly common request has been to keep the scroll position lined up while you are in follow mode.
 
@@ -36,7 +36,7 @@ This release is a mix of features, foundational changes, and bug-fixes which add
 
 3. **Improved visibility to participants in VS** - This release has the first of a few UX tweaks that are coming to follow mode and participant avatars in VS.
 
-#### Experimental Features
+#### Experimental Features 🔬👩‍🔬
 
 This release introduces a number of experimental features. To enable them:
 
@@ -45,7 +45,7 @@ This release introduces a number of experimental features. To enable them:
 
 Note that these features are still in progress and may have bugs or change before they are released. You can read about a number of these features in the [updated security article](https://aka.ms/vsls-security).
 
-### Reported Issues Fixed
+### Reported Issues Fixed 🚀
 
 1. **VS Code Insiders activation issue** - An unexpected change in the insiders version of VS Code broke Live Share. This release resolves the problem.
 
@@ -67,7 +67,7 @@ This release introduces new platform support and fixes a number of user-reported
 
 **VS Code Linux Support!** (#24) 🐧👏🎉 - As our most requested feature, this is the first release to introduce support for VS Code on Linux. There are some **pre-requisites** that need to be installed so check out the **[installation documentation](https://aka.ms/vsls-docs/vscode/install)** for details. There are still a few [shortcomings](https://aka.ms/vsls-issues/linux) we are working through.
 
-### Reported Issues Fixed
+### Reported Issues Fixed 🚀
 
 1. **VS Code users not prompted to sign in when joining** (#167, #89) - A series of issues prevented the browser from appearing when a user has not signed in when joining via a browser link. This should now be resolved.
 
