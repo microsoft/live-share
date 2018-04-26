@@ -358,7 +358,19 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ![Screen shot showing highlighting](../media/vscode-highlight.png)
 
-### Following another participant's edits
+### Changing participant flag behaviors
+
+By default, Visual Studio Live Share automatically displays a "flag" next to a participant's cursor on hover, or when they edit, highlight, or move their cursor. In some cases you may prefer to change this behavior.
+
+Simply **edit settings.json** (File > Preferences > Settings), add one of the following, and then restart VS Code:
+
+| Setting | Behavior |
+|---------|----------|
+| ``"liveshare.nameTagVisibility":"Never"`` | The flag is only visible when you hover over the cursor. |
+| ``"liveshare.nameTagVisibility":"Activity"`` | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves their cursor.
+| ``"liveshare.nameTagVisibility":"Always"`` | The flag is always visible. |
+
+## Following another participant's edits
 
 Sometimes you need to explain a design or problem that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you are will automatically "follow" the host. When following a participant, your editor's will match their currently open file and scroll position.
 
@@ -392,17 +404,9 @@ A quick way to see who is in the collaboration session is to hover over a status
 
 To quickly jump to a collaborator's location (without following), you can simply click on this same icon. If there's only one other participant in the session, it jumps right to their location. If there is more than one, you'll see a list where you can select a participant to jump to instead.
 
-### Changing participant flag behaviors
+## Focus participants
 
-By default, Visual Studio Live Share automatically displays a "flag" next to a participant's cursor on hover, or when they edit, highlight, or move their cursor. In some cases you may prefer to change this behavior.
-
-Simply **edit settings.json** (File > Preferences > Settings), add one of the following, and then restart VS Code:
-
-| Setting | Behavior |
-|---------|----------|
-| ``"liveshare.nameTagVisibility":"Never"`` | The flag is only visible when you hover over the cursor. |
-| ``"liveshare.nameTagVisibility":"Activity"`` | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves their cursor.
-| ``"liveshare.nameTagVisibility":"Always"`` | The flag is always visible. |
+**TEXT GOES HERE**
 
 ## Co-debuging
 

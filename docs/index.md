@@ -82,13 +82,13 @@ Collaboration session hosts can use all of their tools and services but guests a
 
 When you "share" as a host, you start up a collaboration session that shares the contents of a project, solution, or a folder that guests can then access through an invitation link. While "share" is short hand for "share a project," it also opens the door for sharing other capabilities like debugging.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-project) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-project)
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-project) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-project)
 
 #### Joining
 
 Clicking an invitation link sent to you by a host allows you to "join" a collaboration session and access any content or capabilities the host has opted to share with you. The web link provides a quick way to hop into a collaboration session if you already have the extension installed and setup information if you do not.
 
-Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#join-a-collaboration-session) [![VS](media/vs-icon-15x15.png)](use/vs.md#join-a-collaboration-session)
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#join-a-collaboration-session) [![VS](media/vs-icon-15x15.png)](use/vs.md#join-a-collaboration-session)
 
 ### Features
 
@@ -96,7 +96,7 @@ Learn more: [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#join-a-colla
 
 When you open the same file as another collaborator, you are instantly able to "collaboratively edit" or "co-edit" the file's contents. You can see each collaborator's edits, their cursors and selections, jump-to their location, and more. Even better, you are not forced into editing the same file at all times so you can opportunistically collaborate and act independently as you see fit.
 
-> **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS or "multi-root workspaces" in VS Code are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
+> **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(vote)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(vote)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS or "multi-root workspaces" in VS Code are not shared [(vote)](https://github.com/MicrosoftDocs/live-share/issues/46).
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-editing)
 
@@ -104,7 +104,7 @@ When you open the same file as another collaborator, you are instantly able to "
 
 Sometimes you need to explain a design or problem that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project when co-editing. For this reason, as a guest, when you join a collaboration session you are will automatically "follow" the host edit location. Hosts and guests can hop in and out of following one another with a simple mouse click.
 
-> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/54).
+> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(vote)](https://github.com/MicrosoftDocs/live-share/issues/54).
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#following-another-participants-edits) [![VS](media/vs-icon-15x15.png)](use/vs.md#following-another-participants-edits)
 

@@ -213,7 +213,20 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ![Screen shot showing highlighting](../media/vs-highlight.png)
 
-### Following another participant's edits
+### Changing participant flag behaviors
+
+By default, Visual Studio Live Share automatically displays a "flag" next to a participant's cursor on hover, or when they edit, highlight, or move their cursor. In some cases you may prefer to change this behavior.
+
+1. Go to **Tools > Options > Live Share**
+2. Change the **Flag visibility** option to one of the following:
+
+| Option | Behavior |
+|--------|----------|
+| OnHoverOnly | The flag is only visible when you hover over the cursor. |
+| OnHoverOrActivity | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves their cursor. |
+| Always | The flag is always visible.
+
+## Following another participant's edits
 
 Whenever you are in a collaboration session, you'll be able can see each participant's initials in icons in upper right and hovering over the initials shows you their full information.
 
@@ -233,10 +246,14 @@ You can also stop following by clicking the initials of the person you are follo
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-pinned.png" width="100%" alt="Visual Studio pinned user"/>
+        <center>
+            <img src="../media/vs-pinned.png" width="50%" alt="Visual Studio pinned user"/>
+        </center>
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-pin-hover.png" width="100%" alt="Visual Studio unpinned user" />
+        <center>
+            <img src="../media/vs-pin-hover.png" width="50%" alt="Visual Studio unpinned user" />
+        </center>
     </td>
 </tr>
 </table>
@@ -245,18 +262,9 @@ Clicking on this same location will allow you to follow any participant in the c
 
 Finally, sometimes you just want to jump to someone's location rather than following them. You can do this as well by simply double-clicking on their initials.
 
-### Changing participant flag behaviors
+## Focus participants
 
-By default, Visual Studio Live Share automatically displays a "flag" next to a participant's cursor on hover, or when they edit, highlight, or move their cursor. In some cases you may prefer to change this behavior.
-
-1. Go to **Tools > Options > Live Share**
-2. Change the **Flag visibility** option to one of the following:
-
-| Option | Behavior |
-|--------|----------|
-| OnHoverOnly | The flag is only visible when you hover over the cursor. |
-| OnHoverOrActivity | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves their cursor. |
-| Always | The flag is always visible.
+**TEXT GOES HERE**
 
 ## Co-debuging
 
