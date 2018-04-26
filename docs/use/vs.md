@@ -226,7 +226,7 @@ By default, Visual Studio Live Share automatically displays a "flag" next to a p
 | OnHoverOrActivity | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves their cursor. |
 | Always | The flag is always visible.
 
-## Follow mode
+## Following
 
 Whenever you are in a collaboration session, you'll be able can see each participant's initials in icons in upper right and hovering over the initials shows you their full information.
 
@@ -249,7 +249,7 @@ Clicking on this same location will allow you to follow any participant in the c
 
 Finally, sometimes you just want to jump to someone's location rather than following them. You can do this as well by simply double-clicking on their initials.
 
-## Focusing participants
+## Focusing
 
 **TEXT GOES HERE**
 

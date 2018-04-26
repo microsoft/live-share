@@ -100,13 +100,13 @@ When you open the same file as another collaborator, you are instantly able to "
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-editing)
 
-#### Follow mode
+#### Following and focusing
 
-Sometimes you need to explain a design or problem that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project when co-editing. For this reason, as a guest, when you join a collaboration session you are will automatically "follow" the host edit location. Hosts and guests can hop in and out of following one another with a simple mouse click.
+Sometimes you need to explain a design or problem that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project when co-editing. For this reason, as a guest, when you join a collaboration session you automatically "follow" the host edit location. Hosts and guests can hop in and out of following one another with a simple mouse click. In addition, you may want to ask all participants to follow you. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
 
 > **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(vote)](https://github.com/MicrosoftDocs/live-share/issues/54).
 
-**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#follow-mode) [![VS](media/vs-icon-15x15.png)](use/vs.md#follow-mode)
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#following) [![VS](media/vs-icon-15x15.png)](use/vs.md#following)
 
 #### Co-debugging
 
