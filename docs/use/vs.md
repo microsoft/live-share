@@ -243,20 +243,7 @@ To make it easy to switch out of "follow mode", you'll stop following if any of 
 
 You can also stop following by clicking the initials of the person you are following in the upper right hand corner. A circle around the initials will go away when you are no longer following.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <center>
-            <img src="../media/vs-pinned.png" width="50%" alt="Visual Studio pinned user"/>
-        </center>
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <center>
-            <img src="../media/vs-pin-hover.png" width="50%" alt="Visual Studio unpinned user" />
-        </center>
-    </td>
-</tr>
-</table>
+![Visual Studio participant being followed](../media/vs-pinned.png) ![Visual Studio participant not being followed](../media/vs-pin-hover.png)
 
 Clicking on this same location will allow you to follow any participant in the collaboration session whether they are a guest or a host. Hosts can also follow guests if needed.
 
