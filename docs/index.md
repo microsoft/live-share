@@ -2,7 +2,7 @@
 title: "Overview - Visual Studio Live Share | Microsoft Docs"
 description: "An overview of Visual Studio Live Share and its capabilities."
 ms.custom:
-ms.date: 04/25/2018
+ms.date: 04/26/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

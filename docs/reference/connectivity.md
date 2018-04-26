@@ -41,15 +41,17 @@ If you would prefer to disable direct or relayed connections or are simply troub
 
 To change the mode:
 
-**VS:** 
+**VS:**
+
 1. Go to Tools > Options > Live Share
 2. Select the mode from the "Connection Mode" dropdown
 3. Restart VS.
 
 **VS Code:**:
+
 1. Edit settings.json (File > Preferences > Settings)
-2.  Set `"liveshare.connectionMode"` to `"auto"`, `"direct"`, or `"relay"` depending on your preference.
-3.  Restart VS Code.
+2. Set `"liveshare.connectionMode"` to `"auto"`, `"direct"`, or `"relay"` depending on your preference.
+3. Restart VS Code.
 
 ## Requirements for connection modes
 
@@ -69,7 +71,7 @@ As outlined above, your personal firewall needs to allow **vsls-agent** to accep
 
 You can find the agent executable in one of the following locations.
 
-**VS Code Agent Location**
+**VS Code agent location**
 
 Substitute **VERSION** for the extension version number in one of the paths below:
 
@@ -81,7 +83,7 @@ Substitute **VERSION** for the extension version number in one of the paths belo
 
     `%USERPROFILE%\.vscode\extensions\ms-vsliveshare.vsliveshare-VERSION\dotnet_modules\vsls-agent.exe`
 
-**Visual Studio Agent Location**
+**Visual Studio agent location**
 
 The Visual Studio location is more dynamic, but you can follow these steps to find the executable:
 
@@ -91,9 +93,7 @@ The Visual Studio location is more dynamic, but you can follow these steps to fi
 
 ## Proxies
 
-Visual Studio Live Share currently has some limitations around proxy use. **Proxy support is currently limited to direct mode due a known issue.** See [above](#changing-the-connection-mode) for how to switch to direct mode.
-
-Next, while automatic proxy settings should work on Windows, when using macOS or Linux (and certain proxies with Windows) the **HTTP_PROXY** and **HTTPS_PROXY** environment variables will need to be set *globally*.
+Visual Studio Live Share currently has some limitations around proxy use. While automatic proxy settings should work on Windows, when using macOS or Linux (and with certain proxy configurations on Windows) the **HTTP_PROXY** and **HTTPS_PROXY** environment variables will need to be set *globally*.
 
 If your proxy doesn't automatically set these for you, you can manually set the variables in the following form:
 
@@ -102,6 +102,8 @@ If your proxy doesn't automatically set these for you, you can manually set the 
 If you have an authenticating proxy, you can add your user and password as follows:
 
 `HTTPS_PROXY=https://user:password@proxy-ip-address:proxyport`
+
+If these settings don't solve the problem for you, [please let us know](https://github.com/MicrosoftDocs/live-share/issues/86) the specifics of your proxy setup so we can take a look at improving support.
 
 ## See also
 
