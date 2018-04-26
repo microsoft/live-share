@@ -348,6 +348,8 @@ Simply select a file from the file explorer and start editing. Guests will see e
 
 ![Screen shot showing co-editing](../media/vscode-coedit.png)
 
+> **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Finally, "Multi-root workspaces" is not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
+
 In addition, each collaborator can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
 > **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
@@ -356,23 +358,19 @@ Further, to better allow you to highlight where problems might exist or convey i
 
 ![Screen shot showing highlighting](../media/vscode-highlight.png)
 
-### Moving to a collaborator's edit location
-
-Since you may want to quickly jump to where another collaborator is located, if there is only one other person in the session you can hover over a status bar icon that shows the number of collaborators to see who is in the collaboration session. Simply clicking on this same icon to jumps the active editor to their exact location.
-
-![Screen shot showing user status bar icon](../media/vscode-user-status.png)
-
-If there is more than one other person in the collaboration session, clicking on the icon presents a list of those currently in the collaboration session. You may then select a collaborator from the list to jump to their location.
-
-![Screen shot showing list of collaborators](../media/vscode-list-collaborators.png)
-
 ### Following another participant's edits
 
-At times the person you are collaborating with may need to show you a few different places in code to explain a problem or possible solution. When you join as a guest, you will automatically be "following" the host and your current editor and scroll position will follow their cursor as they move between files. This can useful since the host may need to jump around quickly between different files to help you orient yourself.
+Sometimes you need to explain a design or problem that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you are will automatically "follow" the host. When following a participant, your editor's will match their currently open file and scroll position.
 
-To start following a participant, click the pin icon in the upper right of the tab set. As above, if more than one other person is in the collaboration session you'll be asked to select the guest you want to follow.
+> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/54).
+
+To start following a participant (as either a host or guest), click the pin icon in the upper right of the tab set.
 
 ![VS Code pin](../media/vscode-pin.png)
+
+If more than one other person is in the collaboration session you'll be asked to select the guest you want to follow.
+
+![Screen shot showing list of collaborators](../media/vscode-list-collaborators.png)
 
 The pin is for a tab set so you can use split view to have a set that is pinned and a set that is unpinned if you so desire.
 
@@ -385,6 +383,14 @@ To make it easy to hop in and out of pinning, the tab set is un-pinned if any of
 3. You click the pin icon again
 
 Afterwards, simply click the pin icon again to follow them once again.
+
+### Finding who is in the session and jump-to
+
+A quick way to see who is in the collaboration session is to hover over a status bar icon that shows the number of collaborators to in the collaboration session.
+
+![Screen shot showing user status bar icon](../media/vscode-user-status.png)
+
+To quickly jump to a collaborator's location (without following), you can simply click on this same icon. If there's only one other participant in the session, it jumps right to their location. If there is more than one, you'll see a list where you can select a participant to jump to instead.
 
 ### Changing participant flag behaviors
 
@@ -421,6 +427,8 @@ Once the debugger attaches on the host's side, all guests are also attached. Whi
 ![VS Code debugger attached](../media/vscode-debugger.png)
 
 Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
+
+> **Note:** See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
 
 Each collaborator can investigate different variables, jump to different files in the call stack, variables, and breakpoints are shared across all guests and can be added by anyone. Co-editing features then allow each collaborator to track where the other is located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 

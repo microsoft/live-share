@@ -197,9 +197,13 @@ Having issues with joining? Check out [troubleshooting](../troubleshooting.md#sh
 
 ## Co-editing
 
-Once a guest has joined a collaboration session, the host other guests will immediately be able to see each others edits and highlights in real-time. Simply select a file from the Solution Explorer and start editing. All participants  will see edits as the host or other guests make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
+Once a guest has joined a collaboration session, the host other guests will immediately be able to see each others edits and highlights in real-time.
+
+Simply select a file from the Solution Explorer and start editing. All participants will see edits as the host or other guests make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
 
 ![Screen shot showing co-editing](../media/vs-coedit.png)
+
+> **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
 
 In addition, each guest can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
@@ -215,7 +219,9 @@ Whenever you are in a collaboration session, you'll be able can see each partici
 
 ![Screen shot showing user](../media/vs-person.png)
 
-When you join as a guest, you will automatically be "following" the host and your current editor and scroll position will follow their cursor as they move between files. This can useful since the host may need to jump around quickly between different files to help you orient yourself.
+When you join as a guest, you will automatically be "following" the host and your current editor and scroll position will follow as they move between files. This can useful since the host may need to jump around quickly between different files to help you orient yourself.
+
+> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/54).
 
 To make it easy to switch out of "follow mode", you'll stop following if any of the following happens:
 
@@ -269,6 +275,8 @@ Once the debugger attaches on the host's side, all guests are also attached. Whi
 ![VS debugger attached](../media/vs-debugger.png)
 
 Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
+
+> **Note:** See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
 
 Each collaborator can investigate different variables, jump to different files in the call stack, variables, and breakpoints are shared across all guests and can be added by anyone. Co-editing features then allow each collaborator to track where the other is located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
