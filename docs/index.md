@@ -106,7 +106,7 @@ Sometimes you need to explain a design or problem that spans multiple files or l
 
 > **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(vote)](https://github.com/MicrosoftDocs/live-share/issues/54).
 
-**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#following-another-participants-edits) [![VS](media/vs-icon-15x15.png)](use/vs.md#following-another-participants-edits)
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#follow-mode) [![VS](media/vs-icon-15x15.png)](use/vs.md#follow-mode)
 
 #### Co-debugging
 
