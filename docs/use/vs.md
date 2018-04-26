@@ -203,7 +203,7 @@ Simply select a file from the Solution Explorer and start editing. All participa
 
 ![Screen shot showing co-editing](../media/vs-coedit.png)
 
-> **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
+> **Note:** Co-editing has a few limitations. See [platform support](../reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
 
 In addition, each guest can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
@@ -271,7 +271,7 @@ Once the debugger attaches on the host's side, all guests are also attached. Whi
 
 Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
 
-> **Note:** See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
+> **Note:** See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
 
 Each collaborator can investigate different variables, jump to different files in the call stack, variables, and breakpoints are shared across all guests and can be added by anyone. Co-editing features then allow each collaborator to track where the other is located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
