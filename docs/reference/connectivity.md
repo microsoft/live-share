@@ -91,9 +91,7 @@ The Visual Studio location is more dynamic, but you can follow these steps to fi
 
 ## Proxies
 
-Visual Studio Live Share currently has some limitations around proxy use. **Proxy support is currently limited to direct mode due a known issue.** See [above](#changing-the-connection-mode) for how to switch to direct mode.
-
-Next, while automatic proxy settings should work on Windows, when using macOS or Linux (and certain proxies with Windows) the **HTTP_PROXY** and **HTTPS_PROXY** environment variables will need to be set *globally*.
+Visual Studio Live Share currently has some limitations around proxy use. Next, while automatic proxy settings should work on Windows, when using macOS or Linux (and certain proxies with Windows) the **HTTP_PROXY** and **HTTPS_PROXY** environment variables will need to be set *globally*.
 
 If your proxy doesn't automatically set these for you, you can manually set the variables in the following form:
 
@@ -102,6 +100,8 @@ If your proxy doesn't automatically set these for you, you can manually set the 
 If you have an authenticating proxy, you can add your user and password as follows:
 
 `HTTPS_PROXY=https://user:password@proxy-ip-address:proxyport`
+
+If these settings don't solve the problem for you, [please let us know](https://github.com/MicrosoftDocs/live-share/issues/86).
 
 ## See also
 
