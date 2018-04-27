@@ -2,7 +2,7 @@
 title: "Collaborate using Visual Studio Code -  Visual Studio Live Share | Microsoft Docs"
 description: "A set of collaboration how-tos for Visual Studio Code and Live Share."
 ms.custom:
-ms.date: 03/22/2018
+ms.date: 04/27/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315)._
 
-- **Linux**: 64-bit Ubuntu Linux 16.04+, see [below](#linux-install-steps) for information on other distributions.
+- **Linux**: 64-bit Ubuntu Desktop 16.04+, see [below](#linux-install-steps) for information on other distributions.
 
     - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
     - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though ArchLinux and Manjaro are not officially supported by either VS Code or .NET Core).
@@ -77,8 +77,9 @@ Some distributions of Linux are missing needed libraries for Live Share. The fol
 
 | Distribution | Missing libraries |
 |--------|-------------------|
-| Ubuntu 17.10 (64-bit) | `libunwind8 liblttng-ust0` |
-| Ubuntu 16.04 (64-bit) | &lt;none&gt; |
+| Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` |
+| Ubuntu Desktop 17.10 (64-bit) | `libunwind8 liblttng-ust0` |
+| Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; |
 | Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` |
 | Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` |
 | Mint 18.3 - Cinnamon (64-bit) | `libcurl3` |
@@ -106,6 +107,7 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 - libicu52 (for Ubuntu 14.X)
 - libicu55 (for Ubuntu 16.X)
 - libicu57 (for Ubuntu 17.X)
+- libicu60 (for Ubuntu 18.X)
 - gettext
 - apt-transport-https
 
@@ -115,7 +117,7 @@ In addition, the following are libraries **Live Share itself depends on** that m
 - libsecret-1-0
 - desktop-file-utils
 
-Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu/Xubuntu/Kubuntu 16.04 or Mint 18.3:
+Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu 16.04/17.10/18.04 or Mint 18.3:
 
     sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https $(apt-cache search libicu | grep -o "libicu[0-9][0-9]\s")
 
