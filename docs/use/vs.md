@@ -251,6 +251,10 @@ Finally, sometimes you just want to jump to someone's location rather than follo
 
 ## Focusing
 
+![Focus menu option](../media/vs-focus.png)
+
+![Focus toast notification](../media/vs-focus-toast.png)
+
 **TEXT GOES HERE**
 
 ## Co-debuging
@@ -341,6 +345,10 @@ Note that *guests cannot* control which ports on the host's machine are shared f
 To **stop** sharing a local server, the host simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the appropriate port, and click "Remove".
 
 ## Share a terminal
+
+![Terminal menu](../media/vs-terminal-menu.png)
+
+![Terminal install toast notification](../media/vs-terminal-install.png)
 
 **TEXT GOES HERE**
 
