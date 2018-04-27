@@ -26,10 +26,10 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 ## v0.2.489 (VS Code / Visual Studio)
 
-This release few critical issue with VS Code issues:
+This release resolves two critical issues:
 
-1. Users were seeing a `Agent terminated with exit code: 2 and signal null` error on startup (#252).
-2. Users were seeing an intermittent join error `Must call ProcessMessagesAsync first so responses can be recieved`.
+1. A large number of VS Code users on Mac were seeing a `Agent terminated with exit code: 2 and signal null` error on startup (#252).
+2. VS and VS Code users were seeing an intermittent join error saying `Must call ProcessMessagesAsync first so responses can be recieved`.
 
 Apologies for the inconvience! 😭
 
