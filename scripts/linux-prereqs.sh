@@ -18,8 +18,9 @@ echo "See https://aka.ms/vsls-docs/linux-prerequisites for manual instructions."
 echo ""
 echo "-------------------------------------------------------------------------------"
 echo ""
+
 read -p "Continue [Y/n]? "
-if ! [[ "$REPLY"  =~ ^[Yy] ]]; then    
+if  [[ "$REPLY" != "" ]] && ! [[ "$REPLY"  =~ ^[Yy] ]]; then    
     exit 2
 fi  
 echo ""
