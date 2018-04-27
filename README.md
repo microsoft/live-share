@@ -7,7 +7,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # Visual Studio Live Share Docs & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
-<td style="width: 140px; text-align: center;"><a href="https://aka.ms/vsls"><img src="docs/media/vsls-icon.png" style="width: 128px; height: 128px;" alt="Visual Studio Live Share logo"/></a></td>
+<td style="width: 140px; text-align: center;"><a href="https://aka.ms/vsls"><img width="128px" src="docs/media/vsls-icon.svg" alt="Visual Studio Live Share logo"/></a></td>
 <td>
 <strong>Visual Studio Live Share</strong><br />
 <i>Enabling developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
