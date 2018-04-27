@@ -67,7 +67,7 @@ As a Linux user, in addition to the steps above, you will need to run a command 
 
 Some distributions of Linux are missing needed libraries for Live Share. To install these dependencies quickly on supported distributions, run this command from a Terminal window:
 
-    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && sh ~/vsls-reqs
+    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
 
 Assuming it completes successfully, you should be all set!
 
