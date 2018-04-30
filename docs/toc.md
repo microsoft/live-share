@@ -28,6 +28,7 @@
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
+## [Linux install details](reference/linux.md)
 ## [Release Notes](reference/releases.md)
 # Resources
 ## [Troubleshooting](troubleshooting.md)

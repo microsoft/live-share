@@ -45,9 +45,9 @@ Installing the extension is easy. Just follow these steps:
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0+)</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, 64-bit Linux <b>(<a href="../use/vscode.md#installation">details</a>)</b><br />
-        2. <strong>Linux users</strong>: Be sure you have installed the needed <a href="../use/vscode.md#install-linux-prerequisites">prerequisite libraries</a>.<br />
-        3. Download and install the VS Live Share extension from the marketplace. <br />
+        2. Download and install the VS Live Share extension from the marketplace. <br />
         4. Reload and wait for dependencies to download and install (see status bar).<br />
+        4. <strong>Linux users</strong>: Enter your admin (sudo) password if prompted to install <a href="../reference/linux.md#install-linux-prerequisites">install prerequisites</a>.<br />
         <a href="https://aka.ms/vsls-dl/vscode" alt="Download button"><img src="../media/download.png"></a>
     </td>
 </tr>
@@ -88,7 +88,7 @@ If you are using **Visual Studio** and have already signed into the tool, Visual
 
 ### 3. Open/re-open the invite link in a browser
 
-> **Linux users:** Be sure to run the browser integration terminal command when prompted before executing this step. See [here](../use/vscode.md#linux-browser-integration) for additional details.
+> **Linux users:** Certain distributions may require Live Share to prompt you to enter an admin (sudo) password to install Live Share's browser integration. See [here](../reference/linux.md#linux-browser-integration) for additional details.
 
 Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 

@@ -42,7 +42,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 
 - **Linux**: 64-bit Ubuntu Desktop 16.04+, see [below](#linux-install-steps) for information on other distributions.
 
-    - **Be sure to install [needed Linux prerequisites](#install-linux-prerequisites)**.
+    - Live Share requires a number of [Linux prerequisites](#linux-install-steps) you should be prompted to install after the extension is running.
     - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though ArchLinux and Manjaro are not officially supported by either VS Code or .NET Core).
     - However, given the rate of change in the Linux world, your mileage may vary. See [below](#linux-install-steps) for details.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
@@ -54,6 +54,7 @@ After that, downloading and installing the Visual Studio Live Share extension is
 3. Reload Visual Studio Code
 4. Wait for dependencies to download and install (see status bar).<br/>
     ![Finishing install](../media/vscode-finishing-install.png)
+5. **Linux users**: Enter your admin (sudo) password if prompted to [install prerequisites](#linux-install-steps).
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
@@ -61,104 +62,15 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
-As a Linux user, in addition to the steps above, you will need to run a command in the terminal when prompted to enable browser integrations and may need to install some missing libraries for certain distributions.
+Some distributions of Linux are missing needed libraries for Live Share. By default, Live Share attempts to detect and install Linux pre-requisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
 
-#### Install Linux prerequisites
+![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
-Some distributions of Linux are missing needed libraries for Live Share. To install these dependencies quickly on supported distributions, run this command from a Terminal window:
-
-    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
+If you click "Install", if you are on a detected distribution, a terminal window will appear where you'll need to enter your admin (sudo) password to continue. See [tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros) for the current state of other distributions as reported by the community.
 
 Assuming it completes successfully, you should be all set!
 
-##### Known libraries missing from specific distributions
-
-Some distributions of Linux are missing needed libraries for Live Share. The following is a list of libraries that are missing from distributions in their vanilla installation.
-
-| Distribution | Missing libraries |
-|--------|-------------------|
-| Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` |
-| Ubuntu Desktop 17.10 (64-bit) | `libunwind8 liblttng-ust0` |
-| Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; |
-| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` |
-| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` |
-| Mint 18.3 - Cinnamon (64-bit) | `libcurl3` |
-| Fedora 27 (64-bit) | &lt;none&gt; |
-| openSuSE 12 (64-bit) | &lt;none&gt; |
-| CentOS 7 | &lt;none&gt; |
-
-Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries typically required.
-
-For example, *ArchLinux* is not officially supported by VS Code or .NET Core (and thus by extension Live Share), but there are community packages as the community has opted to try out Live Share  we have found that the `gnome-keyring` and `libsecret` libraries are often missing. You should also be aware libraries like gnome-keyring may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments so check your distribution's documentation for details.
-
-##### Details on required libraries
-
-Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
-
-Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries may be missing from certain **Debian/Ubuntu** distributions or derivatives:
-
-- libunwind8
-- liblttng-ust0
-- libcurl3
-- libssl1.0.0
-- libuuid1
-- libkrb5-3
-- zlib1g
-- libicu52 (for Ubuntu 14.X)
-- libicu55 (for Ubuntu 16.X)
-- libicu57 (for Ubuntu 17.X)
-- libicu60 (for Ubuntu 18.X)
-- gettext
-- apt-transport-https
-
-In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
-
-- gnome-keyring
-- libsecret-1-0
-- desktop-file-utils
-
-Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu 16.04/17.10/18.04 or Mint 18.3:
-
-    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https $(apt-cache search libicu | grep -o "libicu[0-9][0-9]\s")
-
-The last part of the command automatically determines which version of libicu to install.
-
-**Fedora/CentOS/RHL** requires similar packages but with slightly different names:
-
-- libunwind
-- lttng-ust
-- libcurl
-- openssl-libs
-- libuuid
-- krb5-libs
-- libicu
-- zlib
-
-As with Debian/Ubuntu, **Live Share itself** depends on the following:
-
-- gnome-keyring
-- libsecret
-- desktop-file-utils
-
-Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything:
-
-    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
-
-Other distributions will require the same libraries, but the package names may be subtly different. You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
-
-#### Linux browser integration
-
-Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser. **You will be prompted to do this each time the extension is installed or updated.**
-
-> **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify you have installed the needed [Linux prerequisites](#install-linux-prerequisites).
-
-The command will look like this (where VERSION is replaced by the Live Share extension version):
-
-    sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
-
-Run the script in a Terminal and enter your sudo password when prompted.
-
-If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
+If you are still running into problems or have other questions, see the **[Linux installation details](../reference/linux.md)** article for additional details and tips.
 
 ## Sign in
 
@@ -286,7 +198,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 2. **Click on the invite link / open the invite in your browser**
 
-    > **Linux users:** Be sure to run the browser integration terminal command when prompted before executing this step. See [here](#linux-browser-integration) for additional details.
+    > **Linux users:** Certain distributions may require Live Share to prompt you to enter an admin (sudo) password to install Live Share's browser integration. See [here](../reference/linux.md#linux-browser-integration) for additional details.
 
     Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
@@ -551,5 +463,6 @@ Check out these additional articles for more information.
 - [How-to: Collaborate using Visual Studio](vs.md)
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Security features of Live Share](../reference/security.md)
+- [Linux installation details](../reference/linux.md)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

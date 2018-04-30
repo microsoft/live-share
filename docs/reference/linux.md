@@ -1,0 +1,171 @@
+---
+title: "Linux installation details -  Visual Studio Live Share | Microsoft Docs"
+description: "Detailed information on installing Visual Studio Live Share on Linux."
+ms.custom:
+ms.date: 04/30/2018
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "liveshare"
+ms.topic: "reference"
+author: "chuxel"
+ms.author: "clantz"
+manager: "AmandaSilver"
+ms.workload: 
+  - "liveshare"
+---
+
+<!--
+Copyright © Microsoft Corporation
+All rights reserved.
+Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
+-->
+
+# Linux installation details
+
+Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. Users that stick to Ubuntu Desktop, Fedora, or CentOS and offical distribution of VS Code should find the process straight forward. However, in the event that you are using a down stream distribution, you may or may not run into some hiccups. This document provides some information on requirements and some troubleshooting details.
+
+## Install Linux prerequisites
+
+Some distributions of Linux are missing needed libraries for Live Share. By default, Live Share attempts to detect and install Linux pre-requisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
+
+![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
+
+If you click "Install", if you are on a detected distribution, a terminal window will appear where you'll need to enter your admin (sudo) password to continue. See [tips for unsupported distributions](#tips-for-unsupported-distros) for the current state of other distributions as reported by the community.
+
+Assuming it completes successfully, you should be all set!
+
+Note that you can also opt to re-run this script at any time manually by running the following command from a Terminal window:
+
+    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
+
+
+### Missing libraries by distribution
+
+The following is a list of libraries that are missing from distributions in their vanilla installations.
+
+| Distribution | Missing libraries |
+|--------|-------------------|
+| Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` |
+| Ubuntu Desktop 17.10 (64-bit) | `libunwind8 liblttng-ust0` |
+| Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; |
+| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` |
+| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` |
+| Mint 18.3 - Cinnamon (64-bit) | `libcurl3` |
+| Fedora 27 (64-bit) | &lt;none&gt; |
+| openSuSE 12 (64-bit) | &lt;none&gt; |
+| CentOS 7 | &lt;none&gt; |
+
+Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries typically required.
+
+See **[tips for unsupported distributions](#tips-for-unsupported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
+
+### Details on required libraries
+
+Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
+
+Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries may be missing from certain **Debian/Ubuntu** distributions or derivatives:
+
+- libunwind8
+- liblttng-ust0
+- libcurl3
+- libssl1.0.0
+- libuuid1
+- libkrb5-3
+- zlib1g
+- libicu52 (for Ubuntu 14.X)
+- libicu55 (for Ubuntu 16.X)
+- libicu57 (for Ubuntu 17.X)
+- libicu60 (for Ubuntu 18.X)
+- gettext
+- apt-transport-https
+
+In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
+
+- gnome-keyring
+- libsecret-1-0
+- desktop-file-utils
+
+Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu 16.04/17.10/18.04 or Mint 18.3:
+
+    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https $(apt-cache search libicu | grep -o "libicu[0-9][0-9]\s")
+
+The last part of the command automatically determines which version of libicu to install.
+
+**Fedora/CentOS/RHL** requires similar packages but with slightly different names:
+
+- libunwind
+- lttng-ust
+- libcurl
+- openssl-libs
+- libuuid
+- krb5-libs
+- libicu
+- zlib
+
+As with Debian/Ubuntu, **Live Share itself** depends on the following:
+
+- gnome-keyring
+- libsecret
+- desktop-file-utils
+
+Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything:
+
+    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
+
+Other distributions will require the same libraries, but the package names may be subtly different. You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
+
+## Linux browser integration
+
+Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser. **You will be prompted to do this each time the extension is installed or updated.**
+
+> **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify you have installed the needed [Linux prerequisites](#install-linux-prerequisites).
+
+The command will look like this (where VERSION is replaced by the Live Share extension version):
+
+    sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
+
+Run the script in a Terminal and enter your sudo password when prompted.
+
+If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
+
+## Tips for unsupported distros
+
+Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core and therefore are not, by extension,  officially supported by VS Live Share. However, in interacting wht the community we've built up a knowledge base of the current statue of certain distributions.
+
+| Distribution | Working? | Missing libraries | Additional Tips |
+|--------------|----------|-------------------|------------------|
+| ArchLinux | Yes | Typically `gnome-keychain libsecret` | Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code. In addition, `gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments. |
+| Manjaro 17.1 | Yes | `libcurl3` | Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code. |
+| Solus 3 | No | None |**Issues:** VS Code package is missing product.json values ([see below](#vs-code-oss-issues)). Even with workaround, fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)). |
+| Gentoo | No | Highly variable | **Issue:** Fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)). |
+
+### VS Code OSS Issues
+
+> **ArchLinux/Manjaro Users:** Use [visual-studio-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) to avoid this problem.
+
+Non-official distributions of Visual Studio Code can be missing a critical value in  `product.json` file that prevents Visual Studio Live Share from activating. In this case, if you go to Help > "Toggle Developer Tools", you will see stack traces indicating the Live Share extension did not activate due to it using a "proposed API."
+
+To verify this is your issue, check the contents of `product.json`. The file could be located in one of the following locations:
+
+- `/usr/share/code/resources/app/product.json`
+- `/usr/share/vscode/resources/app/product.json`
+
+If the `extensionAllowedProposedApi` property is missing or you do not see "ms-vsliveshare.vsliveshare" referenced, you are using an unofficial version with this problem.  **Contact the VS Code distribution owner to get the issue patched.**
+
+As a **workaround**, you can add the following into the product.json:
+
+        "extensionAllowedProposedApi": [         
+          "ms-vsliveshare.vsliveshare",         
+          "ms-vscode.node-debug",         
+          "ms-vscode.node-debug2"    
+     ]
+
+## See also
+
+- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+- [Connectivity requirements for Live Share](connectivity.md)
+- [Security features of Live Share](security.md)
+
+
+Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
