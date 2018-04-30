@@ -64,7 +64,7 @@ elif type pacman > /dev/null 2>&1; then
         exit 1
     fi
 
-#If the no package manager is found
+#If no supported package manager is found
 else
     echo "(!) We are unable to automatically install dependencies for this version of"
     echo "    Linux. See https://aka.ms/vsls-docs/linux-prerequisites for information"
