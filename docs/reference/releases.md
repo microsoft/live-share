@@ -24,14 +24,39 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
+
+## v0.2.547 (VS Code / Visual Studio)
+
+This release fixes a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+### Reported Issues Fixed
+
+1. **Saves do not propagate between participants** (#254) - We had a regression where saves where not always kept in sync across participants. That has now been fixed.
+
+2. **Web browser does not appear when signing into VS Code** (#256) - We moved away from the "opn" node module that was causing this issue.
+
+2. **VS Code "Unable to get user info errors"** (#269) - This is now resolved.
+
+3. **VS on the host side can crash if a variable is edited during debugging by the guest**
+
+4. **"Source not found" pops up on guest side in VS if hosts starts debugging a .NET Core project by VSCode**
+
+5. **Linux: Bad error when gnome-keying or libsecret are missing** - Improves error messaging in this situation.
+
+6. **VS icon fix for dark themes** - Icons now work better for dark themes.
+
+7. **VS Code fix for "Cannot read property 'joinUri' of null errors"**
+
 ## v0.2.489 (VS Code / Visual Studio)
 
-This release resolves two critical issues:
+This release resolves two critical issues.
 
-1. A large number of VS Code users on Mac were seeing a `Agent terminated with exit code: 2 and signal null` error on startup (#252).
-2. VS and VS Code users were seeing an intermittent join error saying `Must call ProcessMessagesAsync first so responses can be recieved`.
+### Reported Issues Fixed
 
-Apologies for the inconvience! 😭
+1. A large number of VS Code users on Mac were seeing a **Agent terminated with exit code: 2 and signal null** error on startup (#252).
+2. VS and VS Code users were seeing an intermittent join error saying **Must call ProcessMessagesAsync first so responses can be received**.
+
+Apologies for the inconvenience! 😭
 
 ## v0.2.487 (VS Code / Visual Studio)
 
