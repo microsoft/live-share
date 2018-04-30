@@ -24,7 +24,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
-<<<<<<< HEAD
 ## v0.3.XXX (VS Code / Visual Studio)
 
 This is our first public preview release!!  It is a major feature release that also includes bug-fixes to addresses a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
@@ -58,7 +57,6 @@ This is our first public preview release!!  It is a major feature release that a
 1. **Saves do not propagate between participants** (#254) - We had a regression where saves where not always kept in sync across participants. That has now been fixed.
 
 2. **Live Share does not allow guests to edit csproj files** (#100) - Guests are now able to edit csproj and other project files as XML.
-=======
 
 ## v0.2.547 (VS Code / Visual Studio)
 
@@ -81,7 +79,6 @@ This release fixes a number of user-reported issues. We really appreciate all of
 6. **VS icon fix for dark themes** - Icons now work better for dark themes.
 
 7. **VS Code fix for "Cannot read property 'joinUri' of null errors"**
->>>>>>> 829cec25b86b7f037c178c8e7de60d60c0f9dfd5
 
 ## v0.2.489 (VS Code / Visual Studio)
 
