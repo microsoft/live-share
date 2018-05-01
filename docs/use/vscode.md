@@ -426,14 +426,23 @@ To **stop** sharing a local server as the host, you simply click the session sta
 
 ## Share a terminal
 
-![Share terminal menu option](../media/vscode-share-terminal.png)<br />
+Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
+
+However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way if you can freely run commands in local terminals without risk and only share them when you actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
+
+As a host, you can share a terminal hitting **Ctrl+Shift+P** or clicking on the session state / share status bar item and select "Share Terminal".
+
+![Share terminal menu option](../media/vscode-share-terminal.png)
+
+At this point you can select a read-only or read/write terminal from the menu that appears. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like.  However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
 ![Read-only or read/write selection](../media/vscode-share-terminal-ro-rw.png)<br />
 
+Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear under VS Code's terminal tab.
+
 ![Shared terminal running](../media/vscode-share-terminal-up.png)<br />
 
-
-**TEXT GOES HERE**
+To end your terminal session, simply type exit or close the terminal window and everyone will be disconnected.
 
 ## Session states
 
