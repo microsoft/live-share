@@ -114,17 +114,13 @@ Other distributions will require the same libraries, but the package names may b
 
 ## Linux browser integration
 
-Once Live Share completes the installation process on Linux, you will be prompted to run a command in a Terminal that has been automatically copied to the clipboard to enable joining via the browser. **You will be prompted to do this each time the extension is installed or updated.**
+Visual Studio Live Share typically does not require additional steps to enable browser integration on Linux. However, in certain distributions you may be notified that your admin (sudo) password is required to complete the installation process.
 
-> **Note:** If you do not see this notification you may be missing libraries that Live Share requires. Verify you have installed the needed [Linux prerequisites](#install-linux-prerequisites).
+A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
 
-The command will look like this (where VERSION is replaced by the Live Share extension version):
+If you'd prefer to run the command yourself instead, you can click "Copy instead" which will copy the terminal command to the clipboard instead.
 
-    sudo sh ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/node_modules/@vsliveshare/vscode-launcher-linux/install.sh /usr/share/code/code ~/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/cascade.json
-
-Run the script in a Terminal and enter your sudo password when prompted.
-
-If you skip this step, you can still [join collaboration sessions manually](#join-manually), but you will not be able to join by opening an invite link in the browser. You can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command and the terminal command will be copied to your clipboard again.
+Finally, if you opt to skip this step entirely, you can still [join collaboration sessions manually](../use/vscode.md#join-manually), but you will not be able to join by opening an invite link in the browser. Note that you can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command.
 
 ## Tips for unsupported distros
 
@@ -156,10 +152,10 @@ If the `extensionAllowedProposedApi` property is missing or you do not see "ms-v
 
 As a **workaround**, you can add the following into the product.json:
 
-        "extensionAllowedProposedApi": [         
-          "ms-vsliveshare.vsliveshare",         
-          "ms-vscode.node-debug",         
-          "ms-vscode.node-debug2"    
+        "extensionAllowedProposedApi": [
+          "ms-vsliveshare.vsliveshare",
+          "ms-vscode.node-debug",
+          "ms-vscode.node-debug2"
      ]
 
 ## See also

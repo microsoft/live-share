@@ -40,11 +40,11 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315)._
 
-- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora 27+, CentoOS 7+. See [Linux install details](../reference/linux.md) for information on other distributions.
+- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora 27+, CentoOS 7+
 
-    - Live Share requires a number of [Linux prerequisites](../reference/linux.md#install-linux-prerequisites). You may be prompted to install them after the extension is up and running.
-    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_- Testing has also occurred on 64-bit Mint 18.3, Xubunut 16.04, Kubunut 16.04, SuSE 12, ArchLinux, and Manjaro 17.1 (though ArchLinux and Manjaro are not officially supported by either VS Code or .NET Core).
-    - However, given the rate of change in the Linux world, your mileage may vary. See the [Linux install details](../reference/linux.md) article for details.
+    - Live Share requires a number of [Linux prerequisites](../reference/linux.md#install-linux-prerequisites) you may be prompted to install.
+    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
+    - See the [Linux install details](../reference/linux.md) article for details on downstream and other distributions.
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -53,10 +53,10 @@ After that, downloading and installing the Visual Studio Live Share extension is
 3. Reload Visual Studio Code
 4. Wait for dependencies to download and install (see status bar).<br/>
     ![Finishing install](../media/vscode-finishing-install.png)
-5. **Linux**: If you see a notification telling you that you are missing key dependencies:
-    1. Click "Install".
+5. **Linux**: If you see a notification about installing missing libraries:
+    1. Click "Install" in notification.
     2. Enter your admin (sudo) password when prompted.
-    3. Restart VS Code when done.  See [below](#linux-install-steps) for more information.
+    3. Restart VS Code when done.
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
