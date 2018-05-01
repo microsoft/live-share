@@ -251,11 +251,17 @@ Finally, sometimes you just want to jump to someone's location rather than follo
 
 ## Focusing
 
+Occasionally you may want other participants in a collaboration session to come and take a look at something you are doing. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
+
+Just click on the session state / share button in the upper right hand corner and select "Focus Participants".
+
 ![Focus menu option](../media/vs-focus.png)
+
+Everyone in the collaboration session will then get a notification that you've requested their attention
 
 ![Focus toast notification](../media/vs-focus-toast.png)
 
-**TEXT GOES HERE**
+Participants can then just click "Follow" right from the notification when they're ready to focus on what you are doing.
 
 ## Co-debuging
 

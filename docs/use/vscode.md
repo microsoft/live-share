@@ -320,12 +320,17 @@ To quickly jump to a collaborator's location (without following), you can simply
 
 ## Focusing
 
+Occasionally you may want other participants in a collaboration session to come and take a look at something you are doing. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
+
+Just hit **Ctrl+Shift+P** or click on the session state / share status bar item and select the "Focus Participants" command.
+
 ![Focus scoped command palette menu option](../media/vscode-focus.png)
+
+Once you run the command, everyone in the collaboration session will then get a notification that you've requested their attention.
 
 ![Focus toast notification](../media/vscode-focus-toast.png)
 
-
-**TEXT GOES HERE**
+Participants can then just click "Follow" right from the notification when they're ready to focus on what you are doing.
 
 ## Co-debuging
 
