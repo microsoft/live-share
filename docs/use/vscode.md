@@ -40,12 +40,12 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315)._
 
-- **Linux**: 64-bit Ubuntu Desktop 16.04+, see [below](#linux-install-steps) for information on other distributions.
+- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora 27+, CentoOS 7+. See [Linux install details](../reference/linux.md) for information on other distributions.
 
-    - Live Share requires a number of [Linux prerequisites](#linux-install-steps) you should be prompted to install after the extension is running.
-    - Testing has also occurred on 64-bit Mint 18.3, Fedora 27, CentOS 7, and SuSE 12, and Manjaro 17.1 (though ArchLinux and Manjaro are not officially supported by either VS Code or .NET Core).
-    - However, given the rate of change in the Linux world, your mileage may vary. See [below](#linux-install-steps) for details.
-    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
+    - Live Share requires a number of [Linux prerequisites](#linux-install-steps). You may be prompted to install them after the extension is up and running.
+    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_- Testing has also occurred on 64-bit Mint 18.3, Xubunut 16.04, Kubunut 16.04, SuSE 12, ArchLinux, and Manjaro 17.1 (though ArchLinux and Manjaro are not officially supported by either VS Code or .NET Core).
+    - However, given the rate of change in the Linux world, your mileage may vary. See the [Linux install details](../reference/linux.md) article for details.
+    
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -54,7 +54,7 @@ After that, downloading and installing the Visual Studio Live Share extension is
 3. Reload Visual Studio Code
 4. Wait for dependencies to download and install (see status bar).<br/>
     ![Finishing install](../media/vscode-finishing-install.png)
-5. **Linux users**: Enter your admin (sudo) password if prompted to [install prerequisites](#linux-install-steps).
+5. **Linux**: If prompted to [install libraries](#linux-install-steps), click install, enter admin (sudo) password when prompted, and restart VS Code when done.
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
@@ -66,11 +66,11 @@ Some distributions of Linux are missing needed libraries for Live Share. By defa
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
-If you click "Install", if you are on a detected distribution, a terminal window will appear where you'll need to enter your admin (sudo) password to continue. See [tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros) for the current state of other distributions as reported by the community.
+When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. See [tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros) for the current state of other distributions as reported by the community.
 
-Assuming it completes successfully, you should be all set!
+Assuming it completes successfully, restart Visual Studio Code you should be all set!
 
-If you are still running into problems or have other questions, see the **[Linux installation details](../reference/linux.md)** article for additional details and tips.
+If you are still running into problems, are running on a distribution not handled by the script, or have other questions, see the **[Linux installation details](../reference/linux.md)** article for additional details and tips.
 
 ## Sign in
 

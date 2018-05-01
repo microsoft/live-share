@@ -54,9 +54,7 @@ This is our first public preview release!!  It is a major feature release that a
 
 ### Reported Issues Fixed
 
-1. **Saves do not propagate between participants** (#254) - We had a regression where saves where not always kept in sync across participants. That has now been fixed.
-
-2. **Live Share does not allow guests to edit csproj files** (#100) - Guests are now able to edit csproj and other project files as XML.
+1. **Live Share does not allow guests to edit csproj files** (#100) - Guests are now able to edit csproj and other project files as XML.
 
 ## v0.2.547 (VS Code / Visual Studio)
 

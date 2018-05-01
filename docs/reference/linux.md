@@ -31,18 +31,17 @@ Some distributions of Linux are missing needed libraries for Live Share. By defa
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
-If you click "Install", if you are on a detected distribution, a terminal window will appear where you'll need to enter your admin (sudo) password to continue. See [tips for unsupported distributions](#tips-for-unsupported-distros) for the current state of other distributions as reported by the community.
+When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. See [tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros) for the current state of other distributions as reported by the community.
 
-Assuming it completes successfully, you should be all set!
+Assuming it completes successfully, restart Visual Studio Code you should be all set!
 
 Note that you can also opt to re-run this script at any time manually by running the following command from a Terminal window:
 
     wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
 
+### Known missing libraries by distribution
 
-### Missing libraries by distribution
-
-The following is a list of libraries that are missing from distributions in their vanilla installations.
+While the script above should cover Debian / Ubuntu, RHL / Fedora / CentOS, you may be wondering what typically is missing from vanilla installations of these distributions. The following list shows the key libraries that were found to be missing with a fresh install of the distribution.
 
 | Distribution | Missing libraries |
 |--------|-------------------|
@@ -53,16 +52,14 @@ The following is a list of libraries that are missing from distributions in thei
 | Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` |
 | Mint 18.3 - Cinnamon (64-bit) | `libcurl3` |
 | Fedora 27 (64-bit) | &lt;none&gt; |
-| openSuSE 12 (64-bit) | &lt;none&gt; |
 | CentOS 7 | &lt;none&gt; |
-
-Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries typically required.
+| openSuSE 12 (64-bit) | &lt;none&gt; |
 
 See **[tips for unsupported distributions](#tips-for-unsupported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
 
-### Details on required libraries
+Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries Live Share needs.
 
-Linux distributions can vary in terms of libraries present after a vanilla install. Live Share has both .NET Core requirements and a few of its own to consider.
+### Details on required libraries
 
 Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries may be missing from certain **Debian/Ubuntu** distributions or derivatives:
 
@@ -131,14 +128,18 @@ If you skip this step, you can still [join collaboration sessions manually](#joi
 
 ## Tips for unsupported distros
 
-Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core and therefore are not, by extension,  officially supported by VS Live Share. However, in interacting wht the community we've built up a knowledge base of the current statue of certain distributions.
+Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core and therefore are not, by extension,  officially supported by VS Live Share. The Live Share community has helped us built up a knowledge base of the current statue of certain distributions.
+
+> **PRs welcome:** If you're interested in updating this inforamtion with your favorite distribution, submit a PR for [this file](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) in our docs GitHub repo. Even better, if you'd like to get the dependency installer supporting your favoriate distribution, you can submit a PR [for this file](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
+
 
 | Distribution | Working? | Missing libraries | Additional Tips |
 |--------------|----------|-------------------|------------------|
-| ArchLinux | Yes | Typically `gnome-keychain libsecret` | Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code. In addition, `gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments. |
-| Manjaro 17.1 | Yes | `libcurl3` | Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code. |
-| Solus 3 | No | None |**Issues:** VS Code package is missing product.json values ([see below](#vs-code-oss-issues)). Even with workaround, fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)). |
-| Gentoo | No | Highly variable | **Issue:** Fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)). |
+| ArchLinux | Yes | Varies. Use the dependency installer. Most common are **gnome-keyring** and **libsecret**.  | Notes:<ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>In addition, **gnome-keyring** may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</lu></ul> |
+| Manjaro 17.1 | Yes | Use the dependency installer. | Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code. |
+| Solus 3 | **No** | Unknown |**Issues:** VS Code package is missing product.json values ([see below](#vs-code-oss-issues)). Even with workaround, fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)). |
+| Gentoo | **No** | Highly variable. | **Issue:** Fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)). |
+
 
 ### VS Code OSS Issues
 
