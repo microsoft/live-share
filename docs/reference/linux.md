@@ -27,7 +27,7 @@ Linux is a highly variable environment and with the sheer number of desktop envi
 
 ## Install Linux prerequisites
 
-Some distributions of Linux are missing needed libraries for Live Share. By default, Live Share attempts to detect and install Linux pre-requisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
+Some distributions of Linux are missing libraries Live Share needs to function. By default, Live Share attempts to detect and install Linux pre-requisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
