@@ -310,22 +310,27 @@ To make it easy to hop in and out of pinning, the tab set is un-pinned if any of
 
 Afterwards, simply click the pin icon again to follow them once again.
 
-### Finding who is in the session and jump-to
+## Listing participants
 
-A quick way to see who is in the collaboration session is to hover over a status bar icon that shows the number of collaborators to in the collaboration session.
+A quick way to see who is in the collaboration session is to hit **Ctrl+Shift+P** and select the "Live Share: List Participants" command or simply click on the status bar item that shows the number of participants in your session.
 
 ![Screen shot showing user status bar icon](../media/vscode-user-status.png)
 
-To quickly jump to a collaborator's location (without following), you can simply click on this same icon. If there's only one other participant in the session, it jumps right to their location. If there is more than one, you'll see a list where you can select a participant to jump to instead.
+A list of all participants in the session will then appear. Unlike clicking the pin icon, this list appears even if there is only one other person in the sesion with you so you can always quickly see where someone else is located. For convience purposes, like the pin icon, you can then pick one of the participants from the list to follow them. Hit escape if you'd like to exit instead.
 
 ## Focusing
 
+Occasionally you may want other participants in a collaboration session to come and take a look at something you are doing. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
+
+Just hit **Ctrl+Shift+P** or click on the session state / share status bar item and select the "Focus Participants" command.
+
 ![Focus scoped command palette menu option](../media/vscode-focus.png)
+
+Once you run the command, everyone in the collaboration session will then get a notification that you've requested their attention.
 
 ![Focus toast notification](../media/vscode-focus-toast.png)
 
-
-**TEXT GOES HERE**
+Participants can then just click "Follow" right from the notification when they're ready to focus on what you are doing.
 
 ## Co-debuging
 
@@ -421,14 +426,23 @@ To **stop** sharing a local server as the host, you simply click the session sta
 
 ## Share a terminal
 
-![Share terminal menu option](../media/vscode-share-terminal.png)<br />
+Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
+
+However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way if you can freely run commands in local terminals without risk and only share them when you actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
+
+As a host, you can share a terminal hitting **Ctrl+Shift+P** or clicking on the session state / share status bar item and select "Share Terminal".
+
+![Share terminal menu option](../media/vscode-share-terminal.png)
+
+At this point you can select a read-only or read/write terminal from the menu that appears. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like.  However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
 ![Read-only or read/write selection](../media/vscode-share-terminal-ro-rw.png)<br />
 
+Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear under VS Code's terminal tab.
+
 ![Shared terminal running](../media/vscode-share-terminal-up.png)<br />
 
-
-**TEXT GOES HERE**
+To end your terminal session, simply type exit or close the terminal window and everyone will be disconnected.
 
 ## Session states
 
