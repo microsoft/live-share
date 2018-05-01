@@ -310,13 +310,13 @@ To make it easy to hop in and out of pinning, the tab set is un-pinned if any of
 
 Afterwards, simply click the pin icon again to follow them once again.
 
-### Finding who is in the session and jump-to
+## Listing participants
 
-A quick way to see who is in the collaboration session is to hover over a status bar icon that shows the number of collaborators to in the collaboration session.
+A quick way to see who is in the collaboration session is to hit **Ctrl+Shift+P** and select the "Live Share: List Participants" command or simply click on the status bar item that shows the number of participants in your session.
 
 ![Screen shot showing user status bar icon](../media/vscode-user-status.png)
 
-To quickly jump to a collaborator's location (without following), you can simply click on this same icon. If there's only one other participant in the session, it jumps right to their location. If there is more than one, you'll see a list where you can select a participant to jump to instead.
+A list of all participants in the session will then appear. Unlike clicking the pin icon, this list appears even if there is only one other person in the sesion with you so you can always quickly see where someone else is located. For convience purposes, like the pin icon, you can then pick one of the participants from the list to follow them. Hit escape if you'd like to exit instead.
 
 ## Focusing
 
