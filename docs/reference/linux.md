@@ -53,6 +53,7 @@ While the script above should cover Debian / Ubuntu, RHL / Fedora / CentOS, you 
 | Mint 18.3 - Cinnamon (64-bit) | `libcurl3` |
 | Fedora 27 (64-bit) | &lt;none&gt; |
 | CentOS 7 | &lt;none&gt; |
+| Debian 9 GNOME | `libunwind8 liblttng-ust0 apt-transport-https gettext` |
 | openSuSE 12 (64-bit) | &lt;none&gt; |
 
 See **[tips for unsupported distributions](#tips-for-unsupported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
@@ -66,11 +67,11 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 - libunwind8
 - liblttng-ust0
 - libcurl3
-- libssl1.0.0
+- libssl1.0.0 (Ubuntu 16.X, 17.X, 18.X)
+- libssl1.0.2 (Debian 9)
 - libuuid1
 - libkrb5-3
 - zlib1g
-- libicu52 (for Ubuntu 14.X)
 - libicu55 (for Ubuntu 16.X)
 - libicu57 (for Ubuntu 17.X)
 - libicu60 (for Ubuntu 18.X)
@@ -85,9 +86,9 @@ In addition, the following are libraries **Live Share itself depends on** that m
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu 16.04/17.10/18.04 or Mint 18.3:
 
-    sudo apt install libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https $(apt-cache search libicu | grep -o "libicu[0-9][0-9]\s")
+    sudo apt install libunwind8 liblttng-ust0 libcurl3 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libssl1.?.? libicu??
 
-The last part of the command automatically determines which version of libicu to install.
+The last two parts of the command automatically determines which version of libssl and libicu to install.
 
 **Fedora/CentOS/RHL** requires similar packages but with slightly different names:
 
