@@ -33,9 +33,9 @@ Some distributions of Linux are missing libraries Live Share needs to function. 
 
 When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set!
 
-If you see a message indicating the script does not support your distribution, see [tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros) for community tips and issues.
+If you see a message indicating the script does not support your distribution, see **[tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros)** for community tips and issues.
 
-Note that you can also opt to re-run this script at any time manually by running the following command from a Terminal window:
+If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
 
     wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
 

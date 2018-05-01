@@ -72,6 +72,10 @@ When you click "Install", a terminal window will appear where you'll need to ent
 
 If you are still running into problems, are running on a distribution not handled by the script, or have other questions, see the **[Linux installation details](../reference/linux.md)** article.
 
+If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
+
+    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
+
 ## Sign in
 
 In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
