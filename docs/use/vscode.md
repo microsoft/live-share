@@ -42,7 +42,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 
 - **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora 27+, CentoOS 7+
 
-    - Live Share requires a number of [Linux prerequisites](#install-linux-prerequisites) you may be prompted to install.
+    - Live Share requires a number of [Linux prerequisites](#linux-install-steps) you may be prompted to install.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
     - See the [Linux install details](../reference/linux.md) article for details on downstream and other distributions.
 
@@ -64,7 +64,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
-Some distributions of Linux are missing libraries Live Share needs to function. By default, Live Share attempts to detect and install Linux pre-requisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
+Some distributions of Linux are missing libraries Live Share needs to function. By default, Live Share attempts to detect and install Linux prerequisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 

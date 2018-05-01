@@ -27,13 +27,13 @@ Linux is a highly variable environment and with the sheer number of desktop envi
 
 ## Install Linux prerequisites
 
-Some distributions of Linux are missing libraries Live Share needs to function. By default, Live Share attempts to detect and install Linux pre-requisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
+Some distributions of Linux are missing libraries Live Share needs to function. By default, Live Share attempts to detect and install Linux prerequisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
 When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set!
 
-If you see a message indicating the script does not support your distribution, see [tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros) for information on what the community has told us about support.
+If you see a message indicating the script does not support your distribution, see [tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros) for community tips and issues.
 
 Note that you can also opt to re-run this script at any time manually by running the following command from a Terminal window:
 
@@ -124,7 +124,7 @@ Finally, if you opt to skip this step entirely, you can still [join collaboratio
 
 ## Tips for unsupported distros
 
-Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core and therefore are not, by extension,  officially supported by VS Live Share. The Live Share community has helped us built up a knowledge base of the current statue of certain distributions.
+Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core and therefore are not, by extension, officially supported by VS Live Share. However, the Live Share community has helped us built up a knowledge base of the what is needed to get Live Share working on other distributions.
 
 > **PRs welcome:** If you're interested in updating this information with your favorite distribution, submit a PR for [this file](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) in our docs GitHub repo. Even better, if you'd like to get the dependency installer supporting your favorite distribution, you can submit a PR [for this file](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
 
