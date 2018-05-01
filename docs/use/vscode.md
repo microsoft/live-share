@@ -66,11 +66,9 @@ Some distributions of Linux are missing needed libraries for Live Share. By defa
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
-When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. See [tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros) for the current state of other distributions as reported by the community.
+When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set!
 
-Assuming it completes successfully, restart Visual Studio Code you should be all set!
-
-If you are still running into problems, are running on a distribution not handled by the script, or have other questions, see the **[Linux installation details](../reference/linux.md)** article for additional details and tips.
+If you are still running into problems, are running on a distribution not handled by the script, or have other questions, see the **[Linux installation details](../reference/linux.md)** article.
 
 ## Sign in
 
