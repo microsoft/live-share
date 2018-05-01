@@ -23,7 +23,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Linux installation details
 
-Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. Users that stick to Ubuntu Desktop, Fedora, or CentOS and offical distribution of VS Code should find the process straight forward. However, in the event that you are using a down stream distribution, you may or may not run into some hiccups. This document provides some information on requirements and some troubleshooting details.
+Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. Users that stick to Ubuntu Desktop, Fedora, or CentOS and official distribution of VS Code should find the process straight forward. However, in the event that you are using a down stream distribution, you may or may not run into some hiccups. This document provides some information on requirements and some troubleshooting details.
 
 ## Install Linux prerequisites
 
@@ -130,7 +130,7 @@ If you skip this step, you can still [join collaboration sessions manually](#joi
 
 Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core and therefore are not, by extension,  officially supported by VS Live Share. The Live Share community has helped us built up a knowledge base of the current statue of certain distributions.
 
-> **PRs welcome:** If you're interested in updating this inforamtion with your favorite distribution, submit a PR for [this file](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) in our docs GitHub repo. Even better, if you'd like to get the dependency installer supporting your favoriate distribution, you can submit a PR [for this file](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
+> **PRs welcome:** If you're interested in updating this information with your favorite distribution, submit a PR for [this file](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) in our docs GitHub repo. Even better, if you'd like to get the dependency installer supporting your favorite distribution, you can submit a PR [for this file](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
 
 
 | Distribution | Working? | Missing libraries | Additional Tips |
