@@ -39,23 +39,23 @@ If you **prefer not to have VS Code run the command for you**, you can also opt 
 
     wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
 
-### Known missing libraries by distribution
+### Tips by distribution
 
-While the script above should cover Debian / Ubuntu, RHL / Fedora / CentOS, you may be wondering what typically is missing from vanilla installations of these distributions. The following list shows the key libraries that were found to be missing with a fresh install of the distribution.
+While the script above should cover Debian / Ubuntu, RHL / Fedora / CentOS, you may be wondering what typically is missing from vanilla installations of these distributions. The following list shows the key libraries that were found to be missing with a fresh install of the distribution along with some tips.
 
-| Distribution | Missing libraries |
-|--------|-------------------|
-| Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` |
-| Ubuntu Desktop 17.10 (64-bit) | `libunwind8 liblttng-ust0` |
-| Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; |
-| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` |
-| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` |
-| Mint 18.3 Cinnamon (64-bit) | `libcurl3` |
-| Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` |
-| Fedora 27 (64-bit) | &lt;none&gt; |
-| Fedora 28 Workstation (64-bit) | &lt;none&gt; |
-| CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; |
-| openSuSE 12 (64-bit) | &lt;none&gt; |
+| Distribution | Missing libraries | Tips |
+|--------|-------------------|----|
+| Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` | |
+| Ubuntu Desktop 17.10 (64-bit) | `libunwind8 liblttng-ust0` | |
+| Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; | |
+| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` | If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code. |
+| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` | Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".<br/><br/>If you run into trobule, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it. |
+| Mint 18.3 Cinnamon (64-bit) | `libcurl3` | |
+| Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | You will need to install `sudo` if you have not already to run the automated installer.  |
+| Fedora Workstation 27 (64-bit) | &lt;none&gt; | |
+| Fedora Workstation 28 (64-bit) | &lt;none&gt; | |
+| CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | |
+| openSuSE 12 (64-bit) | &lt;none&gt; | |
 
 See **[tips for unsupported distributions](#tips-for-unsupported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
 
@@ -118,16 +118,7 @@ Other distributions will require the same libraries, but the package names may b
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, on **RHL/CentOS 7**, *Chromium* will work by default, but you may need to run the following command to enable browser integration on **Firefox**:
-
-    sudo setsebool -P unconfined_mozilla_plugin_transition 0
-
-Or, to **install Chromium instead**, run the following commands:
-
-    yum install epel-release
-    yum install chromium
-
-Finally, while uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
+While uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
 
 If you'd prefer to run the command yourself instead, you can click "Copy instead" which will copy the terminal command to the clipboard instead.
 

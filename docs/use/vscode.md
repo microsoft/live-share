@@ -57,7 +57,7 @@ After that, downloading and installing the Visual Studio Live Share extension is
     1. Click "Install" in the notification.
     2. Enter your admin (sudo) password when prompted.
     3. Restart VS Code when done.
-6. **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`
+
 
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
@@ -82,16 +82,7 @@ If you are still running into problems, are running on a distribution not handle
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, on **RHL/CentOS 7**, *Chromium* will work by default, but you may need to run the following command to enable browser integration on **Firefox**:
-
-    sudo setsebool -P unconfined_mozilla_plugin_transition 0
-
-Or, to **install Chromium instead**, run the following commands:
-
-    yum install epel-release
-    yum install chromium
-
-Finally, while uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
+While uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
 
 ## Sign in
 
@@ -228,8 +219,6 @@ The easiest way to join a collaboration session is to simply open the invite lin
     If the host is offline or has ended the collaboration session before you joined, you'll see a message to this effect instead. You can then contact the host and ask them to share again.
 
     > **Note:** Be sure you've **started the tool at least once** after installing the Visual Studio Live Share extension and allowed the installation to finish before opening/re-opening the invite page. Still having trouble? See [join manually](#join-manually).
-
-    > **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](#linux-browser-integration) for details.
 
 3. **Collaborate**
 

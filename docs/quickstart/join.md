@@ -96,8 +96,6 @@ If the host is offline, the browser will instead telling you this is the case. Y
 
 > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing the extension and waited for the dependencies to finish installing (see the status bar) before opening/re-opening the invite page. Still having trouble? See [join manually](../reference/manual-join.md) for details.
 
-> **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](../reference/linux.md#linux-browser-integration) for details.
-
 ### 5. Collaborate!
 
 That's it!! In a few moments you'll be connected to your colleague's collaboration session. By default the host will auto-accept people that join, but if the host is setup to [require guest approval](../reference/security.md#requiring-guest-approval) you will see the status bar / join dialog mention that Live Share is waiting on the host to approve your request to join.
