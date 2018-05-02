@@ -115,9 +115,13 @@ Other distributions will require the same libraries, but the package names may b
 
 ## Linux browser integration
 
-Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux. 
+Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, in certain distributions you may be notified that your admin (sudo) password is required to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
+However, on **RHL/CentOS 7**, you will need to run the following command to enable browser integration:
+
+    sudo setsebool -P unconfined_mozilla_plugin_transition 0
+
+Also, while uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
 
 If you'd prefer to run the command yourself instead, you can click "Copy instead" which will copy the terminal command to the clipboard instead.
 

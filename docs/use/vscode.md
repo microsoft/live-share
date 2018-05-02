@@ -40,7 +40,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315)._
 
-- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora Workstation 27+, CentoOS 7+
+- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora Workstation 27+
 
     - Live Share requires a number of [Linux prerequisites](#linux-install-steps) you may be prompted to install.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_ ARM is also currently not supported.
@@ -57,6 +57,8 @@ After that, downloading and installing the Visual Studio Live Share extension is
     1. Click "Install" in the notification.
     2. Enter your admin (sudo) password when prompted.
     3. Restart VS Code when done.
+6. **Linux - RHL/CentOS 7**: To get Live Share browser integration to work, run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`
+
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
@@ -64,17 +66,26 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
+#### Install Linux prerequisites
+
 Some distributions of Linux are missing libraries Live Share needs to function. By default, Live Share attempts to detect and install Linux prerequisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
+
 
 When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set!
 
 If you are still running into problems, are running on a distribution not handled by the script, or have other questions, see the **[Linux installation details](../reference/linux.md)** article.
 
-If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
+## Linux browser integration
 
-    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
+Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
+
+However, on **RHL/CentOS 7**, you will need to run the following command to enable browser integration:
+
+    sudo setsebool -P unconfined_mozilla_plugin_transition 0
+
+Also, while uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
 
 ## Sign in
 
@@ -202,7 +213,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 2. **Click on the invite link / open the invite in your browser**
 
-    > **Linux users:** Certain distributions may require Live Share to prompt you to enter an admin (sudo) password to install Live Share's browser integration. See [here](../reference/linux.md#linux-browser-integration) for additional details.
+    > **RHL/CentOS 7**: To get Live Share browser integration to work, run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`. See [here](../reference/linux.md#linux-browser-integration) for additional details.
 
     Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
