@@ -118,11 +118,16 @@ Other distributions will require the same libraries, but the package names may b
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, on **RHL/CentOS 7**, you may need to run the following command to enable browser integration:
+However, on **RHL/CentOS 7**, Chromium will should work by default, but you may need to run the following command to enable browser integration on **Firefox**:
 
     sudo setsebool -P unconfined_mozilla_plugin_transition 0
 
-Also, while uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
+Or, to **install Chromium instead**, run the following commands:
+
+    yum install epel-release
+    yum install chromium
+
+Finally, while uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
 
 If you'd prefer to run the command yourself instead, you can click "Copy instead" which will copy the terminal command to the clipboard instead.
 

@@ -57,7 +57,7 @@ After that, downloading and installing the Visual Studio Live Share extension is
     1. Click "Install" in the notification.
     2. Enter your admin (sudo) password when prompted.
     3. Restart VS Code when done.
-6. **Linux - RHL/CentOS 7**: To get Live Share browser integration to work, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`
+6. **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`
 
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
@@ -82,11 +82,16 @@ If you are still running into problems, are running on a distribution not handle
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, on **RHL/CentOS 7**, you may need to run the following command to enable browser integration:
+However, on **RHL/CentOS 7**, Chromium will should work by default, but you may need to run the following command to enable browser integration on **Firefox**:
 
     sudo setsebool -P unconfined_mozilla_plugin_transition 0
 
-Also, while uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
+Or, to **install Chromium instead**, run the following commands:
+
+    yum install epel-release
+    yum install chromium
+
+Finally, while uncommon, in certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
 
 ## Sign in
 
@@ -214,7 +219,8 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 2. **Click on the invite link / open the invite in your browser**
 
-    > **RHL/CentOS 7**: To get Live Share browser integration to work, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`. See [here](../reference/linux.md#linux-browser-integration) for additional details.
+    > **RHL/CentOS Linux 7**: While Chromium works by default, to get Live Share browser integration to work with Firefox, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](../references/linux.md#linux-browser-integration) for details.
+
 
     Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
