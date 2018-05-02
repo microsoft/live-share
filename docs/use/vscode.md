@@ -57,7 +57,7 @@ After that, downloading and installing the Visual Studio Live Share extension is
     1. Click "Install" in the notification.
     2. Enter your admin (sudo) password when prompted.
     3. Restart VS Code when done.
-6. **Linux - RHL/CentOS 7**: To get Live Share browser integration to work, run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`
+6. **Linux - RHL/CentOS 7**: To get Live Share browser integration to work, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`
 
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
@@ -66,12 +66,13 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
+Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. Users that stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+) and only use **official distributions of VS Code** should find the process straight forward.
+
 #### Install Linux prerequisites
 
 Some distributions of Linux are missing libraries Live Share needs to function. By default, Live Share attempts to detect and install Linux prerequisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
-
 
 When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set!
 
@@ -81,7 +82,7 @@ If you are still running into problems, are running on a distribution not handle
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, on **RHL/CentOS 7**, you will need to run the following command to enable browser integration:
+However, on **RHL/CentOS 7**, you may need to run the following command to enable browser integration:
 
     sudo setsebool -P unconfined_mozilla_plugin_transition 0
 
@@ -213,7 +214,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 2. **Click on the invite link / open the invite in your browser**
 
-    > **RHL/CentOS 7**: To get Live Share browser integration to work, run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`. See [here](../reference/linux.md#linux-browser-integration) for additional details.
+    > **RHL/CentOS 7**: To get Live Share browser integration to work, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`. See [here](../reference/linux.md#linux-browser-integration) for additional details.
 
     Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 

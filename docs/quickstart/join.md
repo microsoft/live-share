@@ -86,7 +86,7 @@ If you are using **Visual Studio** and have already signed into the tool, Visual
 
 ### 3. Open/re-open the invite link in a browser
 
-> **RHL/CentOS 7**: To get Live Share browser integration to work, run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`. See [here](../reference/linux.md#linux-browser-integration) for additional details.
+> **RHL/CentOS 7**: To get Live Share browser integration to work, run you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0`. See [here](../reference/linux.md#linux-browser-integration) for additional details.
 
 Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 

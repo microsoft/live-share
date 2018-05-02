@@ -23,7 +23,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Linux installation details
 
-Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. Users that stick to supported versions of **Ubuntu Desktop** (16.04+), **Fedora Workstation** (27+), or **CentOS** (7+) and only use **official distributions of VS Code** should find the process straight forward. However, in the event that you are using a non-standard configuration or downsteam distribution you may or may not run into some hiccups. This document provides some information on requirements and some troubleshooting details that might help you get up and running even if you configuraiton is only community supported.
+Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. Users that stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+) and only use **official distributions of VS Code** should find the process straight forward. However, in the event that you are using a non-standard configuration or downstream distribution you may or may not run into some hiccups. This document provides some information on requirements and some troubleshooting details that might help you get up and running even if you configuration is only community supported.
 
 ## Install Linux prerequisites
 
@@ -51,9 +51,10 @@ While the script above should cover Debian / Ubuntu, RHL / Fedora / CentOS, you 
 | Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` |
 | Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` |
 | Mint 18.3 Cinnamon (64-bit) | `libcurl3` |
-| Fedora 27 Workstation GNOME (64-bit) | &lt;none&gt; |
-| CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; |
 | Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` |
+| Fedora 27 (64-bit) | &lt;none&gt; |
+| Fedora 28 Workstation (64-bit) | &lt;none&gt; |
+| CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; |
 | openSuSE 12 (64-bit) | &lt;none&gt; |
 
 See **[tips for unsupported distributions](#tips-for-unsupported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
@@ -117,7 +118,7 @@ Other distributions will require the same libraries, but the package names may b
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, on **RHL/CentOS 7**, you will need to run the following command to enable browser integration:
+However, on **RHL/CentOS 7**, you may need to run the following command to enable browser integration:
 
     sudo setsebool -P unconfined_mozilla_plugin_transition 0
 
