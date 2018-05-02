@@ -219,9 +219,6 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 2. **Click on the invite link / open the invite in your browser**
 
-    > **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](#linux-browser-integration) for details.
-
-
     Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
     You should be notified that your browser wants to launching a Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
@@ -231,6 +228,8 @@ The easiest way to join a collaboration session is to simply open the invite lin
     If the host is offline or has ended the collaboration session before you joined, you'll see a message to this effect instead. You can then contact the host and ask them to share again.
 
     > **Note:** Be sure you've **started the tool at least once** after installing the Visual Studio Live Share extension and allowed the installation to finish before opening/re-opening the invite page. Still having trouble? See [join manually](#join-manually).
+
+    > **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](#linux-browser-integration) for details.
 
 3. **Collaborate**
 

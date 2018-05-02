@@ -86,8 +86,6 @@ If you are using **Visual Studio** and have already signed into the tool, Visual
 
 ### 3. Open/re-open the invite link in a browser
 
-> **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](../reference/linux.md#linux-browser-integration) for details.
-
 Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
 
 You should be notified that your browser wants to launching a Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
@@ -97,6 +95,8 @@ You should be notified that your browser wants to launching a Visual Studio Live
 If the host is offline, the browser will instead telling you this is the case. You can then contact the host and ask them to share again.
 
 > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing the extension and waited for the dependencies to finish installing (see the status bar) before opening/re-opening the invite page. Still having trouble? See [join manually](../reference/manual-join.md) for details.
+
+> **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](../reference/linux.md#linux-browser-integration) for details.
 
 ### 5. Collaborate!
 
