@@ -40,10 +40,10 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315)._
 
-- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora 27+, CentoOS 7+
+- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora Workstation 27+, CentoOS 7+
 
     - Live Share requires a number of [Linux prerequisites](#linux-install-steps) you may be prompted to install.
-    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_
+    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)_ ARM is also currently not supported.
     - See the [Linux install details](../reference/linux.md) article for details on downstream and other distributions.
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:

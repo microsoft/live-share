@@ -364,7 +364,7 @@ At this point you can select a read-only or read/write terminal from the menu. W
 
 Once you've selected the menu option, a read-only or read/write terminal will appear for all participants. Visual Studio Code has a built in terminal, so it will appear there, but Visual Studio does not have one out of box. Consequently by default a new terminal window will appear.
 
-However, Live Share will the [Whack Whack Terminal extension](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal) if you have it installed. This will give you an integrated terminal. Visual Studio will automatically notify you of this option if you start a shared terminal without the extension installed.
+However, Live Share will spin automatically up an integrated terminal if the [Whack Whack Terminal extension](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal) is installed. Visual Studio will notify you of this option if you start a shared terminal without the extension.
 
 ![Terminal install toast notification](../media/vs-terminal-install.png)
 
