@@ -178,6 +178,21 @@ When you start a shared terminal as a host, you can specify whether it should be
 
 Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
+## AAD Admin Consent
+
+When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its secruity features and your Azure AD tenet is setup to require “admin consent” for new applications accessing the contents of the directory.
+
+Your AD admin would need to resolve this for you using the following information:
+
+* **Application Name**: Visual Studio Live Share (Insiders)
+* **Application Type**: Web App
+* **Applications Status**: Production
+* **Delegated Permissions**: User.Read
+* **Application URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/
+* **Reply URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
+
+This would only need to be done once for anyone using Live Share. See [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) and [here](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) for details.
+
 ## See also
 
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
