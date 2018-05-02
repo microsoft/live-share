@@ -92,6 +92,7 @@ You can accomplish this by adding a **.vsls.json** file to the folder or project
 Here's an example .vsls.json file:
 
     {
+        "$schema": "http://json.schemastore.org/vsls",
         "gitignore":"none",
         "excludeFiles":[
             "*.p12",
@@ -126,6 +127,7 @@ The **gitignore** setting establishes how Live Share should process the contents
 A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
 
     {
+        "$schema": "http://json.schemastore.org/vsls",
         "gitignore":"exclude",
         "excludeFiles":[
             "!node_modules
@@ -135,6 +137,7 @@ A downside of the `exclude` setting is that the contents of folders like node_mo
 The hide and exclude rules are processed separately, so if you still wanted to hide node_modules to reduce clutter without actually excluding it, you can simply edit the file as follows:
 
     {
+        "$schema": "http://json.schemastore.org/vsls",
         "gitignore":"exclude",
         "excludeFiles":[
             "!node_modules
