@@ -92,7 +92,7 @@ Use your normal workflow to open a folder, project, or solution you would like t
 
 ### 4. [Optional] Hide or exclude files
 
-If you would prefer to hide or prevent guest access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 ### 5. Start a collaboration session
 
@@ -117,7 +117,7 @@ Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Openi
 
 > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
-If the guest you invited as questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
+If the guest you invited has questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
 
 ### 7. [Optional] Approve the guest
 

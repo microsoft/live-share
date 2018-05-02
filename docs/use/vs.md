@@ -75,7 +75,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 3. **[Optional] Hide or exclude files**
 
-    If you would prefer to hide or prevent guest access to certain files or folders, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+    If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 4. **Start a collaboration session**
 
@@ -93,11 +93,11 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 5. **Send someone the link**
 
-    Send the link over e-mail, Slack, Skype, etc. and once they join you can start collaborating! The person you invite will be able to download, install needed tools, and join the collaboration session. However, given the level of access Live Share sessions can provide to guests, **be sure you only share with people you trust** and think through the implications of what you are sharing.
+    Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Note that, given the level of access Live Share sessions can provide to guests, **you should only share with people you trust** and think through the implications of what you are sharing.
 
     > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
-    See [join a collaboration session](#join-a-collaboration-session) for what the guest you invite can expect.
+    If the guest you invited has questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
 
 6. **[Optional] Approve the guest**
 
@@ -199,25 +199,26 @@ Having issues with joining? Check out [troubleshooting](../troubleshooting.md#sh
 
 ## Co-editing
 
-Once a guest has joined a collaboration session, the host other guests will immediately be able to see each others edits and highlights in real-time.
+Once a guest has joined a collaboration session, all collaborators will immediately be able to see each others edits and highlights in real-time.
 
-Simply select a file from the Solution Explorer and start editing. All participants will see edits as the host or other guests make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
+Simply select a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
 
 ![Screen shot showing co-editing](../media/vs-coedit.png)
 
 > **Note:** Co-editing has a few limitations. See [platform support](../reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
 
-In addition, each guest can navigate to any file in the shared project. This means you can edit together in the same file or independently in separate files and thus seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
+In addition, each participant can navigate to any file in the shared project so you can edit together or independently as needed. This lets you seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
 > **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-Further, to better allow you to highlight where problems might exist or convey ideas, selections are also visible to all guests.
+Selections are also visible to all participants to make it easy to highlight where problems might exist or convey ideas.
+
 
 ![Screen shot showing highlighting](../media/vs-highlight.png)
 
 ### Changing participant flag behaviors
 
-By default, Visual Studio Live Share automatically displays a "flag" next to a participant's cursor on hover, or when they edit, highlight, or move their cursor. In some cases you may prefer to change this behavior.
+By default, Visual Studio Live Share automatically displays a "flag" next to a participant's cursor on hover, or when they edit, highlight, or move their cursor. In some cases you may prefer to change this behavior. To do so:
 
 1. Go to **Tools > Options > Live Share**
 2. Change the **Flag visibility** option to one of the following:
@@ -234,7 +235,7 @@ Whenever you are in a collaboration session, you'll be able can see each partici
 
 ![Screen shot showing user](../media/vs-person.png)
 
-When you join as a guest, you will automatically be "following" the host and your current editor and scroll position will follow as they move between files. This can useful since the host may need to jump around quickly between different files to help you orient yourself.
+Sometimes you need to explain a problem or design that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you will automatically "follow" the host. When following a participant, your editor will stay in sync with their currently open file and scroll position.
 
 > **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/54).
 
@@ -243,17 +244,15 @@ To make it easy to switch out of "follow mode", you'll stop following if any of 
 1. You edit, move your cursor, or make a selection
 2. You select another file
 
-You can also stop following by clicking the initials of the person you are following in the upper right hand corner. A circle around the initials will go away when you are no longer following.
+You can also stop following at any time by clicking the initials of the person you are following in the upper right hand corner. The circle around the participant's initials that indicates you are following them will then disappear.
 
 ![Visual Studio participant being followed](../media/vs-pinned.png) ![Visual Studio participant not being followed](../media/vs-pin-hover.png)
 
-Clicking on this same location will allow you to follow any participant in the collaboration session whether they are a guest or a host. Hosts can also follow guests if needed.
-
-Finally, sometimes you just want to jump to someone's location rather than following them. You can do this as well by simply double-clicking on their initials.
+You can click on any initials in this same location to follow any host or guest in the collaboration session. Note that if you just want to jump to someone's location rather than following them, simply double-click their initials.
 
 ## Focusing
 
-Occasionally you may want other participants in a collaboration session to come and take a look at something you are doing. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
+Occasionally you may want everyone in a collaboration session to come and take a look at something you are doing. Live Share lets you ask that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
 
 Just click on the session state / share button in the upper right hand corner and select "Focus Participants".
 
@@ -263,19 +262,19 @@ Everyone in the collaboration session will then get a notification that you've r
 
 ![Focus toast notification](../media/vs-focus-toast.png)
 
-Participants can then just click "Follow" right from the notification when they're ready to focus on what you are doing.
+They can then just click "Follow" right from the notification when they're ready to put their focus on you.
 
 ## Co-debuging
 
-Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
+Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not be able to follow the debugger as it step into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. You should also be aware that Console/REPL access means that participants can execute commands on your machine so you should only co-debug with those you trust. As a guest, it is also important to realize you may not be able to follow the debugger as it step into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 Using it simple. The collaboration session host simply needs to start debugging via the usual means in Visual Studio.
 
 ![VS Debug button](../media/vs-debug-button.png)
 
-Once the debugger attaches on the host's side, all guests are also attached. While there is one debugging "session" running on the host's machine, all collaborators are connected to it and have their own view.
+Once the debugger attaches on the host's side, all guests are also automatically attached. While there is one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
 
 > **Tip:** If you want to change when and how co-debugging happens, you can change the default behaviors via settings in **Tools > Options > Live Share**.
 
@@ -285,9 +284,9 @@ Anyone can step through the debugging process which enables seamless switching b
 
 > **Note:** See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
 
-Each collaborator can investigate different variables, jump to different files in the call stack, variables, and breakpoints are shared across all guests and can be added by anyone. Co-editing features then allow each collaborator to track where the other is located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
+Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
-> **Tip:** You can participate in VS Code debugging sessions from VS and vice versa! If the host is using VS Code, you can check out the [VS Code instructions](vscode.md#co-debuging) but the steps are roughly the same.
+> **Tip:** You can also participate in VS Code debugging sessions from VS and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debuging) on co-debugging for more information.
 
 ### Automatic web app sharing
 
@@ -354,7 +353,7 @@ To **stop** sharing a local server, the host simply needs to hare state button i
 
 ## Share a terminal
 
-Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
+Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you, as a host, to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. You're able to allow other participants to either  see command output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
 
 However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way if you can freely run commands in local terminals without risk and only share them when you actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
 
