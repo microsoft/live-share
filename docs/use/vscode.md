@@ -82,7 +82,7 @@ If you are still running into problems, are running on a distribution not handle
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, on **RHL/CentOS 7**, Chromium will should work by default, but you may need to run the following command to enable browser integration on **Firefox**:
+However, on **RHL/CentOS 7**, *Chromium* will work by default, but you may need to run the following command to enable browser integration on **Firefox**:
 
     sudo setsebool -P unconfined_mozilla_plugin_transition 0
 
@@ -219,7 +219,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 2. **Click on the invite link / open the invite in your browser**
 
-    > **RHL/CentOS Linux 7**: While Chromium works by default, to get Live Share browser integration to work with Firefox, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](../references/linux.md#linux-browser-integration) for details.
+    > **RHL/CentOS Linux 7**: While *Chromium* works by default, to get Live Share's browser integration to work with *Firefox*, you may need to run the following command: `sudo setsebool -P unconfined_mozilla_plugin_transition 0` See [here](#linux-browser-integration) for details.
 
 
     Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.

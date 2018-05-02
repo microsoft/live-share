@@ -118,7 +118,7 @@ Other distributions will require the same libraries, but the package names may b
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-However, on **RHL/CentOS 7**, Chromium will should work by default, but you may need to run the following command to enable browser integration on **Firefox**:
+However, on **RHL/CentOS 7**, *Chromium* will work by default, but you may need to run the following command to enable browser integration on **Firefox**:
 
     sudo setsebool -P unconfined_mozilla_plugin_transition 0
 
