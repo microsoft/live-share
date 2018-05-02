@@ -82,17 +82,21 @@ In **VS Code**, a browser will appear for you to use to complete the sign in pro
 
 > **Linux users:** VS Code will also [prompt you to enter a user code](../use/vscode.md#sign-in-using-a-user-code) when opening the browser window. The code can be found by clicking on the "Having trouble? Click here for user code directions" link that appears in the "Ready to collaborate!" page after you've signed into Live Share via the browser. Simply paste this user code in the prompt's input field in VS Code and hit enter to finish.
 
-If you are using **Visual Studio** and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step or simply sign in as you would normally. If you'd prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
+In **Visual Studio**, Live Share automatically uses your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). As a result, you can simply sign in as you would normally. However, if you'd prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** and select different credentials.
+
+See [troubleshooting](../troubleshooting.md#sign-in) if you are still hitting problems.
 
 ### 3. Open/re-open the invite link in a browser
 
-Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
+Now, simply open (or re-open) the invite link in a browser.
 
-You should be notified that your browser wants to launching a Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
+> **Note**: If you have not yet installed the Live Share extension, you'll be presented with links to the extension marketplace. Install the extension and restart your tool and retry.
+
+You should be notified that the browser wants to launch a Live Share enabled tool. If you let it launch your selected tool, you'll be connected to the collaboration session once it starts.
 
 ![Join page](../media/join-page.png)
 
-If the host is offline, the browser will instead telling you this is the case. You can then contact the host and ask them to share again.
+If the host is offline, you'll be notified at this point instead. You can then contact the host and ask them to share again.
 
 > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing the extension and waited for the dependencies to finish installing (see the status bar) before opening/re-opening the invite page. Still having trouble? See [join manually](../reference/manual-join.md) for details.
 
@@ -110,6 +114,7 @@ Here's a few things to try out:
 4. Pin to the host and follow as they make edits in different files
 5. Ask the host to start up a co-debugging session with you
 6. Ask the host to share a server so you can check out something like a web app running on their machine
+7. Ask the host to share a terminal and run some commands
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
 

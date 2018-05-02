@@ -140,7 +140,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 2. **Open a folder**
 
-    Open a "root" folder you would like to share with others as you would normally (via the file menu, using the terminal, etc).
+    Use your normal workflow to open a folder, project, or solution you would like to share with your guests.
 
 3. **[Optional] Hide or exclude files**
 
@@ -210,13 +210,15 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 2. **Click on the invite link / open the invite in your browser**
 
-    Simply open (or re-open) the invite link in a browser. Note: If you have not yet installed the Live Share extension, you'll be prompted to do so at this point and be presented with links to the extension marketplace. Install the extension and restart your tool and browser.
+    Now, simply open (or re-open) the invite link in a browser.
 
-    You should be notified that your browser wants to launching a Visual Studio Live Share enabled tool. Accept this and a new window for your tool will launch and connect you to the session.
+    > **Note**: If you have not yet installed the Live Share extension, you'll be presented with links to the extension marketplace. Install the extension and restart your tool and retry.
+
+    You should be notified that the browser wants to launch a Live Share enabled tool. If you let it launch your selected tool, you'll be connected to the collaboration session once it starts.
 
     ![Join page](../media/join-page.png)
 
-    If the host is offline or has ended the collaboration session before you joined, you'll see a message to this effect instead. You can then contact the host and ask them to share again.
+    If the host is offline, you'll be notified at this point instead. You can then contact the host and ask them to share again.
 
     > **Note:** Be sure you've **started the tool at least once** after installing the Visual Studio Live Share extension and allowed the installation to finish before opening/re-opening the invite page. Still having trouble? See [join manually](#join-manually).
 

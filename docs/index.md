@@ -80,13 +80,13 @@ Collaboration session hosts can use all of their tools and services but guests a
 
 #### Sharing
 
-When you "share" as a host, you start up a collaboration session that shares the contents of a project, solution, or a folder that guests can then access through an invitation link. While "share" is short hand for "share a project," it also opens the door for sharing other capabilities like debugging.
+When you "share" as a host, you start up a collaboration session that shares the contents of a project, solution, or a folder. Guests get access to this content using invitation link that you send them. While "share" is short hand for "share a project," it also opens the door for sharing other capabilities like debugging.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-project) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-project)
 
 #### Joining
 
-Clicking an invitation link sent to you by a host allows you to "join" a collaboration session and access any content or capabilities the host has opted to share with you. The web link provides a quick way to hop into a collaboration session if you already have the extension installed and setup information if you do not.
+Clicking an invitation link sent to you by a host allows you to "join" a collaboration session as a guest and access any content or capabilities the host has opted to share with you. The web link provides a quick way to hop into a collaboration session if you already have the extension installed and setup information if you do not.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#join-a-collaboration-session) [![VS](media/vs-icon-15x15.png)](use/vs.md#join-a-collaboration-session)
 
@@ -94,7 +94,7 @@ Clicking an invitation link sent to you by a host allows you to "join" a collabo
 
 #### Co-editing
 
-When you open the same file as another collaborator, you are instantly able to "collaboratively edit" or "co-edit" the file's contents. You can see each collaborator's edits, their cursors and selections, jump-to their location, and more. Even better, you are not forced into editing the same file at all times so you can opportunistically collaborate and act independently as you see fit.
+When you open the same file as another collaborator, you are instantly able to "collaboratively edit" or "co-edit" the file's contents. You can see each collaborator's edits, their cursors and selections, and more. Even better, you are not forced into editing the same file at all times so you can opportunistically collaborate and act independently as you see fit.
 
 > **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(vote)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(vote)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS or "multi-root workspaces" in VS Code are not shared [(vote)](https://github.com/MicrosoftDocs/live-share/issues/46).
 
@@ -102,7 +102,7 @@ When you open the same file as another collaborator, you are instantly able to "
 
 #### Following and focusing
 
-Sometimes you need to explain a design or problem that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project when co-editing. For this reason, as a guest, when you join a collaboration session you automatically "follow" the host's edit location. Hosts and guests can hop in and out of following one another with a simple mouse click. In addition, you may want to ask all participants to follow you. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
+Sometimes you need to explain a problem or design that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project when co-editing. For this reason, as a guest, when you join a collaboration session you automatically "follow" the host's edit location. Hosts and guests can hop in and out of following one another with a simple mouse click. In addition, you may find that you want to ask all participants to follow you. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
 
 > **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(vote)](https://github.com/MicrosoftDocs/live-share/issues/54).
 
@@ -118,19 +118,19 @@ When you're debugging tough coding problems or bugs, having an extra pair of eye
 
 #### Share server / Share port
 
-When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a server" which maps a local port on the host's machine to the exact same port on guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
+When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a server" which maps a local port on the host's machine to the exact same port on each guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (e.g. the host and guest can both access a web app running on http://localhost:3000).
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-server) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-server)
 
 #### Share terminals
 
-Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're always in control and can decide whether other collaborators can run commands themselves or just see command output. In fact, anything you want to keep to yourself you can run in an unshared terminal.
+Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and your guests can run commands and see the results. As the host, you're always in control and can decide whether other collaborators can run commands themselves or just see command output. In fact, anything you want to keep to yourself you can run in an unshared terminal.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-terminal) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-terminal)
 
 #### Access controls
 
-Visual Studio Live Share provides participants with a number of great ways to collaborate. However, with the number of options and flexibility guests are given to interact with hosts, you may want to lock down access to certain files or folders or explicitly approve guests that join. Live Share has a number of settings that can help you out.
+Visual Studio Live Share provides participants with a number of great ways to collaborate. However, with the number of options and flexibility guests are given to interact with hosts, you may want to explicitly approve guests that join or lock down access to certain files or folders. Live Share has a number of settings that can help you out.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](reference/security.md) [![VS](media/vs-icon-15x15.png)](reference/security.md)
 

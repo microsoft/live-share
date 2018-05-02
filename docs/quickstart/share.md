@@ -82,13 +82,13 @@ In **VS Code**, a browser will appear for you to use to complete the sign in pro
 
 > **Linux users:** VS Code will also [prompt you to enter a user code](../use/vscode.md#sign-in-using-a-user-code) when opening the browser window. The code can be found by clicking on the "Having trouble? Click here for user code directions" link that appears in the "Ready to collaborate!" page after you've signed into Live Share via the browser. Simply paste this user code in the prompt's input field in VS Code and hit enter to finish.
 
-If you are using **Visual Studio** and have already signed into the tool, Visual Studio Live Share will automatically use your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so you can skip this step or simply sign in as you would normally. If you'd prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
+In **Visual Studio**, Live Share automatically uses your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). As a result, you can simply sign in as you would normally. However, if you'd prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** and select different credentials.
 
-There are a few other tips in [troubleshooting](../troubleshooting.md#sign-in), but if this still doesn't work, email vsls-feedback@microsoft.com and we can swap your email out.
+See [troubleshooting](../troubleshooting.md#sign-in) if you are still hitting problems.
 
 ### 3. Open a folder, project, or solution
 
-Open a folder, project, or solution you would like to share in Visual Studio or Visual Studio Code as you would normally (via the file menu, a terminal, a explorer context menu, etc).
+Use your normal workflow to open a folder, project, or solution you would like to share in Visual Studio or Visual Studio Code.
 
 ### 4. [Optional] Hide or exclude files
 
@@ -96,7 +96,7 @@ If you would prefer to hide or prevent guest access to certain files or folders,
 
 ### 5. Start a collaboration session
 
-Open a folder, project, or solution, and simply click "Share" within your tool and an invite link will be automatically copied to your clipboard.
+Next, simply click "Share" within your tool and an invite link will be automatically copied to your clipboard.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -113,11 +113,11 @@ Open a folder, project, or solution, and simply click "Share" within your tool a
 
 ### 6. Send someone the invite link
 
-Send the link over e-mail, Slack, Skype, etc. and when opened in a browser will allow them to join a collaboration session that shares contents of the folder, project, or solution you opened. However, given the level of access Live Share sessions can provide to guests, **be sure you only share with people you trust** and think through the implications of what you are sharing.
+Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Opening the link in a browser will allow them to join the collaboration session that is sharing the contents of the folder, project, or solution you opened. Note that, given the level of access Live Share sessions can provide to guests, **you should only share with people you trust** and think through the implications of what you are sharing.
 
 > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
-If they've got more questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
+If the guest you invited as questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
 
 ### 7. [Optional] Approve the guest
 
@@ -134,7 +134,7 @@ By default, guests will automatically join your collaboration session and you'll
 </tr>
 </table>
 
-While this notification gives you the option to remove them from the session, you can also opt to instead require an explicit "approval" for anyone joining. If you have this setting turned on, a notification will prompt you to approve the guest before they can join.
+While this notification gives you the option to remove them from the collaboration session, you can also opt to require an explicit "approval" for anyone joining instead. If you have this setting turned on, a notification will prompt you to approve the guest when they try to join your session.
 
 See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to turn this feature on.
 
@@ -147,6 +147,7 @@ That's it!! Here's a few things to try out once a guest has joined you:
 3. Pin to the guest and follow as they make edits in different files
 4. Start up a co-debugging session with them
 5. Share a server so you can check out something like a web app running on their machine
+6. Share a terminal and run some commands
 
 Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/vs.md) extension docs for information on how to do these actions and more.
 
