@@ -31,35 +31,13 @@ Some distributions of Linux are missing libraries Live Share needs to function. 
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
-When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set!
+When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set! You may also want to check out **[tips by distribution](#tips-by-distribution)** for other hints and workarounds if any exist.
 
-If you see a message indicating the script does not support your distribution, see **[tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros)** for community tips and issues.
+If you see a message indicating the script does not support your distribution, see **[tips for unsupported distributions](#tips-for-unsupported-distros)** for community tips and issues.
 
 If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
 
     wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
-
-### Tips by distribution
-
-While the script above should cover Debian / Ubuntu, RHL / Fedora / CentOS, you may be wondering what typically is missing from vanilla installations of these distributions. The following list shows the key libraries that were found to be missing with a fresh install of the distribution along with some tips.
-
-| Distribution | Missing libraries | Tips |
-|--------|-------------------|----|
-| Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` | |
-| Ubuntu Desktop 17.10 (64-bit) | `libunwind8 liblttng-ust0` | |
-| Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; | |
-| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` | If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code. |
-| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` | Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".<br/><br/>If you run into trobule, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it. |
-| Mint 18.3 Cinnamon (64-bit) | `libcurl3` | |
-| Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | You will need to install `sudo` if you have not already to run the automated installer.  |
-| Fedora Workstation 27 (64-bit) | &lt;none&gt; | |
-| Fedora Workstation 28 (64-bit) | &lt;none&gt; | |
-| CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | |
-| openSuSE 12 (64-bit) | &lt;none&gt; | |
-
-See **[tips for unsupported distributions](#tips-for-unsupported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
-
-Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries Live Share needs.
 
 ### Details on required libraries
 
@@ -123,6 +101,28 @@ While uncommon, in certain distributions you **may be notified that your admin (
 If you'd prefer to run the command yourself instead, you can click "Copy instead" which will copy the terminal command to the clipboard instead.
 
 Finally, if you opt to skip this step entirely, you can still [join collaboration sessions manually](../use/vscode.md#join-manually), but you will not be able to join by opening an invite link in the browser. Note that you can always access the command again later, by hitting **Ctrl+Shift+P** and selecting the "Live Share: Launcher Setup" command.
+
+## Tips by distribution
+
+While the dependency install script above should cover Debian / Ubuntu, RHL / Fedora / CentOS, you may be wondering what typically is missing from vanilla installations of these distributions. The following list shows the key libraries that were found to be missing with a fresh install of the distribution along with some tips that can help you get up and running if you hit a problem.
+
+| Distribution | Vanilla install missing libraries | Additional steps |
+|--------|-------------------|----|
+| Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` | &lt;none&gt; |
+| Ubuntu Desktop 17.10 (64-bit) | `libunwind8 liblttng-ust0` | &lt;none&gt; |
+| Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; | &lt;none&gt; |
+| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` | If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code. |
+| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` | Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".<br/><br/>If you run into trobule, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it. |
+| Mint 18.3 Cinnamon (64-bit) | `libcurl3` | &lt;none&gt; |
+| Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | You will need to install `sudo` if you have not already to run the automated installer.  |
+| Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
+| Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
+| CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | &lt;none&gt; |
+| openSuSE 12 (64-bit) | &lt;none&gt; | &lt;none&gt; |
+
+See **[tips for unsupported distributions](#tips-for-unsupported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
+
+Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries Live Share needs.
 
 ## Tips for unsupported distros
 
