@@ -279,7 +279,7 @@ Once a guest has joined a collaboration session, all collaborators will immediat
 
 ![Screen shot showing co-editing](../media/vscode-coedit.png)
 
-> **Note:** Co-editing has a few limitationsfor certain languages. See [platform support](../reference/platform-support.md) for the state of features by language.
+> **Note:** Co-editing has limitations for certain languages. See [platform support](../reference/platform-support.md) for the state of features by language.
 
 Beyond cursors and edits, selections you make are also visible to all participants in that same file. This makes it easy to highlight where problems might exist or convey ideas.
 
@@ -287,7 +287,7 @@ Beyond cursors and edits, selections you make are also visible to all participan
 
 Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
-> **Note:** Guest support for file navigation and file operations is still experimental and has a number of limitaitons. <ul><li>Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43).</li><li>Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).</li><li>File updates (add / rename / delete) may not propagate to guests when the host is using a case sensitive filesystem (e.g. Linux) [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).</li><li>Guests may not see separate two files if there are two in the same folder with the same name but different capitalization when the host is using a case sensitive filesystem (e.g. Linux) [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).</li>
+> **Note:** Guest support for file navigation and file operations is still experimental and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX) and two separate files with the same name but different casing in the same folder may appear as one [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
