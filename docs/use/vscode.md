@@ -151,7 +151,8 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-    > **WARNING:** While changes made to .vsls.json during a collaboration session are picked up automatically on Windows and macOS when **not** using a case sensitive filesystem, there is a **bug** where these changes are not reliably picked up on Linux or macOS when hosting from a **case sensitive** filesystem. (The guest's filesystem has no effect on this issue.) As a workaround, *make changes to .vsls.json prior to starting a collaboration session if you are hosting from a case sensitive filesystem*.  [Upvote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/XX).
+    > **WARNING:** This feature is still in development and works reliably on Windows and macOS when the host's filesystem is **not case sensitive**. When hosting from a case sensitive filesystem, there is a **bug** where capitalization somewhere in the path can cause files that should be hidden or excluded to appear. (The guest's filesystem has no effect on this issue.) Windows is rarely case sensitive. Installs of **macOS** are **case insenstive by default** and therefore not impacted, but you may want to verify. Unfortunatley, **Linux** is usually **case sensitive**. [Upvote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/XX).
+
 
 4. **Start a collaboration session**
 
@@ -287,11 +288,11 @@ Beyond cursors and edits, selections you make are also visible to all participan
 
 Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
-> **Note:** Guest support for file navigation and file operations is still experimental and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX) and if mulitple files or folders with the same name but different casing exist in the same path, only one may appear [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).
+> **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX) and if mulitple files or folders with the same name but different casing exist in the same path, only one may appear [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details. Note that this feature **does not currently work on case sensitive filesystems**.
 
 ### Changing participant flag behaviors
 
