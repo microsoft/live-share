@@ -203,15 +203,19 @@ Once a guest has joined a collaboration session, all collaborators will immediat
 
 ![Screen shot showing co-editing](../media/vs-coedit.png)
 
-> **Note:** Co-editing has a few limitations. See [platform support](../reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
-
-Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing. The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
-
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> **Note:** Co-editing has a few limitations for certain languages. See [platform support](../reference/platform-support.md) for the state of features by language.
 
 Beyond cursors and edits, selections you make are also visible to all participants in that same file. This makes it easy to highlight where problems might exist or convey ideas.
 
 ![Screen shot showing highlighting](../media/vs-highlight.png)
+
+Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
+
+> **Note:** Guest support for file navigation and file operations is still experimental and has a number of limitaitons. <ul><li>Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43).</li><li> Guests will always see a file view of solutions shared from VS [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43).</li><li>Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).</li><li>File updates (add / rename / delete) may not propagate to guests when the host is using a case sensitive filesystem (e.g. Linux) [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).</li><li>Guests may not see separate two files if there are two in the same folder with the same name but different capitalization when the host is using a case sensitive filesystem (e.g. Linux) [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).</li>
+
+The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
+
+> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 ### Changing participant flag behaviors
 

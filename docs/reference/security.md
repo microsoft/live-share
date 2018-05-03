@@ -89,7 +89,7 @@ As a guest, Live Share's remote model gives you quick read/write access to files
 
 You can accomplish this by adding a **.vsls.json** file to the folder or project you are sharing. Any settings you add to this json formatted file changes how Live Share processes files. In addition to providing you direct control, these files can also be committed to source control so anyone cloning a project will be able to take advantage of these rules with no additional effort on their part.
 
-> **WARNING:** While changes made to .vsls.json during a collaboration session are picked up automatically on Windows and macOS when **not** using a case sensitive filesystem, there is a **bug** where these changes are not reliably picked up on Linux or macOS when hosting from a **case sensitive** filesystem. (The guest's filesystem has no affect on this issue.) As a workaround, *make changes to .vsls.json prior to starting a collaboration session if you are hosting from a case sensitive filesystem*.
+> **WARNING:** While changes made to .vsls.json during a collaboration session are picked up automatically on Windows and macOS when **not** using a case sensitive filesystem, there is a **bug** where these changes are not reliably picked up on Linux or macOS when hosting from a **case sensitive** filesystem. (The guest's filesystem has no effect on this issue.) As a workaround, *make changes to .vsls.json prior to starting a collaboration session if you are hosting from a case sensitive filesystem*.
 
 Here's an example .vsls.json file:
 
