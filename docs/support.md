@@ -33,7 +33,7 @@ In short:
 - **VS Code bugs:** [Log a new issue](https://aka.ms/vsls-new-issue). Use the "Live Share: Export logs" command and [drag-and-drop the zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) onto the bug or [email them](mailto:vsls-feedback@microsoft.com).
 - **VS bugs:** [Help > Send Feedback > Report a Problem...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Repro the problem before sending and logs will be auto-attached.
 - **Feature requests:** [Log a new request](https://aka.ms/vsls-new-issue) or use a 👍 reaction to [up-vote an existing one](https://aka.ms/vsls-feature-requests).
-- **Contact us:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter), or [Slack](https://aka.ms/vsls-slack).
+- **Contact us:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter), or the community run [Slack](https://aka.ms/vsls-slack).
 
 More details below.
 
@@ -61,7 +61,7 @@ GitHub issues and VS problem reports are a great way to connect with us.
 
 - **Email:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
 - **Twitter:** Hit us up on Twitter using [#vsliveshare](https://aka.ms/vsls-twitter)!
-- **Slack:** Chat with us on [Slack](https://aka.ms/vsls-slack).
+- **Slack:** We also hang out on the community run [Live Share Slack](https://aka.ms/vsls-slack).
 
 ## See also
 
