@@ -113,7 +113,6 @@ If you are on Linux or are running into problems with VS Code not picking up the
 
 2. A browser should appear for you use to complete the sign in process. If you are not even able to get this to work, manually start a browser window and [navigate to this location](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login).
 
-
 3. Once you are done, click "Having trouble? Click here for user code directions" to see the user code.
 
     ![Picture of user code in browser](../media/vscode-user-code-browser.png)
@@ -151,6 +150,8 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 3. **[Optional] Hide or exclude files**
 
     If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+
+    > **WARNING:** While changes made to .vsls.json made during a collaboration session are picked up automatically on Windows and macOS when **not** using a case sensitive filesystem, there is a **bug** where these changes are not reliably picked up on Linux or macOS when hosting from a **case sensitive** filesystem. (The guest's filesystem has no affect on this issue.) As a workaround, *make changes to .vsls.json prior to starting a collaboration session if you are hosting from a case sensitive filesystem*.
 
 4. **Start a collaboration session**
 

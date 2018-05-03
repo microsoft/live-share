@@ -94,6 +94,8 @@ Use your normal workflow to open a folder, project, or solution you would like t
 
 If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
+> **WARNING:** While changes made to .vsls.json made during a collaboration session are picked up automatically on Windows and macOS when **not** using a case sensitive filesystem, there is a **bug** where these changes are not reliably picked up on Linux or macOS when hosting from a **case sensitive** filesystem. (The guest's filesystem has no affect on this issue.) As a workaround, *make changes to .vsls.json prior to starting a collaboration session if you are hosting from a case sensitive filesystem*.
+
 ### 5. Start a collaboration session
 
 Next, simply click "Share" within your tool and an invite link will be automatically copied to your clipboard.
