@@ -111,12 +111,13 @@ While the prerequisite install script above should cover Debian / Ubuntu and RHL
 | Distribution | Vanilla install missing libraries | Additional steps |
 |--------|-------------------|----|
 | Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` | &lt;none&gt; |
-| Ubuntu Desktop 17.10 (64-bit) | `libunwind8 liblttng-ust0` | &lt;none&gt; |
 | Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; | &lt;none&gt; |
-| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
-| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into trobule, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
+| Kubuntu 18.04 (64-bit) | `libcurl3 liblttng-ust0 gnome-keyring desktop-file-utils gettext apt-transport-https` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
+| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils gettext apt-transport-https` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
+| Xubuntu 18.04 (64-bit) |`libcurl3 liblttng-ust0 apt-transport-https` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trobule, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
+| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Mint 18.3 Cinnamon (64-bit) | `libcurl3` | &lt;none&gt; |
-| Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | <ul><li>You will need to install `sudo` if you have not already to run the automated installer.</li></ul>  |
+| Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | <ul><li>You will need to install `sudo` if you have not already to run the automated prerequisite installer.</li></ul>  |
 | Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | &lt;none&gt; |
