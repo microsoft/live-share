@@ -29,7 +29,7 @@ Collaboration sessions in Visual Studio Live Share are powerful in that they all
 
 ## Connectivity
 
-All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. By default, Live Share attempts a direct connection and falls back on a cloud relay if a connection between the guest and the host cannot be established. Note that Live Share's cloud relay does not persist any traffic routed through it and does not "snoop" the traffic in any way.
+All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. By default, Live Share attempts a direct connection and falls back on a cloud relay if a connection between the guest and the host cannot be established. Note that Live Share's cloud relay does not persist any traffic routed through it and does not "snoop" the traffic in any way. However, if you'd prefer not to use the relay you can change settings to always connect directly.
 
 To find out more about altering these behaviors and Live Share's connectivity requirements, see **[connectivity requirements for Live Share](connectivity.md)**.
 
@@ -66,7 +66,7 @@ While the "notification + remove" default provides a good mix of speed and contr
 
     ![Visual Studio settings window with guest approval setting highlighted](../media/vs-setting-guestapproval.png)
 
-From this point forward you'll be asked to approve each guest that joins.
+From this point forward, you'll be asked to approve each guest that joins.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -149,7 +149,7 @@ The hide and exclude rules are processed separately, so if you still wanted to h
 
 ### .vsls.json files in sub-folders
 
-Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hide/exclude rules are determined by starting with the .vsls.json file in the root folder you have shared (if present) and then walking through at each sub-folder from there leading to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree then supplement (or override) rules established at higher levels.
+Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hide/exclude rules are determined by starting with the .vsls.json file in the root folder you have shared (if present) and then walking through at each sub-folder from there leading to a given file to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree then supplement (or override) rules established at higher levels.
 
 ## Co-debugging
 

@@ -106,7 +106,7 @@ Finally, if you opt to skip this step entirely, you can still [join collaboratio
 
 ## Tips by distribution
 
-While the dependency install script above should cover Debian / Ubuntu, RHL / Fedora / CentOS, you may be wondering what typically is missing from vanilla installations of these distributions. The following list shows the key libraries that were found to be missing with a fresh install of the distribution along with some tips that can help you get up and running if you hit a problem.
+While the prerequisite install script above should cover Debian / Ubuntu and RHL / Fedora / CentOS, you may be wondering what is typically missing from vanilla installations of these distributions. The following list shows the key libraries that were missing in a fresh install of the distribution. The list also provides some tips that can help you get up and running if you hit a problem.
 
 | Distribution | Vanilla install missing libraries | Additional steps |
 |--------|-------------------|----|
@@ -124,11 +124,11 @@ While the dependency install script above should cover Debian / Ubuntu, RHL / Fe
 
 See **[tips for unsupported distributions](#tips-for-unsupported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
 
-Note that the Linux ecosystem moves quickly and that the package names may vary in certain distributions, so your results may vary. Additional details can be found below on the libraries Live Share needs.
+Note that the Linux ecosystem moves quickly and package names will be different in certain distributions, so your results may vary. Additional details can be found above on the libraries Live Share needs.
 
 ## Tips for unsupported distros
 
-Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core and therefore are not, by extension, officially supported by VS Live Share. However, the Live Share community has helped us built up a knowledge base of the what is needed to get Live Share working on other distributions.
+Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core. Therefore, by extension, they are not officially supported by VS Live Share either. However, the Live Share community has helped understand whether Live Share is working on certain unsupported, if so, how to get it up and running.
 
 > **PRs welcome:** If you're interested in updating this information with your favorite distribution, submit a PR for [this file](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) in our docs GitHub repo. Even better, if you'd like to get the dependency installer supporting your favorite distribution, you can submit a PR [for this file](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
 
@@ -141,7 +141,7 @@ Distributions outside of the Debian / Ubuntu or RHL trees are not officially sup
 
 ### VS Code OSS Issues
 
-> **ArchLinux/Manjaro Users:** Use [visual-studio-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) to avoid this problem.
+> **ArchLinux/Manjaro Users:** Use the [visual-studio-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package to avoid this problem.
 
 Non-official distributions of Visual Studio Code can be missing a critical value in  `product.json` file that prevents Visual Studio Live Share from activating. In this case, if you go to Help > "Toggle Developer Tools", you will see stack traces indicating the Live Share extension did not activate due to it using a "proposed API."
 
@@ -150,7 +150,7 @@ To verify this is your issue, check the contents of `product.json`. The file cou
 - `/usr/share/code/resources/app/product.json`
 - `/usr/share/vscode/resources/app/product.json`
 
-If the `extensionAllowedProposedApi` property is missing or you do not see "ms-vsliveshare.vsliveshare" referenced, you are using an unofficial version with this problem.  **Contact the VS Code distribution owner to get the issue patched.**
+If the `extensionAllowedProposedApi` property is missing or you do not see "ms-vsliveshare.vsliveshare" referenced, you are using an unofficial version with this problem. **Contact the VS Code distribution owner to get the issue patched.**
 
 As a **workaround**, you can add the following into the product.json:
 
@@ -159,6 +159,8 @@ As a **workaround**, you can add the following into the product.json:
           "ms-vscode.node-debug",
           "ms-vscode.node-debug2"
      ]
+
+See [above](#tips-for-unsupported-distros) for additional details on whether the distribution you are using is known to work.
 
 ## See also
 

@@ -65,7 +65,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
-Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. If you stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+) and only use **official distributions of VS Code**, you should find the process straight forward. However, in the event that you are using a non-standard configuration or downstream distribution, you may or may not run into some hiccups. See [Linux installation details](../reference/linux.md#tips-for-unsupported-distros) for more information.
+Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. If you stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+) and only use **official distributions of VS Code**, you should find the process straight forward. However, in the event that you are using a non-standard configuration or downstream distribution, you may or may not run into some hiccups. See [Linux installation details](../reference/linux.md) for more information.
 
 #### Install Linux prerequisites
 
@@ -73,15 +73,21 @@ Some distributions of Linux are missing libraries Live Share needs to function. 
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
-When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set! r other hints and workarounds if any exist.
+When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set! You may also want to check out **[tips by distribution](../reference/linux.md#tips-by-distribution)** for other hints and workarounds if any exist.
 
-If you are still running into problems, are running on a distribution not handled by the script, or have other questions, see the **[Linux installation details](../reference/linux.md#tips-for-unsupported-distros)** article.
+If you see a message indicating the script does not support your distribution, see **[tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros)** for community tips and issues.
+
+If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
+
+    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
 
 ## Linux browser integration
 
 Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
 
-While uncommon, on certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window. You can read more about why this is required [here](../reference/linux.md#linux-browser-integration).
+While uncommon, on certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
+
+You can read more about why this is required and where Live Share places files **[here](../reference/linux.md#linux-browser-integration)**. Note even if you are unable to get browser integration working you can still **[join collaboration sessions manually](../use/vscode.md#join-manually)**.
 
 ## Sign in
 
@@ -166,7 +172,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
-    If the guest you invited has questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
+    If the guest you invited has questions, the "[Quickstart: Join your first session](../quickstart/join.md)" article provides some more information on getting up and running as a guest.
 
 6. **[Optional] Approve the guest**
 

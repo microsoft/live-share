@@ -97,7 +97,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
-    If the guest you invited has questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
+    If the guest you invited has questions, the "[Quickstart: Join your first session](../quickstart/join.md)" article provides some more information on getting up and running as a guest.
 
 6. **[Optional] Approve the guest**
 
