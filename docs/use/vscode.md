@@ -151,7 +151,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-    > **WARNING:** While changes made to .vsls.json during a collaboration session are picked up automatically on Windows and macOS when **not** using a case sensitive filesystem, there is a **bug** where these changes are not reliably picked up on Linux or macOS when hosting from a **case sensitive** filesystem. (The guest's filesystem has no effect on this issue.) As a workaround, *make changes to .vsls.json prior to starting a collaboration session if you are hosting from a case sensitive filesystem*.
+    > **WARNING:** While changes made to .vsls.json during a collaboration session are picked up automatically on Windows and macOS when **not** using a case sensitive filesystem, there is a **bug** where these changes are not reliably picked up on Linux or macOS when hosting from a **case sensitive** filesystem. (The guest's filesystem has no effect on this issue.) As a workaround, *make changes to .vsls.json prior to starting a collaboration session if you are hosting from a case sensitive filesystem*.  [Upvote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 4. **Start a collaboration session**
 
