@@ -44,7 +44,7 @@ This is our first public preview release!!  It is a major feature release that a
 
 7. **Guest support for file operations** 📁 (#44) - Guests can now add and remove files and updates made by the host will show up in the guest's editor.
 
-8. **Local undo/redo** ✏ (#4) - Undo and redo is now local to you as a user instead of global. No more troubles with accidently undoing a change made by another parcticipant!
+8. **Local undo/redo** ✏ (#4) - Undo and redo is now local to you as a user instead of global. No more troubles with accidently undoing a change made by another participant!
 
 9. **Access to participant list in VS Code, removal of "jump-to" in favor of follow** 👓 (#185) - To make it easier to find people, we've altered the status bar item that shows the number of participants to always show a list of participants and where they are located if clicked. There is also a "List Participants" command for the keyboard inclined. Since we found most poeple found follow more useful than "jump-to" as a feature, we opted to remove it and instead follow if you select a participant in this list.
 
@@ -55,6 +55,14 @@ This is our first public preview release!!  It is a major feature release that a
 ### Reported Issues Fixed
 
 1. **Live Share does not allow guests to edit csproj files** (#100) - Guests are now able to edit csproj and other project files as XML.
+
+## v0.3.51 (VS Code / Visual Studio)
+
+This release was an emergency update to resolve a problem where people that had signed into Visual Studio Code or Visual Studio 30+ days ago saw a message that they could no longer share. Apologies for the inconvenience! 😭 x 💯
+
+### Reported Issues Fixed
+
+1. **Intermittent sign in permission issues - Cannot share even though you are in the preview** (#280) - An update to the service side of Live Share inadvertently caused users 30+ days ago saw a message that they could no longer share. In VS Code this could be solved by simply signing out and back in again, but in VS additional steps were required.  This should no longer be the case.
 
 ## v0.2.547 (VS Code / Visual Studio)
 

@@ -232,7 +232,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 ### Join manually
 
-You can also manually join without using a web link which can be useful in situations where the tool you want to use is already running, you want to use a different tool than you usually do, or if you are having trouble with getting invite links to work for some reason. The process is easy:
+You can also manually join without using a web browser which can be useful in situations where the tool you want to use is already running, you want to use a different tool than you usually do, or if you are having trouble with getting invite links to work for some reason. The process is easy:
 
 1. **Sign in**
 
@@ -240,7 +240,7 @@ You can also manually join without using a web link which can be useful in situa
 
 2. **Use the join command**
 
-    Press **Ctrl+Shift+P** or clicking on the session state status bar item and select "Join collaboration session".
+    Press **Ctrl+Shift+P** or click on the session state status bar item and select "Join collaboration session".
 
     ![Join scoped command menu item](../media/vscode-join.png)
 
@@ -268,19 +268,17 @@ Having issues with joining? Check out [troubleshooting](../troubleshooting.md#sh
 
 ## Co-editing
 
-Once a guest has joined a collaboration session, all collaborators will immediately be able to see each others edits and highlights in real-time.
-
-Simply select a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves in real time so you can iterate and rapidly nail to down solutions.
+Once a guest has joined a collaboration session, all collaborators will immediately be able to see each others edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves making it easy iterate and rapidly nail to down solutions.
 
 ![Screen shot showing co-editing](../media/vscode-coedit.png)
 
 > **Note:** Co-editing has a few limitations. See [platform support](../reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Finally, "Multi-root workspaces" is not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
 
-In addition, each participant can navigate to any file in the shared project so you can edit together or independently as needed. This lets you seamlessly switch between investigation, small tweaks, and collaborative editing. The resulting edits are persisted on the host's machine so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
+Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing. The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
 > **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-Selections are also visible to all participants to make it easy to highlight where problems might exist or convey ideas.
+Beyond cursors and edits, selections you make are also visible to all participants in that same file. This makes it easy to highlight where problems might exist or convey ideas.
 
 ![Screen shot showing highlighting](../media/vscode-highlight.png)
 
@@ -293,7 +291,7 @@ Simply **edit settings.json** (File > Preferences > Settings), add one of the fo
 | Setting | Behavior |
 |---------|----------|
 | ``"liveshare.nameTagVisibility":"Never"`` | The flag is only visible when you hover over the cursor. |
-| ``"liveshare.nameTagVisibility":"Activity"`` | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves their cursor.
+| ``"liveshare.nameTagVisibility":"Activity"`` | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves their cursor. |
 | ``"liveshare.nameTagVisibility":"Always"`` | The flag is always visible. |
 
 ## Following
@@ -314,7 +312,7 @@ Since the pin is tied to a tab set, you can use split view to have a set that is
 
 ![VS Code pin in split view](../media/vscode-pin-split.png)
 
-To make it easy to hop in and out of pinning, the tab set is un-pinned if any of the following occurs:
+To make it easy to switch out of "follow mode" and start editing on your own, you'll stop following if any of the following happens:
 
 1. You edit, move your cursor, or make a selection
 2. You select another file
@@ -328,7 +326,7 @@ A quick way to see who is in the collaboration session is to hit **Ctrl+Shift+P*
 
 ![Screen shot showing user status bar icon](../media/vscode-user-status.png)
 
-A list of all participants in the session will then appear. Unlike clicking the pin icon, this list appears even if there is only one other person in the sesion with you so you can always quickly see where someone else is located. For convience purposes, like the pin icon, you can then pick one of the participants from the list to follow them. Hit escape if you'd like to exit instead.
+A list of all participants in the session will then appear. Unlike clicking the pin icon, this list appears even if there is only one other person in the session with you so you can always quickly see where someone else is located. For convenience purposes, like the pin icon, you can then pick one of the participants from the list to follow them. Press escape if you'd like to exit instead.
 
 ## Focusing
 
@@ -346,7 +344,7 @@ They can then just click "Follow" right from the notification when they're ready
 
 ## Co-debuging
 
-Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, it also gives all collaborators the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
+Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, it also you and other participants in your session the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
 > **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. You should also be aware that Console/REPL access means that participants can execute commands on your machine so you should only co-debug with those you trust. As a guest, it is also important to realize you may not be able to follow the debugger as it step into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
@@ -376,7 +374,7 @@ Each collaborator can investigate different variables, jump to different files i
 
 ### Change when VS Code joins debugging sessions
 
-By default as a guest, you'll be automatically attached to debugging sessions when they are shared by the host. However, in some cases you may find this behavior disruptive.  Fortunately, you can change it as follows:
+By default, as a guest, you'll be automatically attached to debugging sessions when they are shared by the host. However, in some cases you may find this behavior disruptive. Fortunately, you can change it as follows:
 
 Simply **edit settings.json** (File > Preferences > Settings), add one of the following lines, and then restart VS Code:
 
@@ -392,7 +390,7 @@ As a guest, you may wish to stop debugging temporarily. Fortunately, you can sim
 
 ![VS Code debugger stop button](../media/vscode-debug-stop.png)
 
-If you've updated settings so you no longer auto-attach or if you simply want to re-attach later, you can do so by pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Attach to a Shared Debugging Session".
+If you've updated settings so you no longer auto-attach or if you simply want to reattach later, you can do so by pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Attach to a Shared Debugging Session".
 
 ![VS Code attach debugger](../media/vscode-reattach.png)
 
@@ -438,19 +436,19 @@ To **stop** sharing a local server as the host, pressing **Ctrl+Sift+P** or clic
 
 ## Share a terminal
 
-Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you, as a host, to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. You're able to allow other participants to either  see command output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
+Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you, as a host, to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. You can to give guests visibility to terminal output or let them get hands on and run tests, builds, or even triage environment specific problems that only happen on your machine.
 
-However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way if you can freely run commands in local terminals without risk and only share them when you actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
+However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way you can freely run commands in local terminals without risk and only share when actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
 
-As a host, you can share a terminal pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Share Terminal".
+As a host, you can share a terminal by pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Share Terminal".
 
 ![Share terminal menu option](../media/vscode-share-terminal.png)
 
-At this point you can select a read-only or read/write terminal from the menu that appears. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
+At this point you can select a read-only or read/write terminal from the menu. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
 ![Read-only or read/write selection](../media/vscode-share-terminal-ro-rw.png)<br />
 
-Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear under VS Code's terminal tab.
+Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear under VS Code's terminals tab.
 
 ![Shared terminal running](../media/vscode-share-terminal-up.png)<br />
 
