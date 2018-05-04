@@ -34,13 +34,13 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 2. **Multi-guest intellisense** 👩👨😺 (#47) - Originally only the first guest got full intellisense for supported languages. Now all participants get it!
 
-3. **Shared terminals** 👩‍💻 (#41) - Hosts can now share a read-only or read/write terminal with participants. The read/write terminal supports collaborative input for ease of use and improved security (since the host can intervene if they see anything they don't like).
+3. **Shared terminals** 👩‍💻 (#41) - Hosts can now share a read-only or read/write terminal with participants. The read/write terminal supports collaborative input for ease of use and improved security (since the host can intervene if they see anything they don't like). Learn more: [![VS Code](../media/vscode-icon-15x15.png)](use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](use/vs.md#share-a-terminal)
 
-4. **Focus Participants** 👁‍🗨 (#73) - Sends a toast notification to all other participants asking them to follow you.
+4. **Focus Participants** 👁‍🗨 (#73) - You can now send a toast notification to all other participants in a collaboration session asking them to follow you. Learn more: [![VS Code](../media/vscode-icon-15x15.png)](use/vscode.md#focusing) [![VS](../media/vs-icon-15x15.png)](use/vs.md#focusing)
 
 5. **Excluded (host-only) and hidden file support** 🙈 (#52) - You can now use a .vsls.json file to exclude or hide certain files or alter how VS Live Share processes the contents of .gitignore files in your shared folders. See the [security article](https://aka.ms/vsls-docs/security) for details. Note that we do have an open issue for case sensitive filesystems (e.g. Linux) with this feature we are working to resolve ASAP.
 
-6. **Join notifications and guest approval mode** 👍👎 (#110) - As a host, Live Share now tells you when a participant joins and gives you the option to remove them. If you'd prefer, you can switch into an accept/reject mode where the  explicitly approve each participant that joins. See the [security article](https://aka.ms/vsls-docs/security) for details.
+6. **Join notifications and guest approval mode** 👍👎 (#110) - As a host, Live Share now tells you when a participant joins and gives you the option to remove them. If you'd prefer, you can switch into "guest approval mode" where the  explicitly approve each participant that joins. See the [security article](https://aka.ms/vsls-docs/security) for details.
 
 7. **Guest support for file operations** 📁 (#44) - Guests can now add and remove files and updates made by the host will show up in the guest's editor.
 
@@ -58,7 +58,7 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 2. **[VS Code] Can't use the debugger for Unity (even when not hosting a session)** (#255) - This should now be resolved.
 
-3. **[Ubuntu 18.04] Ignorable error reported during launcher install on Ubuntu 18.04** (#258) - This was resolved #202.
+3. **[Ubuntu 18.04] Ignorable error reported during launcher install on Ubuntu 18.04** (#258) - This was resolved with #202.
 
 ## v0.3.51 (VS Code / Visual Studio)
 
