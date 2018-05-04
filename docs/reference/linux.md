@@ -113,9 +113,9 @@ While the prerequisite install script above should cover Debian / Ubuntu and RHL
 | Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` | &lt;none&gt; |
 | Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Kubuntu 18.04 (64-bit) | `libcurl3 liblttng-ust0 gnome-keyring desktop-file-utils gettext apt-transport-https` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
-| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils gettext apt-transport-https` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
+| Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
 | Xubuntu 18.04 (64-bit) |`libcurl3 liblttng-ust0 apt-transport-https` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
-| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
+| Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Mint 18.3 Cinnamon (64-bit) | `libcurl3` | &lt;none&gt; |
 | Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | <ul><li>You will need to install `sudo` if you have not already to run the automated prerequisite installer.</li></ul>  |
 | Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
@@ -137,7 +137,7 @@ Distributions outside of the Debian / Ubuntu or RHL trees are not officially sup
 |--------------|----------|-------------------|------------------|
 | ArchLinux | Yes | Varies. Use the prerequisite install script. Most common are `gnome-keyring` and `libsecret`.  | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</lu></ul> |
 | Manjaro 17.1 | Yes | Use the prerequisite install script. | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li></ul> |
-| Solus 3 | **No** | Unknown |**Issues:** <ul><li>VS Code package is missing product.json values ([see below](#vs-code-oss-issues)).</li><li>Even with workaround, fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)).</li></ul> |
+| Solus 3 | **No** | None known. |**Issues:** <ul><li>VS Code package is missing product.json values ([see below](#vs-code-oss-issues)).</li><li>Even with workaround, fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)).</li></ul> |
 | Gentoo | **No** | Highly variable. | **Issue:** <ul><li>Fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)).</li></ul> |
 
 ### VS Code OSS Issues

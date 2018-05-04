@@ -71,7 +71,7 @@ As outlined above, direct mode requires that your personal firewall allow **vsls
 
 If you do not see an entry for vsls-agent, you can find the agent executable in one of the following locations.
 
-**VS Code agent location**
+#### VS Code agent location
 
 Substitute **VERSION** for the extension version number in one of the paths below:
 
@@ -83,7 +83,7 @@ Substitute **VERSION** for the extension version number in one of the paths belo
 
     `%USERPROFILE%\.vscode\extensions\ms-vsliveshare.vsliveshare-VERSION\dotnet_modules\vsls-agent.exe`
 
-**Visual Studio agent location**
+#### Visual Studio agent location
 
 The Visual Studio location is more dynamic, but you can follow these steps to find the executable:
 
