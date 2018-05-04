@@ -114,11 +114,11 @@ Let's walk through how these properties change what guests can do.
 
 ### Properties
 
-The **excludeFiles** property allows you to specify a list of glob file patterns (very much like those found .gitignore files) that prevents Live Share from ever transmitting certain files or folders to guests. Be aware that this is inclusive of scenarios like a guest *following or jumping to your edit location, stepping into a file during collaborative debugging, any code navigation features like go to definition, and more.* It is intended for files you never want to share under any circumstances like those containing secrets, certificates, or passwords. For example, since they control security, .vsls.json files are always excluded.
+The **excludeFiles** property allows you to specify a list of glob file patterns (very much like those found .gitignore files) that prevents Live Share from opening certain files or folders for guests. Be aware that this is inclusive of scenarios like a guest *following or jumping to your edit location, stepping into a file during collaborative debugging, any code navigation features like go to definition, and more.* It is intended for files you never want to share under any circumstances like those containing secrets, certificates, or passwords. For example, since they control security, .vsls.json files are always excluded.
 
 The **hideFiles** property is similar, but not quite as strict. These files are simply hidden from the file tree. For example, if you happened to step into one of these files during debugging, it is still opened in the editor. This property is primarily useful if you do not have a .gitignore file setup (as would be the case if you are using a different source control system) or if you simply want to augment what is already there to avoid clutter or confusion.
 
-The **gitignore** setting establishes how Live Share should process the contents of .gitignore files in shared folders. By default, any globs found in .gitignore files are treated as if they were specified in the "hideFiles" properties. However, you can choose a different behavior by setting this property to one of the following:
+The **gitignore** setting establishes how Live Share should process the contents of .gitignore files in shared folders. By default, any globs found in .gitignore files are treated as if they were specified in the "hideFiles" property. However, you can choose a different behavior using one of the following values:
 
 | Option | Result |
 |--------|--------|
@@ -185,7 +185,7 @@ Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-
 
 ## AAD Admin Consent
 
-When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its secruity features and your Azure AD tenet is setup to require “admin consent” for new applications accessing the contents of the directory.
+When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its security features and your Azure AD tenet is setup to require “admin consent” for new applications accessing the contents of the directory.
 
 Your AD admin would need to resolve this for you using the following information:
 
@@ -200,8 +200,8 @@ This would only need to be done once for anyone using Live Share. See [here](htt
 
 ## See also
 
-- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-- [How-to: Collaborate using Visual Studio](../use/vs.md)
-- [Connectivity requirements for Live Share](connectivity.md)
+* [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+* [How-to: Collaborate using Visual Studio](../use/vs.md)
+* [Connectivity requirements for Live Share](connectivity.md)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
