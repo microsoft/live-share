@@ -21,7 +21,7 @@ APT=$(which apt 2>&1)
 if type apt > /dev/null 2>&1; then
     echo "(*) Detected Debian / Ubuntu"
     echo ""
-    sudo apt -yq install libunwind8 liblttng-ust0 libcurl3 libssl1.?.? libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https
+    sudo apt -yq install libunwind8 liblttng-ust0 libcurl3 libssl1.0.? libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
@@ -43,7 +43,7 @@ elif type yum  > /dev/null 2>&1; then
 elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected ArchLinux (unoffically/community supported)"
     echo ""
-    sudo pacman -Sq libunwind lttng-ust curl openssl libutil-linux krb5 icu zlib gettext desktop-file-utils gnome-keyring libsecret
+    sudo pacman -Sq libunwind lttng-ust curl openssl-1.0 libutil-linux krb5 icu zlib gettext desktop-file-utils gnome-keyring libsecret
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
