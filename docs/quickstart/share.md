@@ -90,11 +90,11 @@ See [troubleshooting](../troubleshooting.md#sign-in) if you are still hitting pr
 
 Use your normal workflow to open a folder, project, or solution you would like to share in Visual Studio or Visual Studio Code.
 
-### 4. [Optional] Hide or exclude files
+### 4. [Optional] Update hidden or excluded files
 
-If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+By default, Live Share **hides** any files/folders referenced in any .gitignore files in your project from guests. **Hiding** a file prevents it from appearing in the file tree while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-> **WARNING:** This feature is still in development and works reliably on Windows and macOS when the host's filesystem is **not case sensitive**. When hosting from case sensitive filesystems, there is **bug** where capitalization somewhere in the path can cause files that should be hidden or excluded to appear. (The guest's filesystem has no effect on this issue.) Windows is rarely case sensitive. Installs of **macOS** are **case insenstive by default** and therefore not impacted, but you may want to verify. Unfortunatley, **Linux** is usually **case sensitive**. [Upvote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/XX).
+> **Warning:**  This feature has a known issue with **case sensitive filesystems** like those commonly used with **Linux** and in some **rare cases macOS**. (macOS's default filesystem is *not* case sensitive.) If you are hosting from a machine with a case sensitive filesystem, certain files or folders may still appear to guests. You can find more about the bug and [upvote (👍) it here](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 ### 5. Start a collaboration session
 

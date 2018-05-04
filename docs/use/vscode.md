@@ -147,12 +147,11 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     Use your normal workflow to open a folder, project, or solution you would like to share with your guests.
 
-3. **[Optional] Hide or exclude files**
+3. **[Optional] Update hidden or excluded files**
 
-    If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+    By default, Live Share **hides** any files/folders referenced in any .gitignore files in your project from guests. **Hiding** a file prevents it from appearing in the file tree while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-    > **WARNING:** This feature is still in development and works reliably on Windows and macOS when the host's filesystem is **not case sensitive**. When hosting from a case sensitive filesystem, there is a **bug** where capitalization somewhere in the path can cause files that should be hidden or excluded to appear. (The guest's filesystem has no effect on this issue.) Windows is rarely case sensitive. Installs of **macOS** are **case insenstive by default** and therefore not impacted, but you may want to verify. Unfortunatley, **Linux** is usually **case sensitive**. [Upvote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/XX).
-
+    > **Warning:**  This feature has a known issue with **case sensitive filesystems** like those commonly used with **Linux** and in some **rare cases macOS**. (macOS's default filesystem is *not* case sensitive.) If you are hosting from a machine with a case sensitive filesystem, certain files or folders may still appear to guests. You can find more about the bug and [upvote (👍) it here](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 4. **Start a collaboration session**
 
@@ -292,7 +291,7 @@ Better yet, you and other participants can navigate to any file in the shared pr
 
 The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details. Note that this feature **does not currently work on case sensitive filesystems**.
+> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details. Note that this feature **does not currently work on case sensitive filesystems**. You can find more about the bug and [upvote (👍) it here](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 ### Changing participant flag behaviors
 
