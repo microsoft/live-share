@@ -50,7 +50,7 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 10. **[Linux] Automatically install browser integration** 🐧 (#202) - We came up with a workaround for scenarios where an admin (sudo) password was required in this installation process for most distributions. In cases where this does not work (e.g. CentOS 7), Live Share will now pop a terminal in VS Code and simply ask for you to enter your password to complete the process.
 
-11. **[Linux] Automatically install Linux dependencies for supported distributions** 🐧 (#257) - If Live Share detects that a dependency is missing it will inform you and ask if you want to attempt to install the dependencies. Clicking "install" will then pop a terminal in VS Code and do so. The script is available for contributions from the community for distributions Live Share does not directly support [here](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh). You can also contribute to our knowledge base in the [Linux install details article](https://aka.ms/vsls-linux).
+11. **[Linux] Automatically install Linux dependencies for supported distributions** 🐧 (#257) - If Live Share detects that a dependency is missing it will pop up a toast notification that asks you if you want to install them. Clicking "install" on this notification will open terminal in VS Code and run an install script. Note that if your distribution is not on our supported list, the script is available for contributions from the community [here](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh). Though not officially supported, we've already had contributions to get ArchLinux working. You can also contribute to our knowledge base in the [Linux install details article](https://aka.ms/vsls-linux).
 
 ### Reported Issues Fixed 🚀
 
@@ -58,7 +58,7 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 2. **[VS Code] Can't use the debugger for Unity (even when not hosting a session)** (#255) - This should now be resolved.
 
-3. **[Ubuntu 18.04] Ignorable error reported during launcher install on Ubuntu 18.04**
+3. **[Ubuntu 18.04] Ignorable error reported during launcher install on Ubuntu 18.04** (#258) - This was resolved #202.
 
 ## v0.3.51 (VS Code / Visual Studio)
 
