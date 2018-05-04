@@ -34,9 +34,9 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 2. **Multi-guest intellisense** 👩👨😺 (#47) - Originally only the first guest got full intellisense for supported languages. Now all participants get it!
 
-3. **Shared terminals** 👩‍💻 (#41) - Hosts can now share a read-only or read/write terminal with participants. The read/write terminal supports collaborative input for ease of use and improved security (since the host can intervene if they see anything they don't like). Learn more: [![VS Code](../media/vscode-icon-15x15.png)](use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](use/vs.md#share-a-terminal)
+3. **Shared terminals** 👩‍💻 (#41) - Hosts can now share a read-only or read/write terminal with participants. The read/write terminal supports collaborative input for ease of use and improved security (since the host can intervene if they see anything they don't like). Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
-4. **Focus Participants** 👁‍🗨 (#73) - You can now send a toast notification to all other participants in a collaboration session asking them to follow you. Learn more: [![VS Code](../media/vscode-icon-15x15.png)](use/vscode.md#focusing) [![VS](../media/vs-icon-15x15.png)](use/vs.md#focusing)
+4. **Focus Participants** 👁‍🗨 (#73) - You can now send a toast notification to all other participants in a collaboration session asking them to follow you. Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#focusing) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#focusing)
 
 5. **Excluded (host-only) and hidden file support** 🙈 (#52) - You can now use a .vsls.json file to exclude or hide certain files or alter how VS Live Share processes the contents of .gitignore files in your shared folders. See the [security article](https://aka.ms/vsls-docs/security) for details. Note that we do have an open issue for case sensitive filesystems (e.g. Linux) with this feature we are working to resolve ASAP.
 
