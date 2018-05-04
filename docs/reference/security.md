@@ -102,7 +102,7 @@ Here's an example .vsls.json file:
             "token",
             ".gitignore"
         ],
-        hideFiles: [
+        "hideFiles": [
             "bin",
             "obj"
         ]
