@@ -33,9 +33,11 @@ Note that all collaboration activities in described here involve a single **coll
 
 ## Installation
 
-Before you begin, you'll need to install **Visual Studio 2017 (15.6 or higher)** on Windows 7, 8.1, or 10. Getting going is simple:
+Before you begin, you'll need to install **Visual Studio 2017 15.6 or higher** on Windows 7, 8.1, or 10. *However, Visual Studio 15.7+ is recommended as this enables local undo/redo support.*
 
-1. Install the latest version of <a href="https://www.visualstudio.com/vs/">Visual Studio 2017</a> (15.6+)<br/>
+Getting going is simple:
+
+1. Install the any edition of [Visual Studio 2017](https://www.visualstudio.com/vs/) 15.6+.
 2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js
 3. [Download](https://aka.ms/vsls-dl/vs) and install the VS Live Share extension from the marketplace.
 

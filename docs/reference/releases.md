@@ -24,7 +24,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
-## v0.3.90 (VS Code / Visual Studio)
+## v0.3.91 (VS Code / Visual Studio)
 
 **This is our first public preview release!!**  It is a major feature release that also includes bug-fixes to addresses a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
@@ -44,7 +44,7 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 7. **Guest support for file operations** 📁 (#44) - Guests can now add and remove files and updates made by the host will show up in the guest's editor.
 
-8. **Local undo/redo** ✏ (#4) - Undo and redo is now local to you as a user instead of global. No more troubles with accidentally undoing a change made by another participant!
+8. **Local undo/redo** ✏ (#4) - Undo and redo is now local to you as a user instead of global in VS Code and Visual Studio **15.7+**. (VS 15.6 is still global undo the needed underlying infrastructure changes are not there.) No more troubles with accidentally undoing a change made by another participant!
 
 9. **Access to participant list in VS Code, removal of "jump-to" in favor of follow** 👓 (#185) - To make it easier to find people, we've altered the status bar item that shows the number of participants to always show a list of participants and where they are located if clicked. There is also a "List Participants" command for the keyboard inclined. Since we found most people found follow more useful than "jump-to" as a feature, we opted to remove it and instead follow if you select a participant in this list.
 
@@ -111,7 +111,7 @@ This release is a mix of features, foundational changes, and bug-fixes which add
 
 2. **No more VS Code "double reload"** - When joining via the browser, VS Code originally had to first open a new window and then reload once the join process began. This has now been resolved when using recent versions of VS Code.
 
-3. **Improved visibility to participants in VS** - This release has the first of a few UX tweaks that are coming to follow mode and participant avatars in VS.
+3. **Improved visibility to participants in VS** - This release has the first of a few user experience tweaks that are coming to follow mode and participant avatars in VS.
 
 #### Experimental Features 🔬👩‍🔬
 
@@ -203,7 +203,7 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 ### Other Enhancements
 
-1. **Share while debugging** 🎉 - You can now start a collaboration session *while* actively debugging, as opposed to needing to restart your debugger in order to share. Besides being a UX improvement, this enables a key scenario for Live Share: the ability to share your current context with someone, while sitting at a breakpoint/exception that may be difficult to reproduce. Visual Studio already supported this, and so this release brings parity to VS Code.
+1. **Share while debugging** 🎉 - You can now start a collaboration session *while* actively debugging, as opposed to needing to restart your debugger in order to share. Besides being a user experience improvement, this enables a key scenario for Live Share: the ability to share your current context with someone, while sitting at a breakpoint/exception that may be difficult to reproduce. Visual Studio already supported this, and so this release brings parity to VS Code.
 
 1. **Windows firewall notification** - When sharing for the first time, the Live Share extension will determine whether it can accept incoming connections from guests, and if not, notify you about the need to grant it permissions with the Windows firewall. This way, users aren't surprised with the firewall dialog, without understanding why they're getting it.
 
