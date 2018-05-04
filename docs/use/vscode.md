@@ -29,7 +29,7 @@ Note that all collaboration activities in described here involve a single **coll
 
 *Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts instead.*
 
->**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+>**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Installation
 
@@ -50,7 +50,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
 1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-2. [Download](https://aka.ms/vsls-dl/vscode) and install the VS Live Share extension from the marketplace.
+2. [Download](https://aka.ms/vsls-dl/vscode) and install the Visual Studio Live Share extension from the marketplace.
 3. Reload Visual Studio Code
 4. Wait for dependencies to download and install (see status bar).<br/>
     ![Finishing install](../media/vscode-finishing-install.png)
@@ -365,7 +365,7 @@ Using it simple.
 
     ![VS Code debug button](../media/vscode-debug-button.png)
 
-    > **Tip:** You can also participate in VS debugging sessions from VS Code and vice versa! Check out the [Visual Studio instructions](vs.md#co-debuging) on co-debugging for more information.
+    > **Tip:** You can also participate in Visual Studio debugging sessions from VS Code and vice versa! Check out the [Visual Studio instructions](vs.md#co-debuging) on co-debugging for more information.
 
 Once the debugger attaches on the host's side, all guests are also automatically attached. While there is one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
 
@@ -403,9 +403,9 @@ If you've updated settings so you no longer auto-attach or if you simply want to
 
 ### Sharing the running application in a browser
 
-Visual Studio Code does not have the concept of an known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session from a VS host, you may  automatically see your default browser appear when debugging starts that is then automatically connected to the host's running applications. See [Visual Studio features](vs.md#automatic-web-app-sharing) for more details.
+Visual Studio Code does not have the concept of an known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session from a Visual Studio host, you may  automatically see your default browser appear when debugging starts that is then automatically connected to the host's running applications. See [Visual Studio features](vs.md#automatic-web-app-sharing) for more details.
 
-As a host, you can achieve something similar by manually sharing the application or other endpoints like RESTful services using the "Share Local Server" feature. VS and VS Code guests can then open a browser on the same localhost port to see the running application.  See [share a server](#share-a-server) for more details.
+As a host, you can achieve something similar by manually sharing the application or other endpoints like RESTful services using the "Share Local Server" feature. Visual Studio and VS Code guests can then open a browser on the same localhost port to see the running application.  See [share a server](#share-a-server) for more details.
 
 ## Share a server
 
