@@ -83,6 +83,7 @@ Reference
 
 - [Connectivity requirements for Live Share](connectivity.md)
 - [Security features of Live Share](security.md)
+- [Linux install details](linux.md)
 - [Language and platform support](platform-support.md)
 - [Extension support](extensions.md)
 

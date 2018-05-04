@@ -26,35 +26,37 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 ## v0.3.XXX (VS Code / Visual Studio)
 
-This is our first public preview release!!  It is a major feature release that also includes bug-fixes to addresses a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+**This is our first public preview release!!**  It is a major feature release that also includes bug-fixes to addresses a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
 ### Enhancements
 
 1. **Improved language support for intellisense** 🎉 - Intellisense is now available for more languages including Python, C++, and more. See [platform support](platform-support.md) for details.
 
-2. **Multi-guest intellisense** 👩👨😺 (#47) - Originally only the first guest got full intellisense for supported langu ages. Now all participants get it!
+2. **Multi-guest intellisense** 👩👨😺 (#47) - Originally only the first guest got full intellisense for supported languages. Now all participants get it!
 
 3. **Shared terminals** 👩‍💻 (#41) - Hosts can now share a read-only or read/write terminal with participants. The read/write terminal supports collaborative input for ease of use and improved security (since the host can intervene if they see anything they don't like).
 
 4. **Focus Participants** 👁‍🗨 (#73) - Sends a toast notification to all other participants asking them to follow you.
 
-5. **Excluded (host-only) and hidden file support** 🙈 (#52) - You can now use a .vsls.json file to exclude or hide certain files or alter how VS Live Share processes the contents of .gitignore files in your shared folders. See the [security article](https://aka.ms/vsls-docs/security) for details.
+5. **Excluded (host-only) and hidden file support** 🙈 (#52) - You can now use a .vsls.json file to exclude or hide certain files or alter how VS Live Share processes the contents of .gitignore files in your shared folders. See the [security article](https://aka.ms/vsls-docs/security) for details. Note that we do have an open issue for case sensitive filesystems (e.g. Linux) with this feature we are working to resolve ASAP.
 
 6. **Join notifications and guest approval mode** 👍👎 (#110) - As a host, Live Share now tells you when a participant joins and gives you the option to remove them. If you'd prefer, you can switch into an accept/reject mode where the  explicitly approve each participant that joins. See the [security article](https://aka.ms/vsls-docs/security) for details.
 
 7. **Guest support for file operations** 📁 (#44) - Guests can now add and remove files and updates made by the host will show up in the guest's editor.
 
-8. **Local undo/redo** ✏ (#4) - Undo and redo is now local to you as a user instead of global. No more troubles with accidently undoing a change made by another participant!
+8. **Local undo/redo** ✏ (#4) - Undo and redo is now local to you as a user instead of global. No more troubles with accidentally undoing a change made by another participant!
 
-9. **Access to participant list in VS Code, removal of "jump-to" in favor of follow** 👓 (#185) - To make it easier to find people, we've altered the status bar item that shows the number of participants to always show a list of participants and where they are located if clicked. There is also a "List Participants" command for the keyboard inclined. Since we found most poeple found follow more useful than "jump-to" as a feature, we opted to remove it and instead follow if you select a participant in this list.
+9. **Access to participant list in VS Code, removal of "jump-to" in favor of follow** 👓 (#185) - To make it easier to find people, we've altered the status bar item that shows the number of participants to always show a list of participants and where they are located if clicked. There is also a "List Participants" command for the keyboard inclined. Since we found most people found follow more useful than "jump-to" as a feature, we opted to remove it and instead follow if you select a participant in this list.
 
-10. **Linux: Automatically install browser integration** 🐧 (#202) - We came up with a workaround for scenarios where an admin (sudo) password was required in this installation process. Live Share will now pop a terminal in these cases and request that you enter the password as the script runs.
+10. **[Linux] Automatically install browser integration** 🐧 (#202) - We came up with a workaround for scenarios where an admin (sudo) password was required in this installation process. Live Share will now pop a terminal in these cases and request that you enter the password as the script runs.
 
-11. **Linux: Automatically install Linux dependencies for supported distributions** 🐧 (#257) - If Live Share detects that a dependency is missing it will inform you and ask if you want to attempt to install the dependencies. Clicking "install" will then pop a terminal in VS Code and do so. The script is available for contributions from the community for distributions Live Share does not directly support [here](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
+11. **[Linux] Automatically install Linux dependencies for supported distributions** 🐧 (#257) - If Live Share detects that a dependency is missing it will inform you and ask if you want to attempt to install the dependencies. Clicking "install" will then pop a terminal in VS Code and do so. The script is available for contributions from the community for distributions Live Share does not directly support [here](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh). You can also contribute to our knowledge base in the [Linux install details article](https://aka.ms/vsls-linux).
 
 ### Reported Issues Fixed
 
-1. **Live Share does not allow guests to edit csproj files** (#100) - Guests are now able to edit csproj and other project files as XML.
+1. **[VS] Python: Guests incorrectly see warnings for valid types, namespaces, and modules defined outside of the current file** - Solved thanks to improved language support!
+
+2. **[VS Code] Can't use the debugger for Unity (even when not hosting a session)** (#255) - This should now be resolved.
 
 ## v0.3.51 (VS Code / Visual Studio)
 
@@ -74,17 +76,17 @@ This release fixes a number of user-reported issues. We really appreciate all of
 
 2. **Web browser does not appear when signing into VS Code** (#256) - We moved away from the "opn" node module that was causing this issue.
 
-2. **VS Code "Unable to get user info errors"** (#269) - This is now resolved.
+3. **VS Code "Unable to get user info errors"** (#269) - This is now resolved.
 
-3. **VS on the host side can crash if a variable is edited during debugging by the guest**
+4. **VS on the host side can crash if a variable is edited during debugging by the guest**
 
-4. **"Source not found" pops up on guest side in VS if hosts starts debugging a .NET Core project by VSCode**
+5. **"Source not found" pops up on guest side in VS if hosts starts debugging a .NET Core project by VSCode**
 
-5. **Linux: Bad error when gnome-keying or libsecret are missing** - Improves error messaging in this situation.
+6. **Linux: Bad error when gnome-keying or libsecret are missing** - Improves error messaging in this situation.
 
-6. **VS icon fix for dark themes** - Icons now work better for dark themes.
+7. **VS icon fix for dark themes** - Icons now work better for dark themes.
 
-7. **VS Code fix for "Cannot read property 'joinUri' of null errors"**
+8. **VS Code fix for "Cannot read property 'joinUri' of null errors"**
 
 ## v0.2.489 (VS Code / Visual Studio)
 
@@ -209,8 +211,8 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio 2017* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### GitHub Reported Issues Fixed (Visual Studio) 🚀 
- 
+### GitHub Reported Issues Fixed (Visual Studio) 🚀
+
 1. **Synchronizing conditional breakpoints** (#65) 🎉- We had previously enabled participants to synchronize breakpoints, and in this release, you can share conditional breakpoints as well (using either condition expressions and/or hit counts). Additionally, if you disable/enable breakpoints, that state will also be reflected in all participant's IDE.
 
 1. **System proxy support** (#86) - VS Code now respects the standard proxy environment variables (e.g. `http_proxy`) when making network calls. We believe this will unblock a bunch of users behind proxies, however, we still need to add support for authenticated proxies, so we're leaving this issue open.
@@ -225,7 +227,7 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio 2017* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### Reported Issues Fixed (Visual Studio) 🚀 
+### Reported Issues Fixed (Visual Studio) 🚀
 
 1. **Proxy support** (#86) - VS now uses  default credentials when authenticating to proxies.  However, we are leaving the issue open while we track down a more consistent and permanent fix.
 
@@ -235,8 +237,8 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 This is another bug-fix release, which addresses a number of user-reported *Visual Studio Code* issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### GitHub Reported Issues Fixed (VS Code) 🚀 
- 
+### GitHub Reported Issues Fixed (VS Code) 🚀
+
 1. **Launcher fails to start VS Code after clicking “Open” in Chrome on Windows 7** (#103)
 
 1. **"Dependencies could not be installed" error** when installing the VS Live Share w/multiple windows open (#124)
@@ -244,7 +246,7 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 1. **"Could not update extension binaries execution permissions" error** when running VS Code after installing the Live Share extension (#107)
 
 1. **Live Share does not properly activate** when run on Mac with a case sensitive file system (#119)
- 
+
 1. **Proxy support** (#86) - We discovered this bug is partly due to a VS Code issue (Microsoft/vscode#12588) and setting the HTTP_PROXY and HTTPS_PROXY environment variables globally can resolve the issue for some Live Share users. We are, however, leaving the issue open while we track down a more consistent and permanent fix.
 
 1. **Recent folder/file list shows temp locations** of ended collaboration sessions (#66)
@@ -253,7 +255,7 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 This is a patch release for a critical issue when installing the Live Share extension with the 32-bit version of VS Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 🤕🛠😃💯
 
-### GitHub Reported Issues Fixed (VS Code) �� 
+### GitHub Reported Issues Fixed (VS Code)
 
 1. **VS Code x86** - No Sign In and Share Button (#102)
 
@@ -261,7 +263,7 @@ This is a patch release for a critical issue when installing the Live Share exte
 
 This is mostly a bug-fix release *for both Visual Studio 2017 and Visual Studio Code*, however, we also addressed a couple of highly-requested Visual Studio Code enhancements as well. Thanks for all the amazing feedback thus far, and please keep it coming! 💯
 
-### Feature Enhancements (VS Code) 🚀 
+### Feature Enhancements (VS Code) 🚀
 
 1. **Breakpoint synchronization** (#42) - Upon joining, guests will now be able to see any existing breakpoints that the host has set. Additionally, all participants will be able to add/remove breakpoints, and have them synchronized with everyone else within the collaboration session. This was already supported in Visual Studio, and now works correctly between Visual Studio and Visual Studio Code.
 
@@ -287,7 +289,7 @@ This is the initial "insiders" build for the private preview release of Visual S
 
 7. **Automatic web app sharing** from VS
 
-8. **File explorer integration** 
+8. **File explorer integration**
 
 Other limitations of note:
 
@@ -306,7 +308,6 @@ Quickstarts
 - [Share your first project](../quickstart/share.md)
 - [Join your first session](../quickstart/join.md)
 
-
 How-tos
 
 - [Collaborate using Visual Studio Code](../use/vscode.md)
@@ -316,6 +317,7 @@ Reference
 
 - [Connectivity requirements for Live Share](connectivity.md)
 - [Security features of Live Share](security.md)
+- [Linux install details](linux.md)
 - [Language and platform support](platform-support.md)
 - [Extension support](extensions.md)
 

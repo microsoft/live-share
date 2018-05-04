@@ -47,7 +47,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | C++ | | ✅ | |
 | PowerShell | *N/A* | ✅ | | |
 | Bash | *N/A* | ✅ | |
-| Erlang | | ✅ | 
+| Erlang | | ✅ |
 | Haskell | | ? |
 | PHP | | ✅ |
 | Reason/OCaml | | *N/A* <sup>5</sup> |
@@ -105,19 +105,19 @@ While most languages have some single file Intellisense support, there are some 
 
 | Language | Single-file language services | Project-wide language services | Co-Debugging |
 |----------|-------------------------------|--------------------------------|--------------|
-| C# | ✅ | ✅ | ✅ | 
+| C# | ✅ | ✅ | ✅ |
 | CSHTML | ✅  <sup>1</sup> | | ✅ |
 | ASPX | ✅ <sup>1</sup> |  | ✅ |
 | HTML | ✅ | *N/A* | <sup>3</sup> |
 | CSS | ✅ | *N/A* | *N/A* |
 | JavaScript / TypeScript | ✅ | ✅ | ✅ <sup>4</sup> |
-| C++ | ✅ | | ✅ | 
+| C++ | ✅ | | ✅ |
 | Python | ✅ <sup>2</sup> | | ✅ |
 | Markdown | ✅ | *N/A* | *N/A* |
-| PowerShell | ✅ | *N/A* | ✅ | 
+| PowerShell | ✅ | *N/A* | ✅ |
 | VB.NET | ✅ | | ✅ |
 | VBHTML | ✅ <sup>1</sup> | | ✅ |
-| XAML | ✅ | *N/A* | <sup>6</sup> | 
+| XAML | ✅ | *N/A* | <sup>6</sup> |
 | SQL / T-SQL | ✅ | *N/A* | |
 | F# | ✅ <sup>2</sup>| | ✅ |
 | R | <sup>7</sup> | *N/A* | ✅ |

@@ -91,7 +91,7 @@ The Visual Studio location is more dynamic, but you can follow these steps to fi
 
 2. Run a search for `vsls-agent.exe` in under the **IDE\Extensions** sub-folder.
 
-Unfortunatley you may need to do this step **each time you update VS Live Share.**
+Unfortunately you may need to do this step **each time you update VS Live Share.**
 
 ## Proxies
 

@@ -105,13 +105,13 @@ If Visual Studio Code is not picking up your sign in after you complete the sign
 
 ### Sign in using a user code
 
-If you are on Linux or are running into problems with VS Code not picking up the fact that you have completed sign in, you can enter a user code to complete the sign in process.
+If you are on Linux or are running into problems with VS Code not picking up a completed sign in, you can enter a "user code" instead.
 
-1. If you have not already signed in via the browser, click the **Sign in** status bar item or hit **Ctrl+Shift+P** and run the "Live Share: Sign in via Browser" command.
+1. Press **Ctrl+Shift+P** and run the "Live Share: Sign in with user code" command.
 
-    ![VS Code sign in button](../media/vscode-sign-in-button.png)
+2. A browser should appear for you use to complete the sign in process.
 
-2. A browser should appear for you use to complete the sign in process. If you are not even able to get this to work, manually start a browser window and [navigate to this location](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login).
+    > **Note:** If a browser does not appear automatically, open [this location](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login) in a browser and sign in.
 
 3. Once you are done, click "Having trouble? Click here for user code directions" to see the user code.
 
@@ -119,11 +119,7 @@ If you are on Linux or are running into problems with VS Code not picking up the
 
 4. Copy the user code.
 
-5. Finally, paste the user code into VS Code.
-
-    1. **On Linux**, you will already see an input field where you can paste in the user code and hit enter to finish.
-
-    2. On other platforms, hit **Ctrl+Shift+P** and run the "Live Share: Sign in with user code" command, paste in the code in the input field that appears, and hit enter to finish.
+5. Finally, paste the user code into the input field that appeared when you ran the command and press enter to complete the sign in process.
 
     ![Picture of user code input field](../media/vscode-user-code.png)
 
@@ -287,7 +283,7 @@ Beyond cursors and edits, selections you make are also visible to all participan
 
 Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
-> **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX) and if mulitple files or folders with the same name but different casing exist in the same path, only one may appear [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).
+> **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX) and if multiple files or folders with the same name but different casing exist in the same path, only one may appear [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
