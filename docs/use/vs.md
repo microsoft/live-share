@@ -73,9 +73,9 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     Use your normal workflow to open a folder, project, or solution you would like to share with your guests.
 
-3. **[Optional] Hide or exclude files**
+3. **[Optional] Update hidden or excluded files**
 
-    If you would prefer to hide or completely exclude certain files or folders from the collaboration session, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+    By default, Live Share **hides** any files/folders referenced in .gitignore files in your project from guests. **Hiding** a file prevents it from appearing in the file tree while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 4. **Start a collaboration session**
 

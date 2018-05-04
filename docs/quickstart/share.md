@@ -92,7 +92,7 @@ Use your normal workflow to open a folder, project, or solution you would like t
 
 ### 4. [Optional] Update hidden or excluded files
 
-By default, Live Share **hides** any files/folders referenced in any .gitignore files in your project from guests. **Hiding** a file prevents it from appearing in the file tree while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+By default, Live Share **hides** any files/folders referenced in .gitignore files in your project from guests. **Hiding** a file prevents it from appearing in the file tree while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 > **Warning:**  This feature has a known issue with **case sensitive filesystems** like those commonly used with **Linux** and in some **rare cases macOS**. (macOS's default filesystem is *not* case sensitive.) If you are hosting from a machine with a case sensitive filesystem, certain files or folders may still appear to guests. You can find more about the bug and [upvote (👍) it here](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
