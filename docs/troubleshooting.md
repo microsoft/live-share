@@ -23,7 +23,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Troubleshooting Visual Studio Live Share
 
-This article covers troubleshooting tips, workarounds, and answers for common problems and questions. You may also want to take a look at the [FAQ](https://aka.ms/vsls-faq).
+This article covers troubleshooting tips, workarounds, and answers for common problems and questions. You may also want to take a look at the [FAQ](faq.md).
 
 ## Installation / tool requirements
 

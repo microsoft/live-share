@@ -45,7 +45,7 @@ Some of our reference docs may have what you need!
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
 - [Troubleshooting](troubleshooting.md)
-- [FAQ](https://aka.ms/vsls-faq)
+- [FAQ](faq.md)
 
 ## Issues and Requests
 
