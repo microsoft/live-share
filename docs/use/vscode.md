@@ -81,9 +81,9 @@ If you **prefer not to have VS Code run the command for you**, you can also opt 
 
     wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
 
-## Linux browser integration
+#### Linux browser integration
 
-Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
+Visual Studio Live Share typically **does not require additional installation steps** to enable browser integration on Linux.
 
 While uncommon, on certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
 

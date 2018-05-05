@@ -94,7 +94,7 @@ Other distributions will require the same libraries, but the package names may b
 
 ## Linux browser integration
 
-Visual Studio Live Share typically **does not require additional steps** to enable browser integration on Linux.
+Visual Studio Live Share typically **does not require additional installation steps** to enable browser integration on Linux.
 
 To accomplish this, Live Share automatically places a desktop file in `~/.local/share/applications` and the required launcher itself in `~/.local/share/vsliveshare` when the extension first initializes. No action is required on your part if this succeeds.
 
