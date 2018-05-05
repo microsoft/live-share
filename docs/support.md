@@ -49,7 +49,7 @@ Some of our reference docs may have what you need!
 
 ## Issues and Requests
 
-GitHub issues and VS problem reports are a great way to connect with us.
+GitHub issues and Visual Studio problem reports are a great way to connect with us.
 
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - [See if someone already hit your problem by searching logged bugs](https://aka.ms/vsls-bugs)

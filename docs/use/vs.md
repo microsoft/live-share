@@ -29,7 +29,7 @@ Note that all collaboration activities in described here involve a single **coll
 
 *Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts instead.*
 
->**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+>**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Installation
 
@@ -39,7 +39,7 @@ Getting going is simple:
 
 1. Install the any edition of [Visual Studio 2017](https://www.visualstudio.com/vs/) 15.6+.
 2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js
-3. [Download](https://aka.ms/vsls-dl/vs) and install the VS Live Share extension from the marketplace.
+3. [Download](https://aka.ms/vsls-dl/vs) and install the Visual Studio Live Share extension from the marketplace.
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
@@ -53,7 +53,7 @@ By default Visual Studio uses the your [personalization account](https://docs.mi
 
 ![VS sign in button](../media/vs-sign-in-button.png)
 
-If you want to use a different sign-in than your VS [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
+If you want to use a different sign-in than your Visual Studio [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
 ![VS Tools Options Live Share](../media/vs-tools-options.png)
 
@@ -213,7 +213,7 @@ Beyond cursors and edits, selections you make are also visible to all participan
 
 Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
-> **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from VS [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX) and if multiple files or folders with the same name but different casing exist in the same path, only one may appear [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).
+> **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from Visual Studio [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX) and if multiple files or folders with the same name but different casing exist in the same path, only one may appear [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
@@ -289,7 +289,7 @@ Anyone can step through the debugging process which enables seamless switching b
 
 Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
-> **Tip:** You can also participate in VS Code debugging sessions from VS and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debuging) on co-debugging for more information.
+> **Tip:** You can also participate in VS Code debugging sessions from Visual Studio and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debuging) on co-debugging for more information.
 
 ### Automatic web app sharing
 
@@ -301,7 +301,7 @@ See [share a server](#share-a-server) for information on how to share server acc
 
 ![Animation of concurrent debugging](../media/co-debug.gif)
 
-### Change when VS joins debugging sessions
+### Change when Visual Studio joins debugging sessions
 
 By default, as a guest, you'll be automatically attached to debugging sessions when they are shared by the host. However, in some cases you may find this behavior disruptive. Fortunately, you can change it as follows:
 

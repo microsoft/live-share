@@ -59,7 +59,7 @@ The connection mode you are in will dictate the specific ports and URLs that nee
 
 | Mode | Client Access Requirement | Troubleshooting |
 |------|--------------|-----------------|
-| Any | Outbound access to *.liveshare.vsengsaas.visualstudio.com:443 | Ensure your corporate or personal network firewall allows you to connect to this domain. Enter https://insiders.liveshare.vsengsaas.visualstudio.com in a browser and verify you land at the VS Live Share home page. You may also be running into [proxy issues](#proxies) that need to be resolved.|
+| Any | Outbound access to *.liveshare.vsengsaas.visualstudio.com:443 | Ensure your corporate or personal network firewall allows you to connect to this domain. Enter https://insiders.liveshare.vsengsaas.visualstudio.com in a browser and verify you land at the Visual Studio Live Share home page. You may also be running into [proxy issues](#proxies) that need to be resolved.|
 | Any (VS Code) | Outbound access to:<ul><li>download.microsoft.com:443</li><li>download.visualstudio.microsoft.com:443</li></ul> | Ensure your corporate or personal network firewall allows you to connect to this domain. You may also be running into [proxy issues](#proxies) that need to be resolved. |
 | Auto | Auto-switches. See direct and relay modes. | Switch to direct or relay mode to troubleshoot. |
 | Direct | Hosts: A port in the range 5990 - 5999 needs to be opened to accept inbound local network connections.<br /><br />Guests: A network route and outbound access to the host on this same port. | Verify "vsls-agent" is not blocked by your desktop firewall software for this port range and that you can ping one another. While Windows and other desktop software should prompt you the first time the agent starts up, we have seen instances where group policies prevent this from happening and you will need to [manually add the entry](#manually-adding-a-firewall-entry). You may also be running into [proxy issues](#proxies) that need to be resolved. |
@@ -87,11 +87,11 @@ Substitute **VERSION** for the extension version number in one of the paths belo
 
 The Visual Studio location is more dynamic, but you can follow these steps to find the executable:
 
-1. Navigate to your VS install location. This is typically `C:\Program Files (x86)\Microsoft Visual Studio\EDITION` where **EDITION** is Community, Enterprise, etc
+1. Navigate to your Visual Studio install location. This is typically `C:\Program Files (x86)\Microsoft Visual Studio\EDITION` where **EDITION** is Community, Enterprise, etc
 
 2. Run a search for `vsls-agent.exe` in under the **IDE\Extensions** sub-folder.
 
-Unfortunately you may need to do this step **each time you update VS Live Share.**
+Unfortunately you may need to do this step **each time you update Visual Studio Live Share.**
 
 ## Proxies
 
