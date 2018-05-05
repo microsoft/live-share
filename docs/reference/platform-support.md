@@ -108,26 +108,25 @@ While most languages have some single file Intellisense support, there are some 
 | C# | ✅ | ✅ | ✅ |
 | CSHTML | ✅  <sup>1</sup> | | ✅ |
 | ASPX | ✅ <sup>1</sup> |  | ✅ |
-| HTML | ✅ | *N/A* | <sup>3</sup> |
+| HTML | ✅ | *N/A* | <sup>2</sup> |
 | CSS | ✅ | *N/A* | *N/A* |
-| JavaScript / TypeScript | ✅ | ✅ | ✅ <sup>4</sup> |
-| C++ | ✅ | | ✅ |
-| Python | ✅ <sup>2</sup> | | ✅ |
+| JavaScript / TypeScript | ✅ | ✅ | ✅ <sup>3</sup> |
+| C++ | ✅ | ✅ | ✅ |
+| Python | ✅ | | ✅ |
 | Markdown | ✅ | *N/A* | *N/A* |
 | PowerShell | ✅ | *N/A* | ✅ |
 | VB.NET | ✅ | | ✅ |
 | VBHTML | ✅ <sup>1</sup> | | ✅ |
-| XAML | ✅ | *N/A* | <sup>6</sup> |
+| XAML | ✅ | *N/A* | <sup>4</sup> |
 | SQL / T-SQL | ✅ | *N/A* | |
-| F# | ✅ <sup>2</sup>| | ✅ |
-| R | <sup>7</sup> | *N/A* | ✅ |
+| F# | ✅ | | ✅ |
+| R | <sup>5</sup> | *N/A* | ✅ |
 
 <sup>1</sup> Gap: CSHTML, VBHTML, and ASPX have a known issues around embedded C#/VB support given code-behind C#/VB files are not resolved due to full intellisense not being implemented. [Vote (👍) here on CSHTML/VBHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Vote (👍) here on ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
-<sup>2</sup> Gap: Guests see errors for valid types, namespaces, and modules defined outside of the current file due to full intellisense not being implemented. [Vote (👍) here for F#.](https://github.com/MicrosoftDocs/live-share/issues/64) [Vote (👍) here for Python.](https://github.com/MicrosoftDocs/live-share/issues/63)<br />
-<sup>3</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
-<sup>4</sup> JavaScript / TypeScript debugging for Node or browser.<br />
-<sup>6</sup> Though debugging XAML itself is technically N/A, debugging code-behind is supported.<br />
-<sup>7</sup> Gap: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
+<sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
+<sup>3</sup> JavaScript / TypeScript debugging for Node or browser.<br />
+<sup>4</sup> Though debugging XAML itself is technically N/A, debugging code-behind is supported.<br />
+<sup>5</sup> Gap: R language service errors on the guest side on join and after every newline. Not supported. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
 ### Platforms
 
@@ -135,11 +134,11 @@ While most languages have some single file Intellisense support, there are some 
 |-------------------|--------------|-------------|
 | Web app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
-| Azure Data Lake | ? | |
-| Azure Functions | ? | |
-| Azure Service Fabric | ? | |
-| Azure Stream Analytics | ? | |
-| [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ? | ✅ <sup>1</sup> |
+| Azure Data Lake | ? | ? |
+| Azure Functions | ?  | ✅ <sup>5</sup> |
+| Azure Service Fabric | ?  | ✅ <sup>5</sup> |
+| Azure Stream Analytics | ? | ? |
+| [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
 | Databases | <sup>4</sup> | ✅ <sup>5</sup> |
 | Console / CLI | ✅ | |
 | Desktop (WinForms) | ✅ | |

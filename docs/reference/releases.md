@@ -54,15 +54,19 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 ### Reported Issues Fixed 🚀
 
-1. **[VS] Python: Guests incorrectly see warnings for valid types, namespaces, and modules defined outside of the current file** - Solved thanks to improved language support!
+1. **[VS Code] Can't use the debugger for Unity (even when not hosting a session)** (#255) - This should now be resolved.
 
-2. **[VS Code] Can't use the debugger for Unity (even when not hosting a session)** (#255) - This should now be resolved.
+2. **[Ubuntu 18.04] Ignorable error reported during launcher install on Ubuntu 18.04** (#258) - This was resolved with #202.
 
-3. **[Ubuntu 18.04] Ignorable error reported during launcher install on Ubuntu 18.04** (#258) - This was resolved with #202.
+3. **[VS Code] vscode.languages.onDidChangeDiagnostics is not a function** (#283) - This was a bad error message when the version of VS Code was too old to be used with Live Share.
 
-4. **[VS Code] vscode.languages.onDidChangeDiagnostics is not a function** (#283) - This was a bad error message when the version of VS Code was too old to be used with Live Share.
+4. **[VS Code] You are currently not authorized to connect to the Visual Studio Live Share service. If this issue persists, please raise a bug.** (#285) - N/A anymore!!
 
-5. **[VS Code] You are currently not authorized to connect to the Visual Studio Live Share service. If this issue persists, please raise a bug.** (#285) - N/A anymore!!
+5. While **full intellisense is not yet enabled**, the following languages no longer show incorrect warnings/errors:
+
+    - Python (#63)
+    - ASPX (#70)
+    - F# (#64)
 
 ## v0.3.51 (VS Code / Visual Studio)
 
