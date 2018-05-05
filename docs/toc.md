@@ -32,4 +32,4 @@
 # Resources
 ## [Troubleshooting](troubleshooting.md)
 ## [Provide feedback](support.md)
-## [FAQ](https://aka.ms/vsls-faq)
+## [FAQ](faq.md)
