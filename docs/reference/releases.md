@@ -2,7 +2,7 @@
 title: "Release Notes -  Visual Studio Live Share | Microsoft Docs"
 description: "A breakdown of changes by release for Visual Studio Live Share for Visual Studio and VS Code."
 ms.custom:
-ms.date: 04/30/2018
+ms.date: 05/7/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,7 +24,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
-## v0.3.91 (VS Code / Visual Studio)
+## v0.3.92 (VS Code / Visual Studio)
 
 **This is our first public preview release!!**  It is a major feature release that also includes bug-fixes to addresses a number of user-reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
