@@ -80,25 +80,25 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 
 In **VS Code**, a browser will appear for you to use to complete the sign in process. Simply close the browser when done.
 
-> **Linux users:** VS Code will also [prompt you to enter a user code](../use/vscode.md#sign-in-using-a-user-code) when opening the browser window. The code can be found by clicking on the "Having trouble? Click here for user code directions" link that appears in the "Ready to collaborate!" page after you've signed into Live Share via the browser. Simply paste this user code in the prompt's input field in VS Code and hit enter to finish.
+> **Linux users:** VS Code [prompts you to enter a user code](../use/vscode.md#sign-in-using-a-user-code) when it opens the browser window. The code can be found by clicking on the "Having trouble? Click here for user code directions" link that appears in the "Ready to collaborate!" page after you've signed into Live Share via the browser. Simply paste this user code in the prompt's input field in VS Code and hit enter to finish.
 
-In **Visual Studio**, Live Share automatically uses your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). As a result, you can simply sign in as you would normally. However, if you'd prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** and select different credentials.
+In **Visual Studio**, Live Share automatically uses your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). As a result, you can simply sign in as you would normally. However, if you prefer to use a different sign-in than your VS personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** and select different credentials.
 
 See [troubleshooting](../troubleshooting.md#sign-in) if you are still hitting problems.
 
 ### 3. Open a folder, project, or solution
 
-Use your normal workflow to open a folder, project, or solution you would like to share in Visual Studio or Visual Studio Code.
+Use your normal workflow to open a folder, project, or solution that you would like to share in Visual Studio or Visual Studio Code.
 
 ### 4. [Optional] Update hidden or excluded files
 
-By default, Live Share **hides** any files/folders referenced in .gitignore files in your shared folders from guests. **Hiding** a file prevents it from appearing in the guest's file tree. **Excluding** a file applies a stricter rule that will prevent Live Share from opening it for the guest in situations like go to definition or if you step into the file while debugging or being "followed". If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+By default, Live Share **hides** any files/folders referenced in .gitignore files in your shared folders from guests. **Hiding** a file prevents it from appearing in the guest's file tree. **Excluding** a file applies a stricter rule that prevents Live Share from opening it for the guest in situations like go to definition or if you step into the file while debugging or being "followed". If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 > **Warning:**  This feature has a known issue with **case sensitive filesystems** like those commonly used with **Linux** and in some **rare cases macOS**. (macOS's default filesystem is *not* case sensitive.) If you are hosting from a machine with a case sensitive filesystem, certain files or folders may still appear to guests. You can find more about the bug and [upvote (👍) it here](https://github.com/MicrosoftDocs/live-share/issues/XX).
 
 ### 5. Start a collaboration session
 
-Next, simply click "Share" within your tool and an invite link will be automatically copied to your clipboard.
+Next, simply click "Share" within your tool and an invite link is automatically copied to your clipboard.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -115,15 +115,15 @@ Next, simply click "Share" within your tool and an invite link will be automatic
 
 ### 6. Send someone the invite link
 
-Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Opening the link in a browser will allow them to join the collaboration session that is sharing the contents of the folder, project, or solution you opened. Note that, given the level of access Live Share sessions can provide to guests, **you should only share with people you trust** and think through the implications of what you are sharing.
+Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Opening the link in a browser allows them to join the collaboration session that is sharing the contents of the folder, project, or solution that you opened. Note that, given the level of access Live Share sessions can provide to guests, **you should only share with people you trust** and think through the implications of what you are sharing.
 
 > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
 
-If the guest you invited has questions, the "[Quickstart: Join your first session](join.md)" article provides some more information on getting up and running as a guest.
+If the guest you invited has questions, the [Quickstart: Join your first session](join.md) article provides some more information on getting up and running as a guest.
 
 ### 7. [Optional] Approve the guest
 
-By default, guests will automatically join your collaboration session and you'll be notified when they're ready to work with you.
+By default, guests automatically join your collaboration session and you are notified when they're ready to work with you.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -136,7 +136,7 @@ By default, guests will automatically join your collaboration session and you'll
 </tr>
 </table>
 
-While this notification gives you the option to remove them from the collaboration session, you can also opt to require an explicit "approval" for anyone joining instead. If you have this setting turned on, a notification will prompt you to approve the guest when they try to join your session.
+While this notification gives you the option to remove them from the collaboration session, you can also opt to require an explicit "approval" for anyone joining instead. If you have this setting turned on, a notification prompts you to approve the guest when they try to join your session.
 
 See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to turn this feature on.
 
