@@ -48,7 +48,7 @@ That's it! You should be connected to the collaboration session momentarily.
 
 #### 1. Sign in
 
-Once installed, start VS and sign in if you have not already. If you need to use a different sign-in for Visual Studio than your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account**.
+Once installed, start Visual Studio and sign in if you have not already. If you need to use a different sign-in for Visual Studio than your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account**.
 
 ![VS sign in](../media/vs-sign-in-button.png)
 

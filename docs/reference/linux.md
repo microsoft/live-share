@@ -129,7 +129,7 @@ Note that the Linux ecosystem moves quickly and package names will be different 
 
 ## Tips for unsupported distros
 
-Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core. Therefore, by extension, they are not officially supported by VS Live Share either. However, the Live Share community has helped understand whether Live Share is working on certain unsupported, if so, how to get it up and running.
+Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core. Therefore, by extension, they are not officially supported by Visual Studio Live Share either. However, the Live Share community has helped understand whether Live Share is working on certain unsupported, if so, how to get it up and running.
 
 > **PRs welcome:** If you're interested in updating this information with your favorite distribution, submit a PR for [this file](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) in our docs GitHub repo. Even better, if you'd like to get the dependency installer supporting your favorite distribution, you can submit a PR [for this file](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
 

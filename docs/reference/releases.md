@@ -1,6 +1,6 @@
 ---
 title: "Release Notes -  Visual Studio Live Share | Microsoft Docs"
-description: "A breakdown of changes by release for Visual Studio Live Share for VS and VS Code."
+description: "A breakdown of changes by release for Visual Studio Live Share for Visual Studio and VS Code."
 ms.custom:
 ms.date: 04/30/2018
 ms.reviewer: ""
@@ -38,7 +38,7 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 4. **Focus Participants** 👁‍🗨 (#73) - You can now send a toast notification to all other participants in a collaboration session asking them to follow you. Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#focusing) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#focusing)
 
-5. **Excluded (host-only) and hidden file support** 🙈 (#52) - You can now use a .vsls.json file to exclude or hide certain files or alter how VS Live Share processes the contents of .gitignore files in your shared folders. See the [security article](https://aka.ms/vsls-docs/security) for details. Note that we do have an open issue for case sensitive filesystems (e.g. Linux) with this feature we are working to resolve ASAP.
+5. **Excluded (host-only) and hidden file support** 🙈 (#52) - You can now use a .vsls.json file to exclude or hide certain files or alter how Visual Studio Live Share processes the contents of .gitignore files in your shared folders. See the [security article](https://aka.ms/vsls-docs/security) for details. Note that we do have an open issue for case sensitive filesystems (e.g. Linux) with this feature we are working to resolve ASAP.
 
 6. **Join notifications and guest approval mode** 👍👎 (#110) - As a host, Live Share now tells you when a participant joins and gives you the option to remove them. If you'd prefer, you can switch into "guest approval mode" where the  explicitly approve each participant that joins. See the [security article](https://aka.ms/vsls-docs/security) for details.
 
@@ -70,7 +70,7 @@ This release was an emergency update to resolve a problem where people that had 
 
 ### Reported Issues Fixed
 
-1. **Intermittent sign in permission issues - Cannot share even though you are in the preview** (#280) - An update to the service side of Live Share inadvertently caused users 30+ days ago saw a message that they could no longer share. In VS Code this could be solved by simply signing out and back in again, but in VS additional steps were required.  This should no longer be the case.
+1. **Intermittent sign in permission issues - Cannot share even though you are in the preview** (#280) - An update to the service side of Live Share inadvertently caused users 30+ days ago saw a message that they could no longer share. In VS Code this could be solved by simply signing out and back in again, but in Visual Studio additional steps were required.  This should no longer be the case.
 
 ## v0.2.547 (VS Code / Visual Studio)
 
@@ -84,13 +84,13 @@ This release fixes a number of user-reported issues. We really appreciate all of
 
 3. **VS Code "Unable to get user info errors"** (#269) - This is now resolved.
 
-4. **VS on the host side can crash if a variable is edited during debugging by the guest**
+4. **Visual Studio on the host side can crash if a variable is edited during debugging by the guest**
 
-5. **"Source not found" pops up on guest side in VS if hosts starts debugging a .NET Core project by VSCode**
+5. **"Source not found" pops up on guest side in Visual Studio if hosts starts debugging a .NET Core project by VS Code**
 
 6. **Linux: Bad error when gnome-keying or libsecret are missing** - Improves error messaging in this situation.
 
-7. **VS icon fix for dark themes** - Icons now work better for dark themes.
+7. **Visual Studio icon fix for dark themes** - Icons now work better for dark themes.
 
 8. **VS Code fix for "Cannot read property 'joinUri' of null errors"**
 
@@ -101,7 +101,7 @@ This release resolves two critical issues.
 ### Reported Issues Fixed
 
 1. A large number of VS Code users on Mac were seeing a **Agent terminated with exit code: 2 and signal null** error on startup (#252).
-2. VS and VS Code users were seeing an intermittent join error saying **Must call ProcessMessagesAsync first so responses can be received**.
+2. Visual Studio and VS Code users were seeing an intermittent join error saying **Must call ProcessMessagesAsync first so responses can be received**.
 
 Apologies for the inconvenience! 😭
 
@@ -191,7 +191,7 @@ This release is a mix of minor features, foundational changes, and bug-fixes and
 
 ### Reported Issues Fixed (Visual Studio) 🚀
 
-1. **Incorrect error message when user is not signed up** (#160) - A bug in the a new firewall check in 0.2.258 on Windows broke the correct message that should appear for VS users attempting to share who are not in the preview. They instead say "Failed to create a collaboration session. Operation was cancelled..." This is now fixed.
+1. **Incorrect error message when user is not signed up** (#160) - A bug in the a new firewall check in 0.2.258 on Windows broke the correct message that should appear for Visual Studio users attempting to share who are not in the preview. They instead say "Failed to create a collaboration session. Operation was cancelled..." This is now fixed.
 
 2. **C# files show up as JavaScript when debugging** - When debugging, certain places in the Visual Studio debugger incorrectly reported C# files being debugged as JavaScript.
 
@@ -235,9 +235,9 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 ### Reported Issues Fixed (Visual Studio) 🚀
 
-1. **Proxy support** (#86) - VS now uses  default credentials when authenticating to proxies.  However, we are leaving the issue open while we track down a more consistent and permanent fix.
+1. **Proxy support** (#86) - Visual Studio now uses  default credentials when authenticating to proxies.  However, we are leaving the issue open while we track down a more consistent and permanent fix.
 
-1. **Stability fixes** - The release also fixes a number of other issues including ensuring the locals pane is populated when VS is the host, improving the reliability of using direct connections in "auto" mode, improved connection error messages, and a number of telemetry reported issues.
+1. **Stability fixes** - The release also fixes a number of other issues including ensuring the locals pane is populated when Visual Studio is the host, improving the reliability of using direct connections in "auto" mode, improved connection error messages, and a number of telemetry reported issues.
 
 ## v0.2.206 (VS Code)
 
@@ -247,7 +247,7 @@ This is another bug-fix release, which addresses a number of user-reported *Visu
 
 1. **Launcher fails to start VS Code after clicking “Open” in Chrome on Windows 7** (#103)
 
-1. **"Dependencies could not be installed" error** when installing the VS Live Share w/multiple windows open (#124)
+1. **"Dependencies could not be installed" error** when installing the Visual Studio Live Share w/multiple windows open (#124)
 
 1. **"Could not update extension binaries execution permissions" error** when running VS Code after installing the Live Share extension (#107)
 
