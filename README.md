@@ -7,7 +7,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # Visual Studio Live Share Docs & Feedback
 
 <table style="width: 100%; border-style: none;"><tr>
-<td style="width: 140px; text-align: center;"><a href="https://aka.ms/vsls"><img src="docs/media/vsls-icon.png" style="width: 128px; height: 128px;" alt="Visual Studio Live Share logo"/></a></td>
+<td style="width: 140px; text-align: center;"><a href="https://aka.ms/vsls"><img width="128px" src="docs/media/vsls-icon.svg" alt="Visual Studio Live Share logo"/></a></td>
 <td>
 <strong>Visual Studio Live Share</strong><br />
 <i>Enabling developers to achieve greater confidence at speed by streamlining collaboration in real-time during development.<br />
@@ -15,16 +15,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </td>
 </tr></table>
 
-While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](https://aka.ms/vsls-docs/platform-support) and more will be coming in the future. *It is currently in a limited, private preview.* [Sign up!](https://aka.ms/vsls-signup)
+While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](https://aka.ms/vsls-docs/platform-support) and more will be coming in the future. **It is currently in public preview. Features and use experince should not be considered final.**
 
-[![Slack](docs/media/Slack_Mark-24x24.png)](https://aka.ms/vsls-slack) [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
+[![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
 >**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Quickstarts
 
-- [Share your first project](https://aka.ms/vsls-docs/share) (after you've been accepted into the preview)
-- [Join your first collaboration session](https://aka.ms/vsls-docs/join) (no need to sign up or be accepted in the preview)
+- [Share your first project](https://aka.ms/vsls-docs/share)
+- [Join your first collaboration session](https://aka.ms/vsls-docs/join)
 
 ## How-tos
 
@@ -34,6 +34,8 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
 ## Reference
 
 - [Connectivity requirements](https://aka.ms/vsls-docs/connection-mode)
+- [Security features](https://aka.ms/vsls-security)
+- [Linux install details](https://aka.ms/vsls-linux)
 - [Language and platform support](https://aka.ms/vsls-docs/platform-support)
 - [Extension support](https://aka.ms/vsls-docs/extensions)
 - [Troubleshooting](https://aka.ms/vsls-troubleshooting)
@@ -56,9 +58,9 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0+)</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, or 64-bit Linux <b>(<a href="https://aka.ms/vsls-docs/vscode/install">details</a>)</b><br />
-        2. <strong>Linux users</strong>: Be sure you have installed the needed <a href="https://aka.ms/vsls-docs/linux-prerequisites">prerequisite libraries</a>.<br />
-        3. Download and install the VS Live Share extension from the marketplace. <br />
-        4. Reload and wait for dependencies to download and install (see status bar).<br />
+        2. Download and install the VS Live Share extension from the marketplace. <br />
+        3. Reload and wait for dependencies to download and install (see status bar).<br />
+        4. <strong>Linux</strong>: If prompted to <a href="https://aka.ms/vsls-docs/linux-prerequisites">install libraries</a>, click install, enter password, restart VS Code when done.<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="docs/media/download.png" alt="Download button"></a>
     </td>
 </tr>
