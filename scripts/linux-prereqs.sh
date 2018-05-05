@@ -21,7 +21,7 @@ APT=$(which apt 2>&1)
 if type apt > /dev/null 2>&1; then
     echo "(*) Detected Debian / Ubuntu"
     echo ""
-    sudo apt -yq install libunwind8 liblttng-ust0 libcurl3 libssl1.0.? libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https
+    sudo apt install -yq libunwind8 liblttng-ust0 libcurl3 libssl1.0.? libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
