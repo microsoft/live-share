@@ -60,6 +60,10 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 3. **[Ubuntu 18.04] Ignorable error reported during launcher install on Ubuntu 18.04** (#258) - This was resolved with #202.
 
+4. **[VS Code] vscode.languages.onDidChangeDiagnostics is not a function** (#283) - This was a bad error message when the version of VS Code was too old to be used with Live Share.
+
+5. **[VS Code] You are currently not authorized to connect to the Visual Studio Live Share service. If this issue persists, please raise a bug.** (#285) - N/A anymore!!
+
 ## v0.3.51 (VS Code / Visual Studio)
 
 This release was an emergency update to resolve a problem where people that had signed into Visual Studio Code or Visual Studio 30+ days ago saw a message that they could no longer share. Apologies for the inconvenience! 😭 x 💯
