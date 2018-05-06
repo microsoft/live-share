@@ -40,27 +40,27 @@ All languages / platforms have same file intellisense (when the respective exten
 | CSHTML | *N/A* <sup>1</sup> | ✅
 | HTML | *N/A* | <sup>2</sup> |
 | CSS | *N/A* | *N/A* |
-| Python | | ✅ |
+| Python |  ✅  | ✅ |
 | Markdown | *N/A* | *N/A* |
-| Java | | ✅ | |
-| Go | | ✅ | |
-| C++ | | ✅ | |
+| Java | ✅  | ✅ | |
+| Go | ✅ | ✅ | |
+| C++ | ✅ | ✅ | |
 | PowerShell | *N/A* | ✅ | | |
 | Bash | *N/A* | ✅ | |
 | Erlang | | ✅ |
-| Haskell | | ? |
-| PHP | | ✅ |
-| Reason/OCaml | | *N/A* <sup>5</sup> |
-| Ruby | | ✅ | |
-| Rust | | *N/A* <sup>4</sup> |
-| Swift | | *N/A* <sup>4</sup> |
-| Dart | | |
-| Perl | | |
+| Haskell | ? | ? |
+| PHP | ? | ✅ |
+| Reason/OCaml | ? | *N/A* <sup>5</sup> |
+| Ruby | ? | ✅ | |
+| Rust | ? | *N/A* <sup>4</sup> |
+| Swift | ? | *N/A* <sup>4</sup> |
+| Dart | ? | |
+| Perl | ? | |
 | Kotlin | *N/A* | *N/A* <sup>4</sup> |
-| HLSL | | *N/A* <sup>4</sup> |
-| AL | | |
-| Clojure | | *N/A* <sup>4</sup> |
-| Scala | | *N/A* <sup>4</sup> |
+| HLSL | ? | *N/A* <sup>4</sup> |
+| AL | ? | |
+| Clojure | ? | *N/A* <sup>4</sup> |
+| Scala | ? | *N/A* <sup>4</sup> |
 | SQL / T-SQL | *N/A* | |
 
 <sup>1</sup> No CSHTML support in C# extension.<br />
@@ -81,11 +81,11 @@ All languages / platforms have same file intellisense (when the respective exten
 | Databases | <sup>5</sup> | ✅ <sup>1</sup> |
 | Console / CLI | ✅ | <sup>4</sup> |
 | VS Code extensions | | |
-| Mobile (React Native) |  | ✅ <sup>1,8</sup> |
+| Mobile (React Native) |  ✅   | ✅ <sup>1,8</sup> |
 | Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
 | Mobile (Native) |  | |
 | Desktop (Electron/native) | ✅ | |
-| Games (Unity) | ? | |
+| Games (Unity) |  ✅  | |
 
 <sup>1</sup> Via [share local server](../use/vscode.md#share-a-server).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
@@ -120,7 +120,7 @@ While most languages have some single file Intellisense support, there are some 
 | XAML | ✅ | *N/A* | <sup>4</sup> |
 | SQL / T-SQL | ✅ | *N/A* | |
 | F# | ✅ | | ✅ |
-| R | <sup>5</sup> | *N/A* | ✅ |
+| R | ❌ <sup>5</sup> | *N/A* | ✅ |
 
 <sup>1</sup> Gap: CSHTML, VBHTML, and ASPX have a known issues around embedded C#/VB support given code-behind C#/VB files are not resolved due to full intellisense not being implemented. [Vote (👍) here on CSHTML/VBHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Vote (👍) here on ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
@@ -134,9 +134,9 @@ While most languages have some single file Intellisense support, there are some 
 |-------------------|--------------|-------------|
 | Web app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
-| Azure Data Lake | ? | ? |
-| Azure Functions | ?  | ✅ <sup>5</sup> |
+| Azure Functions | ✅  | ✅ <sup>5</sup> |
 | Azure Service Fabric | ?  | ✅ <sup>5</sup> |
+| Azure Data Lake | ? | ? |
 | Azure Stream Analytics | ? | ? |
 | [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
 | Databases | <sup>4</sup> | ✅ <sup>5</sup> |
