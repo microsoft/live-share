@@ -38,7 +38,7 @@ Before you begin, you'll need to install **Visual Studio 2017 15.6 or higher** o
 Getting going is simple:
 
 1. Install the any edition of [Visual Studio 2017](https://www.visualstudio.com/vs/) 15.6+.
-2. Install a supported workload. e.g. ASP.NET, .NET Core, and/or Node.js
+2. Install a [supported workload](../reference/platform-support.md). e.g. ASP.NET, .NET Core, C++, and/or Node.js
 3. [Download](https://aka.ms/vsls-dl/vs) and install the Visual Studio Live Share extension from the marketplace.
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
