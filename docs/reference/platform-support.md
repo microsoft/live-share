@@ -42,11 +42,11 @@ All languages / platforms have same file intellisense (when the respective exten
 | CSS | *N/A* | *N/A* |
 | Python |  ✅  | ✅ |
 | Markdown | *N/A* | *N/A* |
-| Java | ✅  | ✅ | |
-| Go | ✅ | ✅ | |
-| C++ | ✅ | ✅ | |
-| PowerShell | *N/A* | ✅ | | |
-| Bash | *N/A* | ✅ | |
+| Java | ✅  | ✅ |
+| Go | ✅ | ✅ |
+| C++ | ✅ | ✅ |
+| PowerShell | *N/A* | ✅ |
+| Bash | *N/A* | ✅ |
 | Erlang | ✅ | ✅ |
 | Haskell | ✅ | ✅ |
 | PHP | ✅ | ✅ |
@@ -54,7 +54,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Ruby | ✅ | ✅ | |
 | Rust | ✅ | *N/A* <sup>4</sup> |
 | Swift | ✅ | *N/A* <sup>4</sup> |
-| Dart | ✅ | ✅ |
+| Dart | ✅ | ✅  |
 | Perl | ✅ | ✅ |
 | Kotlin | *N/A* | *N/A* <sup>4</sup> |
 | Clojure | ✅ | *N/A* <sup>4</sup> |
@@ -81,9 +81,8 @@ All languages / platforms have same file intellisense (when the respective exten
 | VS Code extensions | | |
 | Mobile (React Native) |  ✅   | ✅ <sup>1,8</sup> |
 | Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
-| Mobile (Native) |  | |
-| Desktop (Electron/native) | ✅ | |
-| Games (Unity) |  ✅  | |
+| Desktop (Electron/native) | ✅ | ✅ |
+| Games (Unity) |  ✅  | ✅ |
 
 <sup>1</sup> Via [share local server](../use/vscode.md#share-a-server).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
