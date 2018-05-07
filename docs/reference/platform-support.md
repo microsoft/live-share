@@ -140,13 +140,6 @@ While most languages have some single file Intellisense support, there are some 
 | Desktop (WPF) | ✅ | |
 | Universal Windows Platform | ✅ |  |
 | VS Extensions | ✅ |  |
-| Mobile (Xamarin) | ? |  |
-| Mobile (Cordova) | ? | ? |
-| Mobile (Native C++) | ? | |
-| Games (Win32 C++) | ? | |
-| Games (Unity) | ? | |
-| Linux (C++) | ? | |
-| Office / Sharepoint | ? | |
 
 <sup>1</sup> Via [share local server](../use/vs.md#share-a-server). ASP.NET Web Apps can also use [automatic web app sharing](../use/vs.md#automatic-web-app-sharing).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />

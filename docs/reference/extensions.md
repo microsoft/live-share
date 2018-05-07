@@ -56,6 +56,10 @@ Extensions that support user-specific customizations **must** work for the host,
 
 <sup>5</sup> *These work by connecting to a server of some kind, and can work with either centralized servers, servers that the guest has shared.*
 
+### Visual Studio
+
+Coming soon.
+
 ## Project-Specific Extensions
 
 Host-installed extensions, which support the core editing, building and debugging of an application, and are specific to a language/platform/library/SDK, should be automatically available to guests, without requiring them to install anything. This way, hosts can setup their environment to support productive development of a project, and allow their guests to instantly join them, without additional pre-requisites. Because project-specific extensions aren't subjective or personal in any way, they can be deterministically shared from host-to-guest, without impacting anyone's familiar environment.
