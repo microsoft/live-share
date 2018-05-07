@@ -90,6 +90,7 @@ You can view the set of private preview known issues, and roadmap items [here](h
 
 - [Language and platform support](platform-support.md)
 - [Connectivity requirements for Live Share](reference/connectivity.md)
+- [Security features of Live Share](reference/security.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 
