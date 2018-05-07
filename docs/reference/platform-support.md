@@ -47,20 +47,18 @@ All languages / platforms have same file intellisense (when the respective exten
 | C++ | ✅ | ✅ | |
 | PowerShell | *N/A* | ✅ | | |
 | Bash | *N/A* | ✅ | |
-| Erlang | | ✅ |
-| Haskell | ? | ? |
-| PHP | ? | ✅ |
-| Reason/OCaml | ? | *N/A* <sup>5</sup> |
-| Ruby | ? | ✅ | |
-| Rust | ? | *N/A* <sup>4</sup> |
-| Swift | ? | *N/A* <sup>4</sup> |
-| Dart | ? | |
-| Perl | ? | |
+| Erlang | ✅ | ✅ |
+| Haskell | ✅ | ✅ |
+| PHP | ✅ | ✅ |
+| Reason/OCaml | ✅ | *N/A* <sup>5</sup> |
+| Ruby | ✅ | ✅ | |
+| Rust | ✅ | *N/A* <sup>4</sup> |
+| Swift | ✅ | *N/A* <sup>4</sup> |
+| Dart | ✅ | ✅ |
+| Perl | ✅ | ✅ |
 | Kotlin | *N/A* | *N/A* <sup>4</sup> |
-| HLSL | ? | *N/A* <sup>4</sup> |
-| AL | ? | |
-| Clojure | ? | *N/A* <sup>4</sup> |
-| Scala | ? | *N/A* <sup>4</sup> |
+| Clojure | ✅ | *N/A* <sup>4</sup> |
+| Scala | ✅ | *N/A* <sup>4</sup> |
 | SQL / T-SQL | *N/A* | |
 
 <sup>1</sup> No CSHTML support in C# extension.<br />
@@ -79,7 +77,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
 | Markdown | *N/A* | ✅ <sup>6</sup> |
 | Databases | <sup>5</sup> | ✅ <sup>1</sup> |
-| Console / CLI | ✅ | <sup>4</sup> |
+| Console / CLI | ✅ | ✅ <sup>4</sup> |
 | VS Code extensions | | |
 | Mobile (React Native) |  ✅   | ✅ <sup>1,8</sup> |
 | Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
@@ -90,7 +88,7 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>1</sup> Via [share local server](../use/vscode.md#share-a-server).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
-<sup>4</sup> Would be enabled via shared terminals. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/41)<br />
+<sup>4</sup> Partially supported via shared terminals.<br />
 <sup>5</sup> Debugging database stored procs is not currently supported <br />
 <sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
 <sup>7</sup> Cordova apps can be shared via the the "browser" platform<br />
@@ -135,29 +133,28 @@ While most languages have some single file Intellisense support, there are some 
 | Web app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
 | Azure Functions | ✅  | ✅ <sup>5</sup> |
-| Azure Service Fabric | ?  | ✅ <sup>5</sup> |
-| Azure Data Lake | ? | ? |
-| Azure Stream Analytics | ? | ? |
+| Azure Service Fabric | ✅ | ✅ <sup>5</sup> |
 | [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
 | Databases | <sup>4</sup> | ✅ <sup>5</sup> |
-| Console / CLI | ✅ | |
+| Console / CLI | ✅ | ✅ <sup>6</sup> |
 | Desktop (WinForms) | ✅ | |
 | Desktop (WPF) | ✅ | |
 | Universal Windows Platform | ✅ |  |
+| VS Extensions | ✅ |  |
 | Mobile (Xamarin) | ? |  |
 | Mobile (Cordova) | ? | ? |
-| Mobile (Native C++) | ? |  |
-| Games (Win32 C++) | ? |  |
+| Mobile (Native C++) | ? | |
+| Games (Win32 C++) | ? | |
 | Games (Unity) | ? | |
-| Office / Sharepoint | ? | |
-| VS Extensions | ✅ |  |
 | Linux (C++) | ? | |
+| Office / Sharepoint | ? | |
 
 <sup>1</sup> Via [share local server](../use/vs.md#share-a-server). ASP.NET Web Apps can also use [automatic web app sharing](../use/vs.md#automatic-web-app-sharing).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
 <sup>4</sup> Debugging database stored procs is not currently supported <br />
 <sup>5</sup> Via [share local server](../use/vs.md#share-a-server). <br />
+<sup>6</sup> Partially supported via shared terminals.<br />
 <sup>?</sup> Not yet validated.
 
 ## See also
