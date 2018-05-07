@@ -15,7 +15,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </td>
 </tr></table>
 
-While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](https://aka.ms/vsls-docs/platform-support) and more will be coming in the future. **It is currently in public preview. Features and use experince should not be considered final.**
+While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](https://aka.ms/vsls-docs/platform-support) and more will be coming in the future. **It is currently in public preview. Features and user experience should not be considered final.**
 
 [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
@@ -69,7 +69,7 @@ While the initial focus of Visual Studio Live Share is real-time collaborative d
     <td style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
         1. Install the latest version of <a href="https://www.visualstudio.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
-        2. Install a <a href="https://aka.ms/vsls-docs/platform-support">supported workload</a>. e.g. ASP.NET, .NET Core, C++, and/or Node.js<br />
+        2. Install a <a href="https://aka.ms/vsls-docs/platform-support">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
         3. Download and install the VS Live Share extension from the marketplace. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="docs/media/download.png" alt="Download button"></a><br />
     </td>
