@@ -2,7 +2,7 @@
 title: "Extensions and ecosystem support -  Visual Studio Live Share | Microsoft Docs"
 description: "An overview of extension support for Visual Studio Live share."
 ms.custom:
-ms.date: 03/22/2018
+ms.date: 04/25/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,6 +33,8 @@ This document covers the current known state for the vast extension ecosystem, a
 
 Extensions that support user-specific customizations **must** work for the host, and **should** work for all guests. If an extension doesn't work properly for the host, that would be a regression, and is likely a bug in Visual Studio Live Share (please [file an issue](https://github.com/MicrosoftDocs/live-share/issues/new) if you see one!). If an extension doesn't behave as expected for a guest, it may require [changes in the extension itself](#known-issues), and we'll work with the ecosystem to address/improve these scenarios.
 
+### Visual Studio Code
+
 | Category | Example(s) | Guest-Supported? | Collaborative? |
 |-|-|-|-|
 | Color Themes | [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer), [Rainbow String](https://marketplace.visualstudio.com/items?itemName=wk-j.vscode-rainbow-string), [Colored Regions](https://github.com/jmihelcic/colored-regions), [Indented Block Highlighting](https://marketplace.visualstudio.com/items?itemName=byi8220.indented-block-highlighting), [Todo Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight), [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) | ✅ | *N/A* |
@@ -53,6 +55,10 @@ Extensions that support user-specific customizations **must** work for the host,
 <sup>4</sup> *These require the guest to have the runtime tools installed (e.g. Node.js), and work by running code locally.*
 
 <sup>5</sup> *These work by connecting to a server of some kind, and can work with either centralized servers, servers that the guest has shared.*
+
+### Visual Studio
+
+Coming soon.
 
 ## Project-Specific Extensions
 
@@ -89,9 +95,15 @@ Additionally, in order to support project-specific extensions that a guest has i
 
 <sup>8</sup> *Almost all of these would use the Node.js `fs` module directly to create files, which wouldn't work.*
 
+### Visual Studio
+
+Coming soon.
+
 ## Known Issues
 
 The following are currently known extension issues, that could prevent them from working for guests within the context of a collaboration session (along with their workarounds), and therefore, could impact their workflow:
+
+### Visual Studio Code
 
 | Issue | Reason | Workaround |
 |-|-|-|
@@ -102,10 +114,16 @@ The following are currently known extension issues, that could prevent them from
 | Restricting functionality to documents that use the `file` scheme. | Files on the guest's side use the `vsls` scheme. | Add support for `vsls` documents ([example](https://github.com/CoenraadS/BracketPair/pull/73)) |
 | Using the `Uri.file` method and/or `Uri.fsPath`/`TextDocument.fileName` members to serialize/parse URIs | *Same as above* | Use `Uri.parse` and `Url.toString()` instead, which maintain and respect file schemes ([example](https://github.com/micnil/vscode-checkpoints/pull/2)) |
 | Using the `workspace.openTextDocument` method with a file path instead of a `Uri` | *Same as above* | Provide a `Uri` instance instead of a raw file path string ([example](https://github.com/micnil/vscode-checkpoints/pull/2)) |
-| Using the `workspace.rootPath` property to detect the presence of a workspace | The `workspace.rootPath` property calls `Uri.fsPath` on the first `workspaceFolder` in the `worspace`, which has the same issue mentioned above | Use the `workspace.workspaceFolders` property to detect the presence of a workspace instead, and if needed, look at each `workspaceFolder`'s `Uri.scheme` to determine if it's local or not |
-| Not specifying a document scheme when registering language services (either via a `LanguageClient`, or the `languages.register*` methods) | Guests receive the language service results from both their local extensions, and the host, and therefore, if both participants have the same language service extension installed, guests will see duplicate entries for certain things (e.g. auto-completion, code actions) | Restrict the language services to only `file` and `untitled` schemes ([example](https://github.com/vuejs/vetur/pull/756/files)) | 
+| Using the `workspace.rootPath` property to detect the presence of a workspace | The `workspace.rootPath` property calls `Uri.fsPath` on the first `workspaceFolder` in the `workspace`, which has the same issue mentioned above | Use the `workspace.workspaceFolders` property to detect the presence of a workspace instead, and if needed, look at each `workspaceFolder`'s `Uri.scheme` to determine if it's local or not |
+| Not specifying a document scheme when registering language services (either via a `LanguageClient`, or the `languages.register*` methods) | Guests receive the language service results from both their local extensions, and the host, and therefore, if both participants have the same language service extension installed, guests will see duplicate entries for certain things (e.g. auto-completion, code actions) | Restrict the language services to only `file` and `untitled` schemes ([example](https://github.com/vuejs/vetur/pull/756/files)) |
 | Not checking a document's `Uri.scheme` before populating a `DiagnosticCollection` for it | *Same as above* | Only generate `Diagnostics` for `documents` whose `Uri.scheme` === `file` ([example](https://github.com/Huachao/vscode-restclient/pull/196)) |
 | Not checking for workspace scheme when returning `Tasks` from a custom `TaskProvider`  | Guests display all remote and local tasks, and therefore, would display duplicates if both participants had the same extension installed  | Only return `Tasks` for `WorkspaceFolder`s whose `Uri.scheme` === `file` ([example](https://github.com/Microsoft/vscode-eslint/blob/0fdb7c74b093cae9dc08355e7235582a254f24c2/client/src/tasks.ts#L42)) |
+
+### Visual Studio
+
+Coming soon.
+
+<!--
 
 ## Extensibility API
 
@@ -126,10 +144,13 @@ This will require some form of API/SDK, which extensions can use to determine if
 | Servers | 1. Sharing a server that an extension was responsible for starting, and then optionally specifying whether a browser should be launched on the guest's machine as well (e.g. a debug adapter that launched a web server).  |
 | Custom | 1. Synchronizing arbitrary state and/or user interactions (e.g. the [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) extension syncing CRUD operations across participants, the [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven) extension exposing the project-wide view to guests) |
 
+-->
+
 ## See also
 
 - [Language and platform support](platform-support.md)
 - [Connectivity requirements for Live Share](connectivity.md)
+- [Security features of Live Share](security.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 

@@ -24,7 +24,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # Frequently Asked Questions
 
 ## What is Live Share?
-Live Share allows developers to share a codebase and its context so you get instant, bi-directional, collaboration directly from your existing tools (Visual Studio 2017 or Visual Studio Code). With Live Share, your teammate can read, navigate, edit, and debug the project you’ve shared with them, both seamlessly and securely. To see a demo of Live Share and sign-up for the preview visit the [Live Share overview page](/visual-studio-live-share).
+Live Share allows developers to share a codebase and its context so you get instant, bi-directional, collaboration directly from your existing tools (Visual Studio 2017 or Visual Studio Code). With Live Share, your teammate can read, navigate, edit, and debug the project you’ve shared with them, both seamlessly and securely.
 
 ## What are the tooling requirements for using Live Share?
 The [core capabilities](#what-are-the-core-capabilities-of-live-share) of Live Share are fully supported in the following  tools:
@@ -32,7 +32,7 @@ The [core capabilities](#what-are-the-core-capabilities-of-live-share) of Live S
 * [Visual Studio 2017 (15.6+)](https://www.visualstudio.com/vs/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-During the private preview, Live Share will be iterating quickly to respond to user feedback, which may require us to take advantage of features within Visual Studio and Visual Studio Code that are only be available in their respective preview/insider releases. If you'd like to get your hands on new Live Share features, as soon as they are released, then we'd recommend using [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/) or [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/). However, those aren't required.
+During the private preview, Live Share will be iterating quickly to respond to user feedback, which may require us to take advantage of features within Visual Studio and Visual Studio Code that are only be available in their respective preview/insider releases. We will indicate which features require more recent versions of VS or VS Code in documentation. For example, local undo/redo support requires Visual Studio 2017 15.7+.
 
 ## What are the core capabilities of Live Share?
 Live Share enables you to share your codebase with your team members via a secure connection. With Live Share, you are able to collaboratively edit multiple files in a workspace and more importantly debug your application with your teammates. During co-editing your edits are immediately seen by your teammates. During co-debugging you are sharing the same debug session of your application. This means you and your teammates can control the program execution with breakpoints and steps, but you can independently inspect variables, watches, locals, and REPLs (e.g. the Immediate Window in Visual Studio).
@@ -49,7 +49,7 @@ Live Share's only requirement is that the person sharing and their teammate each
 Live Share doesn't transfer all keyboard and mouse inputs. It only communicates the data needed for each collaboration activity to your teammates' machines. For example, when you share your workspace, your folder structure is shared. When you collaboratively edit a file, that file's contents are shared. When you are collaboratively debugging, debug actions (e.g. stepping) and state (e.g. call stack and locals) are shared.
 
 ## When will Live Share be released?
-Live Share is available now as a limited, private preview, and we are accepting [sign-ups](http://aka.ms/vsls-signup) from users to get early access. We intend to work closely with a limited number of developers, in order to collect feedback and ensure we can deliver the best experience possible, before opening the service more broadly. Developers will be invited in an ongoing series of "waves" to help make this possible, so once you've signed up, stay tuned for further updates.
+Live Share is available now in preview! We intend to work closely developers testing the preview bits, in order to collect feedback and ensure we can deliver the best experience possible, before opening the service more broadly. 
 
 ## How much will it cost?
 We are committed to a substantive free tier of Visual Studio Live Share for developers to use on an ongoing basis. We will be evaluating the introduction of paid tiers with advanced features as we better understand the needs of the community.
@@ -79,27 +79,18 @@ While this may be desirable for many scenarios, developers often want to collabo
 
 Live Share goes a step further and enables you to share a debug session.  This makes it especially useful in enlisting others to help you track down issues that only happen on your machine without altering their development workflow or needing to alter the application design.
 
-## If I sign-up for the limited private preview, what can I expect?
-By [signing up](http://aka.ms/vsls-signup), we will send updates and details about Live Share, and we may invite you to participate in the private preview (US only), or help us with user experience testing.
-
-We intend to work closely with a limited number of developers, in order to collect feedback and ensure we can deliver the best experience possible, before opening the service more broadly. Developers will be invited in an ongoing series of waves to make this possible.
-
-Once invited, you'll be given the information needed to start sharing with your colleagues. While only those in the preview can "host" a session and share,  anyone can download the needed extension to join as a "guest".
-
-You can [unsubscribe at any time](https://aka.ms/vsls-unsubscribe). For more details about our privacy statement, see [here](https://aka.ms/vsls-privacy).
 
 ## Which languages and platforms will be supported in the limited private preview?
-During the private preview, the initial focus for Live Share is Node.js and ASP.NET/ASP.NET Core (C#) web applications and services. However, our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed.
-
-Many of the existing Live Share capabilities already enable other languages and platforms (e.g. collaboratively debugging Java in VS Code), and you can view more details about the current support [here](http://aka.ms/vsls-docs/platform-support). This is just the start, and we expect to improve this picture moving forward based on feedback.
+However, our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed. See the [language and platform support](reference/platform-support.md) article for details on what works today. This is just the start, and we expect to improve this picture moving forward based on feedback.
 
 ## What is the roadmap?
-You can view the set of private preview known issues, and roadmap items [here](http://aka.ms/vsls-issues). We encourage you to up-vote existing items, file new feature requests, and log bug reports, in order to help us shape the direction of the product moving forward.
+You can view the set of private preview known issues, and roadmap items [here](http://aka.ms/vsls-issues). If you'd like to see only feature requests rather than all issues, see [here](https://aka.ms/vsls-feature-requests). We encourage you to up-vote existing items, file new feature requests, and log bug reports, in order to help us shape the direction of the product moving forward.
 
 ## See also
 
 - [Language and platform support](platform-support.md)
 - [Connectivity requirements for Live Share](reference/connectivity.md)
+- [Security features of Live Share](reference/security.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 
