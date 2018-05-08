@@ -15,7 +15,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </td>
 </tr></table>
 
-While the initial focus of Visual Studio Live Share is real-time collaborative development of Node.js and ASP.NET/ASP.NET Core based web applications and services, [many features are broadly available](https://aka.ms/vsls-docs/platform-support) and more will be coming in the future. **It is currently in public preview. Features and user experience should not be considered final.**
+Many Visual Studio Live Features are available across a number of languages and platforms. [See here to find out what we currently support](https://aka.ms/vsls-docs/platform-support) and note more will be coming in the future. **Live Share is currently in public preview. Features and user experience should not be considered final.** 
 
 [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
