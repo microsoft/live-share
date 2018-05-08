@@ -32,7 +32,7 @@ The [core capabilities](#what-are-the-core-capabilities-of-live-share) of Live S
 * [Visual Studio 2017 (15.6+)](https://www.visualstudio.com/vs/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-During the public preview, Live Share will be iterating quickly to respond to user feedback, which may require us to take advantage of features within Visual Studio and Visual Studio Code that are only be available in their respective preview/insider releases. We will indicate which features require more recent versions of VS or VS Code in documentation. For example, local undo/redo support requires Visual Studio 2017 15.7+.
+During the preview, Live Share will be iterating quickly to respond to user feedback, which may require us to take advantage of features within Visual Studio and Visual Studio Code that are only be available in their respective preview/insider releases. We will indicate which features require more recent versions of VS or VS Code in documentation. For example, local undo/redo support requires Visual Studio 2017 15.7+.
 
 ## What are the core capabilities of Live Share?
 Live Share enables you to share your codebase with your team members via a secure connection. With Live Share, you are able to collaboratively edit multiple files in a workspace and more importantly debug your application with your teammates. During co-editing your edits are immediately seen by your teammates. During co-debugging you are sharing the same debug session of your application. This means you and your teammates can control the program execution with breakpoints and steps, but you can independently inspect variables, watches, locals, and REPLs (e.g. the Immediate Window in Visual Studio).
@@ -79,11 +79,11 @@ While this may be desirable for many scenarios, developers often want to collabo
 
 Live Share goes a step further and enables you to share a debug session.  This makes it especially useful in enlisting others to help you track down issues that only happen on your machine without altering their development workflow or needing to alter the application design.
 
-## Which languages and platforms will be supported in the public preview?
-Our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed. See the [language and platform support](reference/platform-support.md) article for details on what works today. This is just the start, and we expect to improve this picture moving forward based on feedback.
+## Which languages and platforms will be supported in the preview?
+However, our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed. See the [language and platform support](reference/platform-support.md) article for details on what works today. This is just the start, and we expect to improve this picture moving forward based on feedback.
 
 ## What is the roadmap?
-You can view the set of public preview known issues, and roadmap items [here](http://aka.ms/vsls-issues). If you'd like to see only feature requests rather than all issues, see [here](https://aka.ms/vsls-feature-requests). We encourage you to up-vote existing items, file new feature requests, and log bug reports, in order to help us shape the direction of the product moving forward.
+You can view the set of known issues, and roadmap items [here](http://aka.ms/vsls-issues). If you'd like to see only feature requests rather than all issues, see [here](https://aka.ms/vsls-feature-requests). We encourage you to up-vote existing items, file new feature requests, and log bug reports, in order to help us shape the direction of the product moving forward.
 
 ## See also
 
