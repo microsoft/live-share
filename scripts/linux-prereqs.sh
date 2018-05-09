@@ -43,7 +43,7 @@ elif type yum  > /dev/null 2>&1; then
 elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected ArchLinux (unoffically/community supported)"
     echo ""
-    sudo pacman -Sq libunwind lttng-ust curl openssl-1.0 libutil-linux krb5 icu zlib gettext desktop-file-utils gnome-keyring libsecret
+    sudo pacman -Sq --needed grc libucru libunwind lttng-ust curl openssl-1.0 libutil-linux krb5 icu zlib gettext desktop-file-utils gnome-keyring libsecret
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
