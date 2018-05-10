@@ -29,7 +29,7 @@ Note that all collaboration activities in described here involve a single **coll
 
 *Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts instead.*
 
->**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+>**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Installation
 
@@ -91,7 +91,7 @@ You can read more about why this is required and where Live Share places files *
 
 ## Sign in
 
-In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
+In order to collaborate, you'll need to sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
 
 Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply click on the "Sign in" status bar item and follow the directions to sign in.
 
@@ -189,7 +189,7 @@ That's it!!
 
 ### End the collaboration session
 
-As a host, you can can stop sharing completely and end the collaboration session at any time by pressing **Ctrl+Shift+P** or clicking the session state status bar item and select the "End collaboration session" command.
+As a host, you can stop sharing completely and end the collaboration session at any time by pressing **Ctrl+Shift+P** or clicking the session state status bar item and select the "End collaboration session" command.
 
 ![Share button](../media/vscode-end-collaboration.png)
 
@@ -271,7 +271,7 @@ Having issues with joining? Check out [troubleshooting](../troubleshooting.md#sh
 
 ## Co-editing
 
-Once a guest has joined a collaboration session, all collaborators will immediately be able to see each others edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves making it easy iterate and rapidly nail to down solutions.
+Once a guest has joined a collaboration session, all collaborators will immediately be able to see each other's edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves making it easy iterate and rapidly nail to down solutions.
 
 ![Screen shot showing co-editing](../media/vscode-coedit.png)
 
@@ -281,7 +281,7 @@ Beyond cursors and edits, selections you make are also visible to all participan
 
 ![Screen shot showing highlighting](../media/vscode-highlight.png)
 
-Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
+Better yet, you and other participants can navigate to any file in the shared project. You can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
 > **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/302) and if multiple files or folders with the same name but different casing exist in the same path, only one may appear [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/303).
 
@@ -349,7 +349,7 @@ Once you run the command, everyone in the collaboration session will then get a 
 
 They can then just click "Follow" right from the notification when they're ready to put their focus on you.
 
-## Co-debuging
+## Co-debugging
 
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, it also you and other participants in your session the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
@@ -357,7 +357,7 @@ Visual Studio Live Share's collaborative debugging feature is a powerful and uni
 
 Using it simple.
 
-1. Be sure both the host and all guests have the appropriate debugging extension installed. (Technically this is not always necessary, but is generally a good idea.)
+1. Be sure both the host and all guests have the appropriate debugging extension installed. (Technically this is not always necessary, but it is generally a good idea.)
 
 2. As the host, if not already set up for the project, you should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from VS Code as you would normally. No special setup is required.
 
@@ -365,7 +365,7 @@ Using it simple.
 
     ![VS Code debug button](../media/vscode-debug-button.png)
 
-    > **Tip:** You can also participate in Visual Studio debugging sessions from VS Code and vice versa! Check out the [Visual Studio instructions](vs.md#co-debuging) on co-debugging for more information.
+    > **Tip:** You can also participate in Visual Studio debugging sessions from VS Code and vice versa! Check out the [Visual Studio instructions](vs.md#co-debugging) on co-debugging for more information.
 
 Once the debugger attaches on the host's side, all guests are also automatically attached. While there is one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
 
@@ -403,7 +403,7 @@ If you've updated settings so you no longer auto-attach or if you simply want to
 
 ### Sharing the running application in a browser
 
-Visual Studio Code does not have the concept of an known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session from a Visual Studio host, you may  automatically see your default browser appear when debugging starts that is then automatically connected to the host's running applications. See [Visual Studio features](vs.md#automatic-web-app-sharing) for more details.
+Visual Studio Code does not have the concept of a known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session from a Visual Studio host, you may  automatically see your default browser appear when debugging starts that is then automatically connected to the host's running applications. See [Visual Studio features](vs.md#automatic-web-app-sharing) for more details.
 
 As a host, you can achieve something similar by manually sharing the application or other endpoints like RESTful services using the "Share Local Server" feature. Visual Studio and VS Code guests can then open a browser on the same localhost port to see the running application.  See [share a server](#share-a-server) for more details.
 
@@ -415,7 +415,7 @@ The guests will then be able to access the server you shared on that port from t
 
 > **Security Tip:** As a host, you should be very selective with the ports you share with guests and stick to application ports (rather than sharing a system port). For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky.
 
-For security purposes, only servers running on ports you specify are available to other guests. Fortunately, its easy to add one as the collaboration session **host**. Here's how:
+For security purposes, only servers running on ports you specify are available to other guests. Fortunately, it's easy to add one as the collaboration session **host**. Here's how:
 
 1. Press **Ctrl+Shift+P** or click on the session state status bar item.
 
@@ -431,13 +431,13 @@ For security purposes, only servers running on ports you specify are available t
 
 That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port was already occupied)!
 
-If the port is already in use on the guests machine, a different one is automatically selected. Fortunately, as a guest you can see a list of currently shared ports (by name if specified) by pressing **Ctrl+Sift+P** or clicking on the session state status bar item and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
+If the port is already in use on the guest's machine, a different one is automatically selected. Fortunately, as a guest you can see a list of currently shared ports (by name if specified) by pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
 
 ![VS Code access local server](../media/vscode-access-shared-server.png)<br />
 
 Note that *guests cannot* control which ports on the host's machine are shared for security reasons.
 
-To **stop** sharing a local server as the host, pressing **Ctrl+Sift+P** or clicking on the session state status bar item and selecting "Stop Sharing Local Server". If there is more than one, select the port you want to stop sharing.
+To **stop** sharing a local server as the host, pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Stop Sharing Local Server". If there is more than one, select the port you want to stop sharing.
 
 ![VS Code stop sharing server](../media/vscode-stop-sharing-server.png)<br />
 
