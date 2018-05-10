@@ -49,7 +49,7 @@ Live Share's only requirement is that the person sharing and their teammate each
 Live Share doesn't transfer all keyboard and mouse inputs. It only communicates the data needed for each collaboration activity to your teammates' machines. For example, when you share your workspace, your folder structure is shared. When you collaboratively edit a file, that file's contents are shared. When you are collaboratively debugging, debug actions (e.g. stepping) and state (e.g. call stack and locals) are shared.
 
 ## When will Live Share be released?
-Live Share is available now in preview! We intend to work closely developers testing the preview bits, in order to collect feedback and ensure we can deliver the best experience possible, before opening the service more broadly. 
+Live Share is available now in public preview! We intend to work closely developers testing the preview bits, in order to collect feedback and ensure we can deliver the best experience possible, before opening the service more broadly. 
 
 ## How much will it cost?
 We are committed to a substantive free tier of Visual Studio Live Share for developers to use on an ongoing basis. We will be evaluating the introduction of paid tiers with advanced features as we better understand the needs of the community.
@@ -78,7 +78,6 @@ With web-based editors, both teammates need to use the same web app to get colla
 While this may be desirable for many scenarios, developers often want to collaborate on apps that aren’t hosted in a VM or in the cloud.  With Live Share, you and your teammate can use the capabilities of the tools’ ecosystem in addition to the same capabilities available in web-based editors.
 
 Live Share goes a step further and enables you to share a debug session.  This makes it especially useful in enlisting others to help you track down issues that only happen on your machine without altering their development workflow or needing to alter the application design.
-
 
 ## Which languages and platforms will be supported in the preview?
 However, our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed. See the [language and platform support](reference/platform-support.md) article for details on what works today. This is just the start, and we expect to improve this picture moving forward based on feedback.
