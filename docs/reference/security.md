@@ -87,7 +87,7 @@ As a guest, if you join a session where the host has this setting enabled, you'l
 
 > **Warning:**  This feature has a known issue with **case sensitive filesystems** like those commonly used with **Linux** and in some **rare cases macOS**. (macOS's default filesystem is *not* case sensitive.) If you are **hosting** from a machine with a case sensitive filesystem, certain files or folders may still appear to guests. (Guest's filesystems have no effect on the bug.) You can find more about the bug and [upvote (👍) it here](https://github.com/MicrosoftDocs/live-share/issues/301). We are working to resolve it ASAP.
 
-As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. You can therefore independently navigate and edit files in the entire shared file tree. **However, this freedom does pose some risks to the host.** In concept, a developer could opt to go in and modify source code without your knowledge or see sensitive source code or "secrets" located somewhere in the shared file tree. Consequently, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debuging sessions that would normally require access to these files if they wanted to do so on their own.
+As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. You can therefore independently navigate and edit files in the entire shared file tree. **However, this freedom does pose some risks to the host.** In concept, a developer could opt to go in and modify source code without your knowledge or see sensitive source code or "secrets" located somewhere in the shared file tree. Consequently, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debugging sessions that would normally require access to these files if they wanted to do so on their own.
 
 You can accomplish this by adding a **.vsls.json** file to the folder or project you are sharing. Any settings you add to this json formatted file changes how Live Share processes files. In addition to providing you direct control, these files can also be committed to source control so anyone cloning a project will be able to take advantage of these rules with no additional effort on their part.
 
@@ -161,7 +161,7 @@ As a host, you are in complete control over when a debugging session starts or s
 
 Consequently, you should **only co-debug with those you trust.**
 
-Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debuging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debuging)
+Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
 
 ## Sharing a local server
 

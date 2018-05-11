@@ -114,7 +114,7 @@ When you're debugging tough coding problems or bugs, having an extra pair of eye
 
 > **Note:** See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
 
-**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debuging) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-debuging)
+**Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debugging) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-debugging)
 
 #### Share server / Share port
 

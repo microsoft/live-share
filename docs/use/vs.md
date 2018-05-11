@@ -267,7 +267,7 @@ Everyone in the collaboration session will then get a notification that you've r
 
 They can then just click "Follow" right from the notification when they're ready to put their focus on you.
 
-## Co-debuging
+## Co-debugging
 
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, it also you and other participants in your session the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
@@ -289,7 +289,7 @@ Anyone can step through the debugging process which enables seamless switching b
 
 Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
-> **Tip:** You can also participate in VS Code debugging sessions from Visual Studio and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debuging) on co-debugging for more information.
+> **Tip:** You can also participate in VS Code debugging sessions from Visual Studio and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debugging) on co-debugging for more information.
 
 ### Automatic web app sharing
 
