@@ -13,7 +13,7 @@
 ## [Join a session](use/vscode.md#join-a-collaboration-session)
 ## [Co-edit](use/vscode.md#co-editing)
 ## [Follow and focus](use/vscode.md#following)
-## [Co-debug](use/vscode.md#co-debuging)
+## [Co-debug](use/vscode.md#co-debugging)
 ## [Share a server](use/vscode.md#share-a-server)
 ## [Share a terminal](use/vscode.md#share-a-terminal)
 # How-tos: Visual Studio
@@ -24,7 +24,7 @@
 ## [Join a session](use/vs.md#join-a-collaboration-session)
 ## [Co-edit](use/vs.md#co-editing)
 ## [Follow and focus](use/vs.md#following)
-## [Co-debug](use/vs.md#co-debuging)
+## [Co-debug](use/vs.md#co-debugging)
 ## [Share a server](use/vs.md#share-a-server)
 ## [Share a terminal](use/vs.md#share-a-terminal)
 # Reference
