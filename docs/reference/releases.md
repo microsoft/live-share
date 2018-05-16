@@ -24,6 +24,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
+## v0.3.125 (VS Code / Visual Studio)
+
+These are bug fix releases that resolve a number of telemetry reported and two user reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+### Reported Issues Fixed 🚀
+
+1. **User sign in and connectivity fixes** - We've seen reports of sign in problems and in some cases a "Unable to connect to the host" error which is actually caused by sign in errors. We've added some fixes and improved error logging to make it easier to understand what might be going on.
+
+2. **Fixes for "sticky undo"** (#291) - There is a race condition that appears to cause "undo" to stick in certain cases. We have added some improvements and some additional logging to help us track down a full fix.
+
 ## v0.3.98 / v0.3.144 (VS Code / Visual Studio)
 
 These are bug fix releases that resolve a number of telemetry reported and two user reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
