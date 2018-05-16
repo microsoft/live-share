@@ -30,7 +30,7 @@ These are bug fix releases that resolve a number of telemetry reported and two u
 
 ### Reported Issues Fixed 🚀
 
-1. **User sign in and connectivity fixes** - We've seen reports of sign in problems and in some cases a "Unable to connect to the host" error which is actually caused by sign in errors. We've added some fixes and improved error logging to make it easier to understand what might be going on.
+1. **User sign in and connectivity fixes** - We've seen reports of sign in problems and in some cases an "Unable to connect to the host" error which is actually caused by sign in errors. We've added some fixes and improved error logging to make it easier to understand what might be going on.
 
 2. **Fixes for "sticky undo"** (#291) - There is a race condition that appears to cause "undo" to stick in certain cases. We have added some improvements and some additional logging to help us track down a full fix.
 
