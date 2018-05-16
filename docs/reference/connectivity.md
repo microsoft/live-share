@@ -99,11 +99,11 @@ Visual Studio Live Share currently has some limitations around proxy use. While 
 
 If your proxy doesn't automatically set these for you, you can manually set the variables in the following form:
 
-`HTTPS_PROXY=https://proxy-ip-address:proxyport`
+`HTTPS_PROXY=http://proxy-ip-address:proxyport`
 
 If you have an authenticating proxy, you can add your user and password as follows:
 
-`HTTPS_PROXY=https://user:password@proxy-ip-address:proxyport`
+`HTTPS_PROXY=http://user:password@proxy-ip-address:proxyport`
 
 If these settings don't solve the problem for you, [please let us know](https://github.com/MicrosoftDocs/live-share/issues/86) the specifics of your proxy setup so we can take a look at improving support.
 

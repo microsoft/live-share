@@ -108,6 +108,8 @@ Finally, if you opt to skip this step entirely, you can still [join collaboratio
 
 While the prerequisite install script above should cover Debian / Ubuntu and RHL / Fedora / CentOS, you may be wondering what is typically missing from vanilla installations of these distributions. The following list shows the key libraries that were missing in a fresh install of the distribution. The list also provides some tips that can help you get up and running if you hit a problem.
 
+> **Note:** One critical note for all distributions is that you will need a version of curl/libcurl with Kerberos support in it or you will see sign in failures even after dependencies are installed. Supported distributions have this support in their libcurl/curl packages, but if you've custom compiled curl be sure Kerberos support is included.
+
 | Distribution | Vanilla install missing libraries | Additional steps |
 |--------|-------------------|----|
 | Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` | &lt;none&gt; |
@@ -135,10 +137,10 @@ Distributions outside of the Debian / Ubuntu or RHL trees are not officially sup
 
 | Distribution | Working? | Vanilla install missing libraries | Additional Steps |
 |--------------|----------|-------------------|------------------|
-| ArchLinux | Yes | Varies. Use the prerequisite install script. Most common are `gnome-keyring` and `libsecret`.  | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</lu></ul> |
-| Manjaro 17.1 | Yes | Use the prerequisite install script. | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li></ul> |
-| Solus 3 | **No** | None known. |**Issues:** <ul><li>VS Code package is missing product.json values ([see below](#vs-code-oss-issues)).</li><li>Even with workaround, fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)).</li></ul> |
-| Gentoo | **No** | Highly variable. | **Issue:** <ul><li>Fails due to a .NET Core bug (see [here](https://github.com/dotnet/corefx/issues/24952) and [here](https://github.com/dotnet/corefx/issues/19718)).</li></ul> |
+| ArchLinux | Yes | Varies. Use the prerequisite install script. Most common are `gnome-keyring` and `libsecret`.  | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</lu><li>If you have custom compiled curl or libcurl, be sure to included Kerberos support (the default package includes it). See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
+| Manjaro 17.1 | Yes | Use the prerequisite install script. | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>If you have custom compiled curl or libcurl, be sure to included Kerberos support (the default package includes it). See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
+| Solus 3 | **No** | A version of libcurl with Kerberos support. |**Issues:** <ul><li>VS Code package is missing product.json values ([see below](#vs-code-oss-issues)).</li><li>VS Live Share requires Kerberos support be compiled into libcurl which is not the case for the Solus package. You will need to custom compile a version of curl with Kerberos support to use Live Share. See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
+| Gentoo | **With Effort** | Highly variable, but commonly missing a version of libcurl with Kerberos support. | **Issue:** <ul><li>Among other dependencies, VS Live Share requires Kerberos support be compiled into libcurl which is not the default for Gentoo. See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
 
 ### VS Code OSS Issues
 
