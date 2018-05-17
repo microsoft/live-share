@@ -35,31 +35,45 @@ All languages / platforms have same file intellisense (when the respective exten
 
 | Language | Project-wide language services | Co-Debugging |
 |----------|--------------------------------|--------------|
-| JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
-| C# | ✅ | ✅ | |
-| CSHTML | *N/A* <sup>1</sup> | ✅
-| HTML | *N/A* | <sup>2</sup> |
-| CSS | *N/A* | *N/A* |
-| Python |  ✅  | ✅ |
-| Markdown | *N/A* | *N/A* |
-| Java | ✅  | ✅ |
-| Go | ✅ | ✅ |
+| Bash | ✅ | ✅ |
 | C++ | ✅ | ✅ |
-| PowerShell | *N/A* | ✅ |
-| Bash | *N/A* | ✅ |
+| C# | ✅ | ✅ | 
+| Clojure | ✅ | *N/A* <sup>4</sup> |
+| CSHTML | *N/A* <sup>1</sup> | ✅ |
+| CSS | *N/A* | *N/A* |
+| Dart | ✅ | ✅ |
+| Elixir | ✅ | ✅ |
+| Elm | ✅ |  *N/A* <sup>4</sup> |
 | Erlang | ✅ | ✅ |
+| F# | ✅ |  *N/A* <sup>4</sup> |
+| Go | ✅ | ✅ |
 | Haskell | ✅ | ✅ |
+| HTML | *N/A* | <sup>2</sup> |
+| Markdown | *N/A* | *N/A* |
+| Java | ✅ | ✅ |
+| JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
+| Julia | ✅ | *N/A* <sup>4</sup> |
+| Kotlin | *N/A* | *N/A* <sup>4</sup> |
+| Lua | ✅ | ✅ |
+| MATLAB |  ✅ | *N/A* <sup>4</sup> |
+| Objective-C | ✅ | *N/A* <sup>4</sup> |
+| Pascal | ✅ | *N/A* <sup>4</sup> |
+| Perl | ✅ | ✅ |
 | PHP | ✅ | ✅ |
+| PowerShell | *N/A* | ✅ |
+| Python |  ✅ | ✅ |
+| PureScript | ✅ | *N/A* <sup>4</sup> |
+| R |  ✅ | *N/A* <sup>4</sup> |
 | Reason/OCaml | ✅ | *N/A* <sup>5</sup> |
 | Ruby | ✅ | ✅ | |
 | Rust | ✅ | *N/A* <sup>4</sup> |
-| Swift | ✅ | *N/A* <sup>4</sup> |
-| Dart | ✅ | ✅  |
-| Perl | ✅ | ✅ |
-| Kotlin | *N/A* | *N/A* <sup>4</sup> |
-| Clojure | ✅ | *N/A* <sup>4</sup> |
 | Scala | ✅ | *N/A* <sup>4</sup> |
-| SQL / T-SQL | *N/A* | |
+| Solidity | ✅ | *N/A* <sup>4</sup> |
+| SQL / T-SQL | *N/A* | *N/A* <sup>4</sup> |
+| Swift | ✅ | *N/A* <sup>4</sup> |
+| Terraform | ✅ | *N/A* <sup>4</sup> |
+| XML | ✅ | *N/A* <sup>4</sup> |
+| YAML | ✅ | *N/A* <sup>4</sup> |
 
 <sup>1</sup> No CSHTML support in C# extension.<br />
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
