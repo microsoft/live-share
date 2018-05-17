@@ -2,7 +2,7 @@
 title: "Linux installation details -  Visual Studio Live Share | Microsoft Docs"
 description: "Detailed information on installing Visual Studio Live Share on Linux."
 ms.custom:
-ms.date: 04/30/2018
+ms.date: 05/17/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,9 +41,11 @@ If you **prefer not to have VS Code run the command for you**, you can also opt 
 
 ### Details on required libraries
 
-> **Critical Note:** One critical note for **all distributions** is that you will need a version of **curl/libcurl with Kerberos support** in it or you will see sign in failures even after dependencies are installed. Supported distributions have this support in their libcurl/curl packages, but if you've custom compiled curl be sure Kerberos support is included.
+> **Critical Note:**  Using Live Share on any distribution of Linux will require **curl/libcurl with Kerberos support** compiled in it or you will see sign in failures. Supported distributions have this support in their base libcurl/curl packages, but if you've custom compiled curl be sure Kerberos support is included. Other unsupported distributions may require additional steps.
 
-Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries may be missing from certain **Debian/Ubuntu** distributions or derivatives:
+#### Debian / Ubuntu
+
+Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries may be missing from certain Debian/Ubuntu distributions or derivatives:
 
 - libunwind8
 - liblttng-ust0
@@ -59,7 +61,7 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 - gettext
 - apt-transport-https
 
-> **Critical Debian Note:** Be sure you **do not have both libssl1.0.0 and libssl1.0.2 installed**. Use `sudo apt remove libssl1.0.0` to remove the older version if it is installed in addition to 1.0.2. (You can also opt to remove 1.0.2 if you prefer.) See [here](https://github.com/dotnet/core/issues/973) for additional information on this .NET Core bug.
+> **Critical Note:** Be sure you do **not** have both **libssl1.0.0 and libssl1.0.2 installed** or the Live Share agent may crash. Use `sudo apt remove libssl1.0.0` to remove the older version if both are installed. See [here](https://github.com/dotnet/core/issues/973) for additional information on this .NET Core bug.
 
 In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
 
@@ -69,11 +71,13 @@ In addition, the following are libraries **Live Share itself depends on** that m
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu 16.04/17.10/18.04 or Mint 18.3:
 
-    sudo apt install libunwind8 liblttng-ust0 libcurl3 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libssl1.?.? libicu??
+    sudo apt install libunwind8 liblttng-ust0 libcurl3 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libssl1.0.? libicu??
 
 The last two parts of the command automatically determines which version of libssl and libicu to install.
 
-**Fedora/CentOS/RHL** requires similar packages but with slightly different names:
+#### Fedora / CentOS / RHL
+
+Fedora/CentOS/RHL requires similar packages to Debian / Ubuntu but with slightly different names:
 
 - libunwind
 - lttng-ust
@@ -123,7 +127,7 @@ While the prerequisite install script above should cover Debian / Ubuntu and RHL
 | Xubuntu 18.04 (64-bit) |`libcurl3 liblttng-ust0 apt-transport-https` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Mint 18.3 Cinnamon (64-bit) | `libcurl3` | &lt;none&gt; |
-| Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | <ul><li>You will need to install `sudo` if you have not already to run the automated prerequisite installer.</li><li>Be sure you **do not have both libssl1.0.0 and libssl1.0.2 installed**. Use `sudo apt remove libssl1.0.0` to remove the older version if it is installed in addition to 1.0.2. See [here](https://github.com/dotnet/core/issues/973) for details.</ul>  |
+| Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | <ul><li>You will need to install `sudo` if you have not already to run the automated prerequisite installer.</li><li>Be sure you do **not** have both **libssl1.0.0 and libssl1.0.2** installed. Use `sudo apt remove libssl1.0.0` to remove the older version if it is installed in addition to 1.0.2. See [here](https://github.com/dotnet/core/issues/973) for details.</ul>  |
 | Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | &lt;none&gt; |
