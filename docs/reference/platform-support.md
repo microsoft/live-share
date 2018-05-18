@@ -69,7 +69,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Python |  ✅ | ✅ |
 | PureScript | ✅ | *N/A* <sup>4</sup> |
 | R |  ✅ | *N/A* <sup>4</sup> |
-| Reason/OCaml | ✅ | *N/A* <sup>5</sup> |
+| Reason/OCaml | ✅ | *N/A* <sup>4</sup> |
 | Ruby | ✅ | ✅ | |
 | Rust | ✅ | *N/A* <sup>4</sup> |
 | Scala | ✅ | *N/A* <sup>4</sup> |
