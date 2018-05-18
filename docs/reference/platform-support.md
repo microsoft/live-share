@@ -107,7 +107,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Mobile (React Native) | ✅ | ✅ <sup>1,8</sup> |
 | Web app / API (Back-end) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
-| VS Code extensions | | |
+| VS Code extensions | | <sup>9</sup> |
 
 <sup>1</sup> Via [share local server](../use/vscode.md#share-a-server).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
