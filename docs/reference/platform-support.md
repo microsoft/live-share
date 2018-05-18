@@ -36,7 +36,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Language | Project-wide language services | Shared Debugging |
 |----------|--------------------------------|--------------|
 | Ansible | ✅ | *N/A* |
-| Ballerina | ✅ | *N/A* <sup>4</sup> |
+| Ballerina | ✅ | ✅ |
 | Bash | ✅ | ✅ |
 | C++ | ✅ | ✅ |
 | C# | ✅ | ✅ | 
