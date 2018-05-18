@@ -33,8 +33,10 @@ All languages / platforms have same file intellisense (when the respective exten
 
 ### Languages
 
-| Language | Project-wide language services | Co-Debugging |
+| Language | Project-wide language services | Shared Debugging |
 |----------|--------------------------------|--------------|
+| Ansible | ✅ | *N/A* |
+| Ballerina | ✅ | *N/A* <sup>4</sup> |
 | Bash | ✅ | ✅ |
 | C++ | ✅ | ✅ |
 | C# | ✅ | ✅ | 
@@ -46,7 +48,10 @@ All languages / platforms have same file intellisense (when the respective exten
 | Elm | ✅ |  *N/A* <sup>4</sup> |
 | Erlang | ✅ | ✅ |
 | F# | ✅ |  *N/A* <sup>4</sup> |
+| Fortran | ✅ | *N/A* |
 | Go | ✅ | ✅ |
+| Gradle | ✅ | *N/A* <sup>4</sup> |
+| GraphQL | ✅ | *N/A* <sup>4</sup> |
 | Haskell | ✅ | ✅ |
 | HTML | *N/A* | <sup>2</sup> |
 | Markdown | *N/A* | *N/A* |
@@ -83,30 +88,36 @@ All languages / platforms have same file intellisense (when the respective exten
 
 ### Platforms
 
-| App/platform type | Co-debugging | App sharing |
+| App/platform type | Shared Debugging | App Sharing |
 |-------------------|--------------|-------------|
+| Arduino | ✅ | *N/A* |
+| Azure App Service | ✅ | *N/A* |
+| Azure Dev Spaces | ✅ | ✅ <sup>1</sup> |
+| Azure Functions (local and remote) | ✅ | ✅ <sup>1</sup> |
+| Blockchain (Ethereum) | ✅ | ✅ <sup>1</sup> |
+| Console / CLI | ✅ | ✅ <sup>4</sup> |
+| Databases | <sup>5</sup> | ✅ <sup>1</sup> |
+| Desktop (Electron/native) | ✅ | <sup>9</sup> |
+| Dynamics NAV 2018 | ✅ | ✅ <sup>1</sup> |
+| Games (Unity) | ✅ | <sup>9</sup> |
+| Games (Unreal) | ✅ | <sup>9</sup> |
+| Markdown | *N/A* | ✅ <sup>6</sup> |
+| Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
+| Mobile (Native) | ✅ | <sup>9</sup> |
+| Mobile (React Native) | ✅ | ✅ <sup>1,8</sup> |
 | Web app / API (Back-end) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
-| Azure Functions | ✅ | ✅ <sup>1</sup> |
-| [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
-| Markdown | *N/A* | ✅ <sup>6</sup> |
-| Databases | <sup>5</sup> | ✅ <sup>1</sup> |
-| Console / CLI | ✅ | ✅ <sup>4</sup> |
 | VS Code extensions | | |
-| Mobile (React Native) |  ✅   | ✅ <sup>1,8</sup> |
-| Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
-| Desktop (Electron/native) | ✅ | ✅ |
-| Games (Unity) |  ✅  | ✅ |
 
 <sup>1</sup> Via [share local server](../use/vscode.md#share-a-server).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
-<sup>4</sup> Partially supported via shared terminals.<br />
+<sup>4</sup> Supported via shared terminals.<br />
 <sup>5</sup> Debugging database stored procs is not currently supported <br />
 <sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
 <sup>7</sup> Cordova apps can be shared via the the "browser" platform<br />
-<sup>8</sup> React Native apps can be shared via Expo and [share local server](../use/vscode.md#share-a-server).<br />
-<sup>?</sup> Not yet validated.
+<sup>8</sup> React Native apps can be shared via Expo and [shared servers](../use/vscode.md#share-a-server).<br />
+<sup>9</sup> Live Share doesn't currently support sharing windows/screens. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/236)
 
 ## Visual Studio
 
