@@ -2,7 +2,7 @@
 title: "Linux installation details -  Visual Studio Live Share | Microsoft Docs"
 description: "Detailed information on installing Visual Studio Live Share on Linux."
 ms.custom:
-ms.date: 05/17/2018
+ms.date: 05/19/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,35 +45,39 @@ If you **prefer not to have VS Code run the command for you**, you can also opt 
 
 #### Debian / Ubuntu
 
-Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries may be missing from certain Debian/Ubuntu distributions or derivatives:
+Visual Studio Live Share uses the .NET Core runtime which requires a number of libraries be installed. The following libraries are required for Debian/Ubuntu based distributions or derivatives:
 
 - libunwind8
 - liblttng-ust0
-- libcurl3
-- libssl1.0.0 (Ubuntu 16.X, 17.X, 18.X)
+- libcurl3 (Ubuntu 16.04, 17.10, Mint 18.3, Debian 9)
+- libcurl4 (Ubuntu 18.04 - libcurl3 also works)
+- libssl1.0.0 (Ubuntu 16.04, 17.10, 18.04)
 - libssl1.0.2 (Debian 9)
 - libuuid1
 - libkrb5-3
 - zlib1g
-- libicu55 (for Ubuntu 16.X)
-- libicu57 (for Ubuntu 17.X)
-- libicu60 (for Ubuntu 18.X)
+- libicu55 (for Ubuntu 16.04, Mint 18.3)
+- libicu57 (for Ubuntu 17.10, Debian 9)
+- libicu60 (for Ubuntu 18.04)
 - gettext
 - apt-transport-https
-
-> **Critical Note:** Be sure you do **not** have both **libssl1.0.0 and libssl1.0.2 installed** or the Live Share agent may crash. Use `sudo apt remove libssl1.0.0` to remove the older version if both are installed. See [here](https://github.com/dotnet/core/issues/973) for additional information on this .NET Core bug.
-
-In addition, the following are libraries **Live Share itself depends on** that may be missing in some instances (e.g. distributions not using Gnome):
-
 - gnome-keyring
 - libsecret-1-0
 - desktop-file-utils
 
-Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For example, this will install everything for Ubuntu 16.04/17.10/18.04 or Mint 18.3:
+> **Critical Note:** Be sure you do **not** have both **libssl1.0.0 and libssl1.0.2 installed** or the Live Share agent may crash. Use `sudo apt remove libssl1.0.0` to remove the older version if both are installed. See [here](https://github.com/dotnet/core/issues/973) for additional information on this .NET Core bug.
 
-    sudo apt install libunwind8 liblttng-ust0 libcurl3 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libssl1.0.? libicu??
+Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For Ubuntu 16.04, 17.10, and Mint 18.3 run:
 
-The last two parts of the command automatically determines which version of libssl and libicu to install.
+    sudo apt install libssl1.0.0 libcurl3 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libicu??
+
+For Ubuntu 18.04, run:
+
+    sudo apt install libssl1.0.0 libcurl4 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libicu??
+
+For Debian 9, run:
+
+    sudo apt install libssl1.0.2 libcurl3 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libicu??
 
 #### Fedora / CentOS / RHL
 
@@ -87,9 +91,6 @@ Fedora/CentOS/RHL requires similar packages to Debian / Ubuntu but with slightly
 - krb5-libs
 - libicu
 - zlib
-
-As with Debian/Ubuntu, **Live Share itself** depends on the following:
-
 - gnome-keyring
 - libsecret
 - desktop-file-utils
@@ -120,11 +121,11 @@ While the prerequisite install script above should cover Debian / Ubuntu and RHL
 
 | Distribution | Vanilla install missing libraries | Additional steps |
 |--------|-------------------|----|
-| Ubuntu Desktop 18.04 (64-bit) | `libcurl3 liblttng-ust0 apt-transport-https` | &lt;none&gt; |
+| Ubuntu Desktop 18.04 (64-bit) | `libcurl4 liblttng-ust0 apt-transport-https` | &lt;none&gt; |
 | Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; | &lt;none&gt; |
-| Kubuntu 18.04 (64-bit) | `libcurl3 liblttng-ust0 gnome-keyring desktop-file-utils gettext apt-transport-https` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
+| Kubuntu 18.04 (64-bit) | `libcurl4 liblttng-ust0 gnome-keyring desktop-file-utils gettext apt-transport-https` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
 | Kubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0 gnome-keyring desktop-file-utils` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
-| Xubuntu 18.04 (64-bit) |`libcurl3 liblttng-ust0 apt-transport-https` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
+| Xubuntu 18.04 (64-bit) |`libcurl4 liblttng-ust0 apt-transport-https` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Xubuntu 16.04 (64-bit) | `libunwind8 liblttng-ust0` | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Mint 18.3 Cinnamon (64-bit) | `libcurl3` | &lt;none&gt; |
 | Debian 9 GNOME Desktop (64-bit) | `libunwind8 liblttng-ust0 apt-transport-https gettext` | <ul><li>You will need to install `sudo` if you have not already to run the automated prerequisite installer.</li><li>Be sure you do **not** have both **libssl1.0.0 and libssl1.0.2** installed. Use `sudo apt remove libssl1.0.0` to remove the older version if it is installed in addition to 1.0.2. See [here](https://github.com/dotnet/core/issues/973) for details.</ul>  |
