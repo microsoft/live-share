@@ -21,18 +21,57 @@ APT=$(which apt 2>&1)
 if type apt > /dev/null 2>&1; then
     echo "(*) Detected Debian / Ubuntu"
     echo ""
-    sudo apt install -yq libunwind8 liblttng-ust0 libcurl3 libssl1.0.? libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https
+    sudo apt install -q libunwind8 liblttng-ust0 libcurl? libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
         exit 1
+    fi
+    # On Debian, .NET Core will crash if there is more than one version of libssl1.0 installed.
+    # Remove one if this situation is detected. See https://github.com/dotnet/core/issues/973
+    LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W libssl1.0.? 2>&1 | sed -n -e '/^i/p')
+    if [ $? -ne 0 ]; then
+        echo "(!) Installation failed! Press enter to dismiss this message."
+        read
+        exit 1
+    fi
+    if [[ -z $LIBSSL ]]; then 
+        # No libssl installed - so install one
+        sudo apt install -yq libssl1.0.?
+        if [ $? -ne 0 ]; then
+            echo "(!) Installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    else 
+        LIBSSLCOUNT=$(echo "$LIBSSL" | wc -l)
+        LIBSSLFIRSTPKG=$(echo "$LIBSSL" | head -n 1 | sed -e 's/...\t\(.*\):\(.*\)/\1/')
+        if [[ $LIBSSLCOUNT -gt 1 ]]; then
+            # More than one is installed - so see if we should remove one
+            echo ""
+            echo "(!) WARNING: $LIBSSLCOUNT sub-versions of libssl1.0 detected. This can crash Live Share."
+            echo ""
+            read -p "Attempt to fix by removing $LIBSSLFIRSTPKG [Y/n]? "
+            if [[ "$REPLY" == "" ]] || [[ "$REPLY"  =~ ^[Yy] ]]; then
+                # This can remove other packages, so skip "-yq" so user can review impact
+                echo ""
+                sudo apt remove $LIBSSLFIRSTPKG
+                if [ $? -ne 0 ]; then
+                    echo "(!) Installation failed! Press enter to dismiss this message."
+                    read
+                    exit 1
+                fi
+            fi
+        else
+            echo "$LIBSSLFIRSTPKG already installed."
+        fi
     fi
 
 #RHL/Fedora/CentOS
 elif type yum  > /dev/null 2>&1; then
     echo "(*) Detected RHL / Fedora / CentOS"
     echo ""
-    sudo yum -y install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
+    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
