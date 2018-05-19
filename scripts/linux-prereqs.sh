@@ -45,7 +45,6 @@ if type apt > /dev/null 2>&1; then
     # On Debian, .NET Core will crash if there is more than one version of libssl1.0 installed.
     # Remove one if this situation is detected. See https://github.com/dotnet/core/issues/973
     LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1 | sed -n -e '/^i/p' | grep -o 'libssl1\.0\.[0-9]:')
-    echo $LIBSSL
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
