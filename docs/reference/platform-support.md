@@ -33,7 +33,7 @@ All languages / platforms have same file intellisense (when the respective exten
 
 ### Languages
 
-| Language | Project-wide language services | Shared Debugging |
+| Language | Shared Language Services | Shared Debugging |
 |----------|--------------------------------|--------------|
 | Ansible | ✅ | *N/A* |
 | Ballerina | ✅ | ✅ |
@@ -41,25 +41,29 @@ All languages / platforms have same file intellisense (when the respective exten
 | C++ | ✅ | ✅ |
 | C# | ✅ | ✅ | 
 | Clojure | ✅ | *N/A* <sup>4</sup> |
+| [ColdFusion (CFML)](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml) | ✅ | *N/A* <sup>4</sup> |
+| [Crystal](https://marketplace.visualstudio.com/items?itemName=faustinoaq.crystal-lang) | ✅ | *N/A* <sup>4</sup> |
 | CSHTML | *N/A* <sup>1</sup> | ✅ |
 | CSS | *N/A* | *N/A* |
 | Dart | ✅ | ✅ |
+| Docker | ✅ | *N/A* |
 | Elixir | ✅ | ✅ |
 | Elm | ✅ |  *N/A* <sup>4</sup> |
 | Erlang | ✅ | ✅ |
 | F# | ✅ |  *N/A* <sup>4</sup> |
+| Flow | ✅ |  *N/A* <sup>4</sup> |
 | Fortran | ✅ | *N/A* |
 | Go | ✅ | ✅ |
 | Gradle | ✅ | *N/A* <sup>4</sup> |
 | GraphQL | ✅ | *N/A* <sup>4</sup> |
 | Haskell | ✅ | ✅ |
 | HTML | *N/A* | <sup>2</sup> |
-| Markdown | *N/A* | *N/A* |
 | Java | ✅ | ✅ |
 | JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
 | Julia | ✅ | *N/A* <sup>4</sup> |
-| Kotlin | *N/A* | *N/A* <sup>4</sup> |
+| [Kotlin](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin) | *N/A* | *N/A* <sup>4</sup> |
 | Lua | ✅ | ✅ |
+| Markdown | ✅ | *N/A* |
 | MATLAB |  ✅ | *N/A* <sup>4</sup> |
 | Objective-C | ✅ | *N/A* <sup>4</sup> |
 | Pascal | ✅ | *N/A* <sup>4</sup> |
@@ -69,12 +73,16 @@ All languages / platforms have same file intellisense (when the respective exten
 | Python |  ✅ | ✅ |
 | PureScript | ✅ | *N/A* <sup>4</sup> |
 | R |  ✅ | *N/A* <sup>4</sup> |
-| Reason/OCaml | ✅ | *N/A* <sup>4</sup> |
-| Ruby | ✅ | ✅ | |
+| [Reason/OCaml](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml) | ✅ | *N/A* <sup>4</sup> |
+| reStructuredText | ✅ | *N/A* |
+| Ruby | ✅ | ✅ |
 | Rust | ✅ | *N/A* <sup>4</sup> |
+| [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) | ✅ | *N/A* |
 | Scala | ✅ | *N/A* <sup>4</sup> |
 | Solidity | ✅ | *N/A* <sup>4</sup> |
 | SQL / T-SQL | *N/A* | *N/A* <sup>4</sup> |
+| [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus) | ✅ | *N/A* |
+| [Svelte](https://marketplace.visualstudio.com/items?itemName=JamesBirtles.svelte-vscode) | ✅ | *N/A* <sup>4</sup> |
 | Swift | ✅ | *N/A* <sup>4</sup> |
 | Terraform | ✅ | *N/A* <sup>4</sup> |
 | XML | ✅ | *N/A* <sup>4</sup> |
@@ -84,7 +92,6 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>3</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 <sup>4</sup> The respective extension for VS Code doesn't currently support debugging. As soon as it does, we will investigate adding co-debugging support to it. <br />
-<sup>?</sup> Not yet validated.
 
 ### Platforms
 
@@ -101,6 +108,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Dynamics NAV 2018 | ✅ | ✅ <sup>1</sup> |
 | Games (Unity) | ✅ | <sup>9</sup> |
 | Games (Unreal) | ✅ | <sup>9</sup> |
+| Kubernetes (YAML, Helm) | ✅ |  ✅ <sup>1</sup> |
 | Markdown | *N/A* | ✅ <sup>6</sup> |
 | Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
 | Mobile (Native) | ✅ | <sup>9</sup> |
