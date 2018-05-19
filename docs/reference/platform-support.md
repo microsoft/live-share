@@ -33,66 +33,99 @@ All languages / platforms have same file intellisense (when the respective exten
 
 ### Languages
 
-| Language | Project-wide language services | Co-Debugging |
+| Language | Shared Language Services | Shared Debugging |
 |----------|--------------------------------|--------------|
-| JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
-| C# | ✅ | ✅ | |
-| CSHTML | *N/A* <sup>1</sup> | ✅
-| HTML | *N/A* | <sup>2</sup> |
-| CSS | *N/A* | *N/A* |
-| Python |  ✅  | ✅ |
-| Markdown | *N/A* | *N/A* |
-| Java | ✅  | ✅ |
-| Go | ✅ | ✅ |
+| Ansible | ✅ | *N/A* |
+| Ballerina | ✅ | ✅ |
+| Bash | ✅ | ✅ |
 | C++ | ✅ | ✅ |
-| PowerShell | *N/A* | ✅ |
-| Bash | *N/A* | ✅ |
-| Erlang | ✅ | ✅ |
-| Haskell | ✅ | ✅ |
-| PHP | ✅ | ✅ |
-| Reason/OCaml | ✅ | *N/A* <sup>5</sup> |
-| Ruby | ✅ | ✅ | |
-| Rust | ✅ | *N/A* <sup>4</sup> |
-| Swift | ✅ | *N/A* <sup>4</sup> |
-| Dart | ✅ | ✅  |
-| Perl | ✅ | ✅ |
-| Kotlin | *N/A* | *N/A* <sup>4</sup> |
+| C# | ✅ | ✅ | 
 | Clojure | ✅ | *N/A* <sup>4</sup> |
+| [ColdFusion (CFML)](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml) | ✅ | *N/A* <sup>4</sup> |
+| [Crystal](https://marketplace.visualstudio.com/items?itemName=faustinoaq.crystal-lang) | ✅ | *N/A* <sup>4</sup> |
+| CSHTML | *N/A* <sup>1</sup> | ✅ |
+| CSS | *N/A* | *N/A* |
+| Dart | ✅ | ✅ |
+| Docker | ✅ | *N/A* |
+| Elixir | ✅ | ✅ |
+| Elm | ✅ |  *N/A* <sup>4</sup> |
+| Erlang | ✅ | ✅ |
+| F# | ✅ |  *N/A* <sup>4</sup> |
+| Flow | ✅ |  *N/A* <sup>4</sup> |
+| Fortran | ✅ | *N/A* |
+| Go | ✅ | ✅ |
+| Gradle | ✅ | *N/A* <sup>4</sup> |
+| GraphQL | ✅ | *N/A* <sup>4</sup> |
+| Haskell | ✅ | ✅ |
+| HTML | *N/A* | <sup>2</sup> |
+| Java | ✅ | ✅ |
+| JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
+| Julia | ✅ | *N/A* <sup>4</sup> |
+| [Kotlin](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin) | *N/A* | *N/A* <sup>4</sup> |
+| Lua | ✅ | ✅ |
+| Markdown | ✅ | *N/A* |
+| MATLAB |  ✅ | *N/A* <sup>4</sup> |
+| Objective-C | ✅ | *N/A* <sup>4</sup> |
+| Pascal | ✅ | *N/A* <sup>4</sup> |
+| Perl | ✅ | ✅ |
+| PHP | ✅ | ✅ |
+| PowerShell | *N/A* | ✅ |
+| Python |  ✅ | ✅ |
+| PureScript | ✅ | *N/A* <sup>4</sup> |
+| R |  ✅ | *N/A* <sup>4</sup> |
+| [Reason/OCaml](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml) | ✅ | *N/A* <sup>4</sup> |
+| reStructuredText | ✅ | *N/A* |
+| Ruby | ✅ | ✅ |
+| Rust | ✅ | *N/A* <sup>4</sup> |
+| [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) | ✅ | *N/A* |
 | Scala | ✅ | *N/A* <sup>4</sup> |
-| SQL / T-SQL | *N/A* | |
+| Solidity | ✅ | *N/A* <sup>4</sup> |
+| SQL / T-SQL | *N/A* | *N/A* <sup>4</sup> |
+| [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus) | ✅ | *N/A* |
+| [Svelte](https://marketplace.visualstudio.com/items?itemName=JamesBirtles.svelte-vscode) | ✅ | *N/A* <sup>4</sup> |
+| Swift | ✅ | *N/A* <sup>4</sup> |
+| Terraform | ✅ | *N/A* <sup>4</sup> |
+| XML | ✅ | *N/A* <sup>4</sup> |
+| YAML | ✅ | *N/A* <sup>4</sup> |
 
 <sup>1</sup> No CSHTML support in C# extension.<br />
 <sup>2</sup> Embedded JavaScript in HTML is supported when doing client debugging.<br />
 <sup>3</sup> JavaScript / TypeScript debugging for Node or browser.<br />
 <sup>4</sup> The respective extension for VS Code doesn't currently support debugging. As soon as it does, we will investigate adding co-debugging support to it. <br />
-<sup>?</sup> Not yet validated.
 
 ### Platforms
 
-| App/platform type | Co-debugging | App sharing |
+| App/platform type | Shared Debugging | App Sharing |
 |-------------------|--------------|-------------|
+| Arduino | ✅ | *N/A* |
+| Azure App Service | ✅ | *N/A* |
+| Azure Dev Spaces | ✅ | ✅ <sup>1</sup> |
+| Azure Functions (local and remote) | ✅ | ✅ <sup>1</sup> |
+| Blockchain (Ethereum) | ✅ | ✅ <sup>1</sup> |
+| Console / CLI | ✅ | ✅ <sup>4</sup> |
+| Databases | <sup>5</sup> | ✅ <sup>1</sup> |
+| Desktop (Electron/native) | ✅ | <sup>9</sup> |
+| Dynamics NAV 2018 | ✅ | ✅ <sup>1</sup> |
+| Games (Unity) | ✅ | <sup>9</sup> |
+| Games (Unreal) | ✅ | <sup>9</sup> |
+| Kubernetes (YAML, Helm) | ✅ |  ✅ <sup>1</sup> |
+| Markdown | *N/A* | ✅ <sup>6</sup> |
+| Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
+| Mobile (Native) | ✅ | <sup>9</sup> |
+| Mobile (React Native) | ✅ | ✅ <sup>1,8</sup> |
 | Web app / API (Back-end) | ✅ | ✅ <sup>1</sup> |
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
-| Azure Functions | ✅ | ✅ <sup>1</sup> |
-| [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
-| Markdown | *N/A* | ✅ <sup>6</sup> |
-| Databases | <sup>5</sup> | ✅ <sup>1</sup> |
-| Console / CLI | ✅ | ✅ <sup>4</sup> |
-| VS Code extensions | | |
-| Mobile (React Native) |  ✅   | ✅ <sup>1,8</sup> |
-| Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
-| Desktop (Electron/native) | ✅ | ✅ |
-| Games (Unity) |  ✅  | ✅ |
+| VS Code extensions | | <sup>9</sup> |
 
 <sup>1</sup> Via [share local server](../use/vscode.md#share-a-server).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
-<sup>4</sup> Partially supported via shared terminals.<br />
+<sup>4</sup> Supported via shared terminals.<br />
 <sup>5</sup> Debugging database stored procs is not currently supported <br />
 <sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
 <sup>7</sup> Cordova apps can be shared via the the "browser" platform<br />
-<sup>8</sup> React Native apps can be shared via Expo and [share local server](../use/vscode.md#share-a-server).<br />
-<sup>?</sup> Not yet validated.
+<sup>8</sup> React Native apps can be shared via Expo and [shared servers](../use/vscode.md#share-a-server).<br />
+<sup>9</sup> Live Share doesn't currently support sharing windows/screens. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/236)
 
 ## Visual Studio
 
