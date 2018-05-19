@@ -21,27 +21,52 @@ APT=$(which apt 2>&1)
 if type apt > /dev/null 2>&1; then
     echo "(*) Detected Debian / Ubuntu"
     echo ""
-    sudo apt install -q libunwind8 liblttng-ust0 libcurl? libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https
+    sudo apt install -yq libunwind8 liblttng-ust0 libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
         exit 1
     fi
+    # Ubuntu 18.04 has libcurl3 and 4, others only libcurl3, so only install libcurl3
+    # if nothing is already installed to avoid unexpected impacts
+    LIBCURL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libcurl[0-9]' 2>&1 | sed -n -e '/^i/p' | grep -o 'libcurl[0-9]:')
+    if [[ -z $LIBCURL ]]; then
+        # No libcurl installed - so install one
+        sudo apt install -yq libcurl3
+        if [ $? -ne 0 ]; then
+            echo "(!) Installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    else
+        LIBCURLINSTALLED=$(echo "$LIBCURL" | head -n 1 | sed -e 's/...\t\(.*\):\(.*\)/\1/')
+        echo "$LIBCURLINSTALLED already installed"        
+    fi
     # On Debian, .NET Core will crash if there is more than one version of libssl1.0 installed.
     # Remove one if this situation is detected. See https://github.com/dotnet/core/issues/973
-    LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W libssl1.0.? 2>&1 | sed -n -e '/^i/p')
+    LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1 | sed -n -e '/^i/p' | grep -o 'libssl1\.0\.[0-9]:')
+    echo $LIBSSL
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
         exit 1
     fi
     if [[ -z $LIBSSL ]]; then 
-        # No libssl installed - so install one
-        sudo apt install -yq libssl1.0.?
-        if [ $? -ne 0 ]; then
-            echo "(!) Installation failed! Press enter to dismiss this message."
-            read
-            exit 1
+        # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
+        if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
+            sudo apt install -yq libssl1.0.2
+            if [ $? -ne 0 ]; then
+                echo "(!) Installation failed! Press enter to dismiss this message."
+                read
+                exit 1
+            fi
+        else    
+            sudo apt install -yq libssl1.0.0
+            if [ $? -ne 0 ]; then
+                echo "(!) Installation failed! Press enter to dismiss this message."
+                read
+                exit 1
+            fi
         fi
     else 
         LIBSSLCOUNT=$(echo "$LIBSSL" | wc -l)
@@ -71,7 +96,7 @@ if type apt > /dev/null 2>&1; then
 elif type yum  > /dev/null 2>&1; then
     echo "(*) Detected RHL / Fedora / CentOS"
     echo ""
-    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
+    sudo yum -y install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
