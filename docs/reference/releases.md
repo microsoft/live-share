@@ -24,6 +24,26 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
+## v0.3.198 (VS Code / Visual Studio)
+
+**Note: Assets are for [documentation](http://aka.ms/vsls-docs) not the product source code.**
+
+This is largely a bug fix release that resolves some frequently-reported user issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+### Feature Enhancements (VS/VSCode) 🚀
+
+1. *Guest Leave Notification* (#95) - Users now receive a notification when a guest leaves the collaboration session. We had previously introduced notifications for when a guest joins the session, and so this release completes the request described in #95.
+
+### User-Reported Issues (VS/VSCode)
+
+1. *Fixes for hosts with case-sensitive file systems* (#301, #302, #303) - We had previously introduced the ability for guests to add/delete/rename files, as well as for hosts to hide certain files from guests (e.g. secrets). However, those features experiences issues when the host was using a case-sensitive file system. This release resolves these bugs, and ensures the correct behavior regardless of the filesystem the host is using.
+
+1. *Fix for shared terminals when using a custom shell* (#361) - The shared terminal feature already allowed you to specify a custom shell, however, it required you to specify it as an absolute file path. With this release, you can now specify just the shell name (e.g. `fish`), and it will correctly resolve it based on your `PATH`.
+
+### User-Reported Issues (VS Code/macOS)
+
+1. *Resolving 100% CPU consumption on macOS* (#355) - We heard numerous reports of macOS users seeing the Live Share agent process (`vsls-agent`) consuming 100% of their CPU, even when they weren't sharing. This release resolves that issue, to ensure that Live Share is lean and mean!
+
 ## v0.3.125 (VS Code / Visual Studio)
 
 These are bug fix releases that resolve a number of telemetry reported and two user reported issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
