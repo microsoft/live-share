@@ -21,7 +21,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Visual Studio Live Share
+# What is Visual Studio Live Share?
 
 > **Note: Visual Studio Live Share is currently in preview. Features and user experience is not final.**
 
