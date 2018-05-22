@@ -28,7 +28,7 @@ When you authenticate with Visual Studio Live Share, it creates a user profile f
 * [Microsoft Account / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
 * [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
 
-That will ask you to sign-in to verify your identity, and then display the raw JSON output for your user profile.
+The page will ask you to sign-in to verify your identity, and then display the raw JSON output for your user profile. 
 
 <img width="500px" src="media/user-profile.png" />
 
@@ -38,12 +38,12 @@ If Visual Studio Live Share doesn't currently have a profile stored for the iden
 
 ## Removing Your Profile
 
-If you'd like to remove your user profile, you can either click the link titled `Click here to get your data removed from our systems` on the [user profile page](#user-profile). Or, you can visit one of the following pages directly (depending on the identity provider you used):
+If you'd like to remove your user profile, you can click the link titled `Click here to get your data removed from our systems` on the [user profile page](#user-profile). Alternatively, you can visit one of the following pages directly (depending on the identity provider you used):
 
 * [Microsoft Account / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
 * [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
 
-Otherwise, Visual Studio Live Share will automatically delete your profile 30 days after your last sign-in.
+Otherwise, Visual Studio Live Share will automatically delete your profile 30 days after your last successful sign-in.
 
 ## See also
 
