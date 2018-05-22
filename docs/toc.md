@@ -33,6 +33,7 @@
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
 ## [Linux install details](reference/linux.md)
+## [Common Use Cases](reference/use-cases.md)
 ## [Release Notes](reference/releases.md)
 # Resources
 ## [Troubleshooting](troubleshooting.md)
