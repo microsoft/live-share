@@ -38,3 +38,4 @@
 ## [Troubleshooting](troubleshooting.md)
 ## [Provide feedback](support.md)
 ## [FAQ](faq.md)
+## [User Profile](user-profile.md)
