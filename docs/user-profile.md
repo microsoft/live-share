@@ -43,7 +43,12 @@ If you'd like to remove your user profile, you can click the link titled `Click 
 * [Microsoft Account / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
 * [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
 
-Otherwise, Visual Studio Live Share will automatically delete your profile 30 days after your last successful sign-in.
+Otherwise, Visual Studio Live Share will automatically delete your profile 30 days after your last successful sign-in. In this context, a "successful sign-in" refers to the following (depending on the tool you're using):
+
+| IDE/Editor | Your user profile will be deleted 30 days after the last time you... |
+|-|-|
+| Visual Studio | Launch a new instance of the IDE. In order to support single sign-on, Visual Studio Live Share refreshes your authentication session every time you open a new instance of Visual Studio. |
+| Visual Studio Code | Complete the browser-based authentication workflow (e.g. clicking the `Sign In` button or running the `Live Share: Sign in with browser` command). Visual Studio Live Share will remember your authentication session on the client, to prevent you from needing to sign-in every time you share. However, that session expires after 30 days, and is never automatically refreshed, until you explicit sign-in through the browser again. |
 
 ## See also
 
