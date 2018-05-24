@@ -75,7 +75,7 @@ Some distributions of Linux are missing libraries Live Share needs to function. 
 
 When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set! You may also want to check out **[tips by distribution](../reference/linux.md#tips-by-distribution)** for other hints and workarounds if any exist.
 
-If you see a message indicating the script does not support your distribution, see **[tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros)** for community tips and issues.
+If you see a message indicating the script does not support your distribution, see **[tips for community supported distributions](../reference/linux.md#tips-for-community-supported-distros)** for information the community has shared with us.
 
 If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
 
