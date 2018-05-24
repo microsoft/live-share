@@ -1,11 +1,10 @@
 <!-- markdownlint-disable MD022 MD025 -->
 # Overview
-## [Introduction](index.md)
-## [Concepts and features](index.md#concepts-and-features)
+## [What is Visual Studio Live Share?](index.md)
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
-# How-tos: VS Code
+# How-to Guides: VS Code
 ## [Overview](use/vscode.md)
 ## [Install](use/vscode.md#installation)
 ## [Sign-in](use/vscode.md#sign-in)
@@ -16,7 +15,7 @@
 ## [Co-debug](use/vscode.md#co-debugging)
 ## [Share a server](use/vscode.md#share-a-server)
 ## [Share a terminal](use/vscode.md#share-a-terminal)
-# How-tos: Visual Studio
+# How-to Guides: Visual Studio
 ## [Overview](use/vs.md)
 ## [Install](use/vs.md#installation)
 ## [Sign-in](use/vs.md#sign-in)
