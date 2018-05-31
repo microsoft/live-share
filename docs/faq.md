@@ -82,6 +82,9 @@ Live Share goes a step further and enables you to share a debug session.  This m
 ## Which languages and platforms will be supported in the preview?
 However, our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed. See the [language and platform support](reference/platform-support.md) article for details on what works today. This is just the start, and we expect to improve this picture moving forward based on feedback.
 
+## How many developers can join a collaboration session?
+We currently support five concurrent guests, in addition to the developer that is sharing ("hosting") their project. Therefore, a collaboration session can have a total of six developers in it at any given time. That said, this is an area we're looking for feedback on, so if you have a use case that requires a higher limit, please [let us know](https://github.com/MicrosoftDocs/live-share/issues/229)!
+
 ## What is the roadmap?
 You can view the set of known issues, and roadmap items [here](http://aka.ms/vsls-issues). If you'd like to see only feature requests rather than all issues, see [here](https://aka.ms/vsls-feature-requests). We encourage you to up-vote existing items, file new feature requests, and log bug reports, in order to help us shape the direction of the product moving forward.
 
