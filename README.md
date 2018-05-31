@@ -47,7 +47,7 @@ Many Visual Studio Live Features are available across a number of languages and 
 
 ## Community-created content
 
-- [Getting Started with Live Coding in Visual Studio Code w/Live Share(https://scotch.io/tutorials/getting-started-with-live-coding-in-visual-studio-code-with-live-share)
+- [Getting Started with Live Coding in Visual Studio Code w/Live Share](https://scotch.io/tutorials/getting-started-with-live-coding-in-visual-studio-code-with-live-share)
 - [Visual Studio Code: VS Live Share from Across the World](https://youtu.be/D7w0uGmQEc8)
 - [Visual Studio Live Share - Two Developers Coding at Once](https://youtu.be/cg6pRv0D8pw)
 
