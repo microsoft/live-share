@@ -49,16 +49,12 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 
 - libunwind8
 - liblttng-ust0
-- libcurl3 (Ubuntu 16.04, 17.10, Mint 18.3, Debian 9)
-- libcurl4 (Ubuntu 18.04 - libcurl3 also works)
-- libssl1.0.0 (Ubuntu 16.04, 17.10, 18.04)
-- libssl1.0.2 (Debian 9)
+- libcurl3 (Ubuntu 16.04, 17.10, Mint 18.3, Debian 9) or libcurl4 (Ubuntu 18.04)
+- libssl1.0.0 (Ubuntu 16.04, 17.10, 18.04) or libssl1.0.2 (Debian 9)
 - libuuid1
 - libkrb5-3
 - zlib1g
-- libicu55 (for Ubuntu 16.04, Mint 18.3)
-- libicu57 (for Ubuntu 17.10, Debian 9)
-- libicu60 (for Ubuntu 18.04)
+- libicu55 (for Ubuntu 16.04, Mint 18.3), libicu57 (for Ubuntu 17.10, Debian 9), or libicu60 (for Ubuntu 18.04)
 - gettext
 - apt-transport-https
 - gnome-keyring
