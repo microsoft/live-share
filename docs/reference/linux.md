@@ -49,35 +49,32 @@ Visual Studio Live Share uses the .NET Core runtime which requires a number of l
 
 - libunwind8
 - liblttng-ust0
-- libcurl3 (Ubuntu 16.04, 17.10, Mint 18.3, Debian 9)
-- libcurl4 (Ubuntu 18.04 - libcurl3 also works)
-- libssl1.0.0 (Ubuntu 16.04, 17.10, 18.04)
-- libssl1.0.2 (Debian 9)
+- libcurl3 (Ubuntu 16.04, 17.10, Mint 18.3, Debian 9) or libcurl4 (Ubuntu 18.04)
+- libssl1.0.0 (Ubuntu 16.04, 17.10, 18.04) or libssl1.0.2 (Debian 9)
 - libuuid1
 - libkrb5-3
 - zlib1g
-- libicu55 (for Ubuntu 16.04, Mint 18.3)
-- libicu57 (for Ubuntu 17.10, Debian 9)
-- libicu60 (for Ubuntu 18.04)
+- libicu55 (for Ubuntu 16.04, Mint 18.3), libicu57 (for Ubuntu 17.10, Debian 9), or libicu60 (for Ubuntu 18.04)
 - gettext
 - apt-transport-https
 - gnome-keyring
 - libsecret-1-0
 - desktop-file-utils
+- x11-utils
 
 > **Critical Note:** Be sure you do **not** have both **libssl1.0.0 and libssl1.0.2 installed** or the Live Share agent may crash. Use `sudo apt remove libssl1.0.0` to remove the older version if both are installed. See [here](https://github.com/dotnet/core/issues/973) for additional information on this .NET Core bug.
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal. For Ubuntu 16.04, 17.10, and Mint 18.3 run:
 
-    sudo apt install libssl1.0.0 libcurl3 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libicu??
+    sudo apt install libssl1.0.0 libcurl3 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https x11-utils libicu??
 
 For Ubuntu 18.04, run:
 
-    sudo apt install libssl1.0.0 libcurl4 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libicu??
+    sudo apt install libssl1.0.0 libcurl4 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https x11-utils libicu??
 
 For Debian 9, run:
 
-    sudo apt install libssl1.0.2 libcurl3 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https libicu??
+    sudo apt install libssl1.0.2 libcurl3 libunwind8 liblttng-ust0 libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https x11-utils libicu??
 
 #### Fedora / CentOS / RHL
 
@@ -94,10 +91,11 @@ Fedora/CentOS/RHL requires similar packages to Debian / Ubuntu but with slightly
 - gnome-keyring
 - libsecret
 - desktop-file-utils
+- xorg-x11-utils
 
 Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything:
 
-    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils
+    sudo yum install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils xorg-x11-utils
 
 Other distributions will require the same libraries, but the package names may be subtly different. You can [read more about .NET Core 2.0 prerequisites for other distributions here](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#linux-distribution-dependencies).
 
@@ -132,7 +130,6 @@ While the prerequisite install script above should cover Debian / Ubuntu and RHL
 | Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | &lt;none&gt; |
-| openSuSE 12 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 
 See **[tips for community supported distributions](#tips-for-community-supported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
 
@@ -147,10 +144,11 @@ Distributions outside of the Debian / Ubuntu or RHL trees are not officially sup
 
 | Distribution | Working? | Vanilla install missing libraries | Additional Steps |
 |--------------|----------|-------------------|------------------|
-| ArchLinux | Yes | Varies. Use the prerequisite install script. Most common are `gnome-keyring` and `libsecret`.  | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</lu><li>If you have custom compiled curl or libcurl, be sure to include Kerberos support (the default package includes it). See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
-| Manjaro 17.1 | Yes | Use the prerequisite install script. | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>If you have custom compiled curl or libcurl, be sure to include Kerberos support (the default package includes it). See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
-| Solus 3 | Yes | None, but be sure the installed `curl` package is at least release 40 and the `vscode` package is at least 57. | <ul><li>Versions of the `vscode` package prior to release 57 were missing required product.json ([see below](#vs-code-oss-issues)).</li><li>Versions of `curl` prior to release 40 did not include Kerberos support required by .NET Core and Live Share. This support was added to unstable on 5/23/2018 and expected to land in stable by **5/25/2018**.</li></ul> |
-| Gentoo | Yes | Highly variable, but commonly missing a version of `net-misc/curl` built with the `kerberos` USE flag.<br /><br>Other possible missing packages: `sys-libs/libunwind dev-util/lttng-ust dev-libs/openssl-1.0.2 net-libs/libgsasl dev-libs/icu sys-libs/zlib sys-apps/util-linux app-crypt/libsecret gnome-base/gnome-keyring`| <ul><li>The `visual-studio-code` package in the **jorgicio** overlay is known to work.</li><li>`net-misc/curl` must be compiled with Kerberos support. Add the `kerberos` USE flag to your /etc/portage/package.use file/folder for the package and install/reinstall. See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul>
+| ArchLinux (64-bit) | Yes | Varies. Use the prerequisite install script. Most common are `gnome-keyring` and `libsecret`.  | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</lu><li>If you have custom compiled curl or libcurl, be sure to include Kerberos support (the default package includes it). See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
+| Manjaro 17.1 (64-bit) | Yes | Use the prerequisite install script. | <ul><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>If you have custom compiled curl or libcurl, be sure to include Kerberos support (the default package includes it). See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
+| openSuSE LEAP 15 KDE (64-bit) | Yes | `libopenssl1_0_0 gnome-keyring` | &lt;none&gt; |
+| Solus 3 (64-bit) | Yes | `xprop` needs to be installed and ensure the installed `curl` package is at least release 40 and the `vscode` package is at least 57. | <ul><li>Versions of the `vscode` package prior to release 57 were missing required product.json ([see below](#vs-code-oss-issues)).</li><li>Versions of `curl` prior to release 40 did not include Kerberos support required by .NET Core and Live Share. This support was added to unstable on 5/23/2018 and expected to land in stable by **5/25/2018**.</li></ul> |
+| Gentoo (64-bit) | Yes | Highly variable, but commonly missing a version of `net-misc/curl` built with the `kerberos` USE flag.<br /><br>Other possible missing packages: `sys-libs/libunwind dev-util/lttng-ust dev-libs/openssl-1.0.2 net-libs/libgsasl dev-libs/icu sys-libs/zlib sys-apps/util-linux app-crypt/libsecret gnome-base/gnome-keyring x11-apps/xprop`| <ul><li>The `visual-studio-code` package in the **jorgicio** overlay is known to work.</li><li>`net-misc/curl` must be compiled with Kerberos support. Add the `kerberos` USE flag to your /etc/portage/package.use file/folder for the package and install/reinstall. See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul>
 
 ### VS Code OSS Issues
 
