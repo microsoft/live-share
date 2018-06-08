@@ -21,7 +21,7 @@ APT=$(which apt 2>&1)
 if type apt > /dev/null 2>&1; then
     echo "(*) Detected Debian / Ubuntu"
     echo ""
-    sudo apt install -yq libunwind8 liblttng-ust0 libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https xprop
+    sudo apt install -yq libunwind8 liblttng-ust0 libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https x11-utils
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
@@ -95,7 +95,7 @@ if type apt > /dev/null 2>&1; then
 elif type yum  > /dev/null 2>&1; then
     echo "(*) Detected RHL / Fedora / CentOS"
     echo ""
-    sudo yum -y install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils xprop
+    sudo yum -y install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils xorg-x11-utils
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
@@ -106,7 +106,7 @@ elif type yum  > /dev/null 2>&1; then
 elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected ArchLinux (unoffically/community supported)"
     echo ""
-    sudo pacman -Sq --needed gcr liburcu libunwind lttng-ust curl openssl-1.0 libutil-linux krb5 icu zlib gettext desktop-file-utils gnome-keyring libsecret xprop
+    sudo pacman -Sq --needed gcr liburcu libunwind lttng-ust curl openssl-1.0 libutil-linux krb5 icu zlib gettext desktop-file-utils gnome-keyring libsecret xorg-xprop
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
