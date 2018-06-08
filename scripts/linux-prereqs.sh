@@ -20,7 +20,7 @@ echo ""
 if type zypper > /dev/null 2>&1; then
     echo "(*) Detected SUSE (unoffically/community supported)"
     echo ""
-    sudo zypper -n in libunwind libcurl[0-9] libopenssl1_0_0 liblttng-ust0 libicu libuuid1 krb5 libz1 gettext gnome-keyring libsecret-1-0 desktop-file-utils xprop
+    sudo zypper -n in libunwind libcurl[0-9] libopenssl1_0_0 libicu libuuid1 krb5 libz1 gettext gnome-keyring libsecret-1-0 desktop-file-utils xprop
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
