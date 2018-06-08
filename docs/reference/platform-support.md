@@ -166,7 +166,7 @@ While most languages have some single file Intellisense support, there are some 
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
 | Azure Functions | ✅  | ✅ <sup>5</sup> |
 | Azure Service Fabric | ✅ | ✅ <sup>5</sup> |
-| [Visual Studio Connected Environment for AKS](https://landinghub.visualstudio.com/vsce) | ✅ | ✅ <sup>1</sup> |
+| [Azure Dev Spaces](http://aka.ms/devspaces) | ✅ | ✅ <sup>1</sup> |
 | Databases | <sup>4</sup> | ✅ <sup>5</sup> |
 | Console / CLI | ✅ | ✅ <sup>6</sup> |
 | Desktop (WinForms) | ✅ | |

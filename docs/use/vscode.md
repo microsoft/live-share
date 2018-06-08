@@ -75,7 +75,7 @@ Some distributions of Linux are missing libraries Live Share needs to function. 
 
 When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set! You may also want to check out **[tips by distribution](../reference/linux.md#tips-by-distribution)** for other hints and workarounds if any exist.
 
-If you see a message indicating the script does not support your distribution, see **[tips for unsupported distributions](../reference/linux.md#tips-for-unsupported-distros)** for community tips and issues.
+If you see a message indicating the script does not support your distribution, see **[tips for community supported distributions](../reference/linux.md#tips-for-community-supported-distros)** for information the community has shared with us.
 
 If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
 
@@ -146,8 +146,6 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 3. **[Optional] Update hidden or excluded files**
 
     By default, Live Share **hides** any files/folders referenced in .gitignore files in your shared folders from guests. **Hiding** a file prevents it from appearing in the guest's file tree. **Excluding** a file applies a stricter rule that will prevent Live Share from opening it for the guest in situations like go to definition or if you step into the file while debugging or being "followed". If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
-
-    > **Warning:**  This feature has a known issue with **case sensitive filesystems** like those commonly used with **Linux** and in some **rare cases macOS**. (macOS's default filesystem is *not* case sensitive.) If you are hosting from a machine with a case sensitive filesystem, certain files or folders may still appear to guests. You can find more about the bug and [upvote (👍) it here](https://github.com/MicrosoftDocs/live-share/issues/301).
 
 4. **Start a collaboration session**
 
@@ -283,11 +281,11 @@ Beyond cursors and edits, selections you make are also visible to all participan
 
 Better yet, you and other participants can navigate to any file in the shared project. You can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
-> **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46). When the host is using a case sensitive filesystem (e.g. Linux), file updates (add / rename / delete) may not propagate to guests [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/302) and if multiple files or folders with the same name but different casing exist in the same path, only one may appear [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/303).
+> **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Sharing multi-root workspaces are not yet supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
 
 The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details. Note that this feature **does not currently work on case sensitive filesystems**. You can find more about the bug and [upvote (👍) it here](https://github.com/MicrosoftDocs/live-share/issues/301).
+> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 ### Changing participant flag behaviors
 
