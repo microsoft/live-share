@@ -38,6 +38,7 @@ Many Visual Studio Live Features are available across a number of languages and 
 - [Linux install details](https://aka.ms/vsls-linux)
 - [Language and platform support](https://aka.ms/vsls-docs/platform-support)
 - [Extension support](https://aka.ms/vsls-docs/extensions)
+- [Common Use Cases](https://aka.ms/vsls-usecases)
 - [Troubleshooting](https://aka.ms/vsls-troubleshooting)
 
 ## Resources
