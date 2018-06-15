@@ -31,6 +31,7 @@
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
+## [Use Cases](reference/use-cases.md)
 ## [Linux install details](reference/linux.md)
 ## [Release Notes](reference/releases.md)
 # Resources

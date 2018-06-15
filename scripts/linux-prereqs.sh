@@ -16,9 +16,19 @@ echo "will attempt to install for you. Note you may be prompted for your admin (
 echo "password during the installation process."
 echo ""
 
+#openSUSE - Has to be first as apt is aliased to zypper
+if type zypper > /dev/null 2>&1; then
+    echo "(*) Detected SUSE (unoffically/community supported)"
+    echo ""
+    sudo zypper -n in libunwind libcurl[0-9] libopenssl1_0_0 libicu libuuid1 krb5 libz1 gettext gnome-keyring libsecret-1-0 desktop-file-utils xprop
+    if [ $? -ne 0 ]; then
+        echo "(!) Installation failed! Press enter to dismiss this message."
+        read
+        exit 1
+    fi
+
 # Debian / Ubuntu
-APT=$(which apt 2>&1)
-if type apt > /dev/null 2>&1; then
+elif type apt > /dev/null 2>&1; then
     echo "(*) Detected Debian / Ubuntu"
     echo ""
     sudo apt install -yq libunwind8 liblttng-ust0 libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https x11-utils
@@ -107,6 +117,17 @@ elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected ArchLinux (unoffically/community supported)"
     echo ""
     sudo pacman -Sq --needed gcr liburcu libunwind lttng-ust curl openssl-1.0 libutil-linux krb5 icu zlib gettext desktop-file-utils gnome-keyring libsecret xorg-xprop
+    if [ $? -ne 0 ]; then
+        echo "(!) Installation failed! Press enter to dismiss this message."
+        read
+        exit 1
+    fi
+
+#Solus
+elif type eopkg > /dev/null 2>&1; then
+    echo "(*) Detected Solus (unoffically/community supported)"
+    echo ""
+    sudo eopkg -y it libunwind liblttng-ust libicu curl openssl zlib gnome-keyring libsecret gettext desktop-file-utils xprop
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
