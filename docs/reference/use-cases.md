@@ -61,7 +61,7 @@ One of the most commonly used scenarios for Visual Studio Live Share is "pair pr
 
 Live Share was designed to be agnostic to all of the aforementioned concerns, and instead, strives to support pair programming that is completely "opportunistic" and catered to your situation. That said, unlike two developers sharing a single keyboard and screen, Live Share enables a form of pair programming that allows developers to work on a shared goal, without removing their individual autonomy or environment preferences. You can work independently, or together, allowing each participant to bring their own thought process to the collaboration. 
 
-To fully support pair programming, and allow each "guest" to perform any action that would be necessary to operate independently, we have work on the roadmap to continue increasing the context and capabilities that are shared in a Live Share session: tasks ([#40](https://github.com/MicrosoftDocs/live-share/issues/40)), build output ([#48](https://github.com/MicrosoftDocs/live-share/issues/48)), guest-driven debugging ([#32](https://github.com/MicrosoftDocs/live-share/issues/32)). Let us know which of these experiences are important to you!
+To fully support pair programming, and allow each "guest" to perform any action that would be necessary to operate independently, we have work on the roadmap to continue increasing the context and capabilities that are shared in a Live Share session: tasks ([#40](https://github.com/MicrosoftDocs/live-share/issues/40)), build output ([#48](https://github.com/MicrosoftDocs/live-share/issues/48)), guest-driven debugging ([#32](https://github.com/MicrosoftDocs/live-share/issues/32)), and more. Let us know which of these experiences are important to you!
 
 To break this use case down even further, the following items represent forms of pair programming that we've observed folks using Live Share for:
 
@@ -75,9 +75,11 @@ Currently, Live Share supports up to five guests within a session, which may or 
 
 Coding competitions and hack-a-thons are effectively short-term, single-task variations of mob programming. The members of the team, and their current role, are also potentially dynamic. Since this use case is typically also time-sensitive, the ability to collaborate in real-time without needing to adopt an entirely new tool, and the ability to work together, without being restricted to a single screen or keyboard, can go a log way in increasing velocity.
 
+Since the participants in this environment might not always be fully "trusted", we've heard requests to allow removing (and blocking) a guest from a session at any time, which is something that we plan on enabling ([#398](https://github.com/MicrosoftDocs/live-share/issues/398), and supports the goal of providing "hosts" with complete control over their environment.
+
 ### School group projects
 
-School group ends up looking a lot like mob programming, where multiple students are working together, and can transition seamlessly between focusing on a single task, or working on separate tasks concurrently.
+Group projects ends up looking a lot like mob programming, where multiple students are working together, and can transition seamlessly between focusing on a single task, or working on separate tasks concurrently. Instead of simply relying on version control to collaborate asynchronously, they can use Live Share to work together in real-time, which can help the social and educational benefits of working in a group.
 
 ### Developer Streaming
 
@@ -93,11 +95,13 @@ When introducing a developer to a new codebase, feature area, technology, etc. y
 
 ### Team Brown Bags
 
-Team brown bags are effectively like peer mentoring, but presented to an entire team, and potentially, more focused on socializing generally useful knowledge, as opposed to onboarding support and/or helping with a specific task.
+Team brown bags are effectively like peer mentoring, but presented to an entire team, and potentially, more focused on socializing generally useful knowledge, as opposed to on-boarding support and/or helping with a specific task.
 
 ### Classroom Lectures
 
 When instructors are teaching a lesson, they can use Live Share to share their project with students, instead of simply presenting their screen. This allows the entire class to follow along with the teacher, while being able to interact with the project on their own. Additionally, the teacher can ask individual students to assist in solving a particular portion of the lesson (e.g. "Which method should we call here?"), which can help in the social aspects of the class, without requiring students to walk up to the front of the room, or even be physically present in the same room (e.g. online courses).
+
+To fully optimize Live Share for this scenario, we need to support read-only access ([#55](https://github.com/MicrosoftDocs/live-share/issues/55)), increase the current guest limit ([#229](https://github.com/MicrosoftDocs/live-share/issues/229)), and simplify the way that sessions are initiated ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
 
 ## Code reviews
 
@@ -107,7 +111,7 @@ Since Live Share allows you to instantly share your project with others, it can 
 
 Additionally, since Live Share allows you to share an arbitrary directory, you can use it to perform code reviews, even if you're not currently using version control (though you should!), or if your team doesn't use PRs (E.g. you do trunk-based development). 
 
-*Note: Live Share doesn't currently share source control diffs, which is a critical piece of context when using it for code reviews. This is on our roadmap, and any feedback on priority is greatly appreciated ([Vote 👍 Here](https://github.com/MicrosoftDocs/live-share/issues/36)).
+Live Share doesn't currently share source control diffs, which is a critical piece of context when using it for code reviews. This is on our roadmap, and any feedback on priority is greatly appreciated ([Vote 👍 Here](https://github.com/MicrosoftDocs/live-share/issues/36)).
 
 ## See also
 
