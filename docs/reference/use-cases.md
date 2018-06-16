@@ -23,9 +23,9 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Common Use Cases
 
-The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily (e.g. using their own highly-customized IDEs, being able to investigate ideas independently), without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **compliments** how you already prefer to work.
+The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **compliments** how you already prefer to work. 
 
-This document highlights some use cases that Visual Studio Live Share can be used for, and describes how well we currently support them, and ways we plan to optimize them further  (based on feedback!). If you're using Live Share for something that isn't already covered below, or you think we can do better to support a specific use case, please [let us know](https://github.com/MicrosoftDocs/live-share/issues/new).
+This document highlights some use cases that Visual Studio Live Share is already being used for, and describes how well we currently support them, and ways we plan to optimize them further  (based on feedback!). If you're using Live Share for something that isn't already covered below, or you think we can do better to support a specific use case, please [let us know](https://github.com/MicrosoftDocs/live-share/issues/new).
 
 * [Quick Assistance](#quick-assistance)
 * [Pair Programming](#pair-programming)
@@ -41,7 +41,7 @@ This document highlights some use cases that Visual Studio Live Share can be use
 
 ## Quick assistance
 
-When you run into an issue (e.g. trying to resolve a bug, setting up your environment), you can use Live Share to instantly seek assistance from another peer. In many cases, it isn't immediately clear what context the person providing help will need, and therefore, Live Share helps by making it simple to provide access to your entire project, and if/as needed, incrementally share more (e.g. a local server, read-only terminal). No need to send code snippets and/or error messages back-and-forth!
+When you run into an issue (e.g. trying to resolve a bug, setting up your environment), you can use Visual Studio Live Share to instantly seek assistance from another peer. In many cases, it isn't immediately clear what context the person providing help will need, and therefore, Live Share helps by making it simple to provide access to your entire project, and if/as needed, incrementally share more (e.g. a local server, read-only terminal). No need to send code snippets and/or error messages back-and-forth!
 
 Additionally, since Live Share allows you to share your active debug session, without requiring "guests" to install any of the necessary platforms SDKs (e.g. Node.js, Go, .NET Core) or tooling extensions, it can help you get resolution faster, and prevent "doesn't repro on my machine" situations. Live Share allows you to share debug state with others, for any programming language or runtime environment (e.g. Kubernetes, React Native app) and so regardless what you need help with, you can share it!
 
@@ -49,7 +49,7 @@ Additionally, since Live Share allows you to share your active debug session, wi
 
 One of the most commonly used scenarios for Visual Studio Live Share is "pair programming": two or more developers, working together on a shared task, with the goal of sharing knowledge, increasing team cohesion, and potentially, product quality. The exact look-and-feel of pair programming can differ significantly between teams and situations, depending on the following (among others):
 
-1. The scope of the "task" being collaborated on (e.g. a task, a user story)
+1. The scope of the "task" being collaborated on (e.g. a bug, a user story)
 
 1. The expected duration of the collaboration session (e.g. two minutes, an hour, full-time, once a week, TBD)
 
@@ -61,7 +61,7 @@ One of the most commonly used scenarios for Visual Studio Live Share is "pair pr
 
 Live Share was designed to be agnostic to all of the aforementioned concerns, and instead, strives to support pair programming that is completely "opportunistic" and catered to your situation. That said, unlike two developers sharing a single keyboard and screen, Live Share enables a form of pair programming that allows developers to work on a shared goal, without removing their individual autonomy or environment preferences. You can work independently, or together, allowing each participant to bring their own thought process to the collaboration. 
 
-To fully support pair programming, and allow each "guest" to perform any action that would be necessary to operate independently, we have work on the roadmap to continue increasing the context and capabilities that are shared in a Live Share session: tasks ([#40](https://github.com/MicrosoftDocs/live-share/issues/40)), build output ([#48](https://github.com/MicrosoftDocs/live-share/issues/48)), guest-driven debugging ([#32](https://github.com/MicrosoftDocs/live-share/issues/32)), and more. Let us know which of these experiences are important to you!
+To further support pair programming, and allow each "guest" to perform commonly-required actions, we have work on our roadmap to continue increasing the context and capabilities that are shared in a Live Share session: tasks ([#40](https://github.com/MicrosoftDocs/live-share/issues/40)), build output ([#48](https://github.com/MicrosoftDocs/live-share/issues/48)), guest-driven debugging ([#32](https://github.com/MicrosoftDocs/live-share/issues/32)), and more. Let us know which of these experiences are important to you!
 
 To break this use case down even further, the following items represent forms of pair programming that we've observed folks using Live Share for:
 
@@ -75,7 +75,7 @@ Currently, Live Share supports up to five guests within a session, which may or 
 
 Coding competitions and hack-a-thons are effectively short-term, single-task variations of mob programming. The members of the team, and their current role, are also potentially dynamic. Since this use case is typically also time-sensitive, the ability to collaborate in real-time without needing to adopt an entirely new tool, and the ability to work together, without being restricted to a single screen or keyboard, can go a log way in increasing velocity.
 
-Since the participants in this environment might not always be fully "trusted", we've heard requests to allow removing (and blocking) a guest from a session at any time, which is something that we plan on enabling ([#398](https://github.com/MicrosoftDocs/live-share/issues/398), and supports the goal of providing "hosts" with complete control over their environment.
+Since the participants in this environment might not always be fully "trusted", we've heard requests to allow removing (and blocking) a guest from a session at any time, which is something that we plan on enabling ([#398](https://github.com/MicrosoftDocs/live-share/issues/398)), and supports the goal of providing "hosts" with complete control over their environment.
 
 ### School group projects
 
