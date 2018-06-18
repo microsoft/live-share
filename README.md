@@ -19,7 +19,7 @@ Many Visual Studio Live Features are available across a number of languages and 
 
 [![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
 
->**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up a instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+>**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Quickstarts
 
