@@ -34,7 +34,7 @@ This is a bug fix release that resolves some key user-reported issues in both Vi
 
 2. *Correctly syncing the effects of Git operations* (#470) - We heard reports of files being deleted when the host ran certain Git operations (e.g. `git rebase`). This release resolves that issue, and ensures that the side-effects of Git commands are synchronized correctly amongst participants.
 
-### Bug Fixes (VSCode)
+### Feature Enhancements (VS Code)
 
 1. *Controlling the visibility of the Live Share status bar items* 🎉(#90) - Your VS Code status bar can start to get pretty cluttered after installing enough extensions. To ensure that users have complete control over their status bar arrangement, we introduced a new setting called `liveshare.showInStatusBar`, which allows you to choose when the Live Share-specific status bar items should be displayed:
 
