@@ -24,9 +24,41 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
-## v0.3.198 (VS Code / Visual Studio)
+## v0.3.262 / v0.3.295 (VS Code / Visual Studio)
 
-**Note: Assets are for [documentation](http://aka.ms/vsls-docs) not the product source code.**
+This is a bug fix release that resolves some key user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+### Bug Fixes (VS/VSCode)
+
+1. *Performance improvements for shared terminals and servers* 🚀(#367, #390) - We made some fundamental improvements to the way shared servers and terminals work, which should significantly improve performance, particularly when retrieving lots of data (e.g. downloading a large Javascript as part of a shared web app) over high-latency connections.
+
+2. *Correctly syncing the effects of Git operations* (#470) - We heard reports of files being deleted when the host ran certain Git operations (e.g. `git rebase`). This release resolves that issue, and ensures that the side-effects of Git commands are synchronized correctly amongst participants.
+
+### Bug Fixes (VSCode)
+
+1. *Controlling the visibility of the Live Share status bar items* 🎉(#90) - Your VS Code status bar can start to get pretty cluttered after installing enough extensions. To ensure that users have complete control over their status bar arrangement, we introduced a new setting called `liveshare.showInStatusBar`, which allows you to choose when the Live Share-specific status bar items should be displayed:
+
+   * `never` - Keep your status bar clutter-free, and instead, rely entirely on the command palette to share/join/etc.
+   * `always` - The current and default behavior
+   * `whileCollaborating` - Only show the status bar items when actively sharing/joining a collaboration session.
+
+### Feature Enhancements (VS)
+
+1. *Context menu for user info/actions* - Right-clicking on a user in the list of participants will now display their name, avatar (currently GitHub-only), and a button to begin following them.
+
+## v0.3.237 / v0.3.246 (VS Code)
+
+This is largely a VS Code bug fix release that resolves some issues with both debugging and remote language services. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+### Bug Fixes (VSCode)
+
+1. *Fixed debugging for AL, Apex and Dart* 🎉(#138, #396, #465) - We improved our overall collaborative debugging support, which among other things, enable AL, Apex (SalesForce) and Dart debugging sessions to be shared with other participants.
+
+2. *Fixed auto-completion duplication for some languages* - Certain languages (e.g. CSS, JSON) used to display duplicate entries in the completion list for guests. Now, all languages (either in-box or installed via a marketplace extension) are remotely available to guests, and will be properly de-duplicated. This allows guests to receive the expected language experience, whether or not they have the same extensions installed as the host.
+
+3. *Fixes for libssl dependency check* - (#476) v0.3.246 was a hot-fix release for VS Code on Linux, which simply addresses a user-reported issue with our `libssl` dependency check.
+
+## v0.3.198 (VS Code / Visual Studio)
 
 This is largely a bug fix release that resolves some frequently-reported user issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
