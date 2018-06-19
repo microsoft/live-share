@@ -99,13 +99,13 @@ Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply clic
 
 A browser will appear where you can complete the sign in process. Simply close the browser when done.
 
-> **Linux users:** VS Code will also [prompt you to enter a user code](../use/vscode.md#sign-in-using-a-user-code) when opening the browser window. The code can be found by clicking on the "Having trouble? Click here for user code directions" link that appears in the "Ready to collaborate!" page after you've signed into Live Share via the browser. Simply paste this user code in the prompt's input field in VS Code and hit enter to finish.
+> **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [below for details](#sign-in-using-a-user-code).
 
 If Visual Studio Code is not picking up your sign in after you complete the sign in process in the browser, see [sign in using a user code](#sign-in-using-a-user-code). Otherwise, check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
 ### Sign in using a user code
 
-If you are on Linux or are running into problems with VS Code not picking up a completed sign in, you can enter a "user code" instead.
+If you are running into problems with VS Code not picking up a completed sign in, you can enter a "user code" instead.
 
 1. Press **Ctrl+Shift+P** and run the "Live Share: Sign in with user code" command.
 
