@@ -26,19 +26,19 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 ## v0.3.317 (VS Code / Visual Studio)
 
-This release includes some features and bug fixes that resolve some key user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+This release includes some enhancements and bug fixes that resolve some key user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
 ### Enhancements (VS Code)
 
 1. *Linux: Enable sign-in without a user code* - The sign-in process on Linux is now exactly like Windows and Mac. No more entering user codes!
 
-1. *Find files by name* - Guests can now type a filename in the command palette (Ctrl+P / Command-P) to find the file in the file in the source tree. It currently does **not** respect the `search.excludeFiles` setting but support for this setting is coming along with VS support.
+1. *Find files by name* - Guests can now type a filename in the command palette (Ctrl+P / Command-P) to find a file in the source tree. It currently does **not** respect the `search.excludeFiles` setting but support for this setting is coming along with VS support.
 
 ### Bug Fixes (VS/VSCode)
 
 1. *Proxy support and auto-detection* (#86, #504) - This release adds improved proxy support, messaging, and auto-detection of proxy settings.
 
-1. *Users are able to rejoin and active session if they have been removed* (#324) - Guests that were not approved or removed from the collaboration session could attempt to re-join causing the host to have to remove / not approve them again.
+1. *Users are able to rejoin and active session if they have been removed* (#342) - Guests that were not approved or removed from the collaboration session could attempt to re-join causing the host to have to remove / not approve them again.
 
 ### Bug Fixes (VS Code)
 
