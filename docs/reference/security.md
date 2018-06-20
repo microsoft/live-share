@@ -183,7 +183,7 @@ Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-
 
 ## AAD Admin Consent
 
-When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its security features and your Azure AD tenet is setup to require “admin consent” for new applications accessing the contents of the directory.
+When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its security features and your Azure AD tenant is setup to require “admin consent” for new applications accessing the contents of the directory.
 
 Your AD admin would need to resolve this for you using the following information:
 
