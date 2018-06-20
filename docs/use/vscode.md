@@ -93,7 +93,7 @@ You can read more about why this is required and where Live Share places files *
 
 In order to collaborate, you'll need to sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
 
-Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply click on the "Sign in" status bar item and follow the directions to sign in.
+Press **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign in" command **or click** on the "Sign in" status bar item and follow the directions to sign in.
 
 ![VS Code sign in button](../media/vscode-sign-in-button.png)
 
@@ -107,7 +107,7 @@ If Visual Studio Code is not picking up your sign in after you complete the sign
 
 If you are running into problems with VS Code not picking up a completed sign in, you can enter a "user code" instead.
 
-1. Press **Ctrl+Shift+P** and run the "Live Share: Sign in with user code" command.
+1. Press **Ctrl+Shift+P / Cmd+Shift+P** and run the "Live Share: Sign in with user code" command.
 
 2. A browser should appear for you use to complete the sign in process.
 
@@ -125,7 +125,7 @@ If you are running into problems with VS Code not picking up a completed sign in
 
 ## Using the scoped command menu
 
-All Visual Studio Live Share functions are available from the Visual Studio Code "Command Palette" that can be accessed by pressing Ctrl+Shift+P or F1. You can find a complete list of commands by typing "live share".
+All Visual Studio Live Share functions are available from the Visual Studio Code "Command Palette" that can be accessed by pressing Ctrl+Shift+P / Cmd+Shift+P or F1. You can find a complete list of commands by typing "live share".
 
 However, since this list can get long, you may find it easier to take advantage of a scoped command menu available from the status bar. Clicking on the sign in / session state icon in the status bar will immediately bring up a contextualized list of commands that are available for you to use.
 
@@ -149,7 +149,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 4. **Start a collaboration session**
 
-    Now, simply click the "Share" status bar item or hit **Ctrl+Shift+P** and select "Live Share: Start a collaboration session (Share)".
+    Now, simply **click** the "Share" status bar item or hit **Ctrl+Shift+P / Cmd+Shift+P** and select "Live Share: Start a collaboration session (Share)".
 
     ![Share button](../media/vscode-share-button.png)
 
@@ -187,7 +187,7 @@ That's it!!
 
 ### End the collaboration session
 
-As a host, you can stop sharing completely and end the collaboration session at any time by pressing **Ctrl+Shift+P** or clicking the session state status bar item and select the "End collaboration session" command.
+As a host, you can stop sharing completely and end the collaboration session at any time by pressing **Ctrl+Shift+P / Cmd+Shift+P** or **clicking** the session state status bar item and select the "End collaboration session" command.
 
 ![Share button](../media/vscode-end-collaboration.png)
 
@@ -241,7 +241,7 @@ You can also manually join without using a web browser which can be useful in si
 
 2. **Use the join command**
 
-    Press **Ctrl+Shift+P** or click on the session state status bar item and select "Join collaboration session".
+    Press **Ctrl+Shift+P / Cmd+Shift+P** or **click** on the session state status bar item and select "Join collaboration session".
 
     ![Join scoped command menu item](../media/vscode-join.png)
 
@@ -259,7 +259,7 @@ You can also manually join without using a web browser which can be useful in si
 
 ### Leave the collaboration session
 
-As a guest, you can leave the collaboration session without ending it for others by simply closing the VS Code window. If you'd prefer to keep the window open, press **Ctrl+Shift+P** or click on the session state status bar item and select the "End collaboration session" command.
+As a guest, you can leave the collaboration session without ending it for others by simply closing the VS Code window. If you'd prefer to keep the window open, press **Ctrl+Shift+P / Cmd+Shift+P** or **click** on the session state status bar item and select the "End collaboration session" command.
 
 ![Share button](../media/vscode-leave-session.png)
 
@@ -327,7 +327,7 @@ Afterwards, simply click the pin icon again to follow them once again. Note that
 
 ## Listing participants
 
-A quick way to see who is in the collaboration session is to hit **Ctrl+Shift+P** and select the "Live Share: List Participants" command or simply click on the status bar item that shows the number of participants in your session.
+A quick way to see who is in the collaboration session is to hit **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: List Participants" command or **click** on the status bar item that shows the number of participants in your session.
 
 ![Screen shot showing user status bar icon](../media/vscode-user-status.png)
 
@@ -337,7 +337,7 @@ A list of all participants in the session will then appear. Unlike clicking the 
 
 Occasionally you may want everyone in a collaboration session to come and take a look at something you are doing. Live Share lets you ask that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
 
-Just press **Ctrl+Shift+P** or click on the session state status bar item and select the "Focus Participants" command.
+Just press **Ctrl+Shift+P / Cmd+Shift+P** or **click** on the session state status bar item and select the "Focus Participants" command.
 
 ![Focus scoped command palette menu option](../media/vscode-focus.png)
 
@@ -395,7 +395,7 @@ As a guest, you may wish to stop debugging temporarily. Fortunately, you can sim
 
 ![VS Code debugger stop button](../media/vscode-debug-stop.png)
 
-If you've updated settings so you no longer auto-attach or if you simply want to reattach later, you can do so by pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Attach to a Shared Debugging Session".
+If you've updated settings so you no longer auto-attach or if you simply want to reattach later, you can do so by pressing **Ctrl+Shift+P / Cmd+Shift+P** or **clicking** on the session state status bar item and selecting "Attach to a Shared Debugging Session".
 
 ![VS Code attach debugger](../media/vscode-reattach.png)
 
@@ -415,7 +415,7 @@ The guests will then be able to access the server you shared on that port from t
 
 For security purposes, only servers running on ports you specify are available to other guests. Fortunately, it's easy to add one as the collaboration session **host**. Here's how:
 
-1. Press **Ctrl+Shift+P** or click on the session state status bar item.
+1. Press **Ctrl+Shift+P / Cmd+Shift+P** or **click** on the session state status bar item.
 
     ![VS Code session state icon](../media/vscode-share-state.png)<br />
 
@@ -429,13 +429,13 @@ For security purposes, only servers running on ports you specify are available t
 
 That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port was already occupied)!
 
-If the port is already in use on the guest's machine, a different one is automatically selected. Fortunately, as a guest you can see a list of currently shared ports (by name if specified) by pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
+If the port is already in use on the guest's machine, a different one is automatically selected. Fortunately, as a guest you can see a list of currently shared ports (by name if specified) by pressing **Ctrl+Shift+P / Cmd+Shift+P** or **clicking** on the session state status bar item and selecting "Access Shared Server".  Selecting one copies it to the clipboard.
 
 ![VS Code access local server](../media/vscode-access-shared-server.png)<br />
 
 Note that *guests cannot* control which ports on the host's machine are shared for security reasons.
 
-To **stop** sharing a local server as the host, pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Stop Sharing Local Server". If there is more than one, select the port you want to stop sharing.
+To **stop** sharing a local server as the host, pressing **Ctrl+Shift+P / Cmd+Shift+P** or **clicking** on the session state status bar item and selecting "Stop Sharing Local Server". If there is more than one, select the port you want to stop sharing.
 
 ![VS Code stop sharing server](../media/vscode-stop-sharing-server.png)<br />
 
@@ -445,7 +445,7 @@ Modern development makes frequent use of a wide array of command line tools. For
 
 However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way you can freely run commands in local terminals without risk and only share when actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
 
-As a host, you can share a terminal by pressing **Ctrl+Shift+P** or clicking on the session state status bar item and selecting "Share Terminal".
+As a host, you can share a terminal by pressing **Ctrl+Shift+P / Cmd+Shift+P** or **clicking** on the session state status bar item and selecting "Share Terminal".
 
 ![Share terminal menu option](../media/vscode-share-terminal.png)
 

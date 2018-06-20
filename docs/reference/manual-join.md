@@ -24,7 +24,7 @@ The exact instructions vary between [Visual Studio](#join-from-visual-studio) an
 
 #### 1. Sign in
 
-In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. Hit **Ctrl+Shift+P** and select the "Live Share: Sign in" command or simply click on the "Sign in" status bar item and follow the directions to sign in.
+In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. Hit **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign in" command **or click** on the "Sign in" status bar item and follow the directions to sign in.
 
  ![VS Code Download](../media/vscode-sign-in-button.png)
 
@@ -34,7 +34,7 @@ If you are running into problems with VS Code not picking up a successful sign-i
 
 #### 2. Use the join command
 
-Hit **Ctrl+Shift+P**and select "Live Share: Join collaboration session" or used the scoped command menu by clicking on the session state status bar item and select "Join Collaboration Session".
+Press **Ctrl+Shift+P / Cmd+Shift+P**and select "Live Share: Join collaboration session" or used the scoped command menu by **clicking** on the session state status bar item and select "Join Collaboration Session".
 
 ![Join scoped command menu item](../media/vscode-join.png)
 
