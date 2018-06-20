@@ -50,7 +50,7 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
 
 ### Step 2B - File a VS Code or general service problems
 
-1. **Export logs:** Press F1 (or Ctrl-Shift-P), type "export logs" and run the "Live Share: Export Logs" command.
+1. **Export logs:** Press F1 (or Ctrl+Shift+P / Cmd+Shift+P), type "export logs" and run the "Live Share: Export Logs" command.
 
 2. **Raise a new issue:** [Click here to draft a new issue](https://aka.ms/vsls-new-issue) and please add following information into the description:
 
