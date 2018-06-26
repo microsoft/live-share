@@ -24,17 +24,29 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 What to know what has changed recently? You're in the right spot. You can also view this same information from the releases tab on our [GitHub repo](https://aka.ms/vsls-releases).
 
+## v0.3.335 (VS Code / Visual Studio)
+
+This is a small release with some fixes that resolve some telemetry indicated and user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+
+### Bug Fixes (VS Code)
+
+1. *dpkg error on non-Debian/Ubuntu Linux distros* (#537) - An error would appear on distributions like Fedora or Arch that reported that dpkg was not present. This was part of a dependency check and is expected to error, so we made the log message clearer.
+
+### Enhancements (VS Code)
+
+1. *Find files by name now respects the search.excludeFiles setting* - The feature respect the `search.excludeFiles` setting in config.json
+
 ## v0.3.317 (VS Code / Visual Studio)
 
 This release includes some enhancements and bug fixes that resolve some key user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### Enhancements (VS Code)
+### Bug fixes (VS Code)
 
 1. *Linux: Enable sign-in without a user code* - The sign-in process on Linux is now exactly like Windows and Mac. No more entering user codes!
 
 1. *Find files by name* - Guests can now type a filename in the command palette (Ctrl+P / Command-P) to find a file in the source tree. It currently does **not** respect the `search.excludeFiles` setting but support for this setting is coming along with VS support.
 
-### Bug Fixes (VS/VSCode)
+### Bug Fixes (VS Code / Visual Studio)
 
 1. *Proxy support and auto-detection* (#86, #504) - This release adds improved proxy support, messaging, and auto-detection of proxy settings.
 
@@ -64,7 +76,7 @@ This is a bug fix release with some small feature enhancements that resolves som
    * `always` - The current and default behavior
    * `whileCollaborating` - Only show the status bar items when actively sharing/joining a collaboration session.
 
-### Enhancements (VS)
+### Enhancements (Visual Studio)
 
 1. *Context menu for user info/actions* - Right-clicking on a user in the list of participants will now display their name, avatar (currently GitHub-only), and a button to begin following them.
 
@@ -72,7 +84,7 @@ This is a bug fix release with some small feature enhancements that resolves som
 
 This is largely a VS Code bug fix release that resolves some issues with both debugging and remote language services. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### Bug Fixes (VSCode)
+### Bug Fixes (VS Code)
 
 1. *Fixed debugging for AL, Apex and Dart* 🎉(#138, #396, #465) - We improved our overall collaborative debugging support, which among other things, enable AL, Apex (SalesForce) and Dart debugging sessions to be shared with other participants.
 
@@ -84,11 +96,11 @@ This is largely a VS Code bug fix release that resolves some issues with both de
 
 This is largely a bug fix release that resolves some frequently-reported user issues. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### Enhancements (VS/VSCode) 🚀
+### Enhancements (Visual Studio / VS Code) 🚀
 
 1. *Guest Leave Notification* (#95) - Users now receive a notification when a guest leaves the collaboration session. We had previously introduced notifications for when a guest joins the session, and so this release completes the request described in #95.
 
-### Bug Fixes (VS/VSCode)
+### Bug Fixes (VS Code / Visual Studio)
 
 1. *Fixes for hosts with case-sensitive file systems* (#301, #302, #303) - We had previously introduced the ability for guests to add/delete/rename files, as well as for hosts to hide certain files from guests (e.g. secrets). However, those features experiences issues when the host was using a case-sensitive file system. This release resolves these bugs, and ensures the correct behavior regardless of the filesystem the host is using.
 
