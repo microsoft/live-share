@@ -26,19 +26,21 @@ What to know what has changed recently? You're in the right spot. You can also v
 
 ## v0.3.335 (VS Code / Visual Studio)
 
-This release is bug fix releases that resolves some telemetry indicated and user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
+This is a small release with some fixes that resolve some telemetry indicated and user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
 ### Bug Fixes (VS Code)
 
 1. *dpkg error on non-Debian/Ubuntu Linux distros* (#537) - An error would appear on distributions like Fedora or Arch that reported that dpkg was not present. This was part of a dependency check and is expected to error, so we made the log message clearer.
 
-2. *Find files by name now respects the search.excludeFiles setting* - The feature respect the `search.excludeFiles` setting in config.json
+### Enhancements (VS Code)
+
+1. *Find files by name now respects the search.excludeFiles setting* - The feature respect the `search.excludeFiles` setting in config.json
 
 ## v0.3.317 (VS Code / Visual Studio)
 
 This release includes some enhancements and bug fixes that resolve some key user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### Enhancements (VS Code)
+### Bug fixes (VS Code)
 
 1. *Linux: Enable sign-in without a user code* - The sign-in process on Linux is now exactly like Windows and Mac. No more entering user codes!
 
