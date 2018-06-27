@@ -29,7 +29,7 @@ Live Share allows developers to share a codebase and its context so you get inst
 ## What are the tooling requirements for using Live Share?
 The [core capabilities](#what-are-the-core-capabilities-of-live-share) of Live Share are fully supported in the following  tools:
 
-* [Visual Studio 2017 (15.6+)](https://www.visualstudio.com/vs/)
+* [Visual Studio 2017 (15.6+)](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 During the preview, Live Share will be iterating quickly to respond to user feedback, which may require us to take advantage of features within Visual Studio and Visual Studio Code that are only be available in their respective preview/insider releases. We will indicate which features require more recent versions of VS or VS Code in documentation. For example, local undo/redo support requires Visual Studio 2017 15.7+.
