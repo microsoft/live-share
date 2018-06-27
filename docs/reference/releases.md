@@ -2,7 +2,7 @@
 title: "Release Notes -  Visual Studio Live Share | Microsoft Docs"
 description: "A breakdown of changes by release for Visual Studio Live Share for Visual Studio and VS Code."
 ms.custom:
-ms.date: 05/7/2018
+ms.date: 06/27/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,11 +40,11 @@ This is a small release with some fixes that resolve some telemetry indicated an
 
 This release includes some enhancements and bug fixes that resolve some key user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### Bug fixes (VS Code)
+### Enhancements (VS Code)
 
 1. *Linux: Enable sign-in without a user code* - The sign-in process on Linux is now exactly like Windows and Mac. No more entering user codes!
 
-1. *Find files by name* - Guests can now type a filename in the command palette (Ctrl+P / Command-P) to find a file in the source tree. It currently does **not** respect the `search.excludeFiles` setting but support for this setting is coming along with VS support.
+1. *Find files by name* - Guests can now type a filename in the command palette (Ctrl+P / Command-P) to find a file in the source tree. It currently does **not** respect the `search.excludeFiles` setting but support for this setting is coming along with VS support. (Update: Fixed in v0.3.335)
 
 ### Bug Fixes (VS Code / Visual Studio)
 
@@ -102,7 +102,7 @@ This is largely a bug fix release that resolves some frequently-reported user is
 
 ### Bug Fixes (VS Code / Visual Studio)
 
-1. *Fixes for hosts with case-sensitive file systems* (#301, #302, #303) - We had previously introduced the ability for guests to add/delete/rename files, as well as for hosts to hide certain files from guests (e.g. secrets). However, those features experiences issues when the host was using a case-sensitive file system. This release resolves these bugs, and ensures the correct behavior regardless of the filesystem the host is using.
+1. *Fixes for hosts with case-sensitive file systems* (#301, #302, #303) - We had previously introduced the ability for guests to add/delete/rename files, as well as for hosts to hide certain files from guests (e.g. secrets). However, there was a bug that could cause detection to fail if the host was using a case-sensitive file system. This release resolves these bugs, and ensures the correct behavior regardless of the filesystem the host is using.
 
 1. *Fix for shared terminals when using a custom shell* (#361) - The shared terminal feature already allowed you to specify a custom shell, however, it required you to specify it as an absolute file path. With this release, you can now specify just the shell name (e.g. `fish`), and it will correctly resolve it based on your `PATH`.
 
@@ -144,7 +144,7 @@ These are bug fix releases that resolve a number of telemetry reported and two u
 
 4. *Focus Participants* 👁‍🗨 (#73) - You can now send a toast notification to all other participants in a collaboration session asking them to follow you. Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#focusing) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#focusing)
 
-5. *Excluded (host-only) and hidden file support* 🙈 (#52) - You can now use a .vsls.json file to exclude or hide certain files or alter how Visual Studio Live Share processes the contents of .gitignore files in your shared folders. See the [security article](https://aka.ms/vsls-docs/security) for details. Note that we do have an open issue for case sensitive filesystems (e.g. Linux) with this feature we are working to resolve ASAP.
+5. *Excluded (host-only) and hidden file support* 🙈 (#52) - You can now use a .vsls.json file to exclude or hide certain files or alter how Visual Studio Live Share processes the contents of .gitignore files in your shared folders. See the [security article](https://aka.ms/vsls-docs/security) for details. Note that we do have an open issue for case sensitive filesystems (e.g. Linux) with this feature we are working to resolve ASAP. (Update: Fixed in v0.3.198)
 
 6. *Join notifications and guest approval mode* 👍👎 (#110) - As a host, Live Share now tells you when a participant joins and gives you the option to remove them. If you'd prefer, you can switch into "guest approval mode" where the  explicitly approve each participant that joins. See the [security article](https://aka.ms/vsls-docs/security) for details.
 
