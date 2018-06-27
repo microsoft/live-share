@@ -2,7 +2,7 @@
 title: "Release Notes -  Visual Studio Live Share | Microsoft Docs"
 description: "A breakdown of changes by release for Visual Studio Live Share for Visual Studio and VS Code."
 ms.custom:
-ms.date: 05/7/2018
+ms.date: 06/27/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,7 @@ This is a small release with some fixes that resolve some telemetry indicated an
 
 This release includes some enhancements and bug fixes that resolve some key user-reported issues in both Visual Studio and Visual Studio Code. We really appreciate all of the usage/feedback, so please keep letting us know how to improve! 💯
 
-### Bug fixes (VS Code)
+### Enhancements (VS Code)
 
 1. *Linux: Enable sign-in without a user code* - The sign-in process on Linux is now exactly like Windows and Mac. No more entering user codes!
 
