@@ -76,7 +76,7 @@ Quickstarts
 How-tos
 
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-- [How-to: Collaborate using Visual Studio](../use/vscode.md)
+- [How-to: Collaborate using Visual Studio](../use/vs.md)
 - [How-to: Provide feedback](../support.md)
 
 Reference
