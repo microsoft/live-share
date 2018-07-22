@@ -301,29 +301,29 @@ Simply **edit settings.json** (File > Preferences > Settings), add one of the fo
 
 ## Following
 
-Sometimes you need to explain a problem or design that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you will automatically "follow" the host. When following a participant, your editor will stay in sync with their currently open file and scroll position.
+Sometimes you need to explain a problem or design that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you will automatically "follow" the host. When following someone, your editor will stay in sync with their currently open file and scroll position.
 
 > **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/54).
 
-To start following a participant (as either a host or guest), click the pin icon in the upper right of the tab set.
+To start following a participant (as either a host or guest), click the pin icon in the upper right of the editor group, or press **Ctrl+Alt+F / Cmd+Alt+F**.
 
 ![VS Code pin](../media/vscode-pin.png)
 
-If more than one other person is in the collaboration session you'll be asked to select the guest you want to follow.
+If more than one other person is in the collaboration session, you'll be asked to select the guest you want to follow.
 
 ![Screen shot showing list of collaborators](../media/vscode-list-collaborators.png)
 
-Since the pin is tied to a tab set, you can use split view to have a set that is pinned and a set that is unpinned if you so desire.
+Since the pin is tied to an editor group, you can use split view to have a group that is pinned and a group that is unpinned. This allows you to passively follow someone while working on something independently.
 
 ![VS Code pin in split view](../media/vscode-pin-split.png)
 
-To make it easy to switch out of "follow mode" and start editing on your own, you'll stop following if any of the following happens:
+To make it easy to switch out of "follow mode" and start editing on your own, you'll automatically stop following if any of these occur:
 
-1. You edit, move your cursor, or make a selection
-2. You select another file
-3. You click the pin icon again
+1. You start editing the currently active file 
+1. You open a different file
+1. You close the currently active file
 
-Afterwards, simply click the pin icon again to follow them once again. Note that if you just want to jump to someone's location rather than following them, simply double-click the pin.
+Additionally, you can explicitly stop following someone by clicking the pin icon again or hitting **Ctrl+Alt+F / Cmd+Alt+F**.
 
 ## Listing participants
 
