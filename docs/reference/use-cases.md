@@ -23,16 +23,18 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Common Use Cases
 
-The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **compliments** how you already prefer to work. 
+The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **compliments** how you already prefer to work.
 
 This document highlights some use cases that Visual Studio Live Share is already being used for, and describes how well we currently support them, and ways we plan to optimize them further  (based on feedback!). If you're using Live Share for something that isn't already covered below, or you think we can do better to support a specific use case, please [let us know](https://github.com/MicrosoftDocs/live-share/issues/new).
 
 * [Quick Assistance](#quick-assistance)
+    * [Office Hours](#office-hours)
 * [Pair Programming](#pair-programming)
     * [Mob Programming](#mob-programming)
     * [Coding Competitions / Hack-A-Thons](#coding-competitions--hack-a-thons)
     * [School Group Projects](#school-group-projects)
     * [Developer Streaming](#developer-streaming)
+    * [Prototyping / Project Inception](#prototypine--project-inception)
 * [Interactive Education](#interactive-education)
     * [Peer Mentoring / Onboarding](#peer-mentoring--onboarding)
     * [Team Brown Bags](#team-brown-bags)
@@ -44,6 +46,10 @@ This document highlights some use cases that Visual Studio Live Share is already
 When you run into an issue (e.g. trying to resolve a bug, setting up your environment), you can use Visual Studio Live Share to instantly seek assistance from another peer. In many cases, it isn't immediately clear what context the person providing help will need, and therefore, Live Share helps by making it simple to provide access to your entire project, and if/as needed, incrementally share more (e.g. a local server, read-only terminal). No need to send code snippets and/or error messages back-and-forth!
 
 Additionally, since Live Share allows you to share your active debug session, without requiring "guests" to install any of the necessary platforms SDKs (e.g. Node.js, Go, .NET Core) or tooling extensions, it can help you get resolution faster, and prevent "doesn't repro on my machine" situations. Live Share allows you to share debug state with others, for any programming language or runtime environment (e.g. Kubernetes, React Native app) and so regardless what you need help with, you can share it!
+
+### Office Hours
+
+Many businesses and educational institutions (e.g. schools, online training coursrs) provide support to their customers/employees/students at pre-determined times, and generally at a recurring frequency (e.g. every Friday from 3-5 PM). In this way, "office hours" are simply a scheduled form of "quick assistance", as opposed to being entirely ad-hoc. Live Share makes it easy to get help quickly, since the "expert" providing help can immediately join a collaboration session, and answer your question(s), without needing to setup their machine at all.
 
 ## Pair Programming
 
@@ -77,13 +83,17 @@ Coding competitions and hack-a-thons are effectively short-term, single-task var
 
 Since the participants in this environment might not always be fully "trusted", we've heard requests to allow removing (and blocking) a guest from a session at any time, which is something that we plan on enabling ([#398](https://github.com/MicrosoftDocs/live-share/issues/398)), and supports the goal of providing "hosts" with complete control over their environment.
 
-### School group projects
+### School Group Projects
 
 Group projects ends up looking a lot like mob programming, where multiple students are working together, and can transition seamlessly between focusing on a single task, or working on separate tasks concurrently. Instead of simply relying on version control to collaborate asynchronously, they can use Live Share to work together in real-time, which can help the social and educational benefits of working in a group.
 
 ### Developer Streaming
 
 Developer streaming (via Twitch or Mixer) has become a compelling new form of education. While Live Share isn't meant to replace their broadcasting platforms (though we've heard the request!), it does provide a means for the host to pair program with one or more guests, and then stream that interaction. This way, viewers can potentially learn more by seeing the natural interaction and thought process of two or more developers, who could even be working together in entirely separate operating systems and IDEs!
+
+### Prototyping / Project Inception
+
+When a team is starting a new project/microservice, or prototyping/spiking a new feature, it can often be helpful to collaborate together in order to make rapid progress and explore new ideas, while optmizing for progress as opposed to "stablization". Since the newly forming codebase might not be checked into version control yet, Live Share allows everyone to participate in the iterative process, regardless if they're in the same office or not.
 
 ## Interactive Education
 
@@ -103,7 +113,7 @@ When instructors are teaching a lesson, they can use Live Share to share their p
 
 To fully optimize Live Share for this scenario, we need to support read-only access ([#55](https://github.com/MicrosoftDocs/live-share/issues/55)), increase the current guest limit ([#229](https://github.com/MicrosoftDocs/live-share/issues/229)), and simplify the way that sessions are initiated ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
 
-## Code reviews
+## Code Reviews
 
 PRs are a powerful way to collaborate with others, but typically represent the completion of a task (excluding "WIP" PRs), and the desire to merged it in. Many times, the feedback that is given in a PR could  easily have been given earlier, and therefore, there's potentially value for teams to easily and continuously seek advice from their peers, as opposed to waiting until they "complete" a task to ask.
 
