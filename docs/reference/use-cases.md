@@ -34,7 +34,7 @@ This document highlights some use cases that Visual Studio Live Share is already
     * [Coding Competitions / Hack-A-Thons](#coding-competitions--hack-a-thons)
     * [School Group Projects](#school-group-projects)
     * [Developer Streaming](#developer-streaming)
-    * [Prototyping / Project Inception](#prototypine--project-inception)
+    * [Prototyping / Project Inception](#prototyping--project-inception)
 * [Interactive Education](#interactive-education)
     * [Peer Mentoring / Onboarding](#peer-mentoring--onboarding)
     * [Team Brown Bags](#team-brown-bags)
@@ -49,7 +49,7 @@ Additionally, since Live Share allows you to share your active debug session, wi
 
 ### Office Hours
 
-Many businesses and educational institutions (e.g. schools, online training coursrs) provide support to their customers/employees/students at pre-determined times, and generally at a recurring frequency (e.g. every Friday from 3-5 PM). In this way, "office hours" are simply a scheduled form of "quick assistance", as opposed to being entirely ad-hoc. Live Share makes it easy to get help quickly, since the "expert" providing help can immediately join a collaboration session, and answer your question(s), without needing to setup their machine at all.
+Many businesses and educational institutions (e.g. schools, online training courses) provide support to their customers/employees/students at pre-determined times, and generally on a recurring frequency (e.g. every Friday from 3-5 PM). In this way, "office hours" are simply a scheduled form of "quick assistance", as opposed to being entirely ad-hoc. Live Share makes it easy to get help quickly, since the "expert" providing help can immediately join a collaboration session, and answer your question(s), without needing to setup their machine at all.
 
 ## Pair Programming
 
@@ -93,7 +93,7 @@ Developer streaming (via Twitch or Mixer) has become a compelling new form of ed
 
 ### Prototyping / Project Inception
 
-When a team is starting a new project/microservice, or prototyping/spiking a new feature, it can often be helpful to collaborate together in order to make rapid progress and explore new ideas, while optmizing for progress as opposed to "stablization". Since the newly forming codebase might not be checked into version control yet, Live Share allows everyone to participate in the iterative process, regardless if they're in the same office or not.
+When a team is starting a new project/microservice, or prototyping/spiking a new feature, it can often be helpful to collaborate together in order to make rapid progress and explore new ideas. Since the newly forming codebase might not be committed to a shared repository yet, Live Share allows everyone to participate in the iterative process, regardless if they're in the same office or not.
 
 ## Interactive Education
 
