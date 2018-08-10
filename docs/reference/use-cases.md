@@ -66,7 +66,7 @@ One of the most commonly used scenarios for Visual Studio Live Share is "pair pr
 
 1. The proximity of participants (e.g. co-located in the same building, across the world)
 
-Live Share was designed to be agnostic to all of the aforementioned concerns, and instead, strives to support pair programming that is completely "opportunistic" and catered to your situation. That said, unlike two developers sharing a single keyboard and screen, Live Share enables a form of pair programming that allows developers to work on a shared goal, without removing their individual autonomy or environment preferences. You can work independently, or together, allowing each participant to bring their own thought process to the collaboration. 
+Live Share was designed to be agnostic to all of the aforementioned concerns, and instead, strives to support pair programming that is completely "opportunistic" and catered to your situation. That said, unlike two developers sharing a single keyboard and screen, Live Share enables a form of pair programming that allows developers to work on a shared goal, without removing their individual autonomy or environment preferences. You can work independently, or together, allowing each participant to bring their own thought process to the collaboration.
 
 To further support pair programming, and allow each "guest" to perform commonly-required actions, we have work on our roadmap to continue increasing the context and capabilities that are shared in a Live Share session: tasks ([#40](https://github.com/MicrosoftDocs/live-share/issues/40)), build output ([#48](https://github.com/MicrosoftDocs/live-share/issues/48)), guest-driven debugging ([#32](https://github.com/MicrosoftDocs/live-share/issues/32)), and more. Let us know which of these experiences are important to you!
 
@@ -74,7 +74,7 @@ To break this use case down even further, the following items represent forms of
 
 ### Mob Programming
 
-[Mob programming](https://en.wikipedia.org/wiki/Mob_programming) (or swam programming) is essentially pair programming, but with more than two people. Therefore, all of the benefits of Live Share for pair programming apply equally as well. Additionally, some teams do "swarming" on an as-needed basis (e.g. the team rallying around a firedrill) as opposed to full-time. 
+[Mob programming](https://en.wikipedia.org/wiki/Mob_programming) (or swam programming) is essentially pair programming, but with more than two people. Therefore, all of the benefits of Live Share for pair programming apply equally as well. Additionally, some teams do "swarming" on an as-needed basis (e.g. the team rallying around a firedrill) as opposed to full-time.
 
 Currently, Live Share supports up to five guests within a session, which may or may not accommodate your team size. However, this is something we plan to increase (for various use cases), and are looking for feedback on ([Vote 👍 Here](https://github.com/MicrosoftDocs/live-share/issues/229))
 
@@ -120,7 +120,7 @@ PRs are a powerful way to collaborate with others, but typically represent the c
 
 Since Live Share allows you to instantly share your project with others, it can be used to enable "informal"/ad-hoc code reviews, where instead of asking for help, you're simply seeking input to ensure your direction and/or approach aligns with others. This can potentially help subsequent PRs complete quicker, and definitely helps socialize knowledge across the team.
 
-Additionally, since Live Share allows you to share an arbitrary directory, you can use it to perform code reviews, even if you're not currently using version control (though you should!), or if your team doesn't use PRs (E.g. you do trunk-based development). 
+Additionally, since Live Share allows you to share an arbitrary directory, you can use it to perform code reviews, even if you're not currently using version control (though you should!), or if your team doesn't use PRs (E.g. you do trunk-based development).
 
 Live Share doesn't currently share source control diffs, which is a critical piece of context when using it for code reviews. This is on our roadmap, and any feedback on priority is greatly appreciated ([Vote 👍 Here](https://github.com/MicrosoftDocs/live-share/issues/36)).
 
@@ -132,10 +132,10 @@ Additionally, real-world development is more than simply writing code. Because L
 
 ## See also
 
-- [Language and platform support](platform-support.md)
-- [Connectivity requirements for Live Share](connectivity.md)
-- [Security features of Live Share](security.md)
-- [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
-- [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
+* [Language and platform support](platform-support.md)
+* [Connectivity requirements for Live Share](connectivity.md)
+* [Security features of Live Share](security.md)
+* [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
+* [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
