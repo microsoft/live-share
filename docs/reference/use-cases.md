@@ -40,6 +40,7 @@ This document highlights some use cases that Visual Studio Live Share is already
     * [Team Brown Bags](#team-brown-bags)
     * [Classroom Lectures](#classroom-lectures)
 * [Code Reviews](#code-reviews)
+* [Technical Interviews](#technical-interviews)
 
 ## Quick assistance
 
@@ -122,6 +123,12 @@ Since Live Share allows you to instantly share your project with others, it can 
 Additionally, since Live Share allows you to share an arbitrary directory, you can use it to perform code reviews, even if you're not currently using version control (though you should!), or if your team doesn't use PRs (E.g. you do trunk-based development). 
 
 Live Share doesn't currently share source control diffs, which is a critical piece of context when using it for code reviews. This is on our roadmap, and any feedback on priority is greatly appreciated ([Vote 👍 Here](https://github.com/MicrosoftDocs/live-share/issues/36)).
+
+## Technical Interviews
+
+When interviewing candidates for a developer position, it can often be helpful to go beyond whiteboard discussions, and instead, observe them solving a coding problem from within an actual IDE (especially if your team/organization has "standardized" on a tool that you'd like to see them use). This not only gives them the benefit of working in a way that is potentially more natural/comfortable (most developers don't code on whiteboards!), but also, gives them immediate feedback/assistance (e.g. build errors, intellisense). Many times, it's more important to understand a candidate's thought process, as opposed to their ability to memorize exact syntax and/or API names. In this way, Live Share provides an experience that is similar to doing a pair programming session, but allows each participant to be in their own environment, and would work equally as well for local or remote interviews.
+
+Additionally, real-world development is more than simply writing code. Because Live Share supports shared debugging as well, it allows interviewers to ask candidates to diagnose an issue in an existing codebase. Since all context is remoted from the host's machine, this enables candidates to quickly join into the interview without needing to setup their machine (beyond installing Live Share). This way, teams/organizations could maintain a repositoriy of shared interviewing apps, that can be easily cloned, and then shared out with candidates.
 
 ## See also
 
