@@ -65,7 +65,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### 2. Sign in
 
-After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process. Click the "sign in" button / status bar item to get started.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process. Click the "share" status bar item (VS Code) / "sign in" button (VS) to get started.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -78,7 +78,9 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 </tr>
 </table>
 
-In **VS Code**, a browser appears for you to use to complete the sign in process. Simply close the browser when done.
+In **VS Code**, a notification will appear asking you to sign in using your web browser. Clicking "launch sign in" will open a browser for you to use to complete the sign in process. Simply close the browser when done.
+
+![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
 
 > **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [here for details](../use/vscode.md#sign-in-using-a-user-code).
 

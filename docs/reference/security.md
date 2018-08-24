@@ -54,6 +54,10 @@ As a host, you are also notified whenever a guest joins the collaboration sessio
 
 Better still, the notification gives you the ability to remove a guest that has joined if for some reason you do not know them. (For example, if you accidentally posted your link on a company-wide chat system and a random employee joined.) Simply click on the "Remove" button in the notification that appears and they will be ejected from the collaboration session.
 
+In **VS Code**, even if you have dismissed a join notification, you also have the ability to remove a participant after that. By opening the Live Share view in the Explorer or the custom tab in the VS Code activity bar, you can hover over or right-click a participant's name and select the "Remove participant" icon or option.
+
+![Remove participant in VS Code](../media/vscode-remove-participant.png)
+
 ### Requiring guest approval
 
 While the "notification + remove" default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
