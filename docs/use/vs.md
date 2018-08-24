@@ -364,7 +364,7 @@ As a host, you can share a terminal by clicking on the session state / share but
 
 ![Terminal menu](../media/vs-terminal-menu.png)
 
-At this point you can select a read-only or read/write terminal from the menu. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
+At this point, you can select a read-only or read/write terminal from the menu. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
 Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear for all participants with the correct permissions. While Visual Studio Code has a built in terminal support Visual Studio does not have one out of box. Therefore, by default, new window containing the terminal will appear. However, if the [Whack Whack Terminal extension](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal), Live Share will create an integrated terminal instead. Visual Studio will give you a link to install it the first time you start or join a shared terminal.
 
