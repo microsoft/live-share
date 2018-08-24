@@ -128,7 +128,7 @@ The **gitignore** setting establishes how Live Share should process the contents
 | `hide`    | **The default.** Globs inside .gitignores are processed as if they were in the "hideFiles" property.                   |
 | `exclude` | Globs inside .gitignores are processed as if they were in the "excludeFiles" property.                                 |
 
-A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
+A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability to reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
 
     {
         "$schema": "http://json.schemastore.org/vsls",
@@ -177,7 +177,7 @@ You can learn more about configuring the feature here: [![VS Code](../media/vsco
 
 ## Sharing a terminal
 
-Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
+Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment-specific problems.
 
 However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way if you can freely run commands in local terminals without risk and only share them when you actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
 
@@ -187,7 +187,7 @@ Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-
 
 ## AAD Admin Consent
 
-When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its security features and your Azure AD tenant is setup to require “admin consent” for new applications accessing the contents of the directory.
+When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its security features and your Azure AD tenant is set up to require “admin consent” for new applications accessing the contents of the directory.
 
 Your AD admin would need to resolve this for you using the following information:
 
