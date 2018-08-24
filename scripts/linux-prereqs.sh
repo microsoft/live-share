@@ -54,7 +54,7 @@ elif type apt > /dev/null 2>&1; then
     fi
     # On Debian, .NET Core will crash if there is more than one version of libssl1.0 installed.
     # Remove one if this situation is detected. See https://github.com/dotnet/core/issues/973
-    LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1 | sed -n -e '/^i/p' | grep -o 'libssl1\.0\.[0-9]:')
+    LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1 | sed -n -e '/^i/p' | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort)
     if [ $? -ne 0 ]; then
         echo "(!) Installation failed! Press enter to dismiss this message."
         read
@@ -85,7 +85,12 @@ elif type apt > /dev/null 2>&1; then
             echo ""
             echo "(!) WARNING: $LIBSSLCOUNT sub-versions of libssl1.0 detected. This can crash Live Share."
             echo ""
-            read -p "Attempt to fix by removing $LIBSSLFIRSTPKG [Y/n]? "
+            echo "This script can attempt to fix this by removing the package \"$LIBSSLFIRSTPKG\"".
+            echo "However, doing so MAY REMOVE OTHER PACKAGES ON YOUR SYSTEM. If you proceed, you"
+            echo "will presented with a complete list of libraries that will added and be removed."
+            echo "Please verify you want this list of packages removed and cancel if not."
+            echo ""
+            read -p "Attempt to fix by removing the library [Y/n]? "
             if [[ "$REPLY" == "" ]] || [[ "$REPLY"  =~ ^[Yy] ]]; then
                 # This can remove other packages, so skip "-yq" so user can review impact
                 echo ""
