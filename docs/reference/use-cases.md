@@ -112,7 +112,9 @@ Team brown bags are effectively like peer mentoring, but presented to an entire 
 
 When instructors are teaching a lesson, they can use Live Share to share their project with students, instead of simply presenting their screen. This allows the entire class to follow along with the teacher, while being able to interact with the project on their own. Additionally, the teacher can ask individual students to assist in solving a particular portion of the lesson (e.g. "Which method should we call here?"), which can help in the social aspects of the class, without requiring students to walk up to the front of the room, or even be physically present in the same room (e.g. online courses).
 
-To fully optimize Live Share for this scenario, we need to support read-only access ([#55](https://github.com/MicrosoftDocs/live-share/issues/55)), increase the current guest limit ([#229](https://github.com/MicrosoftDocs/live-share/issues/229)), and simplify the way that sessions are initiated ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
+To aid in classroom settings, Live Share enables sharing in read-only mode, and have up to 30 guests in a session. Instructors can use read-only mode to enable them to share their projects with students without having to worry about unnecessary or accidental edits being made. 
+
+To fully optimize Live Share for this scenario, we need to further increase the current guest limit ([#229](https://github.com/MicrosoftDocs/live-share/issues/229)), and simplify the way that sessions are initiated ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
 
 ## Code Reviews
 
