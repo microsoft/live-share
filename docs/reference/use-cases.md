@@ -74,7 +74,7 @@ To break this use case down even further, the following items represent forms of
 
 ### Mob Programming
 
-[Mob programming](https://en.wikipedia.org/wiki/Mob_programming) (or swam programming) is essentially pair programming, but with more than two people. Therefore, all of the benefits of Live Share for pair programming apply equally as well. Additionally, some teams do "swarming" on an as-needed basis (e.g. the team rallying around a firedrill) as opposed to full-time.
+[Mob programming](https://en.wikipedia.org/wiki/Mob_programming) (or swarm programming) is essentially pair programming, but with more than two people. Therefore, all of the benefits of Live Share for pair programming apply equally as well. Additionally, some teams do "swarming" on an as-needed basis (e.g. the team rallying around a firedrill) as opposed to full-time.
 
 Currently, Live Share supports up to five guests within a session, which may or may not accommodate your team size. However, this is something we plan to increase (for various use cases), and are looking for feedback on ([Vote 👍 Here](https://github.com/MicrosoftDocs/live-share/issues/229))
 
