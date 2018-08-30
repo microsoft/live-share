@@ -113,7 +113,25 @@ Next, simply click "Share" within your tool and an invite link is automatically 
 
 > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [change the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
-### 6. Send someone the invite link
+### 6. [Optional] Enable read-only mode
+
+Once you start your collaboration session, you can set the session to be read-only to prevent guests from making edits to the code being shared.
+
+After sharing, you will get a notification that the invite link has been copied to your clipboard. You can then select the option to make the session read-only.
+
+<table style="border: none;">
+<tr style="border: none;">
+    <td width="50%" style="vertical-align: top; border: none;">
+        <img src="../media/vscode-read-only-toast.png" width="100%" alt="Visual Studio Code read-only option" />
+    </td>
+    <td width="50%" style="vertical-align: top; border: none;">
+        <img src="../media/vs-read-only-notification.png" width="100%" alt="Visual Studio read-only option"/>
+    </td>
+</tr>
+</table>
+
+
+### 7. Send someone the invite link
 
 Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Opening the link in a browser allows them to join the collaboration session that is sharing the contents of the folder, project, or solution that you opened. Note that, given the level of access Live Share sessions can provide to guests, **you should only share with people you trust** and think through the implications of what you are sharing.
 
@@ -121,7 +139,7 @@ Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Openi
 
 If the guest you invited has questions, the [Quickstart: Join your first session](join.md) article provides some more information on getting up and running as a guest.
 
-### 7. [Optional] Approve the guest
+### 8. [Optional] Approve the guest
 
 By default, guests automatically join your collaboration session and you are notified when they're ready to work with you.
 
@@ -140,7 +158,7 @@ While this notification gives you the option to remove them from the collaborati
 
 See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to turn this feature on.
 
-### 6. Collaborate!
+### 9. Collaborate!
 
 That's it! Here are a few things to try out once a guest has joined you:
 

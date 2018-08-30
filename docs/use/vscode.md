@@ -179,7 +179,15 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     Note that if you need to get the invite link again after you've started sharing, you access it again by clicking on the session state status bar icon and select "Invite Others (Copy Link)".
 
-5. **Send someone the link**
+5. **[Optional] Enable read-only mode**
+
+    Once you start your collaboration session, you can set the session to be read-only to prevent guests from making edits to the code being shared.
+
+    After sharing, you will get a notification that the invite link has been copied to your clipboard. You can then select the option to make the session read-only.
+
+    ![VS Code Read-only mode](../media/vscode-read-only-toast.png)
+
+6. **Send someone the link**
 
     Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Note that, given the level of access Live Share sessions can provide to guests, **you should only share with people you trust** and think through the implications of what you are sharing.
 
@@ -187,7 +195,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     If the guest you invited has questions, the "[Quickstart: Join your first session](../quickstart/join.md)" article provides some more information on getting up and running as a guest.
 
-6. **[Optional] Approve the guest**
+7. **[Optional] Approve the guest**
 
     By default, guests will automatically join your collaboration session and you'll be notified when they're ready to work with you. While this notification gives you the option to remove them from the session, you can also opt to instead require an explicit "approval" for anyone joining.
 
@@ -288,6 +296,8 @@ Having issues with joining? Check out [troubleshooting](../troubleshooting.md#sh
 ## Co-editing
 
 Once a guest has joined a collaboration session, all collaborators will immediately be able to see each other's edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves making it easy iterate and rapidly nail to down solutions.
+
+> **Note:** Joining a read-only collaboration session prevents guests from being able to make edits to files. A host can [enable read-only mode when they share](#share-a-project). As a guest, you can tell if you have joined a read-only session by looking at your [session state](#session-states). 
 
 ![Screen shot showing co-editing](../media/vscode-coedit.png)
 
@@ -403,6 +413,8 @@ Anyone can step through the debugging process which enables seamless switching b
 
 Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
+> **Note:** While in a read-only collaboration session, a guest will not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables. 
+
 ![Animation of concurrent debugging](../media/co-debug.gif)
 
 ### Change when VS Code joins debugging sessions
@@ -475,6 +487,8 @@ As a host, you can share a terminal by opening the Live Share custom tab in the 
 
 At this point, you can select a read-only or read/write terminal from the menu. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
+>**Note:** If the collaboration session is in read-only mode, only read-only terminals can be shared by the host. 
+
 ![Read-only or read/write selection](../media/vscode-share-terminal-ro-rw.png)<br />
 
 Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear under VS Code's terminals tab.
@@ -498,8 +512,10 @@ The following are the states you will typically see:
 | Inactive | ![VS Code status: inactive](../media/vscode-status-share.png) | No active collaboration session and nothing is shared. |
 | Host: Sharing In-Progress | ![VS Code status: share in progress](../media/vscode-status-sharing.png)| A collaboration session is starting and content sharing will begin shortly. |
 | Host: Sharing | ![VS Code status: sharing active ](../media/vscode-status-active.png)| A collaboration session is active and content is shared. |
+| Host: Sharing Read-only | ![VS Code status: sharing read-only](../media/vscode-status-sharing-read-only.png)| Sharing a read-only collaboration session. |
 | Guest: Joining Session | ![VS Code status: joining](../media/vscode-status-joining.png)| Joining an existing collaboration session. |
 | Guest: Joined | ![VS Code status: joined](../media/vscode-status-active.png) | Joined and connected to an active collaboration session and receiving shared content. |
+| Guest: Joined Read-only | ![VS Code status: joined read-only](../media/vscode-status-joined-read-only.png) | Joined and connected to an active read-only collaboration session. |
 
 ## Guest limitations
 
