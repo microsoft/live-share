@@ -299,7 +299,7 @@ Anyone can step through the debugging process which enables seamless switching b
 
 Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
-> **Note:** While in a read-only collaboration session, a guest while not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables. 
+> **Note:** While in a read-only collaboration session, a guest will not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables. 
 
 > **Tip:** You can also participate in VS Code debugging sessions from Visual Studio and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debugging) on co-debugging for more information.
 
