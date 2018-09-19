@@ -44,7 +44,7 @@ Open the Live Share custom tab in the VS Code activity bar, and select the "Join
 
 #### 3. Paste the invite link
 
-Paste in the invite URL you were sent and confirm.
+Paste in the invite URL you were sent and hit 'Enter' to confirm.
 
 That's it! You should be connected to the collaboration session momentarily.
 
@@ -66,7 +66,7 @@ Simply go to **File > Join Collaboration Session**.
 
 #### 3. Paste the invite link
 
-Paste in the invite URL you were sent and confirm.
+Paste in the invite URL you were sent and hit 'Enter' to confirm.
 
 That's it! You should be connected to the collaboration session momentarily.
 
