@@ -16,14 +16,15 @@ echo "will attempt to install for you. Note you may be prompted for your admin (
 echo "password during the installation process."
 echo ""
 
-# Script can skip installing .NET Core, keyring, or browser integretion dependencies
-# First argument is for .NET Core, second for keyring, and third for browser integration
+# Script can skip installing .NET Core, keyring, or browser integretion dependencies.
+# Pass false to the first argument to skip .NET Core, second to skip keyring, and 
+# and third to skip browser integration dependency installation.
 if [ "$1" = "false" ]; then NETCOREDEPS=0; else NETCOREDEPS=1; fi
 if [ "$2" = "false" ]; then KEYRINGDEPS=0; else KEYRINGDEPS=1; fi
 if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 
 # Wrapper function to only use sudo if not already root
-sudo()
+sudoif()
 {
     if [ $EUID -ne 0 ]; then
         set -- command sudo "$@"
@@ -36,9 +37,9 @@ if type zypper > /dev/null 2>&1; then
     echo "(*) Detected SUSE (unoffically/community supported)"
     echo ""
 
-    if [ $NETCOREDEPS ]; then
+    if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
-        sudo zypper -n in libopenssl1_0_0 libicu krb5 libz1
+        sudoif zypper -n in libopenssl1_0_0 libicu krb5 libz1
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -46,9 +47,9 @@ if type zypper > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $KEYRINGDEPS ]; then
+    if [ $KEYRINGDEPS -ne 0 ]; then
         # Install keyring dependencies
-        sudo zypper -n in gnome-keyring libsecret-1-0
+        sudoif zypper -n in gnome-keyring libsecret-1-0
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -56,9 +57,9 @@ if type zypper > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $BROWSERDEPS ]; then
-        # Install browser integration dependencies
-        sudo zypper -n in desktop-file-utils xprop
+    if [ $BROWSERDEPS -ne 0 ]; then
+        # Install browser integration and clipboard dependencies
+        sudoif zypper -n in desktop-file-utils xprop
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -72,17 +73,22 @@ elif type apt-get > /dev/null 2>&1; then
     echo "(*) Detected Debian / Ubuntu"
     echo ""
 
-    while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
+    while sudoif fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
         echo "Waiting for other package operations to complete..."
         sleep 2
     done
 
     # Get latest package data
-    sudo apt-get update
+    sudoif apt-get update
+    if [ $? -ne 0 ]; then
+        echo "(!) Installation failed! Press enter to dismiss this message."
+        read
+        exit 1
+    fi
 
-    if [ $NETCOREDEPS ]; then
+    if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
-        sudo apt-get install -yq libicu[0-9][0-9] libkrb5-3 zlib1g
+        sudoif apt-get install -yq libicu[0-9][0-9] libkrb5-3 zlib1g
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -99,14 +105,14 @@ elif type apt-get > /dev/null 2>&1; then
         if [[ -z $LIBSSL ]]; then 
             # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
             if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
-                sudo apt-get install -yq libssl1.0.2
+                sudoif apt-get install -yq libssl1.0.2
                 if [ $? -ne 0 ]; then
                     echo "(!) Installation failed! Press enter to dismiss this message."
                     read
                     exit 1
                 fi
             else    
-                sudo apt-get install -yq libssl1.0.0
+                sudoif apt-get install -yq libssl1.0.0
                 if [ $? -ne 0 ]; then
                     echo "(!) Installation failed! Press enter to dismiss this message."
                     read
@@ -130,7 +136,7 @@ elif type apt-get > /dev/null 2>&1; then
                 if [[ "$REPLY" == "" ]] || [[ "$REPLY"  =~ ^[Yy] ]]; then
                     # This can remove other packages, so skip "-yq" so user can review impact
                     echo ""
-                    sudo apt-get remove $LIBSSLFIRSTPKG
+                    sudoif apt-get remove $LIBSSLFIRSTPKG
                     if [ $? -ne 0 ]; then
                         echo "(!) Installation failed! Press enter to dismiss this message."
                         read
@@ -143,9 +149,9 @@ elif type apt-get > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $KEYRINGDEPS ]; then
+    if [ $KEYRINGDEPS -ne 0 ]; then
         # Install keyring dependencies
-        sudo apt-get install -yq gnome-keyring libsecret-1-0
+        sudoif apt-get install -yq gnome-keyring libsecret-1-0
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -153,9 +159,9 @@ elif type apt-get > /dev/null 2>&1; then
         fi
     fi 
 
-    if [ $BROWSERDEPS ]; then
+    if [ $BROWSERDEPS -ne 0 ]; then
         # Install browser integration dependencies
-        sudo apt-get install -yq desktop-file-utils x11-utils
+        sudoif apt-get install -yq desktop-file-utils x11-utils
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -168,9 +174,9 @@ elif type yum  > /dev/null 2>&1; then
     echo "(*) Detected RHL / Fedora / CentOS"
     echo ""
 
-    if [ $NETCOREDEPS ]; then
+    if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
-        sudo yum -y install openssl-libs krb5-libs libicu zlib
+        sudoif yum -y install openssl-libs krb5-libs libicu zlib
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -178,9 +184,9 @@ elif type yum  > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $KEYRINGDEPS ]; then
+    if [ $KEYRINGDEPS -ne 0 ]; then
         # Install keyring dependencies
-        sudo yum -y install gnome-keyring libsecret
+        sudoif yum -y install gnome-keyring libsecret
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -188,9 +194,9 @@ elif type yum  > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $BROWSERDEPS ]; then
+    if [ $BROWSERDEPS -ne 0 ]; then
         # Install browser integration dependencies
-        sudo yum -y install desktop-file-utils xorg-x11-utils
+        sudoif yum -y install desktop-file-utils xorg-x11-utils
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -203,9 +209,9 @@ elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected ArchLinux (unoffically/community supported)"
     echo ""
 
-    if [ $NETCOREDEPS ]; then
+    if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
-        sudo pacman -Sq --needed gcr liburcu openssl-1.0 krb5 icu zlib
+        sudoif pacman -Sq --needed gcr liburcu openssl-1.0 krb5 icu zlib
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -213,9 +219,9 @@ elif type pacman > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $KEYRINGDEPS ]; then
+    if [ $KEYRINGDEPS -ne 0 ]; then
         # Install keyring dependencies
-        sudo pacman -Sq --needed gnome-keyring libsecret
+        sudoif pacman -Sq --needed gnome-keyring libsecret
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -223,9 +229,9 @@ elif type pacman > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $BROWSERDEPS ]; then
+    if [ $BROWSERDEPS -ne 0 ]; then
         # Install browser integration dependencies
-        sudo pacman -Sq --needed desktop-file-utils xorg-xprop
+        sudoif pacman -Sq --needed desktop-file-utils xorg-xprop
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -238,9 +244,9 @@ elif type eopkg > /dev/null 2>&1; then
     echo "(*) Detected Solus (unoffically/community supported)"
     echo ""
 
-    if [ $NETCOREDEPS ]; then
+    if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
-        sudo eopkg -y it libicu openssl zlib
+        sudoif eopkg -y it libicu openssl zlib kerberos
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -248,9 +254,9 @@ elif type eopkg > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $KEYRINGDEPS ]; then
+    if [ $KEYRINGDEPS -ne 0 ]; then
         # Install keyring dependencies
-        sudo eopkg -y it gnome-keyring libsecret
+        sudoif eopkg -y it gnome-keyring libsecret
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -258,9 +264,9 @@ elif type eopkg > /dev/null 2>&1; then
         fi
     fi
 
-    if [ $BROWSERDEPS ]; then
+    if [ $BROWSERDEPS -ne 0 ]; then
         # Install browser integration dependencies
-        sudo eopkg -y it desktop-file-utils xprop
+        sudoif eopkg -y it desktop-file-utils xprop
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
