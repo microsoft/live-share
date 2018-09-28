@@ -175,6 +175,14 @@ elif type yum  > /dev/null 2>&1; then
     echo "(*) Detected RHL / Fedora / CentOS"
     echo ""
 
+    # Update package repo indexes
+    sudoif yum check-update
+    if [ $? -ne 0 ]; then
+        echo "(!) Installation failed! Press enter to dismiss this message."
+        read
+        exit 1
+    fi
+
     if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
         sudoif yum -y install openssl-libs krb5-libs libicu zlib
