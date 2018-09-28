@@ -27,7 +27,7 @@ if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 sudoif()
 {
     # Alpine returns nothing for $EUID, so assume root in this case
-    if [ "$EUID" != "" ] && [ $EUID -ne 0]; then
+    if [ "$EUID" != "" ] && [ $EUID -ne 0 ]; then
         set -- command sudo "$@"
     fi
     "$@"
@@ -212,7 +212,7 @@ elif type pacman > /dev/null 2>&1; then
 
     if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
-        sudoif pacman -Sq --needed gcr liburcu openssl-1.0 krb5 icu zlib
+        sudoif pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -222,7 +222,7 @@ elif type pacman > /dev/null 2>&1; then
 
     if [ $KEYRINGDEPS -ne 0 ]; then
         # Install keyring dependencies
-        sudoif pacman -Sq --needed gnome-keyring libsecret
+        sudoif pacman -Sq --noconfirm --needed gnome-keyring libsecret
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
@@ -232,7 +232,7 @@ elif type pacman > /dev/null 2>&1; then
 
     if [ $BROWSERDEPS -ne 0 ]; then
         # Install browser integration dependencies
-        sudoif pacman -Sq --needed desktop-file-utils xorg-xprop
+        sudoif pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
