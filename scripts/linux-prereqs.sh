@@ -26,7 +26,8 @@ if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 # Wrapper function to only use sudo if not already root
 sudoif()
 {
-    if [ $EUID -ne 0 ]; then
+    # Alpine returns nothing for $EUID, so assume root in this case
+    if [ "$EUID" != "" ] && [ $EUID -ne 0]; then
         set -- command sudo "$@"
     fi
     "$@"
@@ -267,6 +268,49 @@ elif type eopkg > /dev/null 2>&1; then
     if [ $BROWSERDEPS -ne 0 ]; then
         # Install browser integration dependencies
         sudoif eopkg -y it desktop-file-utils xprop
+        if [ $? -ne 0 ]; then
+            echo "(!) Installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+#Alpine Linux
+elif type apk > /dev/null 2>&1; then
+    echo "(*) Detected Alpine Linux"
+    echo ""
+
+    # Update package repo indexes
+    sudoif apk update --wait 30
+    if [ $? -ne 0 ]; then
+        echo "(!) Installation failed! Press enter to dismiss this message."
+        read
+        exit 1
+    fi
+
+    if [ $NETCOREDEPS -ne 0 ]; then
+        # Install .NET Core dependencies
+        sudoif apk add --no-cache libssl1.0 icu krb5 zlib
+        if [ $? -ne 0 ]; then
+            echo "(!) Installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $KEYRINGDEPS -ne 0 ]; then
+        # Install keyring dependencies
+        sudoif apk add --no-cache gnome-keyring libsecret
+        if [ $? -ne 0 ]; then
+            echo "(!) Installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $BROWSERDEPS -ne 0 ]; then
+        # Install browser integration dependencies
+        sudoif apk add --no-cache desktop-file-utils xprop
         if [ $? -ne 0 ]; then
             echo "(!) Installation failed! Press enter to dismiss this message."
             read
