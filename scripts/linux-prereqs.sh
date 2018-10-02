@@ -56,7 +56,7 @@ if type zypper > /dev/null 2>&1; then
             read
             exit 1
         fi
-    fi
+    fi 
 
     if [ $BROWSERDEPS -ne 0 ]; then
         # Install browser integration and clipboard dependencies
