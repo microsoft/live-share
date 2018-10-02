@@ -128,7 +128,7 @@ elif type apt-get > /dev/null 2>&1; then
                 echo ""
                 echo "(!) WARNING: $LIBSSLCOUNT sub-versions of libssl1.0 detected. This can crash Live Share."
                 echo ""
-                echo "This script can attempt to fix this by removing the package \"$LIBSSLFIRSTPKG\"".
+                echo "This script can attempt to fix this by removing the package $LIBSSLFIRSTPKG."
                 echo "However, doing so MAY REMOVE OTHER PACKAGES ON YOUR SYSTEM. If you proceed, you"
                 echo "will presented with a complete list of libraries that will added and be removed."
                 echo "Please verify you want this list of packages removed and cancel if not."
