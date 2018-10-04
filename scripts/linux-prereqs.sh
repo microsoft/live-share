@@ -60,7 +60,7 @@ if type zypper > /dev/null 2>&1; then
         # Install .NET Core dependencies
         sudoif zypper -n in libopenssl1_0_0 libicu krb5 libz1
         if [ $? -ne 0 ]; then
-            echo "(!) .NET Core dependency installation failed! Press enter to dismiss this message."
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -70,7 +70,7 @@ if type zypper > /dev/null 2>&1; then
         # Install keyring dependencies
         sudoif zypper -n in gnome-keyring libsecret-1-0
         if [ $? -ne 0 ]; then
-            echo "(!) Credential storage dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -80,7 +80,7 @@ if type zypper > /dev/null 2>&1; then
         # Install browser integration and clipboard dependencies
         sudoif zypper -n in desktop-file-utils xprop
         if [ $? -ne 0 ]; then
-            echo "(!) Browser integration dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -109,7 +109,7 @@ elif type apt-get > /dev/null 2>&1; then
         # Install .NET Core dependencies
         sudoif apt-get install -yq libicu[0-9][0-9] libkrb5-3 zlib1g
         if [ $? -ne 0 ]; then
-            echo "(!) .NET Core dependency installation failed! Press enter to dismiss this message."
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -117,7 +117,7 @@ elif type apt-get > /dev/null 2>&1; then
         # Remove one if this situation is detected. See https://github.com/dotnet/core/issues/973
         LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1 | sed -n -e '/^i/p' | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort)
         if [ $? -ne 0 ]; then
-            echo "(!) Installation failed! Press enter to dismiss this message."
+            echo "(!) Failed see if libssl already installed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -126,14 +126,14 @@ elif type apt-get > /dev/null 2>&1; then
             if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
                 sudoif apt-get install -yq libssl1.0.2
                 if [ $? -ne 0 ]; then
-                    echo "(!) libssl1.0.2 dependency installation failed! Press enter to dismiss this message."
+                    echo "(!) libssl1.0.2 installation failed! Press enter to dismiss this message."
                     read
                     exit 1
                 fi
             else    
                 sudoif apt-get install -yq libssl1.0.0
                 if [ $? -ne 0 ]; then
-                    echo "(!) libssl1.0.0 dependency installation failed! Press enter to dismiss this message."
+                    echo "(!) libssl1.0.0 installation failed! Press enter to dismiss this message."
                     read
                     exit 1
                 fi
@@ -172,7 +172,7 @@ elif type apt-get > /dev/null 2>&1; then
         # Install keyring dependencies
         sudoif apt-get install -yq gnome-keyring libsecret-1-0
         if [ $? -ne 0 ]; then
-            echo "(!) Credential storage dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -182,7 +182,7 @@ elif type apt-get > /dev/null 2>&1; then
         # Install browser integration dependencies
         sudoif apt-get install -yq desktop-file-utils x11-utils
         if [ $? -ne 0 ]; then
-            echo "(!) Browser integration dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -200,7 +200,7 @@ elif type yum  > /dev/null 2>&1; then
         # Install .NET Core dependencies
         sudoif yum -y install openssl-libs krb5-libs libicu zlib
         if [ $? -ne 0 ]; then
-            echo "(!) .NET Core dependency installation failed! Press enter to dismiss this message."
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -210,7 +210,7 @@ elif type yum  > /dev/null 2>&1; then
         # Install keyring dependencies
         sudoif yum -y install gnome-keyring libsecret
         if [ $? -ne 0 ]; then
-            echo "(!) Credential storage dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -220,7 +220,7 @@ elif type yum  > /dev/null 2>&1; then
         # Install browser integration dependencies
         sudoif yum -y install desktop-file-utils xorg-x11-utils
         if [ $? -ne 0 ]; then
-            echo "(!) Browser integration dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -235,7 +235,7 @@ elif type pacman > /dev/null 2>&1; then
         # Install .NET Core dependencies
         sudoif pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib
         if [ $? -ne 0 ]; then
-            echo "(!) .NET Core dependency installation failed! Press enter to dismiss this message."
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -245,7 +245,7 @@ elif type pacman > /dev/null 2>&1; then
         # Install keyring dependencies
         sudoif pacman -Sq --noconfirm --needed gnome-keyring libsecret
         if [ $? -ne 0 ]; then
-            echo "(!) Credential storage dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -255,7 +255,7 @@ elif type pacman > /dev/null 2>&1; then
         # Install browser integration dependencies
         sudoif pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop
         if [ $? -ne 0 ]; then
-            echo "(!) Browser integration dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -270,7 +270,7 @@ elif type eopkg > /dev/null 2>&1; then
         # Install .NET Core dependencies
         sudoif eopkg -y it libicu openssl zlib kerberos
         if [ $? -ne 0 ]; then
-            echo "(!) .NET Core dependency installation failed! Press enter to dismiss this message."
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -280,7 +280,7 @@ elif type eopkg > /dev/null 2>&1; then
         # Install keyring dependencies
         sudoif eopkg -y it gnome-keyring libsecret
         if [ $? -ne 0 ]; then
-            echo "(!) Credential storage dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -290,7 +290,7 @@ elif type eopkg > /dev/null 2>&1; then
         # Install browser integration dependencies
         sudoif eopkg -y it desktop-file-utils xprop
         if [ $? -ne 0 ]; then
-            echo "(!) Browser integration dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -304,7 +304,15 @@ elif type apk > /dev/null 2>&1; then
     # Update package repo indexes
     sudoif apk update --wait 30
     if [ $? -ne 0 ]; then
-        echo "(!) .NET Core dependency installation failed! Press enter to dismiss this message."
+        echo "(!) Failed to update package index. Press enter to dismiss this message."
+        read
+        exit 1
+    fi
+
+   # Upgrade to avoid package conflicts
+    sudoif apk upgrade 
+    if [ $? -ne 0 ]; then
+        echo "(!) Failed to upgrade. Press enter to dismiss this message."
         read
         exit 1
     fi
@@ -313,7 +321,7 @@ elif type apk > /dev/null 2>&1; then
         # Install .NET Core dependencies
         sudoif apk add --no-cache libssl1.0 icu krb5 zlib
         if [ $? -ne 0 ]; then
-            echo "(!) .NET Core dependency installation failed! Press enter to dismiss this message."
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -323,7 +331,7 @@ elif type apk > /dev/null 2>&1; then
         # Install keyring dependencies
         sudoif apk add --no-cache gnome-keyring libsecret
         if [ $? -ne 0 ]; then
-            echo "(!) Credential storage dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
             read
             exit 1
         fi
@@ -333,7 +341,7 @@ elif type apk > /dev/null 2>&1; then
         # Install browser integration dependencies
         sudoif apk add --no-cache desktop-file-utils xprop
         if [ $? -ne 0 ]; then
-            echo "(!) Browser integration dependency installation failed! Press enter to dismiss this message."
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
