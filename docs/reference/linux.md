@@ -37,13 +37,13 @@ If you see a message indicating the script does not support your distribution, s
 
 If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
 
-    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
+    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
 
 ### Manual prerequisite installation
 
  While we recommend using Live Share's dependency install script, this section provides further details on  library requirements in the event you want perform these steps yourself or are using a distribution not supported by the script.
 
-For typical missing libraries in vanilla installations, see [tips by distribution](#tips-by-distribution) and [tips for community supported distributions](#tips-for-unsupported-distros). 
+For typical missing libraries in vanilla installations, see [tips by distribution](#tips-by-distribution) and [tips for community supported distributions](#tips-for-unsupported-distros).
 
 #### Debian / Ubuntu
 

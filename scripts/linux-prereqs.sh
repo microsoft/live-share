@@ -23,10 +23,26 @@ if [ "$1" = "false" ]; then NETCOREDEPS=0; else NETCOREDEPS=1; fi
 if [ "$2" = "false" ]; then KEYRINGDEPS=0; else KEYRINGDEPS=1; fi
 if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 
+# If not already root, validate user has sudo access and error if not.
+# Alpine Linux returns nothing for $EUID, so assume root in this case.
+if [ "$EUID" != "" ] && [ $EUID -ne 0 ]; then
+    echo "To complete the installation, your OS will now prompt you to enter your"
+    echo "admin (sudo) password."
+    echo ""
+    # Validate user actually can use sudo
+    sudo -v > /dev/null 2>&1;
+    if [ $? -ne 0 ]; then
+        echo "(!) Dependency installation failed! You do not have the needed admin (sudo) "
+        echo "    rights to install the needed dependencies. Contact your system administrator"
+        echo "    with the library specifics from the VS Live Share documentation here:"
+        echo "    https://aka.ms/vsls-docs/linux-required-lib-details"
+        exit 3
+    fi
+fi
+
 # Wrapper function to only use sudo if not already root
 sudoif()
 {
-    # Alpine returns nothing for $EUID, so assume root in this case
     if [ "$EUID" != "" ] && [ $EUID -ne 0 ]; then
         set -- command sudo "$@"
     fi
