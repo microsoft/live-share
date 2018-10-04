@@ -23,7 +23,7 @@ if [ "$2" = "false" ]; then KEYRINGDEPS=0; else KEYRINGDEPS=1; fi
 if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 
 # If not already root, validate user has sudo access and error if not.
-if [! [ $(id -u) -eq 0 ]; then
+if [ $(id -u) -ne 0 ]; then
     echo "To begin the installation process, your OS will now ask you to enter your"
     echo "admin / root (sudo) password."
     echo ""
@@ -45,7 +45,7 @@ fi
 # Wrapper function to only use sudo if not already root
 sudoif()
 {
-    if ! [ $(id -u) -eq 0 ]; then
+    if [ $(id -u) -ne 0 ]; then
         set -- command sudo "$@"
     fi
     "$@"
