@@ -9,10 +9,10 @@
 echo ""
 echo "Visual Studio Live Share Linux Dependency Installer"
 echo ""
-echo "See https://aka.ms/vsls-docs/linux-prerequisites for manual instructions."
-echo ""
 echo "Visual Studio Live Share requires a number of prerequisites that this script"
 echo "will attempt to install for you. This process requires admin / root access."
+echo ""
+echo "See https://aka.ms/vsls-docs/linux-prerequisites for manual instructions."
 echo ""
 
 # Script can skip installing .NET Core, keyring, or browser integretion dependencies.
@@ -23,8 +23,7 @@ if [ "$2" = "false" ]; then KEYRINGDEPS=0; else KEYRINGDEPS=1; fi
 if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 
 # If not already root, validate user has sudo access and error if not.
-# Alpine Linux returns nothing for $EUID, so assume root in this case.
-if [ "$EUID" != "" ] && [ $EUID -ne 0 ]; then
+if [! [ $(id -u) -eq 0 ]; then
     echo "To begin the installation process, your OS will now ask you to enter your"
     echo "admin / root (sudo) password."
     echo ""
@@ -46,7 +45,7 @@ fi
 # Wrapper function to only use sudo if not already root
 sudoif()
 {
-    if [ "$EUID" != "" ] && [ $EUID -ne 0 ]; then
+    if ! [ $(id -u) -eq 0 ]; then
         set -- command sudo "$@"
     fi
     "$@"
