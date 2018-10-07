@@ -28,7 +28,7 @@ if [ $(id -u) -ne 0 ]; then
     echo "admin / root (sudo) password."
     echo ""
     # Validate user actually can use sudo
-    sudo -v > /dev/null 2>&1;
+    sudo -v > /dev/null 2>&1
     if [ $? -ne 0 ]; then
         echo ""
         echo "(!) Dependency installation failed! You do not have the needed admin / root"
