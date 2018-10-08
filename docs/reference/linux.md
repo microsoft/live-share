@@ -53,7 +53,7 @@ While the prerequisite install script above should cover Debian / Ubuntu and RHL
 | Xubuntu 16.04 (64-bit) | &lt;none&gt; | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Mint 19 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
 | Mint 18.3 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
-| Debian 9 GNOME Desktop (64-bit) | &lt;none&gt; | <ul><li>You will need to install `sudo` and add your user to the sudo group.</li><li>Be sure you do **not** have both **libssl1.0.0 and libssl1.0.2** installed. Use `sudo apt remove libssl1.0.0` to remove the older version if it is installed in addition to 1.0.2. See [here](https://github.com/dotnet/core/issues/973) for details.</ul>  |
+| Debian 9 GNOME Desktop (64-bit) | &lt;none&gt; | <ul><li>You may need to install `sudo` and add your user to the sudo group.</li>  |
 | Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | &lt;none&gt; |
@@ -97,8 +97,6 @@ Visual Studio Live Share's native library requirements come from its use of .NET
 While other distributions require the same libraries, their package names may vary. You can find some of these in the [tips for community supported distributions](#tips-for-unsupported-distros) section.
 
 ### Debian / Ubuntu
-
-> **Critical Note:** Be sure you do **not** have both **libssl1.0.0 and libssl1.0.2 installed** or the Live Share agent may crash. You will need to remove one of these libraries if both are installed. Use `sudo apt remove libssl1.0.0` to or `sudo apt remove libssl1.0.2` to remove one. Pay close attention to what else will be removed when wto ensure this will not negatively affect your system. See [here](https://github.com/dotnet/core/issues/973) for additional information on this .NET Core bug.
 
 Libraries may be installed on Debian/Ubuntu based distributions by running `sudo apt install <library-name>` in a terminal.
 

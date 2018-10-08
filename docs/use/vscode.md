@@ -65,7 +65,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
-Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. If you stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+), ***CentOS 7** and only use **official distributions of VS Code**, you should find the process straightforward. However, in the event that you are using a non-standard configuration or downstream distribution, you may or may not run into some hiccups. See [Linux installation details](../reference/linux.md) for more information.
+Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. If you stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+), **CentOS 7** and only use **official distributions of VS Code**, you should find the process straightforward. However, in the event that you are using a non-standard configuration or downstream distribution, you may or may not run into some hiccups. See [Linux installation details](../reference/linux.md) for more information.
 
 #### Install Linux prerequisites
 
