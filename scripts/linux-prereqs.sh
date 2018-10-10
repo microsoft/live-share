@@ -9,100 +9,156 @@
 echo ""
 echo "Visual Studio Live Share Linux Dependency Installer"
 echo ""
+echo "Visual Studio Live Share requires a number of prerequisites that this script"
+echo "will attempt to install for you. This process requires admin / root access."
+echo ""
 echo "See https://aka.ms/vsls-docs/linux-prerequisites for manual instructions."
 echo ""
-echo "Visual Studio Live Share requires a number of prerequisites that this script"
-echo "will attempt to install for you. Note you may be prompted for your admin (sudo)"
-echo "password during the installation process."
-echo ""
+
+# Script can skip installing .NET Core, keyring, or browser integretion dependencies.
+# Pass false to the first argument to skip .NET Core, second to skip keyring, and 
+# and third to skip browser integration dependency installation.
+if [ "$1" = "false" ]; then NETCOREDEPS=0; else NETCOREDEPS=1; fi
+if [ "$2" = "false" ]; then KEYRINGDEPS=0; else KEYRINGDEPS=1; fi
+if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
+
+# If not already root, validate user has sudo access and error if not.
+if [ $(id -u) -ne 0 ]; then
+    echo "To begin the installation process, your OS will now ask you to enter your"
+    echo "admin / root (sudo) password."
+    echo ""
+    # Validate user actually can use sudo
+    sudo -v > /dev/null 2>&1
+    if [ $? -ne 0 ]; then
+        echo ""
+        echo "(!) Dependency installation failed! You do not have the needed admin / root"
+        echo "    access to install Live Share's dependencies. Contact your system admin"
+        echo "    and ask them to install the required libraries described here:"
+        echo "    https://aka.ms/vsls-docs/linux-required-lib-details"
+        echo ""
+        echo "Press enter to dismiss this message."
+        read
+        exit 3
+    fi
+fi
+
+# Wrapper function to only use sudo if not already root
+sudoif()
+{
+    if [ $(id -u) -ne 0 ]; then
+        set -- command sudo "$@"
+    fi
+    "$@"
+}
 
 #openSUSE - Has to be first as apt is aliased to zypper
 if type zypper > /dev/null 2>&1; then
     echo "(*) Detected SUSE (unoffically/community supported)"
     echo ""
-    sudo zypper -n in libunwind libcurl[0-9] libopenssl1_0_0 libicu libuuid1 krb5 libz1 gettext gnome-keyring libsecret-1-0 desktop-file-utils xprop
+
+    if [ $NETCOREDEPS -ne 0 ]; then
+        # Install .NET Core dependencies
+        sudoif zypper -n in libopenssl1_0_0 libicu krb5 libz1
+        if [ $? -ne 0 ]; then
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $KEYRINGDEPS -ne 0 ]; then
+        # Install keyring dependencies
+        sudoif zypper -n in gnome-keyring libsecret-1-0
+        if [ $? -ne 0 ]; then
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi 
+
+    if [ $BROWSERDEPS -ne 0 ]; then
+        # Install browser integration and clipboard dependencies
+        sudoif zypper -n in desktop-file-utils xprop
+        if [ $? -ne 0 ]; then
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+
+# Debian / Ubuntu
+elif type apt-get > /dev/null 2>&1; then
+    echo "(*) Detected Debian / Ubuntu"
+    echo ""
+
+    while sudoif fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
+        echo "Waiting for other package operations to complete..."
+        sleep 2
+    done
+
+    # Get latest package data
+    sudoif apt-get update
     if [ $? -ne 0 ]; then
-        echo "(!) Installation failed! Press enter to dismiss this message."
+        echo "(!) Failed to re-index available packages! Press enter to dismiss this message."
         read
         exit 1
     fi
 
-# Debian / Ubuntu
-elif type apt > /dev/null 2>&1; then
-    echo "(*) Detected Debian / Ubuntu"
-    echo ""
-    sudo apt install -yq libunwind8 liblttng-ust0 libicu?? libuuid1 libkrb5-3 zlib1g gnome-keyring libsecret-1-0 desktop-file-utils gettext apt-transport-https x11-utils
-    if [ $? -ne 0 ]; then
-        echo "(!) Installation failed! Press enter to dismiss this message."
-        read
-        exit 1
-    fi
-    # Ubuntu 18.04 has libcurl3 and 4, others only libcurl3, so only install libcurl3
-    # if nothing is already installed to avoid unexpected impacts
-    LIBCURL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libcurl[0-9]' 2>&1 | sed -n -e '/^i/p' | grep -o 'libcurl[0-9]:')
-    if [[ -z $LIBCURL ]]; then
-        # No libcurl installed - so install one
-        sudo apt install -yq libcurl3
+    if [ $NETCOREDEPS -ne 0 ]; then
+        # Install .NET Core dependencies
+        sudoif apt-get install -yq libicu[0-9][0-9] libkrb5-3 zlib1g
         if [ $? -ne 0 ]; then
-            echo "(!) Installation failed! Press enter to dismiss this message."
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
             read
             exit 1
         fi
-    else
-        LIBCURLINSTALLED=$(echo "$LIBCURL" | head -n 1 | sed -e 's/...\t\(.*\):\(.*\)/\1/')
-        echo "$LIBCURLINSTALLED already installed"        
-    fi
-    # On Debian, .NET Core will crash if there is more than one version of libssl1.0 installed.
-    # Remove one if this situation is detected. See https://github.com/dotnet/core/issues/973
-    LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1 | sed -n -e '/^i/p' | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort)
-    if [ $? -ne 0 ]; then
-        echo "(!) Installation failed! Press enter to dismiss this message."
-        read
-        exit 1
-    fi
-    if [[ -z $LIBSSL ]]; then 
-        # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
-        if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
-            sudo apt install -yq libssl1.0.2
-            if [ $? -ne 0 ]; then
-                echo "(!) Installation failed! Press enter to dismiss this message."
-                read
-                exit 1
-            fi
-        else    
-            sudo apt install -yq libssl1.0.0
-            if [ $? -ne 0 ]; then
-                echo "(!) Installation failed! Press enter to dismiss this message."
-                read
-                exit 1
-            fi
+        # Determine which version of libssl to install
+        LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1 | sed -n -e '/^i/p' | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort)
+        if [ $? -ne 0 ]; then
+            echo "(!) Failed see if libssl already installed! Press enter to dismiss this message."
+            read
+            exit 1
         fi
-    else 
-        LIBSSLCOUNT=$(echo "$LIBSSL" | wc -l)
-        LIBSSLFIRSTPKG=$(echo "$LIBSSL" | head -n 1 | sed -e 's/...\t\(.*\):\(.*\)/\1/')
-        if [[ $LIBSSLCOUNT -gt 1 ]]; then
-            # More than one is installed - so see if we should remove one
-            echo ""
-            echo "(!) WARNING: $LIBSSLCOUNT sub-versions of libssl1.0 detected. This can crash Live Share."
-            echo ""
-            echo "This script can attempt to fix this by removing the package \"$LIBSSLFIRSTPKG\"".
-            echo "However, doing so MAY REMOVE OTHER PACKAGES ON YOUR SYSTEM. If you proceed, you"
-            echo "will presented with a complete list of libraries that will added and be removed."
-            echo "Please verify you want this list of packages removed and cancel if not."
-            echo ""
-            read -p "Attempt to fix by removing the library [Y/n]? "
-            if [[ "$REPLY" == "" ]] || [[ "$REPLY"  =~ ^[Yy] ]]; then
-                # This can remove other packages, so skip "-yq" so user can review impact
-                echo ""
-                sudo apt remove $LIBSSLFIRSTPKG
+        if [[ -z $LIBSSL ]]; then 
+            # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
+            if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
+                sudoif apt-get install -yq libssl1.0.2
                 if [ $? -ne 0 ]; then
-                    echo "(!) Installation failed! Press enter to dismiss this message."
+                    echo "(!) libssl1.0.2 installation failed! Press enter to dismiss this message."
+                    read
+                    exit 1
+                fi
+            else    
+                sudoif apt-get install -yq libssl1.0.0
+                if [ $? -ne 0 ]; then
+                    echo "(!) libssl1.0.0 installation failed! Press enter to dismiss this message."
                     read
                     exit 1
                 fi
             fi
-        else
-            echo "$LIBSSLFIRSTPKG already installed."
+        else 
+            echo "libssl1.0.x already installed."
+        fi
+    fi
+
+    if [ $KEYRINGDEPS -ne 0 ]; then
+        # Install keyring dependencies
+        sudoif apt-get install -yq gnome-keyring libsecret-1-0
+        if [ $? -ne 0 ]; then
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi 
+
+    if [ $BROWSERDEPS -ne 0 ]; then
+        # Install browser integration dependencies
+        sudoif apt-get install -yq desktop-file-utils x11-utils
+        if [ $? -ne 0 ]; then
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
         fi
     fi
 
@@ -110,34 +166,161 @@ elif type apt > /dev/null 2>&1; then
 elif type yum  > /dev/null 2>&1; then
     echo "(*) Detected RHL / Fedora / CentOS"
     echo ""
-    sudo yum -y install libunwind lttng-ust libcurl openssl-libs libuuid krb5-libs libicu zlib gnome-keyring libsecret desktop-file-utils xorg-x11-utils
-    if [ $? -ne 0 ]; then
-        echo "(!) Installation failed! Press enter to dismiss this message."
-        read
-        exit 1
+
+    # Update package repo indexes
+    sudoif yum check-update
+
+    if [ $NETCOREDEPS -ne 0 ]; then
+        # Install .NET Core dependencies
+        sudoif yum -y install openssl-libs krb5-libs libicu zlib
+        if [ $? -ne 0 ]; then
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $KEYRINGDEPS -ne 0 ]; then
+        # Install keyring dependencies
+        sudoif yum -y install gnome-keyring libsecret
+        if [ $? -ne 0 ]; then
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $BROWSERDEPS -ne 0 ]; then
+        # Install browser integration dependencies
+        sudoif yum -y install desktop-file-utils xorg-x11-utils
+        if [ $? -ne 0 ]; then
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
     fi
 
 #ArchLinux
 elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected ArchLinux (unoffically/community supported)"
     echo ""
-    sudo pacman -Sq --needed gcr liburcu libunwind lttng-ust curl openssl-1.0 libutil-linux krb5 icu zlib gettext desktop-file-utils gnome-keyring libsecret xorg-xprop
-    if [ $? -ne 0 ]; then
-        echo "(!) Installation failed! Press enter to dismiss this message."
-        read
-        exit 1
+
+    if [ $NETCOREDEPS -ne 0 ]; then
+        # Install .NET Core dependencies
+        sudoif pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib
+        if [ $? -ne 0 ]; then
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $KEYRINGDEPS -ne 0 ]; then
+        # Install keyring dependencies
+        sudoif pacman -Sq --noconfirm --needed gnome-keyring libsecret
+        if [ $? -ne 0 ]; then
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $BROWSERDEPS -ne 0 ]; then
+        # Install browser integration dependencies
+        sudoif pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop
+        if [ $? -ne 0 ]; then
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
     fi
 
 #Solus
 elif type eopkg > /dev/null 2>&1; then
     echo "(*) Detected Solus (unoffically/community supported)"
     echo ""
-    sudo eopkg -y it libunwind liblttng-ust libicu curl openssl zlib gnome-keyring libsecret gettext desktop-file-utils xprop
+
+    if [ $NETCOREDEPS -ne 0 ]; then
+        # Install .NET Core dependencies
+        sudoif eopkg -y it libicu openssl zlib kerberos
+        if [ $? -ne 0 ]; then
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $KEYRINGDEPS -ne 0 ]; then
+        # Install keyring dependencies
+        sudoif eopkg -y it gnome-keyring libsecret
+        if [ $? -ne 0 ]; then
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $BROWSERDEPS -ne 0 ]; then
+        # Install browser integration dependencies
+        sudoif eopkg -y it desktop-file-utils xprop
+        if [ $? -ne 0 ]; then
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+#Alpine Linux
+elif type apk > /dev/null 2>&1; then
+    echo "(*) Detected Alpine Linux"
+    echo ""
+
+    # Update package repo indexes
+    sudoif apk update --wait 30
     if [ $? -ne 0 ]; then
-        echo "(!) Installation failed! Press enter to dismiss this message."
+        echo "(!) Failed to update package index. Press enter to dismiss this message."
         read
         exit 1
     fi
+
+   # Upgrade to avoid package conflicts
+    sudoif apk upgrade 
+    if [ $? -ne 0 ]; then
+        echo "(!) Failed to upgrade. Press enter to dismiss this message."
+        read
+        exit 1
+    fi
+
+    if [ $NETCOREDEPS -ne 0 ]; then
+        # Install .NET Core dependencies
+        sudoif apk add --no-cache libssl1.0 icu krb5 zlib
+        if [ $? -ne 0 ]; then
+            echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $KEYRINGDEPS -ne 0 ]; then
+        # Install keyring dependencies
+        sudoif apk add --no-cache gnome-keyring libsecret
+        if [ $? -ne 0 ]; then
+            echo "(!) Keyring installation failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
+    if [ $BROWSERDEPS -ne 0 ]; then
+        # Install browser integration dependencies
+        sudoif apk add --no-cache desktop-file-utils xprop
+        if [ $? -ne 0 ]; then
+            echo "(!) Browser dependency install failed! Press enter to dismiss this message."
+            read
+            exit 1
+        fi
+    fi
+
 
 #If no supported package manager is found
 else
