@@ -40,7 +40,7 @@ Before you begin, you'll need to be sure you've got a version of Visual Studio C
 - **macOS**: Sierra (10.12) and above only.
     - _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315)._
 
-- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora Workstation 27+
+- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora Workstation 27+, CentOS 7
 
     - Live Share requires a number of [Linux prerequisites](#linux-install-steps) you may be prompted to install.
     - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)._
@@ -65,7 +65,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### Linux install steps
 
-Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. If you stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+) and only use **official distributions of VS Code**, you should find the process straightforward. However, in the event that you are using a non-standard configuration or downstream distribution, you may or may not run into some hiccups. See [Linux installation details](../reference/linux.md) for more information.
+Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. If you stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+), **CentOS 7** and only use **official distributions of VS Code**, you should find the process straightforward. However, in the event that you are using a non-standard configuration or downstream distribution, you may or may not run into some hiccups. See [Linux installation details](../reference/linux.md) for more information.
 
 #### Install Linux prerequisites
 
@@ -79,7 +79,7 @@ If you see a message indicating the script does not support your distribution, s
 
 If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
 
-    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && bash ~/vsls-reqs
+    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
  
 #### Linux browser integration
 
