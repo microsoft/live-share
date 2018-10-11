@@ -12,14 +12,16 @@
 #
 #!/usr/bin/env bash
 
-echo ""
-echo "Visual Studio Live Share Linux Dependency Installer"
-echo ""
-echo "Visual Studio Live Share requires a number of prerequisites that this script"
-echo "will attempt to install for you. This process requires admin / root access."
-echo ""
-echo "See https://aka.ms/vsls-docs/linux-prerequisites for manual instructions."
-echo ""
+cat << EOF
+
+Visual Studio Live Share Linux Dependency Installer
+
+See https://aka.ms/vsls-docs/linux-prerequisites for manual instructions.
+
+Visual Studio Live Share requires a number of prerequisites that this script
+will attempt to install for you. This process requires admin / root access.
+
+EOF
 
 # Script can skip installing .NET Core, keyring, or browser integretion dependencies.
 # Pass false to the first argument to skip .NET Core, second to skip keyring, and 
@@ -31,8 +33,12 @@ if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 # Utility function for exiting
 exitscript()
 {
-    echo ""
-    echo "Press enter to dismiss this message."
+# Can't indent or text will be indented
+cat << EOF
+
+Press enter to dismiss this message
+EOF
+
     read
     exit $1
 }
@@ -59,17 +65,25 @@ aptsudoif()
 
 # If not already root, validate user has sudo access and error if not.
 if [ $(id -u) -ne 0 ]; then
-    echo "To begin the installation process, your OS will now ask you to enter your"
-    echo "admin / root (sudo) password."
-    echo ""
+
+# Can't indent or text will be indented
+cat << EOF
+To begin the installation process, your OS will now ask you to enter your
+admin / root (sudo) password.
+
+EOF
     # Validate user actually can use sudo
     sudo -v > /dev/null 2>&1
     if [ $? -ne 0 ]; then
-        echo ""
-        echo "(!) Dependency installation failed! You do not have the needed admin / root"
-        echo "    access to install Live Share's dependencies. Contact your system admin"
-        echo "    and ask them to install the required libraries described here:"
-        echo "    https://aka.ms/vsls-docs/linux-required-lib-details"
+
+# Can't indent or text will be indented
+cat << EOF
+(!) Dependency installation failed! You do not have the needed admin / root
+    access to install Live Share's dependencies. Contact your system admin
+    and ask them to install the required libraries described here:
+    https://aka.ms/vsls-docs/linux-required-lib-details
+EOF
+
         exitscript 3
     fi
 fi
@@ -77,7 +91,6 @@ fi
 #openSUSE - Has to be first as apt is aliased to zypper
 if type zypper > /dev/null 2>&1; then
     echo "(*) Detected SUSE (unoffically/community supported)"
-    echo ""
 
     if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
@@ -110,9 +123,7 @@ if type zypper > /dev/null 2>&1; then
 # Debian / Ubuntu
 elif type apt-get > /dev/null 2>&1; then
     echo "(*) Detected Debian / Ubuntu"
-    echo ""
-
-
+   
     # Get latest package data
     aptsudoif update
     if [ $? -ne 0 ]; then
@@ -174,7 +185,6 @@ elif type apt-get > /dev/null 2>&1; then
 #RHL/Fedora/CentOS
 elif type yum  > /dev/null 2>&1; then
     echo "(*) Detected RHL / Fedora / CentOS"
-    echo ""
 
     # Update package repo indexes
     sudoif yum check-update
@@ -208,8 +218,7 @@ elif type yum  > /dev/null 2>&1; then
 
 #ArchLinux
 elif type pacman > /dev/null 2>&1; then
-    echo "(*) Detected ArchLinux (unoffically/community supported)"
-    echo ""
+    echo "(*) Detected Arch Linux (unoffically/community supported)"
 
     if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
@@ -241,7 +250,6 @@ elif type pacman > /dev/null 2>&1; then
 #Solus
 elif type eopkg > /dev/null 2>&1; then
     echo "(*) Detected Solus (unoffically/community supported)"
-    echo ""
 
     if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
@@ -273,7 +281,6 @@ elif type eopkg > /dev/null 2>&1; then
 #Alpine Linux
 elif type apk > /dev/null 2>&1; then
     echo "(*) Detected Alpine Linux"
-    echo ""
 
     # Update package repo indexes
     sudoif apk update --wait 30
@@ -319,13 +326,20 @@ elif type apk > /dev/null 2>&1; then
 
 #If no supported package manager is found
 else
-    echo "(!) We are unable to automatically install dependencies for this version of"
-    echo "    Linux. See https://aka.ms/vsls-docs/linux-prerequisites for information"
-    echo "    on required libraries."
+
+# Can't indent or text will be indented
+cat << EOF
+(!) We are unable to automatically install dependencies for this version of"
+    Linux. See https://aka.ms/vsls-docs/linux-prerequisites for information"
+    on required libraries."
+EOF
+
     exitscript 4
 fi
 
-echo ""
-echo "(*) Success!"
-echo ""
+cat << EOF
+
+(*) Success!
+
+EOF
 # Don't pause on exit here - we'll handle this in the extension
