@@ -34,9 +34,9 @@ EOF
         cat << EOF
         
 (!) Dependency installation failed! You do not have the needed admin / root
-access to install Live Share's dependencies. Contact your system admin
-and ask them to install the required libraries described here:
-https://aka.ms/vsls-docs/linux-required-lib-details
+    access to install Live Share's dependencies. Contact your system admin
+    and ask them to install the required libraries described here:
+    https://aka.ms/vsls-docs/linux-required-lib-details
         
 Press enter to dismiss this message.
 EOF
