@@ -33,12 +33,7 @@ if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 # Utility function for exiting
 exitscript()
 {
-# Can't indent or text will be indented
-cat << EOF
-
-Press enter to dismiss this message
-EOF
-
+    echo -e "\nPress enter to dismiss this message"
     read
     exit $1
 }
@@ -57,10 +52,15 @@ sudoif()
 aptsudoif() 
 {
     while sudoif fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
-        echo "Waiting for other package operations to complete..."
-        sleep 2
+        echo -ne "Waiting for other package operations to complete.\r"
+        sleep 0.2
+        echo -ne "Waiting for other package operations to complete..\r"
+        sleep 0.2
+        echo -ne "Waiting for other package operations to complete...\r"
+        sleep 0.2
+        echo -ne "\r\033[K"
     done
-    sudoif apt-get "$@"    
+    sudoif apt-get "$@"
 }
 
 # If not already root, validate user has sudo access and error if not.
@@ -83,14 +83,15 @@ cat << EOF
     and ask them to install the required libraries described here:
     https://aka.ms/vsls-docs/linux-required-lib-details
 EOF
-
         exitscript 3
+    else
+        echo ""
     fi
 fi
 
 #openSUSE - Has to be first as apt is aliased to zypper
 if type zypper > /dev/null 2>&1; then
-    echo "(*) Detected SUSE (unoffically/community supported)"
+    echo -e "(*) Detected SUSE (unoffically/community supported)\n"
 
     if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
@@ -122,7 +123,7 @@ if type zypper > /dev/null 2>&1; then
 
 # Debian / Ubuntu
 elif type apt-get > /dev/null 2>&1; then
-    echo "(*) Detected Debian / Ubuntu"
+    echo -e "(*) Detected Debian / Ubuntu\n"
    
     # Get latest package data
     aptsudoif update
@@ -184,7 +185,7 @@ elif type apt-get > /dev/null 2>&1; then
 
 #RHL/Fedora/CentOS
 elif type yum  > /dev/null 2>&1; then
-    echo "(*) Detected RHL / Fedora / CentOS"
+    echo -e "(*) Detected RHL / Fedora / CentOS\n"
 
     # Update package repo indexes
     sudoif yum check-update
@@ -218,7 +219,7 @@ elif type yum  > /dev/null 2>&1; then
 
 #ArchLinux
 elif type pacman > /dev/null 2>&1; then
-    echo "(*) Detected Arch Linux (unoffically/community supported)"
+    echo -e "(*) Detected Arch Linux (unoffically/community supported)\n"
 
     if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
@@ -249,7 +250,7 @@ elif type pacman > /dev/null 2>&1; then
 
 #Solus
 elif type eopkg > /dev/null 2>&1; then
-    echo "(*) Detected Solus (unoffically/community supported)"
+    echo -e "(*) Detected Solus (unoffically/community supported)\n"
 
     if [ $NETCOREDEPS -ne 0 ]; then
         # Install .NET Core dependencies
@@ -280,7 +281,7 @@ elif type eopkg > /dev/null 2>&1; then
 
 #Alpine Linux
 elif type apk > /dev/null 2>&1; then
-    echo "(*) Detected Alpine Linux"
+    echo -e "(*) Detected Alpine Linux\n"
 
     # Update package repo indexes
     sudoif apk update --wait 30
