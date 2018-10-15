@@ -5,6 +5,15 @@ about: 'Thanks for reporting the issue. In addition to filing the bug consider e
 
 ---
 
+<!--
+For Visual Studio problems/feedback, please use the "Report a Problem..." feature built into the tool. See https://aka.ms/vsls-vsproblem.
+
+For VS Code issues, attach verbose logs as follows:
+1. Press F1 (or Ctrl+Shift+P / Cmd+Shift+P), type "export logs" and run the "Live Share: Export Logs" command.
+2a. Drag and drop the zip to the issue on this screen and wait for it to upload before creating the issue.
+2b. Alternatively, send the zip file to <vsls-feedback@microsoft.com>'
+-->
+
 **Describe the bug**
 Describe what is not working as expected
 
@@ -18,10 +27,10 @@ Steps to reproduce the behavior:
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
+**Product and Version** [VS/VSCode]:
  - OS: [e.g. WIndows, MacOS or Linux]
  - VSCode edition and version
- - VS Live Share Version
+ - VS Live Share Extension Version
 
 **Additional context**
 Add any other context about the problem here.
