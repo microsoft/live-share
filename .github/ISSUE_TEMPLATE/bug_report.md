@@ -14,10 +14,12 @@ For VS Code issues, attach verbose logs as follows:
 2b. Alternatively, send the zip file to <vsls-feedback@microsoft.com>'
 -->
 
-**Describe the bug**
-Describe what is not working as expected
+**Product and Version** [VS/VSCode]:
+**OS Version** [macOS/Windows]:
+**Live Share Extension Version**:
+**Target Platform or Language** [e.g. Node.js]:
 
-**To Reproduce**
+**Steps to Reproduce / Scenario:**
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
@@ -26,11 +28,3 @@ Steps to reproduce the behavior:
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
-
-**Product and Version** [VS/VSCode]:
- - OS: [e.g. WIndows, MacOS or Linux]
- - VSCode edition and version
- - VS Live Share Extension Version
-
-**Additional context**
-Add any other context about the problem here.
