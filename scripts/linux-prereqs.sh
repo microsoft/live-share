@@ -15,6 +15,11 @@ echo ""
 echo "See https://aka.ms/vsls-docs/linux-prerequisites for manual instructions."
 echo ""
 
+readAndExit(){
+    read
+    exit "$1"
+}
+
 # Script can skip installing .NET Core, keyring, or browser integretion dependencies.
 # Pass false to the first argument to skip .NET Core, second to skip keyring, and 
 # and third to skip browser integration dependency installation.
@@ -37,10 +42,12 @@ if [ $(id -u) -ne 0 ]; then
         echo "    https://aka.ms/vsls-docs/linux-required-lib-details"
         echo ""
         echo "Press enter to dismiss this message."
-        read
-        exit 3
+        readAndExit 3
     fi
 fi
+
+
+
 
 # Wrapper function to only use sudo if not already root
 sudoif()
@@ -61,8 +68,7 @@ if type zypper > /dev/null 2>&1; then
         sudoif zypper -n in libopenssl1_0_0 libicu krb5 libz1
         if [ $? -ne 0 ]; then
             echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -71,8 +77,7 @@ if type zypper > /dev/null 2>&1; then
         sudoif zypper -n in gnome-keyring libsecret-1-0
         if [ $? -ne 0 ]; then
             echo "(!) Keyring installation failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi 
 
@@ -81,8 +86,7 @@ if type zypper > /dev/null 2>&1; then
         sudoif zypper -n in desktop-file-utils xprop
         if [ $? -ne 0 ]; then
             echo "(!) Browser dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -101,8 +105,7 @@ elif type apt-get > /dev/null 2>&1; then
     sudoif apt-get update
     if [ $? -ne 0 ]; then
         echo "(!) Failed to re-index available packages! Press enter to dismiss this message."
-        read
-        exit 1
+        readAndExit 1
     fi
 
     if [ $NETCOREDEPS -ne 0 ]; then
@@ -110,15 +113,13 @@ elif type apt-get > /dev/null 2>&1; then
         sudoif apt-get install -yq libicu[0-9][0-9] libkrb5-3 zlib1g
         if [ $? -ne 0 ]; then
             echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
         # Determine which version of libssl to install
         LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1 | sed -n -e '/^i/p' | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort)
         if [ $? -ne 0 ]; then
             echo "(!) Failed see if libssl already installed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
         if [[ -z $LIBSSL ]]; then 
             # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
@@ -126,15 +127,13 @@ elif type apt-get > /dev/null 2>&1; then
                 sudoif apt-get install -yq libssl1.0.2
                 if [ $? -ne 0 ]; then
                     echo "(!) libssl1.0.2 installation failed! Press enter to dismiss this message."
-                    read
-                    exit 1
+                    readAndExit 1
                 fi
             else    
                 sudoif apt-get install -yq libssl1.0.0
                 if [ $? -ne 0 ]; then
                     echo "(!) libssl1.0.0 installation failed! Press enter to dismiss this message."
-                    read
-                    exit 1
+                    readAndExit 1
                 fi
             fi
         else 
@@ -147,8 +146,7 @@ elif type apt-get > /dev/null 2>&1; then
         sudoif apt-get install -yq gnome-keyring libsecret-1-0
         if [ $? -ne 0 ]; then
             echo "(!) Keyring installation failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi 
 
@@ -157,8 +155,7 @@ elif type apt-get > /dev/null 2>&1; then
         sudoif apt-get install -yq desktop-file-utils x11-utils
         if [ $? -ne 0 ]; then
             echo "(!) Browser dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -175,8 +172,7 @@ elif type yum  > /dev/null 2>&1; then
         sudoif yum -y install openssl-libs krb5-libs libicu zlib
         if [ $? -ne 0 ]; then
             echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -185,8 +181,7 @@ elif type yum  > /dev/null 2>&1; then
         sudoif yum -y install gnome-keyring libsecret
         if [ $? -ne 0 ]; then
             echo "(!) Keyring installation failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -195,8 +190,7 @@ elif type yum  > /dev/null 2>&1; then
         sudoif yum -y install desktop-file-utils xorg-x11-utils
         if [ $? -ne 0 ]; then
             echo "(!) Browser dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -210,8 +204,7 @@ elif type pacman > /dev/null 2>&1; then
         sudoif pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib
         if [ $? -ne 0 ]; then
             echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -220,8 +213,7 @@ elif type pacman > /dev/null 2>&1; then
         sudoif pacman -Sq --noconfirm --needed gnome-keyring libsecret
         if [ $? -ne 0 ]; then
             echo "(!) Keyring installation failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -230,8 +222,7 @@ elif type pacman > /dev/null 2>&1; then
         sudoif pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop
         if [ $? -ne 0 ]; then
             echo "(!) Browser dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -245,8 +236,7 @@ elif type eopkg > /dev/null 2>&1; then
         sudoif eopkg -y it libicu openssl zlib kerberos
         if [ $? -ne 0 ]; then
             echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -255,8 +245,7 @@ elif type eopkg > /dev/null 2>&1; then
         sudoif eopkg -y it gnome-keyring libsecret
         if [ $? -ne 0 ]; then
             echo "(!) Keyring installation failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -265,8 +254,7 @@ elif type eopkg > /dev/null 2>&1; then
         sudoif eopkg -y it desktop-file-utils xprop
         if [ $? -ne 0 ]; then
             echo "(!) Browser dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -279,16 +267,14 @@ elif type apk > /dev/null 2>&1; then
     sudoif apk update --wait 30
     if [ $? -ne 0 ]; then
         echo "(!) Failed to update package index. Press enter to dismiss this message."
-        read
-        exit 1
+        readAndExit 1
     fi
 
    # Upgrade to avoid package conflicts
     sudoif apk upgrade 
     if [ $? -ne 0 ]; then
         echo "(!) Failed to upgrade. Press enter to dismiss this message."
-        read
-        exit 1
+        readAndExit 1
     fi
 
     if [ $NETCOREDEPS -ne 0 ]; then
@@ -296,8 +282,7 @@ elif type apk > /dev/null 2>&1; then
         sudoif apk add --no-cache libssl1.0 icu krb5 zlib
         if [ $? -ne 0 ]; then
             echo "(!) .NET Core dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -306,8 +291,7 @@ elif type apk > /dev/null 2>&1; then
         sudoif apk add --no-cache gnome-keyring libsecret
         if [ $? -ne 0 ]; then
             echo "(!) Keyring installation failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -316,8 +300,7 @@ elif type apk > /dev/null 2>&1; then
         sudoif apk add --no-cache desktop-file-utils xprop
         if [ $? -ne 0 ]; then
             echo "(!) Browser dependency install failed! Press enter to dismiss this message."
-            read
-            exit 1
+            readAndExit 1
         fi
     fi
 
@@ -329,8 +312,7 @@ else
     echo "    on required libraries."
     echo ""
     echo "Press enter to dismiss this message."
-    read
-    exit 1
+    readAndExit 1
 fi
 
 echo ""
