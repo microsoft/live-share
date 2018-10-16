@@ -1,7 +1,6 @@
 ---
 name: Bug report
-about: 'Thanks for reporting the issue. In addition to filing the bug consider exporting
-  diagnostic logs via `Live Share: Export Logs` command and sending the file to <vsls-feedback@microsoft.com>'
+about: Create a report to help us improve
 
 ---
 
@@ -20,7 +19,6 @@ For VS Code issues, attach verbose logs as follows:
 **Target Platform or Language** [e.g. Node.js]:
 
 **Steps to Reproduce / Scenario:**
-Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
