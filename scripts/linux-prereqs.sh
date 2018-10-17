@@ -117,6 +117,7 @@ EOF
 
 # Can't indent or text will be indented
 cat << EOF
+
 (!) Dependency installation failed! You do not have the needed admin / root
     access to install Live Share's dependencies. Contact your system admin
     and ask them to install the required libraries described here:
@@ -151,7 +152,7 @@ elif type apt-get > /dev/null 2>&1; then
         # Determine which version of libssl to install
         # dpkg-query can return "1" in some distros if the package is not found. "2" is an unexpected error
         LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1)
-        if [ $? -eq 2 ] then
+        if [ $? -eq 2 ]; then
            echo "(!) Failed see if libssl already installed!"
            exitScript 1
         fi
@@ -180,9 +181,14 @@ elif type apt-get > /dev/null 2>&1; then
 elif type yum  > /dev/null 2>&1; then
     echo "(*) Detected RHL / Fedora / CentOS"
 
-    # Update package repo indexes - don't exit on non-zero since if there's no upgrade a non-zero return occurs
+    # Update package repo indexes - returns 0 if no pacakges to upgrade,
+    # 100 if there are packages to upgrade, and 1 on error
     echo -e "\n(*) Updating package lists..."
-    sudoIf yum check-update
+    sudoIf yum check-update --refresh
+    if [ $? -eq 1 ]; then
+        echo "(!) Failed to update package list!"
+        exitScript 1
+    fi
 
     checkNetCoreDeps sudoIf yum -y install openssl-libs krb5-libs libicu zlib
     checkKeyringDeps sudoIf yum -y install gnome-keyring libsecret
@@ -190,7 +196,7 @@ elif type yum  > /dev/null 2>&1; then
 
 #ArchLinux
 elif type pacman > /dev/null 2>&1; then
-    echo -e "(*) Detected Arch Linux (unoffically/community supported)"
+    echo "(*) Detected Arch Linux (unoffically/community supported)"
     checkNetCoreDeps sudoIf pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib
     checkKeyringDeps sudoIf pacman -Sq --noconfirm --needed gnome-keyring libsecret
     checkBrowserDeps sudoIf pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop
@@ -230,8 +236,6 @@ cat << EOF
 (!) We are unable to automatically install dependencies for this version of"
     Linux. See https://aka.ms/vsls-docs/linux-prerequisites for information"
     on required libraries."
-
-Press enter to dismiss this message.
 EOF
 
     exitScript 4
