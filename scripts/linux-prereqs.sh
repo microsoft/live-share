@@ -241,9 +241,5 @@ EOF
     exitScript 4
 fi
 
-cat << EOF
-
-(*) Success!
-
-EOF
+echo -e "\n(*) Success!\n"
 # Don't pause on exit here - we'll handle this in the extension
