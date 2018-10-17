@@ -93,8 +93,13 @@ elif type apt-get > /dev/null 2>&1; then
     echo ""
 
     while sudoif fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
-        echo "Waiting for other package operations to complete..."
-        sleep 2
+        echo -ne "Waiting for other package operations to complete.\r"
+        sleep 0.2
+        echo -ne "Waiting for other package operations to complete..\r"
+        sleep 0.2
+        echo -ne "Waiting for other package operations to complete...\r"
+        sleep 0.2
+        echo -ne "\r\033[K"
     done
 
     # Get latest package data
