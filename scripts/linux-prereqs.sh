@@ -113,8 +113,7 @@ admin / root (sudo) password.
 
 EOF
     # Validate user actually can use sudo
-    sudo -v > /dev/null 2>&1
-    if [ $? -ne 0 ]; then
+    if ! sudo -v > /dev/null 2>&1; then
 
 # Can't indent or text will be indented
 cat << EOF
@@ -150,7 +149,9 @@ elif type apt-get > /dev/null 2>&1; then
     if [ $NETCOREDEPS -ne 0 ]; then
         checkNetCoreDeps aptSudoIf install -yq libicu[0-9][0-9] libkrb5-3 zlib1g
         # Determine which version of libssl to install
-        if ! LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1); then
+        # dpkg-query can return "1" in some distros if the package is not found. "2" is an unexpected error
+        LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1)
+        if [ $? -eq 2 ] then
            echo "(!) Failed see if libssl already installed!"
            exitScript 1
         fi
