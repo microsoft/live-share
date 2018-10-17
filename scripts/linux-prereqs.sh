@@ -30,6 +30,9 @@ if [ "$1" = "false" ]; then NETCOREDEPS=0; else NETCOREDEPS=1; fi
 if [ "$2" = "false" ]; then KEYRINGDEPS=0; else KEYRINGDEPS=1; fi
 if [ "$3" = "false" ]; then BROWSERDEPS=0; else BROWSERDEPS=1; fi
 
+# Disable history substitution given use of "!" or errors occur in certain distros
+set H+
+
 # Utility function for exiting
 exitScript()
 {
