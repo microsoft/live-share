@@ -31,36 +31,36 @@ Some distributions of Linux are missing libraries Live Share needs to function. 
 
 ![Toast notification showing message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
 
-When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set! You may also want to check out **[tips by distribution](#tips-by-distribution)** for other hints and workarounds if any exist.
+When you click "Install", a terminal window will appear where your OS will ask you to enter your admin / roto (sudo) password to continue. Assuming the script completes successfully, reload Visual Studio Code when prompted you should be all set! You may also want to check out **[tips by distribution](#tips-by-distribution)** for other hints and workarounds if any exist.
 
 If you see a message indicating the script does not support your distribution, see **[tips for community supported distributions](#tips-for-unsupported-distros)** for information the community has shared with us.
 
-If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
+If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by using the following command in a Terminal window:
 
     wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
 
 ## Tips by distribution
 
-While the prerequisite install script above should cover Debian / Ubuntu and RHL / Fedora / CentOS, you may be wondering what is typically missing from vanilla installations of related distributions. The following list shows the key libraries that were missing in a fresh install of the distribution. The list also provides some tips that can help you get up and running if you hit a problem.
+While the prerequisite install script above covers a variety of distributions, you may be wondering what is typically missing from vanilla installations. The following list shows the key libraries that were missing in a fresh install of a given distribution. The list also provides some tips that can help you get up and running if you hit a problem.
 
 | Distribution | Vanilla install missing libraries | Additional steps |
 |--------|-------------------|----|
 | Ubuntu Desktop 18.04 (64-bit) | &lt;none&gt;  | &lt;none&gt; |
 | Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; | &lt;none&gt; |
-| Kubuntu 18.04 (64-bit) | `gnome-keyring desktop-file-utils` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
-| Kubuntu 16.04 (64-bit) | `gnome-keyring desktop-file-utils` | <ul><li>If you run into trouble with Live Share's browser integration, be sure `desktop-file-utils` is installed and then restart VS Code.</li></ul> |
+| Kubuntu 18.04 (64-bit) | `gnome-keyring desktop-file-utils` | &lt;none&gt; |
+| Kubuntu 16.04 (64-bit) | `gnome-keyring desktop-file-utils` | &lt;none&gt; |
 | Xubuntu 18.04 (64-bit) |&lt;none&gt;  | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Xubuntu 16.04 (64-bit) | &lt;none&gt; | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Mint 19 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
 | Mint 18.3 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
-| Debian 9 GNOME Desktop (64-bit) | &lt;none&gt; | <ul><li>You may need to install `sudo` and add your user to the sudo group.</li>  |
+| Debian 9 GNOME Desktop (64-bit) | &lt;none&gt; | <ul><li>You may need to install `sudo` and add your user to the sudo group to use the automated install script.</li>  |
 | Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | &lt;none&gt; |
 
-See **[tips for community supported distributions](#tips-for-community-supported-distros)** for information about whether certain non-Debian / Ubuntu or RHL based distributions are working or not.
+See **[tips for community supported distributions](#tips-for-community-supported-distros)** for information about other non-Debian / Ubuntu or RHL based distributions.
 
-Note that the Linux ecosystem moves quickly and package names will be different in certain distributions, so your results may vary. Additional details can be found [below](#detailed-library-requirements) on the libraries Live Share needs.
+Additional details can also be found [below](#detailed-library-requirements) on the specific libraries Live Share needs.
 
 ## Tips for community supported distros
 <a name="tips-for-unsupported-distros"></a>
@@ -71,10 +71,10 @@ Distributions outside of the Debian / Ubuntu or RHL trees are not officially sup
 
 | Distribution | Working? | Vanilla install missing libraries | Additional Steps |
 |--------------|----------|-------------------|------------------|
-| ArchLinux (64-bit) | Yes | Varies. Use the prerequisite install script. Possible libraries: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xprop` | <ul><li>Use the prerequisite install script.</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</lu><li>If you have custom compiled curl or libcurl, be sure to include Kerberos support (the default package includes it). See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
-| Manjaro 17.1 (64-bit) | Yes | `xorg-xprop liburcu` | <ul><li>Use the prerequisite install script.</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>If you have custom compiled curl or libcurl, be sure to include Kerberos support (the default package includes it). See [here](https://github.com/MicrosoftDocs/live-share/issues/212) for details.</li></ul> |
-| openSuSE LEAP 15 KDE (64-bit) | Yes | `libopenssl1_0_0 gnome-keyring` | <ul><li>Use the prerequisite install script.</li></ul> |
-| Solus 3 (64-bit) | Yes | `xprop`. The `vscode` package also needs to be on at least version 57. | <ul><li>Use the prerequisite install script.</li><li>Versions of the `vscode` package prior to release 57 were missing required product.json ([see below](#vs-code-oss-issues)).</li></ul> |
+| ArchLinux (64-bit) | Yes | Varies. Possible libraries: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xprop` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</ul> |
+| Manjaro 17.1 (64-bit) | Yes | `xorg-xprop liburcu` | <ul><li>Supported by the the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li></ul> |
+| openSuSE LEAP 15 KDE (64-bit) | Yes | `libopenssl1_0_0 gnome-keyring` | <ul><li>Supported by the prerequisite install script.</li></ul> |
+| Solus 3 (64-bit) | Yes | `xprop` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Versions of the `vscode` package prior to release 57 were missing required product.json values ([see below](#vs-code-oss-issues)). Upgrade the `vscode` package to resolve this issue.</li></ul> |
 | Gentoo (64-bit) | Yes | Highly variable. Possible missing packages: `dev-libs/openssl-1.0.2 net-libs/libgsasl dev-libs/icu sys-libs/zlib sys-apps/util-linux app-crypt/libsecret gnome-base/gnome-keyring x11-apps/xprop`| <ul><li>The `visual-studio-code` package in the **jorgicio** overlay is known to work.</li></ul>
 
 ## Install prerequisites manually
