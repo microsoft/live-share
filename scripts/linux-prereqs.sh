@@ -143,7 +143,7 @@ elif type apt-get > /dev/null 2>&1; then
    
     # Get latest package data
     echo -e "\n(*) Updating package lists..."
-    if ! aptSudoIf update; then
+    if ! aptSudoIf "update"; then
         echo "(!) Failed to update list of available packages!"
         exitScript 1
     fi
@@ -160,12 +160,12 @@ elif type apt-get > /dev/null 2>&1; then
         if [ "$(echo "$LIBSSL" | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort | wc -l)" -eq 0 ]; then
             # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
             if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
-                if ! aptSudoIf install -yq libssl1.0.2; then
+                if ! aptSudoIf "install -yq libssl1.0.2"; then
                     echo "(!) libssl1.0.2 installation failed!"
                     exitScript 1
                 fi
             else    
-                if ! aptSudoIf install -yq libssl1.0.0; then
+                if ! aptSudoIf "install -yq libssl1.0.0"; then
                     echo "(!) libssl1.0.0 installation failed!"
                     exitScript 1
                 fi
@@ -185,7 +185,7 @@ elif type yum  > /dev/null 2>&1; then
     # Update package repo indexes - returns 0 if no pacakges to upgrade,
     # 100 if there are packages to upgrade, and 1 on error
     echo -e "\n(*) Updating package lists..."
-    sudoIf yum check-update --refresh
+    sudoIf "yum check-update --refresh"
     if [ $? -eq 1 ]; then
         echo "(!) Failed to update package list!"
         exitScript 1
@@ -215,12 +215,12 @@ elif type apk > /dev/null 2>&1; then
     
     # Update package repo indexes    
     echo -e "\n(*) Updating and upgrading..."
-    if ! sudoIf apk update --wait 30; then
+    if ! sudoIf "apk update --wait 30"; then
         echo "(!) Failed to update package lists."
         exitScript 1
     fi
     # Upgrade to avoid package dependency conflicts
-    if ! sudoIf apk upgrade; then
+    if ! sudoIf "apk upgrade"; then
         echo "(!) Failed to upgrade."
         exitScript 1
     fi
