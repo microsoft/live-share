@@ -45,9 +45,10 @@ exitScript()
 sudoIf()
 {
     if [ "$(id -u)" -ne 0 ]; then
-        set -- command sudo "$@"
+        sudo $1
+    else
+        $1
     fi
-    "$@"
 }
 
 # Utility function that waits for any existing installation operations to complete
@@ -63,7 +64,7 @@ aptSudoIf()
         sleep 0.2
         echo -ne "\r\033[K"
     done
-    sudoIf apt-get "$@"
+    sudoIf apt-get "$1"
 }
 
 # Installs .NET Core dependencies if not disabled
@@ -71,7 +72,7 @@ checkNetCoreDeps(){
     if [ $NETCOREDEPS -ne 0 ]; then
         echo -e "\n(*) Verifying .NET Core dependencies..."
         # Install .NET Core dependencies
-        if ! "$@"; then
+        if ! "$1" "$2"; then
             echo "(!) .NET Core dependency install failed!"
             exitScript 1
         fi
@@ -83,7 +84,7 @@ checkKeyringDeps(){
     if [ $KEYRINGDEPS -ne 0 ]; then
         echo -e "\n(*) Verifying keyring dependencies..."
         # Install keyring dependencies
-        if ! "$@"; then
+        if ! "$1" "$2"; then
             echo "(!) Keyring installation failed!"
             exitScript 1
         fi
@@ -95,7 +96,7 @@ checkBrowserDeps(){
     if [ $BROWSERDEPS -ne 0 ]; then
         echo -e "\n(*) Verifying browser integration dependencies..."
         # Install browser integration and clipboard dependencies
-        if ! "$@"; then
+        if ! "$1" "$2"; then
             echo "(!) Browser dependency install failed!"
             exitScript 1
         fi
@@ -132,9 +133,9 @@ fi
 #openSUSE - Has to be first as apt is aliased to zypper
 if type zypper > /dev/null 2>&1; then
     echo "(*) Detected SUSE (unoffically/community supported)"
-    checkNetCoreDeps sudoIf zypper -n in libopenssl1_0_0 libicu krb5 libz1
-    checkKeyringDeps sudoIf zypper -n in gnome-keyring libsecret-1-0
-    checkBrowserDeps sudoIf zypper -n in desktop-file-utils xprop
+    checkNetCoreDeps sudoIf "zypper -n in libopenssl1_0_0 libicu krb5 libz1"
+    checkKeyringDeps sudoIf "zypper -n in gnome-keyring libsecret-1-0"
+    checkBrowserDeps sudoIf "zypper -n in desktop-file-utils xprop"
 
 # Debian / Ubuntu
 elif type apt-get > /dev/null 2>&1; then
@@ -148,7 +149,7 @@ elif type apt-get > /dev/null 2>&1; then
     fi
 
     if [ $NETCOREDEPS -ne 0 ]; then
-        checkNetCoreDeps aptSudoIf install -yq libicu[0-9][0-9] libkrb5-3 zlib1g
+        checkNetCoreDeps aptSudoIf "install -yq libicu[0-9][0-9] libkrb5-3 zlib1g"
         # Determine which version of libssl to install
         # dpkg-query can return "1" in some distros if the package is not found. "2" is an unexpected error
         LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1)
@@ -174,8 +175,8 @@ elif type apt-get > /dev/null 2>&1; then
         fi
     fi
 
-    checkKeyringDeps aptSudoIf install -yq gnome-keyring libsecret-1-0
-    checkBrowserDeps aptSudoIf install -yq desktop-file-utils x11-utils
+    checkKeyringDeps aptSudoIf "install -yq gnome-keyring libsecret-1-0"
+    checkBrowserDeps aptSudoIf "install -yq desktop-file-utils x11-utils"
 
 #RHL/Fedora/CentOS
 elif type yum  > /dev/null 2>&1; then
@@ -190,23 +191,23 @@ elif type yum  > /dev/null 2>&1; then
         exitScript 1
     fi
 
-    checkNetCoreDeps sudoIf yum -y install openssl-libs krb5-libs libicu zlib
-    checkKeyringDeps sudoIf yum -y install gnome-keyring libsecret
-    checkBrowserDeps sudoIf yum -y install desktop-file-utils xorg-x11-utils
+    checkNetCoreDeps sudoIf "yum -y install openssl-libs krb5-libs libicu zlib"
+    checkKeyringDeps sudoIf "yum -y install gnome-keyring libsecret"
+    checkBrowserDeps sudoIf "yum -y install desktop-file-utils xorg-x11-utils"
 
 #ArchLinux
 elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected Arch Linux (unoffically/community supported)"
-    checkNetCoreDeps sudoIf pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib
-    checkKeyringDeps sudoIf pacman -Sq --noconfirm --needed gnome-keyring libsecret
-    checkBrowserDeps sudoIf pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop
+    checkNetCoreDeps sudoIf "pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib"
+    checkKeyringDeps sudoIf "pacman -Sq --noconfirm --needed gnome-keyring libsecret"
+    checkBrowserDeps sudoIf "pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop"
 
 #Solus
 elif type eopkg > /dev/null 2>&1; then
     echo "(*) Detected Solus (unoffically/community supported)"
-    checkNetCoreDeps sudoIf eopkg -y it libicu openssl zlib kerberos
-    checkKeyringDeps sudoIf eopkg -y it gnome-keyring libsecret
-    checkBrowserDeps sudoIf eopkg -y it desktop-file-utils xprop
+    checkNetCoreDeps sudoIf "eopkg -y it libicu openssl zlib kerberos"
+    checkKeyringDeps sudoIf "eopkg -y it gnome-keyring libsecret"
+    checkBrowserDeps sudoIf "eopkg -y it desktop-file-utils xprop"
 
 #Alpine Linux
 elif type apk > /dev/null 2>&1; then
@@ -224,9 +225,9 @@ elif type apk > /dev/null 2>&1; then
         exitScript 1
     fi
 
-    checkNetCoreDeps sudoIf apk add --no-cache libssl1.0 icu krb5 zlib
-    checkKeyringDeps sudoIf apk add --no-cache gnome-keyring libsecret
-    checkBrowserDeps sudoIf apk add --no-cache desktop-file-utils xprop
+    checkNetCoreDeps sudoIf "apk add --no-cache libssl1.0 icu krb5 zlib"
+    checkKeyringDeps sudoIf "apk add --no-cache gnome-keyring libsecret"
+    checkBrowserDeps sudoIf "apk add --no-cache desktop-file-utils xprop"
 
 #If no supported package manager is found
 else
