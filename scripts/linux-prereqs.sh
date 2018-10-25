@@ -45,9 +45,9 @@ exitScript()
 sudoIf()
 {
     if [ "$(id -u)" -ne 0 ]; then
-        sudo $1
+        sudo $1 $2
     else
-        $1
+        $1 $2
     fi
 }
 
