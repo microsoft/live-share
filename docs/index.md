@@ -158,6 +158,6 @@ Reference
 - [Security features of Live Share](reference/security.md)
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
-- [Release Notes](reference/releases.md)
+- [Release Notes](https://aka.ms/vsls-releases)
 
 Having problems? See [troubleshooting](troubleshooting.md) or [provide feedback](support.md).
