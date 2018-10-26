@@ -24,23 +24,27 @@ The exact instructions vary between [Visual Studio](#join-from-visual-studio) an
 
 #### 1. Sign in
 
-In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. Hit **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign in" command **or click** on the "Sign in" status bar item and follow the directions to sign in.
+![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
+
+In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. **Click** on the "Share" status bar item or press **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign In With Browser" command.
+
+![VS Code sign in button](../media/vscode-sign-in-button.png)
+
+A notification will appear asking you to sign in using your web browser. Clicking "launch sign in" will open a browser for you to use to complete the sign in process. Simply close the browser when done.
 
  ![VS Code Download](../media/vscode-sign-in-button.png)
-
-A browser will appear where you can complete the sign-in process.
 
 If you are running into problems with VS Code not picking up a successful sign-in, click on the "Having trouble" link on the success screen in the browser and follow the directions. Check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
 #### 2. Use the join command
 
-Press **Ctrl+Shift+P / Cmd+Shift+P**and select "Live Share: Join collaboration session" or used the scoped command menu by **clicking** on the session state status bar item and select "Join Collaboration Session".
+Open the Live Share custom tab in the VS Code activity bar, and select the "Join collaboration session..." icon or entry.
 
-![Join scoped command menu item](../media/vscode-join.png)
+![Join viewlet icon](../media/vscode-join-viewlet.png)
 
 #### 3. Paste the invite link
 
-Paste in the invite URL you were sent and confirm.
+Paste in the invite URL you were sent and hit 'Enter' to confirm.
 
 That's it! You should be connected to the collaboration session momentarily.
 
@@ -62,7 +66,7 @@ Simply go to **File > Join Collaboration Session**.
 
 #### 3. Paste the invite link
 
-Paste in the invite URL you were sent and confirm.
+Paste in the invite URL you were sent and hit 'Enter' to confirm.
 
 That's it! You should be connected to the collaboration session momentarily.
 
@@ -76,7 +80,7 @@ Quickstarts
 How-tos
 
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-- [How-to: Collaborate using Visual Studio](../use/vscode.md)
+- [How-to: Collaborate using Visual Studio](../use/vs.md)
 - [How-to: Provide feedback](../support.md)
 
 Reference

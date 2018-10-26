@@ -54,6 +54,10 @@ As a host, you are also notified whenever a guest joins the collaboration sessio
 
 Better still, the notification gives you the ability to remove a guest that has joined if for some reason you do not know them. (For example, if you accidentally posted your link on a company-wide chat system and a random employee joined.) Simply click on the "Remove" button in the notification that appears and they will be ejected from the collaboration session.
 
+In **VS Code**, even if you have dismissed a join notification, you also have the ability to remove a participant after that. By opening the Live Share view in the Explorer or the custom tab in the VS Code activity bar, you can hover over or right-click a participant's name and select the "Remove participant" icon or option.
+
+![Remove participant in VS Code](../media/vscode-remove-participant.png)
+
 ### Requiring guest approval
 
 While the "notification + remove" default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
@@ -124,7 +128,7 @@ The **gitignore** setting establishes how Live Share should process the contents
 | `hide`    | **The default.** Globs inside .gitignores are processed as if they were in the "hideFiles" property.                   |
 | `exclude` | Globs inside .gitignores are processed as if they were in the "excludeFiles" property.                                 |
 
-A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
+A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability to reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
 
     {
         "$schema": "http://json.schemastore.org/vsls",
@@ -151,6 +155,16 @@ The hide and exclude rules are processed separately, so if you still wanted to h
 
 Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hide/exclude rules are determined by starting with the .vsls.json file in the root folder you have shared (if present) and then walking through at each sub-folder from there leading to a given file to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree then supplement (or override) rules established at higher levels.
 
+## Read-only mode
+
+Sometimes when you share your code as a host, you don't want your guests to make edits. You might need your guest to take a look at some of your code, or you are showing your project to a large number of guests and do not want any unnecessary or accidental edits to be made. Live Share offers the ability to share projects in read-only mode.
+
+As a host, when sharing, you have the option to enable read-only mode for a collaboration session. When a guest joins, they will not be able to make edits to the code, though you can still see each other's cursors and highlights as well as navigate through the project. 
+
+You can still co-debug with guests while in read-only mode. Guests will not have the ability to step through the debugging process, but can still add or remove breakpoints, and inspect variables. Additionally, you can still share servers and terminals (read-only) with guests.
+
+You can learn more about starting a read-only collaboration session: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
+
 ## Co-debugging
 
 When you're tackling tough coding problems or bugs, having an extra pair of eyes when debugging can be really useful. Visual Studio Live Share enables "collaborative debugging" or "co-debugging" by sharing the debugging session with all guests whenever the host starts debugging.
@@ -173,7 +187,7 @@ You can learn more about configuring the feature here: [![VS Code](../media/vsco
 
 ## Sharing a terminal
 
-Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment specific problems.
+Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment-specific problems.
 
 However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way if you can freely run commands in local terminals without risk and only share them when you actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
 
@@ -183,7 +197,7 @@ Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-
 
 ## AAD Admin Consent
 
-When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its security features and your Azure AD tenant is setup to require “admin consent” for new applications accessing the contents of the directory.
+When signing in using a Microsoft backed **work or school email address** you may see a message saying **"Need admin approval"** when signing in. This is because Live Share requires read access to user information for its security features and your Azure AD tenant is set up to require “admin consent” for new applications accessing the contents of the directory.
 
 Your AD admin would need to resolve this for you using the following information:
 

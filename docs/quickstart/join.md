@@ -65,7 +65,7 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 ### 2. Sign in
 
-After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process. Click the "sign in" button / status bar item to get started.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process. Click the "share" status bar item (VS Code) / "sign in" button (VS) to get started.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -78,7 +78,9 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 </tr>
 </table>
 
-In **VS Code**, a browser appears for you to use to complete the sign in process. Simply close the browser when done.
+In **VS Code**, a notification will appear asking you to sign in using your web browser. Clicking "launch sign in" will open a browser for you to use to complete the sign in process. Simply close the browser when done.
+
+![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
 
 > **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [here for details](../use/vscode.md#sign-in-using-a-user-code).
 
@@ -102,11 +104,11 @@ If the host is offline, you'll be notified at this point instead. You can then c
 
 ### 5. Collaborate!
 
-That's it!! In a few moments you'll be connected to your colleague's collaboration session. By default, the host auto-accepts people that join, but if the host is set up to [require guest approval](../reference/security.md#requiring-guest-approval) you will see the status bar / join dialog mention that Live Share is waiting on the host to approve your request to join.
+That's it! In a few moments, you'll be connected to your colleague's collaboration session. By default, the host auto-accepts people that join, but if the host is set up to [require guest approval](../reference/security.md#requiring-guest-approval) you will see the status bar / join dialog mention that Live Share is waiting on the host to approve your request to join.
 
 > **Security Tip:** As a guest joining a collaboration session, it's important to understand that hosts may restrict your access to certain files or features. Want to understand the security implications of some of Live Share's features and settings? Check out the [security](../reference/security.md) article.
 
-Here's a few things to try out:
+Here are a few things to try out:
 
 1. Move around the project independently and make some edits
 2. Check out working intellisense for JavaScript, TypeScript, and/or C# code
