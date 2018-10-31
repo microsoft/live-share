@@ -1,0 +1,29 @@
+{
+    "redirections": [
+        {
+            "source_path": "docs/collab-vs.md",
+            "redirect_url": "/visualstudio/liveshare/use/vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/platform-support.md",
+            "redirect_url": "/visualstudio/liveshare/reference/platform-support",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/collab-vscode.md",
+            "redirect_url": "/visualstudio/liveshare/use/vscode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/extensions.md",
+            "redirect_url": "/visualstudio/liveshare/reference/extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/getting-started.md",
+            "redirect_url": "/visualstudio/liveshare/use/vscode",
+            "redirect_document_id": false
+        }
+    ]
+}
