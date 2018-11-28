@@ -54,6 +54,7 @@ While the prerequisite install script above covers a variety of distributions, y
 | Mint 19 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
 | Mint 18.3 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
 | Debian 9 GNOME Desktop (64-bit) | &lt;none&gt; | <ul><li>You may need to install `sudo` and add your user to the sudo group to use the automated install script.</li>  |
+| Debian 10 (Buster) Testing (64-bit) | Release not stable, so unknown. | <ul><li>Debian Testing and Unstable (Sid) are not officially supported.</li><li>There is a [known issue](https://github.com/dotnet/corefx/issues/33179) with .NET Core that affects Live Share on Debian Buster. </li><li>See [here for a workaround](https://github.com/dotnet/corefx/issues/33179#issuecomment-435118249).</li></ul> |
 | Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | &lt;none&gt; |
@@ -64,7 +65,6 @@ Additional details can also be found [below](#detailed-library-requirements) on 
 
 ## Tips for community supported distros
 <a name="tips-for-unsupported-distros"></a>
-
 Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core. Therefore, by extension, they are not officially supported by Visual Studio Live Share either. However, the community has contributed some useful information about getting Live Share up and running on a number of additional distributions.
 
 > **PRs welcome:** If you're interested in updating this information with your favorite distribution, submit a PR for [this file](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) in our docs GitHub repo. Even better, if you'd like to get the dependency installer supporting your favorite distribution, you can submit a PR [for this file](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh).
