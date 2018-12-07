@@ -130,7 +130,7 @@ EOF
     fi
 fi
 
-#openSUSE - Has to be first as apt is aliased to zypper
+#openSUSE - Has to be first since apt-get is available but package names different
 if type zypper > /dev/null 2>&1; then
     echo "(*) Detected SUSE (unoffically/community supported)"
     checkNetCoreDeps sudoIf "zypper -n in libopenssl1_0_0 libicu krb5 libz1"
@@ -185,13 +185,26 @@ elif type yum  > /dev/null 2>&1; then
     # Update package repo indexes - returns 0 if no pacakges to upgrade,
     # 100 if there are packages to upgrade, and 1 on error
     echo -e "\n(*) Updating package lists..."
-    sudoIf "yum check-update --refresh"
+    sudoIf "yum check-update" >/dev/null 2>&1
     if [ $? -eq 1 ]; then
         echo "(!) Failed to update package list!"
         exitScript 1
     fi
-
-    checkNetCoreDeps sudoIf "yum -y install openssl-libs krb5-libs libicu zlib"
+    
+    checkNetCoreDeps sudoIf "yum -y install openssl-libs krb5-libs libicu zlib"  
+    # Install openssl-compat10 for Fedora 29. Does not exist in 
+    # CentOS, so validate package exists first.
+    if [ $NETCOREDEPS -ne 0 ]; then
+        if ! sudoIf "yum -q list compat-openssl10" >/dev/null 2>&1; then
+            echo "(*) compat-openssl10 not required."
+        else
+            if ! sudoIf "yum -y install compat-openssl10"; then
+                echo "(!) compat-openssl10 install failed"
+                exitScript 1
+            fi
+        fi
+    fi
+    
     checkKeyringDeps sudoIf "yum -y install gnome-keyring libsecret"
     checkBrowserDeps sudoIf "yum -y install desktop-file-utils xorg-x11-utils"
 
