@@ -191,7 +191,7 @@ elif type yum  > /dev/null 2>&1; then
         exitScript 1
     fi
 
-    checkNetCoreDeps sudoIf "yum -y install openssl-libs krb5-libs libicu zlib"
+    checkNetCoreDeps sudoIf "yum -y install openssl-libs openssl-compat10 krb5-libs libicu zlib"
     checkKeyringDeps sudoIf "yum -y install gnome-keyring libsecret"
     checkBrowserDeps sudoIf "yum -y install desktop-file-utils xorg-x11-utils"
 
