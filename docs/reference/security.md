@@ -60,9 +60,13 @@ In **VS Code**, even if you have dismissed a join notification, you also have th
 
 ### Requiring guest approval
 
+Typically, participants that join a collaboration session will be **signed into Live Share** using a Microsoft work or school account (AAD), personal Microsoft account, or GitHub account. While the "notification + remove" default for signed in users provides a good mix of speed and control for these guests, you may want to **lock things down** a bit more if you are doing something sensitive.
+
+In addition, in certain circumstances forcing all guests to sign in to join a collaboration session can be problematic. Examples include asking someone new to Live Share to join as a guest, classroom/learning scenarios, or when collaborating with someone who does not have one of the supported account types. For these reasons, Live Share can allow users that are **not signed in** to join collaboration sessions as **read-only** guests. While the host needs to **approve** these guests before they can join by default, you may want to either disallow these "anonymous" guests or always approve them instead.
+
 #### Requiring guest approval for signed in users
 
-While the "notification + remove" default provides a good mix of speed and control for guests that have signed in, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
+If you would like to prevent signed in guests from joining your collaboration sessions until you have "approved" them, change the following setting:
 
 *   In **VS Code**, add the following to settings.json (File > Preferences > Settings):
 
@@ -87,17 +91,13 @@ From this point forward, you'll be asked to approve each guest that joins.
 
 As a guest, if you join a session where the host has this setting enabled, you'll be notified in the status bar or join dialog that Live Share is waiting on the host to approve.
 
-#### Requiring guest approval for users that are not signed in (anonymous)
+#### Auto-rejecting or accepting users that are not signed in (anonymous)
 
-Typically, participants that join a collaboration session will already be signed into Live Share using a Microsoft work or school account (AAD), personal Microsoft account, or GitHub account. However, in certain circumstances forcing all guests to sign in to join can be problematic. Examples include classroom settings, getting someone to use Live Share as a guest for the first time, or collaborating with someone who does not have one of the supported account types.
+As described above, Live Share can be configured to allow **users that are not signed in** to join a collaboration session as **read-only** guests.  While these **"anonymous" guests must enter a name** when joining, a simple name does not provide the same level of assurance as a real sign-in. Therefore, **by default, the host is prompted to approve** any anonymous guest regardless of the "require guest approval" setting described above.
 
-To resolve this issue, **users that are not signed in** can now join a collaboration session as a **read-only guest**.
+You can **always reject** (disable anonymous guests) or **always accept** anonymous users instead as follows:
 
-While these **"anonymous" guests must enter a name** when joining, a simple name does not assure you that the user is who they say they as much as a real sign is would. Therefore, **by default, the host is prompted to approve** any anonymous guest regardless of the "require guest approval" setting described above.
-
-However, you can change this behavior specifically for anonymous guests so that Live Share either **always rejects** (anonymous guests are disabled) or **always accepts** them as follows:
-
-* In **VS Code**, set `liveshare.anonymousGuestApproval` in settings.json (File > Preferences > Settings) to `accept`, `reject`, or `prompt` (the default) as appropriate
+* In **VS Code**, set `liveshare.anonymousGuestApproval` in settings.json (File > Preferences > Settings) to `accept`, `reject`, or `prompt` (the default) as appropriate.
 
 * In **Visual Studio**, set Tools > Options > Live Share > "Anonymous guest approval" to Accept, Reject, or Prompt (the default) as appropriate.
 
