@@ -58,9 +58,11 @@ In **VS Code**, even if you have dismissed a join notification, you also have th
 
 ![Remove participant in VS Code](../media/vscode-remove-participant.png)
 
-### Requiring guest approval for signed in users
+### Requiring guest approval
 
-While the "notification + remove" default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
+#### Requiring guest approval for signed in users
+
+While the "notification + remove" default provides a good mix of speed and control for guests that have signed in, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
 
 *   In **VS Code**, add the following to settings.json (File > Preferences > Settings):
 
@@ -85,21 +87,21 @@ From this point forward, you'll be asked to approve each guest that joins.
 
 As a guest, if you join a session where the host has this setting enabled, you'll be notified in the status bar or join dialog that Live Share is waiting on the host to approve.
 
-### Controlling access for guests that are not signed in (anonymous)
+#### Requiring guest approval for users that are not signed in (anonymous)
 
 Typically, participants that join a collaboration session will already be signed into Live Share using a Microsoft work or school account (AAD), personal Microsoft account, or GitHub account. However, in certain circumstances forcing all guests to sign in to join can be problematic. Examples include classroom settings, getting someone to use Live Share as a guest for the first time, or collaborating with someone who does not have one of the supported account types.
 
-To resolve this issue, Live Share now supports the ability for a **guest not currently signed in** to join a collaboration session as a **read-only** participant.
+To resolve this issue, **users that are not signed in** can now join a collaboration session as a **read-only guest**.
 
-While these **"anonymous" guests must enter a name** when joining, the name does not provide the same level of assurances  that the user is who they say they are that real sign is does. Therefore, by default, the **host is prompted to approve** any anonymous guests using the same "guest approval" experience described above.
+While these **"anonymous" guests must enter a name** when joining, a simple name does not assure you that the user is who they say they as much as a real sign is would. Therefore, **by default, the host is prompted to approve** any anonymous guest regardless of the "require guest approval" setting described above.
 
-While this is a sensible default, you can change this behavior to either **always reject** anonymous users or **always accept** if you prefer.
+However, you can change this behavior specifically for anonymous guests so that Live Share either **always rejects** (anonymous guests are disabled) or **always accepts** them as follows:
 
-* In **VS Code**, set `liveshare.anonymousGuestApproval` to `accept`, `reject`, or `prompt` (the default).
+* In **VS Code**, set `liveshare.anonymousGuestApproval` in settings.json (File > Preferences > Settings) to `accept`, `reject`, or `prompt` (the default) as appropriate
 
-* In **Visual Studio**, set Tools > Options > Live Share > "Anonymous guest approval" to Accept, Reject, or Prompt (the default).
+* In **Visual Studio**, set Tools > Options > Live Share > "Anonymous guest approval" to Accept, Reject, or Prompt (the default) as appropriate.
 
-Note that changing this setting does not affect what happens for signed-in users. **Regardless, remember that you should only send Live Share invitation links to people you trust.**
+ **Regardless, remember that you should only send Live Share invitation links to people you trust.**
 
 ## Controlling file access and visibility
 
