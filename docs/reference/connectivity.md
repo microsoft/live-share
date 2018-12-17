@@ -23,6 +23,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Connectivity requirements for Live Share
 
+This article summarizes the connectivity requirements for Visual Studio Live Share, available connectivity options, and known workarounds when applicable.
+
+## Sign in
+
+You can sign into Live Share using any [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory) backed work or school account, a [Microsoft account](https://account.microsoft.com/account), or a [GitHub profile](https://github.com/). Typically sign-in URLs for these are open in most organizations given the number of public facing products that use them, but if not, contact your network administrator about opening up `login.microsoftonline.com` and/or `github.com` in addition to the domains [listed below](#requirements-for-connection-modes).
+
+> **Note:** On-prem AD (ADFS) accounts and on-prem GitHub Enterprise accounts are not currently supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/341).
+
+## Connection modes
+
 To ensure optimal performance, by default Visual Studio Live Share automatically detects whether a collaboration session host machine and guest machine can communicate directly over a network and only relays via the cloud if there is no route between them. This mixed "auto" mode is flexible and even allows some guests to relay through the cloud while others connect directly for the same session.
 
 The direct connections are authenticated via a cloud based mechanism to ensure security but require a port between 5990 and 5999 be opened to enable the connectivity. As a result, when sharing for the first time your desktop firewall may prompt you open a port. Accepting this is optional as ignoring it will simply cause Live Share to always use the relay when in auto mode.

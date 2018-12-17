@@ -2,7 +2,7 @@
 title: "Security - Visual Studio Live Share | Microsoft Docs"
 description: "Information on the security features of Visual Studio Live Share."
 ms.custom:
-ms.date: 04/25/2018
+ms.date: 12/17/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +39,7 @@ Each time you start a new collaboration session, Live Share generates a **new un
 
 ### Removing an unexpected guest
 
-As a host, you are also notified whenever a guest joins the collaboration session and the fact that each participant needs to sign in using an existing Microsoft work or school account (AAD), personal Microsoft account, or a GitHub account means that you can feel confident that the person who has joined is in fact who they say they are.
+As a host, you are automatically notified whenever a guest joins the collaboration session.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -60,7 +60,9 @@ In **VS Code**, even if you have dismissed a join notification, you also have th
 
 ### Requiring guest approval
 
-While the "notification + remove" default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
+#### Requiring guest approval for signed in users
+
+While the "notification + remove" default provides a good mix of speed and control for guests that have signed in, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
 
 *   In **VS Code**, add the following to settings.json (File > Preferences > Settings):
 
@@ -85,7 +87,21 @@ From this point forward, you'll be asked to approve each guest that joins.
 
 As a guest, if you join a session where the host has this setting enabled, you'll be notified in the status bar or join dialog that Live Share is waiting on the host to approve.
 
-**Regardless, remember that you should only send Live Share invitation links to people you trust.**
+#### Requiring guest approval for users that are not signed in (anonymous)
+
+Typically, participants that join a collaboration session will already be signed into Live Share using a Microsoft work or school account (AAD), personal Microsoft account, or GitHub account. However, in certain circumstances forcing all guests to sign in to join can be problematic. Examples include classroom settings, getting someone to use Live Share as a guest for the first time, or collaborating with someone who does not have one of the supported account types.
+
+To resolve this issue, **users that are not signed in** can now join a collaboration session as a **read-only guest**.
+
+While these **"anonymous" guests must enter a name** when joining, a simple name does not assure you that the user is who they say they as much as a real sign is would. Therefore, **by default, the host is prompted to approve** any anonymous guest regardless of the "require guest approval" setting described above.
+
+However, you can change this behavior specifically for anonymous guests so that Live Share either **always rejects** (anonymous guests are disabled) or **always accepts** them as follows:
+
+* In **VS Code**, set `liveshare.anonymousGuestApproval` in settings.json (File > Preferences > Settings) to `accept`, `reject`, or `prompt` (the default) as appropriate
+
+* In **Visual Studio**, set Tools > Options > Live Share > "Anonymous guest approval" to Accept, Reject, or Prompt (the default) as appropriate.
+
+ **Regardless, remember that you should only send Live Share invitation links to people you trust.**
 
 ## Controlling file access and visibility
 
@@ -110,7 +126,7 @@ Here's an example .vsls.json file:
         ]
     }
 
-> **Note:** While not supported today, we intend to expand the concepts described here to include marking files or folders read-only. [Upvote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/55).
+> **Note:** You can also make the all files/folders you share **read-only** when you start a collaboration session. See [below](#read-only-mode) for details.
 
 Let's walk through how these properties change what guests can do.
 
@@ -155,6 +171,17 @@ The hide and exclude rules are processed separately, so if you still wanted to h
 
 Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hide/exclude rules are determined by starting with the .vsls.json file in the root folder you have shared (if present) and then walking through at each sub-folder from there leading to a given file to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree then supplement (or override) rules established at higher levels.
 
+### Disabling external file sharing
+
+By default, Live Share will also share any files the host opens that are external to the shared folder / solution. This makes it easy to quickly open up other related files without having to re-share.
+
+If you would prefer to disable this feature:
+* In **VS Code**, add the following to settings.json:
+
+        liveshare.shareExternalFiles: false
+
+* In **Visual Studio**, set Tools &gt; Options &gt; Live Share &gt; "Share External Files" to False
+
 ## Read-only mode
 
 Sometimes when you share your code as a host, you don't want your guests to make edits. You might need your guest to take a look at some of your code, or you are showing your project to a large number of guests and do not want any unnecessary or accidental edits to be made. Live Share offers the ability to share projects in read-only mode.
@@ -181,7 +208,13 @@ When co-debugging, it can be really useful to get access to different parts of t
 
 However, as a host, you should **be very selective with the ports you share** with guests and only share application ports rather system ports. For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky. For this reason, Live Share does not make any assumptions about what should or should not be shared without a configuration setting and the host performing an action.
 
-In Visual Studio, the **web application port** specified in ASP.NET projects is **automatically shared during debugging only** to facilitate guest access to the web app when running. However, you can turn off this automation by setting Tools > Options > Live Share > "Share web app on debug" to "False" if you prefer. In Visual Studio Code, **no ports** are shared unless you decide to share them via the command palette / scoped command menu. In either case, exercise care when sharing additional ports.
+In Visual Studio, the **web application port** specified in ASP.NET projects is **automatically shared during debugging only** to facilitate guest access to the web app when running. However, you can turn off this automation by setting Tools > Options > Live Share > "Share web app on debug" to "False" if you prefer.
+
+In Visual Studio Code, Live Share attempts to **detect the proper application ports** and share them. However, you can disable this by adding the following to settings.json:
+
+        liveshare.autoShareServers: false
+
+In either case, exercise care when sharing additional ports.
 
 You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
 
@@ -189,9 +222,12 @@ You can learn more about configuring the feature here: [![VS Code](../media/vsco
 
 Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment-specific problems.
 
-However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way if you can freely run commands in local terminals without risk and only share them when you actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
+Only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching. When you start a shared terminal as a host, you can specify whether it should be read-only or read/write. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
-When you start a shared terminal as a host, you can specify whether it should be read-only or read/write. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
+In Visual Studio, terminals are not shared by default. In VS Code, terminals are automatically shared **read-only** by default. However, you can disable this by adding the following to settings.json:
+
+        liveshare.autoShareTerminals: false
+
 
 Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 

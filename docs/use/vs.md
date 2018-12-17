@@ -223,7 +223,7 @@ Beyond cursors and edits, selections you make are also visible to all participan
 
 Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
-> **Note:** Guest support for file navigation and file operations is still in development and has some limitations. Find in files is not yet implemented [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from Visual Studio [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in VS are not shared [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/46).
+> **Note:** By default Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update Share External Files in Tools &gt; Options &gt; Live Share to False.
 
 The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
@@ -250,7 +250,7 @@ Whenever you are in a collaboration session, you'll be able can see each partici
 
 Sometimes you may need to explain a problem or design that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you will automatically "follow" the host. When following a participant, your editor will stay in sync with their currently open file, cursor, and scroll position.
 
-> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/54).
+> **Note:** By default Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update Share External Files in Tools &gt; Options &gt; Live Share to False.
 
 To make it easy to switch out of "follow mode" and start editing on your own, you'll stop following if any of the following happens:
 
