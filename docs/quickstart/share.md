@@ -25,7 +25,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 > **Note: Visual Studio Live Share is currently in preview. User experience and features are not final.**
 
-Welcome to Visual Studio Live Share! Live Share lets you achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love. You can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
+Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless what programming languages you're using or app types you're building. It allows you to instantly and securely share your current project, and then as needed, share debugging sessions, terminal instances, localhost web apps, voice calls, and more!
 
 Ready to get going?  Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
@@ -59,13 +59,22 @@ Installing the extension is easy. Just follow these steps:
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button"></a><br />
     </td>
 </tr>
+<tr style="border:none;">
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td  style="border:none;">
+        <strong>Visual Studio 2019 </strong><br />
+        1. Install the latest preview version of <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
+        2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        3. Visual Studio Live Share is installed by default with these workloads. <br />
+    </td>
+</tr>
 </table>
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
 ### 2. Sign in
 
-After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. Simply click the "share" status bar item (VS Code) / "sign in" button (VS) to get started.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. Simply click the "Live Share" status bar item (VS Code) / "Sign in" button (VS) to get started.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -78,7 +87,7 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 </tr>
 </table>
 
-In **VS Code**, a notification will appear asking you to sign in using your web browser. Clicking "launch sign in" will open a browser for you to use to complete the sign in process. Simply close the browser when done.
+In **VS Code**, your browser will launch while a notification will appear launch asking you to sign in. Complete the sign in process in your browser, then simply close the browser when done.
 
 ![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
 
@@ -98,7 +107,7 @@ By default, Live Share **hides** any files/folders referenced in .gitignore file
 
 ### 5. Start a collaboration session
 
-Next, simply click "Share" within your tool and an invite link is automatically copied to your clipboard.
+Next, simply click "Live Share" within your tool and an invite link is automatically copied to your clipboard.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -130,6 +139,9 @@ After sharing, you will get a notification that the invite link has been copied 
 </tr>
 </table>
 
+In **VS Code**, you can also start a read-only session from the Live Share viewlet tab.
+
+![Toast notification asking to sign in using a web browser](../media/vscode-read-only-viewlet.png)
 
 ### 7. Send someone the invite link
 
@@ -154,7 +166,7 @@ By default, guests automatically join your collaboration session and you are not
 </tr>
 </table>
 
-While this notification gives you the option to remove them from the collaboration session, you can also opt to require an explicit "approval" for anyone joining instead. If you have this setting turned on, a notification prompts you to approve the guest when they try to join your session.
+You can opt to require an explicit "approval" for anyone joining instead. If you have this setting turned on, a notification prompts you to approve the guest when they try to join your session.
 
 See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to turn this feature on.
 
@@ -163,8 +175,7 @@ See [requiring guest approval](../reference/security.md#requiring-guest-approval
 That's it! Here are a few things to try out once a guest has joined you:
 
 1. Move around to different files in the project independently and make some edits
-2. Jump to the guest's location and edit something together
-3. Pin to the guest and follow as they make edits in different files
+2. Follow the guest and observe as they scroll, make edits, and navigate to different files
 4. Start up a co-debugging session with them
 5. Share a server so you can check out something like a web app running on their machine
 6. Share a terminal and run some commands

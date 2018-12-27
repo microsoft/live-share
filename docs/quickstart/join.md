@@ -25,7 +25,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 > **Note: Visual Studio Live Share is currently in preview. User experience and features are not final.**
 
-Welcome to Visual Studio Live Share! Live Share lets you achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love. You can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
+Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless what programming languages you're using or app types you're building. It allows you to instantly and  securely join a teammate's current project, and then as needed, enter into debugging sessions, view and edit terminal instances, see localhost web apps, join voice calls, and more!
 
 Ready to get going? Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
@@ -50,8 +50,8 @@ Installing the extension is easy. Just follow these steps:
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide.svg" width="128px" alt="Visual Studio logo"/></td>
-    <td  style="border:none;">
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide.svg" width="128px" alt="Visual Studio logo" /></td>
+    <td style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
         1. Install the latest version of <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
         2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
@@ -59,13 +59,43 @@ Installing the extension is easy. Just follow these steps:
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button"></a><br />
     </td>
 </tr>
+<tr style="border:none;">
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td  style="border:none;">
+        <strong>Visual Studio 2019 </strong><br />
+        1. Install the latest preview version of <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
+        2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        3. Visual Studio Live Share is installed by default with these workloads. <br />
+    </td>
+</tr>
 </table>
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
-### 2. Sign in
+### 2. [Optional] Join as a read-only guest in VS Code
+In VS Code, after installing the Live Share extension, restarting, and waiting for dependencies to finish installing, you can jump in and join a collaboration session as a read-only guest. 
 
-After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process. Click the "share" status bar item (VS Code) / "sign in" button (VS) to get started.
+>**Note:** If you want to make edits to the code you are joining, you'll need to [sign in](../quickstart/join.md#3-Sign-in).
+
+Open (or re-open) the invite link in a browser, and you will get a notification that the browser wants to launch VS Code. Let it launch, and it'll start connecting to the collaboration session.
+
+When VS Code launches, you'll get a toast notification asking to sign in. Select "Continue as read-only guest" to join the session. 
+
+![Join as session as a read-only guest toast](../media/vscode-read-only-guest.png)
+
+You'll be asked to enter a display name to help participants identify you in the session.
+
+![Read-only guest name](../media/vscode-read-only-guest-name.png)
+
+Afterwards, you'll be joined into the session as read-only. You will be able to view and navigate around the code, co-debug, and view shared servers and terminals (read-only). 
+
+> **Note:** If you want to later get read/write access to the code, you can sign in. Click on your display name in the status, bar, and select the option "Sign in".
+![Read-only guest sign in](../media/vscode-read-only-guest-signin.png)
+This will launch your browser, and you can choose a Microsoft or GitHub account to sign in with.
+
+### 3. Sign in
+
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process, or can join the session as a read-only guest. Click the "share" status bar item (VS Code) / "sign in" button (VS) to get started.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -78,7 +108,7 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 </tr>
 </table>
 
-In **VS Code**, a notification will appear asking you to sign in using your web browser. Clicking "launch sign in" will open a browser for you to use to complete the sign in process. Simply close the browser when done.
+In **VS Code**, your browser will launch while a notification will appear launch asking you to sign in. Complete the sign in process in your browser, then simply close the browser when done.
 
 ![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
 
@@ -88,7 +118,7 @@ In **Visual Studio**, Live Share automatically uses your [personalization accoun
 
 See [troubleshooting](../troubleshooting.md#sign-in) if you are still hitting problems.
 
-### 3. Open/re-open the invite link in a browser
+### 4. Open/re-open the invite link in a browser
 
 Now, simply open (or re-open) the invite link in a browser.
 
@@ -112,9 +142,9 @@ Here are a few things to try out:
 
 1. Move around the project independently and make some edits
 2. Check out working intellisense for JavaScript, TypeScript, and/or C# code
-3. Jump to the host's location and edit something together
-4. Pin to the host and follow as they make edits in different files
-5. Ask the host to start up a co-debugging session with you
+3. Edit something together with the host
+4. Follow the host and move around with them as they navigate and make edits in different files
+5. Start up a co-debugging session with the host
 6. Ask the host to share a server so you can check out something like a web app running on their machine
 7. Ask the host to share a terminal and run some commands
 
