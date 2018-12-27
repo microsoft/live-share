@@ -64,7 +64,7 @@ Installing the extension is easy. Just follow these steps:
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1. Install the latest preview version of <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
-        2. Install a <a href="reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
         3. Visual Studio Live Share is installed by default with these workloads. <br />
     </td>
 </tr>
