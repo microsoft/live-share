@@ -144,7 +144,7 @@ The **gitignore** setting establishes how Live Share should process the contents
 | `hide`    | **The default.** Globs inside .gitignores are processed as if they were in the "hideFiles" property.                   |
 | `exclude` | Globs inside .gitignores are processed as if they were in the "excludeFiles" property.                                 |
 
-A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability to reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
+A downside of the `excludeFiles` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability to reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
 
     {
         "$schema": "http://json.schemastore.org/vsls",
