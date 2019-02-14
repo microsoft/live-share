@@ -364,7 +364,7 @@ If the port is already in use on a guest's machine, a different one is automatic
 
 Note that *guests cannot* control which ports on the host's machine are shared for security reasons.
 
-To **stop** sharing a local server, the host simply needs to hare state button in the upper right corner as above, select "Manage Shared Local Servers", and select the appropriate port, and click "Remove".
+To **stop** sharing a local server, the host simply needs to click the share / session state button in the upper right corner as above, select "Manage Shared Local Servers", and select the appropriate port, and click "Remove".
 
 ## Share a terminal
 
