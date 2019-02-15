@@ -111,20 +111,22 @@ You can accomplish this by adding a **.vsls.json** file to the folder or project
 
 Here's an example .vsls.json file:
 
-    {
-        "$schema": "http://json.schemastore.org/vsls",
-        "gitignore":"none",
-        "excludeFiles":[
-            "*.p12",
-            "*.cer",
-            "token",
-            ".gitignore"
-        ],
-        "hideFiles": [
-            "bin",
-            "obj"
-        ]
-    }
+```json
+{
+    "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"none",
+    "excludeFiles":[
+        "*.p12",
+        "*.cer",
+        "token",
+        ".gitignore"
+    ],
+    "hideFiles": [
+        "bin",
+        "obj"
+    ]
+}
+```
 
 > **Note:** You can also make the all files/folders you share **read-only** when you start a collaboration session. See [below](#read-only-mode) for details.
 
@@ -146,26 +148,30 @@ The **gitignore** setting establishes how Live Share should process the contents
 
 A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability to reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
 
-    {
-        "$schema": "http://json.schemastore.org/vsls",
-        "gitignore":"exclude",
-        "excludeFiles":[
-            "!node_modules"
-        ]
-    }
+```json
+{
+    "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"exclude",
+    "excludeFiles":[
+        "!node_modules"
+    ]
+}
+```
 
 The hide and exclude rules are processed separately, so if you still wanted to hide node_modules to reduce clutter without actually excluding it, you can simply edit the file as follows:
 
-    {
-        "$schema": "http://json.schemastore.org/vsls",
-        "gitignore":"exclude",
-        "excludeFiles":[
-            "!node_modules"
-        ],
-        "hideFiles":[
-            "node_modules"
-        ]
-    }
+```json
+{
+    "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"exclude",
+    "excludeFiles":[
+        "!node_modules"
+    ],
+    "hideFiles":[
+        "node_modules"
+    ]
+}
+```
 
 ### .vsls.json files in sub-folders
 
@@ -178,7 +184,9 @@ By default, Live Share will also share any files the host opens that are externa
 If you would prefer to disable this feature:
 * In **VS Code**, add the following to settings.json:
 
-        liveshare.shareExternalFiles: false
+```json
+liveshare.shareExternalFiles: false
+```
 
 * In **Visual Studio**, set Tools &gt; Options &gt; Live Share &gt; "Share External Files" to False
 
