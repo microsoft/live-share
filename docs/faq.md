@@ -43,13 +43,13 @@ Live Share has a wide variety of use cases such as: investigating a bug together
 No, the shared code resides solely on the machine of the developer who initiated the share. It is not stored or uploaded to the cloud in any way. Rather, Live Share simply establishes a secure connection between you and your teammates (which is encrypted end-to-end), and doesn't inspect or collect any data on the code that is shared.
 
 ## Does this remote-based model work anywhere? Is it peer-to-peer?
-Live Share's only requirement is that the person sharing and their teammate each have internet access. Secure communication between team members during a collaboration session is facilitated by an Azure relay. Your workspace (i.e. source files) is not stored in the cloud. No special peer-to-peer connection is required though one might be used to reduce latency. See [changing the connection mode](http://aka.ms/vsls-docs/connection-mode) in our docs for additional details.
+Live Share's only requirement is that the person sharing and their teammate each have internet access. Secure communication between team members during a collaboration session is facilitated by an Azure relay. Your workspace (i.e. source files) is not stored in the cloud. No special peer-to-peer connection is required though one might be used to reduce latency. See [changing the connection mode](https://aka.ms/vsls-docs/connection-mode) in our docs for additional details.
 
 ## What is shared during a Live Share session?
 Live Share doesn't transfer all keyboard and mouse inputs. It only communicates the data needed for each collaboration activity to your teammates' machines. For example, when you share your workspace, your folder structure is shared. When you collaboratively edit a file, that file's contents are shared. When you are collaboratively debugging, debug actions (e.g. stepping) and state (e.g. call stack and locals) are shared.
 
 ## When will Live Share be released?
-Live Share is available now in public preview! We intend to work closely developers testing the preview bits, in order to collect feedback and ensure we can deliver the best experience possible, before opening the service more broadly. 
+Live Share is available now in public preview! We intend to work closely developers testing the preview bits, in order to collect feedback and ensure we can deliver the best experience possible, before opening the service more broadly.
 
 ## How much will it cost?
 We are committed to a substantive free tier of Visual Studio Live Share for developers to use on an ongoing basis. We will be evaluating the introduction of paid tiers with advanced features as we better understand the needs of the community.
@@ -86,7 +86,7 @@ However, our goal is to support the diverse landscape of languages and platforms
 We currently support five concurrent guests, in addition to the developer that is sharing ("hosting") their project. Therefore, a collaboration session can have a total of six developers in it at any given time. That said, this is an area we're looking for feedback on, so if you have a use case that requires a higher limit, please [let us know](https://github.com/MicrosoftDocs/live-share/issues/229)!
 
 ## What is the roadmap?
-You can view the set of known issues, and roadmap items [here](http://aka.ms/vsls-issues). If you'd like to see only feature requests rather than all issues, see [here](https://aka.ms/vsls-feature-requests). We encourage you to up-vote existing items, file new feature requests, and log bug reports, in order to help us shape the direction of the product moving forward.
+You can view the set of known issues, and roadmap items [here](https://aka.ms/vsls-issues). If you'd like to see only feature requests rather than all issues, see [here](https://aka.ms/vsls-feature-requests). We encourage you to up-vote existing items, file new feature requests, and log bug reports, in order to help us shape the direction of the product moving forward.
 
 ## See also
 
