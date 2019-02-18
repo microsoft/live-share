@@ -27,11 +27,12 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless what programming languages you're using or app types you're building. It allows you to instantly and securely share your current project, and then as needed, share debugging sessions, terminal instances, localhost web apps, voice calls, and more!
 
-Additionally, unlike traditional pair programming, Visual Studio Live Share allows developers to work together, while retaining their personal editor preferences (e.g. theme, keybindings), as well as having their own cursor. This allows you to seamlessly transition between following one another, and being able to explore ideas/tasks on your own. In practice, this ability to work together _and_ independently provides a collaboration experience that is potentiallty more natural for many common use cases.
+Additionally, unlike traditional pair programming, Visual Studio Live Share allows developers to work together, while retaining their personal editor preferences (e.g. theme, keybindings), as well as having their own cursor. This allows you to seamlessly transition between following one another, and being able to explore ideas/tasks on your own. In practice, this ability to work together _and_ independently provides a collaboration experience that is potentially more natural for many common use cases.
 
 Ready to get going? In this article we'll run you through some concepts and how to install the needed extensions. If you're looking for an abridged version, check out the [share](quickstart/share.md) and [join](quickstart/join.md) quickstarts.
 
->**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+> [!TIP]
+> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Install Visual Studio Live Share
 
@@ -39,7 +40,7 @@ Before you begin, you need to be sure you have a version of Visual Studio or Vis
 
 - **Visual Studio Code 1.22.0 or higher** - Windows 7, 8.1, or 10, macOS *(Sierra 10.12 and above only)*, 64-bit Linux *(64-bit Ubuntu Desktop 16.04+, Fedora 27+ recommended - [see details](use/vscode.md#installation))*.
 - **Visual Studio 2017 15.6 or higher** (any edition) - Windows 7, 8.1, or 10.
-- **Visual Studio 2019** (any edition) - Windows 7, 8.1, or 10. 
+- **Visual Studio 2019** (any edition) - Windows 7, 8.1, or 10.
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -108,7 +109,8 @@ Clicking an invitation link sent to you by a host allows you to "join" a collabo
 
 When you open the same file as another collaborator, you are instantly able to "collaboratively edit" or "co-edit" the file's contents. You can see each collaborator's edits, their cursors and selections, and more. Even better, you are not forced into editing the same file at all times so you can opportunistically collaborate and act independently as you see fit.
 
-> **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language.
+> [!NOTE]
+> Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-editing)
 
@@ -122,7 +124,8 @@ Sometimes you need to explain a problem or design that spans multiple files or l
 
 When you're debugging tough coding problems or bugs, having an extra pair of eyes can be really useful. As a host, Live Share automatically enables "collaborative debugging" or "co-debugging" by sharing the debugging session with all guests. You each get co-editing features along with the ability to investigate independently as you step through together.
 
-> **Note:** See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
+> [!NOTE]
+> See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debugging) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-debugging)
 

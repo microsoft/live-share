@@ -29,11 +29,12 @@ Welcome to Visual Studio Live Share! Live Share enables you to collaboratively e
 
 Ready to get going? Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
->**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+> [!TIP]
+> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 Just follow these steps to join a collaboration session.
 
-### 1. Install the extension
+## 1. Install the extension
 
 Installing the extension is easy. Just follow these steps:
 
@@ -72,14 +73,16 @@ Installing the extension is easy. Just follow these steps:
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
-### 2. [Optional] Join as a read-only guest in VS Code
-In VS Code, after installing the Live Share extension, restarting, and waiting for dependencies to finish installing, you can jump in and join a collaboration session as a read-only guest. 
+## 2. [Optional] Join as a read-only guest in VS Code
 
->**Note:** If you want to make edits to the code you are joining, you'll need to [sign in](../quickstart/join.md#3-Sign-in).
+In VS Code, after installing the Live Share extension, restarting, and waiting for dependencies to finish installing, you can jump in and join a collaboration session as a read-only guest.
+
+> [!NOTE]
+> If you want to make edits to the code you are joining, you'll need to [sign in](../quickstart/join.md#3-Sign-in).
 
 Open (or re-open) the invite link in a browser, and you will get a notification that the browser wants to launch VS Code. Let it launch, and it'll start connecting to the collaboration session.
 
-When VS Code launches, you'll get a toast notification asking to sign in. Select "Continue as read-only guest" to join the session. 
+When VS Code launches, you'll get a toast notification asking to sign in. Select "Continue as read-only guest" to join the session.
 
 ![Join as session as a read-only guest toast](../media/vscode-read-only-guest.png)
 
@@ -87,13 +90,14 @@ You'll be asked to enter a display name to help participants identify you in the
 
 ![Read-only guest name](../media/vscode-read-only-guest-name.png)
 
-Afterwards, you'll be joined into the session as read-only. You will be able to view and navigate around the code, co-debug, and view shared servers and terminals (read-only). 
+Afterwards, you'll be joined into the session as read-only. You will be able to view and navigate around the code, co-debug, and view shared servers and terminals (read-only).
 
-> **Note:** If you want to later get read/write access to the code, you can sign in. Click on your display name in the status, bar, and select the option "Sign in".
+> [!NOTE]
+> If you want to later get read/write access to the code, you can sign in. Click on your display name in the status, bar, and select the option "Sign in".
 ![Read-only guest sign in](../media/vscode-read-only-guest-signin.png)
 This will launch your browser, and you can choose a Microsoft or GitHub account to sign in with.
 
-### 3. Sign in
+## 3. Sign in
 
 After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process, or can join the session as a read-only guest. Click the "share" status bar item (VS Code) / "sign in" button (VS) to get started.
 
@@ -118,7 +122,7 @@ In **Visual Studio**, Live Share automatically uses your [personalization accoun
 
 See [troubleshooting](../troubleshooting.md#sign-in) if you are still hitting problems.
 
-### 4. Open/re-open the invite link in a browser
+## 4. Open/re-open the invite link in a browser
 
 Now, simply open (or re-open) the invite link in a browser.
 
@@ -132,7 +136,7 @@ If the host is offline, you'll be notified at this point instead. You can then c
 
 > **Troubleshooting Tip:** When using VS Code, be sure you've **started the tool at least once** after installing the extension and waited for the dependencies to finish installing (see the status bar) before opening/re-opening the invite page. Still having trouble? See [join manually](../reference/manual-join.md) for details.
 
-### 5. Collaborate!
+## 5. Collaborate!
 
 That's it! In a few moments, you'll be connected to your colleague's collaboration session. By default, the host auto-accepts people that join, but if the host is set up to [require guest approval](../reference/security.md#requiring-guest-approval) you will see the status bar / join dialog mention that Live Share is waiting on the host to approve your request to join.
 

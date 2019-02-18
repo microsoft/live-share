@@ -29,7 +29,8 @@ Note that all collaboration activities in described here involve a single **coll
 
 *Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts instead.*
 
->**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+> [!TIP]
+> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Installation
 
@@ -85,7 +86,8 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     ![VS Share button](../media/vs-share-button.png)
 
-    > **Note:** You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
+    > [!NOTE]
+    > You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
     An invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them.
 
@@ -123,7 +125,7 @@ That's it!!
 
 ### Ending the collaboration session
 
-As a host, you can can stop sharing completely and end the collaboration session by clicking the share / session state button (in the upper right hand corner) and selecting "End Collaboration Session".
+As a host, you can stop sharing completely and end the collaboration session by clicking the share / session state button (in the upper right hand corner) and selecting "End Collaboration Session".
 
 ![Stop sharing](../media/vs-stop-sharing.png)
 
@@ -159,7 +161,8 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
     If the host is offline, you'll be notified at this point instead. You can then contact the host and ask them to share again.
 
-    > **Note:** Still having trouble? See [join manually](#join-manually).
+    > [!NOTE]
+    > Still having trouble? See [join manually](#join-manually).
 
 3. **Collaborate**
 
@@ -211,19 +214,22 @@ Having issues with joining? Check out [troubleshooting](../troubleshooting.md#sh
 
 Once a guest has joined a collaboration session, all collaborators will immediately be able to see each others edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves making it easy iterate and rapidly nail to down solutions.
 
-> **Note:** Joining a read-only collaboration session prevents guests from being able to make edits to files. A host can [enable read-only mode when they share](#share-a-project). As a guest, you can tell if you have joined a read-only session by looking at your [session state](#session-states). 
+> [!NOTE]
+> Joining a read-only collaboration session prevents guests from being able to make edits to files. A host can [enable read-only mode when they share](#share-a-project). As a guest, you can tell if you have joined a read-only session by looking at your [session state](#session-states).
 
 ![Screen shot showing co-editing](../media/vs-coedit.png)
 
-> **Note:** Co-editing has a few limitations for certain languages. See [platform support](../reference/platform-support.md) for the state of features by language.
+> [!NOTE]
+> Co-editing has a few limitations for certain languages. See [platform support](../reference/platform-support.md) for the state of features by language.
 
 Beyond cursors and edits, selections you make are also visible to all participants in that same file. This makes it easy to highlight where problems might exist or convey ideas.
 
 ![Screen shot showing highlighting](../media/vs-highlight.png)
 
-Better yet, you and other participants can navigate to any file in the shared project. You can can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
+Better yet, you and other participants can navigate to any file in the shared project. You can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
-> **Note:** By default Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update Share External Files in Tools &gt; Options &gt; Live Share to False.
+> [!NOTE]
+> By default Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update Share External Files in Tools &gt; Options &gt; Live Share to False.
 
 The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
 
@@ -250,7 +256,8 @@ Whenever you are in a collaboration session, you'll be able can see each partici
 
 Sometimes you may need to explain a problem or design that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you will automatically "follow" the host. When following a participant, your editor will stay in sync with their currently open file, cursor, and scroll position.
 
-> **Note:** By default Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update Share External Files in Tools &gt; Options &gt; Live Share to False.
+> [!NOTE]
+> By default Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update Share External Files in Tools &gt; Options &gt; Live Share to False.
 
 To make it easy to switch out of "follow mode" and start editing on your own, you'll stop following if any of the following happens:
 
@@ -289,19 +296,23 @@ Using it simple. The collaboration session host simply needs to start debugging 
 
 Once the debugger attaches on the host's side, all guests are also automatically attached as well. While there is one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
 
-> **Tip:** If you want to change when and how co-debugging happens, you can change the default behaviors via settings in **Tools > Options > Live Share**.
+> [!TIP]
+> If you want to change when and how co-debugging happens, you can change the default behaviors via settings in **Tools > Options > Live Share**.
 
 ![VS debugger attached](../media/vs-debugger.png)
 
 Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
 
-> **Note:** See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
+> [!NOTE]
+> See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
 
 Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
-> **Note:** While in a read-only collaboration session, a guest will not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables. 
+> [!NOTE]
+> While in a read-only collaboration session, a guest will not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables.
 
-> **Tip:** You can also participate in VS Code debugging sessions from Visual Studio and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debugging) on co-debugging for more information.
+> [!TIP]
+> You can also participate in VS Code debugging sessions from Visual Studio and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debugging) on co-debugging for more information.
 
 ### Automatic web app sharing
 
@@ -309,7 +320,8 @@ Even better, for ASP.NET Web App projects, by default if the host's project is c
 
 See [share a server](#share-a-server) for information on how to share server access for other project types and/or for the duration of the session.
 
-> **Tip:** If you don't like the automated browser sharing behavior and want to change it, you can update settings in **Tools > Options > Live Share**.
+> [!TIP]
+> If you don't like the automated browser sharing behavior and want to change it, you can update settings in **Tools > Options > Live Share**.
 
 ![Animation of concurrent debugging](../media/co-debug.gif)
 
@@ -378,7 +390,8 @@ As a host, you can share a terminal by clicking on the session state / share but
 
 At this point, you can select a read-only or read/write terminal from the menu. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
->**Note:** If the collaboration session is in read-only mode, only read-only terminals can be shared by the host. 
+> [!NOTE]
+> If the collaboration session is in read-only mode, only read-only terminals can be shared by the host.
 
 Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear for all participants with the correct permissions. While Visual Studio Code has a built in terminal support Visual Studio does not have one out of box. Therefore, by default, new window containing the terminal will appear. However, if the [Whack Whack Terminal extension](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal), Live Share will create an integrated terminal instead. Visual Studio will give you a link to install it the first time you start or join a shared terminal.
 

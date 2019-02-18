@@ -29,7 +29,8 @@ This article summarizes the connectivity requirements for Visual Studio Live Sha
 
 You can sign into Live Share using any [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory) backed work or school account, a [Microsoft account](https://account.microsoft.com/account), or a [GitHub profile](https://github.com/). Typically sign-in URLs for these are open in most organizations given the number of public facing products that use them, but if not, contact your network administrator about opening up `login.microsoftonline.com` and/or `github.com` in addition to the domains [listed below](#requirements-for-connection-modes).
 
-> **Note:** On-prem AD (ADFS) accounts and on-prem GitHub Enterprise accounts are not currently supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/341).
+> [!NOTE]
+> On-prem AD (ADFS) accounts and on-prem GitHub Enterprise accounts are not currently supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/341).
 
 ## Connection modes
 
@@ -81,7 +82,7 @@ As outlined above, direct mode requires that your personal firewall allow **vsls
 
 If you do not see an entry for vsls-agent, you can find the agent executable in one of the following locations.
 
-#### VS Code agent location
+### VS Code agent location
 
 Substitute **VERSION** for the extension version number in one of the paths below:
 
@@ -93,7 +94,7 @@ Substitute **VERSION** for the extension version number in one of the paths belo
 
     `%USERPROFILE%\.vscode\extensions\ms-vsliveshare.vsliveshare-VERSION\dotnet_modules\vsls-agent.exe`
 
-#### Visual Studio agent location
+### Visual Studio agent location
 
 The Visual Studio location is more dynamic, but you can follow these steps to find the executable:
 
