@@ -40,7 +40,7 @@
 			"manager": "amandasilver",
 			"audience": "developer",
             "ms.prod": "visual-studio-family",
-            "ms.technology": "liveshare",
+            "ms.technology": "live-share",
 			"ms.topic": "article",
 			"searchScope": ["Live Share"],
       "uhfHeaderId": "MSDocsHeader-VisualStudio"
