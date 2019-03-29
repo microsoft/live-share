@@ -39,7 +39,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | Ballerina | ✅ | ✅ |
 | Bash | ✅ | ✅ |
 | C++ | ✅ | ✅ |
-| C# | ✅ | ✅ | 
+| C# | ✅ | ✅ |
 | Clojure | ✅ | *N/A* <sup>4</sup> |
 | [ColdFusion (CFML)](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml) | ✅ | *N/A* <sup>4</sup> |
 | [Crystal](https://marketplace.visualstudio.com/items?itemName=faustinoaq.crystal-lang) | ✅ | *N/A* <sup>4</sup> |
@@ -123,13 +123,13 @@ All languages / platforms have same file intellisense (when the respective exten
 <sup>4</sup> Supported via shared terminals.<br />
 <sup>5</sup> Debugging database stored procs is not currently supported <br />
 <sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
-<sup>7</sup> Cordova apps can be shared via the the "browser" platform<br />
+<sup>7</sup> Cordova apps can be shared via the "browser" platform<br />
 <sup>8</sup> React Native apps can be shared via Expo and [shared servers](../use/vscode.md#share-a-server).<br />
 <sup>9</sup> Live Share doesn't currently support sharing windows/screens. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/236)
 
 ## Visual Studio
 
-While most languages have some single file Intellisense support, there are some caveats outlined below. All languages/platforms support co-editing. The remainder of the list covers advanced features features currently without complete, universal support:
+While most languages have some single file Intellisense support, there are some caveats outlined below. All languages/platforms support co-editing. The remainder of the list covers advanced features currently without complete, universal support:
 
 ### Languages
 
@@ -166,7 +166,7 @@ While most languages have some single file Intellisense support, there are some 
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
 | Azure Functions | ✅  | ✅ <sup>5</sup> |
 | Azure Service Fabric | ✅ | ✅ <sup>5</sup> |
-| [Azure Dev Spaces](http://aka.ms/devspaces) | ✅ | ✅ <sup>1</sup> |
+| [Azure Dev Spaces](https://aka.ms/devspaces) | ✅ | ✅ <sup>1</sup> |
 | Databases | <sup>4</sup> | ✅ <sup>5</sup> |
 | Console / CLI | ✅ | ✅ <sup>6</sup> |
 | Desktop (WinForms) | ✅ | |

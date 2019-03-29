@@ -22,27 +22,29 @@ The exact instructions vary between [Visual Studio](#join-from-visual-studio) an
 
 ## Join from Visual Studio Code
 
-#### 1. Sign in
+### 1. Sign in
+
+>**Note:** If you want to join a collaboration session as a read-only guest, you can skip signing in. You will have access to viewing and navigating around the code that is shared but not be able to make edits.
 
 ![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
 
-In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. **Click** on the "Share" status bar item or press **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign In With Browser" command.
+In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. **Click** on the "Live Share" status bar item or press **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign In With Browser" command.
 
 ![VS Code sign in button](../media/vscode-sign-in-button.png)
 
-A notification will appear asking you to sign in using your web browser. Clicking "launch sign in" will open a browser for you to use to complete the sign in process. Simply close the browser when done.
-
- ![VS Code Download](../media/vscode-sign-in-button.png)
+Your browser will launch while a notification will appear launch asking you to sign in. Complete the sign in process in your browser, then simply close the browser when done.
 
 If you are running into problems with VS Code not picking up a successful sign-in, click on the "Having trouble" link on the success screen in the browser and follow the directions. Check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
-#### 2. Use the join command
+### 2. Use the join command
 
-Open the Live Share custom tab in the VS Code activity bar, and select the "Join collaboration session..." icon or entry.
+Open the Live Share viewlet in the VS Code activity bar, and select the "Join collaboration session..." icon or entry.
 
 ![Join viewlet icon](../media/vscode-join-viewlet.png)
 
-#### 3. Paste the invite link
+>**Note:** If you are joining as a read-only guest, you will then be asked to enter a display name to help participants identify you in the session.
+
+### 3. Paste the invite link
 
 Paste in the invite URL you were sent and hit 'Enter' to confirm.
 
@@ -50,7 +52,7 @@ That's it! You should be connected to the collaboration session momentarily.
 
 ## Join from Visual Studio
 
-#### 1. Sign in
+### 1. Sign in
 
 Once installed, start Visual Studio and sign in if you have not already. If you need to use a different sign-in for Visual Studio than your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account**.
 
@@ -58,13 +60,13 @@ Once installed, start Visual Studio and sign in if you have not already. If you 
 
 Still having trouble? See [troubleshooting](../troubleshooting.md#sign-in).
 
-#### 2. Use the join command
+### 2. Use the join command
 
 Simply go to **File > Join Collaboration Session**.
 
 ![VS Join menu](../media/vs-join.png)
 
-#### 3. Paste the invite link
+### 3. Paste the invite link
 
 Paste in the invite URL you were sent and hit 'Enter' to confirm.
 

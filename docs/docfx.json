@@ -39,8 +39,8 @@
 			"extendBreadcrumb": true,
 			"manager": "amandasilver",
 			"audience": "developer",
-            "ms.service": "vs-liveshare",
             "ms.prod": "visual-studio-family",
+            "ms.technology": "live-share",
 			"ms.topic": "article",
 			"searchScope": ["Live Share"],
       "uhfHeaderId": "MSDocsHeader-VisualStudio"

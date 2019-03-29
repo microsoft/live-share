@@ -2,7 +2,7 @@
 title: "Security - Visual Studio Live Share | Microsoft Docs"
 description: "Information on the security features of Visual Studio Live Share."
 ms.custom:
-ms.date: 04/25/2018
+ms.date: 12/17/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +39,7 @@ Each time you start a new collaboration session, Live Share generates a **new un
 
 ### Removing an unexpected guest
 
-As a host, you are also notified whenever a guest joins the collaboration session and the fact that each participant needs to sign in using an existing Microsoft work or school account (AAD), personal Microsoft account, or a GitHub account means that you can feel confident that the person who has joined is in fact who they say they are.
+As a host, you are automatically notified whenever a guest joins the collaboration session.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -60,13 +60,21 @@ In **VS Code**, even if you have dismissed a join notification, you also have th
 
 ### Requiring guest approval
 
-While the "notification + remove" default provides a good mix of speed and control, you may want to lock things down a bit more if you are doing something sensitive. Fortunately, by updating a setting, you can prevent guests from joining the collaboration session until you have explicitly "approved" them. Enabling this behavior is easy.
+Typically, participants that join a collaboration session will be **signed into Live Share** using a Microsoft work or school account (AAD), personal Microsoft account, or GitHub account. While the "notification + remove" default for signed in users provides a good mix of speed and control for these guests, you may want to **lock things down** a bit more if you are doing something sensitive.
 
-*   In **VS Code**, add the following to settings.json (File > Preferences > Settings):
+In addition, in certain circumstances forcing all guests to sign in to join a collaboration session can be problematic. Examples include asking someone new to Live Share to join as a guest, classroom/learning scenarios, or when collaborating with someone who does not have one of the supported account types. For these reasons, Live Share can allow users that are **not signed in** to join collaboration sessions as **read-only** guests. While the host needs to **approve** these guests before they can join by default, you may want to either disallow these "anonymous" guests or always approve them instead.
 
-          "liveshare.guestApprovalRequired": true
+#### Requiring guest approval for signed in users
 
-*   In **Visual Studio**, set Tools > Options > Live Share > "Require guest approval" to True.
+If you would like to prevent signed in guests from joining your collaboration sessions until you have "approved" them, change the following setting:
+
+* In **VS Code**, add the following to settings.json (File > Preferences > Settings):
+
+    ```json
+    "liveshare.guestApprovalRequired": true
+    ```
+
+* In **Visual Studio**, set Tools > Options > Live Share > "Require guest approval" to True.
 
     ![Visual Studio settings window with guest approval setting highlighted](../media/vs-setting-guestapproval.png)
 
@@ -85,7 +93,17 @@ From this point forward, you'll be asked to approve each guest that joins.
 
 As a guest, if you join a session where the host has this setting enabled, you'll be notified in the status bar or join dialog that Live Share is waiting on the host to approve.
 
-**Regardless, remember that you should only send Live Share invitation links to people you trust.**
+#### Auto-rejecting or accepting users that are not signed in (anonymous)
+
+As described above, Live Share can be configured to allow **users that are not signed in** to join a collaboration session as **read-only** guests.  While these **"anonymous" guests must enter a name** when joining, a simple name does not provide the same level of assurance as a real sign-in. Therefore, **by default, the host is prompted to approve** any anonymous guest regardless of the "require guest approval" setting described above.
+
+You can **always reject** (disable anonymous guests) or **always accept** anonymous users instead as follows:
+
+* In **VS Code**, set `liveshare.anonymousGuestApproval` in settings.json (File > Preferences > Settings) to `accept`, `reject`, or `prompt` (the default) as appropriate.
+
+* In **Visual Studio**, set Tools > Options > Live Share > "Anonymous guest approval" to Accept, Reject, or Prompt (the default) as appropriate.
+
+ **Regardless, remember that you should only send Live Share invitation links to people you trust.**
 
 ## Controlling file access and visibility
 
@@ -95,22 +113,25 @@ You can accomplish this by adding a **.vsls.json** file to the folder or project
 
 Here's an example .vsls.json file:
 
-    {
-        "$schema": "http://json.schemastore.org/vsls",
-        "gitignore":"none",
-        "excludeFiles":[
-            "*.p12",
-            "*.cer",
-            "token",
-            ".gitignore"
-        ],
-        "hideFiles": [
-            "bin",
-            "obj"
-        ]
-    }
+```json
+{
+    "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"none",
+    "excludeFiles":[
+        "*.p12",
+        "*.cer",
+        "token",
+        ".gitignore"
+    ],
+    "hideFiles": [
+        "bin",
+        "obj"
+    ]
+}
+```
 
-> **Note:** While not supported today, we intend to expand the concepts described here to include marking files or folders read-only. [Upvote (👍) here](https://github.com/MicrosoftDocs/live-share/issues/55).
+> [!NOTE]
+> You can also make the all files/folders you share **read-only** when you start a collaboration session. See [below](#read-only-mode) for details.
 
 Let's walk through how these properties change what guests can do.
 
@@ -125,41 +146,59 @@ The **gitignore** setting establishes how Live Share should process the contents
 | Option    | Result                                                                                                                 |
 | --------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `none`    | .gitignore contents are visible to guests in the file tree (assuming they are not filtered by a guest editor setting). |
-| `hide`    | **The default.** Globs inside .gitignores are processed as if they were in the "hideFiles" property.                   |
-| `exclude` | Globs inside .gitignores are processed as if they were in the "excludeFiles" property.                                 |
+| `hide`    | **The default.** Globs inside .gitignore are processed as if they were in the "hideFiles" property.                   |
+| `exclude` | Globs inside .gitignore are processed as if they were in the "excludeFiles" property.                                 |
 
 A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability to reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
 
-    {
-        "$schema": "http://json.schemastore.org/vsls",
-        "gitignore":"exclude",
-        "excludeFiles":[
-            "!node_modules"
-        ]
-    }
+```json
+{
+    "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"exclude",
+    "excludeFiles":[
+        "!node_modules"
+    ]
+}
+```
 
 The hide and exclude rules are processed separately, so if you still wanted to hide node_modules to reduce clutter without actually excluding it, you can simply edit the file as follows:
 
-    {
-        "$schema": "http://json.schemastore.org/vsls",
-        "gitignore":"exclude",
-        "excludeFiles":[
-            "!node_modules"
-        ],
-        "hideFiles":[
-            "node_modules"
-        ]
-    }
+```json
+{
+    "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"exclude",
+    "excludeFiles":[
+        "!node_modules"
+    ],
+    "hideFiles":[
+        "node_modules"
+    ]
+}
+```
 
 ### .vsls.json files in sub-folders
 
 Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hide/exclude rules are determined by starting with the .vsls.json file in the root folder you have shared (if present) and then walking through at each sub-folder from there leading to a given file to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree then supplement (or override) rules established at higher levels.
 
+### Disabling external file sharing
+
+By default, Live Share will also share any files the host opens that are external to the shared folder / solution. This makes it easy to quickly open up other related files without having to re-share.
+
+If you would prefer to disable this feature:
+
+* In **VS Code**, add the following to settings.json:
+
+    ```json
+    "liveshare.shareExternalFiles": false
+    ```
+
+* In **Visual Studio**, set Tools &gt; Options &gt; Live Share &gt; "Share External Files" to False
+
 ## Read-only mode
 
 Sometimes when you share your code as a host, you don't want your guests to make edits. You might need your guest to take a look at some of your code, or you are showing your project to a large number of guests and do not want any unnecessary or accidental edits to be made. Live Share offers the ability to share projects in read-only mode.
 
-As a host, when sharing, you have the option to enable read-only mode for a collaboration session. When a guest joins, they will not be able to make edits to the code, though you can still see each other's cursors and highlights as well as navigate through the project. 
+As a host, when sharing, you have the option to enable read-only mode for a collaboration session. When a guest joins, they will not be able to make edits to the code, though you can still see each other's cursors and highlights as well as navigate through the project.
 
 You can still co-debug with guests while in read-only mode. Guests will not have the ability to step through the debugging process, but can still add or remove breakpoints, and inspect variables. Additionally, you can still share servers and terminals (read-only) with guests.
 
@@ -181,7 +220,13 @@ When co-debugging, it can be really useful to get access to different parts of t
 
 However, as a host, you should **be very selective with the ports you share** with guests and only share application ports rather system ports. For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky. For this reason, Live Share does not make any assumptions about what should or should not be shared without a configuration setting and the host performing an action.
 
-Visual Studio, the **web application port** specified in ASP.NET projects is **automatically shared during debugging only** to facilitate guest access to the web app when running. However, you can turn off this automation by setting Tools > Options > Live Share > "Share web app on debug" to "False" if you prefer. In Visual Studio Code, **no ports** are shared unless you decide to share them via the command palette / scoped command menu. In either case, exercise care when sharing additional ports.
+In Visual Studio, the **web application port** specified in ASP.NET projects is **automatically shared during debugging only** to facilitate guest access to the web app when running. However, you can turn off this automation by setting Tools > Options > Live Share > "Share web app on debug" to "False" if you prefer.
+
+In Visual Studio Code, Live Share attempts to **detect the proper application ports** and share them. However, you can disable this by adding the following to settings.json:
+
+        liveshare.autoShareServers: false
+
+In either case, exercise care when sharing additional ports.
 
 You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
 
@@ -189,9 +234,13 @@ You can learn more about configuring the feature here: [![VS Code](../media/vsco
 
 Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative so both you and the guests can run commands and see the results. As the host, you're able to allow other collaborators to either just see the output or to use any number of command line tools to run tests, builds, or even triage environment-specific problems.
 
-However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way if you can freely run commands in local terminals without risk and only share them when you actually need to do so. In addition, only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching.
+Only hosts can start shared terminals to prevent guests from starting one up and doing something you are not expecting or watching. When you start a shared terminal as a host, you can specify whether it should be read-only or read/write. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
 
-When you start a shared terminal as a host, you can specify whether it should be read-only or read/write. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
+In Visual Studio, terminals are not shared by default. In VS Code, terminals are automatically shared **read-only** by default. However, you can disable this by adding the following to settings.json:
+
+```json
+"liveshare.autoShareTerminals": false
+```
 
 Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
@@ -201,19 +250,19 @@ When signing in using a Microsoft backed **work or school email address** you ma
 
 Your AD admin would need to resolve this for you using the following information:
 
-*   **Application Name**: Visual Studio Live Share (Insiders)
-*   **Application Type**: Web App
-*   **Applications Status**: Production
-*   **Delegated Permissions**: User.Read
-*   **Application URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/
-*   **Reply URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
+* **Application Name**: Visual Studio Live Share (Insiders)
+* **Application Type**: Web App
+* **Applications Status**: Production
+* **Delegated Permissions**: User.Read
+* **Application URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/
+* **Reply URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
 
 This would only need to be done once for anyone using Live Share. See [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) and [here](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) for details.
 
 ## See also
 
-*   [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-*   [How-to: Collaborate using Visual Studio](../use/vs.md)
-*   [Connectivity requirements for Live Share](connectivity.md)
+* [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+* [How-to: Collaborate using Visual Studio](../use/vs.md)
+* [Connectivity requirements for Live Share](connectivity.md)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
