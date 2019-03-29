@@ -25,18 +25,22 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 > **Note: Visual Studio Live Share is currently in preview. User experience and features are not final.**
 
-Welcome to Visual Studio Live Share! Live Share lets you achieve greater confidence at speed by streamlining collaborative editing, debugging, and more in real-time during development. You get real-time sharing in tools you love. You can share the full context of your code, collaboratively edit while still navigating files independently, securely share local servers, and even collaboratively debug while still retaining the ability to inspect on your own.
+Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless what programming languages you're using or app types you're building. It allows you to instantly and securely share your current project, and then as needed, share debugging sessions, terminal instances, localhost web apps, voice calls, and more!
+
+Additionally, unlike traditional pair programming, Visual Studio Live Share allows developers to work together, while retaining their personal editor preferences (e.g. theme, keybindings), as well as having their own cursor. This allows you to seamlessly transition between following one another, and being able to explore ideas/tasks on your own. In practice, this ability to work together _and_ independently provides a collaboration experience that is potentially more natural for many common use cases.
 
 Ready to get going? In this article we'll run you through some concepts and how to install the needed extensions. If you're looking for an abridged version, check out the [share](quickstart/share.md) and [join](quickstart/join.md) quickstarts.
 
->**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+> [!TIP]
+> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Install Visual Studio Live Share
 
 Before you begin, you need to be sure you have a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements.
 
 - **Visual Studio Code 1.22.0 or higher** - Windows 7, 8.1, or 10, macOS *(Sierra 10.12 and above only)*, 64-bit Linux *(64-bit Ubuntu Desktop 16.04+, Fedora 27+ recommended - [see details](use/vscode.md#installation))*.
-- **Visual Studio 2017 15.6 or higher** (any edition)  - Windows 7, 8.1, or 10. *Visual Studio 2017 15.7+ recommended as this enables local undo/redo support.*
+- **Visual Studio 2017 15.6 or higher** (any edition) - Windows 7, 8.1, or 10.
+- **Visual Studio 2019** (any edition) - Windows 7, 8.1, or 10.
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
@@ -62,6 +66,15 @@ After that, downloading and installing the Visual Studio Live Share extension is
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
+<tr style="border:none;">
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td  style="border:none;">
+        <strong>Visual Studio 2019 </strong><br />
+        1. Install the latest preview version of <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
+        2. Install a <a href="reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        3. Visual Studio Live Share is installed by default with these workloads. <br />
+    </td>
+</tr>
 </table>
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](troubleshooting.md) if you run into problems.
@@ -76,7 +89,7 @@ As with any product, Visual Studio Live Share provides a set of powerful feature
 
 All collaboration activities in Visual Studio Live Share involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest.
 
-Collaboration session hosts can use all of their tools and services but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions and more. Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_. The advantage is that the entire solution is available the moment a guest joins, and the moment a host ends a collaboration session, the content is no longer available. Further, temp files created by the IDE/editor to improve performance for the guest are automatically cleaned up when the session ends.
+Collaboration session hosts can use all of their tools and services but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions, terminals and more. Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_. The advantage is that the entire solution is available the moment a guest joins, and the moment a host ends a collaboration session, the content is no longer available. Further, temp files created by the IDE/editor to improve performance for the guest are automatically cleaned up when the session ends.
 
 #### Sharing
 
@@ -96,7 +109,8 @@ Clicking an invitation link sent to you by a host allows you to "join" a collabo
 
 When you open the same file as another collaborator, you are instantly able to "collaboratively edit" or "co-edit" the file's contents. You can see each collaborator's edits, their cursors and selections, and more. Even better, you are not forced into editing the same file at all times so you can opportunistically collaborate and act independently as you see fit.
 
-> **Note:** Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language. Find in files is not yet implemented [(vote)](https://github.com/MicrosoftDocs/live-share/issues/43). Guests will always see a file view of solutions shared from Visual Studio [(vote)](https://github.com/MicrosoftDocs/live-share/issues/43). Files outside of the solution "root" folder in Visual Studio or "multi-root workspaces" in VS Code are not shared [(vote)](https://github.com/MicrosoftDocs/live-share/issues/46).
+> [!NOTE]
+> Co-editing has a few limitations. See [platform support](reference/platform-support.md) for the state of features by language.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-editing) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-editing)
 
@@ -104,15 +118,14 @@ When you open the same file as another collaborator, you are instantly able to "
 
 Sometimes you need to explain a problem or design that spans multiple files or locations in code. In these situations, it can be useful to temporarily follow a colleague as they move throughout the project when co-editing. For this reason, as a guest, when you join a collaboration session you automatically "follow" the host's edit location. Hosts and guests can hop in and out of following one another with a simple mouse click. In addition, you may find that you want to ask all participants to follow you. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
 
-> **Note:** Currently Live Share does not follow participants into files or folders outside of the shared folder root [(vote)](https://github.com/MicrosoftDocs/live-share/issues/54).
-
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#following) [![VS](media/vs-icon-15x15.png)](use/vs.md#following)
 
 #### Co-debugging
 
 When you're debugging tough coding problems or bugs, having an extra pair of eyes can be really useful. As a host, Live Share automatically enables "collaborative debugging" or "co-debugging" by sharing the debugging session with all guests. You each get co-editing features along with the ability to investigate independently as you step through together.
 
-> **Note:** See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
+> [!NOTE]
+> See [platform support](reference/platform-support.md) for the state of debugging features by language or platform.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#co-debugging) [![VS](media/vs-icon-15x15.png)](use/vs.md#co-debugging)
 
@@ -130,7 +143,7 @@ Modern development makes frequent use of a wide array of command line tools. For
 
 #### Access controls
 
-Visual Studio Live Share provides participants with a number of great ways to collaborate. However, with the number of options and flexibility guests are given to interact with hosts, you may want to explicitly approve guests that join or lock down access to certain files or folders. Live Share has a number of settings that can help you out.
+Visual Studio Live Share provides participants with a number of great ways to collaborate. However, with the number of options and flexibility guests are given to interact with hosts, you may want to explicitly approve guests that join or lock down access to certain files or folders. Live Share has a number of settings that can help you out including read-only and requiring acceptance of guests.
 
 **Learn more:** [![VS Code](media/vscode-icon-15x15.png)](reference/security.md) [![VS](media/vs-icon-15x15.png)](reference/security.md)
 

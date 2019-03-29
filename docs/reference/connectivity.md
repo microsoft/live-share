@@ -23,6 +23,17 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Connectivity requirements for Live Share
 
+This article summarizes the connectivity requirements for Visual Studio Live Share, available connectivity options, and known workarounds when applicable.
+
+## Sign in
+
+You can sign into Live Share using any [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory) backed work or school account, a [Microsoft account](https://account.microsoft.com/account), or a [GitHub profile](https://github.com/). Typically sign-in URLs for these are open in most organizations given the number of public facing products that use them, but if not, contact your network administrator about opening up `login.microsoftonline.com` and/or `github.com` in addition to the domains [listed below](#requirements-for-connection-modes).
+
+> [!NOTE]
+> On-prem AD (ADFS) accounts and on-prem GitHub Enterprise accounts are not currently supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/341).
+
+## Connection modes
+
 To ensure optimal performance, by default Visual Studio Live Share automatically detects whether a collaboration session host machine and guest machine can communicate directly over a network and only relays via the cloud if there is no route between them. This mixed "auto" mode is flexible and even allows some guests to relay through the cloud while others connect directly for the same session.
 
 The direct connections are authenticated via a cloud based mechanism to ensure security but require a port between 5990 and 5999 be opened to enable the connectivity. As a result, when sharing for the first time your desktop firewall may prompt you open a port. Accepting this is optional as ignoring it will simply cause Live Share to always use the relay when in auto mode.
@@ -67,11 +78,11 @@ The connection mode you are in will dictate the specific ports and URLs that nee
 
 ## Manually adding a firewall entry
 
-As outlined above, direct mode requires that your personal firewall allow **vsls-agent** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it manually. How you do this will vary by firewall software, but you can find information about **[configuring the Windows Firewall here](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/create-an-inbound-program-or-service-rule)**.
+As outlined above, direct mode requires that your personal firewall allow **vsls-agent** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it manually. How you do this will vary by firewall software, but you can find information about **[configuring the Windows Firewall here](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)**.
 
 If you do not see an entry for vsls-agent, you can find the agent executable in one of the following locations.
 
-#### VS Code agent location
+### VS Code agent location
 
 Substitute **VERSION** for the extension version number in one of the paths below:
 
@@ -83,7 +94,7 @@ Substitute **VERSION** for the extension version number in one of the paths belo
 
     `%USERPROFILE%\.vscode\extensions\ms-vsliveshare.vsliveshare-VERSION\dotnet_modules\vsls-agent.exe`
 
-#### Visual Studio agent location
+### Visual Studio agent location
 
 The Visual Studio location is more dynamic, but you can follow these steps to find the executable:
 

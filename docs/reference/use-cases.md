@@ -23,24 +23,24 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Common Use Cases
 
-The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **compliments** how you already prefer to work.
+The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently*as needed, but in a way that **compliments*how you already prefer to work.
 
 This document highlights some use cases that Visual Studio Live Share is already being used for, and describes how well we currently support them, and ways we plan to optimize them further  (based on feedback!). If you're using Live Share for something that isn't already covered below, or you think we can do better to support a specific use case, please [let us know](https://github.com/MicrosoftDocs/live-share/issues/new).
 
-* [Quick Assistance](#quick-assistance)
-    * [Office Hours](#office-hours)
-* [Pair Programming](#pair-programming)
-    * [Mob Programming](#mob-programming)
-    * [Coding Competitions / Hack-A-Thons](#coding-competitions--hack-a-thons)
-    * [School Group Projects](#school-group-projects)
-    * [Developer Streaming](#developer-streaming)
-    * [Prototyping / Project Inception](#prototyping--project-inception)
-* [Interactive Education](#interactive-education)
-    * [Peer Mentoring / Onboarding](#peer-mentoring--onboarding)
-    * [Team Brown Bags](#team-brown-bags)
-    * [Classroom Lectures](#classroom-lectures)
-* [Code Reviews](#code-reviews)
-* [Technical Interviews](#technical-interviews)
+- [Quick Assistance](#quick-assistance)
+    - [Office Hours](#office-hours)
+- [Pair Programming](#pair-programming)
+    - [Mob Programming](#mob-programming)
+    - [Coding Competitions / Hack-A-Thons](#coding-competitions--hack-a-thons)
+    - [School Group Projects](#school-group-projects)
+    - [Developer Streaming](#developer-streaming)
+    - [Prototyping / Project Inception](#prototyping--project-inception)
+- [Interactive Education](#interactive-education)
+    - [Peer Mentoring / Onboarding](#peer-mentoring--onboarding)
+    - [Team Brown Bags](#team-brown-bags)
+    - [Classroom Lectures](#classroom-lectures)
+- [Code Reviews](#code-reviews)
+- [Technical Interviews](#technical-interviews)
 
 ## Quick assistance
 
@@ -74,7 +74,7 @@ To break this use case down even further, the following items represent forms of
 
 ### Mob Programming
 
-[Mob programming](https://en.wikipedia.org/wiki/Mob_programming) (or swarm programming) is essentially pair programming, but with more than two people. Therefore, all of the benefits of Live Share for pair programming apply equally as well. Additionally, some teams do "swarming" on an as-needed basis (e.g. the team rallying around a firedrill) as opposed to full-time.
+[Mob programming](https://en.wikipedia.org/wiki/Mob_programming) (or swarm programming) is essentially pair programming, but with more than two people. Therefore, all of the benefits of Live Share for pair programming apply equally as well. Additionally, some teams do "swarming" on an as-needed basis (e.g. the team rallying around a fire drill) as opposed to full-time.
 
 Currently, Live Share supports up to five guests within a session, which may or may not accommodate your team size. However, this is something we plan to increase (for various use cases), and are looking for feedback on ([Vote 👍 Here](https://github.com/MicrosoftDocs/live-share/issues/229))
 
@@ -112,11 +112,12 @@ Team brown bags are effectively like peer mentoring, but presented to an entire 
 
 When instructors are teaching a lesson, they can use Live Share to share their project with students, instead of simply presenting their screen. This allows the entire class to follow along with the teacher, while being able to interact with the project on their own. Additionally, the teacher can ask individual students to assist in solving a particular portion of the lesson (e.g. "Which method should we call here?"), which can help in the social aspects of the class, without requiring students to walk up to the front of the room, or even be physically present in the same room (e.g. online courses).
 
-To aid in classroom settings, Live Share enables sharing in read-only mode. Instructors can use read-only mode to enable them to share their projects with students without having to worry about unnecessary or accidental edits being made. 
+To aid in classroom settings, Live Share enables sharing in read-only mode. Instructors can use read-only mode to enable them to share their projects with students without having to worry about unnecessary or accidental edits being made.
 
-Additionally, Live Share has experimental support to enable up to 30 guests joining into a collaboration session. This way, instructors can have their whole class join into a session and view code together. 
+Additionally, Live Share has experimental support to enable up to 30 guests joining into a collaboration session. This way, instructors can have their whole class join into a session and view code together.
 
 To enable this experimental feature:
+
 - **VS Code:** Add "liveshare.features":"experimental" to settings.json.
 - **VS:** Set Tools > Options > Live Share > Features to "Experimental"
 
@@ -140,10 +141,10 @@ Additionally, real-world development is more than simply writing code. Because L
 
 ## See also
 
-* [Language and platform support](platform-support.md)
-* [Connectivity requirements for Live Share](connectivity.md)
-* [Security features of Live Share](security.md)
-* [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
-* [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
+- [Language and platform support](platform-support.md)
+- [Connectivity requirements for Live Share](connectivity.md)
+- [Security features of Live Share](security.md)
+- [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
+- [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

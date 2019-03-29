@@ -53,7 +53,9 @@ While the prerequisite install script above covers a variety of distributions, y
 | Xubuntu 16.04 (64-bit) | &lt;none&gt; | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Mint 19 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
 | Mint 18.3 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
+| Debian 10 (Buster) Testing (64-bit) | Release not stable, so unknown. | <ul><li>Debian Testing and Unstable (Sid) are not officially supported.</li><li>There is a [known issue](https://github.com/dotnet/corefx/issues/33179) in .NET Core that affects Live Share. </li><li>See [here for a workaround](https://github.com/dotnet/corefx/issues/33179#issuecomment-435118249).</li></ul> |
 | Debian 9 GNOME Desktop (64-bit) | &lt;none&gt; | <ul><li>You may need to install `sudo` and add your user to the sudo group to use the automated install script.</li>  |
+| Fedora Workstation 29 (64-bit) | `openssl-compat10` | &lt;none&gt; |
 | Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Fedora Workstation 27 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME Desktop (64-bit) | &lt;none&gt; | &lt;none&gt; |
@@ -62,8 +64,9 @@ See **[tips for community supported distributions](#tips-for-community-supported
 
 Additional details can also be found [below](#detailed-library-requirements) on the specific libraries Live Share needs.
 
-## Tips for community supported distros
 <a name="tips-for-unsupported-distros"></a>
+
+## Tips for community supported distros
 
 Distributions outside of the Debian / Ubuntu or RHL trees are not officially supported by Visual Studio Code or .NET Core. Therefore, by extension, they are not officially supported by Visual Studio Live Share either. However, the community has contributed some useful information about getting Live Share up and running on a number of additional distributions.
 
@@ -71,8 +74,8 @@ Distributions outside of the Debian / Ubuntu or RHL trees are not officially sup
 
 | Distribution | Working? | Vanilla install missing libraries | Additional Steps |
 |--------------|----------|-------------------|------------------|
-| ArchLinux (64-bit) | Yes | Varies. Possible libraries: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xprop` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</ul> |
-| Manjaro 17.1 (64-bit) | Yes | `xorg-xprop liburcu` | <ul><li>Supported by the the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li></ul> |
+| Arch Linux (64-bit) | Yes | Varies. Possible libraries: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</ul> |
+| Manjaro 17.1 (64-bit) | Yes | `xorg-xprop liburcu` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li></ul> |
 | openSuSE LEAP 15 KDE (64-bit) | Yes | `libopenssl1_0_0 gnome-keyring` | <ul><li>Supported by the prerequisite install script.</li></ul> |
 | Solus 3 (64-bit) | Yes | `xprop` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Versions of the `vscode` package prior to release 57 were missing required product.json values ([see below](#vs-code-oss-issues)). Upgrade the `vscode` package to resolve this issue.</li></ul> |
 | Gentoo (64-bit) | Yes | Highly variable. Possible missing packages: `dev-libs/openssl-1.0.2 net-libs/libgsasl dev-libs/icu sys-libs/zlib sys-apps/util-linux app-crypt/libsecret gnome-base/gnome-keyring x11-apps/xprop`| <ul><li>The `visual-studio-code` package in the **jorgicio** overlay is known to work.</li></ul>
@@ -89,9 +92,9 @@ Visual Studio Live Share's native library requirements come from its use of .NET
 
 | Distribution | .NET Core Reqs | Credential Storage  Reqs| Browser Integration Reqs |
 |--------------|-----------|--------------------|------------|
-| Ubuntu and downstream distributions | `libssl1.0.0 libkrb5-3 zlib1g libicu55` (for Ubuntu 16.04, Mint 18.3) or `libicu57` (for Ubuntu 17.10) or `libicu60 `(for Ubuntu 18.04, Mint 19) | `libsecret-1-0 gnome-keyring` (or libsecret supported keyring - Kwallet does not support libsecret) | `desktop-file-utils x11-utils` |
+| Ubuntu and downstream distributions | `libssl1.0.0 libkrb5-3 zlib1g libicu55` (for Ubuntu 16.04, Mint 18.3) or `libicu57` (for Ubuntu 17.10) or `libicu60` (for Ubuntu 18.04, Mint 19) | `libsecret-1-0 gnome-keyring` (or libsecret supported keyring - Kwallet does not support libsecret) | `desktop-file-utils x11-utils` |
 | Debian 9 and downstream distributions | `libssl1.0.2 libkrb5-3 zlib1g libicu57` | `libsecret-1-0 gnome-keyring` (or libsecret supported keyring - Kwallet does not support libsecret) | `desktop-file-utils x11-utils` |
-| RHL / CentOS/ Fedora | `openssl-libs krb5-libs zlib libicu` | `libsecret gnome-keyring` (or libsecret supported keyring - Kwallet does not support libsecret) | `desktop-file-utils xorg-x11-utils` |
+| RHL / CentOS/ Fedora | `openssl-libs krb5-libs zlib libicu` Fedora also requires `compat-openssl10`| `libsecret gnome-keyring` (or libsecret supported keyring - Kwallet does not support libsecret) | `desktop-file-utils xorg-x11-utils` |
 | Alpine Linux | `openssl1.0 icu krb5 zlib` | `libsecret gnome-keyring` (or libsecret supported keyring - Kwallet does not support libsecret) | `desktop-file-utils xprop`
 
 While other distributions require the same libraries, their package names may vary. You can find some of these in the [tips for community supported distributions](#tips-for-unsupported-distros) section.
@@ -112,7 +115,7 @@ For Debian 9 and non-Ubuntu downstream distributions, run:
 
 Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything:
 
-    sudo yum install openssl-libs krb5-libs zlib libicu libsecret gnome-keyring desktop-file-utils xorg-x11-utils
+    sudo yum install openssl-libs compat-openssl10 krb5-libs zlib libicu libsecret gnome-keyring desktop-file-utils xorg-x11-utils
 
 ## VS Code OSS Issues
 
@@ -127,7 +130,7 @@ To verify this is your issue, check the contents of `product.json`. The file's l
 - `/usr/share/code/resources/app/product.json`
 - `/usr/share/vscode/resources/app/product.json`
 
-If the `extensionAllowedProposedApi` property is missing or you do not see "ms-vsliveshare.vsliveshare" referenced, you are using an OSS version with this problem. 
+If the `extensionAllowedProposedApi` property is missing or you do not see "ms-vsliveshare.vsliveshare" referenced, you are using an OSS version with this problem.
 
 As a **workaround**, you can add the following into the product.json:
 
