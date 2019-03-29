@@ -5,8 +5,6 @@ ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "liveshare"
 ms.topic: "quickstart"
 author: "lostintangent"
 ms.author: "clantz"
