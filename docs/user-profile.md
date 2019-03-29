@@ -5,8 +5,6 @@ ms.custom:
 ms.date: 05/222/2018
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "liveshare"
 ms.topic: "reference"
 author: "lostintangent"
 ms.author: "joncart"
