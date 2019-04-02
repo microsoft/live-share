@@ -53,7 +53,7 @@ Installing the extension is easy. Just follow these steps:
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1. Install <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Install a <a href="reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
         3. Visual Studio Live Share is installed by default with these workloads. <br />
     </td>
 </tr>
@@ -62,7 +62,7 @@ Installing the extension is easy. Just follow these steps:
     <td  style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
         1. Install the latest version of <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
-        2. Install a <a href="reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
         3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
