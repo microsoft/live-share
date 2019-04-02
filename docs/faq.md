@@ -78,8 +78,8 @@ While this may be desirable for many scenarios, developers often want to collabo
 
 Live Share goes a step further and enables you to share a debug session.  This makes it especially useful in enlisting others to help you track down issues that only happen on your machine without altering their development workflow or needing to alter the application design.
 
-## Which languages and platforms will be supported in the preview?
-However, our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed. See the [language and platform support](reference/platform-support.md) article for details on what works today. This is just the start, and we expect to improve this picture moving forward based on feedback.
+## Which languages and platforms will be supported?
+Our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed. See the [language and platform support](reference/platform-support.md) article for details on what works today.
 
 ## How many developers can join a collaboration session?
 We currently support 30 concurrent guests, in addition to the developer that is sharing ("hosting") their project. By default we enable up to 5 guests in a session. 
