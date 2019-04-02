@@ -92,7 +92,7 @@ You can read more about why this is required and where Live Share places files *
 
 In order to collaborate, you'll need to sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
 
-**Click** on the "Share" status bar item or press **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign In With Browser" command.
+**Click** on the "Live Share" status bar item or press **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign In With Browser" command.
 
 ![VS Code sign in button](../media/vscode-sign-in-button.png)
 
@@ -167,7 +167,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 4. **Start a collaboration session**
 
-    Now, simply **click** the "Share" status bar item or hit **Ctrl+Shift+P / Cmd+Shift+P** and select "Live Share: Start a collaboration session (Share)".
+    Now, simply **click** the "Live Share" status bar item or hit **Ctrl+Shift+P / Cmd+Shift+P** and select "Live Share: Start a collaboration session (Share)".
 
     ![Share button](../media/vscode-share-button.png)
 
@@ -176,7 +176,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     An invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them.
 
-    You will also see the "Share" status bar item transition to represent the session state. See [session state](#session-states) information below for what this looks like.
+    You will also see the "Live Share" status bar item transition to represent the session state. See [session state](#session-states) information below for what this looks like.
 
     Note that if you need to get the invite link again after you've started sharing, you access it again by clicking on the session state status bar icon and select "Invite Others (Copy Link)".
 
@@ -255,7 +255,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
     That's it! In a few moments you'll be connected and you can start collaborating.
 
-    You will see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
+    You will see the "Live Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
 
     You'll then be automatically taken to the file the host is currently editing once the join is complete.
 
@@ -281,7 +281,7 @@ You can also manually join without using a web browser which can be useful in si
 
     That's it! You should be connected to the collaboration session momentarily.
 
-    You will see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
+    You will see the "Live Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
 
     You'll then be automatically taken to the file the host is currently editing once the join is complete.
 

@@ -49,22 +49,22 @@ Installing the extension is easy. Just follow these steps:
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide.svg" width="128px" alt="Visual Studio logo" /></td>
-    <td style="border:none;">
-        <strong>Visual Studio 2017 15.6 or higher</strong><br />
-        1. Install the latest version of <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
-        2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
-        3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
-        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button"></a><br />
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
+    <td  style="border:none;">
+        <strong>Visual Studio 2019 </strong><br />
+        1. Install <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        2. Install a <a href="reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        3. Visual Studio Live Share is installed by default with these workloads. <br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019 </strong><br />
-        1. Install the latest preview version of <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
-        2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
-        3. Visual Studio Live Share is installed by default with these workloads. <br />
+        <strong>Visual Studio 2017 15.6 or higher</strong><br />
+        1. Install the latest version of <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
+        2. Install a <a href="reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
 </table>
