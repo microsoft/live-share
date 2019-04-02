@@ -33,6 +33,7 @@
 ## [Extension Support](reference/extensions.md)
 ## [Common Use Cases](reference/use-cases.md)
 ## [Linux install details](reference/linux.md)
+## [Insiders](reference/insiders.md)
 ## [Release Notes](https://aka.ms/vsls-releases)
 # Resources
 ## [Troubleshooting](troubleshooting.md)
