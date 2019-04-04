@@ -106,7 +106,7 @@ A notification will appear asking you to sign in using your web browser. Clickin
 
 > **Advanced tip:** The `liveshare.account` and `liveshare.accountProvider` settings enable you to select which account should be used for automatic sign-in in case you have cached credentials for multiple accounts available. 
 
-> For example, imagine you work on 2 projects with which you want to sign in with different identities. You could set the `liveshare.account` setting to different email addresses in each project directory to ensure they each automatically sign-in with the correct account. The `liveshare.accountProvider` setting could be set to either `"microsoft"` or `"github"` in case you use the same email address with multiple providers.
+> For example, imagine you work on 2 projects with which you want to sign in with different identities. In your VSCode workspace settings, you could set the `liveshare.account` setting to different email addresses in each project directory to ensure they each automatically sign-in with the correct account. The `liveshare.accountProvider` setting could be set to either `"microsoft"` or `"github"` in case you use the same email address with multiple providers.
 
 If Visual Studio Code is not picking up your sign in after you complete the sign-in process in the browser, see [sign in using a user code](#sign-in-using-a-user-code). Otherwise, check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
