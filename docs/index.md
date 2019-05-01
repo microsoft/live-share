@@ -2,7 +2,7 @@
 title: "Overview - Visual Studio Live Share | Microsoft Docs"
 description: "An overview of Visual Studio Live Share and its capabilities."
 ms.custom:
-ms.date: 04/26/2018
+ms.date: 05/01/2019
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "overview"
@@ -69,7 +69,7 @@ After that, downloading and installing the Visual Studio Live Share extension is
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1. Install the latest preview version of <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
-        2. Install a <a href="reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
+        2. Install a <a href="reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, Python, and/or Node.js)<br />
         3. Visual Studio Live Share is installed by default with these workloads. <br />
     </td>
 </tr>
