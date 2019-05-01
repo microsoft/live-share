@@ -32,11 +32,17 @@ Note that all collaboration activities in described here involve a single **coll
 
 ## Installation
 
-Before you begin, you'll need to install **Visual Studio 2017 15.6 or higher** on Windows 7, 8.1, or 10. *However, Visual Studio 15.7+ is recommended as this enables local undo/redo support.*
+Before you begin, you'll need to install **Visual Studio 2019** or  **Visual Studio 2017 15.6 or higher** on Windows 7, 8.1, or 10. *However, Visual Studio 15.7+ is recommended as this enables local undo/redo support.*
 
 Getting going is simple:
 
-1. Install the any edition of [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) 15.6+.
+For Visual Studio 2019
+1. Install the any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
+2. Install a [supported workload](../reference/platform-support.md). (e.g. ASP.NET, .NET Core, C++, Python, and/or Node.js)
+3. Visual Studio Live Share is installed by default with these workloads.
+
+For Visual Studio 2017
+1. Install the any edition of [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) 15.6+.
 2. Install a [supported workload](../reference/platform-support.md). (e.g. ASP.NET, .NET Core, C++, and/or Node.js)
 3. [Download](https://aka.ms/vsls-dl/vs) and install the Visual Studio Live Share extension from the marketplace.
 
@@ -80,7 +86,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 4. **Start a collaboration session**
 
-    Now, simply click the "Share" button in the upper right hand corner.
+    Now, simply click the "Live Share" button in the upper right hand corner.
 
     ![VS Share button](../media/vs-share-button.png)
 
@@ -89,7 +95,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     An invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them.
 
-    You will also see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below on what this looks like.
+    You will also see the "Live Share" button transition to convey a "Session State". See [session state](#session-states) information below on what this looks like.
 
     Note that if you need to get the invite link again after you've started sharing, you can access it by clicking on the share / session state button and selecting "Copy Link".
 
@@ -166,7 +172,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
     That's it!! In a few moments you'll be connected and you can start collaborating.
 
-    You will see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
+    You will see the "Live Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
 
     You'll then be automatically taken to the file the host is currently editing once the join is complete.
 
@@ -182,7 +188,7 @@ You can also manually join without using a web browser which can be useful in si
 
 2. **Use the join command**
 
-    Simply go to **File > Join Collaboration Session**
+    Simply go to **File > Join Live Share Session**
 
     ![VS Join menu](../media/vs-join.png)
 
@@ -194,7 +200,7 @@ You can also manually join without using a web browser which can be useful in si
 
     That's it! You should be connected to the collaboration session momentarily.
 
-    You will see the "Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
+    You will see the "Live Share" button transition to convey a "Session State". See [session state](#session-states) information below for what this looks like.
 
     You'll then be automatically taken to where the host is currently editing once the join has completed.
 
@@ -399,7 +405,7 @@ To end your terminal session, simply type exit or close the terminal window and 
 
 ## Session states
 
-After you have started or joined collaboration session and have access to shared content, the "Share" button in the upper right hand corner updates its appearance to reflect the state of the active collaboration session.
+After you have started or joined collaboration session and have access to shared content, the "Live Share" button in the upper right hand corner updates its appearance to reflect the state of the active collaboration session.
 
 The following are the states you will typically see:
 
