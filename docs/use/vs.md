@@ -38,7 +38,7 @@ Getting going is simple:
 
 For Visual Studio 2019
 1. Install the any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
-2. Install a [supported workload](../reference/platform-support.md). (e.g. ASP.NET, .NET Core, C++, and/or Node.js)
+2. Install a [supported workload](../reference/platform-support.md). (e.g. ASP.NET, .NET Core, C++, Python, and/or Node.js)
 3. Visual Studio Live Share is installed by default with these workloads.
 
 For Visual Studio 2017
