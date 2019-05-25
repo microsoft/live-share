@@ -23,8 +23,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 When you authenticate with Visual Studio Live Share, it creates a user profile for you, which allows any participants you collaborate with to see who you are (e.g. your e-mail address, avatar). At any given time, you can view the profile information that Live Share has stored on your behalf, by navigating to one of the following pages (depending on the identity provider you used):
 
-- [Microsoft Account / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
-- [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
+- [Microsoft Account / Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
+- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
 
 The page will ask you to sign-in to verify your identity, and then display the raw JSON output for your user profile.
 
@@ -38,8 +38,8 @@ If Visual Studio Live Share doesn't currently have a profile stored for the iden
 
 If you'd like to remove your user profile, you can click the link titled `Click here to get your data removed from our systems` on the [user profile page](#user-profile). Alternatively, you can visit one of the following pages directly (depending on the identity provider you used):
 
-- [Microsoft Account / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
-- [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
+- [Microsoft Account / Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
+- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
 
 Otherwise, Visual Studio Live Share will automatically delete your profile 30 days after your last successful sign-in. In this context, a "successful sign-in" refers to the following (depending on the tool you're using):
 

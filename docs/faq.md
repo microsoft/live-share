@@ -82,11 +82,7 @@ Live Share goes a step further and enables you to share a debug session.  This m
 Our goal is to support the diverse landscape of languages and platforms, to ensure we can enable rich collaboration, regardless of the application type being developed. See the [language and platform support](reference/platform-support.md) article for details on what works today.
 
 ## How many developers can join a collaboration session?
-We currently support 30 concurrent guests, in addition to the developer that is sharing ("hosting") their project. By default we enable up to 5 guests in a session. 
-
-To enable increased guest limit: 
-- **VS Code:** Add "liveshare.increasedGuestLimit":"true" to settings.json.
-- **VS:** Set Tools > Options > Live Share > Increased guest limit to "True"
+We currently support 30 concurrent guests, in addition to the developer that is sharing ("hosting") their project. 
 
 ## What is the roadmap?
 You can view the set of known issues, and roadmap items [here](https://aka.ms/vsls-issues). If you'd like to see only feature requests rather than all issues, see [here](https://aka.ms/vsls-feature-requests). We encourage you to up-vote existing items, file new feature requests, and log bug reports, in order to help us shape the direction of the product moving forward.
