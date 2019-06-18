@@ -41,7 +41,7 @@ Currently, both Visual Studio and Visual Studio Code provide a `Contacts` pane, 
 
 2. Providing the list of `Recent Contacts`, which are developers  you've previously collaborated with using Live Share. In practice, most developers frequently collaborate with the same people, and therefore, the recent list enables a more repeatable means of working with your team/classroom/etc.
 
-However, the `Contacts` list currently only allows you to invite recent/suggested contacts via e-mail, which we've learned isn't as efficient as it could be. If you install the latest Live Share update, and enable `Insiders` (as described above), you'll now be able to **invite developers into a collaboration session directly from the IDE**!
+However, the `Contacts` list currently only allows you to invite recent/suggested contacts via e-mail, which we've learned isn't as efficient as it could be. If you install the latest Live Share update, and enable `Insiders` (as described above), you'll now be able to **invite developers into a collaboration session directly from the IDE**! Note that if you're using Visual Studio Code, you'll need to install the [Insiders Build](https://code.visualstudio.com/insiders/) in order for this feature to work.
 
 ![Direct Invitatiosn](https://user-images.githubusercontent.com/116461/59691804-7ece0c00-9198-11e9-94fb-99ec89df91c9.gif)
 
