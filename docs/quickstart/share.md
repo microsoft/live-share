@@ -81,7 +81,7 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
+        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>
@@ -116,7 +116,7 @@ Next, simply click "Live Share" within your tool and an invite link is automatic
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-share-button.png" width="100%" alt="Visual Studio Code share status bar item" />
+        <img src="../media/vscode-share-button-new.png" width="100%" alt="Visual Studio Code share status bar item" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-share-button.png" width="100%" alt="Visual Studio share button"/>
