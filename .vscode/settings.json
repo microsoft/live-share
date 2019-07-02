@@ -90,5 +90,6 @@
         "MD026": false
     },
     "favorites.sortDirection": "ASC",
-    "favorites.groupsFirst": true
+    "favorites.groupsFirst": true,
+    "workbench.colorCustomizations": {}
 }
