@@ -94,7 +94,7 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     Once you start your collaboration session for the first time you will see a Live Share tool window. Make sure you dock this window to ensure it shows up the next time you start a Live Share session.
 
-   ![VS Live Share tool window|72x561, 50%](../media/vs-live-share-tool-window.png)
+   ![VS Live Share tool window](../media/vs-live-share-tool-window.png)
 
     > [!NOTE]
     > You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
