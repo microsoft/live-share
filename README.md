@@ -68,7 +68,7 @@ Many Visual Studio Live Features are available across a number of languages and 
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-ide.svg" width="128px" alt="Visual Studio logo"/></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="docs/media/vs-ide-2019.svg" width="128px" alt="Visual Studio logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio 2017 15.6 or higher</strong><br />
         1. Install the latest version of <a href="https://visualstudio.microsoft.com/vs/">VS 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
