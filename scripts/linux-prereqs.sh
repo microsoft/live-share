@@ -161,7 +161,7 @@ elif type apt-get > /dev/null 2>&1; then
             if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
                 checkInstallationStatus "aptSudoIf" "install -yq libssl1.0.2" "libssl1.0.2"
             else    
-              checkInstallationStatus "aptSudoIf" "install -yq libssl1.0.2" "libssl1.0.2"
+                checkInstallationStatus "aptSudoIf" "install -yq libssl1.0.2" "libssl1.0.2"
             fi
         else 
             echo "(*) libssl1.0.x already installed."
@@ -191,7 +191,8 @@ elif type yum  > /dev/null 2>&1; then
         if ! sudoIf "yum -q list compat-openssl10" >/dev/null 2>&1; then
             echo "(*) compat-openssl10 not required."
         else
-        checkInstallationStatus sudoif "yum -y install compat-openssl10" "compat-openssl10"
+            checkInstallationStatus sudoif "yum -y install compat-openssl10" "compat-openssl10"
+        fi
     fi
     
     checkKeyringDeps sudoIf "yum -y install gnome-keyring libsecret"
