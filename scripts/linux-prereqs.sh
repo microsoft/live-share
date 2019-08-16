@@ -41,6 +41,14 @@ exitScript()
     exit $1
 }
 
+# Generic function for checking installation status
+checkInstallationStatus(){
+        if ! "$1" "$2"; then
+            echo (!) "$3" installation failed
+            exitScript 1
+        fi
+}
+
 # Wrapper function to only use sudo if not already root
 sudoIf()
 {
@@ -72,10 +80,7 @@ checkNetCoreDeps(){
     if [ $NETCOREDEPS -ne 0 ]; then
         echo -e "\n(*) Verifying .NET Core dependencies..."
         # Install .NET Core dependencies
-        if ! "$1" "$2"; then
-            echo "(!) .NET Core dependency install failed!"
-            exitScript 1
-        fi
+        checkInstallationStatus $1 $2 ".NET Core dependency"
     fi
 }
 
@@ -84,10 +89,7 @@ checkKeyringDeps(){
     if [ $KEYRINGDEPS -ne 0 ]; then
         echo -e "\n(*) Verifying keyring dependencies..."
         # Install keyring dependencies
-        if ! "$1" "$2"; then
-            echo "(!) Keyring installation failed!"
-            exitScript 1
-        fi
+        checkInstallationStatus $1 $2 "Keyring"
     fi 
 }
 
@@ -96,10 +98,7 @@ checkBrowserDeps(){
     if [ $BROWSERDEPS -ne 0 ]; then
         echo -e "\n(*) Verifying browser integration dependencies..."
         # Install browser integration and clipboard dependencies
-        if ! "$1" "$2"; then
-            echo "(!) Browser dependency install failed!"
-            exitScript 1
-        fi
+        checkInstallationStatus $1 $2 "Browser dependency"
     fi
 }
 
@@ -160,15 +159,9 @@ elif type apt-get > /dev/null 2>&1; then
         if [ "$(echo "$LIBSSL" | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort | wc -l)" -eq 0 ]; then
             # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
             if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
-                if ! aptSudoIf "install -yq libssl1.0.2"; then
-                    echo "(!) libssl1.0.2 installation failed!"
-                    exitScript 1
-                fi
+                checkInstallationStatus "aptSudoIf" "install -yq libssl1.0.2" "libssl1.0.2"
             else    
-                if ! aptSudoIf "install -yq libssl1.0.0"; then
-                    echo "(!) libssl1.0.0 installation failed!"
-                    exitScript 1
-                fi
+              checkInstallationStatus "aptSudoIf" "install -yq libssl1.0.2" "libssl1.0.2"
             fi
         else 
             echo "(*) libssl1.0.x already installed."
@@ -198,11 +191,7 @@ elif type yum  > /dev/null 2>&1; then
         if ! sudoIf "yum -q list compat-openssl10" >/dev/null 2>&1; then
             echo "(*) compat-openssl10 not required."
         else
-            if ! sudoIf "yum -y install compat-openssl10"; then
-                echo "(!) compat-openssl10 install failed"
-                exitScript 1
-            fi
-        fi
+        checkInstallationStatus sudoif "yum -y install compat-openssl10" "compat-openssl10"
     fi
     
     checkKeyringDeps sudoIf "yum -y install gnome-keyring libsecret"
