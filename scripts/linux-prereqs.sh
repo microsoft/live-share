@@ -208,6 +208,36 @@ elif type yum  > /dev/null 2>&1; then
     checkKeyringDeps sudoIf "yum -y install gnome-keyring libsecret"
     checkBrowserDeps sudoIf "yum -y install desktop-file-utils xorg-x11-utils"
 
+#Fedora 30
+elif type dnf  > /dev/null 2>&1; then
+    echo "(*) Detected Fedora 30"
+
+    # Update package repo indexes - returns 1 if no pacakges to upgrade,
+    # 100 if there are packages to upgrade, and 1 on error
+    echo -e "\n(*) Updating package lists..."
+    sudoIf "dnf check-update" >/dev/null 2>&1
+    if [ $? -eq 1 ]; then
+        echo "(!) Failed to update package list!"
+        exitScript 1
+    fi
+    
+    checkNetCoreDeps sudoIf "dnf -y install openssl-libs krb5-libs libicu zlib"  
+    # Install openssl-compat10 for Fedora 29. Does not exist in 
+    # CentOS, so validate package exists first.
+    if [ $NETCOREDEPS -ne 0 ]; then
+        if ! sudoIf "dnf -q list compat-openssl10" >/dev/null 2>&1; then
+            echo "(*) compat-openssl10 not required."
+        else
+            if ! sudoIf "dnf -y install compat-openssl10"; then
+                echo "(!) compat-openssl10 install failed"
+                exitScript 1
+            fi
+        fi
+    fi
+    
+    checkKeyringDeps sudoIf "dnf -y install gnome-keyring libsecret"
+    checkBrowserDeps sudoIf "dnf -y install desktop-file-utils xorg-x11-utils"
+
 #ArchLinux
 elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected Arch Linux (unoffically/community supported)"
