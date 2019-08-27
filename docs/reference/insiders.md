@@ -21,19 +21,33 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Insiders
 
-The Visual Studio Live Share team tries to iterate rapidly in order to address user feedback, and as part of that, we offer two seperate feature "channels" that allow you to decide how quickly you recieve new features. By default, after installing the Visual Studio Live Share extension, you're using the `Stable` feature set, which includes all of the production-ready capabilities (e.g. co-editing, shared debugging, terminals). However, if you'd like to get early access to feature we're working on, you can opt-in to the `Insiders` feature set by changing the following setting in your IDE:
+The Visual Studio Live Share team is all about iterating rapidly, trying out new ideas, and listening to our customers! Insiders offers our users the opportunity to try out all our new features first and give their valuable feedback! 
+Learn how to [become an insider](#BecomeanInsider) below, and help us shape the future of developer collaboration. 
 
-* Visual Studio
+## ✨New to Insiders✨
 
-    ![feature-set-vs](../media/feature-set-vs.png)
 
-* Visual Studio Code 
+### **Reusable Sessions (VS Code)**
 
-    ![feature-set-vscode](../media/feature-set-vscode.png)
+Live Share can now host Reusable Sessions! Reusable Sessions provide you the ability to reuse a Live Share Session for various scenarios.This means you can schedule a Live Share session in advance for your technical interviews, weekly mob-programming session, use the same session while mentoring a friend, and much more!
 
-The following sections describe the set of capabilities that are currently within the `Insiders` feature set, and therefore, are ready to evaluate once you change the aforementioned setting:
+To create a Reusable Session do the following:
+1. Go to the `Command Palette` using `Ctrl+Shift+P`
+1. Type "Live Sha..." and click the '**_Live Share: Create Reusable Session link_**' command.
 
-## Direct User Invitations
+![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
+
+3. This will create a Reusable Session and a link to it will be copied to your clipboard. You will see a notification pop-up on the lower-right corner of your editor.
+
+![vscode-reusablesessionnotif](../media/vscode-notification-resuablesession.png)
+
+4. Your Reusable Session has been created! Share the link with your session mate and use it each time to access the session!
+
+> [!TIP] 
+>A Reusable Session link is persistent and lasts for 30 days from its date of creation, or date of last use. This means if you keep using your session at least once every 30 days, you don't have to worry about it expiring. Just save the link in a safe place where you can access it easily!
+ 
+
+### **Direct User Invitations**
 
 Currently, both Visual Studio and Visual Studio Code provide a `Contacts` pane, which enables two key functions:
 
@@ -52,6 +66,24 @@ Once developers sign-in with Live Share, their availability status will be publi
 After 5 minutes of inactivity, your status will automatically switch to `Away`, and when you're within a Live Share session, your status will automatically switch to `Do not disturb` (which suprresses invitation toast notifications). After you become active again and/or leave a Live Share session, your status will automatically switch back to `Available`. With this behavior, you don't need to actually manage your Live Share status. It's simply there to enable direct invitations, and communicate to your peers whether you're available for collaboration or not. However, you can always manually set your status if you prefer.
 
 If you want to opt-out of this feature, you can simply disable the `Presence` setting within the Live Share settings in Visual Studio and Visual Studio Code. Once disabled, you'll still be able to see other's status and invite them, but your status won't be published, and others can't directly invite you.
+
+ 
+
+## Become an Insider <a name="BecomeanInsider"> </a>
+
+By default, after installing the Visual Studio Live Share extension, you're using the `Stable` feature set, which includes all of the production-ready capabilities (e.g. co-editing, shared debugging, terminals). However, if you'd like to get early access to feature we're working on, you can opt-in to the `Insiders` feature set by changing the following setting in your IDE:
+
+* Visual Studio
+
+    ![feature-set-vs](../media/feature-set-vs.png)
+
+* Visual Studio Code 
+
+    ![feature-set-vscode](../media/feature-set-vscode.png)
+
+The following sections describe the set of capabilities that are currently within the `Insiders` feature set, and therefore, are ready to evaluate once you change the aforementioned setting:
+
+
 
 ## See also
 
