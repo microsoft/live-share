@@ -1,0 +1,6 @@
+{
+    daysUntilClose: 0,
+    needsMoreInfoLabel: 'pineapple',
+    perform: true,
+    closeComment: "This issue has been closed automatically due to inactivity."
+}
