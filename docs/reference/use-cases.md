@@ -21,7 +21,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Common Use Cases
 
-The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **compliments** how you already prefer to work.
+The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **complements** how you already prefer to work.
 
 This document highlights some use cases that Visual Studio Live Share is already being used for, and describes how well we currently support them, and ways we plan to optimize them further  (based on feedback!). If you're using Live Share for something that isn't already covered below, or you think we can do better to support a specific use case, please [let us know](https://github.com/MicrosoftDocs/live-share/issues/new).
 
