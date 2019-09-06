@@ -1,0 +1,17 @@
+{
+    perform: true,
+    commands: [
+        {
+            type: 'comment',
+            name: 'duplicate',
+            action: 'updateLabels',
+            addLabel: '*duplicate'
+        },
+        {
+            type: 'comment',
+            name: 'findDuplicates',
+            action: 'comment',
+            comment: "Potential duplicates:\n${potentialDuplicates}"
+        }
+    ]
+}
