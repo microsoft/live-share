@@ -30,7 +30,7 @@ Note that all collaboration activities in described here involve a single **coll
 > [!TIP]
 > Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
-## Installation 
+## Installation
 
 Before you begin, you'll need to install **Visual Studio 2019** or  **Visual Studio 2017 15.6 or higher** on Windows 7, 8.1, or 10. *However, Visual Studio 15.7+ is recommended as this enables local undo/redo support.*
 
