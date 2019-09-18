@@ -30,7 +30,7 @@ Note that all collaboration activities described here involve a single **collabo
 > [!TIP]
 > Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity in both instances. Check it out!
 
-## Installation
+## Installation <a name="Installation"> </a>
 
 Before you begin, you'll need to be sure you've got a version of Visual Studio Code installed that meets Live Share's core requirements. You'll need **Visual Studio Code (1.22.0 or higher)** running on:
 
@@ -50,10 +50,13 @@ After that, downloading and installing the Visual Studio Live Share extension is
 
 1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a>
 2. [Download](https://aka.ms/vsls-dl/vscode) and install the Visual Studio Live Share extension from the marketplace.
+> [!TIP] 
+> If you are using Live Share for Technical Interviews, we highly recommend installing the Live Share extension pack, which also contains the Live Share Audio and Chat extensions.
+
 3. Reload Visual Studio Code
-4. Wait for dependencies to download and install (see status bar).<br/>
+1. Wait for dependencies to download and install (see status bar).<br/>
     ![Finishing install](../media/vscode-finishing-install.png)
-5. **Linux**: If you see a notification about installing missing libraries:
+1. **Linux**: If you see a notification about installing missing libraries:
     1. Click "Install" in the notification.
     2. Enter your admin (sudo) password when prompted.
     3. Restart VS Code when done.
@@ -154,7 +157,7 @@ Since this list can get long, you may find it easier to take advantage of a scop
 
 ![VS Code session state icon](../media/vscode-share-state.png)
 
-## Share a project
+## Share a project 
 
 After downloading and installing Visual Studio Live Share, follow these steps to start a collaboration session and invite a colleague to work with you.
 
