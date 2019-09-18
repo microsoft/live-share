@@ -21,7 +21,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Common Use Cases
 
-The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **complements** how you already prefer to work.
+The primary goal of Visual Studio Live Share is to enable developers to collaborate with each other more easily, without introducing any opinion about when and how to do it (e.g. which communication tool to use, the "right" software methodology or SCM workflow). This way, your tools can support interactions that occur **naturally**, and as **frequently** as needed, but in a way that **compliments** how you already prefer to work.
 
 This document highlights some use cases that Visual Studio Live Share is already being used for, and describes how well we currently support them, and ways we plan to optimize them further  (based on feedback!). If you're using Live Share for something that isn't already covered below, or you think we can do better to support a specific use case, please [let us know](https://github.com/MicrosoftDocs/live-share/issues/new).
 
@@ -39,7 +39,6 @@ This document highlights some use cases that Visual Studio Live Share is already
     - [Classroom Lectures](#classroom-lectures)
 - [Code Reviews](#code-reviews)
 - [Technical Interviews](#technical-interviews)
-- [Working Remotely](#working-remotely)
 
 ## Quick assistance
 
@@ -139,10 +138,6 @@ Live Share doesn't currently share source control diffs, which is a critical pie
 When interviewing candidates for a developer position, it can often be helpful to go beyond whiteboard discussions, and instead, observe them solving a coding problem from within an actual IDE (especially if your team/organization has "standardized" on a tool that you'd like to see them use). This not only gives them the benefit of working in a way that is potentially more natural/comfortable (most developers don't code on whiteboards!), but also, gives them immediate feedback/assistance while working (e.g. build errors, intellisense). Many times, it's more important to understand a candidate's thought process, as opposed to their ability to memorize exact syntax and/or API names. In this way, Live Share provides an experience that is similar to doing a pair programming session, but allows the participant to be in their own environment (including OS settings, such as accessibility), and would work equally as well for local or remote interviews.
 
 Additionally, real-world development is more than simply writing code. Because Live Share also supports shared debugging, tasks and terminals, it allows interviewers to observe candidates while diagnosing an issue, and provide them the appropriate tools needed to solve it (e.g. step debug, run tests). Since all context is remoted from the host's machine, candidates can quickly jump into the "interview environment" without needing to setup their machine (beyond installing Live Share). Teams could then maintain a repository of shared interviewing apps (or use their actual product codebase), that could be cloned and shared with candidates, by simply sending them the session URL before each interview.
-
-## Working Remotely
-
-Work from home without having to keep your home development machines tool chain in sync with your works. Quickly finish of that line of code from home without needing push from work, clone down the repo at home and find the exact line you were working on. Connect on a light weight laptop to your heavy weight work machine.
 
 ## See also
 
