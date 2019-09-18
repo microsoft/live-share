@@ -18,25 +18,26 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# How-to: Do Technical Interviews using Live Share
+# How-to: Doing Technical Interviews using Live Share
 
 Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio and the Live Share extension pack from its marketplace** by following [these steps.](../use/vscode.md#Installation)
 
 
 
 
-Live Share provides you the ability to host Reusable Sessions! All this means is that you can schedule a Live Share session in advance for your technical interviews and no worry about the link (otherwise temporary) expiring.
+Live Share provides you the ability to host Reusable Sessions! All this means is that you can schedule a Live Share session in advance for your technical interviews and not worry about the link expiring.
 
 > [!TIP] 
 >A Reusable Session link is persistent and lasts for 30 days from its date of creation, or date of last use. While generating a Reusable Session link for your interview make sure that the interview is within 30 days of the date of the link's creation. If the link expires, just create a new Reusable Session. (There is a a way to ensure the link never expires, but this is just easier for interviews!)
 
 ### **What to do as an Interviewer?**
 
-As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to our [share a project](../use/vscode.md) section of our How-to guide.
+As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to the [share a project](../use/vscode.md) section of our how-to guide.
 
-Now to create a Live Share session for your technical interview,you will create a special Reusable Session instead of the regular collaboration session. This will allow you to have a  Live Share session that can be used at anytime with the reference link.
+Now to create a Live Share session for your technical interview, you will create a special “reusable session” instead of the regular collaboration session. This will allow you to have a Live Share session that can be scheduled in advance and then used at any time.
 
 To create a Reusable Session do the following:
+
 1. Go to the `Command Palette` using `Ctrl+Shift+P`
 1. Type "Live Sha..." and click the '**_Live Share: Create Reusable Session link_**' command.
 
