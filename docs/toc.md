@@ -26,15 +26,12 @@
 ## [Co-debug](use/vs.md#co-debugging)
 ## [Share a server](use/vs.md#share-a-server)
 ## [Share a terminal](use/vs.md#share-a-terminal)
-# How-to Guides: Technical Interviews
-## [Technical Interviews](use/technical-interviews.md)
 # Reference
 ## [Security](reference/security.md)
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
 ## [Common Use Cases](reference/use-cases.md)
-
 ## [Linux install details](reference/linux.md)
 ## [Insiders](reference/insiders.md)
 ## [Release Notes](https://aka.ms/vsls-releases)
