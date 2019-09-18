@@ -32,6 +32,7 @@
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
 ## [Common Use Cases](reference/use-cases.md)
+## [Technical Interviews](use/technical-interviews.md)
 ## [Linux install details](reference/linux.md)
 ## [Insiders](reference/insiders.md)
 ## [Release Notes](https://aka.ms/vsls-releases)
