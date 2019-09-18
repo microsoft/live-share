@@ -1,0 +1,6 @@
+{
+    daysUntilClose: 14,
+    needsMoreInfoLabel: 'needs more info',
+    perform: true,
+    closeComment: "This issue has been closed. Please provide more information to reopen the issue."
+}
