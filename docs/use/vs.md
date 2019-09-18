@@ -54,15 +54,18 @@ By downloading and using Visual Studio Live Share, you agree to the [license ter
 
 In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
 
-By default Visual Studio uses the your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
+By default Visual Studio uses your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
 
 ![VS sign in button](../media/vs-sign-in-button.png)
 
+
 If you want to use a different sign-in than your Visual Studio [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
-![VS Tools Options Live Share](../media/vs-tools-options.png)
+![VS Tools Options Live Share](../media/vs-tools-options-new.png)
 
 Selecting **External Account** allows you to select an account not supported by Visual Studio's personalization feature like GitHub. A browser will automatically appear the first time you use a Live Share feature so you may complete sign in.
+>[!Tip]
+>Did you know can go to **Tools &gt; Options &gt; Live Share &gt; General** to view all the default Live Share settings? Customize your collaboration experience to your needs! You can also try all the new Live Share features by choosing **Advanced &gt; Features &gt; Insiders** from inside the General Live Share settings!  
 
 If you run into trouble, check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
@@ -72,9 +75,8 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 1. **Sign in**
 
-    After installing the Live Share extension, you'll want to sign in to let other collaborators know who you are. By default Visual Studio uses your personalization account, so you may be able to skip this step entirely.
-
-    See [sign in](#sign-in) for more details.
+    Now that you are signed in, you are ready to start your own collaboration session.
+    Not signed in? Check [sign in](#sign-in) for more details.
 
 2. **Open a solution, project, or folder**
 
@@ -86,18 +88,16 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
 4. **Start a collaboration session**
 
-    Now, simply click the "Live Share" button in the upper right hand corner.
+    Now, click the "Live Share" button in the upper right hand corner to start a Live Share session.     A shareable link to your collaboration session is automatically copied to your clipboard. 
 
     ![VS Share button](../media/vs-share-button.png)
 
+    Once you start your collaboration session for the first time you will see a Live Share tool window. Make sure you dock this window to ensure it shows up the next time you start a Live Share session.
+
+   ![VS Live Share tool window](../media/vs-live-share-tool-window.png)
+
     > [!NOTE]
     > You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
-
-    An invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them.
-
-    You will also see the "Live Share" button transition to convey a "Session State". See [session state](#session-states) information below on what this looks like.
-
-    Note that if you need to get the invite link again after you've started sharing, you can access it by clicking on the share / session state button and selecting "Copy Link".
 
 5. **[Optional] Enable read-only mode**
 
@@ -125,7 +125,16 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     See [invitations and join access](../reference/security.md#invitations-and-join-access) for additional details on invitation security considerations.
 
-That's it!!
+8. **Manage your Live Share session**
+    
+    Once your guest has opened the link to your shared session in VS Code or Visual Studio you will see them listed under participants in the Live Share tool window. You are now able to see which file your guest is currently in next to their name.  
+    
+    ![VS Live Share tool window](../media/vs-live-share-tool-window-participant.png)
+
+    The Live Share tool window allows you to access all key features to manage your session in one place. 
+
+    > [!TIP]
+    > Can't see the Live Share tool window anymore during your sessions? You can always go to **View &gt; Other Windows &gt; Live Share** and find it!
 
 ### Ending the collaboration session
 
