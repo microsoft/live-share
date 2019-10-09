@@ -29,6 +29,7 @@
 # How-to Guides: Technical Interviews
 ## [Technical Interviews](use/technical-interviews.md)
 # Reference
+## [Presence](reference/presence.md)
 ## [Security](reference/security.md)
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
