@@ -21,7 +21,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Contacts in Live Share 
 
-So you have been using Live Share and notice that sending links via an external application (like chat or email) can get old really fast? We know that if we want to encourage collaboration, there needs to be the least amount of friction possible for you to love it. This is why Live Share now has **contacts** that now how **status**.
+So you have been using Live Share and notice that sending links via an external application (like chat or email) can get old really fast? We know that if we want to encourage collaboration, there needs to be the least amount of friction possible for you to love it. This is why Live Share now has **contacts** with **status** .
 
 >Contacts will be automatically enabled for all versions of **Live Share v1.0.950** onwards.
 
@@ -57,13 +57,18 @@ Live Share contacts have 4 statuses currently:
 **4. Offline:** You will be offline once you are away for an extended period of time, or if you choose to [opt-out of sharing status](##ManagingPresence)
 
 
-## Managing contact status<a name="ManagingPresence"> </a>
+## Managing contacts and sharing status<a name="ManagingPresence"> </a>
 
-If you want to opt-out of this feature, you can simply disable the status setting by choosing to be `offline`. Once disabled, you'll still be able to see other's status and invite them, but your status won't be published, and others can't directly invite you.
+If you want to opt-out of this feature, you can do it in two ways.
+1. You can disable the status setting by choosing to be `offline`. Once disabled, you'll still be able to see other's status and invite them, but your status won't be published, and others can't directly invite you.
 You can choose to be offline by clicking on the status circle which will bring up the following drop-down menu:
 
 ![dropdownstatus](../media/vscode-presence-opt-out.png)
 <em> Showing drop down of states of Presence</em>
+
+2. You can open `user settings` and go to *Extensions > Visual Studio Live Share > Live Share: Presence* and disable the Presence service. Once disabled, you'll still be able to see other's status and invite them, but your status won't be published, and others can't directly invite you.
+
+![presencesettings](../media/vscode-presence-setting.png)
 
 ## FAQ's 
 
