@@ -150,11 +150,11 @@ In some cases, distributions either do not support this location or require twea
 
 If you'd prefer to run the command yourself instead, you can click "Copy instead" which will copy the terminal command to the clipboard instead.
 
-Finally, if you opt to skip this step entirely, you can still [join collaboration sessions manually](../use/vscode.md#join-manually), but you will not be able to join by opening an invite link in the browser. Note that you can always access the command again later, by hitting **Ctrl+Shift+P / Cmd+Shift+P** and selecting the "Live Share: Launcher Setup" command.
+Finally, if you opt to skip this step entirely, you can still [join collaboration sessions manually](../how-to-guides/vscode.md#join-manually), but you will not be able to join by opening an invite link in the browser. Note that you can always access the command again later, by hitting **Ctrl+Shift+P / Cmd+Shift+P** and selecting the "Live Share: Launcher Setup" command.
 
 ## See also
 
-- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+- [How-to: Collaborate using Visual Studio Code](../how-to-guides/vscode.md)
 - [Connectivity requirements for Live Share](connectivity.md)
 - [Security features of Live Share](security.md)
 

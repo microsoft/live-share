@@ -6,8 +6,8 @@ ms.date: 09/16/2019
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "conceptual"
-author: "fishah"
-ms.author: "fishah"
+author: "fubaduba"
+ms.author: "fubaduba"
 manager: "JonathanCarter"
 ms.workload: 
   - "liveshare"
@@ -20,7 +20,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # How-to: Do Technical Interviews using Live Share
 
-Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio Code and the Live Share extension pack from its marketplace** by following [these steps.](../use/vscode.md#Installation)
+Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio Code and the Live Share extension pack from its marketplace** by following [these steps.](../how-to-guides/vscode.md)
 
 Live Share provides you the ability to host Reusable Sessions! All this means is that you can schedule a Live Share session in advance for your technical interviews and not worry about the link expiring.
 
@@ -29,7 +29,7 @@ Live Share provides you the ability to host Reusable Sessions! All this means is
 
 ### **What to do as an Interviewer?**
 
-As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to the [share a project](../use/vscode.md) section of our how-to guide.
+As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to the [share a project](../how-to-guides/vscode.md) section of our how-to guide.
 
 Now to create a Live Share session for your technical interview, you will create a special “reusable session” instead of the regular collaboration session. This will allow you to have a Live Share session that can be scheduled in advance and then used at any time.
 
@@ -52,7 +52,7 @@ Once you have this link, just share it with the interviewee via email or your ch
 
 If you are expecting to do a Technical Interview using Live Share, you are in luck! We want to make sure you are familiar with the basic Live Share features so you feel comfortable during your interview.
 
-1. Before the interview, take some time and look over the [How-to guide](../use/vscode.md) so you understand how Live Share works.
+1. Before the interview, take some time and look over the [How-to guide](../how-to-guides/vscode.md) so you understand how Live Share works.
 
 1. You may want to install Visual Studio Code beforehand so that you are not waiting for the installation to complete once you start your interview
 

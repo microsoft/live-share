@@ -32,8 +32,8 @@ Quickstarts
 
 How-tos
 
-- [Collaborate using Visual Studio Code](../use/vscode.md)
-- [Collaborate using Visual Studio](../use/vs.md)
+- [Collaborate using Visual Studio Code](../how-to-guides/vscode.md)
+- [Collaborate using Visual Studio](../how-to-guides/vs.md)
 
 Reference
 
