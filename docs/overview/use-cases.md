@@ -141,9 +141,9 @@ Additionally, real-world development is more than simply writing code. Because L
 
 ## See also
 
-- [Language and platform support](platform-support.md)
-- [Connectivity requirements for Live Share](connectivity.md)
-- [Security features of Live Share](security.md)
+- [Language and platform support](../reference/platform-support.md)
+- [Connectivity requirements for Live Share](../reference/connectivity.md)
+- [Security features of Live Share](../reference/security.md)
 - [All major bugs, feature requests, and limitations](https://aka.ms/vsls-issues)
 - [All feature requests and limitations](https://aka.ms/vsls-feature-requests)
 

@@ -1,6 +1,8 @@
 <!-- markdownlint-disable MD022 MD025 -->
 # Overview
-## [What is Visual Studio Live Share?](overview/index.md)
+## [Introduction](overview/introduction.md)
+## [Features](overview/features.md)
+## [Common Use Cases](overview/use-cases.md)
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
@@ -34,7 +36,7 @@
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
-## [Common Use Cases](overview/use-cases.md)
+
 
 ## [Linux install details](reference/linux.md)
 ## [Insiders](reference/insiders.md)
