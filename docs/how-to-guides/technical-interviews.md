@@ -20,7 +20,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # How-to: Do Technical Interviews using Live Share
 
-Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio Code and the Live Share extension pack from its marketplace** by following [these steps.](../how-to-guides/vscode.md#Installation)
+Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio Code and the Live Share extension pack from its marketplace** by following [these steps.](../how-to-guides/vscode.md)
 
 Live Share provides you the ability to host Reusable Sessions! All this means is that you can schedule a Live Share session in advance for your technical interviews and not worry about the link expiring.
 
