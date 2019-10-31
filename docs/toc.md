@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD022 MD025 -->
 # Overview
-## [Introduction](overview/introduction.md)
+## [Introduction](index.md)
 ## [Features](overview/features.md)
 ## [Common Use Cases](overview/use-cases.md)
 # Quickstarts
