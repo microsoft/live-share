@@ -2,7 +2,7 @@
 # Overview
 ## [Introduction](index.md)
 ## [Features](overview/features.md)
-## [Common Use Cases](overviewuse-cases.md)
+## [Common Use Cases](reference/use-cases.md)
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
