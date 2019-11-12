@@ -118,8 +118,8 @@ If these settings don't solve the problem for you, [please let us know](https://
 
 ## See also
 
-- [How-to: Collaborate using Visual Studio Code](../how-to-guides/vscode.md)
-- [How-to: Collaborate using Visual Studio](../how-to-guides/vs.md)
+- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+- [How-to: Collaborate using Visual Studio](../use/vs.md)
 - [Security features of Live Share](security.md)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
