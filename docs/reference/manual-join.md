@@ -22,7 +22,7 @@ The exact instructions vary between [Visual Studio](#join-from-visual-studio) an
 
 ### 1. Sign in
 
->**Note:** If you want to join a collaboration session as a read-only guesasdsat, you can skip signing in. You will have access to viewing and navigating around the code that is shared but not be able to make edits.
+>**Note:** If you want to join a collaboration session as a read-only guest, you can skip signing in. You will have access to viewing and navigating around the code that is shared but not be able to make edits.
 
 ![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
 
