@@ -150,28 +150,23 @@ elif type apt-get > /dev/null 2>&1; then
 
     if [ $NETCOREDEPS -ne 0 ]; then
         checkNetCoreDeps aptSudoIf "install -yq libicu[0-9][0-9] libkrb5-3 zlib1g"
-        # Determine which version of libssl to install
+        
+        # Check for libssl-dev
         # dpkg-query can return "1" in some distros if the package is not found. "2" is an unexpected error
-        LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1)
+        LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl-dev' 2>&1)
         if [ $? -eq 2 ]; then
            echo "(!) Failed see if libssl already installed!"
            exitScript 1
         fi
-        if [ "$(echo "$LIBSSL" | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort | wc -l)" -eq 0 ]; then
-            # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
-            if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
-                if ! aptSudoIf "install -yq libssl1.0.2"; then
-                    echo "(!) libssl1.0.2 installation failed!"
-                    exitScript 1
-                fi
-            else    
-                if ! aptSudoIf "install -yq libssl1.0.0"; then
-                    echo "(!) libssl1.0.0 installation failed!"
-                    exitScript 1
-                fi
+        
+        # Install libssl-dev
+        if [ "$(echo "$LIBSSL" | grep -o 'libssl-dev' | uniq | sort | wc -l)" -eq 0 ]; then
+            if ! aptSudoIf "install -yq libssl-dev"; then
+                echo "(!) libssl-dev installation failed!"
+                exitScript 1
             fi
         else 
-            echo "(*) libssl1.0.x already installed."
+            echo "(*) libssl-dev already installed."
         fi
     fi
 
