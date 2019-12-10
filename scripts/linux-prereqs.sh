@@ -151,22 +151,22 @@ elif type apt-get > /dev/null 2>&1; then
     if [ $NETCOREDEPS -ne 0 ]; then
         checkNetCoreDeps aptSudoIf "install -yq libicu[0-9][0-9] libkrb5-3 zlib1g"
         
-        # Check for libssl-dev
+        # Check for openssl
         # dpkg-query can return "1" in some distros if the package is not found. "2" is an unexpected error
-        LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl-dev' 2>&1)
+        LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'openssl' 2>&1)
         if [ $? -eq 2 ]; then
            echo "(!) Failed see if libssl already installed!"
            exitScript 1
         fi
         
-        # Install libssl-dev
-        if [ "$(echo "$LIBSSL" | grep -o 'libssl-dev' | uniq | sort | wc -l)" -eq 0 ]; then
-            if ! aptSudoIf "install -yq libssl-dev"; then
-                echo "(!) libssl-dev installation failed!"
+        # Install openssl
+        if [ "$(echo "$LIBSSL" | grep -o 'openssl' | uniq | sort | wc -l)" -eq 0 ]; then
+            if ! aptSudoIf "install -yq openssl"; then
+                echo "(!) openssl installation failed!"
                 exitScript 1
             fi
         else 
-            echo "(*) libssl-dev already installed."
+            echo "(*) openssl already installed."
         fi
     fi
 
