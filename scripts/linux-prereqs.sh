@@ -155,7 +155,7 @@ elif type apt-get > /dev/null 2>&1; then
         # dpkg-query can return "1" in some distros if the package is not found. "2" is an unexpected error
         LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'openssl' 2>&1)
         if [ $? -eq 2 ]; then
-           echo "(!) Failed see if libssl already installed!"
+           echo "(!) Failed see if openssl already installed!"
            exitScript 1
         fi
         
