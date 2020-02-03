@@ -34,7 +34,7 @@ Ready to get going? In this article we'll run you through some concepts and how 
 
 Before you begin, you need to be sure you have a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements.
 
-- **Visual Studio Code 1.22.0 or higher** - Windows 7, 8.1, or 10, macOS *(Sierra 10.12 and above only)*, 64-bit Linux *(64-bit Ubuntu Desktop 16.04+, Fedora 27+ recommended - [see details](use/vscode.md#installation))*.
+- **Visual Studio Code 1.22.0 or higher** - Windows 7, 8.1, or 10, macOS *(only High Sierra 10.13+) *, 64-bit Linux *(64-bit Ubuntu Desktop 16.04+, Fedora 27+ recommended - [see details](use/vscode.md#installation))*.
 - **Visual Studio 2019** (any edition) - Windows 7, 8.1, or 10.
 - **Visual Studio 2017 15.6 or higher** (any edition) - Windows 7, 8.1, or 10.
 
