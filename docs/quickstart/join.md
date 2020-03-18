@@ -14,10 +14,11 @@ ms.workload:
 ---
 
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
+
 
 # Quickstart: Join your first collaboration session
 
