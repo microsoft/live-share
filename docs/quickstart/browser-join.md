@@ -22,8 +22,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 All Live Share collaboration sessions now have the ability to be joined form the browser. This means that a guest to your session no longer needs to install VS Code or Visual Studio to join your session. This is especially helpful for all those instances when you want someone to get into your session quickly, or for students who often don't have the desktop clients installed.
 
-> [!TIP]
-> Check our FAQ section below for your most common questions about joining from the browser.
 
 # How to join a Live Share session from the browser 
 
@@ -41,6 +39,8 @@ Live Share will generate a join link that can be shared with the guest. The gues
 Once the guest has joined the session, they can carry on just like they would if they were collaborating from the desktop clients.
 
 ![Animation of full fidelity](https://user-images.githubusercontent.com/51928518/76942009-40e24d80-68ba-11ea-885c-6eb1069ed550.gif)
+
+<!---
 # Frequently asked questions 
 
 ##### 1. Is there an environment running in the background, that is hosting my session in the browser?
@@ -58,3 +58,5 @@ We do not have this available yet.
 
 # Feedback and issues 
 This is a preview feature, and we hope to get user feedback to improve the experience. Please fill out any feedback or issues you see on our GitHub repo [here.](https://github.com/MicrosoftDocs/live-share/issues/new?template=bug_report.md)
+
+--->
