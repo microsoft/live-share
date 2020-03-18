@@ -22,7 +22,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 All Live Share collaboration sessions now have the ability to be joined form the browser. This means that a guest to your session no longer needs to install VS Code or Visual Studio to join your session. This is especially helpful for all those instances when you want someone to get into your session quickly, or for students who often don't have the desktop clients installed.
 
->[!TIP] Check our FAQ section below for your most common questions about joining from the browser.
+> [!TIP]
+> Check our FAQ section below for your most common questions about joining from the browser.
 
 # How to join a Live Share session from the browser 
 
