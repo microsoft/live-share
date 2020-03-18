@@ -56,7 +56,7 @@ If you are expecting to do a Technical Interview using Live Share, you are in lu
 
 1. You may want to install Visual Studio Code beforehand so that you are not waiting for the installation to complete once you start your interview
 
-1. If you don't have the time, no worries. ALl you need to have a full interview is the link to a Live Share session your interviewer sends you while scheduling the interview. Just clicking on the link will automatically take you through all the steps needed.
+1. If you don't have the time, no worries. All you need to have a full interview is the link to a Live Share session your interviewer sends you while scheduling the interview. Just clicking on the link will automatically take you through all the steps needed.
 
 1. At the time of the interview, just click on the link and follow the steps it takes you through. If you are early or your interviewer is late to the interview, don't worry! You will just be in the 'lobby' waiting for your interviewer to join. No other steps are required, and once your interviewer joins the session will automatically start.
 
