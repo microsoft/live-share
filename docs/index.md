@@ -14,7 +14,7 @@ ms.workload:
 ---
 
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
@@ -28,7 +28,7 @@ Welcome to Visual Studio Live Share! Live Share enables you to collaboratively e
 Ready to get going? In this article we'll run you through some concepts and how to install the needed extensions. If you're looking for an abridged version, check out the [share](quickstart/share.md) and [join](quickstart/join.md) quickstarts.
 
 > [!TIP]
-> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+> Did you know that you can now *join a Live Share session from the browser*? This means, you no longer need to install a desktop client to collaborate! Just click on the link shared with you and you can get a full-fidelity VS Code editor experience in the browser. Learn more [here](quickstart/browser-join.md)
 
 ## Install Visual Studio Live Share
 
