@@ -13,30 +13,32 @@ ms.workload:
   - "liveshare"
 ---
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
 # How-to: Do Technical Interviews using Live Share
 
-Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio Code and the Live Share extension pack from its marketplace** by following [these steps.](../use/vscode.md)
+Using Live Share for interviews, allows the interviewer and candidate to have a fast and reliable interview session, with a full-fidelity IDE or editor. 
 
-Live Share provides you the ability to host Reusable Sessions! All this means is that you can schedule a Live Share session in advance for your technical interviews and not worry about the link expiring.
 
-> [!TIP] 
->A Reusable Session link is persistent and lasts for 30 days from its date of creation, or date of last use. While generating a Reusable Session link for your interview make sure that the interview is within 30 days of the date of the link's creation. If the link expires, just create a new Reusable Session. (There is a a way to ensure the link never expires, but this is just easier for interviews!)
+#### Setup for interviewer 
+To interview a candidate with Live Share you must first either of the two desktop clients:
 
-### **What to do as an Interviewer?**
+Install [Visual Studio](../use/vs.md) which comes in-built with the Live Share extension
 
-As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to the [share a project](../use/vscode.md) section of our how-to guide.
+>[!TIP] 
+> Make sure you turn on Insiders for Live Share by going to *Tools> Options > Live Share > Advanced > Features*. This will enable you to use our in-built audio calling support for interviews.
 
-Now to create a Live Share session for your technical interview, you will create a special “reusable session” instead of the regular collaboration session. This will allow you to have a Live Share session that can be scheduled in advance and then used at any time.
+Or install [Visual Studio Code](../.use/vscode.md) and download the [Live Share extension pack]() from the marketplace. The extension pack will provide you with our audio support for interviews. 
 
-To create a Reusable Session do the following:
+#### Scheduling an interview 
+
+**Live Share in VS Code** provides you the ability to create Live Share sessions in advance. You can use the following steps to create a session in advance:
 
 1. Go to the `Command Palette` using `Ctrl+Shift+P`
-1. Type "Live Sha..." and click the '**_Live Share: Create Reusable Session link_**' command.
+1. Type "Live Sha..." and click the '_Live Share: Create Reusable Session link_' command.
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -44,10 +46,25 @@ To create a Reusable Session do the following:
 
 ![vscode-reusablesessionnotif](../media/vscode-notification-resuablesession.png)
 
-4. Your Reusable Session has been created! Share the link with your session mate and use it each time to access the session!
+4.Send the link.
 
 Once you have this link, just share it with the interviewee via email or your choice of scheduling mechanism. All they have to do is click on that link at the time of the interview and they will be in a Live Share session. 
+> [!TIP] 
+>A Reusable Session link is persistent and lasts for 30 days from its date of creation, or date of last use. While generating a Reusable Session link for your interview make sure that the interview is within 30 days of the date of the link's creation. If the link expires, just create a new Reusable Session. (There is a a way to ensure the link never expires, but this is just easier for interviews!)
 
+**Note:** Currently, Live Share in Visual Studio does not have the ability to create sessions in advance. For interviews you conduct using Live Share in Visual Studio, you can follow our guide on how to start an instant Live Share session [here](../quickstart/share.md)
+
+
+
+#### Setup for candidate
+While a candidate can always install the either Visual Studio or Visual Studio Code to join the interview, they do not need to do so. **Live Share interview sessions can be joined by candidates without any prior setup.** They can click on the interview link at the time of the session and **join from the browser**. Learn more [here.](../quickstart/browser-join.md)
+
+
+
+<!--
+### **What to do as an Interviewer?**
+
+As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to the [share a project](../use/vscode.md) section of our how-to guide
 ### **What to do as the Interviewee?**
 
 If you are expecting to do a Technical Interview using Live Share, you are in luck! We want to make sure you are familiar with the basic Live Share features so you feel comfortable during your interview.
@@ -64,3 +81,4 @@ If you are expecting to do a Technical Interview using Live Share, you are in lu
 >If you find that the session has disconnected before or after the interviewer joined, don't worry. Just exit out of that session if (it isn't already closed) and re-click on the same link!
 
 You are now all set to go with using Live Share for your interview! 
+-->

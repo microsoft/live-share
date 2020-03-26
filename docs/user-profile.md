@@ -14,7 +14,7 @@ ms.workload:
 ---
 
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
@@ -36,10 +36,7 @@ If Visual Studio Live Share doesn't currently have a profile stored for the iden
 
 ## Removing Your Profile
 
-If you'd like to remove your user profile, you can click the link titled `Click here to get your data removed from our systems` on the [user profile page](#user-profile). Alternatively, you can visit one of the following pages directly (depending on the identity provider you used):
-
-- [Microsoft Account / Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
-- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
+If you'd like to remove your user profile, you can click the link titled `Click here to get your data removed from our systems` on the [user profile page](#user-profile).
 
 Otherwise, Visual Studio Live Share will automatically delete your profile 30 days after your last successful sign-in. In this context, a "successful sign-in" refers to the following (depending on the tool you're using):
 
