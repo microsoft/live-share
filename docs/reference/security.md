@@ -27,9 +27,21 @@ Collaboration sessions in Visual Studio Live Share are powerful in that they all
 
 ## Connectivity
 
-All connections in Visual Studio Live Share are SSH or SSL encrypted and authenticated against a central service to ensure that only those in the collaboration session can gain access to its content. By default, Live Share attempts a direct connection and falls back on a cloud relay if a connection between the guest and the host cannot be established. Note that Live Share's cloud relay does not persist any traffic routed through it and does not "snoop" the traffic in any way. However, if you'd prefer not to use the relay you can change settings to always connect directly.
+When initiating a session between peers, Live Share attempts to establish a peer-to-peer connection, and only if that isn't possible (e.g. due to firewalls/NATs), does it fall back to using a cloud relay. However, in both connection types (P2P or relay), all data transmitted between peers is end-to-end encrypted using the SSH protocol. In the case of a relay connection, the SSH encryption is layered on top of TLS-encrypted WebSockets. This means that Live Share doesn't depend on the cloud relay service for security. Even if the relay was compromised, it could not decrypt any of the Live Share communication.
+
+The role of the Live Share service is limited to user authentication and session discovery. The service itself does not store or ever have access any of the content of a session. All user content in Live Share is transmitted over the SSH session. That includes code, terminals, shared servers, and any other collaboration features provided by Live Share or extensions that build on it.
 
 To find out more about altering these behaviors and Live Share's connectivity requirements, see **[connectivity requirements for Live Share](connectivity.md)**.
+
+### Wire Encryption 
+
+The SSH protocol uses a Diffie-Hellman key-exchange to establish a shared secret for the session, and derives from that a key for AES symmetric encryption. The encryption key is rotated periodically throughout the duration of the session. The shared session secret and all encryption keys are only maintained in-memory by both sides, and are only valid for the duration of the session. They are never written to disk or sent to any service (including Live Share).
+
+### Peer Authentication
+
+The SSH session is also two-way authenticated. The host (SSH server role) uses public/private key authentication as is standard for the SSH protocol. When a host shares a Live Share session, it generates a unique RSA public/private key-pair for the session. The host private key is kept only in memory in the host process; it is never written to disk or sent to any service including the Live Share service. The host public key is published to the Live Share service along with the session connection information (IP address and/or relay endpoint) where guests can access it via the invitation link. When a guest connects to the host's SSH session, the guest uses the SSH host authentication protocol to validate that the host holds the private key corresponding to the published public key (without the guest actually getting to see the private key).
+
+The guest uses a Live Share token to authenticate itself with the host. The token is a signed JWT issued by the Live Share service that includes claims about the user identity (obtained via MSA, AAD, or GitHub sign-in). The token also has claims that indicate the guest is allowed to access that specific Live Share session (because they had the invitation link and/or they were specifically invited by the host). The host validates that token and checks the claims (and depending on options may prompt the host user) before allowing the guest to join the session.
 
 ## Invitations and join access
 
