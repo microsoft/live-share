@@ -23,7 +23,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 Using Live Share for interviews, allows the interviewer and candidate to have a fast and reliable interview session, with a full-fidelity IDE or editor. 
 
 
-#### Setup for interviewer 
+## Setup for interviewer 
 To interview a candidate with Live Share you must first either of the two desktop clients:
 
 Install [Visual Studio](../use/vs.md) which comes in-built with the Live Share extension
@@ -33,7 +33,7 @@ Install [Visual Studio](../use/vs.md) which comes in-built with the Live Share e
 
 Or install [Visual Studio Code](../.use/vscode.md) and download the [Live Share extension pack]() from the marketplace. The extension pack will provide you with our audio support for interviews. 
 
-#### Scheduling an interview 
+## Scheduling an interview 
 
 **Live Share in VS Code** provides you the ability to create Live Share sessions in advance. You can use the following steps to create a session in advance:
 
@@ -56,7 +56,7 @@ Once you have this link, just share it with the interviewee via email or your ch
 
 
 
-#### Setup for candidate
+## Setup for candidate
 While a candidate can always install the either Visual Studio or Visual Studio Code to join the interview, they do not need to do so. **Live Share interview sessions can be joined by candidates without any prior setup.** They can click on the interview link at the time of the session and **join from the browser**. Learn more [here.](../quickstart/browser-join.md)
 
 
