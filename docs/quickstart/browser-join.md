@@ -1,6 +1,6 @@
 ---
 title: "Joining from the browser - Visual Studio Live Share | Microsoft Docs"
-description: "Introducing joining from thr browser"
+description: "Introducing joining from the browser"
 ms.date: 03/18/2020
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # ✨[Preview]✨ Joining a Live Share session from the browser
 
-All Live Share collaboration sessions now have the ability to be joined form the browser. This means that a guest to your session no longer needs to install VS Code or Visual Studio to join your session. This is especially helpful for all those instances when you want someone to get into your session quickly, or for students who often don't have the desktop clients installed.
+All Live Share collaboration sessions now have the ability to be joined from the browser. This means that a guest to your session no longer needs to install VS Code or Visual Studio to join your session. This is especially helpful for all those instances when you want someone to get into your session quickly, or for students who often don't have the desktop clients installed.
 
 
 # How to join a Live Share session from the browser 
