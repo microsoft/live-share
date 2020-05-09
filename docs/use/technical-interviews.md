@@ -31,7 +31,7 @@ Install [Visual Studio](../use/vs.md) which comes in-built with the Live Share e
 >[!TIP] 
 > Make sure you turn on Insiders for Live Share by going to *Tools> Options > Live Share > Advanced > Features*. This will enable you to use our in-built audio calling support for interviews.
 
-Or install [Visual Studio Code](../.use/vscode.md) and download the [Live Share extension pack]() from the marketplace. The extension pack will provide you with our audio support for interviews. 
+Or install [Visual Studio Code](../use/vscode.md) and download the [Live Share extension pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) from the marketplace. The extension pack will provide you with our audio support for interviews. 
 
 ## Scheduling an interview 
 
