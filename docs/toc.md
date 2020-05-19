@@ -3,6 +3,7 @@
 ## [Introduction](index.md)
 ## [Features](overview/features.md)
 ## [Common Use Cases](reference/use-cases.md)
+## [What's new](overview/what's-new.md)
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
