@@ -267,7 +267,7 @@ Whenever you are in a collaboration session, you'll be able can see each partici
 
 ![Screen shot showing user](../media/vs-person.png)
 
-Sometimes you may need to explain a problem or design that spans multiple files or locations in code. In these situations, it can useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you will automatically "follow" the host. When following a participant, your editor will stay in sync with their currently open file, cursor, and scroll position.
+Sometimes you may need to explain a problem or design that spans multiple files or locations in code. In these situations, it can be useful to temporarily follow a colleague as they move throughout the project. For this reason, as a guest, when you join a collaboration session you will automatically "follow" the host. When following a participant, your editor will stay in sync with their currently open file, cursor, and scroll position.
 
 > [!NOTE]
 > By default Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update Share External Files in Tools &gt; Options &gt; Live Share to False.
