@@ -497,7 +497,7 @@ As a host, you can share a terminal by opening the Live Share custom tab in the 
 
 ![VS Code share terminal](../media/vscode-share-terminal-viewlet.png)<br />
 
-At this point, you can select a read-only or read/write terminal from the menu. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run.
+At this point, you can select a read-only or read/write terminal from the menu. When the terminal is read/write, everyone can type in the terminal including the host which makes it easy to intervene if a guest is doing something you do not like. However, to be safe, you should **only give read/write access to guests when you know they actually need it** and stick with read-only terminals for scenarios where you just want the guest to see the output of any commands you run. Keep in mind that read/write access gives the guest the same access to your terminal that you have, and they can run any command on your computer that you can.
 
 > [!NOTE]
 > If the collaboration session is in read-only mode, only read-only terminals can be shared by the host.
