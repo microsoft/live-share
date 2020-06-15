@@ -51,4 +51,4 @@ The host of your Live Share session is either using Visual Studio or other platf
 The host of your Live Share session is either using Visual Studio or other platforms to host a session, which does not support Live Share integrated chat yet. They may also be un available right now. They may also be seeing error message 1. listed above.
 
 
-**In order to user Integrated chat you need to have auto-updates for your Live Share extensions on.** 
+**In order to use integrated chat you need to have auto-updates for your Live Share extensions on.** 
