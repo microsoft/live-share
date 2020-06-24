@@ -103,7 +103,7 @@ See [troubleshooting](../troubleshooting.md#sign-in) if you are still hitting pr
 
 Use your normal workflow to open a folder, project, or solution that you would like to share in Visual Studio or Visual Studio Code.
 
-### 4. [Optional] Update hidden or excluded files
+## 4. [Optional] Update hidden or excluded files
 
 By default, Live Share **hides** any files/folders referenced in .gitignore files in your shared folders from guests. **Hiding** a file prevents it from appearing in the guest's file tree. **Excluding** a file applies a stricter rule that prevents Live Share from opening it for the guest in situations like go to definition or if you step into the file while debugging or being "followed". If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
@@ -148,7 +148,7 @@ In **VS Code**, you can also start a read-only session from the Live Share viewl
 
 ![Toast notification asking to sign in using a web browser](../media/vscode-read-only-viewlet.png)
 
-### 7. Send someone the invite link
+## 7. Send someone the invite link
 
 Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Opening the link in a browser allows them to join the collaboration session that is sharing the contents of the folder, project, or solution that you opened. Note that, given the level of access Live Share sessions can provide to guests, **you should only share with people you trust** and think through the implications of what you are sharing.
 
