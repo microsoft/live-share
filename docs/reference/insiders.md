@@ -26,6 +26,28 @@ Learn how to [become an insider](#BecomeanInsider) below, and help us shape the 
 
 ## ✨New to Insiders✨
 
+### **Planned Sessions (VS Code)**
+Reusable sessions now have a place in the Live Share viewlet. Planned Sessions allows you as the host of a Live Share session to create a Live Share session link in advance. 
+
+
+![planned-session-createlink-vscode](../media/planned-session-creation-vscode.png)
+*Image showing creation of a new planned session from the viewlet*
+
+Doing so enables you to share this link as a part of your regularly scheduled meetings with your teams, your interviews or your pairing sessions.
+Once such a session in planned in advance, you're able access it from the Live Share viewlet directly. 
+
+![planned-session-vscode](../media/planned-session-copylink-vscode.png)
+*Image showing 'Planned Sessions' in the Live Share viewlet
+
+>[!TIP]
+>Turn on Insiders for Live Share in VS Code to use 'Planned >Sessions'. Learn how to become an insider below. 
+
+'Planned Sessions' in Visual Studio is currently an internal feature only. Please check back for updates on when it advances to the insider stage. 
+
+
+# Pushed to Public 
+
+The following Insider features have been pushed to public.
 
 ### **Reusable Sessions (VS Code)**
 
