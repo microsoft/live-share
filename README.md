@@ -45,6 +45,7 @@ Many Visual Studio Live Features are available across a number of languages and 
 
 - [Provide feedback](https://aka.ms/vsls-support)
 - [FAQ](https://aka.ms/vsls-faq)
+- [VS Live Share Extension API](https://www.npmjs.com/package/vsls)
 
 ## Community-created content
 
