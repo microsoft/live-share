@@ -1,5 +1,5 @@
 ---
-title: "Presence- Visual Studio Live Share | Microsoft Docs"
+title: "Presence | Microsoft Docs"
 description: "Information on the presence service for contacts for Visual Studio Live Share."
 ms.custom:
 ms.date: 10/08/2019
