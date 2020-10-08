@@ -1,5 +1,5 @@
 ---
-title: "Join quickstart - Visual Studio Live Share | Microsoft Docs"
+title: "Join quickstart  | Microsoft Docs"
 description: "An abridged walkthrough on joining your first Visual Studio Live Share collaboration session."
 ms.custom:
 ms.date: 03/22/2018

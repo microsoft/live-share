@@ -1,5 +1,5 @@
 ---
-title: "Overview - Visual Studio Live Share | Microsoft Docs"
+title: "Overview  | Microsoft Docs"
 description: "New Live Share features and releases"
 ms.custom:
 ms.reviewer: ""

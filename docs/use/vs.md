@@ -1,5 +1,5 @@
 ---
-title: "Collaborate using Visual Studio - Visual Studio Live Share | Microsoft Docs"
+title: "Collaborate using Visual Studio  | Microsoft Docs"
 description: "A set of collaboration how-tos for Visual Studio and Live Share."
 ms.custom:
 ms.date: 04/25/2018

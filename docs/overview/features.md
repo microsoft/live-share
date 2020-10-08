@@ -1,5 +1,5 @@
 ---
-title: "Overview - Visual Studio Live Share | Microsoft Docs"
+title: "Overview  | Microsoft Docs"
 description: "An overview of Visual Studio Live Share and its capabilities."
 ms.custom:
 ms.date: 10/30/2019

@@ -1,5 +1,5 @@
 ---
-title: "Common Use Cases - Visual Studio Live Share | Microsoft Docs"
+title: "Common Use Cases  | Microsoft Docs"
 description: "An overview of the use cases that developers are commonly leveraging Visual Studio Live Share for."
 ms.custom:
 ms.date: 05/21/2018

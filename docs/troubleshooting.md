@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting - Visual Studio Live Share | Microsoft Docs"
+title: "Troubleshooting  | Microsoft Docs"
 description: "Troubleshooting tips and tricks for Visual Studio Live Share."
 ms.custom:
 ms.date: 03/22/2018

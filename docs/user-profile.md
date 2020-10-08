@@ -1,5 +1,5 @@
 ---
-title: "User Profile - Visual Studio Live Share | Microsoft Docs"
+title: "User Profile  | Microsoft Docs"
 description: "An overview of how to view and remove your Visual Studio Live Share user profile."
 ms.custom:
 ms.date: 05/222/2018

@@ -1,5 +1,5 @@
 ---
-title: "Insiders - Visual Studio Live Share | Microsoft Docs"
+title: "Insiders  | Microsoft Docs"
 description: "A description of the 'Insiders' channel within Visual Studio Live Share."
 ms.custom:
 ms.date: 04/02/2019

@@ -1,5 +1,5 @@
 ---
-title: "Security - Visual Studio Live Share | Microsoft Docs"
+title: "Security  | Microsoft Docs"
 description: "Information on the security features of Visual Studio Live Share."
 ms.custom:
 ms.date: 12/17/2018
