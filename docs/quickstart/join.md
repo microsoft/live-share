@@ -39,7 +39,7 @@ Installing the extension is easy. Just follow these steps:
 <tr>
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
-        <strong>Visual Studio Code (1.22.0+)</strong><br />
+        <strong>Visual Studio Code (1.40.0+)</strong><br />
         1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Windows (7, 8.1, or 10), macOS <b>(Sierra+)</b>, 64-bit Linux <b>(<a href="../use/vscode.md#installation">details</a>)</b><br />
         2. Download and install the Visual Studio Live Share extension from the marketplace. <br />
         3. Reload and wait for dependencies to download and install (see status bar).<br />
@@ -59,7 +59,7 @@ Installing the extension is easy. Just follow these steps:
 <tr style="border:none;">
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2017 15.6 or higher</strong><br />
+        <strong>Visual Studio 2017 15.9 or higher</strong><br />
         1. Install the latest version of <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) on Windows (7, 8.1, or 10).<br/>
         2. Install a <a href="../reference/platform-support.md">supported workload</a>. (e.g. ASP.NET, .NET Core, C++, and/or Node.js)<br />
         3. Download and install the Visual Studio Live Share extension from the marketplace. <br />
