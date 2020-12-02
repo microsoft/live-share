@@ -90,7 +90,7 @@ How-tos
 - [Collaborate using Visual Studio Code](use/vscode.md)
 - [Collaborate using Visual Studio](use/vs.md)
 
-reference
+Reference
 
 - [Connectivity requirements for Live Share](reference/connectivity.md)
 - [Security features of Live Share](reference/security.md)
