@@ -23,9 +23,9 @@ On both the host and the guest:
 - Open the file that's out of sync
 - Run the `liveshare.getCoeditingInformation` command (`ctrl+shift+p` to open the command palette, then search for "Get co-editing information") and paste the results below
 
-**Host coediting information:**
+**Host co-editing information:**
 
-**Guest coediting information:**
+**Guest co-editing information:**
 
 To check that messages are being sent and received, open the Output view (`ctrl+shift+u`) and select "Visual Studio Live Share Coediting" from the dropdown. Type a character. On the sending end, you should see output like:
 ```
