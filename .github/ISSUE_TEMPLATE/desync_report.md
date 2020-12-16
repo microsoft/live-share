@@ -31,7 +31,7 @@ To check that messages are being sent and received, open the Output view (`ctrl+
 ```
 [2020-12-10 23:51:25.351 ] Post message: {"messageType":"textChange","changes":[{"length":0,"newText":"a","start":400}],"changeServerVersion":12,"clientId":24,"fileName":"/src/foo.txt","time":1607644285349,"sendId":16}
 ```
-On the receiving end, you should see ouput like:
+On the receiving end, you should see output like:
 ```
 [2020-12-10 23:51:27.713 ] Receive message: {"context":{"GuestSessionId":"31","IsOwner":"False"},"sourceId":"Coauthoring","eventId":45,"jsonContent":"{"messageType":"textChange","changes":[{"length":0,"newText":"a","start":400}],"changeServerVersion":12,"clientId":24,"fileName":"/src/foo.txt","time":1607644427514,"sendId":25}","time":1607644427713}
 ```
