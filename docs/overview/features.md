@@ -24,7 +24,7 @@ Live Share is built using revolutionary architecture and concepts that manifest 
 
 ### Collaboration sessions
 
-All collaboration activities in Visual Studio Live Share involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest.
+All collaboration activities in Visual Studio Live Share involve a single **collaboration session host** and one or more **guests**. The host is the person who started the collaboration session and anyone that joins is a guest.
 
 Collaboration session hosts can use all of their tools and services but guests are only given access to the specific things the host has shared with them. This includes code, running servers, debugging sessions, terminals and more. Currently all content that is shared is kept on the host's machine and not synchronized to the cloud or on the guest's machine which enables _instant access_ and _increased security_. The advantage is that the entire solution is available the moment a guest joins, and the moment a host ends a collaboration session, the content is no longer available. Further, temp files created by the IDE/editor to improve performance for the guest are automatically cleaned up when the session ends.
 
