@@ -238,7 +238,7 @@ elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected Arch Linux (unoffically/community supported)"
     checkNetCoreDeps sudoIf "pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib"
     checkKeyringDeps sudoIf "pacman -Sq --noconfirm --needed gnome-keyring libsecret"
-    checkBrowserDeps sudoIf "pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop"
+    checkBrowserDeps sudoIf "pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop xdg-utils"
 
 #Solus
 elif type eopkg > /dev/null 2>&1; then
