@@ -142,7 +142,7 @@ Additionally, real-world development is more than simply writing code. Because L
 
 ## Working Remotely
 
-Work from home without having to keep your home development machines tool chain in sync with your works. Quickly finish of that line of code from home without needing push from work, clone down the repo at home and find the exact line you were working on. Connect on a light weight laptop to your heavy weight work machine.
+Work from home without having to keep your home development machine's toolchain in sync with your work's. Quickly finish off that line of code from home without needing to push from work, clone down the repo at home, and find the exact line you were working on. Connect from a lightweight laptop to your heavyweight work machine.
 
 ## See also
 
