@@ -406,7 +406,7 @@ At this point, you can select a read-only or read/write terminal from the menu. 
 > [!NOTE]
 > If the collaboration session is in read-only mode, only read-only terminals can be shared by the host.
 
-Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear for all participants with the correct permissions. While Visual Studio Code has a built in terminal support Visual Studio does not have one out of box. Therefore, by default, new window containing the terminal will appear. However, if the [Whack Whack Terminal extension](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal), Live Share will create an integrated terminal instead. Visual Studio will give you a link to install it the first time you start or join a shared terminal.
+Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear for all participants with the correct permissions.
 
 ![Terminal install toast notification](../media/vs-terminal-install.png)
 
