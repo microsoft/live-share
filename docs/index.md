@@ -1,5 +1,5 @@
 ---
-title: "Overview - Visual Studio Live Share | Microsoft Docs"
+title: "Overview  | Microsoft Docs"
 description: "An overview of Visual Studio Live Share and its capabilities."
 ms.custom:
 ms.date: 10/30/2019
@@ -90,7 +90,7 @@ How-tos
 - [Collaborate using Visual Studio Code](use/vscode.md)
 - [Collaborate using Visual Studio](use/vs.md)
 
-reference
+Reference
 
 - [Connectivity requirements for Live Share](reference/connectivity.md)
 - [Security features of Live Share](reference/security.md)

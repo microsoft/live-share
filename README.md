@@ -45,6 +45,8 @@ Many Visual Studio Live Features are available across a number of languages and 
 
 - [Provide feedback](https://aka.ms/vsls-support)
 - [FAQ](https://aka.ms/vsls-faq)
+- [VS Live Share Extension API](https://www.npmjs.com/package/vsls)
+- [VS Live Share Extension Samples](https://github.com/vsls-contrib)
 
 ## Community-created content
 
@@ -88,7 +90,6 @@ Have a question or feedback? There are many ways to contribute.
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - Search [existing bugs](https://aka.ms/vsls-bugs) or [report a problem](CONTRIBUTING.md#file-a-problem-report)
 - Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
-- Jump on the community [Slack](https://aka.ms/vsls-slack) to chat with the team
 - Hit us up on Twitter using [#vsliveshare](https://aka.ms/vsls-twitter)!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).

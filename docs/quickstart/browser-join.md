@@ -1,5 +1,5 @@
 ---
-title: "Joining from the browser - Visual Studio Live Share | Microsoft Docs"
+title: "Joining from the browser  | Microsoft Docs"
 description: "Introducing joining from the browser"
 ms.date: 03/18/2020
 ms.reviewer: ""

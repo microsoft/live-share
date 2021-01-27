@@ -1,5 +1,5 @@
 ---
-title: "Collaborate using Visual Studio - Visual Studio Live Share | Microsoft Docs"
+title: "Collaborate using Visual Studio  | Microsoft Docs"
 description: "A set of collaboration how-tos for Visual Studio and Live Share."
 ms.custom:
 ms.date: 04/25/2018
@@ -37,12 +37,12 @@ Before you begin, you'll need to install **Visual Studio 2019** or  **Visual Stu
 Getting going is simple:
 
 For Visual Studio 2019
-1. Install the any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
+1. Install any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 2. Install a [supported workload](../reference/platform-support.md). (e.g. ASP.NET, .NET Core, C++, Python, and/or Node.js)
 3. Visual Studio Live Share is installed by default with these workloads.
 
 For Visual Studio 2017
-1. Install the any edition of [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) 15.6+.
+1. Install any edition of [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) 15.6+.
 2. Install a [supported workload](../reference/platform-support.md). (e.g. ASP.NET, .NET Core, C++, and/or Node.js)
 3. [Download](https://aka.ms/vsls-dl/vs) and install the Visual Studio Live Share extension from the marketplace.
 
@@ -406,7 +406,7 @@ At this point, you can select a read-only or read/write terminal from the menu. 
 > [!NOTE]
 > If the collaboration session is in read-only mode, only read-only terminals can be shared by the host.
 
-Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear for all participants with the correct permissions. While Visual Studio Code has a built in terminal support Visual Studio does not have one out of box. Therefore, by default, new window containing the terminal will appear. However, if the [Whack Whack Terminal extension](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal), Live Share will create an integrated terminal instead. Visual Studio will give you a link to install it the first time you start or join a shared terminal.
+Once you've selected the kind of shared terminal you want to start, a new shared terminal will appear for all participants with the correct permissions.
 
 ![Terminal install toast notification](../media/vs-terminal-install.png)
 

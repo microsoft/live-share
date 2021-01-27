@@ -1,5 +1,5 @@
 ---
-title: "Connectivity - Visual Studio Live Share | Microsoft Docs"
+title: "Connectivity  | Microsoft Docs"
 description: "Information on connectivity and connection modes for Visual Studio Live Share."
 ms.custom:
 ms.date: 03/22/2018

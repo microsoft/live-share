@@ -1,5 +1,5 @@
 ---
-title: "FAQ - Visual Studio Live Share | Microsoft Docs"
+title: "FAQ  | Microsoft Docs"
 description: "Frequently asked questions about Visual Studio Live Share."
 ms.custom:
 ms.date: 05/05/2018
