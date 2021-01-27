@@ -5,8 +5,8 @@ ms.date: 01/26/2021
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "reference"
-author: "joncart"
-ms.author: "joncart"
+author: "lostintangent"
+ms.author: "lostintangent"
 manager: "simoncal"
 ms.workload: 
   - "liveshare"
@@ -15,6 +15,8 @@ ms.workload:
 # 📓 Notebooks
 
 Notebooks have become a key part of many developer's and data scientist's workflow. With Visual Studio Code offering a rich, native notebook-editor, we're excited to enable a real-time collaboration experience, that will allow teams and classrooms to use notebooks and Live Share together. This Live Share notebook experience is currently in preview, and therefore, has some [pre-requisitions](#pre-requisites) and [known issues](#known-issues) to be aaware of. We'll be iterating rapidly on this initial preview release, and therefore, please don't hesitate to [send us any questions/feedback](http://github.com/microsoftdocs/live-share)) as you're evaluating it 👍
+
+<img width="800px" src="https://user-images.githubusercontent.com/116461/105928037-0d07a680-5ffa-11eb-8447-23bdb77fee9e.png" />
 
 ## Pre-Requisites
 
@@ -33,6 +35,7 @@ Once you and your participants have the proper pre-requisites, you can start usi
 1. Open a notebook within Visual Studio Code
 1. Start a Live Share session
 1. Once your guests join, you can start co-editing cells and seeing each other's cursors and text highlights
+1. Have fun collaborating on notebooks! 🎉 
 
 ## Known Issues
 
