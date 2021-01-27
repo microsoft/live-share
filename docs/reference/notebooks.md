@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.topic: "reference"
 author: "lostintangent"
-ms.author: "lostintangent"
+ms.author: "joncart"
 manager: "simoncal"
 ms.workload: 
   - "liveshare"
@@ -14,9 +14,11 @@ ms.workload:
 
 # 📓 Notebooks
 
-Notebooks have become a key part of many developer's and data scientist's workflow. With Visual Studio Code offering a rich, native notebook-editor, we're excited to enable a real-time collaboration experience, that will allow teams and classrooms to use notebooks and Live Share together. This Live Share notebook experience is currently in preview, and therefore, has some [pre-requisitions](#pre-requisites) and [known issues](#known-issues) to be aaware of. We'll be iterating rapidly on this initial preview release, and therefore, please don't hesitate to [send us any questions/feedback](http://github.com/microsoftdocs/live-share)) as you're evaluating it 👍
+Notebooks have become a key part of many developer's and data scientist's workflow. With Visual Studio Code offering a rich, native notebook-editor, we're excited to enable a real-time collaboration experience, that will allow teams and classrooms to use notebooks and Live Share together.
 
-<img width="800px" src="https://user-images.githubusercontent.com/116461/105928037-0d07a680-5ffa-11eb-8447-23bdb77fee9e.png" />
+The Live Share notebook experience is currently in preview, and therefore, has some [pre-requisitions](#pre-requisites) and [known issues](#known-issues) to be aware of. We'll be iterating rapidly on this initial preview release, and therefore, please don't hesitate to [send us any questions/feedback](http://github.com/microsoftdocs/live-share)) as you're evaluating it 👍<br />
+
+<img width="800px" src="https://user-images.githubusercontent.com/116461/105928037-0d07a680-5ffa-11eb-8447-23bdb77fee9e.png" title="Notebook collaboration" />
 
 ## Pre-Requisites
 
