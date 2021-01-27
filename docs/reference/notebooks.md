@@ -1,4 +1,18 @@
-## 📓 Notebooks
+---
+title: "Notebooks -  Visual Studio Live Share | Microsoft Docs"
+description: "Detailed information on using Live Share for notebook collaboration"
+ms.date: 01/26/2021
+ms.reviewer: ""
+ms.suite: ""
+ms.topic: "reference"
+author: "joncart"
+ms.author: "joncart"
+manager: "simoncal"
+ms.workload: 
+  - "liveshare"
+---
+
+# 📓 Notebooks
 
 Notebooks have become a key part of many developer's and data scientist's workflow. With Visual Studio Code offering a rich, native notebook-editor, we're excited to enable a real-time collaboration experience, that will allow teams and classrooms to use notebooks and Live Share together. This Live Share notebook experience is currently in preview, and therefore, has some [pre-requisitions](#pre-requisites) and [known issues](#known-issues) to be aaware of. We'll be iterating rapidly on this initial preview release, and therefore, please don't hesitate to [send us any questions/feedback](http://github.com/microsoftdocs/live-share)) as you're evaluating it 👍
 
