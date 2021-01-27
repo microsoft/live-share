@@ -41,7 +41,7 @@ Once you and your participants have the proper pre-requisites, you can start usi
 
 ## Known Issues
 
-The following list represents the set of known issues with the Live Share and notebooks experinece, along with their respective workarounds. 
+The following list represents the set of known issues with the current Live Share notebook experience, along with their respective workarounds: 
 
 | Issue | Workaround | 
 |-|-|
