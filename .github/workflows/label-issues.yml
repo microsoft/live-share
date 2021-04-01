@@ -5,10 +5,6 @@
   
 name: label-untriaged-issues
 
-on:
-  schedule:
-    - cron: "* * 1 * *"
-
 jobs:
   stale:
     runs-on: ubuntu-latest
