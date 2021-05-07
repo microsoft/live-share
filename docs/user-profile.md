@@ -2,7 +2,7 @@
 title: "User Profile - Visual Studio Live Share | Microsoft Docs"
 description: "An overview of how to view and remove your Visual Studio Live Share user profile."
 ms.custom:
-ms.date: 05/222/2018
+ms.date: 05/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "reference"
