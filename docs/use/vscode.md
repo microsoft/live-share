@@ -2,7 +2,7 @@
 title: "Collaborate using Visual Studio Code -  Visual Studio Live Share | Microsoft Docs"
 description: "A set of collaboration how-tos for Visual Studio Code and Live Share."
 ms.custom:
-ms.date: 04/27/2018
+ms.date: 04/27/2021
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "conceptual"
