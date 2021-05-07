@@ -19,7 +19,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# How-to: Use Live Share to better collaborate in Visual Studio Code
+# Use Live Share to better collaborate in Visual Studio Code
 
 Ready to get collaborating with Live Share in VS Code?  In this article, we'll walk you through how to set up a collaboration session in Visual Studio Code by using the Live Share extension.
 
