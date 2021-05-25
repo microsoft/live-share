@@ -360,7 +360,6 @@ Since following is tied to an editor group, you can use split view (or grid layo
 
 To make it easy to switch out of "follow mode" and start editing on your own, you'll automatically stop following if any of these occur:
 
-1. You start editing the currently active file
 1. You open a different file
 1. You close the currently active file
 
