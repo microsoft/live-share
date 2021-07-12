@@ -18,7 +18,7 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           stale-issue-message: 'Automatically marked uncategorized issue as product feedback'
           stale-issue-label: 'product-feedback'
-          exempt-issue-labels: 'doc-bug,doc-enhancement,doc-idea,doc-experience,product-issue,product-question'
+          exempt-issue-labels: 'doc-bug,feature-request,doc-enhancement,doc-idea,doc-experience,product-issue,product-question'
           remove-stale-when-updated: false
           days-before-close: -1
           days-before-issue-stale: 1
