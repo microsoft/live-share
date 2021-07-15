@@ -150,28 +150,23 @@ elif type apt-get > /dev/null 2>&1; then
 
     if [ $NETCOREDEPS -ne 0 ]; then
         checkNetCoreDeps aptSudoIf "install -yq libicu[0-9][0-9] libkrb5-3 zlib1g"
-        # Determine which version of libssl to install
+        
+        # Check for openssl
         # dpkg-query can return "1" in some distros if the package is not found. "2" is an unexpected error
-        LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'libssl1\.0\.?' 2>&1)
+        LIBSSL=$(dpkg-query -f '${db:Status-Abbrev}\t${binary:Package}\n' -W 'openssl' 2>&1)
         if [ $? -eq 2 ]; then
-           echo "(!) Failed see if libssl already installed!"
+           echo "(!) Failed see if openssl already installed!"
            exitScript 1
         fi
-        if [ "$(echo "$LIBSSL" | grep -o 'libssl1\.0\.[0-9]:' | uniq | sort | wc -l)" -eq 0 ]; then
-            # No libssl install 1.0.2 for Debian, 1.0.0 for Ubuntu
-            if [[ ! -z $(apt-cache --names-only search ^libssl1.0.2$) ]]; then
-                if ! aptSudoIf "install -yq libssl1.0.2"; then
-                    echo "(!) libssl1.0.2 installation failed!"
-                    exitScript 1
-                fi
-            else    
-                if ! aptSudoIf "install -yq libssl1.0.0"; then
-                    echo "(!) libssl1.0.0 installation failed!"
-                    exitScript 1
-                fi
+        
+        # Install openssl
+        if [ "$(echo "$LIBSSL" | grep -o 'openssl' | uniq | sort | wc -l)" -eq 0 ]; then
+            if ! aptSudoIf "install -yq openssl"; then
+                echo "(!) openssl installation failed!"
+                exitScript 1
             fi
         else 
-            echo "(*) libssl1.0.x already installed."
+            echo "(*) openssl already installed."
         fi
     fi
 
@@ -208,12 +203,42 @@ elif type yum  > /dev/null 2>&1; then
     checkKeyringDeps sudoIf "yum -y install gnome-keyring libsecret"
     checkBrowserDeps sudoIf "yum -y install desktop-file-utils xorg-x11-utils"
 
+#Fedora 30
+elif type dnf  > /dev/null 2>&1; then
+    echo "(*) Detected Fedora 30"
+
+    # Update package repo indexes - returns 1 if no pacakges to upgrade,
+    # 100 if there are packages to upgrade, and 1 on error
+    echo -e "\n(*) Updating package lists..."
+    sudoIf "dnf check-update" >/dev/null 2>&1
+    if [ $? -eq 1 ]; then
+        echo "(!) Failed to update package list!"
+        exitScript 1
+    fi
+    
+    checkNetCoreDeps sudoIf "dnf -y install openssl-libs krb5-libs libicu zlib"  
+    # Install openssl-compat10 for Fedora 29. Does not exist in 
+    # CentOS, so validate package exists first.
+    if [ $NETCOREDEPS -ne 0 ]; then
+        if ! sudoIf "dnf -q list compat-openssl10" >/dev/null 2>&1; then
+            echo "(*) compat-openssl10 not required."
+        else
+            if ! sudoIf "dnf -y install compat-openssl10"; then
+                echo "(!) compat-openssl10 install failed"
+                exitScript 1
+            fi
+        fi
+    fi
+    
+    checkKeyringDeps sudoIf "dnf -y install gnome-keyring libsecret"
+    checkBrowserDeps sudoIf "dnf -y install desktop-file-utils xorg-x11-utils"
+
 #ArchLinux
 elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected Arch Linux (unoffically/community supported)"
     checkNetCoreDeps sudoIf "pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib"
     checkKeyringDeps sudoIf "pacman -Sq --noconfirm --needed gnome-keyring libsecret"
-    checkBrowserDeps sudoIf "pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop"
+    checkBrowserDeps sudoIf "pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop xdg-utils"
 
 #Solus
 elif type eopkg > /dev/null 2>&1; then
