@@ -1,5 +1,5 @@
 ---
-title: "Platform and language support  | Microsoft Docs"
+title: "Platform and language support"
 description: "An overview of platform and language support for Visual Studio Live share."
 ms.custom:
 ms.date: 04/25/2018
@@ -12,12 +12,6 @@ manager: "AmandaSilver"
 ms.workload: 
   - "liveshare"
 ---
-
-<!--
-Copyright © Microsoft Corporation
-All rights reserved.
-Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
--->
 
 # Language and platform support
 
@@ -115,14 +109,14 @@ All languages / platforms have same file intellisense (when the respective exten
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
 | VS Code extensions | | <sup>9</sup> |
 
-<sup>1</sup> Via [share local server](../use/vscode.md#share-a-server).<br />
+<sup>1</sup> Via [share local server](../use/vscode.md#share-servers-or-terminals).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
 <sup>4</sup> Supported via shared terminals.<br />
 <sup>5</sup> Debugging database stored procs is not currently supported <br />
 <sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
 <sup>7</sup> Cordova apps can be shared via the "browser" platform<br />
-<sup>8</sup> React Native apps can be shared via Expo and [shared servers](../use/vscode.md#share-a-server).<br />
+<sup>8</sup> React Native apps can be shared via Expo and [shared servers](../use/vscode.md#share-servers-or-terminals).<br />
 <sup>9</sup> Live Share doesn't currently support sharing windows/screens. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/236)
 
 ## Visual Studio
