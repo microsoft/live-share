@@ -48,18 +48,18 @@ For Visual Studio 2017
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
-[![Download](../media/download.png)](https://aka.ms/vsls-dl/vs)
+[![Download Live Share](../media/download.png)](https://aka.ms/vsls-dl/vs)
 
 ## Sign in
 
 In order to collaborate, you'll need sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
 
-By default Visual Studio uses your [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
+By default Visual Studio uses your [personalization account](/visualstudio/ide/signing-in-to-visual-studio) so if you're already logged into Visual Studio, you may be able to skip this step. Otherwise sign as you would normally.
 
 ![VS sign in button](../media/vs-sign-in-button.png)
 
 
-If you want to use a different sign-in than your Visual Studio [personalization account](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
+If you want to use a different sign-in than your Visual Studio [personalization account](/visualstudio/ide/signing-in-to-visual-studio), go to **Tools &gt; Options &gt; Live Share &gt; User account** to switch credentials.
 
 ![VS Tools Options Live Share](../media/vs-tools-options-new.png)
 
@@ -126,10 +126,10 @@ After downloading and installing Visual Studio Live Share, follow these steps to
     See [invitations and join access](../reference/security.md#invitations-and-join-access) for additional details on invitation security considerations.
 
 8. **Manage your Live Share session**
-    
+
     Once your guest has opened the link to your shared session in VS Code or Visual Studio you will see them listed under participants in the Live Share tool window. You are now able to see which file your guest is currently in next to their name.  
-    
-    ![VS Live Share tool window](../media/vs-live-share-tool-window-participant.png)
+
+    ![VS Live Share tool window showing participant](../media/vs-live-share-tool-window-participant.png)
 
     The Live Share tool window allows you to access all key features to manage your session in one place. 
 
@@ -217,7 +217,7 @@ You can also manually join without using a web browser which can be useful in si
 
 As a guest, you can leave the collaboration session without ending it for others by simply closing the tool or by clicking the share / session state button and selecting "Leave Collaboration Session".
 
-![VS Join menu](../media/vs-leave-session.png)
+![VS Join menu when leaving](../media/vs-leave-session.png)
 
 Any temp files are automatically cleaned up so no further action is needed.
 
@@ -357,11 +357,11 @@ As a guest, you may wish to stop debugging temporarily. Fortunately, you can sim
 
 If you've updated settings so you no longer auto-attach or if you simply want to reattach later, you can simply select the desired running debugging session from the "Select Startup Item..." drop down...
 
-![VS Debug button](../media/vs-select-reattach.png)
+![VS Debug button when detaching](../media/vs-select-reattach.png)
 
 ...and then click it to attach.
 
-![VS Debug button](../media/vs-reattach.png)
+![VS Debug button when reattaching](../media/vs-reattach.png)
 
 ## Share a server
 
@@ -379,7 +379,7 @@ For security purposes, only servers running on ports you specify are available t
 
 2. In the dialog that appears, click "Add" and enter the port number the server is running on locally, enter a name, press enter, then OK.
 
-    ![Manage Shared Local Servers](../media/vs-manage-local-shared-servers.png)
+    ![Add a shared server](../media/vs-manage-local-shared-servers.png)
 
 That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port was already occupied)!
 

@@ -13,12 +13,6 @@ ms.workload:
   - "liveshare"
 ---
 
-<!--
-Copyright © Microsoft Corporation
-All rights reserved.
-Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
--->
-
 # Security features of Live Share
 
 Collaboration sessions in Visual Studio Live Share are powerful in that they allow any number of people to join in a session and collaboratively edit, debug and more. However, given this level of access, you undoubtedly will be interested in the security features Live Share provides. In this article, we'll provide some recommendations and options for securing your environment as needed.
@@ -212,7 +206,7 @@ As a host, when sharing, you have the option to enable read-only mode for a coll
 
 You can still co-debug with guests while in read-only mode. Guests will not have the ability to step through the debugging process, but can still add or remove breakpoints, and inspect variables. Additionally, you can still share servers and terminals (read-only) with guests.
 
-You can learn more about starting a read-only collaboration session: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
+You can learn more about starting a read-only collaboration session: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#start-and-stop-a-session) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
 
 ## Co-debugging
 
@@ -234,11 +228,13 @@ In Visual Studio, the **web application port** specified in ASP.NET projects is 
 
 In Visual Studio Code, Live Share attempts to **detect the proper application ports** and share them. However, you can disable this by adding the following to settings.json:
 
-        liveshare.autoShareServers: false
+```json
+liveshare.autoShareServers: false
+```
 
 In either case, exercise care when sharing additional ports.
 
-You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
+You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-servers-or-terminals) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
 
 ## Sharing a terminal
 
@@ -252,7 +248,7 @@ In Visual Studio, terminals are not shared by default. In VS Code, terminals are
 "liveshare.autoShareTerminals": false
 ```
 
-Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
+Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-servers-or-terminals) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
 ## AAD Admin Consent
 
@@ -267,7 +263,7 @@ Your AD admin would need to resolve this for you using the following information
 * **Application URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/
 * **Reply URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
 
-This would only need to be done once for anyone using Live Share. See [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) and [here](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) for details.
+This would only need to be done once for anyone using Live Share. See [here](/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) and [here](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) for details.
 
 ## See also
 
