@@ -1,8 +1,8 @@
 ---
-title: "Overview of Live Share"
+title: "Live Share features"
 description: "An overview of Visual Studio Live Share and its capabilities."
 ms.custom:
-ms.date: 10/30/2019
+ms.date: 07/16/2021
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "overview"

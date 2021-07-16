@@ -1,8 +1,8 @@
 ---
-title: "Live Share documentation"
+title: "Live Share overview"
 description: "Links to Live Share documentation."
 ms.custom:
-ms.date: 10/30/2019
+ms.date: 07/16/2021
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "overview"

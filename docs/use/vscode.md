@@ -3,7 +3,7 @@ title: "Co-edit in Visual Studio Code with Live Share collaboration sessions"
 titleSuffix: ""
 description: "Enable and create a collaboration session in Visual Studio Code using Visual Studio Live Share."
 ms.custom:
-ms.date: 04/27/2021
+ms.date: 07/16/2021
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "conceptual"
