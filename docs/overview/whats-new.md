@@ -1,7 +1,7 @@
 ---
 title: "What's new in Live Share"
 description: "New Live Share features and releases"
-ms.date: "7/16/21"
+ms.date: "07/16/2021"
 ms.custom:
 ms.reviewer: ""
 ms.suite: ""

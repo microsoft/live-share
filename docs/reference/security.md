@@ -206,7 +206,7 @@ As a host, when sharing, you have the option to enable read-only mode for a coll
 
 You can still co-debug with guests while in read-only mode. Guests will not have the ability to step through the debugging process, but can still add or remove breakpoints, and inspect variables. Additionally, you can still share servers and terminals (read-only) with guests.
 
-You can learn more about starting a read-only collaboration session: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
+You can learn more about starting a read-only collaboration session: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md##start-and-stop-a-session) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
 
 ## Co-debugging
 
@@ -228,7 +228,9 @@ In Visual Studio, the **web application port** specified in ASP.NET projects is 
 
 In Visual Studio Code, Live Share attempts to **detect the proper application ports** and share them. However, you can disable this by adding the following to settings.json:
 
-        liveshare.autoShareServers: false
+```json
+liveshare.autoShareServers: false
+```
 
 In either case, exercise care when sharing additional ports.
 

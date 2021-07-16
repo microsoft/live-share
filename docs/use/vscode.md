@@ -212,7 +212,9 @@ After downloading and installing Visual Studio Live Share, follow these steps to
 
     To enable this feature, simply add the following to settings.json:
 
-         "liveshare.guestApprovalRequired": true
+    ```json
+    "liveshare.guestApprovalRequired": true
+    ```
 
     Once you have this setting turned on, a notification will prompt you to approve the guest before they can join.
 
