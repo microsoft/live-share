@@ -76,7 +76,7 @@ The connection mode you are in will dictate the specific ports and URLs that nee
 
 ## Manually adding a firewall entry
 
-As outlined above, direct mode requires that your personal firewall allow **vsls-agent** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it manually. How you do this will vary by firewall software, but you can find information about **[configuring the Windows Firewall here](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)**.
+As outlined above, direct mode requires that your personal firewall allow **vsls-agent** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it manually. How you do this will vary by firewall software, but you can find information about **[configuring the Windows Firewall here](/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)**.
 
 If you do not see an entry for vsls-agent, you can find the agent executable in one of the following locations.
 

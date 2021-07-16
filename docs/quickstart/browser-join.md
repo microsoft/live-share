@@ -5,37 +5,33 @@ ms.date: 03/18/2020
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "quickstart"
-author: "fishah"
+author: "fubaduba"
 ms.author: "fishah"
 manager: "joncart"
 ms.workload: 
   - "liveshare"
 ---
 
-<!--
-Copyright &copy; Microsoft Corporation
-All rights reserved.
-Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
--->
-
-# ✨[Preview]✨ Joining a Live Share session from the browser
+# ✨(Preview)✨ Joining a Live Share session from the browser
 
 All Live Share collaboration sessions now have the ability to be joined from the browser. This means that a guest to your session no longer needs to install VS Code or Visual Studio to join your session. This is especially helpful for all those instances when you want someone to get into your session quickly, or for students who often don't have the desktop clients installed.
 
+## How to join a Live Share session from the browser
 
-# How to join a Live Share session from the browser 
+### 1. Host: starts session
 
-### 1. Host: starts session 
 To begin, the host should go to either Visual Studio or VS Code to start a collaboration session. When the host shares a folder or project.
 
 ![Animation of starting session](https://user-images.githubusercontent.com/51928518/76938928-b814e300-68b4-11ea-923e-cefabd4688c6.gif)
 
-### 2. Guest: uses shared link to join from browser 
+### 2. Guest: uses shared link to join from browser
+
 Live Share will generate a join link that can be shared with the guest. The guest can now use this link to be navigated to a web page, which now gives them an option to continue to the browser.
 
 ![Animation of joining a session](https://user-images.githubusercontent.com/51928518/76941137-b8af7880-68b8-11ea-8228-41fdf4afd3ef.gif)
 
-### 3. Guest: Enjoys full fidelity collaboration experience from browser 
+### 3. Guest: Enjoys full fidelity collaboration experience from browser
+
 Once the guest has joined the session, they can carry on just like they would if they were collaborating from the desktop clients.
 
 ![Animation of full fidelity](https://user-images.githubusercontent.com/51928518/76942009-40e24d80-68ba-11ea-885c-6eb1069ed550.gif)
