@@ -1,6 +1,6 @@
 ---
 title: "Live Share support  | Microsoft Docs"
-description: "An overview of platform and language support for Visual Studio Live share."
+description: "An overview of support for Visual Studio Live share."
 ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
