@@ -44,5 +44,5 @@
 # Resources
 ## [Troubleshooting](troubleshooting.md)
 ## [Provide feedback](support.md)
-## [FAQ](faq.md)
+## [FAQ](faq.yml)
 ## [User profile](user-profile.md)

@@ -15,7 +15,7 @@ ms.workload:
 
 # Troubleshooting Visual Studio Live Share
 
-This article covers troubleshooting tips, workarounds, and answers for common problems and questions. You may also want to take a look at the [FAQ](faq.md). 
+This article covers troubleshooting tips, workarounds, and answers for common problems and questions. You may also want to take a look at the [FAQ](faq.yml). 
 
 ## Installation / tool requirements
 
