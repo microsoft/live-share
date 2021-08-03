@@ -51,7 +51,7 @@ While the prerequisite install script above covers a variety of distributions, y
 | Xubuntu 16.04 (64-bit) | &lt;none&gt; | <ul><li>Ensure "Launch GNOME services on startup" is checked in the "Advanced" tab of "Session and Startup".</li><li>If you run into sign-in trouble, install `seahorse`, start "Passwords and Keys", verify you have "Login" keyring and that you can unlock it.</li></ul> |
 | Mint 19 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
 | Mint 18.3 Cinnamon (64-bit) | &lt;none&gt;  | &lt;none&gt; |
-| Debian 10 (Buster) Testing (64-bit) | Release not stable, so unknown. | <ul><li>Debian Testing and Unstable (Sid) are not officially supported.</li><li>There is a [known issue](https://github.com/dotnet/corefx/issues/33179) in .NET Core that affects Live Share. </li><li>See [here for a workaround](https://github.com/dotnet/corefx/issues/33179#issuecomment-435118249).</li></ul> |
+| Debian 10 (Buster) Testing (64-bit) | Release not stable, so unknown. | <ul><li>Debian Testing and Unstable (Sid) are not officially supported.</li><li>There is a [known issue](https://github.com/dotnet/corefx/issues/33179) in .NET Core that affects Live Share. </li><li>See [here for a workaround](https://github.com/dotnet/corefx/issues/33179#issuecomment-435118249). </li><li>There is a [known issue](https://github.com/MicrosoftDocs/live-share/issues/4000) with WSL certificates. </li></ul>   |
 | Debian 9 GNOME Desktop (64-bit) | &lt;none&gt; | <ul><li>You may need to install `sudo` and add your user to the sudo group to use the automated install script.</li>  |
 | Fedora Workstation 29 (64-bit) | `openssl-compat10` | &lt;none&gt; |
 | Fedora Workstation 28 (64-bit) | &lt;none&gt; | &lt;none&gt; |
