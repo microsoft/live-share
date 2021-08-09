@@ -1,7 +1,7 @@
 ---
-title: "Co-edit in Visual Studio Code with Live Share collaboration sessions"
+title: "Use Live Share to collaborate in Visual Studio Code"
 titleSuffix: ""
-description: "Enable and create a collaboration session in Visual Studio Code using Visual Studio Live Share."
+description: "Enable and create a collaboration session in Visual Studio Code by using Visual Studio Live Share."
 ms.custom:
 ms.date: 07/16/2021
 ms.reviewer: ""
@@ -22,62 +22,62 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Use Live Share to better collaborate in Visual Studio Code
 
-Ready to get collaborating with Live Share in VS Code?  In this article, we'll walk you through how to set up a collaboration session in Visual Studio Code by using the Live Share extension.
+Ready to start collaborating with Live Share in Visual Studio Code? In this article, we'll walk you through how to set up a collaboration session in Visual Studio Code by using the Live Share Extension.
 
-Note that all collaboration activities described here involve a single **collaboration session host** and one or more **guests**. The host is the person that started the collaboration session and anyone that joins is a guest.
+Note that all collaboration activities described here involve a single collaboration session host and one or more guests. The host is the person who started the collaboration session, and anyone that joins is a guest.
 
-*Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts instead.*
+*Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts.*
 
 > [!TIP]
-> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity in both instances. Check it out!
+> Did you know that you can join your own collaboration session? Doing so allows you to try Live Share on your own or to spin up an instance of Visual Studio or Visual Studio Code and connect to it remotely. You can even use the same identity in both instances. Check it out!
 
 ## Prerequisites
 
-Before you begin, you'll need a supported version of Visual Studio Code for Live Share's core requirements. 
+Before you start, you'll need a supported version of Visual Studio Code for the Live Share core requirements. 
 
-You'll need **Visual Studio Code (1.22.0 or higher)** running on:
+You'll need Visual Studio Code (1.22.0 or later) running on one of the following operating systems:
 
-- **Windows**: 7, 8.1, or 10
+- **Windows**: 7, 8.1, or 10.
 
-- **macOS**: Sierra (10.12) and above only. _El Capitan (10.11) and below are not currently supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315)._
+- **macOS**: Sierra (10.12) and later. Because of [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315), El Capitan (10.11) and earlier aren't currently supported.
 
-- **Linux**: 64-bit Ubuntu Desktop 16.04+, Fedora Workstation 27+, CentOS 7
-    - Live Share requires a number of [Linux prerequisites](#linux-install-steps) you may be prompted to install.
-    - _32-bit Linux is not supported due to [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314)._
-    - ARM is also currently not supported.
-    - See the [Linux install details](../reference/linux.md) article for details on using downstream and other distributions.
+- **Linux**: 64-bit Ubuntu Desktop 16.04 and later, Fedora Workstation 27 and later, or CentOS 7.
+    - Live Share requires a number of [prerequisites for Linux](#linux-installation-steps). You might be prompted to install these items.
+    - Because of [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314), 32-bit Linux isn't supported.
+    - ARM is currently not supported.
+    - See [Linux installation details](../reference/linux.md) for information on using downstream distributions and other distributions.
 
-## Install the Live Share extension
+## Install the Live Share Extension Pack
 
-By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
+When you download and use Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
-1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-2. [Download](https://aka.ms/vsls-dl/vscode) and install the Visual Studio Live Share extension from the marketplace.
-3. Reload Visual Studio Code
-4. Wait for dependencies to download and install (see status bar).<br/>
-    ![Finishing install](../media/vscode-finishing-install.png)
-5. **Linux**: If you see a notification about installing missing libraries:
-    1. Click "Install" in the notification.
+1. Install <a href="https://code.visualstudio.com/">Visual Studio Code</a>.
+2. [Download](https://aka.ms/vsls-dl/vscode) and install the Visual Studio Live Share Extension Pack from Marketplace.
+3. Reload Visual Studio Code.
+4. Wait for dependencies to download and install. (See the status bar.)<br/>
+    ![Screenshot that shows the status bar during download.](../media/vscode-finishing-install.png)
+5. *Linux only*: If you see a notification about installing missing libraries:
+    1. Select **Install** in the notification.
     2. Enter your admin (sudo) password when prompted.
-    3. Restart VS Code when done.
+    3. Restart Visual Studio Code when the installation is done.
 
-[![Download Live Share](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Button to download Live Share.](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
-### Linux install steps
+### Linux installation steps
 
-Linux is a highly variable environment and with the sheer number of desktop environments and distributions can be complicated to get working. If you stick to supported versions of **Ubuntu Desktop** (16.04+) or **Fedora Workstation** (27+), **CentOS 7** and only use **official distributions of VS Code**, you should find the process straightforward. However, in the event that you are using a non-standard configuration or downstream distribution, you may or may not run into some hiccups. See [Linux installation details](../reference/linux.md) for more information.
+Linux is a highly variable environment. Given the number of desktop environments and distributions, getting Live Share installed can be complicated. If you use supported versions of Ubuntu Desktop (16.04+), Fedora Workstation (27+), or CentOS 7 and only use official distributions of Visual Studio Code, the process should be straightforward. If you're using a nonstandard configuration or downstream distribution, you might encounter complications. See [Linux installation details](../reference/linux.md) for more information.
 
 #### Install Linux prerequisites
 
-Some distributions of Linux are missing libraries Live Share needs to function. By default, Live Share attempts to detect and install Linux prerequisites for you. You'll see a toast notification when Live Share encounters a problem that can originate from missing libraries asking you for permission to install them.
+Some distributions of Linux are missing libraries that Live Share needs. By default, Live Share attempts to detect and install Linux prerequisites. You'll see a notification prompting you to install libraries when Live Share encounters a problem that can be caused by missing libraries:
 
-![Toast notification showing the message that Linux pre-requisites are missing](../media/vscode-linux-prereq-missing.png)
+![Screenshot of notification for missing Linux libraries.](../media/vscode-linux-prereq-missing.png)
 
-When you click "Install", a terminal window will appear where you'll need to enter your admin (sudo) password to continue. Assuming it completes successfully, restart Visual Studio Code you should be all set! You may also want to check out **[tips by distribution](../reference/linux.md#tips-by-distribution)** for other hints and workarounds if any exist.
+When you select **Install**, a terminal window will open. Enter your admin (sudo) password to continue. If the install completes successfully, restart Visual Studio Code. You should be all set. You might also want to check out [Tips by distribution](../reference/linux.md#tips-by-distribution) for other hints and workarounds.
 
-If you see a message indicating the script does not support your distribution, see **[tips for community supported distributions](../reference/linux.md#tips-for-community-supported-distros)** for information the community has shared with us.
+If you see a message stating that the script doesn't support your distribution, see [Tips for community-supported distributions](../reference/linux.md#tips-for-community-supported-distros) for information the community has shared with us.
 
-If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by running the following command from a Terminal window:
+If you don't want Visual Studio Code to run the command for you, you can also re-run the latest version of this script at any time by running this command from a terminal window:
 
 ```
 wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
@@ -85,114 +85,114 @@ wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-r
 
 #### Linux browser integration
 
-Visual Studio Live Share typically **does not require additional installation steps** to enable browser integration on Linux.
+Visual Studio Live Share doesn't typically require additional installation steps to enable browser integration on Linux.
 
-While uncommon, on certain distributions you **may be notified that your admin (sudo) password is required** to complete the installation process. A terminal window will appear telling you where the browser launcher will be installed. Simply enter your password when prompted and press enter once the installation completes to close the terminal window.
+On certain rare distributions, you might be notified that your admin (sudo) password is required to complete the installation. A terminal window noting where the browser launcher will be installed will appear. Enter your password when prompted, and select **Enter** when the installation completes to close the terminal window.
 
-You can read more about why this is required and where Live Share places files **[here](../reference/linux.md#linux-browser-integration)**. Note even if you are unable to get browser integration working you can still **[join collaboration sessions manually](../use/vscode.md#join-manually)**.
+For information about why the password is required and where Live Share puts files, see [Linux browser integration](../reference/linux.md#linux-browser-integration). If you can't get browser integration to work, you can still [join collaboration sessions manually](../use/vscode.md#join-manually).
 
-## Sign into Live Share
+## Sign in to Live Share
 
-In order to collaborate, you'll need to sign into Visual Studio Live Share so everyone knows who you are. This is purely a security measure and does **not** opt you into any marketing or other research activities. You can sign in using a Microsoft personal account (e.g. @outlook.com), Microsoft-backed work or school account (AAD), or a GitHub account. Signing in is easy.
+To collaborate, you'll need to sign in to Visual Studio Live Share so everyone knows who you are. This is a security measure and doesn't add you to marketing activities or other research activities. You can sign in by using a Microsoft personal account (for example, @outlook.com), a Microsoft-backed work or school account (Azure Active Directory), or a GitHub account. Signing in is easy.
 
-**Click** on the "Live Share" status bar item or press **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: Sign In With Browser" command.
+Select **Live Share** on the status bar or select **Ctrl+Shift+P** or **Cmd+Shift+P** and then select **Live Share: Sign In With Browser**.
 
-![VS Code sign in button](../media/vscode-sign-in-button.png)
+![Screenshot that shows the Visual Studio Code sign in button.](../media/vscode-sign-in-button.png)
 
-A notification will appear asking you to sign in using your web browser. Clicking "launch sign in" will open a browser for you to use to complete the sign-in process. Simply close the browser when done.
+A notification will prompt you to sign in by using your web browser. When you select **launch sign in**, a browser will open so you can complete the sign-in process. Simply close the browser when you're done.
 
-![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
+![Screenshot that shows notification prompting web browser sign-in.](../media/vscode-sign-in-toast.png)
 
 > [!note]
-> **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [below for details](#sign-in-using-a-user-code).
+> Linux users: You might be prompted to enter a user code if you're using an older version of Live Share (0.3.295 or earlier). Update to the latest version of the extension or, to see the code, select **Having trouble?** after you sign in. For deteails, see [Sign in by using a user code](#sign-in-by-using-a-user-code).
 
 
-> **Advanced tip:** The `liveshare.account` and `liveshare.accountProvider` settings enable you to select which account should be used for automatic sign-in in case you have cached credentials for multiple accounts available.
-> For example, imagine you work on 2 projects with which you want to sign in with different identities. In your VSCode workspace settings, you could set the `liveshare.account` setting to different email addresses in each project directory to ensure they each automatically sign-in with the correct account. The `liveshare.accountProvider` setting could be set to either `"microsoft"` or `"github"` in case you use the same email address with multiple providers.
+> **Advanced tip:** The `liveshare.account` and `liveshare.accountProvider` settings enable you to select the account used for automatic sign-in if you have cached credentials for multiple accounts.
+> For example, imagine you work on two projects and you want to sign in to them by using different identities. In your Visual Studio Code workspace settings, you could set `liveshare.account` to a different email address in each project directory. The projects will then automatically sign in with the correct account. You can set the `liveshare.accountProvider` setting to either `"microsoft"` or `"github"` if you use the same email address with multiple providers.
 
-If Visual Studio Code is not picking up your sign in after you complete the sign-in process in the browser, see [sign in using a user code](#sign-in-using-a-user-code). Otherwise, check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
+If Visual Studio Code isn't picking up your sign-in after you complete the sign-in process in the browser, see [sign in by using a user code](#sign-in-using-a-user-code). Or check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
-### Sign in using a user code
+### Sign in by using a user code
 
-If you are running into problems with VS Code not picking up a completed sign in, you can enter a "user code" instead.
+If Visual Studio Code isn't picking up a completed sign-in, you can enter a *user code* instead.
 
-1. Press **Ctrl+Shift+P / Cmd+Shift+P** and run the "Live Share: Sign in with user code" command.
+1. Select **Ctrl+Shift+P** or **Cmd+Shift+P** and then run the **Live Share: Sign in with user code** command.
 
-2. A browser should appear for you use to complete the sign-in process.
+2. A browser should open. Use it to complete the sign-in process:
 
     > [!NOTE]
-    > If a browser does not appear automatically, open [this location](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login) in a browser and sign in.
+    > If a browser doesn't open automatically, go to https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login and sign in.
 
-3. Once you are done, click "Having trouble? Click here for user code directions" to see the user code.
+3. After you're done, select **Having trouble? Click here for user code directions** to see the user code.
 
-    ![Picture of user code in browser](../media/vscode-user-code-browser.png)
+    ![Screenshot that shows a user code in a browser window.](../media/vscode-user-code-browser.png)
 
 4. Copy the user code.
 
-5. Finally, paste the user code into the input field that appeared when you ran the command and press enter to complete the sign-in process.
+5. Paste the user code into the input field that appeared when you ran the command. Press enter to complete the sign-in process.
 
-    ![Picture of user code input field](../media/vscode-user-code.png)
+    ![Screenshot that shows the user code input box.](../media/vscode-user-code.png)
 
 ## Find Live Share commands
 
 ### In the Live Share viewlet
 
-After installing Visual Studio Live Share, a custom tab will be added to the VS Code activity bar. In this tab, you can access all Live Share functions to collaborate. Additionally, when you share or join a collaboration session, a view will also appear in the Explorer tab for you to access all these functions as well.
+After you install Visual Studio Live Share, a custom tab will appear in the Visual Studio Code Activity Bar. On this tab, you can access all Live Share functions to collaborate. When you share or join a collaboration session, a view will also appear on the Explorer tab that allows you to access these functions.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-custom-tab.png" width="100%" alt="Live Share custom tab" />
+        <img src="../media/vscode-custom-tab.png" width="100%" alt="Screenshot that shows the Live Share tab in Visual Studio Code." />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-explorer-view.png" width="100%" alt="Live Share explorer view"
+        <img src="../media/vscode-explorer-view.png" width="100%" alt="Screenshot that shows the Explorer tab in Visual Studio Code."
 </tr>
 </table>
 
-With these views, you can see a participant's location in the shared code, click on a participant to follow them, focus participants, access shared servers and terminals, and more.
+By using these views, you can see a participant's location in the shared code, select participants to follow them, focus participants, access shared servers and terminals, and more.
 
 ### In the scoped command menu
 
-Additionally, all Visual Studio Live Share functions are available from the Visual Studio Code "Command Palette" that can be accessed by pressing Ctrl+Shift+P / Cmd+Shift+P or F1. You can find a complete list of commands by typing "live share".
+All Visual Studio Live Share functions are also available from the Visual Studio Code Command Palette. You can access the Command Palette by selecting **Ctrl+Shift+P** / **Cmd+Shift+P** or **F1**. You can find a complete list of commands by entering **live share**.
 
-Since this list can get long, you may find it easier to take advantage of a scoped command menu available from the status bar. Clicking on the sign in / session state icon in the status bar will immediately bring up a contextualized list of commands that are available for you to use.
+Because this list can be long, it might be easier to use a scoped command menu from the status bar. Selecting the sign in / session state icon on the status bar will bring up a contextualized list of commands that are available for use:
 
-![VS Code session state icon](../media/vscode-share-state.png)
+![Screenshot that shows the Visual Studio Code session state icon.](../media/vscode-share-state.png)
 
 ## Start and stop a session
 
-After downloading and installing Visual Studio Live Share, follow these steps to start a collaboration session and invite a colleague to work with you.
+After you download and install Visual Studio Live Share, follow these steps to start a collaboration session and invite a colleague to work with you.
 
 1. **Sign in**
 
-    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. See [sign in](#sign-into-live-share) for more details.
+    After you install the Live Share Extension, reload, and wait for dependencies to install, you'll want to sign in to let other collaborators know who you are. See [Sign in](#sign-in-to-live-share) for more details.
 
 2. **Open a folder**
 
-    Use your normal workflow to open a folder, project, or solution you would like to share with your guests.
+    Use your normal workflow to open a folder, project, or solution that you want to share with your guests.
 
 3. **[Optional] Update hidden or excluded files**
 
-    By default, Live Share **hides** any files/folders referenced in .gitignore files in your shared folders from guests. **Hiding** a file prevents it from appearing in the guest's file tree. **Excluding** a file applies a stricter rule that will prevent Live Share from opening it for the guest in situations like go to a definition or if you step into the file while debugging or being "followed". If you want to hide/exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+    By default, Live Share hides from your guests any files and folders referenced in .gitignore files in your shared folders. *Hiding* a file prevents it from appearing in the guest's file tree. *Excluding* a file applies a stricter rule. Excluding a file will prevent Live Share from opening it for a guest in situations like **Go to Definition** or if you step into a file while debugging or being "followed." To hide or exclude files, you add add a .vsls.json file with appropriate settings to your project. For more information, see [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility).
 
 4. **Start a collaboration session**
 
-    Now, simply **click** the "Live Share" status bar item or hit **Ctrl+Shift+P / Cmd+Shift+P** and select "Live Share: Start a collaboration session (Share)".
+    To start a session, select **Live Share** on the status bar or select **Ctrl+Shift+P** or **Cmd+Shift+P** and then select **Live Share: Start a collaboration session (Share)**.
 
-    ![Share button](../media/vscode-share-button-new.png)
+    ![Screenshot that shows the Live Share button.](../media/vscode-share-button-new.png)
 
     > [!NOTE]
-    > You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
+    > The first time you share, your desktop firewall software might prompt you to allow the Live Share agent to open a port. Opening a port is optional. It enables a secured direct mode to improve performance when the person you're working with is on the same network as you. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
 
-    An invite link will be automatically copied to your clipboard. When opened in a browser, this link allows others to join a new collaboration session that shares contents of these folders with them.
+    An invitation link will be automatically copied to your clipboard. When opened in a browser, the link allows others to join a new collaboration session that shares the contents of the folders.
 
-    You will also see the "Live Share" status bar item transition to represent the session state. See [session state](#session-states-and-limitations) information below for what this looks like.
+    You'll also see the **Live Share** status bar item change to represent the session state. To see what it will look like, see the [session state](#session-states-and-limitations) information later in this article.
 
-    Note that if you need to get the invite link again after you've started sharing, you access it again by clicking on the session state status bar icon and select "Invite Others (Copy Link)".
+    If you need to get the invitation link again after you've started sharing, you can get it by selecting the session state status bar item and then selecting **Invite Others (Copy Link)**.
 
 5. **[Optional] Enable read-only mode**
 
-    Once you start your collaboration session, you can set the session to be read-only to prevent guests from making edits to the code being shared.
+    After you start your collaboration session, you can set the session to be read-only to prevent guests from making edits to the code being shared.
 
     After sharing, you will get a notification that the invite link has been copied to your clipboard. You can then select the option to make the session read-only.
 
