@@ -141,11 +141,11 @@ After you install Visual Studio Live Share, a custom tab will appear in the Visu
 
 <table>
 <tr>
-    <td width="50%"">
-        <img src="../media/vscode-custom-tab.png" width="100%" alt="Screenshot that shows the Live Share tab in Visual Studio Code." >
+    <td width="50%">
+        <img src="../media/vscode-custom-tab.png" width="100%" alt="Screenshot that shows the Live Share tab in Visual Studio Code.">
     </td>
     <td width="50%">
-        <img src="../media/vscode-explorer-view.png" width="100%" alt="Screenshot that shows the Explorer tab in Visual Studio Code."
+        <img src="../media/vscode-explorer-view.png" width="100%" alt="Screenshot that shows the Explorer tab in Visual Studio Code.">
 </tr>
 </table>
 
