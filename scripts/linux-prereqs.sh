@@ -186,20 +186,7 @@ elif type yum  > /dev/null 2>&1; then
         exitScript 1
     fi
     
-    checkNetCoreDeps sudoIf "yum -y install openssl-libs krb5-libs libicu zlib"  
-    # Install openssl-compat10 for Fedora 29. Does not exist in 
-    # CentOS, so validate package exists first.
-    if [ $NETCOREDEPS -ne 0 ]; then
-        if ! sudoIf "yum -q list compat-openssl10" >/dev/null 2>&1; then
-            echo "(*) compat-openssl10 not required."
-        else
-            if ! sudoIf "yum -y install compat-openssl10"; then
-                echo "(!) compat-openssl10 install failed"
-                exitScript 1
-            fi
-        fi
-    fi
-    
+    checkNetCoreDeps sudoIf "yum -y install openssl-libs krb5-libs libicu zlib"      
     checkKeyringDeps sudoIf "yum -y install gnome-keyring libsecret"
     checkBrowserDeps sudoIf "yum -y install desktop-file-utils xorg-x11-utils"
 
@@ -216,20 +203,7 @@ elif type dnf  > /dev/null 2>&1; then
         exitScript 1
     fi
     
-    checkNetCoreDeps sudoIf "dnf -y install openssl-libs krb5-libs libicu zlib"  
-    # Install openssl-compat10 for Fedora 29. Does not exist in 
-    # CentOS, so validate package exists first.
-    if [ $NETCOREDEPS -ne 0 ]; then
-        if ! sudoIf "dnf -q list compat-openssl10" >/dev/null 2>&1; then
-            echo "(*) compat-openssl10 not required."
-        else
-            if ! sudoIf "dnf -y install compat-openssl10"; then
-                echo "(!) compat-openssl10 install failed"
-                exitScript 1
-            fi
-        fi
-    fi
-    
+    checkNetCoreDeps sudoIf "dnf -y install openssl-libs krb5-libs libicu zlib"      
     checkKeyringDeps sudoIf "dnf -y install gnome-keyring libsecret"
     checkBrowserDeps sudoIf "dnf -y install desktop-file-utils xorg-x11-utils"
 
@@ -263,7 +237,7 @@ elif type apk > /dev/null 2>&1; then
         exitScript 1
     fi
 
-    checkNetCoreDeps sudoIf "apk add --no-cache libssl1.0 icu krb5 zlib"
+    checkNetCoreDeps sudoIf "apk add --no-cache libssl1.1 icu krb5 zlib"
     checkKeyringDeps sudoIf "apk add --no-cache gnome-keyring libsecret"
     checkBrowserDeps sudoIf "apk add --no-cache desktop-file-utils xprop"
 
