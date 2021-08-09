@@ -110,7 +110,7 @@ A notification will prompt you to sign in by using your web browser. When you se
 > **Advanced tip:** The `liveshare.account` and `liveshare.accountProvider` settings enable you to select the account used for automatic sign-in if you have cached credentials for multiple accounts.
 > For example, imagine you work on two projects and you want to sign in to them by using different identities. In your Visual Studio Code workspace settings, you could set `liveshare.account` to a different email address in each project directory. The projects will then automatically sign in with the correct account. You can set the `liveshare.accountProvider` setting to either `"microsoft"` or `"github"` if you use the same email address with multiple providers.
 
-If Visual Studio Code isn't picking up your sign-in after you complete the sign-in process in the browser, see [sign in by using a user code](#sign-in-using-a-user-code). Or check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
+If Visual Studio Code isn't picking up your sign-in after you complete the sign-in process in the browser, see [sign in by using a user code](#sign-in-by-using-a-user-code). Or check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
 ### Sign in by using a user code
 
@@ -139,12 +139,12 @@ If Visual Studio Code isn't picking up a completed sign-in, you can enter a *use
 
 After you install Visual Studio Live Share, a custom tab will appear in the Visual Studio Code Activity Bar. On this tab, you can access all Live Share functions to collaborate. When you share or join a collaboration session, a view will also appear on the Explorer tab that allows you to access these functions.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-custom-tab.png" width="100%" alt="Screenshot that shows the Live Share tab in Visual Studio Code." />
+<table>
+<tr>
+    <td width="50%"">
+        <img src="../media/vscode-custom-tab.png" width="100%" alt="Screenshot that shows the Live Share tab in Visual Studio Code." >
     </td>
-    <td width="50%" style="vertical-align: top; border: none;">
+    <td width="50%">
         <img src="../media/vscode-explorer-view.png" width="100%" alt="Screenshot that shows the Explorer tab in Visual Studio Code."
 </tr>
 </table>
@@ -246,7 +246,7 @@ The easiest way to join a collaboration session is to simply open the invite lin
 
 1. **Sign in**
 
-    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. See [sign in](#sign-into-live-share) for more details.
+    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. See [sign in](#sign-in-to-live-share) for more details.
 
 2. **Click on the invite link / open the invite in your browser**
 
@@ -277,7 +277,7 @@ You can also manually join without using a web browser which can be useful in si
 
 1. **Sign in**
 
-    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. See [sign in](#sign-into-live-share) for more details.
+    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. See [sign in](#sign-in-to-live-share) for more details.
 
 2. **Use the join command**
 
