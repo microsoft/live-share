@@ -137,7 +137,7 @@ If Visual Studio Code isn't picking up a completed sign-in, you can enter a *use
 
 ### In the Live Share viewlet
 
-After you install Visual Studio Live Share, a custom tab will appear in the Visual Studio Code Activity Bar. On this tab, you can access all Live Share functions to collaborate. When you share or join a collaboration session, a view will also appear on the Explorer tab that allows you to access these functions.
+After you install Visual Studio Live Share, a custom tab will appear in the Visual Studio Code Activity Bar. On this tab, you can access all Live Share functions to collaborate. When you share or join a collaboration session, a view will also appear on the **Explorer** tab that allows you to access these functions.
 
 <table>
 <tr>
@@ -192,65 +192,65 @@ After you download and install Visual Studio Live Share, follow these steps to s
 
 5. **[Optional] Enable read-only mode**
 
-    After you start your collaboration session, you can set the session to be read-only to prevent guests from making edits to the code being shared.
+    After you start your collaboration session, you can set the session to be read-only to prevent guests from making edits to the code you're sharing.
 
-    After sharing, you will get a notification that the invite link has been copied to your clipboard. You can then select the option to make the session read-only.
+    After you share, you'll get a notification that the invitation link is copied to your clipboard. You can then select the option to make the session read-only:
 
-    ![VS Code Read-only mode](../media/vscode-read-only-toast.png)
+    ![Screenshot that shows the Make read-only button.](../media/vscode-read-only-toast.png)
 
 6. **Send someone the link**
 
-    Send the link over e-mail, Slack, Skype, etc. to those you want to invite. Note that, given the level of access Live Share sessions can provide to guests, **you should only share with people you trust** and think through the implications of what you are sharing.
+    Send the link over e-mail, Slack, Skype, or other platforms to the guests you want to invite. Given the level of access Live Share sessions can provide to guests, *you should only share with people you trust*, and you should think through the implications of what you're sharing.
 
-    > **Security Tip:** Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
+    > **Security tip:** Want to understand the security implications of some Live Share features? Check out the [security](../reference/security.md) article.
 
-    If the guest you invited has questions, the "[Quickstart: Join your first session](../quickstart/join.md)" article provides some more information on getting up and running as a guest.
+    The guests you invite might have questions. The "[Quickstart: Join your first session](../quickstart/join.md)" article provides information on getting started as a guest.
 
 7. **[Optional] Approve the guest**
 
-    By default, guests will automatically join your collaboration session and you'll be notified when they're ready to work with you. While this notification gives you the option to remove them from the session, you can also opt to instead require an explicit "approval" for anyone joining.
+    By default, guests will automatically join your collaboration session and you'll be notified when they're ready to work with you. This notification gives you the option to remove them from the session. You can also choose to require explicit approval for anyone joining.
 
-    To enable this feature, simply add the following to settings.json:
+    To enable this approval, add the following to settings.json:
 
     ```json
     "liveshare.guestApprovalRequired": true
     ```
 
-    Once you have this setting turned on, a notification will prompt you to approve the guest before they can join.
+    When you have this setting turned on, a notification will prompt you to approve guests before they can join:
 
-    ![Visual Studio Code join approval request](../media/vscode-join-approval.png)
+    ![Screenshot that shows a Visual Studio Code join approval request.](../media/vscode-join-approval.png)
 
-    See [invitations and join access](../reference/security.md#invitations-and-join-access) for additional details on invitation security considerations.
+    See [Invitations and join access](../reference/security.md#invitations-and-join-access) for more information on invitation security considerations.
 
-That's it!!
+That's it!
 
 ### Stop the collaboration session
 
-As a host, you can stop sharing completely and end the collaboration session at any time by opening the Live Share view in the Explorer or in the Live Share custom tab and selecting the "Stop collaboration session" icon.
+As a host, you can stop sharing completely and end the collaboration session at any time. To do so, open the Live Share view on the **Explorer** tab or the **Live Share** tab and select the **Stop collaboration session** button:
 
-![Stop collaboration session](../media/vscode-end-collaboration-viewlet.png)
+![Screenshot that shows the Stop collaboration session button.](../media/vscode-end-collaboration-viewlet.png)
 
-All guests will be notified that the session has ended.  Once the session has ended, guests will no longer be able to access the content and any temp files are automatically cleaned up.
+All guests will be notified that the session is over. After the session is over, guests won't be able to access the content. Any temp files will automatically be cleaned up.
 
-Having issues with sharing? Check out [troubleshooting](../troubleshooting.md#share-and-join).
+Having problems with sharing? Check out [troubleshooting](../troubleshooting.md#share-and-join).
 
 ## Join and leave a session
 
-After downloading and installing Visual Studio Live Share, guests only need to take a couple of steps to join a hosted collaboration session. There are two ways to join: [via the browser](#join-via-the-browser) and [manually](#join-manually).
+After they download and install Visual Studio Live Share, guests need to take only a couple steps to join a hosted collaboration session. There are two ways to join: [via a browser](#join-via-a-browser) and [manually](#join-manually).
 
-> **Security Tip:** As a guest joining a collaboration session, it's important to understand that hosts may restrict your access to certain files or features. Want to understand the security implications of some of Live Share's features and settings? Check out the [security](../reference/security.md) article.
+> **Security tip:** Guests joining a collaboration session need to understand that hosts might restrict their access to certain files or features. Want to understand the security implications of Live Share features and settings? Check out the [security](../reference/security.md) article.
 
-### Join via the browser
+### Join via a browser
 
-The easiest way to join a collaboration session is to simply open the invite link in a web browser. Here's what you can expect when you follow this flow.
+The easiest way to join a collaboration session is to simply open the invitation link in a web browser. Here's what to expect:
 
 1. **Sign in**
 
-    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. See [sign in](#sign-in-to-live-share) for more details.
+    After you install the Live Share extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. See [sign in](#sign-in-to-live-share) for more details.
 
-2. **Click on the invite link / open the invite in your browser**
+2. **Select the invitation link / open the invitation in your browser**
 
-    Now, simply open (or re-open) the invite link in a browser.
+    Simply open (or re-open) the invitation link in a browser.
 
     > **Note**: If you have not yet installed the Live Share extension, you'll be presented with links to the extension marketplace. Install the extension and restart your tool and retry.
 
