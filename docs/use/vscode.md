@@ -165,7 +165,7 @@ After you download and install Visual Studio Live Share, follow these steps to s
 
 1. **Sign in**
 
-    After you install the Live Share Extension, reload, and wait for dependencies to install, you'll want to sign in to let other collaborators know who you are. See [Sign in](#sign-in-to-live-share) for more details.
+    After you install the Live Share Extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. See [Sign in](#sign-in-to-live-share) for more details.
 
 2. **Open a folder**
 
@@ -252,32 +252,32 @@ The easiest way to join a collaboration session is to simply open the invitation
 
     Simply open (or re-open) the invitation link in a browser.
 
-    > **Note**: If you have not yet installed the Live Share extension, you'll be presented with links to the extension marketplace. Install the extension and restart your tool and retry.
+    > [!Note] If you haven't installed the Live Share extension, you'll get links to the Marketplace. Install the extension, restart your chosen tool, and retry.
 
-    You should be notified that the browser wants to launch a Live Share enabled tool. If you let it launch your selected tool, you'll be connected to the collaboration session once it starts.
+    You should be notified that the browser wants to launch a tool that's enabled for Live Share. If you let it launch the tool, you'll be connected to the collaboration session when it starts.
 
     ![Join page](../media/join-page.png)
 
-    If the host is offline, you'll be notified at this point instead. You can then contact the host and ask them to share again.
+    If the host is offline, you'll be notified. You can then contact the host and ask them to share again.
 
     > [!NOTE]
-    > Be sure you've **started the tool at least once** after installing the Visual Studio Live Share extension and allowed the installation to finish before opening/re-opening the invite page. Still having trouble? See [join manually](#join-manually).
+    > Be sure you've started the tool at least once after installing the Visual Studio Live Share extension and allowed the installation to finish before opening/re-opening the invitation page. Still having trouble? See [Join manually](#join-manually).
 
 3. **Collaborate**
 
-    That's it! In a few moments you'll be connected and you can start collaborating.
+    That's it! In a moment you'll be connected and you can start collaborating.
 
-    You will see the "Live Share" button transition to convey a "Session State". See [session state](#session-states-and-limitations) information below for what this looks like.
+    You'll see the **Live Share** button change to convey a *session state*. See the information about [session state](#session-states-and-limitations) later in this article.
 
-    You'll then be automatically taken to the file the host is currently editing once the join is complete.
+    When the join is complete, you'll be automatically taken to the file the host is currently editing.
 
 ### Join manually
 
-You can also manually join without using a web browser which can be useful in situations where the tool you want to use is already running, you want to use a different tool than you usually do, or if you are having trouble with getting invite links to work for some reason. The process is easy:
+You can also join manually without using a web browser. This  option can be useful when the tool you want to use is already running, you want to use a tool you don't usually use, or you're having trouble getting invitation links to work. The process is easy:
 
 1. **Sign in**
 
-    After installing the Live Share extension, reloading, and waiting for dependencies to finish installing, you'll want to sign in to let other collaborators know who you are. See [sign in](#sign-in-to-live-share) for more details.
+    After you install the Live Share extension, reload, and wait for dependencies install, sign in to let other collaborators know who you are. See [sign in](#sign-in-to-live-share) for more details.
 
 2. **Use the join command**
 
