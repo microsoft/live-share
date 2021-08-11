@@ -246,17 +246,18 @@ The easiest way to join a collaboration session is to simply open the invitation
 
 1. **Sign in**
 
-    After you install the Live Share extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. See [sign in](#sign-in-to-live-share) for more details.
+    After you install the Live Share extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. See [Sign in](#sign-in-to-live-share) for more details.
 
 2. **Select the invitation link / open the invitation in your browser**
 
     Simply open (or re-open) the invitation link in a browser.
 
-    > [!Note] If you haven't installed the Live Share extension, you'll get links to the Marketplace. Install the extension, restart your chosen tool, and retry.
+    > [!Note] 
+    > If you haven't installed the Live Share extension, you'll get links to the Marketplace. Install the extension, restart your chosen tool, and retry.
 
     You should be notified that the browser wants to launch a tool that's enabled for Live Share. If you let it launch the tool, you'll be connected to the collaboration session when it starts.
 
-    ![Join page](../media/join-page.png)
+    ![Screenshot that shows the join page in a browser.](../media/join-page.png)
 
     If the host is offline, you'll be notified. You can then contact the host and ask them to share again.
 
@@ -269,7 +270,7 @@ The easiest way to join a collaboration session is to simply open the invitation
 
     You'll see the **Live Share** button change to convey a *session state*. See the information about [session state](#session-states-and-limitations) later in this article.
 
-    When the join is complete, you'll be automatically taken to the file the host is currently editing.
+    When the join is complete, you'll automatically be taken to the file the host is currently editing.
 
 ### Join manually
 
@@ -277,91 +278,91 @@ You can also join manually without using a web browser. This  option can be usef
 
 1. **Sign in**
 
-    After you install the Live Share extension, reload, and wait for dependencies install, sign in to let other collaborators know who you are. See [sign in](#sign-in-to-live-share) for more details.
+    After you install the Live Share extension, reload, and wait for dependencies install, sign in to let other collaborators know who you are. See [Sign in](#sign-in-to-live-share) for more details.
 
 2. **Use the join command**
 
-    Open the Live Share custom tab in the VS Code activity bar, and select the "Join collaboration session..." icon or entry.
+    On the **Live Share** tab in the Visual Studio Code Activity Bar, select the **Join collaboration session** button or item:
 
-    ![Join viewlet icon](../media/vscode-join-viewlet.png)
+    ![Screenshot that shows the Join collaboration session button.](../media/vscode-join-viewlet.png)
 
-3. **Paste the invite link**
+3. **Paste the invitation link**
 
-    Paste in the invite URL you were sent and hit enter to confirm.
+    Paste in the invitation URL you were sent and select **Enter** to confirm.
 
 4. **Collaborate!**
 
-    That's it! You should be connected to the collaboration session momentarily.
+    That's it! You should soon be connected to the collaboration session.
 
-    You will see the "Live Share" button transition to convey a "Session State". See [session state](#session-states-and-limitations) information below for what this looks like.
+    The **Live Share** button will change to convey the session state. See information about [session state](#session-states-and-limitations) later in this article.
 
-    You'll then be automatically taken to the file the host is currently editing once the join is complete.
+    When the join is complete, you'll automatically be taken to the file the host is currently editing.
 
-### Leave the collaboration session
+### Leave a collaboration session
 
-As a guest, you can leave the collaboration session without ending it for others by simply closing the VS Code window. If you'd prefer to keep the window open, you can open the Live Share Explorer view or the Live Share custom tab and select the "Leave collaboration session" icon.
+As a guest, you can leave a collaboration session without ending it for others by simply closing the Visual Studio Code window. If you want to keep the window open, you can open the Live Share **Explorer** tab or the **Live Share** tab and select the **Leave collaboration session** button:
 
-![Leaves session icon](../media/vscode-leave-session-viewlet.png)
+![Screenshot that shows the Leave collaboration session button.](../media/vscode-leave-session-viewlet.png)
 
-Any temp files are automatically cleaned up so no further action is needed.
+Any temp files are automatically cleaned up, so you don't need to do anything else.
 
-Having issues with joining? Check out [troubleshooting](../troubleshooting.md#share-and-join).
+Having problems with joining? Check out [Troubleshooting](../troubleshooting.md#share-and-join).
 
 ## Co-editing
 
-Once a guest has joined a collaboration session, all collaborators will immediately be able to see each other's edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves making it easy iterate and rapidly nail to down solutions.
+> [!NOTE]
+> Co-editing has limitations in certain languages. See [Platform support](../reference/platform-support.md) for information about language-specific features.
+
+When a guest joins a collaboration session, all collaborators will immediately be able to see each other's edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Hosts and guests will see edits as you make them and can contribute themselves, which makes it easy iterate and rapidly solve problems.
+
+![Screenshot that shows a co-editing session.](../media/vscode-coedit.png)
 
 > [!NOTE]
-> Joining a read-only collaboration session prevents guests from being able to make edits to files. A host can [enable read-only mode when they share](#start-and-stop-a-session). As a guest, you can tell if you have joined a read-only session by looking at your [session state](#session-states-and-limitations).
+> Guests who join a read-only collaboration session can't make edits to files. A host can [enable read-only mode when they share a session](#start-and-stop-a-session). As a guest, you can tell if you've joined a read-only session by looking at the [session state](#session-states-and-limitations).
 
-![Screen shot showing co-editing](../media/vscode-coedit.png)
+Participants can see cursors and edits. They can also see selections you make. That makes it easy to highlight where problems might exist or to convey ideas.
 
-> [!NOTE]
-> Co-editing has limitations for certain languages. See [platform support](../reference/platform-support.md) for the state of features by language.
+![Screenshot that shows selected code.](../media/vscode-highlight.png)
 
-Beyond cursors and edits, selections you make are also visible to all participants in that same file. This makes it easy to highlight where problems might exist or convey ideas.
+Better yet, you and other participants can go to any file in the shared project. You can edit either together or independently, so you can seamlessly switch from investigation to making small tweaks to full collaborative editing.
 
-![Screen shot showing highlighting](../media/vscode-highlight.png)
+The resulting edits are persisted on the host's machine when they're saved. So there's no need to synchronize, push, or send files around when you're done editing.
 
-Better yet, you and other participants can navigate to any file in the shared project. You can either edit together or independently meaning you can seamlessly switch between investigation, making small tweaks and full collaborative editing.
+> **Security tip:** Because all participants can independently navigate and edit files, as a host, you might want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, you should realize that you might not see certain files as a result of these settings. See [Controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-The resulting edits are persisted on the host's machine on save so there is no need to synchronize, push, or send files around once you're done editing. The edits are "just there."
+### Change participant flag behavior
 
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you may not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+By default, Visual Studio Live Share automatically displays a flag next to a participant's cursor on hover or when the participant makes edits, highlights something, or moves the cursor. In some cases, you might want to change this behavior.
 
-### Changing participant flag behaviors
-
-By default, Visual Studio Live Share automatically displays a "flag" next to a participant's cursor on hover, or when they edit, highlight, or move their cursor. In some cases, you may prefer to change this behavior.
-
-Simply **edit settings.json** (File > Preferences > Settings), add one of the following lines, and then restart VS Code:
+To change that behavior, open settings.json (**File** > **Preferences** > **Settings**), add one of the following lines, and then restart Visual Studio Code.
 
 | Setting | Behavior |
 |---------|----------|
 | ``"liveshare.nameTagVisibility":"Never"`` | The flag is only visible when you hover over the cursor. |
-| ``"liveshare.nameTagVisibility":"Activity"`` | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves their cursor. |
+| ``"liveshare.nameTagVisibility":"Activity"`` | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves the cursor. |
 | ``"liveshare.nameTagVisibility":"Always"`` | The flag is always visible. |
 
 
 ### Find and list participants
 
-A quick way to see who is in the collaboration session is to look at the participants list in the Live Share Explorer view or custom tab. The views will show all the participants in your session.
+To quickly see who's in the collaboration session, look at the participants list on the Live Share **Explorer** tab or on the custom tab:
 
-![User status bar icon](../media/vscode-explorer-view.png)
+![Screenshot that shows the participants in a session.](../media/vscode-explorer-view.png)
 
-Clicking on any participant in this list will follow them in your active editor group.
+To follow any participant in this list in your active editor group, select the participant.
 
-Alternatively, you can hit **Ctrl+Shift+P / Cmd+Shift+P** and select the "Live Share: List Participants" command or **click** on the status bar item that shows the number of participants in your session.
+Alternatively, you can select **Ctrl+Shift+P** or **Cmd+Shift+P** and then select **Live Share: List Participants** or select the status bar item that shows the number of participants in your session:
 
 ![User status bar icon 2](../media/vscode-user-status.png)
 
-A list of all participants in the session will then appear. Unlike clicking the pin icon, this list appears even if there is only one other person in the session with you so you can always quickly see where someone else is located. For convenience purposes, like the pin icon, you can then pick one of the participants from the list to follow them. Press escape if you'd like to exit instead.
+A list of all participants in the session will appear. The behavior here differs from that of the pushpin icon. This list appears even if there's only one other person in the session with you, so you can always quickly see where someone else is located. As with the pushpin icon, you can pick participants in the list to follow them. Select **Esc** if you want to exit instead.
 
 ### Follow along with a collaborator
 
-Sometimes you need to explain a problem or design that spans multiple files or locations in code. In these situations, it can be useful to temporarily follow a colleague as they move throughout the project. For this reason, when you join a collaboration session you will automatically "follow" the host. When following someone, your editor will stay in sync with their currently open file and scroll position.
+Sometimes you need to explain a problem or design that spans multiple files or locations in code. In these situations, it can be useful to temporarily follow your colleagues as they move throughout a project. For this reason, when you join a collaboration session, you'll automatically follow the host. When following someone, your editor will stay in sync with their currently open file and scroll position.
 
 > [!NOTE]
-> By default, Live Share shares opened files external to the shared folder as well. If you want to disable this feature, update `liveshare.shareExternalFiles` Live Share to `false` in settings.json.
+> By default, Live Share shares opened files that are outside of the shared folder. If you want to change this behavior, change `liveshare.shareExternalFiles` to `false` in settings.json.
 
 ### Request focus
 
