@@ -226,7 +226,7 @@ That's it!
 
 ### Stop the collaboration session
 
-As a host, you can stop sharing completely and end the collaboration session at any time. To do so, open the Live Share view on the **Explorer** tab or the **Live Share** tab and select the **Stop collaboration session** button:
+As a host, you can stop sharing completely and end the collaboration session at any time. To do so, open the Live Share view on the **Explorer** tab or the **VS Live Share** tab and select the **Stop collaboration session** button:
 
 ![Screenshot that shows the Stop collaboration session button.](../media/vscode-end-collaboration-viewlet.png)
 
@@ -282,7 +282,7 @@ You can also join manually without using a web browser. This  option can be usef
 
 2. **Use the join command**
 
-    On the **Live Share** tab in the Visual Studio Code Activity Bar, select the **Join collaboration session** button or item:
+    On the **VS Live Share** tab in the Visual Studio Code Activity Bar, select the **Join collaboration session** button or item:
 
     ![Screenshot that shows the Join collaboration session button.](../media/vscode-join-viewlet.png)
 
@@ -300,7 +300,7 @@ You can also join manually without using a web browser. This  option can be usef
 
 ### Leave a collaboration session
 
-As a guest, you can leave a collaboration session without ending it for others by simply closing the Visual Studio Code window. If you want to keep the window open, you can open the Live Share **Explorer** tab or the **Live Share** tab and select the **Leave collaboration session** button:
+As a guest, you can leave a collaboration session without ending it for others by simply closing the Visual Studio Code window. If you want to keep the window open, you can open the Live Share **Explorer** tab or the **VS Live Share** tab and select the **Leave collaboration session** button:
 
 ![Screenshot that shows the Leave collaboration session button.](../media/vscode-leave-session-viewlet.png)
 
@@ -345,7 +345,7 @@ To change that behavior, open settings.json (**File** > **Preferences** > **Sett
 
 ### Find and list participants
 
-To quickly see who's in the collaboration session, look at the participants list on the Live Share **Explorer** tab or on the custom tab:
+To quickly see who's in the collaboration session, look at the participants list on the Live Share **Explorer** tab or on the **VS Live Share** tab:
 
 ![Screenshot that shows the participants in a session.](../media/vscode-explorer-view.png)
 
@@ -353,7 +353,7 @@ To follow any participant in this list in your active editor group, select the p
 
 Alternatively, you can select **Ctrl+Shift+P** or **Cmd+Shift+P** and then select **Live Share: List Participants** or select the status bar item that shows the number of participants in your session:
 
-![User status bar icon 2](../media/vscode-user-status.png)
+![Screenshot that shows the status bar item.](../media/vscode-user-status.png)
 
 A list of all participants in the session will appear. The behavior here differs from that of the pushpin icon. This list appears even if there's only one other person in the session with you, so you can always quickly see where someone else is located. As with the pushpin icon, you can pick participants in the list to follow them. Select **Esc** if you want to exit instead.
 
@@ -366,85 +366,85 @@ Sometimes you need to explain a problem or design that spans multiple files or l
 
 ### Request focus
 
-Occasionally you may want everyone in a collaboration session to come and take a look at something you are doing. Live Share lets you ask that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
+Occasionally you might want everyone in a collaboration session to take a look at something you're doing. Live Share lets you ask that everyone focus their attention on you with a notification that makes it easy for them to follow you.
 
-Open the Live Share custom tab in the VS Code activity bar or the Live Share Explorer view, and select the "Focus participants" icon.
+Open the **VS Live Share** tab in the Visual Studio Code Activity Bar or the Live Share **Explorer** tab, and then select the **Focus participants** button:
 
-![Focus viewlet icon](../media/vscode-focus-viewlet.png)
+![Screenshot that shows the Focus participants button.](../media/vscode-focus-viewlet.png)
 
-Once you run the command, everyone in the collaboration session will then get a notification that you've requested their attention.
+Everyone in the collaboration session will get a notification that you've requested their attention:
 
-![Focus toast notification](../media/vscode-focus-toast.png)
+![Screenshot that shows the request focus notification.](../media/vscode-focus-toast.png)
 
-They can then just click "Follow" right from the notification when they're ready to put their focus on you.
+They can then select **Follow** in the notification when they're ready to focus on your actions.
 
 ## Start and stop following collaborators
 
-To start following a participant (as either a host or guest), click on their name in the participants' list in the Live Share Explorer view or custom tab. The circle next to their name will fill in to indicate you are following them.
+To start following a participant (as either a host or a guest), select the participant's name in the participants list on the Live Share **Explorer** tab or on the **VS Live Share** tab. The circle next to the name will become solid to indicate that you're following them:
 
-![VS Code follow from viewlet](../media/vscode-follow-multiple-viewlet.png)
+![Screenshot that shows a participant who's being followed.](../media/vscode-follow-multiple-viewlet.png)
 
-Alternatively, you can click the pin icon in the upper right of the editor group or press **Ctrl+Alt+F / Cmd+Alt+F**.
+Alternatively, you can select the pushpin button in the upper-right corner of the editor group or select **Ctrl+Alt+F** or **Cmd+Alt+F**.
 
-![VS Code pin](../media/vscode-pin.png)
+![Screenshot that shows the pushpin button.](../media/vscode-pin.png)
 
 > [!NOTE]
-> If more than one other person is in the collaboration session, you'll be asked to select the participant you want to follow.
+> If more than one other person is in the collaboration session, you'll be prompted to select the participant who you want to follow.
 >
->![Screen shot showing list of collaborators](../media/vscode-list-collaborators.png)
+>![Screenshot that shows a list of participants.](../media/vscode-list-collaborators.png)
 
-Since following is tied to an editor group, you can use split view (or grid layout!) to have a group that is following a participant and a group that is not. This allows you to passively follow someone while also working on something independently. With an editor group selected, you can select a participant in the participants list to have that group follow them.
+Because following is linked to an editor group, you can use split view or grid layout to create a group that's following a participant and a group that's not. This layout allows you to passively follow someone while also working on something independently. When you have an editor group selected, you can select a participant in the participants list to have the group follow the participant.
 
-![VS Code pin in split view](../media/vscode-follow-split.png)
+![Screenshot that shows two editor groups in split view.](../media/vscode-follow-split.png)
 
-To make it easy to switch out of "follow mode" and start editing on your own, you'll automatically stop following if any of these occur:
+To make it easy to switch out of follow mode and start editing on your own, you'll automatically stop following if one of these actions occurs:
 
-1. You start editing the currently active file
-1. You open a different file
-1. You close the currently active file
+- You start editing the currently active file.
+- You open a different file.
+- You close the currently active file.
 
-Additionally, you can explicitly stop following someone by clicking the pin icon again or hitting **Ctrl+Alt+F / Cmd+Alt+F**.
+Additionally, you can explicitly stop following someone by selecting the pushpin icon again or by selecting **Ctrl+Alt+F** or **Cmd+Alt+F**.
 
 ## Co-debugging
 
-Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, it also gives you and other participants in your session the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
+The Visual Studio Live Share collaborative debugging feature is a powerful way to debug a problem. It enables a collaborative experience to troubleshoot problems. It also gives you and other participants in your session the ability to investigate problems that might be environment specific by providing a shared debugging session on the host's machine.
 
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. You should also be aware that Console/REPL access means that participants can execute commands on your machine so you should only co-debug with those you trust. As a guest, it is also important to realize you may not be able to follow the debugger as it steps into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> **Security tip:** Because participants can independently navigate and edit files, as a host, you might want to restrict which files guests are able to access in your project via a .vsls.json file. You should also be aware that Console/REPL access enables participants to run commands on your machine, so you should only co-debug with people you trust. Guests should realize that, because of restrictive settings, they might not be able to follow the debugger as it steps into certain restricted files. For more information, see [Controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility).
 
-Using it is simple.
+Using collaborative debugging is simple.
 
-1. Be sure both the host and all guests have the appropriate debugging extension installed. (Technically this is not always necessary, but it is generally a good idea.)
+1. Be sure the host and all guests have the appropriate debugging extension installed. (Installation isn't always necessary, but it's generally a good idea.)
 
-2. As the host, if not already set up for the project, you should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from VS Code as you would normally. No special setup is required.
+2. The host, if not already set up for the project, should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from Visual Studio Code as normal. No special setup is required.
 
-3. Next, the host can start debugging using the button in the debug tab as normal.
+3. The host can start debugging by using the button on the debug tab, as normal:
 
-    ![VS Code debug button](../media/vscode-debug-button.png)
+    ![Screenshot that shows the Visual Studio Code debug button.](../media/vscode-debug-button.png)
 
     > [!TIP]
-    > You can also participate in Visual Studio debugging sessions from VS Code and vice versa! Check out the [Visual Studio instructions](vs.md#co-debugging) on co-debugging for more information.
+    > You can also participate in Visual Studio debugging sessions from Visual Studio Code, and vice versa. For more information, see the [Visual Studio instructions](vs.md#co-debugging) for co-debugging.
 
-Once the debugger attaches on the host's side, all guests are also automatically attached. While there is one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
+When the debugger attaches on the host's side, all guests are also automatically attached. There's one debugging session running on the host's computer, but all participants are connected to it and have their own view.
 
-![VS Code debugger attached](../media/vscode-debugger.png)
+![Screenshot that shows the Visual Studio Code debugger.](../media/vscode-debugger.png)
 
-Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
-
-> [!NOTE]
-> See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
-
-Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
+Anyone can step through the debugging process, so you can switch among collaborators without having to negotiate control.
 
 > [!NOTE]
-> While in a read-only collaboration session, a guest will not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables.
+> See [Platform support](../reference/platform-support.md) for information about debugging feature support by language or platform.
 
-![Animation of concurrent debugging](../media/co-debug.gif)
+Each collaborator can investigate variables, go to various files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features allow each participant to track where the others are located so they can switch between concurrently investigating aspects of the problem and collaboratively debugging.
 
-### Change when VS Code joins debugging sessions
+> [!NOTE]
+> In a read-only collaboration session, a guest won't be able to step through the debugging process. They can add or remove breakpoints and inspect variables.
 
-By default, as a guest, you'll be automatically attached to debugging sessions when they are shared by the host. However, in some cases, you may find this behavior disruptive. Fortunately, you can change it as follows:
+![Animation that shows concurrent debugging.](../media/co-debug.gif)
 
-Simply **edit settings.json** (File > Preferences > Settings), add one of the following lines, and then restart VS Code:
+### Change when Visual Studio Code joins debugging sessions
+
+By default, as a guest, you'll be automatically attached to debugging sessions when they're shared by the host. You might find this behavior disruptive. 
+
+To change this behavior, open settings.json (**File** > **Preferences** > **Settings**), add one of the following lines, and then restart Visual Studio Code:
 
 | Setting | Behavior |
 |---------|----------|
