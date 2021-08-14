@@ -65,7 +65,7 @@ When you download and use Visual Studio Live Share, you agree to the [license te
 
 ### Linux installation steps
 
-Linux is a highly variable environment. Given the number of desktop environments and distributions, getting Live Share installed can be complicated. If you use supported versions of Ubuntu Desktop (16.04+), Fedora Workstation (27+), or CentOS 7 and only use official distributions of Visual Studio Code, the process should be straightforward. If you're using a nonstandard configuration or downstream distribution, you might encounter complications. See [Linux installation details](../reference/linux.md) for more information.
+Linux is a highly variable environment. Given the number of desktop environments and distributions, getting Live Share installed can be complicated. If you use supported versions of Ubuntu Desktop (16.04+), Fedora Workstation (27+), or CentOS 7 and only use official distributions of Visual Studio Code, the process should be straightforward. If you're using a nonstandard configuration or downstream distribution, you might encounter complications. For more information, see [Linux installation details](../reference/linux.md).
 
 #### Install Linux prerequisites
 
@@ -104,7 +104,7 @@ A notification will prompt you to sign in by using your web browser. When you se
 ![Screenshot that shows notification prompting web browser sign-in.](../media/vscode-sign-in-toast.png)
 
 > [!note]
-> Linux users: You might be prompted to enter a user code if you're using an older version of Live Share (0.3.295 or earlier). Update to the latest version of the extension or, to see the code, select **Having trouble?** after you sign in. For deteails, see [Sign in by using a user code](#sign-in-by-using-a-user-code).
+> Linux users: You might be prompted to enter a user code if you're using an older version of Live Share (0.3.295 or earlier). Update to the latest version of the extension or, to see the code, select **Having trouble?** after you sign in. For details, see [Sign in by using a user code](#sign-in-by-using-a-user-code).
 
 
 > **Advanced tip:** The `liveshare.account` and `liveshare.accountProvider` settings enable you to select the account used for automatic sign-in if you have cached credentials for multiple accounts.
@@ -165,7 +165,7 @@ After you download and install Visual Studio Live Share, follow these steps to s
 
 1. **Sign in**
 
-    After you install the Live Share Extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. See [Sign in](#sign-in-to-live-share) for more details.
+    After you install the Live Share Extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. For more information, see [Sign in](#sign-in-to-live-share).
 
 2. **Open a folder**
 
@@ -182,7 +182,7 @@ After you download and install Visual Studio Live Share, follow these steps to s
     ![Screenshot that shows the Live Share button.](../media/vscode-share-button-new.png)
 
     > [!NOTE]
-    > The first time you share, your desktop firewall software might prompt you to allow the Live Share agent to open a port. Opening a port is optional. It enables a secured direct mode to improve performance when the person you're working with is on the same network as you. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
+    > The first time you share, your desktop firewall software might prompt you to allow the Live Share agent to open a port. Opening a port is optional. It enables a secured direct mode to improve performance when the person you're working with is on the same network as you. For more information, see [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode).
 
     An invitation link will be automatically copied to your clipboard. When opened in a browser, the link allows others to join a new collaboration session that shares the contents of the folders.
 
@@ -246,7 +246,7 @@ The easiest way to join a collaboration session is to simply open the invitation
 
 1. **Sign in**
 
-    After you install the Live Share extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. See [Sign in](#sign-in-to-live-share) for more details.
+    After you install the Live Share extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. For more information, see [Sign in](#sign-in-to-live-share).
 
 2. **Select the invitation link / open the invitation in your browser**
 
@@ -278,7 +278,7 @@ You can also join manually without using a web browser. This  option can be usef
 
 1. **Sign in**
 
-    After you install the Live Share extension, reload, and wait for dependencies install, sign in to let other collaborators know who you are. See [Sign in](#sign-in-to-live-share) for more details.
+    After you install the Live Share extension, reload, and wait for dependencies install, sign in to let other collaborators know who you are. For more information, see [Sign in](#sign-in-to-live-share).
 
 2. **Use the join command**
 
@@ -328,7 +328,7 @@ Better yet, you and other participants can go to any file in the shared project.
 
 The resulting edits are persisted on the host's machine when they're saved. So there's no need to synchronize, push, or send files around when you're done editing.
 
-> **Security tip:** Because all participants can independently navigate and edit files, as a host, you might want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, you should realize that you might not see certain files as a result of these settings. See [Controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> **Security tip:** Because all participants can independently navigate and edit files, as a host, you might want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, you should realize that you might not see certain files as a result of these settings. For more information, see [Controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility).
 
 ### Change participant flag behavior
 
@@ -449,48 +449,48 @@ To change this behavior, open settings.json (**File** > **Preferences** > **Sett
 | Setting | Behavior |
 |---------|----------|
 |``"liveshare.joinDebugSessionOption":"Automatic"`` | The default. As a guest, you'll automatically join any shared debugging session the host starts. |
-| ``"liveshare.joinDebugSessionOption":"Prompt"`` | As a guest, you are prompted as to whether you want to join a shared debugging session when it is started by the host. |
-| ``"liveshare.joinDebugSessionOption":"Manual"`` | As a guest, you'll need to manually join any  debugging sessions. See [detaching and reattaching](#detaching-and-reattaching). |
+| ``"liveshare.joinDebugSessionOption":"Prompt"`` | As a guest, you're prompted to join a shared debugging session when it's started by the host. |
+| ``"liveshare.joinDebugSessionOption":"Manual"`` | As a guest, you'll need to manually join any debugging sessions. See [Detaching and reattaching](#detaching-and-reattaching). |
 
 ### Detaching and reattaching
 
-As a guest, you may wish to stop debugging temporarily. Fortunately, you can simply click the "stop" icon in the debug toolbar to detach the debugger without affecting the host or other guests.
+As a guest, you might want to stop debugging temporarily. You can select the **Stop** button on the debug toolbar to detach the debugger without affecting the host or other guests:
 
-![VS Code debugger stop button](../media/vscode-debug-stop.png)
+![Screenshot that shows the Stop button.](../media/vscode-debug-stop.png)
 
-If you've updated settings so you no longer auto-attach or if you simply want to reattach later, you can do so by pressing **Ctrl+Shift+P / Cmd+Shift+P** or **clicking** on the session state status bar item and selecting "Attach to a Shared Debugging Session".
+If you've updated your settings so you don't automatically attach, or if you want to reattach later, you can do so by selecting **Ctrl+Shift+P** or **Cmd+Shift+P** or selecting the session state status bar item and then selecting **Attach to a Shared Debugging Session**:
 
-![VS Code attach debugger](../media/vscode-reattach.png)
+![Screenshot that shows the Attach to a Shared Debugging Session command.](../media/vscode-reattach.png)
 
-### Sharing the running application in a browser
+### Share the running application in a browser
 
-Visual Studio Code does not have the concept of a known "web application port" like Visual Studio for project types such as ASP.NET. However, if you are joining a collaboration session from a Visual Studio host, you may automatically see your default browser appear when debugging starts that is then automatically connected to the host's running applications. See [Visual Studio features](vs.md#automatic-web-app-sharing) for more details.
+Unlike Visual Studio, Visual Studio Code doesn't support known web application ports for project types such as ASP.NET. But if you're joining a collaboration session from a Visual Studio host, you might automatically see your default browser appear when debugging starts. The browser is then automatically connected to the host's running applications. For more information, see [Visual Studio features](vs.md#automatic-web-app-sharing).
 
-As a host, you can achieve something similar by manually sharing the application or other endpoints like RESTful services using the "Share Local Server" feature. Visual Studio and VS Code guests can then open a browser on the same localhost port to see the running application.  See [share a server](#share-servers-or-terminals) for more details.
+As a host, you can achieve something similar by manually sharing the application, or other endpoints like RESTful services, by using the Share Local Server feature. Visual Studio and Visual Studio Code guests can then open a browser on the same localhost port to see the running application. For more information, see [Share a server](#share-servers-or-terminals).
 
 ## Share servers or terminals
 
 ### Server sharing
 
-From time to time, as a collaboration session host, you may find that you want to share a web application or other locally running servers or services with guests. This can range from other RESTful end-points to databases and other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
+From time to time, collaboration session hosts might want to share a web application or other locally running servers or services with guests. This can range from other RESTful endpoints to databases and other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
 
-The guests will then be able to access the server you shared on that port from their own local machine on the exact same port. For example, if you shared a web server **running on port 3000**, the guest can access that same running web server on their **own machine** at http://localhost:3000! This is accomplished via a secure SSH or SSL tunnel between the host and guests and authenticated via the service so you can be sure that only those in the collaboration session have access.
+The guests will then be able to access the server you shared on that port from their own local computers on the same port. For example, if you share a web server running on port 3000, guests can access that same running web server on their own computers at http://localhost:3000. This connection is accomplished via an improved security SSH or SSL tunnel between the host and guests and authenticated via the service. This connection mechanism helps to ensure that only people in the collaboration session have access.
 
-> **Security Tip:** As a host, you should be very selective with the ports you share with guests and stick to application ports (rather than sharing a system port). For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky.
+> **Security tip:** As a host, be selective about the ports you share with guests. Stick to application ports (rather than sharing a system port). For guests, shared ports will behave exactly as they would if the server/service were running on the guest's computer. This is useful, but it can be risky if you share the wrong port.
 
-For security purposes, only servers running on ports you specify are available to other guests. Fortunately, it's easy to add one as the collaboration session **host**. Here's how:
+For security reasons, only servers running on ports that you specify are available to other guests. It's easy for the collaboration session host to add one. Here's how:
 
-1. Open the Live Share custom tab in the VS Code activity bar or the Live Share Explorer view, and select the "Share server..." entry or click the icon.
+1. On the **VS Live Share** tab or the Live Share **Explorer** tab, select the **Share server** item or the button:
 
-    ![VS Code share local server](../media/vscode-share-local-server-viewlet.png)<br />
+    ![Screenshot that shows the Share server button.](../media/vscode-share-local-server-viewlet.png)
 
-1. Enter the port number the server is running on and optionally a name.
+1. Enter the number of the port the server is running on. Optionally, enter a name:
 
-    ![Screen shot of port number prompt](../media/vscode-enter-port.png)<br />
+    ![Screenshot that shows the port number prompt.](../media/vscode-enter-port.png)
 
-That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port was already occupied)!
+That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port is already being used).
 
-If the port is already in use on the guest's machine, a different one is automatically selected. Fortunately, as a guest, you can see a list of currently shared ports (by name if specified) in the Live Share Explorer view or custom tab in the VS Code activity bar, and look under the shared servers list. Selecting an entry opens that server in your browser. You can also right click and select the option to copy the link to the server to the clipboard.
+If the port is already being used on the guest's computer, a different one is automatically selected. As a guest, you can see a list of currently shared ports (by name if specified) in the Live Share Explorer view or custom tab in the VS Code activity bar, and look under the shared servers list. Selecting an entry opens that server in your browser. You can also right click and select the option to copy the link to the server to the clipboard.
 
 ![VS Code access local server](../media/vscode-access-shared-server-viewlet.png)<br />
 
