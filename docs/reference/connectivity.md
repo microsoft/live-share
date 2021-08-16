@@ -25,7 +25,7 @@ This article summarizes the connectivity requirements for Visual Studio Live Sha
 
 ## Sign in
 
-You can sign into Live Share using any [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory) backed work or school account, a [Microsoft account](https://account.microsoft.com/account), or a [GitHub profile](https://github.com/). Typically sign-in URLs for these are open in most organizations given the number of public facing products that use them, but if not, contact your network administrator about opening up `login.microsoftonline.com` and/or `github.com` in addition to the domains [listed below](#requirements-for-connection-modes).
+You can sign into Live Share using any [Azure Active Directory](https://azure.microsoft.com/services/active-directory) backed work or school account, a [Microsoft account](https://account.microsoft.com/account), or a [GitHub profile](https://github.com/). Typically sign-in URLs for these are open in most organizations given the number of public facing products that use them, but if not, contact your network administrator about opening up `login.microsoftonline.com` and/or `github.com` in addition to the domains [listed below](#requirements-for-connection-modes).
 
 > [!NOTE]
 > On-prem AD (ADFS) accounts and on-prem GitHub Enterprise accounts are not currently supported [(up-vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/341).
