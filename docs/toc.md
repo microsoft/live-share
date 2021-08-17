@@ -11,7 +11,7 @@
 # How-to Guides: VS Code
 ## [Overview](use/vscode.md)
 ## [Install](use/vscode.md)
-## [Sign-in](use/vscode.md#sign-into-live-share)
+## [Sign-in](use/vscode.md#sign-in-to-live-share)
 ## [Share a project](use/vscode.md#start-and-stop-a-session)
 ## [Join a session](use/vscode.md#join-and-leave-a-session)
 ## [Co-edit](use/vscode.md#co-editing)
