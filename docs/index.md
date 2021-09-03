@@ -34,9 +34,10 @@ Before you begin, you need to be sure you have a version of Visual Studio or Vis
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
-|-|-|
 |Product|Installation steps|
+|-------------|------------|
 |<img src="media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/>|**Visual Studio Code (1.22.0+)**<br />1. Install [Visual Studio Code](https://code.visualstudio.com/) for Windows (7, 8.1, or 10), macOS **(High Sierra 10.13+)**</b>, 64-bit Linux ([details](use/vscode.md))<br />2. Download and install the Visual Studio Live Share extension from the marketplace. <br />3. Reload and wait for dependencies to download and install (see status bar).<br />4. **Linux**: If prompted to [install libraries](reference/linux.md#install-linux-prerequisites.md), click install, enter password, restart VS Code when done.<br /><a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png" alt="Download button"></a>|
+|a|a|
 
 tbd
 
