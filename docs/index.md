@@ -34,7 +34,7 @@ Before you begin, you need to be sure you have a version of Visual Studio or Vis
 
 After that, downloading and installing the Visual Studio Live Share extension is a breeze:
 
-[!INCLUDE [installation](includes\installation.md)]
+[!INCLUDE [installation](includes/installation.md)]
 
 That's all there is to it! You should now see a sign in status bar in the lower left in VS Code and a share button in the upper right in Visual Studio. Check out the rest of the documentation for what to do next!
 

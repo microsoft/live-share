@@ -45,6 +45,9 @@ Each time you start a new collaboration session, Live Share generates a **new un
 
 As a host, you are automatically notified whenever a guest joins the collaboration session.
 
+![]()
+![]()
+
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">

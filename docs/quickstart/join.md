@@ -28,7 +28,7 @@ Just follow these steps to join a collaboration session.
 
 Installing the extension is easy. Just follow these steps:
 
-[!INCLUDE [installation](includes\installation.md)]
+[!INCLUDE [installation](../includes/installation.md)]
 
 ## 2. [Optional] Join as a read-only guest in VS Code
 
@@ -56,18 +56,16 @@ This will launch your browser, and you can choose a Microsoft or GitHub account 
 
 ## 3. Sign in
 
-After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process, or can join the session as a read-only guest. Click the "Live Share" status bar item (VS Code) / "sign in" button (VS) to get started.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process, or can join the session as a read-only guest. Click the "Live Share" status bar item (VS Code) or "sign in" button (VS) to get started.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item" />
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>
-    </td>
-</tr>
-</table>
+In Visual Studio:
+
+![Visual Studio Code sign in status bar item](../media/vscode-sign-in-button-new.png)
+
+In Visual Studio Code:
+
+![Visual Studio sign in button](../media/vs-sign-in-button.png)
+
 
 In **VS Code**, your browser will launch while a notification will appear launch asking you to sign in. Complete the sign in process in your browser, then simply close the browser when done.
 

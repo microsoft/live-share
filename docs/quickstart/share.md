@@ -30,7 +30,7 @@ Change the instructions to Install extension for VS Code and in-tool for VS?
 
 Installing the extension is easy. Just follow these steps:
 
-[!INCLUDE [installation](includes\installation.md)]
+[!INCLUDE [installation](../includes/installation.md)]
 
 ## 2. Sign in
 
