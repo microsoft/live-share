@@ -58,14 +58,13 @@ This will launch your browser, and you can choose a Microsoft or GitHub account 
 
 After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. If you skip this step, you are asked to sign in during the join process, or can join the session as a read-only guest. Click the "Live Share" status bar item (VS Code) or "sign in" button (VS) to get started.
 
-In Visual Studio:
+In Visual Studio Code:
 
 ![Visual Studio Code sign in status bar item](../media/vscode-sign-in-button-new.png)
 
-In Visual Studio Code:
+In Visual Studio:
 
 ![Visual Studio sign in button](../media/vs-sign-in-button.png)
-
 
 In **VS Code**, your browser will launch while a notification will appear launch asking you to sign in. Complete the sign in process in your browser, then simply close the browser when done.
 

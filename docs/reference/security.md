@@ -45,19 +45,13 @@ Each time you start a new collaboration session, Live Share generates a **new un
 
 As a host, you are automatically notified whenever a guest joins the collaboration session.
 
-![]()
-![]()
+In Visual Studio Code:
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-join-notification.png" width="100%" alt="Visual Studio Code join notification" />
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-join-notification.png" width="100%" alt="Visual Studio join notification"/>
-    </td>
-</tr>
-</table>
+![Visual Studio Code join notification](../media/vscode-join-notification.png)
+
+In Visual Studio:
+
+![Visual Studio join notification](../media/vs-join-notification.png)
 
 Better still, the notification gives you the ability to remove a guest that has joined if for some reason you do not know them. (For example, if you accidentally posted your link on a company-wide chat system and a random employee joined.) Simply click on the "Remove" button in the notification that appears and they will be ejected from the collaboration session.
 
