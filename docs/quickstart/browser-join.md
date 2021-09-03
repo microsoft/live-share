@@ -4,7 +4,7 @@ description: "Introducing joining from the browser"
 ms.date: 03/18/2020
 ms.reviewer: ""
 ms.suite: ""
-ms.topic: "quickstart"
+ms.topic:  "quickstart"
 author: "fubaduba"
 ms.author: "fishah"
 manager: "joncart"

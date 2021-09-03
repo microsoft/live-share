@@ -5,7 +5,7 @@ ms.custom:
 ms.date: 06/27/2018
 ms.reviewer: ""
 ms.suite: ""
-ms.topic: "reference"
+ms.topic:  "reference"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
