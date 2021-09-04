@@ -37,18 +37,15 @@ Installing the extension is easy. Just follow these steps:
 <!--
 Re-write the grammar here- run on sentence does not make sense. Change screen shots. There is another way of signing in as well- what if a user goes directly to the start collaboration. 
 -->
-After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. Simply click the "Live Share" status bar item (VS Code) / "Sign in" button (VS) to get started.
+After installing the Live Share extension, restarting, and waiting for dependencies to finish installing (VS Code), you'll want to sign in to let other participants know who you are. Simply click the "Live Share" status bar item (VS Code) or "Sign in" button (VS) to get started.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>
-    </td>
-</tr>
-</table>
+In Visual Studio Code:
+
+![Visual Studio Code sign in status bar item](../media/vscode-sign-in-button-new.png)
+
+In Visual Studio:
+
+![Visual Studio sign in button](../media/vs-sign-in-button.png)
 
 In **VS Code**, your browser will launch while a notification will appear launch asking you to sign in. Complete the sign in process in your browser, then simply close the browser when done.
 
@@ -74,16 +71,13 @@ By default, Live Share **hides** any files/folders referenced in .gitignore file
 -->
 Next, simply click "Live Share" within your tool and an invite link is automatically copied to your clipboard.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-share-button-new.png" width="100%" alt="Visual Studio Code share status bar item" />
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-share-button.png" width="100%" alt="Visual Studio share button"/>
-    </td>
-</tr>
-</table>
+In Visual Studio Code:
+
+![Visual Studio Code share status bar item](../media/vscode-share-button-new.png)
+
+In Visual Studio:
+
+![Visual Studio share button](../media/vs-share-button.png)
 
 > [!NOTE]
 > You may be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured "direct mode" to improve performance when the person you are working with is on the same network as you are. See [change the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
@@ -94,16 +88,13 @@ Once you start your collaboration session, you can set the session to be read-on
 
 After sharing, you will get a notification that the invite link has been copied to your clipboard. You can then select the option to make the session read-only.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-read-only-toast.png" width="100%" alt="Visual Studio Code read-only option" />
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-read-only-notification.png" width="100%" alt="Visual Studio read-only option"/>
-    </td>
-</tr>
-</table>
+In Visual Studio Code:
+
+![Visual Studio Code read-only option](../media/vscode-read-only-toast.png)
+
+In Visual Studio:
+
+![Visual Studio read-only option](../media/vs-read-only-notification.png)
 
 In **VS Code**, you can also start a read-only session from the Live Share viewlet tab.
 

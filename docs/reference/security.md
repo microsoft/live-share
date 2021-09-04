@@ -81,9 +81,13 @@ If you would like to prevent signed in guests from joining your collaboration se
 
 From this point forward, you'll be asked to approve each guest that joins.
 
-|Visual Studio Code|Visual Studio|
-|--------------|------------|
-|![Visual Studio Code join approval request](../media/vscode-join-approval.png)|![Visual Studio join approval request](../media/vs-join-approval.png)|
+ In Visual Studio Code:
+
+![Visual Studio Code join approval request](../media/vscode-join-approval.png)
+
+In Visual Studio:
+
+![Visual Studio join approval request](../media/vs-join-approval.png)
 
 As a guest, if you join a session where the host has this setting enabled, you'll be notified in the status bar or join dialog that Live Share is waiting on the host to approve.
 
