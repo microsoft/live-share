@@ -5,7 +5,7 @@ ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
-ms.topic:  "quickstart"
+ms.topic: "quickstart"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
