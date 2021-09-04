@@ -6,7 +6,7 @@ ms.custom:
 ms.date: 07/16/2021
 ms.reviewer: ""
 ms.suite: ""
-ms.topic:  "conceptual"
+ms.topic: "conceptual"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"

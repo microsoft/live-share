@@ -5,7 +5,7 @@ ms.custom:
 ms.date: 05/21/2018
 ms.reviewer: ""
 ms.suite: ""
-ms.topic:  "reference"
+ms.topic: "reference"
 author: "lostintangent"
 ms.author: "joncart"
 manager: "AmandaSilver"
