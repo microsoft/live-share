@@ -5,7 +5,7 @@ ms.custom:
 ms.date: 12/17/2018
 ms.reviewer: ""
 ms.suite: ""
-ms.topic: "reference"
+ms.topic:  "reference"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
@@ -45,16 +45,13 @@ Each time you start a new collaboration session, Live Share generates a **new un
 
 As a host, you are automatically notified whenever a guest joins the collaboration session.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-join-notification.png" width="100%" alt="Visual Studio Code join notification" />
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-join-notification.png" width="100%" alt="Visual Studio join notification"/>
-    </td>
-</tr>
-</table>
+In Visual Studio Code:
+
+![Visual Studio Code join notification](../media/vscode-join-notification.png)
+
+In Visual Studio:
+
+![Visual Studio join notification](../media/vs-join-notification.png)
 
 Better still, the notification gives you the ability to remove a guest that has joined if for some reason you do not know them. (For example, if you accidentally posted your link on a company-wide chat system and a random employee joined.) Simply click on the "Remove" button in the notification that appears and they will be ejected from the collaboration session.
 
@@ -84,16 +81,13 @@ If you would like to prevent signed in guests from joining your collaboration se
 
 From this point forward, you'll be asked to approve each guest that joins.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-join-approval.png" width="100%" alt="Visual Studio Code join approval request" />
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-join-approval.png" width="100%" alt="Visual Studio join approval request"/>
-    </td>
-</tr>
-</table>
+ In Visual Studio Code:
+
+![Visual Studio Code join approval request](../media/vscode-join-approval.png)
+
+In Visual Studio:
+
+![Visual Studio join approval request](../media/vs-join-approval.png)
 
 As a guest, if you join a session where the host has this setting enabled, you'll be notified in the status bar or join dialog that Live Share is waiting on the host to approve.
 

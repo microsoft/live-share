@@ -5,7 +5,7 @@ ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
 ms.suite: ""
-ms.topic: "reference"
+ms.topic:  "reference"
 author: "chuxel"
 ms.author: "clantz"
 manager: "AmandaSilver"
@@ -37,7 +37,7 @@ Some of our reference docs may have what you need!
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
 - [Troubleshooting](troubleshooting.md)
-- [FAQ](faq.md)
+- [FAQ](faq.yml)
 
 ## Issues and Requests
 

@@ -5,7 +5,7 @@ ms.custom:
 ms.date: 09/16/2019
 ms.reviewer: ""
 ms.suite: ""
-ms.topic: "conceptual"
+ms.topic:  "conceptual"
 author: "fubaduba"
 ms.author: "fishah"
 manager: "JonathanCarter"
