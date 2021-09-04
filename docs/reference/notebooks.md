@@ -4,7 +4,7 @@ description: "Detailed information on using Live Share for notebook collaboratio
 ms.date: 01/26/2021
 ms.reviewer: ""
 ms.suite: ""
-ms.topic:  "reference"
+ms.topic: "reference"
 author: "lostintangent"
 ms.author: "joncart"
 manager: "simoncal"
