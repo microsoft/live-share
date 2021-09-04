@@ -112,16 +112,13 @@ If the guest you invited has questions, the [Quickstart: Join your first session
 
 By default, guests automatically join your collaboration session and you are notified when they're ready to work with you.
 
-<table style="border: none;">
-<tr style="border: none;">
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-join-notification.png" width="100%" alt="Visual Studio Code join notification" />
-    </td>
-    <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vs-join-notification.png" width="100%" alt="Visual Studio join notification"/>
-    </td>
-</tr>
-</table>
+In Visual Studio Code:
+
+![Visual Studio Code join notification"](../media/vscode-join-notification.png)
+
+In Visual Studio:
+
+![Visual Studio join notification](../media/vs-join-notification.png)
 
 You can opt to require an explicit "approval" for anyone joining instead. If you have this setting turned on, a notification prompts you to approve the guest when they try to join your session.
 
