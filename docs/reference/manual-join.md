@@ -1,6 +1,6 @@
 ---
 title: "Manual join -  Visual Studio Live Share | Microsoft Docs"
-description: "Information on joining a collaboration session manually in Visual Studio Live share."
+description: "Information on joining a collaboration session manually in Visual Studio Live Share."
 ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
