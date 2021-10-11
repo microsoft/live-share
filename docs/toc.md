@@ -19,6 +19,7 @@
 ## [Co-debug](use/vscode.md#co-debugging)
 ## [Share a server](use/vscode.md#share-a-server)
 ## [Share a terminal](use/vscode.md#share-a-terminal)
+## [Enable accessibility features](use/vscode.md#enable-accessibility-features)
 # How-to Guides: Visual Studio
 ## [Overview](use/vs.md)
 ## [Install](use/vs.md#installation)

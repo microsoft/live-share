@@ -513,6 +513,49 @@ If multiple terminals are shared, or your focus is in a different tab, you can b
 
 To end your terminal session, simply type exit, close the terminal window, or click the "Unshare terminal" icon in the Live Share Explorer view or custom tab and everyone will be disconnected.
 
+## Enable accessibility features
+
+By default, Live Share keeps you aware of what other participants in the session are doing with visual indicators - a cursor to match each participant's location, a shared viewport in follow mode, synchronized edits, and so on. Live Share also has a setting to surface this information audibly, `liveshare.accessibility.accessibilityFeaturesEnabled`. With accessibility features enabled, Live Share plays various sounds and messages to keep you aware of what other participants are doing in a non-disruptive way.
+
+### General information
+
+At all times, Live Share will
+
+- Play a sound when you follow someone and announce their name and position.
+- Play a sound when you unfollow someone and announce their name.
+- Announce when a guest joins or leaves the session.
+
+### Outside of follow mode
+
+When you are not following another participant
+
+- If someone edits on your line, Live Share will play an edit sound and announce the name of the participant editing on your line. For subsequent edits, Live Share will play the edit sound with no announcement. Live Share will announce when they leave your line.
+- If someone edits nearby, Live Share will play an edit sound and announce the name of the participant that is editing nearby. For subsequent edits, Live Share will play a sound indicating the participant is editing nearby with volume proportional to how near they are.
+
+### Follow mode
+
+When you are following another participant, Live Share provides you more information about their activity. Live Share will
+
+- Play an edit sound when they type.
+- Play a sound when they change position due to a command, such as Go to Definition. 
+- Play a sound when they change position via the keyboard. For a single line change, Live Share will play a key click, followed by a bend sound that indicates the direction of the change, followed by an announcement of the new line. For a multi-line change, Live Share will play a bend sound that indicates the direction of the change, followed by an announcement of the new line.
+- Play a bend sound when they change position via the keyboard that indicates the direction of the change, followed by an announcement of the new line.
+- Announce that they made a selection. For single line selections, Live Share will read the selection contents. For multi-line selections, Live Share will announce the selected lines.
+- Announce when they switch files, indicating the new file name.
+- Play a scrolling sound when they scroll, followed by a bend sound that indicates the direction of the change, followed by an announcement of the new visible range.
+
+### Customization
+
+Live Share provides several additional settings to customize these audio cues.
+
+- `liveshare.accessibility.volume` - sets the volume of sounds and announcements.
+- `liveshare.accessibility.prosodyRate` - sets the prosody of announcements.
+- `liveshare.accessibility.voice` - sets the voice used for announcements. Currently supports 37 different voices, spanning genders, ages, and accents.
+
+### Cursor tethering
+
+With accessibility features enabled, when following another participant Live Share will keep your cursor locked to the same position that the followed participant's cursor is at to make it easier to use the screen reader.
+
 ## Session states
 
 After you have started or joined collaboration session and have access to shared content, the Visual Studio Live Share status bar items update their appearance to reflect the state of the active collaboration session.
