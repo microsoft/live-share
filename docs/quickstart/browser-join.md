@@ -18,27 +18,35 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# ✨[Preview]✨ Joining a Live Share session from the browser
+# Live Share in Visual Studio Code for the Web
 
-All Live Share collaboration sessions now have the ability to be joined from the browser. This means that a guest to your session no longer needs to install VS Code or Visual Studio to join your session. This is especially helpful for all those instances when you want someone to get into your session quickly, or for students who often don't have the desktop clients installed.
+Visual Studio Code is now available in the [browser](https://vscode.dev). This brings to you a development environment tha runs completely in the browser!
+From any modern browser (like Edge and Chrome), you will be able to access the local file system, or upload and download individual files. This will unlock use-cases like local file viewing and editing, taking notes in Markdown, building client-side HTML, Javascript and CSS applications with browser based tools for debugging.
+Live Share will be available for collaboration from this entirely new experience for **both** hosting and joining sessions from `https://vscode.dev/liveshare`.
 
 
-# How to join a Live Share session from the browser 
+## How to host a Live Share session from the browser?
 
-### 1. Host: starts session 
-To begin, the host should go to either Visual Studio or VS Code to start a collaboration session. When the host shares a folder or project.
+To start a Live Share session from the browser, you need the Live Share extension installed. An easy way to do this is by launching `https://vscode.dev/liveshare`. This will automatically install the extension for you in the web editor. You can also always download the extension the way you would in Visual Studio Code on the desktop by going to *Extensions -> Live Share*
 
-![Animation of starting session](https://user-images.githubusercontent.com/51928518/76938928-b814e300-68b4-11ea-923e-cefabd4688c6.gif)
+>[!Note] You can turn on *settings sync* on Visual Studio Code to get all the compatible extensions in the browser client.
 
-### 2. Guest: uses shared link to join from browser 
-Live Share will generate a join link that can be shared with the guest. The guest can now use this link to be navigated to a web page, which now gives them an option to continue to the browser.
+You can now start a Live Share session from an empty workspace. However, we recommend you open your folder or repository of choice before sharing your context with someone. 
 
-![Animation of joining a session](https://user-images.githubusercontent.com/51928518/76941137-b8af7880-68b8-11ea-8228-41fdf4afd3ef.gif)
+![Screenshot of opening folder in web editor](../media/vscode-web-open-folder.png)
 
-### 3. Guest: Enjoys full fidelity collaboration experience from browser 
-Once the guest has joined the session, they can carry on just like they would if they were collaborating from the desktop clients.
+The image above shows a local folder being open in the web editor. You can also open a GitHub repository or a GitHub pull request.
 
-![Animation of full fidelity](https://user-images.githubusercontent.com/51928518/76942009-40e24d80-68ba-11ea-885c-6eb1069ed550.gif)
+You can now go to the Live Share tab and click `Share` to start a collaboration session.
+
+Live Share will generate a join link that can be shared with the guest.
+
+![Screenshot of Live Share session join link generated](../media/vscode-web-join-link.png)
+
+
+## How to join a Live Share session from the browser?
+
+All Live Share sessions start in Visual Studio Code in the Web, when you click on the link shared by the host. Once in the web editor, you can launch the desktop app if you'd like more features of the editor during your collaboration session.
 
 <!---
 # Frequently asked questions 
