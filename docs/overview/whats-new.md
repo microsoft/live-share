@@ -18,10 +18,10 @@ The following features are new in Live Share.
 
 ## Integrated chat
 
-Live Share now has integrated chat for [Visual Studio Code](../use/vscode.md) and [Live Share web.](../quickstart/browser-join.md). This means you can chat with your peers from within your IDE.
+Live Share now has integrated chat for [Visual Studio Code](../use/vscode.md) and [Live Share web](../quickstart/browser-join.md). This means you can chat with your peers from within your IDE.
 
 >[!TIP]
->Live Share previously provided a companion extension. This meant users with that extension could use chat within Live Share. This extension has now been depreciated, and all users of Live Share in VS Code and the web client, will have a chat service.
+>Live Share previously provided a companion extension. This meant users with that extension could use chat within Live Share. This extension has now been deprecated, and all users of Live Share in VS Code and the web client, will have a chat service.
 
 ## Common questions
 
