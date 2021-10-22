@@ -552,6 +552,10 @@ Live Share provides several additional settings to customize these audio cues.
 - `liveshare.accessibility.prosodyRate` - sets the prosody of announcements.
 - `liveshare.accessibility.voice` - sets the voice used for announcements. Currently supports 37 different voices, spanning genders, ages, and accents.
 
+Live Share also contributes a command `liveshare.accessibility.setOutputDevice` that allows you to change the output device used to play audio cues.
+
+> This command is currently only available on Windows.
+
 ### Cursor tethering
 
 With accessibility features enabled, when following another participant Live Share will keep your cursor locked to the same position that the followed participant's cursor is at to make it easier to use the screen reader.
