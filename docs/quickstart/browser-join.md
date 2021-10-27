@@ -25,7 +25,6 @@ Visual Studio Code is now available in the [browser](https://vscode.dev). This b
 From any modern browser (like Edge and Chrome), you will be able to access the local file system, or upload and download individual files. This will unlock use-cases like local file viewing and editing, taking notes in Markdown, building client-side HTML, Javascript and CSS applications with browser based tools for debugging.
 Live Share will be available for collaboration from this entirely new experience for **both** hosting and joining sessions from `https://vscode.dev/liveshare`.
 
-## How to join a Live Share session from the browser
 
 
 ## How to host a Live Share session from the browser?
