@@ -23,11 +23,12 @@ The following are troubleshooting tips related to installing Visual Studio Live 
 
 | Tool | Problem | Resolution / Workaround |
 |------|---------|------------|
-|VS Code <strong>(macOS)</strong>| A warning appears telling you your <strong>macOS is not supported anymore by .NET Core <strong>| This warning appears is due to a recent [update made by .NET Core](/dotnet/core/install/dependencies?tabs=netcore31&pivots=os-macos) that no longer supports any versions lower than <strong>High Sierra (10.13+).</strong> To enable the Live Share extension, please update you OS.
+|VS Code <strong>(macOS)</strong>| A warning appears telling you your <strong>macOS is not supported anymore by .NET Core <strong>| This warning appears is due to a recent [update made by .NET Core](https://docs.microsoft.com/en-us/dotnet/core/install/dependencies?tabs=netcore31&pivots=os-macos) that no longer supports any versions lower than <strong>High Sierra (10.13+).</strong> To enable the Live Share extension, please update your OS.
 | VS | The extension installer <strong>cannot find a version of Visual Studio</strong> to use when trying to install the Visual Studio Live Share extension. | Visual Studio Live Share requires **Visual Studio 2017 version 15.6** or higher for both hosts and guests. Install the latest stable [update of Visual Studio 2017](https://visualstudio.com/vs/) and retry. |
 | VS Code | A "**Dependencies could not be installed**" error appears the while extension is **finishing installation** on first start or you get errors about **missing or already present files**. | Verify you are on a **good network connection**. If you are, you could be running into a **proxy or firewall** issue. See [connectivity troubleshooting](#connectivity). <br /><br />|
 | VS Code | Installing the Visual Studio Live Share extension from the marketplace <strong>installs it in the stable/insiders version of VS Code</strong> instead of the version I want. | Start VS Code stable or insiders depending on your preference, click on the "extensions" tab, search for "Visual Studio Live Share" and install from there. |
 | VS Code (**Linux**) | The Live Share extension does not activate and **no status bar items appear** after installing the extension on **Linux**. | Visual Studio Live Share depends on .NET Core 2.0 which has a number of Linux prerequisites that may not be met on certain distributions of Linux by default. See [here for details](reference/linux.md#install-linux-prerequisites) on what should be installed. |
+
 
 ## Sign in
 
@@ -47,7 +48,7 @@ The following are troubleshooting tips for sign in problems.
 
 ## Share and Join
 
-The following are troubleshooting tips for sign in problems.
+The following are troubleshooting tips for share and join problems.
 
 | Tool | Problem | Resolution / Workaround |
 |------|----------------|------------|
@@ -57,6 +58,7 @@ The following are troubleshooting tips for sign in problems.
 | All | <strong>Join:</strong> You would prefer to <strong>paste the join link directly into Visual Studio / VS Code</strong> rather than clicking on the web link. | See [join manually](reference/manual-join.md). |
 | All | <strong>Join:</strong> You see a message saying, "**the owner of the workspace seems to be offline**," when joining via the browser. | Possible workarounds:<br /><ul><li>Try [joining manually](reference/manual-join.md). We have seen issues with cross-region (e.g. east and west US) joins due to service issues that do not affect manual joins.</li><li>Live Share may be unable to route directly to the host when running in "auto" connection mode. Try [relay mode](reference/connectivity.md).</li></ul>See [connectivity troubleshooting](#connectivity) for more possibilities |
 | VS Code | <strong>Join:</strong> You joined via the browser <strong>before signing in</strong>, were not prompted to sign in</strong>, and the join never completed. |  This is a [known bug](https://github.com/MicrosoftDocs/live-share/issues/167). Click the sign in status bar item to sign in and then join again. |
+| VS Code |  <strong>Share/Join:</strong> Nothing happens when you click the "Share" and "Join" buttons. | Run the command __> Live Share: Repair Installation__ in the command palette.
 
 ## Connectivity
 

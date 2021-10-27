@@ -398,8 +398,6 @@ Because following is linked to an editor group, you can use split view or grid l
 ![Screenshot that shows two editor groups in split view.](../media/vscode-follow-split.png)
 
 To make it easy to switch out of follow mode and start editing on your own, you'll automatically stop following if one of these actions occurs:
-
-- You start editing the currently active file.
 - You open a different file.
 - You close the currently active file.
 
