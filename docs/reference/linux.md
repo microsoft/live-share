@@ -35,7 +35,9 @@ If you see a message indicating the script does not support your distribution, s
 
 If you **prefer not to have VS Code run the command for you**, you can also opt to re-run the very latest version of this script at any time manually by using the following command in a Terminal window:
 
-    wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
+```
+wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
+```
 
 ## Tips by distribution
 
@@ -103,17 +105,23 @@ Libraries may be installed on Debian/Ubuntu based distributions by running `sudo
 
 For Ubuntu based distributions including Mint, run:
 
-    sudo apt install libssl1.0.0 libkrb5-3 zlib1g libicu[0-9][0-9] gnome-keyring libsecret-1-0 desktop-file-utils x11-utils
+```
+sudo apt install libssl1.0.0 libkrb5-3 zlib1g libicu[0-9][0-9] gnome-keyring libsecret-1-0 desktop-file-utils x11-utils
+```
 
 For Debian 9 and non-Ubuntu downstream distributions, run:
 
-    sudo apt install libssl1.0.2 libkrb5-3 zlib1g libicu57 gnome-keyring libsecret-1-0 desktop-file-utils x11-utils
+```
+sudo apt install libssl1.0.2 libkrb5-3 zlib1g libicu57 gnome-keyring libsecret-1-0 desktop-file-utils x11-utils
+```
 
 ### Fedora / CentOS / RHL
 
 Libraries may be installed on Fedora/CentOS/RHL based distributions by running `sudo yum install <library-name>` in a terminal. For example, this will install everything:
 
+```
     sudo yum install openssl-libs krb5-libs zlib libicu libsecret gnome-keyring desktop-file-utils xprop
+```
 
 ## VS Code OSS Issues
 
@@ -132,11 +140,13 @@ If the `extensionAllowedProposedApi` property is missing or you do not see "ms-v
 
 As a **workaround**, you can add the following into the product.json:
 
-        "extensionAllowedProposedApi": [
-          "ms-vsliveshare.vsliveshare",
-          "ms-vscode.node-debug",
-          "ms-vscode.node-debug2"
-     ]
+```json
+"extensionAllowedProposedApi": [
+  "ms-vsliveshare.vsliveshare",
+  "ms-vscode.node-debug",
+  "ms-vscode.node-debug2"
+]
+```
 
 See [above](#tips-for-community-supported-distros) for additional details on whether the distribution you are using is known to work.
 

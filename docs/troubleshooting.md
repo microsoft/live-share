@@ -13,15 +13,9 @@ ms.workload:
   - "liveshare"
 ---
 
-<!--
-Copyright © Microsoft Corporation
-All rights reserved.
-Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
--->
-
 # Troubleshooting Visual Studio Live Share
 
-This article covers troubleshooting tips, workarounds, and answers for common problems and questions. You may also want to take a look at the [FAQ](faq.md). 
+This article covers troubleshooting tips, workarounds, and answers for common problems and questions. You may also want to take a look at the [FAQ](faq.yml). 
 
 ## Installation / tool requirements
 
