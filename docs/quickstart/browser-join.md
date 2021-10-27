@@ -37,7 +37,7 @@ To begin, the host should go to either Visual Studio or VS Code to start a colla
 
 
 > [!NOTE]
-> You can turn on *settings sync* on Visual Studio Code to get all the compatible extensions in the browser client.
+You can turn on *settings sync* on Visual Studio Code to get all the compatible extensions in the browser client.
 
 
 You can now start a Live Share session from an empty workspace. However, we recommend you open your folder or repository of choice before sharing your context with someone. 
