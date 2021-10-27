@@ -1,6 +1,8 @@
 ---
-title: "Platform and language support"
-description: "An overview of platform and language support for Visual Studio Live share."
+
+title: "Platform and language support  | Microsoft Docs"
+description: "An overview of platform and language support for Visual Studio Live Share."
+
 ms.custom:
 ms.date: 04/25/2018
 ms.reviewer: ""

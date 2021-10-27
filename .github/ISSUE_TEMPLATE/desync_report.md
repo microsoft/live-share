@@ -3,6 +3,8 @@ name: Desync
 about: Please provide information about the desync you encountered to help us resolve the problem
 ---
 
+**Before filing a new issue, check that it's not already captured by one in [this list](https://github.com/MicrosoftDocs/live-share/issues/4260)**
+
 **Product and Version** [VS/VSCode]:
 **OS Version** [macOS/Windows/Linux]:
 **Live Share Extension Version**:
