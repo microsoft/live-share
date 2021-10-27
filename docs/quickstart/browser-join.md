@@ -36,7 +36,8 @@ To start a Live Share session from the browser, you need the Live Share extensio
 To begin, the host should go to either Visual Studio or VS Code to start a collaboration session. When the host shares a folder or project.
 
 
->[!Note] You can turn on *settings sync* on Visual Studio Code to get all the compatible extensions in the browser client.
+> [!NOTE]
+> You can turn You can turn on *settings sync* on Visual Studio Code to get all the compatible extensions in the browser client.
 
 
 You can now start a Live Share session from an empty workspace. However, we recommend you open your folder or repository of choice before sharing your context with someone. 
