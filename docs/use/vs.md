@@ -299,15 +299,15 @@ They can then just click "Follow" right from the notification when they're ready
 
 ## Co-debugging
 
-Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, it also you and other participants in your session the ability to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
+Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, it also enables you and other participants in your session to investigate issues that may be environment specific by providing a shared debugging session on the host's machine.
 
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. You should also be aware that Console/REPL access means that participants can execute commands on your machine so you should only co-debug with those you trust. As a guest, it is also important to realize you may not be able to follow the debugger as it step into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you may want to restrict which files guests are able to access in your project via a .vsls.json file. You should also be aware that Console/REPL access means that participants can execute commands on your machine so you should only co-debug with those you trust. As a guest, it is also important to realize that you may not be able to follow the debugger as it steps into certain restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
-Using it simple. The collaboration session host simply needs to start debugging via the usual means in Visual Studio.
+Using it is simple. The collaboration session host simply needs to start debugging via the usual means in Visual Studio.
 
 ![VS Debug button](../media/vs-debug-button.png)
 
-Once the debugger attaches on the host's side, all guests are also automatically attached as well. While there is one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
+Once the debugger attaches on the host's side, all guests are also automatically attached as well. While there is only one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
 
 > [!TIP]
 > If you want to change when and how co-debugging happens, you can change the default behaviors via settings in **Tools > Options > Live Share**.
@@ -319,10 +319,10 @@ Anyone can step through the debugging process which enables seamless switching b
 > [!NOTE]
 > See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
 
-Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
+Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
 > [!NOTE]
-> While in a read-only collaboration session, a guest will not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables.
+> While in a read-only collaboration session, guests will not be able to step through the debugging process; they can however still add or remove breakpoints and inspect variables.
 
 > [!TIP]
 > You can also participate in VS Code debugging sessions from Visual Studio and vice versa! Check out the [Visual Studio instructions](vscode.md#co-debugging) on co-debugging for more information.
