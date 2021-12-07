@@ -18,6 +18,7 @@
 ## [Follow and focus](use/vscode.md#follow-along-with-a-collaborator)
 ## [Co-debug](use/vscode.md#co-debugging)
 ## [Share a server or terminal](use/vscode.md#share-servers-or-terminals)
+## [Enable accessibility features](use/vscode.md#enable-accessibility-features)
 # How-to Guides: Visual Studio
 ## [Overview](use/vs.md)
 ## [Install](use/vs.md#installation)
