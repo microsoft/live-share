@@ -1,11 +1,11 @@
 ---
-title: "Joining from the browser  | Microsoft Docs"
-description: "Introducing joining from the browser"
+title: "Live Share in Visual Studio Code for the Web | Microsoft Docs"
+description: "Live Share in Visual Studio Code for the Web"
 ms.date: 03/18/2020
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "quickstart"
-author: "fishah"
+author: "fubaduba"
 ms.author: "fishah"
 manager: "joncart"
 ms.workload: 
@@ -18,45 +18,52 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# ✨[Preview]✨ Joining a Live Share session from the browser
+# Live Share in Visual Studio Code for the Web
 
-All Live Share collaboration sessions now have the ability to be joined from the browser. This means that a guest to your session no longer needs to install VS Code or Visual Studio to join your session. This is especially helpful for all those instances when you want someone to get into your session quickly, or for students who often don't have the desktop clients installed.
+[Visual Studio Code for the Web](https://code.visualstudio.com/blogs/2021/10/20/vscode-dev) allows you to visit https://vscode.dev, and open a local folder, or GitHub/Azure DevOps repository, directly from your browser! This enables you to edit code from anywhere, and on any device, without needing to install anything in order to get started. Furthermore, since collaboration is such a key part of many developer's workflow, the [Live Share extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) fully supports Visual Studio Code for the Web, so that you can work alongside your peers, in a more lightweight and simplified way.
 
+## Getting Started
 
-# How to join a Live Share session from the browser 
+To start a Live Share session from the browser, simply perform the following steps:
 
-### 1. Host: starts session 
-To begin, the host should go to either Visual Studio or VS Code to start a collaboration session. When the host shares a folder or project.
+1. Install the [Live Share extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+2. Click the `Live Share` button on the status bar. If prompted, sign in with either a GitHub or Microsoft identity
+3. Share the session URL with the developers you want to collaborate with!
 
-![Animation of starting session](https://user-images.githubusercontent.com/51928518/76938928-b814e300-68b4-11ea-923e-cefabd4688c6.gif)
+Once someone clicks that link, their browser will launch, and they'll be asked whether they'd like to join the session from the Web or Visual Studio/VS Code. They can choose to authenticate with their GitHub or Microsoft identity, or continue as an anonymous guest.
 
-### 2. Guest: uses shared link to join from browser 
-Live Share will generate a join link that can be shared with the guest. The guest can now use this link to be navigated to a web page, which now gives them an option to continue to the browser.
+## Joining from the Desktop
 
-![Animation of joining a session](https://user-images.githubusercontent.com/51928518/76941137-b8af7880-68b8-11ea-8228-41fdf4afd3ef.gif)
+While Visual Studio Code for the Web provides a lightweight, installation-free experience, many developers already have a desktop client installed, and may prefer to collaborate from there. As a result, the Live Share extension makes it easy to join a collaboration session from the desktop, in addition to the vscode.dev-based client.
 
-### 3. Guest: Enjoys full fidelity collaboration experience from browser 
-Once the guest has joined the session, they can carry on just like they would if they were collaborating from the desktop clients.
+### Opening from Web
 
-![Animation of full fidelity](https://user-images.githubusercontent.com/51928518/76942009-40e24d80-68ba-11ea-885c-6eb1069ed550.gif)
+If someone sent you a Live Share link, and you opened it in your browser, you can easily transition to the desktop using one of the following commands:
 
-<!---
-# Frequently asked questions 
+1. Clicking the "hamburger" menu in the upper left-hand corner of the editor, and selecting `Open in VS Code` or `Open in Visual Studio`
+1. Click the green `Live Share` status bar button in the lower left-hand corner of the editor, and selecting `Open in VS Code` or `Open in Visual Studio`
+3. Opening the command palette and selecting `Live Share: Open in VS Code` or `Live Share: Open in Visual Studio`
 
-##### 1. Is there an environment running in the background, that is hosting my session in the browser?
-When you join a Live Share session from the browser, there is no new environment spun up. It is a serverless service. 
-##### 2. Do I have to pay for the service of joining from the browser?
-Joining from the browser is free, much like all of Live Share.
+Each of these entry points will launch the selected desktop client and automatically join you into the active session.
 
-##### 3. How is this different from Visual Studio Online?
-When you join from the browser, you only access the VS Code client from the browser during the session. Once the session ends, all the files and folders along with editor capabilities will close. To use an editor in the browser, backed with your own environment to edit your own files, you must use [Visual Studio Online.](aka.ms/vso)
+### Opening from Desktop
 
-##### 4. Does this work for all browsers?
-Yes. This works on all browsers. 
-##### 5. Is there a VS client that I can use in the browser?
-We do not have this available yet. 
+If you've already got Visual Studio or Visual Studio Code installed and opened, and someone sends you a session URL, then you can join directly from the desktop using one of the following approaches:
 
-# Feedback and issues 
-This is a preview feature, and we hope to get user feedback to improve the experience. Please fill out any feedback or issues you see on our GitHub repo [here.](https://github.com/MicrosoftDocs/live-share/issues/new?template=bug_report.md)
+1. **VS Code:**
+   1. Opening the `Live Share` tab, clicking the `Join` button, and pasting the session URL
+   2. Opening the command palette and selecting `Live Share: Join Collaboration Session`
+1. **Visual Studio:** Selecting the `File -> Join Collaboration Session` menu
 
---->
+### Using the Desktop by Default
+
+When you click a Live Share session for the first time, you'll be asked which client you'd like to use: desktop or Web. Based on your selection, Live Share will launch the specified client on all susequent visits. That said, you can always open the desktop client from the Web, using the steps mentioned above. If you'd like to change the default client that is always used, you can set the `Live Share: Laucher Client` setting, to either `web`, `visualStudio` or `visualStudioCode`. Then, whenever you click a Live Share link, your preferred client will be automatically launched.
+
+## Known Issues
+
+Live Share supports most of the same features between desktop and the Web, however, there are currently a few capabilities which aren't available in the Web. We're actively working on closing these gaps, but in the meantime, if you need to leverage any of the following features, you can host/join from a desktop client, as opposed to the web:
+
+1. Shared servers
+1. Shared version control state
+3. Multi-root workspaces
+4. `.vsls.json`-based file filtering

@@ -1,6 +1,6 @@
 ---
-title: "Platform and language support  | Microsoft Docs"
-description: "An overview of platform and language support for Visual Studio Live share."
+title: "Live Share support  | Microsoft Docs"
+description: "An overview of support for Visual Studio Live share."
 ms.custom:
 ms.date: 03/22/2018
 ms.reviewer: ""
@@ -13,12 +13,6 @@ ms.workload:
   - "liveshare"
 ---
 
-<!--
-Copyright © Microsoft Corporation
-All rights reserved.
-Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
--->
-
 # Contributing, feedback, and support
 
 Have a question or feedback? There are many ways to contribute. We want to hear from you!
@@ -29,7 +23,7 @@ In short:
 
 - **Known issues:** See [bugs](https://aka.ms/vsls-bugs) or [feature requests](https://aka.ms/vsls-feature-requests) and up-vote using a 👍 reaction.
 - **VS Code bugs:** [Log a new issue](https://aka.ms/vsls-new-issue). Use the "Live Share: Export logs" command and [drag-and-drop the zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) onto the bug or [email them](mailto:vsls-feedback@microsoft.com).
-- **VS bugs:** [Help > Send Feedback > Report a Problem...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Repro the problem before sending and logs will be auto-attached.
+- **VS bugs:** [Help > Send Feedback > Report a Problem...](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Repro the problem before sending and logs will be auto-attached.
 - **Feature requests:** [Log a new request](https://aka.ms/vsls-new-issue) or use a 👍 reaction to [up-vote an existing one](https://aka.ms/vsls-feature-requests).
 - **Contact us:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter), or the community run [Slack](https://aka.ms/vsls-slack).
 
@@ -43,7 +37,7 @@ Some of our reference docs may have what you need!
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
 - [Troubleshooting](troubleshooting.md)
-- [FAQ](faq.md)
+- [FAQ](faq.yml)
 
 ## Issues and Requests
 

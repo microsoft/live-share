@@ -2,7 +2,7 @@
 title: "User Profile  | Microsoft Docs"
 description: "An overview of how to view and remove your Visual Studio Live Share user profile."
 ms.custom:
-ms.date: 05/222/2018
+ms.date: 05/22/2018
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "reference"
@@ -13,12 +13,6 @@ ms.workload:
   - "liveshare"
 ---
 
-<!--
-Copyright &copy; Microsoft Corporation
-All rights reserved.
-Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
--->
-
 # User Profile
 
 When you authenticate with Visual Studio Live Share, it creates a user profile for you, which simply allows the participants you collaborate with to see who you are (e.g. your e-mail address, avatar). At any given time, you can view the profile information that Live Share has stored on your behalf, by navigating to one of the following pages (depending on the identity provider you used):
@@ -28,11 +22,11 @@ When you authenticate with Visual Studio Live Share, it creates a user profile f
 
 This page will ask you to sign-in (in order to verify your identity), and will then display the raw JSON output for your user profile.
 
-<img width="500px" src="media/user-profile.png" />
+<img width="500px" src="media/user-profile.png" alt="User profile"/>
 
 If Visual Studio Live Share doesn't currently have a profile stored for the identity you logged in with, then it will let you know that as well.
 
-<img width="500px" src="media/no-profile.png" />
+<img width="500px" src="media/no-profile.png" alt="User profile with no profile"/>
 
 ## Removing Your Profile
 
