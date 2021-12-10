@@ -15,7 +15,7 @@ ms.workload:
 
 # Quickstart: Share your first project
 
-Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless what programming languages you're using or app types you're building. It allows you to instantly and securely share your current project, and then as needed, share debugging sessions, terminal instances, localhost web apps, voice calls, and more.
+Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless of what programming languages you're using or app types you're building. It allows you to instantly and securely share your current project, and then as needed, share debugging sessions, terminal instances, localhost web apps, voice calls, and more.
 
 Ready to get going?  Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
 
@@ -41,7 +41,7 @@ After installing the Live Share extension, restarting, and waiting for dependenc
 
 In Visual Studio Code:
 
-![Visual Studio Code sign in status bar item](../media/vscode-sign-in-button-new.png)
+![Visual Studio Code sign in status bar item](../media/vscode-sign-in-button-new-1.png)
 
 In Visual Studio:
 
@@ -49,7 +49,7 @@ In Visual Studio:
 
 In **VS Code**, your browser will launch while a notification will appear launch asking you to sign in. Complete the sign in process in your browser, then simply close the browser when done.
 
-![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
+![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast-1.png)
 
 > **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [here for details](../use/vscode.md#sign-in-by-using-a-user-code).
 
@@ -73,7 +73,7 @@ Next, simply click "Live Share" within your tool and an invite link is automatic
 
 In Visual Studio Code:
 
-![Visual Studio Code share status bar item](../media/vscode-share-button-new.png)
+![Visual Studio Code share status bar item](../media/vscode-share-button-new-1.png)
 
 In Visual Studio:
 
@@ -94,11 +94,11 @@ In Visual Studio Code:
 
 In Visual Studio:
 
-![Visual Studio read-only option](../media/vs-read-only-notification.png)
+![Visual Studio read-only option](../media/vs-read-only-notification-1.png)
 
 In **VS Code**, you can also start a read-only session from the Live Share viewlet tab.
 
-![Toast notification asking to sign into a read-only session](../media/vscode-read-only-viewlet.png)
+![Toast notification asking to sign into a read-only session](../media/vscode-read-only-viewlet-1.png)
 
 ## 7. Send someone the invite link
 
