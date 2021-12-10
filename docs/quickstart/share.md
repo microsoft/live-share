@@ -73,7 +73,7 @@ Next, simply click "Live Share" within your tool and an invite link is automatic
 
 In Visual Studio Code:
 
-![Visual Studio Code share status bar item](../media/vscode-share-button-new-1.png)
+![Visual Studio Code share status bar item](../media/vscode-share-button-new.png)
 
 In Visual Studio:
 
