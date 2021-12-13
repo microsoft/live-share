@@ -2,7 +2,7 @@
 title: "Share quickstart  | Microsoft Docs"
 description: "An abridged walkthrough on sharing your first project using a Visual Studio Live Share collaboration session."
 ms.custom:
-ms.date: 03/22/2018
+ms.date: 12/13/2021
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "quickstart"
@@ -15,20 +15,20 @@ ms.workload:
 
 # Quickstart: Share your first project
 
-Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless of what programming languages you're using or app types you're building. It allows you to instantly and securely share your current project, and then as needed, share debugging sessions, terminal instances, localhost web apps, voice calls, and more.
+Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless of what programming languages you're using or app types you're building. Live Share allows you to instantly and securely share your current project. You can share debugging sessions, terminal instances, localhost web apps, voice calls, and more as needed.
 
-Ready to get going?  Team collaboration should be so quick and natural, that it becomes harder not to do it! For this reason, Visual Studio Live Share makes it simple to get started, so that you can seamlessly begin sharing your work and ideas.
+Visual Studio Live Share makes it simple to get started, and you can seamlessly begin sharing your work and ideas.
 
 > [!TIP]
-> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity in both instances. Check it out!
+> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely. You can even use the same identity in both instances.
 
-Just follow these steps to start sharing.
+Follow these steps to start sharing.
 <!--
 Change the instructions to Install extension for VS Code and in-tool for VS?
 -->
 ## 1. Install the extension
 
-Installing the extension is easy. Just follow these steps:
+Follow these steps to install the extension.
 
 [!INCLUDE [installation](../includes/installation.md)]
 
@@ -53,7 +53,7 @@ In **VS Code**, your browser will launch while a notification will appear launch
 
 > **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [here for details](../use/vscode.md#sign-in-by-using-a-user-code).
 
-In **Visual Studio**, Live Share automatically uses your [personalization account](/visualstudio/ide/signing-in-to-visual-studio). As a result, you can simply sign in as you would normally. However, if you prefer to use a different sign-in than your Visual Studio personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** and select different credentials.
+In **Visual Studio**, Live Share automatically uses your [personalization account](/visualstudio/ide/signing-in-to-visual-studio). You can sign in as you would normally. However, if you prefer to use a different sign-in than your Visual Studio personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** and select different credentials.
 
 See [troubleshooting](../troubleshooting.md#sign-in) if you are still hitting problems.
 
@@ -69,7 +69,7 @@ By default, Live Share **hides** any files/folders referenced in .gitignore file
 
 <!--
 -->
-Next, simply click "Live Share" within your tool and an invite link is automatically copied to your clipboard.
+Next, click "Live Share" within your tool and an invite link is automatically copied to your clipboard.
 
 In Visual Studio Code:
 
@@ -124,9 +124,9 @@ You can opt to require an explicit "approval" for anyone joining instead. If you
 
 See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to turn this feature on.
 
-## 9. Collaborate!
+## 9. Collaborate
 
-That's it! Here are a few things to try out once a guest has joined you:
+Here are a few things to try out once a guest has joined you:
 
 1. Move around to different files in the project independently and make some edits
 1. Follow the guest and observe as they scroll, make edits, and navigate to different files
