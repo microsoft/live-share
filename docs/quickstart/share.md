@@ -1,7 +1,7 @@
 ---
 title: "Share quickstart  | Microsoft Docs"
 description: "An abridged walkthrough on sharing your first project using a Visual Studio Live Share collaboration session."
-ms.custom:
+ms.custom: devdivchpfy22
 ms.date: 12/13/2021
 ms.reviewer: ""
 ms.suite: ""
