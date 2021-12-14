@@ -15,9 +15,9 @@ ms.workload:
 
 # Quickstart: Share your first project
 
-Welcome to Visual Studio Live Share! Live Share enables you to collaboratively edit and debug with others in real time, regardless of what programming languages you're using or app types you're building. Live Share allows you to instantly and securely share your current project. You can share debugging sessions, terminal instances, localhost web apps, voice calls, and more as needed.
+Welcome to Visual Studio Live Share! Live Share lets you collaboratively edit and debug with others in real time, regardless of what programming languages you're using or app types you're building. Live Share lets you instantly and securely share your current project. Share debugging sessions, terminal instances, localhost web apps, voice calls, and more as needed.
 
-Visual Studio Live Share makes it simple to get started, and you can seamlessly begin sharing your work and ideas.
+Visual Studio Live Share makes it simple to get started. You can seamlessly begin sharing your work and ideas.
 
 > [!TIP]
 > Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely. You can even use the same identity in both instances.
@@ -69,7 +69,7 @@ By default, Live Share **hides** any files/folders referenced in .gitignore file
 
 <!--
 -->
-Next, click "Live Share" within your tool and an invite link is automatically copied to your clipboard.
+Next, click "Live Share" within your tool and an invite link automatically copies to your clipboard.
 
 In Visual Studio Code:
 
