@@ -86,7 +86,7 @@ In Visual Studio:
 
 Once you start your collaboration session, you can set the session to be read-only to prevent guests from making edits to the code being shared.
 
-After sharing, you will get a notification that the invite link has been copied to your clipboard. You can then select the option to make the session read-only.
+After sharing, you'll get a notification that the invite link has been copied to your clipboard. You can then select the option to make the session read-only.
 
 In Visual Studio Code:
 
@@ -120,7 +120,7 @@ In Visual Studio:
 
 ![Visual Studio join notification](../media/vs-join-notification.png)
 
-You can opt to require an explicit "approval" for anyone joining instead. If you have this setting turned on, a notification prompts you to approve the guest when they try to join your session.
+You can opt to require an explicit "approval" for anyone joining instead. If you've this setting turned on, a notification prompts you to approve the guest when they try to join your session.
 
 See [requiring guest approval](../reference/security.md#requiring-guest-approval) for details on how to turn this feature on.
 
