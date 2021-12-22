@@ -1,5 +1,5 @@
 ---
-title: "Share quickstart  | Microsoft Docs"
+title: "Quickstart: Collaborative coding with Visual Studio Live Share"
 description: "In this quickstart, we provide you an abridged walkthrough on sharing your first project using a Visual Studio Live Share collaboration session."
 ms.custom: devdivchpfy22
 ms.date: 12/13/2021
@@ -137,10 +137,6 @@ Here are a few things to try out once a guest has joined you:
 Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/vs.md) extension docs for information on how to do these actions and more.
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
-
-## Clean up resources
-
-There are no resources to clean up in this section.
 
 ## Next Steps
 
