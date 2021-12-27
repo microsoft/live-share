@@ -128,11 +128,11 @@ See [requiring guest approval](../reference/security.md#requiring-guest-approval
 
 Here are a few things to try out once a guest has joined you:
 
-1. Move around to different files in the project independently and make some edits
-1. Follow the guest and observe as they scroll, make edits, and navigate to different files
-1. Start up a co-debugging session with them
-1. Share a server so you can check out something like a web app running on their machine
-1. Share a terminal and run some commands
+- Move around to different files in the project independently and make some edits
+- Follow the guest and observe as they scroll, make edits, and navigate to different files
+- Start up a co-debugging session with them
+- Share a server so you can check out something like a web app running on their machine
+- Share a terminal and run some commands
 
 Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/vs.md) extension docs for information on how to do these actions and more.
 
@@ -140,11 +140,13 @@ Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedba
 
 ## Next Steps
 
-Check out these additional articles for more information.
+Try these articles to get started or dig deeper:
 
 - [Quickstart: Join your first collaboration session](join.md)
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
 - [How-to: Collaborate using Visual Studio](../use/vs.md)
+- [Connectivity requirements for Live Share](https://github.com/MicrosoftDocs/live-share-pr/reference/connectivity.md)
+- [Language and platform support](https://github.com/MicrosoftDocs/live-share-pr/reference/platform-support.md)
 
 Reference
 
