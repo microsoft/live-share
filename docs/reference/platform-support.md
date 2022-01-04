@@ -111,14 +111,14 @@ All languages / platforms have same file intellisense (when the respective exten
 | Web app (Front-end) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
 | VS Code extensions | | <sup>9</sup> |
 
-<sup>1</sup> Via [share local server](../use/vscode.md#share-servers-or-terminals).<br />
+<sup>1</sup> Via [share local server](../use/share-server-visual-studio-code.md).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
 <sup>4</sup> Supported via shared terminals.<br />
 <sup>5</sup> Debugging database stored procs is not currently supported <br />
 <sup>6</sup> Via "preview". However, images do not appear due to known issue. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
 <sup>7</sup> Cordova apps can be shared via the "browser" platform<br />
-<sup>8</sup> React Native apps can be shared via Expo and [shared servers](../use/vscode.md#share-servers-or-terminals).<br />
+<sup>8</sup> React Native apps can be shared via Expo and [shared servers](../use/share-server-visual-studio-code.md).<br />
 <sup>9</sup> Live Share doesn't currently support sharing windows/screens. [Vote (👍) here.](https://github.com/MicrosoftDocs/live-share/issues/236)
 
 ## Visual Studio
@@ -168,11 +168,11 @@ While most languages have some single file Intellisense support, there are some 
 | Universal Windows Platform | ✅ |  |
 | VS Extensions | ✅ |  |
 
-<sup>1</sup> Via [share local server](../use/vs.md#share-a-server). ASP.NET Web Apps can also use [automatic web app sharing](../use/vs.md#automatic-web-app-sharing).<br />
+<sup>1</sup> Via [share local server](../use/share-server-visual-studio.md). ASP.NET Web Apps can also use [automatic web app sharing](../use/codebug-visual-studio.md#automatic-web-app-sharing).<br />
 <sup>2</sup> Debugging occurs against the host's browser rather than guest.<br />
 <sup>3</sup> By sharing back-end.<br />
 <sup>4</sup> Debugging database stored procs is not currently supported <br />
-<sup>5</sup> Via [share local server](../use/vs.md#share-a-server). <br />
+<sup>5</sup> Via [share local server](../use/share-server-visual-studio.md#share-a-server). <br />
 <sup>6</sup> Partially supported via shared terminals.<br />
 <sup>?</sup> Not yet validated.
 

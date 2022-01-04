@@ -32,13 +32,13 @@ Collaboration session hosts can use all of their tools and services but guests a
 
 When you "share" as a host, you start up a collaboration session that shares the contents of a project, solution, or a folder. Guests get access to this content using the invitation link that you send them. While "share" is shorthand for "share a project," it also opens the door for sharing other capabilities like debugging.
 
-**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#start-and-stop-a-session) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
+**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/share-project-join-session-visual-studio-code.md#start-a-session) [![VS](../media/vs-icon-15x15.png)](../use/share-project-join-session-visual-studio.md#share-a-project)
 
 #### Joining
 
 Clicking an invitation link sent to you by a host allows you to "join" a collaboration session as a guest and access any content or capabilities the host has opted to share with you. The web link provides a quick way to hop into a collaboration session if you already have the extension installed, and a quick way to set up information if you do not.
 
-**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#join-and-leave-a-session) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#join-a-collaboration-session)
+**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/share-project-join-session-visual-studio-code.md#join-and-leave-a-session) [![VS](../media/vs-icon-15x15.png)](../use/share-project-join-session-visual-studio.md#join-a-collaboration-session)
 
 ### Features
 
@@ -49,13 +49,13 @@ When you open the same file as another collaborator, you are instantly able to "
 > [!NOTE]
 > Co-editing has a few limitations. See [platform support](../reference/platform-support.md) for the state of features by language.
 
-**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-editing) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-editing)
+**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/coedit-follow-focus-visual-studio-code.md#co-editing) [![VS](../media/vs-icon-15x15.png)](../use/coedit-follow-focus-visual-studio.md#co-editing)
 
 #### Following and focusing
 
 Sometimes you need to explain a problem or design that spans multiple files or locations in code. In these situations, it can be useful to temporarily follow a colleague as they move throughout the project when co-editing. For this reason, as a guest, when you join a collaboration session you automatically "follow" the host's edit location. Hosts and guests can hop in and out of following one another with a simple mouse click. In addition, you may find that you want to ask all participants to follow you. Live Share lets you request that everyone "focus" their attention on you with a notification that makes it easy for them to follow you back.
 
-**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#follow-along-with-a-collaborator) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#following)
+**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/coedit-follow-focus-visual-studio-code.md#follow-along-with-a-collaborator) [![VS](../media/vs-icon-15x15.png)](../use/coedit-follow-focus-visual-studio.md#following)
 
 #### Co-debugging
 
@@ -64,19 +64,19 @@ When you're debugging tough coding problems or bugs, having an extra pair of eye
 > [!NOTE]
 > See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
 
-**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
+**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/codebug-visual-studio-code.md) [![VS](../media/vs-icon-15x15.png)](../use/codebug-visual-studio.md)
 
 #### Share server / Share port
 
 When co-debugging, it can be really useful to get access to different parts of the application being served up by the host for the debugging session. You  may want to access the app in a browser, access a local database, or hit a REST endpoint from your tools. Live Share lets you "share a server", which maps a local port on the host's machine to the exact same port on each guest's machine. As a guest, you can then interact with the application exactly as if it was running locally on your machine (for example, the host and guest can both access a web app running on http://localhost:3000).
 
-**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-servers-or-terminals) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
+**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/share-server-visual-studio-code.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../use/share-server-visual-studio.md#share-a-server)
 
 #### Share terminals
 
 Modern development makes frequent use of a wide array of command line tools. Fortunately, Live Share allows you as a host to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative, so both you and your guests can run commands and see the results. As the host, you're always in control and can decide whether other collaborators can run commands themselves or just see command output. In fact, anything you want to keep to yourself you can run in an unshared terminal.
 
-**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-servers-or-terminals) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
+**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/share-server-visual-studio-code.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/share-server-visual-studio.md#share-a-terminal)
 
 #### Access controls
 

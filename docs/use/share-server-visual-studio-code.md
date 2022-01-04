@@ -24,7 +24,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Share a server or terminal as a collaboration session host in Visual Studio Code.
 
-## Server sharing
+## Share a server
 
 From time to time, collaboration session hosts might want to share a web application or other locally running servers or services with guests. This can range from other RESTful endpoints to databases and other servers. Visual Studio Live Share lets you specify a local port number, optionally give it a name, and then share it with all guests.
 
@@ -56,7 +56,7 @@ To stop sharing a local server, the host can hover over the server item in the *
 
 ![Screenshot that shows the Unshare server button.](../media/vscode-stop-sharing-server-viewlet.png)
 
-## Terminal sharing
+## Share a terminal
 
 Modern developers frequently use of a variety of command-line tools. Live Share allows hosts to share a terminal with guests. The shared terminal can be read-only or fully collaborative, so you and the guests can run commands and see the results. You can make terminal output visible to guests. You can also let them run tests or builds or even triage environment-specific problems that only happen on your computer.
 

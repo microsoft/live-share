@@ -200,7 +200,7 @@ As a host, when sharing, you have the option to enable read-only mode for a coll
 
 You can still co-debug with guests while in read-only mode. Guests will not have the ability to step through the debugging process, but can still add or remove breakpoints, and inspect variables. Additionally, you can still share servers and terminals (read-only) with guests.
 
-You can learn more about starting a read-only collaboration session: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#start-and-stop-a-session) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
+You can learn more about starting a read-only collaboration session: [![VS Code](../media/vscode-icon-15x15.png)](../use/share-project-join-session-visual-studio-code.md#start-a-session) [![VS](../media/vs-icon-15x15.png)](../use/share-project-join-session-visual-studio.md#share-a-project)
 
 ## Co-debugging
 
@@ -210,7 +210,7 @@ As a host, you are in complete control over when a debugging session starts or s
 
 Consequently, you should **only co-debug with those you trust.**
 
-Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
+Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/codebug-visual-studio-code.md) [![VS](../media/vs-icon-15x15.png)](../use/codebug-visual-studio.md)
 
 ## Sharing a local server
 
@@ -228,7 +228,7 @@ liveshare.autoShareServers: false
 
 In either case, exercise care when sharing additional ports.
 
-You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-servers-or-terminals) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
+You can learn more about configuring the feature here: [![VS Code](../media/vscode-icon-15x15.png)](../use/share-server-visual-studio-code.md) [![VS](../media/vs-icon-15x15.png)](../use/share-server-visual-studio.md)
 
 ## Sharing a terminal
 
@@ -242,7 +242,7 @@ In Visual Studio, terminals are not shared by default. In VS Code, terminals are
 "liveshare.autoShareTerminals": false
 ```
 
-Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-servers-or-terminals) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
+Learn more: [![VS Code](../media/vscode-icon-15x15.png)](../use/share-server-visual-studio-code.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/share-server-visual-studio.md#share-a-terminal)
 
 ## AAD Admin Consent
 

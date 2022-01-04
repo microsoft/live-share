@@ -56,7 +56,7 @@ After you download and install Visual Studio Live Share, follow these steps to s
 
 1. **Sign in**
 
-    After you install the Live Share Extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. For more information, see [Sign in](#sign-in-to-live-share).
+    After you install the Live Share Extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. For more information, see [Sign in](install-live-share-visual-studio-code.md#sign-in-to-live-share).
 
 2. **Open a folder**
 
@@ -137,7 +137,7 @@ The easiest way to join a collaboration session is to simply open the invitation
 
 1. **Sign in**
 
-    After you install the Live Share Extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. For more information, see [Sign in](#sign-in-to-live-share).
+    After you install the Live Share Extension, reload, and wait for dependencies to install, sign in to let other collaborators know who you are. For more information, see [Sign in](install-live-share-visual-studio-code.md#sign-in-to-live-share).
 
 2. **Select the invitation link / open the invitation in your browser**
 
@@ -169,7 +169,7 @@ You can also join manually without using a web browser. This  option can be usef
 
 1. **Sign in**
 
-    After you install the Live Share Extension, reload, and wait for dependencies install, sign in to let other collaborators know who you are. For more information, see [Sign in](#sign-in-to-live-share).
+    After you install the Live Share Extension, reload, and wait for dependencies install, sign in to let other collaborators know who you are. For more information, see [Sign in](install-live-share-visual-studio-code.md#sign-in-to-live-share).
 
 2. **Use the join command**
 

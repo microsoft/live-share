@@ -1,7 +1,7 @@
 ---
 title: Install and sign in to Live Share in Visual Studio Code
 titleSuffix: ""
-description: Learn how to install and sign in to Visual Studio and Live Share so that you can collaborate on projects with your team.
+description: Learn how to install and sign in to Visual Studio Code and Live Share so that you can collaborate on projects with your team.
 ms.custom:
 ms.date: 12/30/2021
 ms.reviewer: ""
@@ -20,7 +20,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# How-to: Install and sign in to Live Share in Visual Studio Code
+# Install and sign in to Live Share in Visual Studio Code
 
 Ready to start collaborating with Live Share in Visual Studio Code? In this article, we'll walk you through setting up a collaboration session in Visual Studio Code by using the Live Share Extension.
 
@@ -89,7 +89,7 @@ Visual Studio Live Share doesn't typically require additional installation steps
 
 On certain rare distributions, you might be notified that your admin (sudo) password is required to complete the installation. A terminal window noting where the browser launcher will be installed will appear. Enter your password when prompted, and select **Enter** when the installation completes to close the terminal window.
 
-For information about why the password is required and where Live Share puts files, see [Linux browser integration](../reference/linux.md#linux-browser-integration). If you can't get browser integration to work, you can still [join collaboration sessions manually](../use/vscode.md#join-manually).
+For information about why the password is required and where Live Share puts files, see [Linux browser integration](../reference/linux.md#linux-browser-integration). If you can't get browser integration to work, you can still [join collaboration sessions manually](share-project-join-session-visual-studio-code.md#join-manually).
 
 ## Sign in to Live Share
 

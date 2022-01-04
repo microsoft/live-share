@@ -20,7 +20,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Co-debug in a collaboration session in Visual Studio
+# Co-debug in a collaboration session in Visual Studio Code
 
 The Visual Studio Live Share collaborative debugging feature is a powerful way to debug a problem. It enables a collaborative experience to troubleshoot problems. It also gives you and other participants in your session the ability to investigate problems that might be environment specific by providing a shared debugging session on the host's computer.
 
@@ -37,7 +37,7 @@ Using collaborative debugging is simple.
     ![Screenshot that shows the Visual Studio Code debug button.](../media/vscode-debug-button.png)
 
     > [!TIP]
-    > You can also participate in Visual Studio debugging sessions from Visual Studio Code, and vice versa. For more information, see the [Visual Studio instructions](vs.md#co-debugging) for co-debugging.
+    > You can also participate in Visual Studio debugging sessions from Visual Studio Code, and vice versa. For more information, see the [Visual Studio instructions](codebug-visual-studio.md) for co-debugging.
 
 When the debugger attaches on the host's side, all guests are also automatically attached. There's one debugging session running on the host's computer, but all participants are connected to it and have their own view:
 
@@ -79,9 +79,9 @@ If you've updated your settings so you don't automatically attach, or if you wan
 
 ## Share the running application in a browser
 
-Unlike Visual Studio, Visual Studio Code doesn't support known web application ports for project types like ASP.NET. But if you're joining a collaboration session from a Visual Studio host, you might automatically see your default browser appear when debugging starts. The browser is then automatically connected to the host's running applications. For more information, see [Visual Studio features](vs.md#automatic-web-app-sharing).
+Unlike Visual Studio, Visual Studio Code doesn't support known web application ports for project types like ASP.NET. But if you're joining a collaboration session from a Visual Studio host, you might automatically see your default browser appear when debugging starts. The browser is then automatically connected to the host's running applications. For more information, see [Visual Studio features](codebug-visual-studio.md#automatic-web-app-sharing).
 
-As a host, you can achieve something similar by manually sharing the application, or other endpoints like RESTful services, by using the Share Local Server feature. Visual Studio and Visual Studio Code guests can then open a browser on the same localhost port to see the running application. For more information, see [Share a server](#share-servers-or-terminals).
+As a host, you can achieve something similar by manually sharing the application, or other endpoints like RESTful services, by using the Share Local Server feature. Visual Studio and Visual Studio Code guests can then open a browser on the same localhost port to see the running application. For more information, see [Share a server](share-server-visual-studio-code.md).
 
 ## Next steps
 

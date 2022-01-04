@@ -28,7 +28,7 @@ Once you're in a collaboration session, you can co-edit with a guest or follow a
 Once a guest has joined a collaboration session, all collaborators will immediately be able to see each others edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Both hosts and guests will see edits as you make them and can contribute themselves making it easy to iterate and rapidly nail down solutions.
 
 > [!NOTE]
-> Joining a read-only collaboration session prevents guests from being able to make edits to files. A host can [enable read-only mode when they share](#share-a-project). As a guest, you can tell if you have joined a read-only session by looking at your [session state](#session-states).
+> Joining a read-only collaboration session prevents guests from being able to make edits to files. A host can [enable read-only mode when they share](share-project-join-session-visual-studio.md#share-a-project). As a guest, you can tell if you have joined a read-only session by looking at your [session state](share-project-join-session-visual-studio.md#session-states).
 
 ![Screen shot showing co-editing](../media/vs-coedit.png)
 

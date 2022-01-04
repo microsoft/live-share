@@ -33,23 +33,23 @@ The guests will then be able to access the server you shared on that port from t
 
 For security purposes, only servers running on ports you specify are available to other guests. Fortunately, its easy to add one as the collaboration session **host**. Here's how:
 
-1. Click on the share / session state button in the upper right corner and select "Manage Shared Local Servers"
+1. Click on the share/session state button in the upper right corner and select **Manage Shared Servers**.
 
-    ![Manage Shared Local Servers](../media/vs-share-local-servers.png)
+    :::image type="content" source="../media/share-server-vs/manage-shared-local-servers-visual-studio.png" alt-text="Screenshot that shows the share session drop-down list with Manage Shared Servers selected.":::
 
-2. In the dialog that appears, click "Add" and enter the port number the server is running on locally, enter a name, press enter, then OK.
+2. In the dialog that appears, select **Add** and enter the port number the server is running on locally, enter a name, then select **OK**.
 
-    ![Add a shared server](../media/vs-manage-local-shared-servers.png)
+    :::image type="content" source="../media/share-server-vs/shared-server-visual-studio.png" alt-text="Screenshot that shows the Shared Local Servers window with Add and Ok selected.":::
 
-That's it! The server on the port you specified will now be mapped to each guest's localhost on the same port (unless that port was already occupied)!
+That's it! The server on the port you specified is mapped to each guest's localhost on the same port, unless that port was already occupied.
 
-If the port is already in use on a guest's machine, a different one is automatically selected. Fortunately, as a guest you can see a list of currently shared ports (by name if specified) by clicking the share / session state button in the upper right corner and selecting "View Shared Local Servers."
+If the port is already in use on a guest's machine, a different one is automatically selected. As a guest you can see a list of currently shared ports, by name if specified, by clicking the share/session state button in the upper right corner and selecting **View Shared Local Servers**.
 
 ![Viw Shared Local Servers](../media/vs-view-shared-servers.png)
 
-Note that *guests cannot* control which ports on the host's machine are shared for security reasons.
+Note that guests *can't* control which ports on the host's machine are shared for security reasons.
 
-To **stop** sharing a local server, the host simply needs to click the share / session state button in the upper right corner as above, select "Manage Shared Local Servers", and select the appropriate port, and click "Remove".
+To stop sharing a local server, the host simply needs to click the share / session state button in the upper right corner as above, select **Manage Shared Local Servers**, and select the appropriate port, and click "Remove".
 
 ## Share a terminal
 

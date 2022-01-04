@@ -34,7 +34,7 @@ When a guest joins a collaboration session, all collaborators will immediately b
 ![Screenshot that shows a co-editing session.](../media/vscode-coedit.png)
 
 > [!NOTE]
-> Guests who join a read-only collaboration session can't make edits to files. Hosts can [enable read-only mode when they share a session](#start-and-stop-a-session). As a guest, you can tell if you've joined a read-only session by looking at the [session state](#session-states-and-limitations).
+> Guests who join a read-only collaboration session can't make edits to files. Hosts can [enable read-only mode when they share a session](share-project-join-session-visual-studio-code.md#start-a-session). As a guest, you can tell if you've joined a read-only session by looking at the [session state](share-project-join-session-visual-studio-code.md#session-states-and-limitations).
 
 Participants can see cursors and edits. They can also see selections you make. That makes it easy to highlight where problems might exist or to convey ideas.
 
