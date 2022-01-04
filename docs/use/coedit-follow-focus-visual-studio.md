@@ -100,4 +100,4 @@ They can then just click "Follow" right from the notification when they're ready
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Co-debug](codebug-vs.md)
+> [Co-debug](codebug-visual-studio.md)

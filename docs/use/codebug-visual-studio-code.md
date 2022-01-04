@@ -86,4 +86,4 @@ As a host, you can achieve something similar by manually sharing the application
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Share a server or terminal](share-server-vscode.md)
+> [Share a server or terminal](share-server-visual-studio-code.md)

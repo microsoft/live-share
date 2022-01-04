@@ -226,4 +226,4 @@ Although there are currently some shortcomings guests will experience while usin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Co-edit, follow, and focus](coedit-follow-focus-vs.md)
+> [Co-edit, follow, and focus](coedit-follow-focus-visual-studio-code.md)

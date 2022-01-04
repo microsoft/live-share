@@ -85,4 +85,4 @@ There are currently some shortcomings guests will experience using the features 
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Share a project and join a session](share-project-join-session-vs.md)
+> [Share a project and join a session](share-project-join-session-visual-studio.md)

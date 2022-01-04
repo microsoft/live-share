@@ -261,8 +261,8 @@ This would only need to be done once for anyone using Live Share. See [here](/az
 
 ## See also
 
-* [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-* [How-to: Collaborate using Visual Studio](../use/vs.md)
+* [Install and sign in to Live Share in Visual Studio Code](../use/install-live-share-visual-studio-code.md)
+* [Install and sign in to Live Share in Visual Studio](../use/install-live-share-visual-studio.md)
 * [Connectivity requirements for Live Share](connectivity.md)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

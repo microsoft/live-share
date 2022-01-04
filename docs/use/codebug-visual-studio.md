@@ -88,4 +88,4 @@ You might have updated settings so you no longer auto-attach, or want to reattac
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Share a server or terminal](share-server-vs.md)
+> [Share a server or terminal](share-server-visual-studio.md)

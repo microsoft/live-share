@@ -164,7 +164,7 @@ Finally, if you opt to skip this step entirely, you can still [join collaboratio
 
 ## See also
 
-- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+- [Install and sign in to Live Share in Visual Studio Code](../use/install-live-share-visual-studio-code.md)
 - [Connectivity requirements for Live Share](connectivity.md)
 - [Security features of Live Share](security.md)
 

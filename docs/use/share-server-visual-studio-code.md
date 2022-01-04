@@ -91,7 +91,7 @@ Check out these articles for more information:
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/share.md)
-- [How-to: Collaborate using Visual Studio](vs.md)
+- [Install and sign in to Live Share in Visual Studio](install-live-share-visual-studio.md)
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Security features of Live Share](../reference/security.md)
 - [Linux installation details](../reference/linux.md)

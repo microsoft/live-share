@@ -78,7 +78,7 @@ Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](../quickstart/share.md)
 - [Quickstart: Join your first session](../quickstart/join.md)
-- [How-to: Collaborate using Visual Studio Code](vscode.md)
+- [Install and sign in to Live Share in Visual Studio Code](install-live-share-visual-studio-code.md)
 - [Connectivity requirements for Live Share](../reference/connectivity.md)
 - [Security features of Live Share](../reference/security.md)
 

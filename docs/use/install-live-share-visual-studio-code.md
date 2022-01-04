@@ -136,4 +136,4 @@ If Visual Studio Code isn't picking up a completed sign-in, you can enter a *use
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Share a project and join a session](share-project-join-session-vscode.md)
+> [Share a project and join a session](share-project-join-session-visual-studio-code.md)

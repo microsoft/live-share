@@ -28,7 +28,7 @@ Ready to get going? In this article we'll run you through some concepts and how 
 
 Before you begin, you need to be sure you have a version of Visual Studio or Visual Studio Code installed that meets Live Share's core requirements.
 
-- **Visual Studio Code 1.22.0 or higher** - Windows 7, 8.1, or 10, macOS *(only High Sierra 10.13+)*, 64-bit Linux *(64-bit Ubuntu Desktop 16.04+, Fedora 27+ recommended - [see details](use/vscode.md))*.
+- **Visual Studio Code 1.22.0 or higher** - Windows 7, 8.1, or 10, macOS *(only High Sierra 10.13+)*, 64-bit Linux *(64-bit Ubuntu Desktop 16.04+, Fedora 27+ recommended - [see details](./use/install-live-share-visual-studio-code.md))*.
 - **Visual Studio 2019** (any edition) - Windows 7, 8.1, or 10.
 - **Visual Studio 2017 15.6 or higher** (any edition) - Windows 7, 8.1, or 10.
 
@@ -47,8 +47,8 @@ Quickstarts
 
 How-tos
 
-- [Collaborate using Visual Studio Code](use/vscode.md)
-- [Collaborate using Visual Studio](use/vs.md)
+- [Install and sign in to Live Share in Visual Studio Code](./use/install-live-share-visual-studio-code.md)
+- [Install and sign in to Live Share in Visual Studio](./use/install-live-share-visual-studio.md)
 
 Reference
 

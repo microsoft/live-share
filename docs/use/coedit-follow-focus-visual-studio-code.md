@@ -121,4 +121,4 @@ Additionally, you can explicitly stop following someone by selecting the pushpin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Co-debug](codebug-vscode.md)
+> [Co-debug](codebug-visual-studio-code.md)
