@@ -32,7 +32,8 @@ The guests will then be able to access the server you shared on that port from t
 
 This connection is accomplished via an improved security SSH or SSL tunnel between the host and guests and authenticated via the service. This connection mechanism helps to ensure that only people in the collaboration session have access.
 
-> **Security tip:** As a host, be selective about the ports you share with guests. Stick to application ports (rather than sharing a system port). For guests, shared ports will behave exactly as they would if the server/service were running on the guest's computer. This behavior is useful, but it can be risky if you share the wrong port.
+> [!TIP]
+> As a host, be selective about the ports you share with guests. Stick to application ports (rather than sharing a system port). For guests, shared ports will behave exactly as they would if the server/service were running on the guest's computer. This behavior is useful, but it can be risky if you share the wrong port.
 
 For security reasons, only servers running on ports that you specify are available to other guests. It's easy for the collaboration session host to add one. Here's how:
 

@@ -110,9 +110,10 @@ Alternatively, you can select the pushpin button in the upper-right corner of th
 
 Because following is linked to an editor group, you can use split view or grid layout to create a group that's following a participant and a group that's not. This layout allows you to passively follow someone while also working on something independently. When you have an editor group selected, you can select a participant in the participants list to have the group follow the participant.
 
-![Screenshot that shows two editor groups in split view.](../media/vscode-follow-split.png)
+:::image type="content" source="../media/vscode-follow-split.png" alt-text="Screenshot that shows two editor groups in split view." lightbox="../media/vscode-follow-split.png" border="false":::
 
 To make it easy to switch out of follow mode and start editing on your own, you'll automatically stop following if one of these actions occurs:
+
 - You open a different file.
 - You close the currently active file.
 

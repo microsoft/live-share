@@ -68,9 +68,9 @@ After you download and install Visual Studio Live Share, follow these steps to s
 
 4. **Start a collaboration session**
 
-    To start a session, select **Live Share** on the status bar or select **Ctrl+Shift+P** or **Cmd+Shift+P** and then select **Live Share: Start a collaboration session (Share)**.
+    To start a session, select **Live Share** on the status bar or select **Ctrl+Shift+P** or **Cmd+Shift+P** and then select **Live Share: Start collaboration session (Share)**.
 
-    ![Screenshot that shows the Live Share button.](../media/vscode-share-button-new.png)
+    :::image type="content" source="../media/install-live-share-visual-studio-code/live-share-button-status-bar.png" alt-text="Screenshot that shows the Visual Studio Code Live Share button.":::
 
     > [!NOTE]
     > The first time you share, your desktop firewall software might prompt you to allow the Live Share agent to open a port. Opening a port is optional. It enables a secured direct mode to improve performance when the person you're working with is on the same network as you. For more information, see [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode).
@@ -93,7 +93,8 @@ After you download and install Visual Studio Live Share, follow these steps to s
 
     Send the link over e-mail, Slack, Skype, or other platforms to the guests you want to invite. Given the level of access Live Share sessions can provide to guests, *you should only share with people you trust*, and you should think through the implications of what you're sharing.
 
-    > **Security tip:** Want to understand the security implications of some Live Share features? Check out the [security](../reference/security.md) article.
+    > [!TIP]
+    > Want to understand the security implications of some Live Share features? Check out the [security](../reference/security.md) article.
 
     The guests you invite might have questions. The [Quickstart: Join your first session](../quickstart/join.md) article provides information on getting started as a guest.
 
