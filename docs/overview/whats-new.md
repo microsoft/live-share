@@ -1,31 +1,18 @@
 ---
-title: "What's new in Live Share"
-description: "New Live Share features and releases"
-ms.date: "07/16/2021"
+title: "Troubleshooting Live Share"
+description: "Live Share troubleshooting"
+ms.date: "01/16/2022"
 ms.custom:
 ms.reviewer: ""
 ms.suite: ""
-ms.topic: "overview"
+ms.topic: "troubleshooting"
 author: "fubaduba"
 ms.author: "fishah"
 ms.workload: 
   - "liveshare"
 ---
 
-# What's New in Live Share?
-
-The following features are new in Live Share.
-
-## Integrated chat
-
-Live Share now has integrated chat for [Visual Studio Code](../use/vscode.md) and [Live Share web](../quickstart/browser-join.md). This means you can chat with your peers from within your IDE.
-
->[!TIP]
->Live Share previously provided a companion extension. This meant users with that extension could use chat within Live Share. This extension has now been deprecated, and all users of Live Share in VS Code and the web client, will have a chat service.
-
-## Common questions
-
-### Why am I seeing this error message?
+# Troubleshooting Live Share
 
 If you have disabled auto-updates for your extensions (including Live Share and the Live Share companion chat extension), you will see the following error messages.
 
