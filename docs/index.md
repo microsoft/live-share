@@ -24,7 +24,7 @@ Live Share is built using revolutionary architecture and concepts that manifest 
 There are many use cases for Visual Studio Live Share. Learn more in [Common use cases for Live Share](../docs/reference/use-cases.md)
 
 > [!TIP]
-> Did you know that you can now *join a Live Share session from the browser*? This means, you no longer need to install a desktop client to collaborate! Just click on the link shared with you and you can get a full-fidelity VS Code editor experience in the browser. Learn more [here](quickstart/browser-join.md)
+> Did you know that you can now *join a Live Share session from the browser*? This means, you no longer need to install a desktop client to collaborate! Just click on the link shared with you and you can get a full-fidelity VS Code editor experience in the browser. Learn more [here](quickstart/browser-join.md).
 
 ## Get started
 
