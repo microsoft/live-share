@@ -30,8 +30,7 @@ There are many use cases for Visual Studio Live Share. Learn more in [Common use
 
 Ready to get going? In this article we'll run you through some concepts and how to install the needed extensions. If you're looking for an abridged version, check out the quickstarts.
 
-- [Install in **VS Code** and collaborate](use/vscode.md)
-- [Install in **Visual Studio** and collaborate](use/vs.md)
+- Install and collaborate: [VS Code steps](use/vscode.md) | [Visual Studio steps](use/vs.md)
 - [Quickstart: Share your first project](quickstart/share.md)
 - [Quickstart: Join your first session](quickstart/join.md)
 
