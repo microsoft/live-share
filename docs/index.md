@@ -40,4 +40,4 @@ Ready to get going? In this article we'll run you through some concepts and how 
 - [Security features](reference/security.md)
 - [Language and platform support](reference/platform-support.md)
 - [Extension support](reference/extensions.md)
-- [troubleshooting](troubleshooting.md)
+- [Troubleshooting](troubleshooting.md)
