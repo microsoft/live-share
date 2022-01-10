@@ -21,6 +21,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/overview/whats-new.md",
+            "redirect_url": "/visualstudio/liveshare/troubleshooting",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/getting-started.md",
             "redirect_url": "/visualstudio/liveshare/use/vscode",
             "redirect_document_id": false
