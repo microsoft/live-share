@@ -19,7 +19,7 @@ Welcome to Visual Studio Live Share! Live Share enables you to collaboratively e
 
 Unlike traditional pair programming, Visual Studio Live Share allows developers to work together, while retaining their personal editor preferences (e.g. theme, keybindings), as well as having their own cursor. This allows you to seamlessly transition between following one another, and being able to explore ideas/tasks on your own. This ability to work together and independently provides a collaboration experience that feels much like _in-person_ collaboration.
 
-Live Share is built using revolutionary architecture and concepts that manifest as powerful features for our users. To learn about those features, see [Live Share features](features.md).
+Live Share is built using revolutionary architecture and concepts that manifest as powerful features for our users. To learn about those features, see [Live Share features](overview/features.md).
 
 There are many use cases for Visual Studio Live Share. Learn more in [Common use cases for Live Share](../reference/use-cases.md)
 
