@@ -1,5 +1,5 @@
 ---
-title: Share a server or terminal in a collaboration session in VS Code
+title: Share a server or terminal With Live Share in Visual Studio Code
 titleSuffix: ""
 description: Learn how to share a server or terminal as a collaboration session host in Visual Studio Code and Live Share.
 ms.custom:

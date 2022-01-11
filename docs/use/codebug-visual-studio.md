@@ -21,27 +21,28 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Co-debug in a collaboration session in Visual Studio
 
-Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. Beyond enabling a collaborative experience to troubleshoot problems, you and other participants in your session can use it to investigate issues that might be environment specific by providing a shared debugging session on the host's machine.
+Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. This feature enables a collaborative experience to troubleshoot problems. Participants in your session can also use it to investigate issues that might be environment-specific by providing a shared debugging session on the host's machine.
 
-> **Security Tip:** Given all participants can independently navigate and edit files, as a host, you might want to restrict which files guests are able to access in your project via a *.vsls.json* file. You should also be aware that Console/REPL access means that participants can execute commands on your machine so you should only co-debug with those you trust. As a guest, it is also important to realize you may not be able to follow the debugger as it step into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> [!TIP]
+> Given all participants can independently navigate and edit files, as a host, you might want to restrict which files guests are able to access in your project via a *.vsls.json* file. You should also be aware that Console/REPL access means that participants can execute commands on your machine so you should only co-debug with those you trust. As a guest, it is also important to realize you might not be able to follow the debugger as it step into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 To use it, the collaboration session host needs to start debugging via the usual means in Visual Studio.
 
-![VS Debug button](../media/vs-debug-button.png)
+![Screenshot that shows the Visual Studio Debug button.](../media/vs-debug-button.png)
 
-Once the debugger attaches on the host's side, all guests are also automatically attached as well. While there is one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
+Once the debugger attaches on the host's side, all guests are also automatically attached as well. While there's one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
 
 > [!TIP]
 > If you want to change when and how co-debugging happens, you can change the default behaviors via settings in **Tools > Options > Live Share**.
 
-![VS debugger attached](../media/vs-debugger.png)
+![Screenshot that shows the Visual Studio debugger attached.](../media/vs-debugger.png)
 
-Anyone can step through the debugging process which enables seamless switching between collaborators without having to negotiate control.
+Anyone can step through the debugging process, which enables seamless switching between collaborators without having to negotiate control.
 
 > [!NOTE]
 > See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
 
-Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Co-editing features then allow each participant orator to track where the others are located to provide the unique ability to seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
+Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Each participant can use coediting features to track where the others are located. Participants can seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
 > [!NOTE]
 > While in a read-only collaboration session, a guest will not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables.
@@ -51,18 +52,18 @@ Each collaborator can investigate different variables, jump to different files i
 
 ## Automatic web app sharing
 
-Even better, for ASP.NET Web App projects, by default if the host's project is configured to automatically start a web browser to connect to the running web application when debugging, Live Share will automatically do the same on each guest's machine! This is done in a secure way and the remote web application is only available to the guests during the debugging session by default.
+For ASP.NET Web App projects, if the host's project is configured to automatically start a web browser to connect to the running web application when debugging, Live Share automatically does the same on each guest's machine! This process is done in a secure way and, by default, the remote web application is only available to guests during the debugging session.
 
-See [share a server](share-server-visual-studio.md) for information on how to share server access for other project types and/or for the duration of the session.
+See [share a server](share-server-visual-studio.md) for information on how to share server access for other project types and during the session.
 
 > [!TIP]
 > If you don't like the automated browser sharing behavior and want to change it, you can update settings in **Tools > Options > Live Share**.
 
-![Animation of concurrent debugging](../media/co-debug.gif)
+![Animation that shows concurrent debugging.](../media/co-debug.gif)
 
 ## Change when Visual Studio joins debugging sessions
 
-By default, as a guest, you'll be automatically attached to debugging sessions when they are shared by the host. However, in some cases you may find this behavior disruptive. Fortunately, you can change it as follows:
+Guests are automatically attached to debugging sessions when they're shared by the host by default. However, in some cases you might find this behavior disruptive. Fortunately, you can change it as follows:
 
 1. Go to **Tools > Options > Live Share**
 2. Change the **Debug session join behavior** to one of the following:
@@ -70,20 +71,20 @@ By default, as a guest, you'll be automatically attached to debugging sessions w
 | Option | Behavior |
 |--------|----------|
 | Automatic | The default. As a guest, you'll automatically join any shared debugging session the host starts. |
-| Prompt | As a guest, you are prompted to join a shared debugging session when it is started by the host. |
+| Prompt | As a guest, you're prompted to join a shared debugging session when it's started by the host. |
 | Manual | As a guest, you'll need to manually join any debugging sessions. See [detaching and reattaching](#detaching-and-reattaching).|
 
 ## Detaching and reattaching
 
 As a guest, you might want to stop debugging temporarily. You can click the **stop** icon in the debug toolbar to detach the debugger without affecting the host or other guests.
 
-You might have updated settings so you no longer auto-attach, or want to reattach later. You can select the desired running debugging session from the **Select Startup Item...** drop-down.
+You might have updated settings so you no longer auto-attach, or want to reattach later. You can select the preferred running debugging session from the **Select Startup Item...** drop-down.
 
-![VS Debug button when detaching](../media/vs-select-reattach.png)
+![Screenshot that shows the Visual Studio Debug button when selecting a debugging session from the Select Startup Item drop-down.](../media/vs-select-reattach.png)
 
-...and then click it to attach.
+Then click it to attach.
 
-![VS Debug button when reattaching](../media/vs-reattach.png)
+![Screenshot that shows the Visual Studio Debug button when reattaching.](../media/vs-reattach.png)
 
 ## Next steps
 
