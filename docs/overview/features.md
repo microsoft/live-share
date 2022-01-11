@@ -49,7 +49,7 @@ When you open the same file as another collaborator, you are instantly able to "
 > [!NOTE]
 > Co-editing has a few limitations. See [platform support](../reference/platform-support.md) for the state of features by language.
 
-**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/coedit-follow-focus-visual-studio-code.md#co-editing) [![VS](../media/vs-icon-15x15.png)](../use/coedit-follow-focus-visual-studio.md#co-editing)
+**Learn more:** [![VS Code](../media/vscode-icon-15x15.png)](../use/coedit-follow-focus-visual-studio-code.md#coedit) [![VS](../media/vs-icon-15x15.png)](../use/coedit-follow-focus-visual-studio.md#coedit)
 
 #### Following and focusing
 

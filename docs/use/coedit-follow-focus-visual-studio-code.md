@@ -1,7 +1,7 @@
 ---
-title: Co-edit, follow, and focus in a collaboration session in VS Code
+title: Coedit, follow, and focus in a collaboration session in VS Code
 titleSuffix: ""
-description: Learn how to co-edit, follow, and focus in collaboration sessions with Visual Studio Code and Live Share.
+description: Learn how to coedit, follow, and focus in collaboration sessions with Visual Studio Code and Live Share.
 ms.custom:
 ms.date: 12/30/2021
 ms.reviewer: ""
@@ -20,18 +20,18 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Co-edit, follow, and focus in a collaboration session in Visual Studio Code
+# Coedit, follow, and focus in a collaboration session in Visual Studio Code
 
-Once you're in a collaboration session, you can co-edit with a guest or follow a colleague. You can also use a notification to focus attention on your work.
+Once you're in a collaboration session, you can coedit with a guest or follow a colleague. You can also use a notification to focus attention on your work.
 
-## Co-editing
+## Coedit
 
 > [!NOTE]
-> Co-editing has limitations in certain languages. See [Platform support](../reference/platform-support.md) for information about language-specific features.
+> Coediting has limitations in certain languages. See [Platform support](../reference/platform-support.md) for information about language-specific features.
 
 When a guest joins a collaboration session, all collaborators will immediately be able to see each other's edits and selections in real-time. All you need to do is pick a file from the file explorer and start editing. Hosts and guests will see edits as you make them and can contribute themselves, which makes it easy iterate and rapidly solve problems.
 
-![Screenshot that shows a co-editing session.](../media/vscode-coedit.png)
+![Screenshot that shows a coediting session.](../media/vscode-coedit.png)
 
 > [!NOTE]
 > Guests who join a read-only collaboration session can't make edits to files. Hosts can [enable read-only mode when they share a session](share-project-join-session-visual-studio-code.md#start-a-session). As a guest, you can tell if you've joined a read-only session by looking at the [session state](share-project-join-session-visual-studio-code.md#session-states-and-limitations).
