@@ -60,7 +60,7 @@ Each collaborator can investigate variables, go to various files in the call sta
 
 By default, as a guest, you'll be automatically attached to debugging sessions when they're shared by the host. You might find this behavior disruptive.
 
-To change this behavior, open the **Help** menu in the lower left-corner and select **Configure Settings**.
+To change this behavior, open the **Help** menu in the lower left corner and select **Configure Settings**.
 
 :::image type="content" source="../media/codebug-visual-studio-code/configure-settings-menu-visual-studio-code.png" alt-text="Screenshot that shows the Live Share help menu with Configure Settings selected.":::
 

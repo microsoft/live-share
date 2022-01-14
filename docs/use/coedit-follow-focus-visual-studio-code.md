@@ -51,7 +51,7 @@ The resulting edits are persisted on the host's computer when they're saved. So 
 
 By default, Visual Studio Live Share automatically displays a flag next to a participant's cursor on hover or when the participant makes edits, highlights something, or moves the cursor. In some cases, you might want to change this behavior.
 
-To change this behavior, open the **Help** menu in the lower left-corner and select **Configure Settings**.
+To change this behavior, open the **Help** menu in the lower left corner and select **Configure Settings**.
 
 :::image type="content" source="../media/codebug-visual-studio-code/configure-settings-menu-visual-studio-code.png" alt-text="Screenshot that shows the Live Share help menu with Configure Settings selected.":::
 
