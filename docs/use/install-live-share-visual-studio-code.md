@@ -24,7 +24,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Ready to start collaborating with Live Share in Visual Studio Code? In this article, we'll walk you through setting up a collaboration session in Visual Studio Code by using the Live Share Extension.
 
-Note that the collaboration activities described here involve a single collaboration session host and one or more guests. The host is the person who started the collaboration session, and anyone that joins is a guest.
+The collaboration activities described here involve a single collaboration session host and one or more guests. The host is the person who started the collaboration session, and anyone that joins is a guest.
 
 *Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts.*
 
@@ -42,7 +42,7 @@ You'll need Visual Studio Code (1.22.0 or later) running on one of the following
 - **macOS**: Sierra (10.12) and later. Because of [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872315), El Capitan (10.11) and earlier aren't currently supported.
 
 - **Linux**: 64-bit Ubuntu Desktop 16.04 and later, Fedora Workstation 27 and later, or CentOS 7.
-    - Live Share requires a number of [prerequisites for Linux](#linux-installation-steps). You might be prompted to install these items.
+    - Live Share requires several [prerequisites for Linux](#linux-installation-steps). You might be prompted to install these items.
     - Because of [.NET Core 2.0 requirements](https://go.microsoft.com/fwlink/?linkid=872314), 32-bit Linux isn't supported.
     - ARM is currently not supported.
     - See [Linux installation details](../reference/linux.md) for information on using downstream distributions and other distributions.
@@ -65,11 +65,17 @@ When you download and use Visual Studio Live Share, you agree to the [license te
 
 ### Linux installation steps
 
-Linux is a highly variable environment. Given the number of desktop environments and distributions, getting Live Share installed can be complicated. If you use supported versions of Ubuntu Desktop (16.04+), Fedora Workstation (27+), or CentOS 7 and only use official distributions of Visual Studio Code, the process should be straightforward. If you're using a nonstandard configuration or downstream distribution, you might encounter complications. For more information, see [Linux installation details](../reference/linux.md).
+Linux is a highly variable environment. Given the number of desktop environments and distributions, getting Live Share installed can be complicated. The process should be straightforward if you use official distributions of Visual Studio Code and:
+
+- Ubuntu Desktop version 16.04 and up.
+- Fedora Workstation version 27 and up.
+- CentOS 7.
+
+If you're using a nonstandard configuration or downstream distribution, you might have complications. For more information, see [Linux installation details](../reference/linux.md).
 
 #### Install Linux prerequisites
 
-Some distributions of Linux are missing libraries that Live Share needs. By default, Live Share attempts to detect and install Linux prerequisites. You'll see a notification prompting you to install libraries when Live Share encounters a problem that can be caused by missing libraries:
+Some distributions of Linux are missing libraries that Live Share needs. By default, Live Share attempts to detect and install Linux prerequisites. You'll see a notification prompting you to install libraries when Live Share comes across a problem that can be caused by missing libraries:
 
 ![Screenshot of notification for missing Linux libraries.](../media/vscode-linux-prereq-missing.png)
 
@@ -77,7 +83,7 @@ When you select **Install**, a terminal window will open. Enter your admin (sudo
 
 If you see a message stating that the script doesn't support your distribution, see [Tips for community-supported distributions](../reference/linux.md#tips-for-community-supported-distros) for information the community has shared with us.
 
-If you don't want Visual Studio Code to run the command for you, you can also re-run the latest version of this script at any time by running this command from a terminal window:
+You might not want Visual Studio Code to run the command for you. You can rerun the latest version of this script at any time by running this command from a terminal window:
 
 ```bash
 wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
@@ -85,7 +91,7 @@ wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-r
 
 #### Linux browser integration
 
-Visual Studio Live Share doesn't typically require additional installation steps to enable browser integration on Linux.
+Visual Studio Live Share doesn't typically require extra installation steps to enable browser integration on Linux.
 
 On certain rare distributions, you might be notified that your admin (sudo) password is required to complete the installation. A terminal window noting where the browser launcher will be installed will appear. Enter your password when prompted, and select **Enter** when the installation completes to close the terminal window.
 
@@ -93,13 +99,13 @@ For information about why the password is required and where Live Share puts fil
 
 ## Sign in to Live Share
 
-To collaborate, you'll need to sign in to Visual Studio Live Share so everyone knows who you are. This is a security measure and doesn't add you to marketing activities or other research activities. You can sign in by using a Microsoft personal account (for example, @outlook.com), a Microsoft-backed work or school account (Azure Active Directory), or a GitHub account. Signing in is easy.
+To collaborate, you'll need to sign in to Visual Studio Live Share so everyone knows who you are. This sign-in is a security measure and doesn't add you to marketing activities or other research activities. You can sign in by using a Microsoft personal account (for example, @outlook.com), a Microsoft-backed work or school account (Azure Active Directory), or a GitHub account. Signing in is easy.
 
 Select **Live Share** on the status bar or select **Ctrl+Shift+P** or **Cmd+Shift+P** and then select **Live Share: Sign In**.
 
 :::image type="content" source="../media/install-live-share-visual-studio-code/live-share-button-status-bar.png" alt-text="Screenshot that shows the Visual Studio Code Live Share button.":::
 
-A prompt to sign in displays. When you select your sign-in preference, a browser opens so you can complete the sign-in process. Simply close the browser when you're done.
+A prompt to sign in displays. When you select your sign-in preference, a browser opens so you can complete the sign-in process. Close the browser when you're done.
 
 :::image type="content" source="../media/install-live-share-visual-studio-code/live-share-sign-in-options.png" alt-text="Screenshot that shows the Live Share sign in options.":::
 

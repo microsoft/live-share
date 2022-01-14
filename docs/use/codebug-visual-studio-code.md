@@ -29,7 +29,7 @@ The Visual Studio Live Share collaborative debugging feature is a powerful way t
 
 Using collaborative debugging is simple.
 
-1. Be sure the host and all guests have the appropriate debugging extension installed. (Installation isn't always necessary, but it's generally a good idea.)
+1. Be sure the host and all guests have the appropriate debugging extension installed. Installation isn't always necessary, but it's generally a good idea.
 
 2. The host, if not already set up for the project, should [configure launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) to debug the application from Visual Studio Code as normal. No special setup is required.
 
@@ -58,15 +58,19 @@ Each collaborator can investigate variables, go to various files in the call sta
 
 ## Change when Visual Studio Code joins debugging sessions
 
-By default, as a guest, you'll be automatically attached to debugging sessions when they're shared by the host. You might find this behavior disruptive. 
+By default, as a guest, you'll be automatically attached to debugging sessions when they're shared by the host. You might find this behavior disruptive.
 
-To change this behavior, open settings.json (**File** > **Preferences** > **Settings**), add one of the following lines, and then restart Visual Studio Code:
+To change this behavior, open the **Help** menu in the lower left-corner and select **Configure Settings**.
+
+:::image type="content" source="../media/codebug-visual-studio-code/configure-settings-menu-visual-studio-code.png" alt-text="Screenshot that shows the Live Share help menu with Configure Settings selected.":::
+
+Scroll down to **Live Share: Join Debug Session Option**, and select one of the following options:
 
 | Setting | Behavior |
 |---------|----------|
-|``"liveshare.joinDebugSessionOption":"Automatic"`` | The default. As a guest, you'll automatically join any shared debugging session the host starts. |
-| ``"liveshare.joinDebugSessionOption":"Prompt"`` | As a guest, you're prompted to join a shared debugging session when it's started by the host. |
-| ``"liveshare.joinDebugSessionOption":"Manual"`` | As a guest, you'll need to manually join debugging sessions. See [Detaching and reattaching](#detaching-and-reattaching). |
+|Automatic | The default. As a guest, you'll automatically join any shared debugging session the host starts. |
+| Prompt | As a guest, you're prompted to join a shared debugging session when it's started by the host. |
+| Manual | As a guest, you'll need to manually join debugging sessions. See [Detaching and reattaching](#detaching-and-reattaching). |
 
 ## Detaching and reattaching
 

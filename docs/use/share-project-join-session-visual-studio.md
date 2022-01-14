@@ -44,11 +44,11 @@ Follow these steps to start a collaboration session and invite a colleague to wo
 
     Select the **Live Share** button in the upper right-hand corner to start a Live Share session. A shareable link to your collaboration session is automatically copied to your clipboard.
 
-    :::image type="content" source="../media/share-project-join-session-vs/vs-live-share-logged-in.png" alt-text="Screenshot that shows the Live Share button while logged in to Visual Studio.":::
+    :::image type="content" source="../media/share-project-join-session-visual-studio/visual-studio-live-share-logged-in.png" alt-text="Screenshot that shows the Live Share button while logged in to Visual Studio.":::
 
     When you start your collaboration session for the first time, you'll see a Live Share tool window. Make sure you dock this window to ensure it shows up the next time you start a Live Share session.
 
-   :::image type="content" source="../media/share-project-join-session-vs/vs-live-share-window.png" alt-text="Screenshot that shows the Live Share tool window in Visual Studio.":::
+   :::image type="content" source="../media/share-project-join-session-visual-studio/visual-studio-live-share-window.png" alt-text="Screenshot that shows the Live Share tool window in Visual Studio.":::
 
     > [!NOTE]
     > You might be asked by your desktop firewall software to allow the Live Share agent to open a port the first time you share. Accepting this is entirely optional but enables a secured *direct mode* to improve performance when the person you're working with is on the same network as you are. See [changing the connection mode](../reference/connectivity.md#changing-the-connection-mode) for details.
@@ -59,7 +59,7 @@ Follow these steps to start a collaboration session and invite a colleague to wo
 
     After sharing, you'll get a notification that the invite link has been copied to your clipboard. You can then select the option to make the session read-only.
 
-    :::image type="content" source="../media/share-project-join-session-vs/vs-make-read-only-banner.png" alt-text="Screenshot that shows the 'Make read-only' option in the invitation link banner.":::
+    :::image type="content" source="../media/share-project-join-session-visual-studio/visual-studio-make-read-only-banner.png" alt-text="Screenshot that shows the 'Make read-only' option in the invitation link banner.":::
 
 6. **Send someone the link**
 
@@ -95,7 +95,7 @@ Follow these steps to start a collaboration session and invite a colleague to wo
 
 As a host, you can stop sharing completely and end the collaboration session by selecting the **Sharing** button in the upper right-hand corner and selecting **End Live Share Session**.
 
-:::image type="content" source="../media/share-project-join-session-vs/vs-end-live-share-session.png" alt-text="Screenshot that shows selecting Sharing, then selecting End Live Share Session from the drop-down.":::
+:::image type="content" source="../media/share-project-join-session-visual-studio/visual-studio-end-live-share-session.png" alt-text="Screenshot that shows selecting Sharing, then selecting End Live Share Session from the drop-down.":::
 
 All guests are notified the session has ended. Once the session has ended, guests can no longer access the content and any temp files are automatically cleaned up.
 
@@ -116,7 +116,7 @@ The easiest way to join a collaboration session is to open the invite link in a 
 
     After installing the Live Share extension, you'll want to sign in to let other collaborators know who you are. Visual Studio uses your personalization account by default, so you might skip this step.
 
-    See [sign in](install-live-share-visual-studio.md#sign-in) for more details.
+    For more information, see [sign in](install-live-share-visual-studio.md#sign-in).
 
 2. **Click on the invite link or open the invite in your browser**
 
@@ -132,7 +132,7 @@ The easiest way to join a collaboration session is to open the invite link in a 
     If the host is offline, you'll be notified at this point instead. You can contact the host and ask them to share again.
 
     > [!NOTE]
-    > Still having trouble? See [join manually](#join-manually).
+    > Still having trouble? For more information, see [join manually](#join-manually).
 
 3. **Collaborate**
 

@@ -36,11 +36,11 @@ For security purposes, only servers running on ports you specify are available t
 
 1. Click on the share/session state button in the upper right corner and select **Manage Shared Servers**.
 
-    :::image type="content" source="../media/share-server-vs/manage-shared-local-servers-visual-studio.png" alt-text="Screenshot that shows the share session drop-down list with Manage Shared Servers selected.":::
+    :::image type="content" source="../media/share-server-visual-studio/manage-shared-local-servers-visual-studio.png" alt-text="Screenshot that shows the share session drop-down list with Manage Shared Servers selected.":::
 
 2. In the dialog that appears, select **Add** and enter the port number the server is running on locally, enter a name, then select **OK**.
 
-    :::image type="content" source="../media/share-server-vs/shared-server-visual-studio.png" alt-text="Screenshot that shows the Shared Local Servers window with Add and Ok selected.":::
+    :::image type="content" source="../media/share-server-visual-studio/shared-server-visual-studio.png" alt-text="Screenshot that shows the Shared Local Servers window with Add and Ok selected.":::
 
 That's it! The server on the port you specified is mapped to each guest's localhost on the same port, unless that port was already occupied.
 

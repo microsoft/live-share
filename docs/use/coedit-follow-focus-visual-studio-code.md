@@ -1,5 +1,5 @@
 ---
-title: Coedit, follow, and focus in a collaboration session in VS Code
+title: Coedit, follow, and focus in Visual Studio Code
 titleSuffix: ""
 description: Learn how to coedit, follow, and focus in collaboration sessions with Visual Studio Code and Live Share.
 ms.custom:
@@ -44,19 +44,24 @@ You and other participants can go to any file in the shared project. You can edi
 
 The resulting edits are persisted on the host's computer when they're saved. So there's no need to synchronize, push, or send files around when you're done editing.
 
-> **Security tip:** Because all participants can independently go to and edit files, as a host, you might want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, you should realize that you might not see certain files as a result of these settings. For more information, see [Controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility).
+> [!TIP]
+> Because all participants can independently go to and edit files, as a host, you might want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, you should realize that you might not see certain files as a result of these settings. For more information, see [Controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility).
 
 ### Change participant flag behavior
 
 By default, Visual Studio Live Share automatically displays a flag next to a participant's cursor on hover or when the participant makes edits, highlights something, or moves the cursor. In some cases, you might want to change this behavior.
 
-To change the behavior, open settings.json (**File** > **Preferences** > **Settings**), add one of the following lines, and then restart Visual Studio Code.
+To change this behavior, open the **Help** menu in the lower left-corner and select **Configure Settings**.
+
+:::image type="content" source="../media/codebug-visual-studio-code/configure-settings-menu-visual-studio-code.png" alt-text="Screenshot that shows the Live Share help menu with Configure Settings selected.":::
+
+Scroll down to **Live Share: Name Tag Visibility**, and select one of the following options:
 
 | Setting | Behavior |
 |---------|----------|
-| ``"liveshare.nameTagVisibility":"Never"`` | The flag is visible only when you hover over the cursor. |
-| ``"liveshare.nameTagVisibility":"Activity"`` | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves the cursor. |
-| ``"liveshare.nameTagVisibility":"Always"`` | The flag is always visible. |
+| Never | The flag is visible only when you hover over the cursor. |
+| Activity | This is the default. The flag is visible on hover or if the participant edits, highlights, or moves the cursor. |
+| Always | The flag is always visible. |
 
 ### Find and list participants
 
@@ -83,7 +88,7 @@ Sometimes you need to explain a problem or design that spans multiple files or l
 
 You might sometimes want everyone in a collaboration session to take a look at something you're doing. Live Share lets you ask that everyone focus their attention on you with a notification that makes it easy for them to follow you.
 
-Open the **VS Live Share** tab in the Visual Studio Code Activity Bar or the Live Share **Explorer** tab, and then select the **Focus participants** button:
+Open the **Live Share** tab in the Visual Studio Code Activity Bar or the Live Share **Explorer** tab, and then select the **Focus participants** button:
 
 ![Screenshot that shows the Focus participants button.](../media/vscode-focus-viewlet.png)
 
@@ -95,7 +100,7 @@ They can then select **Follow** in the notification when they're ready to focus 
 
 ## Start and stop following collaborators
 
-To start following a participant (as either a host or a guest), select the participant's name in the participants list on the Live Share **Explorer** tab or on the **VS Live Share** tab. The circle next to the name will become solid to indicate that you're following them:
+To start following a participant (as either a host or a guest), select the participant's name in the participants list on the Live Share **Explorer** tab or on the **Live Share** tab. The circle next to the name will become solid to indicate that you're following them:
 
 ![Screenshot that shows a participant who's being followed.](../media/vscode-follow-multiple-viewlet.png)
 

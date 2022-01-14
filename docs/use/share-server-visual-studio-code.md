@@ -37,7 +37,7 @@ This connection is accomplished via an improved security SSH or SSL tunnel betwe
 
 For security reasons, only servers running on ports that you specify are available to other guests. It's easy for the collaboration session host to add one. Here's how:
 
-1. On the **VS Live Share** tab or the Live Share **Explorer** tab, select the **Share server** item or button:
+1. On the **Live Share** tab or the Live Share **Explorer** tab, select the **Share server** item or button:
 
     ![Screenshot that shows the Share server button.](../media/vscode-share-local-server-viewlet.png)
 
@@ -63,7 +63,7 @@ Modern developers frequently use of a variety of command-line tools. Live Share 
 
 By default, terminals aren't shared because they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This default configuration allows you to run commands in local terminals with reduced risk and share only when you need to. And only hosts can start shared terminals. This limitation prevents guests from starting one up and doing something you aren't expecting.
 
-As a host, you can share a terminal from the **VS Live Share** or the Live Share **Explorer** tab. Select the **Share terminal** item or button:
+As a host, you can share a terminal from the **Live Share** or the Live Share **Explorer** tab. Select the **Share terminal** item or button:
 
 ![Screenshot that shows the Share terminal button.](../media/vscode-share-terminal-viewlet.png)
 
@@ -84,7 +84,7 @@ If multiple terminals are shared, or if your focus is in a different tab, you ca
 
 ![Screenshot that shows the Shared Terminals list.](../media/vscode-shared-terminal-focus.png)
 
-To end a terminal session, enter **exit**, close the terminal window, or select the **Unshare terminal** button on the Live Share **Explorer** tab or the **VS Live Share** tab. Everyone will be disconnected.
+To end a terminal session, enter **exit**, close the terminal window, or select the **Unshare terminal** button on the Live Share **Explorer** tab or the **Live Share** tab. Everyone will be disconnected.
 
 ## Next steps
 

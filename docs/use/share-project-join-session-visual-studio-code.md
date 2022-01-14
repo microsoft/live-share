@@ -94,7 +94,7 @@ After you download and install Visual Studio Live Share, follow these steps to s
     Send the link over e-mail, Slack, Skype, or other platforms to the guests you want to invite. Given the level of access Live Share sessions can provide to guests, *you should only share with people you trust*, and you should think through the implications of what you're sharing.
 
     > [!TIP]
-    > Want to understand the security implications of some Live Share features? Check out the [security](../reference/security.md) article.
+    > Want to understand the security implications of some Live Share features? For more information, see the [security](../reference/security.md) article.
 
     The guests you invite might have questions. The [Quickstart: Join your first session](../quickstart/join.md) article provides information on getting started as a guest.
 
@@ -124,13 +124,14 @@ As a host, you can stop sharing completely and end the collaboration session at 
 
 All guests will be notified that the session is over. After the session is over, guests won't be able to access the content. Any temp files will automatically be cleaned up.
 
-Having problems with sharing? See the [troubleshooting](../troubleshooting.md#share-and-join) article.
+Having problems with sharing? For more information, see the [troubleshooting](../troubleshooting.md#share-and-join) article.
 
 ## Join and leave a session
 
 After they download and install Visual Studio Live Share, guests need to take only a couple steps to join a hosted collaboration session. There are two ways to join: [via a browser](#join-via-a-browser) and [manually](#join-manually).
 
-> **Security tip:** Guests joining a collaboration session need to understand that hosts might restrict their access to certain files or features. Want to understand the security implications of Live Share features and settings? Check out the [security](../reference/security.md) article.
+> [!TIP]
+> Guests joining a collaboration session need to understand that hosts might restrict their access to certain files or features. Want to understand the security implications of Live Share features and settings? For more information, see the [security](../reference/security.md) article.
 
 ### Join via a browser
 
@@ -144,7 +145,7 @@ The easiest way to join a collaboration session is to simply open the invitation
 
     Simply open (or re-open) the invitation link in a browser.
 
-    > [!Note] 
+    > [!NOTE]
     > If you haven't installed the Live Share Extension, you'll get links to the Marketplace. Install the extension, restart your chosen tool, and retry.
 
     You should be notified that the browser wants to start a tool that's enabled for Live Share. If you let it start the tool, you'll be connected to the collaboration session when it starts.
@@ -166,7 +167,7 @@ The easiest way to join a collaboration session is to simply open the invitation
 
 ### Join manually
 
-You can also join manually without using a web browser. This  option can be useful when the tool you want to use is already running, you want to use a tool you don't usually use, or you're having trouble getting invitation links to work. The process is easy:
+You can also join manually without using a web browser. This option can be useful when the tool you want to use is already running, you want to use a tool you don't usually use, or you're having trouble getting invitation links to work. The process is easy:
 
 1. **Sign in**
 
@@ -198,7 +199,7 @@ As a guest, you can leave a collaboration session without ending it for others b
 
 Any temp files are automatically cleaned up, so you don't need to do anything else.
 
-Having problems with joining? Check out [Troubleshooting](../troubleshooting.md#share-and-join).
+Having problems with joining? For more information, see [troubleshooting](../troubleshooting.md#share-and-join).
 
 ## Session states and limitations
 
@@ -208,13 +209,13 @@ These are the states you'll typically see:
 
 | State | Status bar item | Description |
 |-------|--------------------|-------------|
-| Inactive | ![VS Code status: inactive](../media/vscode-status-share.png) | No active collaboration session. Nothing is shared. |
-| Host: Sharing In-Progress | ![VS Code status: share in progress](../media/vscode-status-sharing.png)| A collaboration session is starting. Content sharing will begin soon. |
-| Host: Sharing | ![VS Code status: sharing active ](../media/vscode-status-active.png)| A collaboration session is active. Content is shared. |
-| Host: Sharing Read-only | ![VS Code status: sharing read-only](../media/vscode-status-sharing-read-only.png)| Host is sharing a read-only collaboration session. |
-| Guest: Joining Session | ![VS Code status: joining](../media/vscode-status-joining.png)| Guest is joining an existing collaboration session. |
-| Guest: Joined | ![VS Code status: joined](../media/vscode-status-active.png) | Guet is joined and connected to an active collaboration session and receiving shared content. |
-| Guest: Joined Read-only | ![VS Code status: joined read-only](../media/vscode-status-joined-read-only.png) | Guest is joined and connected to an active read-only collaboration session. |
+| Inactive | ![Screenshot that shows the Visual Studio Code status as inactive.](../media/vscode-status-share.png) | No active collaboration session. Nothing is shared. |
+| Host: Sharing In-Progress | ![Screenshot that shows the Visual Studio Code status as share in progress.](../media/vscode-status-sharing.png)| A collaboration session is starting. Content sharing will begin soon. |
+| Host: Sharing | ![Screenshot that shows the Visual Studio Code status as sharing active.](../media/vscode-status-active.png)| A collaboration session is active. Content is shared. |
+| Host: Sharing Read-only | ![Screenshot that shows the Visual Studio Code status as sharing read-only.](../media/vscode-status-sharing-read-only.png)| Host is sharing a read-only collaboration session. |
+| Guest: Joining Session | ![Screenshot that shows the Visual Studio Code status as joining.](../media/vscode-status-joining.png)| Guest is joining an existing collaboration session. |
+| Guest: Joined | ![Screenshot that shows the Visual Studio Code status as joined.](../media/vscode-status-active.png) | Guest is joined and connected to an active collaboration session and receiving shared content. |
+| Guest: Joined Read-only | ![Screenshot that shows the Visual Studio Code status as joined read-only.](../media/vscode-status-joined-read-only.png) | Guest is joined and connected to an active read-only collaboration session. |
 
 Although there are currently some shortcomings guests will experience while using the features described in this article, collaboration session hosts retain the complete functionality of their chosen tool. For more information, see:
 
