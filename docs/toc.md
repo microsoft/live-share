@@ -8,7 +8,7 @@
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
 ## [Join from the browser](quickstart/browser-join.md)
-# How-to use Live Share: VS Code
+# How-to use Live Share: Visual Studio Code
 ## [Install and sign in](use/install-live-share-visual-studio-code.md)
 ## [Share a project and join a session](use/share-project-join-session-visual-studio-code.md)
 ## [Co-edit, follow, and focus](use/coedit-follow-focus-visual-studio-code.md)
