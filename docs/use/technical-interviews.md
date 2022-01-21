@@ -1,11 +1,11 @@
 ---
-title: "Collaborate using Visual Studio Code -  Visual Studio Live Share | Microsoft Docs"
+title: "Technical Interviews with Visual Studio Live Share"
 description: "A set of collaboration how-tos for Visual Studio Code and Live Share."
 ms.custom:
-ms.date: 09/16/2019
+ms.date: 09/16/2021
 ms.reviewer: ""
 ms.suite: ""
-ms.topic: "conceptual"
+ms.topic: "quickstart"
 author: "fubaduba"
 ms.author: "fishah"
 manager: "JonathanCarter"
@@ -13,7 +13,7 @@ ms.workload:
   - "liveshare"
 ---
 
-# How-to: Do Technical Interviews using Live Share
+# Quickstart: Do Technical Interviews using Live Share
 
 Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio Code and the Live Share extension pack from its marketplace** by following [these steps](../use/vscode.md).
 
