@@ -1,16 +1,13 @@
 ---
 title: "Linux installation details -  Visual Studio Live Share | Microsoft Docs"
+titleSuffix: Live Share
 description: "Detailed information on installing Visual Studio Live Share on Linux."
-ms.custom:
-ms.date: 10/6/2018
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "reference"
-author: "chuxel"
-ms.author: "clantz"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: reference
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 
 <!--
@@ -160,11 +157,11 @@ In some cases, distributions either do not support this location or require twea
 
 If you'd prefer to run the command yourself instead, you can click "Copy instead" which will copy the terminal command to the clipboard instead.
 
-Finally, if you opt to skip this step entirely, you can still [join collaboration sessions manually](../use/vscode.md#join-manually), but you will not be able to join by opening an invite link in the browser. Note that you can always access the command again later, by hitting **Ctrl+Shift+P / Cmd+Shift+P** and selecting the "Live Share: Launcher Setup" command.
+Finally, if you opt to skip this step entirely, you can still [join collaboration sessions manually](../use/share-project-join-session-visual-studio-code.md#join-manually), but you will not be able to join by opening an invite link in the browser. Note that you can always access the command again later, by hitting **Ctrl+Shift+P / Cmd+Shift+P** and selecting the "Live Share: Launcher Setup" command.
 
 ## See also
 
-- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
+- [Install and sign in to Live Share in Visual Studio Code](../use/install-live-share-visual-studio-code.md)
 - [Connectivity requirements for Live Share](connectivity.md)
 - [Security features of Live Share](security.md)
 
