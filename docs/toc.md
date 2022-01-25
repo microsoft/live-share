@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD022 MD025 -->
 # Overview
-## [Introduction](index.md)
+## [What is Live Share?](index.md)
 ## [Features](overview/features.md)
 ## [Common Use Cases](reference/use-cases.md)
 ## [What's new](overview/whats-new.md)
@@ -20,8 +20,6 @@
 ## [Co-edit, follow, and focus](use/coedit-follow-focus-visual-studio.md)
 ## [Co-debug](use/codebug-visual-studio.md)
 ## [Share a server or terminal](use/share-server-visual-studio.md)
-# How-to Guides: Technical Interviews
-## [Technical Interviews](use/technical-interviews.md)
 # Reference
 ## [Contacts](reference/contacts.md)
 ## [Security](reference/security.md)
