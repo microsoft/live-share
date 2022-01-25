@@ -1,18 +1,14 @@
 ---
 
 title: "Platform and language support  | Microsoft Docs"
+titleSuffix: Live Share
 description: "An overview of platform and language support for Visual Studio Live Share."
-
-ms.custom:
-ms.date: 04/25/2018
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "reference"
-author: "lostintangent"
-ms.author: "joncart"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: reference
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 
 # Language and platform support

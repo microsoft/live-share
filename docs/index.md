@@ -1,16 +1,13 @@
 ---
 title: "What is Live Share?"
+titleSuffix: Live Share
 description: "Visual Studio Live Share."
-ms.custom:
-ms.date: 01/16/2022
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "overview"
-author: "fubaduba"
-ms.author: "fishah"
-manager: "j-martens"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: overview
+author: fubaduba
+ms.author: fishah
+manager: j-martens
 ---
 
 # What is Visual Studio Live Share?

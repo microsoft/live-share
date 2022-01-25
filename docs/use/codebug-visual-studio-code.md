@@ -1,17 +1,13 @@
 ---
-title: Co-debug in a collaboration session in Visual Studio Code
-titleSuffix: ""
+title: Debug & collaborate in Visual Studio Code
+titleSuffix: Live Share
 description: Learn how to co-debug in collaboration sessions using powerful tools included in Visual Studio Code and Live Share.
-ms.custom:
-ms.date: 12/30/2021
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "conceptual"
-author: "chuxel"
-ms.author: "clantz"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: how-to
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 
 <!--

@@ -1,16 +1,13 @@
 ---
 title: "Security  | Microsoft Docs"
+titleSuffix: Live Share
 description: "Information on the security features of Visual Studio Live Share."
-ms.custom:
-ms.date: 12/17/2018
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "reference"
-author: "chuxel"
-ms.author: "clantz"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: reference
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 
 # Security features of Live Share

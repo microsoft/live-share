@@ -1,16 +1,13 @@
 ---
 title: "Live Share features"
+titleSuffix: Live Share
 description: "An overview of Visual Studio Live Share and its capabilities."
-ms.custom:
-ms.date: 07/16/2021
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "overview"
-author: "fubaduba"
-ms.author: "fishah"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: overview
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 
 <!--

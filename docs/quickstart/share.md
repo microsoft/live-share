@@ -1,16 +1,13 @@
 ---
 title: "Share quickstart  | Microsoft Docs"
+titleSuffix: Live Share
 description: "An abridged walkthrough on sharing your first project using a Visual Studio Live Share collaboration session."
-ms.custom:
-ms.date: 03/22/2018
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "quickstart"
-author: "chuxel"
-ms.author: "clantz"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: quickstart
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 
 # Quickstart: Share your first project
