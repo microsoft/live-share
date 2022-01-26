@@ -1,16 +1,13 @@
 ---
 title: "What is Live Share?"
+titleSuffix: Live Share
 description: "Visual Studio Live Share."
-ms.custom:
-ms.date: 01/16/2022
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "overview"
-author: "fubaduba"
-ms.author: "fishah"
-manager: "j-martens"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: overview
+author: fubaduba
+ms.author: fishah
+manager: j-martens
 ---
 
 # What is Visual Studio Live Share?
@@ -30,7 +27,7 @@ There are many use cases for Visual Studio Live Share. Learn more in [Common use
 
 Ready to get going? In this article we'll run you through some concepts and how to install the needed extensions. If you're looking for an abridged version, check out the quickstarts.
 
-- Install and collaborate: [VS Code steps](use/vscode.md) | [Visual Studio steps](use/vs.md)
+- Install and collaborate: [Visual Studio Code steps](./use/install-live-share-visual-studio-code.md) | [Visual Studio steps](./use/install-live-share-visual-studio.md)
 - [Quickstart: Share your first project](quickstart/share.md)
 - [Quickstart: Join your first session](quickstart/join.md)
 

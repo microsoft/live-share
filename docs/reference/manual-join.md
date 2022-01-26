@@ -1,16 +1,13 @@
 ---
 title: "Manual join -  Visual Studio Live Share | Microsoft Docs"
+titleSuffix: Live Share
 description: "Information on joining a collaboration session manually in Visual Studio Live Share."
-ms.custom:
-ms.date: 03/22/2018
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "reference"
-author: "chuxel"
-ms.author: "clantz"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: reference
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 # Join a session manually
 
@@ -79,8 +76,8 @@ Quickstarts
 
 How-tos
 
-- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-- [How-to: Collaborate using Visual Studio](../use/vs.md)
+- [Install and sign in to Live Share in Visual Studio Code](../use/install-live-share-visual-studio-code.md)
+- [Install and sign in to Live Share in Visual Studio](../use/install-live-share-visual-studio.md)
 - [How-to: Provide feedback](../support.md)
 
 Reference
