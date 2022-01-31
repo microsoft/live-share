@@ -1,28 +1,25 @@
 ---
 title: "Collaborate using Visual Studio Code -  Visual Studio Live Share | Microsoft Docs"
+titleSuffix: Live Share
 description: "A set of collaboration how-tos for Visual Studio Code and Live Share."
-ms.custom:
-ms.date: 09/16/2019
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "conceptual"
-author: "fubaduba"
-ms.author: "fishah"
-manager: "JonathanCarter"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: conceptual
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 
-# How-to: Do Technical Interviews using Live Share
+# Quickstart: Do Technical Interviews using Live Share
 
-Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio Code and the Live Share extension pack from its marketplace** by following [these steps](../use/vscode.md).
+Before you begin using Live Share for Technical Interviews, you must complete one integral step: **Download Visual Studio Code and the Live Share extension pack from its marketplace** by following [these steps](install-live-share-visual-studio-code.md).
 
-Using Live Share for interviews, allows the interviewer and candidate to have a fast and reliable interview session, with a full-fidelity IDE or editor. 
-This tutorial will focus on using ['Planned Sessions'](../reference/insiders.md) and [Live Share web join](../quickstart/browser-join.md) for the interview experience. 
+Using Live Share for interviews, allows the interviewer and candidate to have a fast and reliable interview session, with a full-fidelity IDE or editor.
+This article focuses on using ['Planned Sessions'](../reference/insiders.md) and [Live Share web join](../quickstart/browser-join.md) for the interview experience.
 
 ## Setup for interviewer (VS Code)
 
-Install [Visual Studio Code](../use/vscode.md) and download the [Live Share extension pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) from the marketplace. The extension pack will provide you with our audio support for interviews.
+Install [Visual Studio Code](../use/install-live-share-visual-studio-code.md) and download the [Live Share extension pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) from the marketplace. The extension pack will provide you with our audio support for interviews.
 
 >[!TIP]
 >To have the best experience of interviewing using Live Share in VS Code, make sure to turn on the Live Share insiders feature flag. *Preferences:UserSettings > Extensions > Visual Studio Live Share > Feature Set: Insiders*

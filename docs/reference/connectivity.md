@@ -119,8 +119,8 @@ If these settings don't solve the problem for you, [please let us know](https://
 
 ## See also
 
-- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-- [How-to: Collaborate using Visual Studio](../use/vs.md)
+- [Install and sign in to Live Share in Visual Studio Code](../use/install-live-share-visual-studio-code.md)
+- [Install and sign in to Live Share in Visual Studio](../use/install-live-share-visual-studio.md)
 - [Security features of Live Share](security.md)
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).

@@ -1,16 +1,13 @@
 ---
 title: "Join quickstart  | Microsoft Docs"
+titleSuffix: Live Share
 description: "An abridged walkthrough on joining your first Visual Studio Live Share collaboration session."
-ms.custom:
-ms.date: 03/22/2018
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "quickstart"
-author: "chuxel"
-ms.author: "clantz"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.date: 01/22/2022
+ms.reviewer: mikejo5000
+ms.topic: quickstart
+author: fubaduba
+ms.author: fishah
+manager: jmartens
 ---
 
 # Quickstart: Join your first collaboration session
@@ -70,7 +67,7 @@ In **VS Code**, your browser will launch while a notification will appear launch
 
 ![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast.png)
 
-> **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [here for details](../use/vscode.md#sign-in-by-using-a-user-code).
+> **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [here for details](../use/install-live-share-visual-studio-code.md#sign-in-by-using-a-user-code).
 
 In **Visual Studio**, Live Share automatically uses your [personalization account](/visualstudio/ide/signing-in-to-visual-studio). As a result, you can simply sign in as you would normally. However, if you'd prefer to use a different sign-in than your Visual Studio personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** and select different credentials.
 
@@ -113,8 +110,8 @@ Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedba
 Check out these additional articles for more information.
 
 - [Quickstart: Share your first project](share.md)
-- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-- [How-to: Collaborate using Visual Studio](../use/vs.md)
+- [Install and sign in to Live Share in Visual Studio Code](../use/install-live-share-visual-studio-code.md)
+- [Install and sign in to Live Share in Visual Studio](../use/install-live-share-visual-studio.md)
 
 Reference
 

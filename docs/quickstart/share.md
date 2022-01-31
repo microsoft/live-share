@@ -1,16 +1,15 @@
 ---
-title: "Quickstart: Collaborative coding with Visual Studio Live Share"
-description: "In this quickstart, we provide you an abridged walkthrough on sharing your first project using a Visual Studio Live Share collaboration session."
-ms.custom: devdivchpfy22
+title: "Share quickstart  | Microsoft Docs"
+titleSuffix: Live Share
+description: "An abridged walkthrough on sharing your first project using a Visual Studio Live Share collaboration session."
 ms.date: 01/31/2022
-ms.reviewer: ""
-ms.suite: ""
-ms.topic: "quickstart"
-author: "chuxel"
-ms.author: "clantz"
-manager: "AmandaSilver"
-ms.workload: 
-  - "liveshare"
+ms.custom: devdivchpfy22
+ms.reviewer: mikejo5000
+ms.topic: quickstart
+author: fubaduba
+ms.author: fishah
+manager: jmartens
+
 ---
 
 # Quickstart: Collaborative coding with Visual Studio Live Share
@@ -51,7 +50,7 @@ In **VS Code**, your browser will launch while a notification will appear launch
 
 ![Toast notification asking to sign in using a web browser](../media/vscode-sign-in-toast-1.png)
 
-> **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [here for details](../use/vscode.md#sign-in-by-using-a-user-code).
+> **Linux users:** You may be prompted to enter a user code if you are using an older version of Live Share (v0.3.295 or below). Update to the latest version of the extension or click the "Having trouble?" link after sign in to see the code. See [here for details](../use/install-live-share-visual-studio-code.md#sign-in-by-using-a-user-code).
 
 In **Visual Studio**, Live Share automatically uses your [personalization account](/visualstudio/ide/signing-in-to-visual-studio). You can sign in as you would normally. However, if you prefer to use a different sign-in than your Visual Studio personalization account, go to **Tools &gt; Options &gt; Live Share &gt; User account** and select different credentials.
 
@@ -134,7 +133,7 @@ Here are a few things to try out once a guest has joined you:
 - Share a server so you can check out something like a web app running on their machine
 - Share a terminal and run some commands
 
-Check out the [Visual Studio Code](../use/vscode.md) and [Visual Studio](../use/vs.md) extension docs for information on how to do these actions and more.
+Check out the [Visual Studio Code](../use/install-live-share-visual-studio-code.md) and [Visual Studio](../use/install-live-share-visual-studio.md) extension docs for information on how to do these actions and more.
 
 Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedback](../support.md).
 
@@ -143,8 +142,8 @@ Having problems? See [troubleshooting](../troubleshooting.md) or [provide feedba
 Try these articles to get started or dig deeper:
 
 - [Quickstart: Join your first collaboration session](join.md)
-- [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
-- [How-to: Collaborate using Visual Studio](../use/vs.md)
+- [Install and sign in to Live Share in Visual Studio Code](../use/install-live-share-visual-studio-code.md)
+- [Install and sign in to Live Share in Visual Studio](../use/install-live-share-visual-studio.md)
 
 Reference
 
