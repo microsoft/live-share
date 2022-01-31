@@ -2,7 +2,7 @@
 title: "Quickstart: Collaborative coding with Visual Studio Live Share"
 description: "In this quickstart, we provide you an abridged walkthrough on sharing your first project using a Visual Studio Live Share collaboration session."
 ms.custom: devdivchpfy22
-ms.date: 12/13/2021
+ms.date: 01/31/2022
 ms.reviewer: ""
 ms.suite: ""
 ms.topic: "quickstart"
@@ -145,8 +145,6 @@ Try these articles to get started or dig deeper:
 - [Quickstart: Join your first collaboration session](join.md)
 - [How-to: Collaborate using Visual Studio Code](../use/vscode.md)
 - [How-to: Collaborate using Visual Studio](../use/vs.md)
-- [Connectivity requirements for Live Share](https://github.com/MicrosoftDocs/live-share-pr/reference/connectivity.md)
-- [Language and platform support](https://github.com/MicrosoftDocs/live-share-pr/reference/platform-support.md)
 
 Reference
 
