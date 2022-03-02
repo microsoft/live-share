@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+steps:
+- bash: |
+   git config --local user.name "CXWTool Service Account"
+   git config --local user.email "cxwtool@microsoft.com"
+   
+   git remote add ssh git@github.com:MicrosoftDocs/live-share-pr.git
+   
+   git checkout main
+   git pull ssh main
+   
+   git checkout live
+   git pull ssh live
+   
+   git merge main 
+   
+   CONFLICTS=$(git ls-files -u | wc -l)
+   if [ "$CONFLICTS" -gt 0 ] ; then
+      echo "There is a merge conflict in live branch. Aborting"
+      git merge --abort
+      exit 1
+   else
+      echo "Merge OK"
+      git push ssh live
+   fi
+  displayName: 'Merge main into live'
