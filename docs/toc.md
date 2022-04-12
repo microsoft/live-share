@@ -13,6 +13,7 @@
 ## [Co-edit, follow, and focus](use/coedit-follow-focus-visual-studio-code.md)
 ## [Co-debug](use/codebug-visual-studio-code.md)
 ## [Share a server or terminal](use/share-server-visual-studio-code.md)
+## [Enable accessibility features](use/enable-accessibility-features-visual-studio-code.md)
 # How-to use Live Share: Visual Studio
 ## [Install and sign in](use/install-live-share-visual-studio.md)
 ## [Share a project and join a session](use/share-project-join-session-visual-studio.md)
