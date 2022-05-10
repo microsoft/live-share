@@ -42,6 +42,7 @@ While the prerequisite install script above covers a variety of distributions, y
 
 | Distribution | Vanilla install missing libraries | Additional steps |
 |--------|-------------------|----|
+| Ubuntu Desktop 22.04 (64-bit) | `libssl1.1` | &lt;none&gt; |
 | Ubuntu Desktop 18.04 (64-bit) | &lt;none&gt;  | &lt;none&gt; |
 | Ubuntu Desktop 16.04 (64-bit) | &lt;none&gt; | &lt;none&gt; |
 | Kubuntu 18.04 (64-bit) | `gnome-keyring desktop-file-utils` | &lt;none&gt; |
@@ -71,8 +72,8 @@ Distributions outside of the Debian / Ubuntu or RHL trees are not officially sup
 
 | Distribution | Working? | Vanilla install missing libraries | Additional Steps |
 |--------------|----------|-------------------|------------------|
-| Arch Linux (64-bit) | Yes | Varies. Possible libraries: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</ul> |
-| Manjaro 17.1 (64-bit) | Yes | `xorg-xprop liburcu` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li></ul> |
+| Arch Linux (64-bit) | Yes | Varies. Possible libraries: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop icu69` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li><li>`sudo` will need to be installed  to use the automated prerequisite install script.</li><li>`gnome-keyring` may require additional [setup steps](https://wiki.archlinux.org/index.php/GNOME/Keyring) in some desktop environments.</ul> |
+| Manjaro 17.1 (64-bit) | Yes | `xorg-xprop liburcu icu69` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Use the [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR package for VS Code.</li></ul> |
 | openSuSE LEAP 15 KDE (64-bit) | Yes | `libopenssl1_0_0 gnome-keyring` | <ul><li>Supported by the prerequisite install script.</li></ul> |
 | Solus 3 (64-bit) | Yes | `xprop` | <ul><li>Supported by the [prerequisite install script](#install-linux-prerequisites).</li><li>Versions of the `vscode` package prior to release 57 were missing required product.json values ([see below](#vs-code-oss-issues)). Upgrade the `vscode` package to resolve this issue.</li></ul> |
 | Gentoo (64-bit) | Yes | Highly variable. Possible missing packages: `dev-libs/openssl-1.0.2 net-libs/libgsasl dev-libs/icu sys-libs/zlib sys-apps/util-linux app-crypt/libsecret gnome-base/gnome-keyring x11-apps/xprop`| <ul><li>The `visual-studio-code` package in the **jorgicio** overlay is known to work.</li></ul>
@@ -103,7 +104,7 @@ Libraries may be installed on Debian/Ubuntu based distributions by running `sudo
 For Ubuntu based distributions including Mint, run:
 
 ```
-sudo apt install libssl1.0.0 libkrb5-3 zlib1g libicu[0-9][0-9] gnome-keyring libsecret-1-0 desktop-file-utils x11-utils
+sudo apt install libssl1.1 libkrb5-3 zlib1g libicu[0-9][0-9] gnome-keyring libsecret-1-0 desktop-file-utils x11-utils
 ```
 
 For Debian 9 and non-Ubuntu downstream distributions, run:
