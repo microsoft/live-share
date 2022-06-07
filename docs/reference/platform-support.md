@@ -32,7 +32,7 @@ All languages / platforms have same file intellisense (when the respective exten
 | C# | ✅ | ✅ |
 | Clojure | ✅ | *N/A* <sup>4</sup> |
 | [ColdFusion (CFML)](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml) | ✅ | *N/A* <sup>4</sup> |
-| [Crystal](https://marketplace.visualstudio.com/items?itemName=faustinoaq.crystal-lang) | ✅ | *N/A* <sup>4</sup> |
+| Crystal | ✅ | *N/A* <sup>4</sup> |
 | CSHTML | *N/A* <sup>1</sup> | ✅ |
 | CSS | *N/A* | *N/A* |
 | Dart | ✅ | ✅ |
@@ -67,12 +67,12 @@ All languages / platforms have same file intellisense (when the respective exten
 | reStructuredText | ✅ | *N/A* |
 | Ruby | ✅ | ✅ |
 | Rust | ✅ | *N/A* <sup>4</sup> |
-| [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) | ✅ | *N/A* |
+| Sass | ✅ | *N/A* |
 | Scala | ✅ | *N/A* <sup>4</sup> |
 | Solidity | ✅ | *N/A* <sup>4</sup> |
 | SQL / T-SQL | *N/A* | *N/A* <sup>4</sup> |
 | [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus) | ✅ | *N/A* |
-| [Svelte](https://marketplace.visualstudio.com/items?itemName=JamesBirtles.svelte-vscode) | ✅ | *N/A* <sup>4</sup> |
+| Svelte | ✅ | *N/A* <sup>4</sup> |
 | Swift | ✅ | *N/A* <sup>4</sup> |
 | Terraform | ✅ | *N/A* <sup>4</sup> |
 | XML | ✅ | *N/A* <sup>4</sup> |
