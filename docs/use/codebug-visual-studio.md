@@ -40,7 +40,7 @@ Anyone can step through the debugging process, which enables seamless switching 
 > [!NOTE]
 > See [platform support](../reference/platform-support.md) for the state of debugging features by language or platform.
 
-Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Each participant can use coediting features to track where the others are located. Participants can seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
+Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Each participant can use co-editing features to track where the others are located. Participants can seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
 > [!NOTE]
 > While in a read-only collaboration session, a guest will not be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables.

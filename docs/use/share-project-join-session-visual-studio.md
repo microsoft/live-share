@@ -36,7 +36,7 @@ Follow these steps to start a collaboration session and invite a colleague to wo
 
 3. **[Optional] Update hidden or excluded files**
 
-    Live Share **hides** any files or folders referenced in *.gitignore* files in your project from guests by default. **Hiding** a file prevents it from appearing in the file tree while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide or exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+    By default, Live Share **hides** any files or folders referenced in *.gitignore* files in your project from guests. **Hiding** a file prevents it from appearing in the file tree, while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide or exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 4. **Start a collaboration session**
 
