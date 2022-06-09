@@ -30,9 +30,9 @@ Guests can access the server you shared on that port from their own local machin
 > [!TIP]
 > As a host, you should be very selective with the ports you share with guests and stick to application ports (rather than sharing a system port). For guests, shared ports will behave exactly like they would if the server/service was running on their own machine. This is very useful, but if the wrong port is shared can also be risky.
 
-For security purposes, only servers running on ports you specify are available to other guests. Fortunately, it's easy to add one as the collaboration session *host*.
+For security purposes, only servers running on ports you specify are available to other guests. It's easy to add one as the collaboration session *host*.
 
-1. Click on the share/session state button in the upper right corner and select **Manage Shared Servers**.
+1. Click on the share/session state button in the upper-right corner and select **Manage Shared Servers**.
 
     :::image type="content" source="../media/share-server-visual-studio/manage-shared-local-servers-visual-studio.png" alt-text="Screenshot that shows the share session drop-down list with Manage Shared Servers selected.":::
 
@@ -42,21 +42,21 @@ For security purposes, only servers running on ports you specify are available t
 
 That's it! The server on the port you specified is mapped to each guest's localhost on the same port, unless that port was already occupied.
 
-If the port is already in use on a guest's machine, a different one is automatically selected. Guests can see a list of currently shared ports, by name if specified, by selecting the session state button in the upper right corner and selecting **View Shared Local Servers**.
+If the port is already in use on a guest's machine, a different one is automatically selected. Guests can see a list of currently shared ports, by name if specified, by selecting the session state button in the upper-right corner and selecting **View Shared Local Servers**.
 
 ![Screenshot that shows the View Shared Servers option.](../media/vs-view-shared-servers.png)
 
 Guests *can't* control which ports on the host's machine are shared for security reasons.
 
-To stop sharing a local server, the host simply needs to click the share / session state button in the upper right corner as above, select **Manage Shared Local Servers**, and select the appropriate port, and click "Remove".
+To stop sharing a local server, the host needs to click the share / session state button in the upper right corner as above, select **Manage Shared Local Servers**, and select the appropriate port, and click "Remove".
 
 ## Share a terminal
 
-Modern development makes frequent use of a wide array of command-line tools. Fortunately, Live Share allows you, as a host, to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative. Fully collaborative means you and your guests can run commands and see the results. You might give guests visibility to terminal output or let them get hands on. Guests can run tests, builds, or even triage environment specific problems that only happen on your machine.
+Modern development makes frequent use of a wide array of command-line tools. Live Share lets you, as a host, to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative. Fully collaborative means you and your guests can run commands and see the results. You might give guests visibility to terminal output or let them get hands on. Guests can run tests, builds, or even triage environment specific problems that only happen on your machine.
 
 However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way you can freely run commands in local terminals without risk and only share when actually need to do so. Also, only hosts can start shared terminals to prevent guests from starting one up and doing something you aren't expecting or watching.
 
-As a host, you can share a terminal by clicking on the session state / share button in the upper right-hand corner and selecting one of the **Share Terminal** menu items.
+As a host, you can share a terminal by clicking on the session state/share button in the upper right-hand corner and selecting one of the **Share Terminal** menu items.
 
 ![Screenshot that shows the Share Terminal options.](../media/vs-terminal-menu.png)
 
@@ -69,7 +69,7 @@ Select the kind of shared terminal you want to start. A new shared terminal disp
 
 ![Screenshot that shows the Terminal install notification.](../media/vs-terminal-install.png)
 
-To end your terminal session, simply type exit or close the terminal window and everyone will be disconnected.
+To end your terminal session, type exit or close the terminal window and everyone will be disconnected.
 
 ## Next Steps
 
