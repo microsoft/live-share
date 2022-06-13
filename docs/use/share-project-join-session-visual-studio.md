@@ -160,7 +160,7 @@ You can manually join without using a web browser. Manual join is useful in situ
 
     Paste in the invite URL and confirm.
 
-4. **Collaborate!**
+4. **Collaborate**
 
     That's it! You should be connected to the collaboration session momentarily.
 
