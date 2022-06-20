@@ -36,7 +36,7 @@ For security purposes, only servers running on ports you specify are available t
 
     :::image type="content" source="../media/share-server-visual-studio/manage-shared-local-servers-visual-studio.png" alt-text="Screenshot that shows the share session drop-down list with Manage Shared Servers selected.":::
 
-2. In the dialog that appears, select **Add** and enter the port number the server is running on locally, enter a name, then select **OK**.
+2. In the dialog that appears, select **Add** and enter the local port number the server is running on, enter a name, then select **OK**.
 
     :::image type="content" source="../media/share-server-visual-studio/shared-server-visual-studio.png" alt-text="Screenshot that shows the Shared Local Servers window with Add and Ok selected.":::
 

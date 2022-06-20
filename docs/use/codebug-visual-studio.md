@@ -22,16 +22,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 Visual Studio Live Share's collaborative debugging feature is a powerful and unique way to debug an issue. This feature enables a collaborative experience to troubleshoot problems. Participants in your session can also use it to investigate issues that might be environment-specific by providing a shared debugging session on the host's machine.
 
 > [!TIP]
-> Given all participants can independently navigate and edit files, as a host, you might want to restrict which files guests are able to access in your project via a *.vsls.json* file. You should also be aware that Console/REPL access means that participants can execute commands on your machine so you should only co-debug with those you trust. As a guest, it is also important to realize you might not be able to follow the debugger as it step into certain files restricted files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> Given all participants can independently navigate and edit files, as a host, you might want to restrict which files guests can access in your project via a *.vsls.json* file. You should also be aware that Console/REPL access means that participants can execute commands on your machine, so you should only co-debug with those you trust. As a guest, it's also important to realize you might not be able to follow the debugger as it steps into certain files restricted as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 To use it, the collaboration session host needs to start debugging via the usual means in Visual Studio.
 
 ![Screenshot that shows the Visual Studio Debug button.](../media/vs-debug-button.png)
 
-Once the debugger attaches on the host's side, all guests are also automatically attached as well. While there's one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
+After the debugger attaches on the host's side, all guests are automatically attached. While there's one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
 
 > [!TIP]
-> If you want to change when and how co-debugging happens, you can change the default behaviors via settings in **Tools > Options > Live Share**.
+> If you want to change when and how co-debugging happens, you can change the default behaviors via **Tools > Options > Live Share** settings.
 
 ![Screenshot that shows the Visual Studio debugger attached.](../media/vs-debugger.png)
 
@@ -61,7 +61,7 @@ See [share a server](share-server-visual-studio.md) for information on how to sh
 
 ## Change when Visual Studio joins debugging sessions
 
-Guests are automatically attached to debugging sessions when they're shared by the host by default. However, in some cases you might find this behavior disruptive. Fortunately, you can change it as follows:
+Guests are automatically attached to debugging sessions when the host shares them by default. However, in some cases you might find this behavior disruptive. Fortunately, you can change it as follows:
 
 1. Go to **Tools > Options > Live Share**
 2. Change the **Debug session join behavior** to one of the following:
