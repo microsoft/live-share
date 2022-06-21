@@ -2,7 +2,7 @@
 title: Share a server or terminal in Visual Studio
 titleSuffix: Live Share
 description: Learn how to share a server or terminal as a collaboration session host in Visual Studio and Live Share.
-ms.date: 06/08/2022
+ms.date: 06/21/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
@@ -42,13 +42,13 @@ For security purposes, only servers running on ports you specify are available t
 
 That's it! The server on the port you specified is mapped to each guest's localhost on the same port, unless that port was already occupied.
 
-If the port is already in use on a guest's machine, a different one is automatically selected. Guests can see a list of currently shared ports, by name if specified, by selecting the session state button in the upper-right corner and selecting **View Shared Local Servers**.
+If the port is already in use on a guest's machine, a different one is automatically selected. Guests can see a list of currently shared ports, by name if specified, by selecting the session state button in the upper-right corner and selecting **View Shared Servers**.
 
 ![Screenshot that shows the View Shared Servers option.](../media/vs-view-shared-servers.png)
 
 Guests *can't* control which ports on the host's machine are shared for security reasons.
 
-To stop sharing a local server, the host needs to click the share / session state button in the upper right corner as above, select **Manage Shared Local Servers**, and select the appropriate port, and click "Remove".
+To stop sharing a local server, the host needs to click the share / session state button in the upper-right corner, select **Manage Shared Servers**, select the appropriate port, and click **Remove**.
 
 ## Share a terminal
 

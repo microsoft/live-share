@@ -2,7 +2,7 @@
 title: Install & sign in to Live Share in Visual Studio
 titleSuffix: Live Share
 description: Learn to install and sign in to Visual Studio and Live Share so that you can collaborate on projects with your team.
-ms.date: 06/09/2022
+ms.date: 06/21/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
@@ -30,7 +30,7 @@ All collaboration activities described in this series of articles involve a sing
 
 ## Installation
 
-Before you begin, you'll need to install **Visual Studio 2022** or **Visual Studio 2019** or  **Visual Studio 2017 15.6 or higher** on Windows 7, 8.1, 10, or 11. *However, Visual Studio 15.7+ is recommended as this version enables local undo/redo support.*
+Before you begin, you'll need to install **Visual Studio 2022** or **Visual Studio 2019** or  **Visual Studio 2017 version 15.6 or higher** on Windows 7, 8.1, 10, or 11. *However, Visual Studio 2017 version 15.7+ is recommended as this version enables local undo/redo support.*
 
 Getting started is simple:
 
@@ -70,7 +70,7 @@ Visual Studio uses your [personalization account](/visualstudio/ide/signing-in-t
 
 If you want to use a different sign-in than your Visual Studio [personalization account](/visualstudio/ide/signing-in-to-visual-studio), go to **Tools > Options > Live Share > General**. Select **User account**, and then select the ellipses to the right to switch credentials.
 
-![Screenshot that shows the Visual Studio Tools options for Live Share.](../media/vs-tools-options-new.png)
+![Screenshot that shows the Visual Studio Tools options for Live Share.](../media/vs-tools-optionsnew.png)
 
 Selecting **External Account** allows you to select an account not supported by Visual Studio's personalization feature, like GitHub. A browser automatically appears the first time you use a Live Share feature so you can complete your sign-in.
 

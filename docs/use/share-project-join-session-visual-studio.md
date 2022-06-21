@@ -2,7 +2,7 @@
 title: Share a project and join a session in Visual Studio
 titleSuffix: Live Share
 description: Learn how to share a project and join a session to collaborate by using Visual Studio and Live Share.
-ms.date: 06/09/2022
+ms.date: 06/21/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
@@ -36,7 +36,7 @@ Follow these steps to start a collaboration session and invite a colleague to wo
 
 3. **[Optional] Update hidden or excluded files**
 
-    By default, Live Share **hides** any files or folders referenced in *.gitignore* files in your project from guests. **Hiding** a file prevents it from appearing in the file tree, while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide or exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+    By default, Live Share **hides** any files or folders referenced in *.gitignore* files in your project from guests. **Hiding** a file prevents it from appearing in the file tree, while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide or exclude different files, a ***.vsls.json*** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 4. **Start a collaboration session**
 

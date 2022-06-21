@@ -2,7 +2,7 @@
 title: Coedit, follow, and focus in Visual Studio
 titleSuffix: Live Share
 description: Learn how to coedit, follow, and focus in collaboration sessions using Visual Studio and Live Share.
-ms.date: 02/06/2022
+ms.date: 06/21/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
