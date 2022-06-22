@@ -220,7 +220,7 @@ In Visual Studio, the **web application port** specified in ASP.NET projects is 
 In Visual Studio Code, Live Share attempts to **detect the proper application ports** and share them. However, you can disable this by adding the following to settings.json:
 
 ```json
-liveshare.autoShareServers: false
+"liveshare.autoShareServers": false
 ```
 
 In either case, exercise care when sharing additional ports.
