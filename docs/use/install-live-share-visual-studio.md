@@ -30,17 +30,11 @@ All collaboration activities described in this series of articles involve a sing
 
 ## Installation
 
-Before you begin, you'll need to install **Visual Studio 2022** or **Visual Studio 2019** or  **Visual Studio 2017 version 15.6 or higher** on Windows 7, 8.1, 10, or 11. *However, Visual Studio 2017 version 15.7+ is recommended as this version enables local undo/redo support.*
+Before you begin, you'll need to install Visual Studio. We recommend **Visual Studio 2022**. At minimum, **Visual Studio 2017 version 15.6 or higher** is required on Windows 7, 8.1, 10, or 11. *However, Visual Studio 2017 version 15.7+ is recommended as this version enables local undo/redo support.*
 
 Getting started is simple:
 
-For Visual Studio 2022
-
-1. Install any edition of [Visual Studio 2022](https://visualstudio.microsoft.com/vs/).
-2. Install a [supported workload](../reference/platform-support.md#visual-studio), like ASP.NET, .NET Core, C++, Python, or Node.js.
-3. Visual Studio Live Share is installed by default with these workloads.
-
-For Visual Studio 2019
+For Visual Studio 2019 and more recent versions
 
 1. Install any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 2. Install a [supported workload](../reference/platform-support.md#visual-studio), like ASP.NET, .NET Core, C++, Python, or Node.js.
