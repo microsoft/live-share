@@ -2,12 +2,13 @@
 title: Share a project and join a session in Visual Studio
 titleSuffix: Live Share
 description: Learn how to share a project and join a session to collaborate by using Visual Studio and Live Share.
-ms.date: 01/22/2022
+ms.date: 06/21/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
 ms.author: fishah
 manager: jmartens
+ms.custom: devdivchpfy22
 ---
 
 <!--
@@ -35,7 +36,7 @@ Follow these steps to start a collaboration session and invite a colleague to wo
 
 3. **[Optional] Update hidden or excluded files**
 
-    Live Share **hides** any files or folders referenced in *.gitignore* files in your project from guests by default. **Hiding** a file prevents it from appearing in the file tree while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide or exclude different files, a **.vsls.json** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+    By default, Live Share **hides** any files or folders referenced in *.gitignore* files in your project from guests. **Hiding** a file prevents it from appearing in the file tree, while **excluding** it stops it from being transmitted even during operations like debugging. If you want to hide or exclude different files, a ***.vsls.json*** file can be added to your project with these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 4. **Start a collaboration session**
 
@@ -94,13 +95,13 @@ As a host, you can stop sharing completely and end the collaboration session by 
 
 :::image type="content" source="../media/share-project-join-session-visual-studio/visual-studio-end-live-share-session.png" alt-text="Screenshot that shows selecting Sharing, then selecting End Live Share Session from the drop-down.":::
 
-All guests are notified the session has ended. Once the session has ended, guests can no longer access the content and any temp files are automatically cleaned up.
+All guests are notified the session has ended. After the session has ended, guests can no longer access the content and any temp files are automatically cleaned up.
 
 Having issues with sharing? Check out [troubleshooting](../troubleshooting.md#share-and-join).
 
 ## Join a collaboration session
 
-After downloading and installing Visual Studio Live Share, guests only need to take a couple steps to join a hosted collaboration session. There are two ways to join: [via the browser](#join-via-the-browser) or [manually](#join-manually).
+After downloading and installing Visual Studio Live Share, guests only need to take a couple of steps to join a hosted collaboration session. There are two ways to join: [via the browser](#join-via-the-browser) or [manually](#join-manually).
 
 > [!TIP]
 > As a guest joining a collaboration session, it's important to understand that hosts might restrict your access to certain files or features. Want to understand the security implications of some of Live Share's features and settings? For more information, see the [security](../reference/security.md) article.
@@ -159,7 +160,7 @@ You can manually join without using a web browser. Manual join is useful in situ
 
     Paste in the invite URL and confirm.
 
-4. **Collaborate!**
+4. **Collaborate**
 
     That's it! You should be connected to the collaboration session momentarily.
 
@@ -169,9 +170,11 @@ You can manually join without using a web browser. Manual join is useful in situ
 
 ### Leave the collaboration session
 
-As a guest, you can leave the collaboration session without ending it for others by closing the tool or by clicking the **Sharing** button and selecting **Leave Live Share Session**.
+As a guest, you can leave the collaboration session without ending it for others by closing the tool.
 
 ![Screenshot that shows the Visual Studio Live Share menu when joined in a collaboration session.](../media/vs-leave-session.png)
+
+Or you can leave the session by clicking the **Sharing** button and selecting **Leave Live Share Session**.
 
 Any temp files are automatically cleaned up so no further action is needed.
 

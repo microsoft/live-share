@@ -2,12 +2,13 @@
 title: Coedit, follow, and focus in Visual Studio
 titleSuffix: Live Share
 description: Learn how to coedit, follow, and focus in collaboration sessions using Visual Studio and Live Share.
-ms.date: 01/22/2022
+ms.date: 06/21/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
 ms.author: fishah
 manager: jmartens
+ms.custom: devdivchpfy22
 ---
 
 <!--
@@ -39,12 +40,12 @@ Beyond cursors and edits, selections you make are also visible to all participan
 Better yet, you and other participants can navigate to any file in the shared project. You can choose to edit together or independently. Seamlessly switch between investigation, making small tweaks, and full collaborative editing.
 
 > [!NOTE]
-> By default Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update **Share External Files in Tools > Options > Live Share** to **False**.
+> By default, Live Share shares opened files external to the shared solution as well. If you want to disable this feature, update **Share External Files in Tools > Options > Live Share** to **False**.
 
 The resulting edits persist on the host's machine on save. There's no need to synchronize, push, or send files around once you're done editing. The edits are immediately there.
 
 > [!TIP]
-> Given all participants can independently navigate and edit files, as a host, you might want to restrict which files guests are able to access in your project via a .vsls.json file. As a guest, it is also important to realize you might not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
+> Given all participants can independently navigate and edit files, as a host, you might want to restrict which files guests can access in your project via a *.vsls.json* file. As a guest, it is also important to realize you might not see certain files as a result of these settings. See [controlling file access and visibility](../reference/security.md#controlling-file-access-and-visibility) for details.
 
 ### Changing participant flag behaviors
 
@@ -61,7 +62,7 @@ By default, Visual Studio Live Share automatically displays a *flag* next to a p
 
 ## Following
 
-Whenever you're in a collaboration session, you can see each participant's initials in the upper right of the editor next to the sign-in button. Hovering over the initials shows you the participant's full information.
+Whenever you're in a collaboration session, you can see each participant's initials in the upper-right corner of the editor next to the sign-in button. Hovering over the initials shows you the participant's complete information.
 
 :::image type="content" source="../media/vs-person.png" alt-text="Screen shot showing user":::
 
@@ -70,7 +71,7 @@ Sometimes you might need to explain a problem or design that spans multiple file
 > [!NOTE]
 > By default, Live Share also shares opened files external to the shared solution. If you want to disable this feature, update Share External Files in **Tools > Options > Live Share** to **False**.
 
-To switch out of *follow mode* and start editing on your own, you'll stop following if:
+To switch out of *follow mode* and start editing on your own, stop following the host. You’ll stop following if:
 
 1. You edit, move your cursor, or make a selection.
 2. You select another file.
@@ -85,11 +86,11 @@ You can click on any initials in this same location to follow any host or guest 
 
 Sometimes you might want everyone in a collaboration session to come and look at something you're doing. With Live Share, you can ask that everyone *focus* their attention on you with a notification. The notification makes it easy for them to follow you back.
 
-Just click on the session state button in the upper right-hand corner and select **Focus Participants**.
+Just click on the **session state** button in the upper right-hand corner and select **Focus Participants**.
 
 ![Screenshot that shows the Focus menu options.](../media/vs-focus.png)
 
-Everyone in the collaboration session will then get a notification that you've requested their attention
+Everyone in the collaboration session will then get a notification that you've requested their attention.
 
 :::image type="content" source="../media/vs-focus-toast.png" alt-text="Screenshot that shows an example of a Focus request notification.":::
 

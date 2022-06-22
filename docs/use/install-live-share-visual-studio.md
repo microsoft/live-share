@@ -2,12 +2,13 @@
 title: Install & sign in to Live Share in Visual Studio
 titleSuffix: Live Share
 description: Learn to install and sign in to Visual Studio and Live Share so that you can collaborate on projects with your team.
-ms.date: 03/23/2022
+ms.date: 06/21/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
 ms.author: fishah
 manager: jmartens
+ms.custom: devdivchpfy22
 ---
 
 <!--
@@ -25,15 +26,15 @@ All collaboration activities described in this series of articles involve a sing
 *Looking for an abridged summary? Check out the [share](../quickstart/share.md) or [join](../quickstart/join.md) quickstarts instead.*
 
 > [!TIP]
-> Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
+> Did you know you can *join your own collaboration session*? This lets you try Live Share on your own or to spin up an instance of Visual Studio or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Installation
 
-Before you begin, you'll need to install **Visual Studio 2019** or  **Visual Studio 2017 15.6 or higher** on Windows 7, 8.1, 10, or 11. *However, Visual Studio 15.7+ is recommended as this version enables local undo/redo support.*
+Before you begin, you'll need to install Visual Studio. We recommend **Visual Studio 2022**. At minimum, **Visual Studio 2017 version 15.6 or higher** is required on Windows 7, 8.1, 10, or 11. *However, Visual Studio 2017 version 15.7+ is recommended as this version enables local undo/redo support.*
 
-Getting going is simple:
+Getting started is simple:
 
-For Visual Studio 2019
+For Visual Studio 2019 and more recent versions
 
 1. Install any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 2. Install a [supported workload](../reference/platform-support.md#visual-studio), like ASP.NET, .NET Core, C++, Python, or Node.js.
@@ -63,18 +64,18 @@ Visual Studio uses your [personalization account](/visualstudio/ide/signing-in-t
 
 If you want to use a different sign-in than your Visual Studio [personalization account](/visualstudio/ide/signing-in-to-visual-studio), go to **Tools > Options > Live Share > General**. Select **User account**, and then select the ellipses to the right to switch credentials.
 
-![Screenshot that shows the Visual Studio Tools options for Live Share.](../media/vs-tools-options-new.png)
+![Screenshot that shows the Visual Studio Tools options for Live Share.](../media/vs-tools-optionsnew.png)
 
 Selecting **External Account** allows you to select an account not supported by Visual Studio's personalization feature, like GitHub. A browser automatically appears the first time you use a Live Share feature so you can complete your sign-in.
 
 >[!TIP]
->Did you know can go to **Tools > Options > Live Share > General** to view all the default Live Share settings? Customize your collaboration experience to your needs! You can also try the new Live Share features by choosing **Advanced > Features > Insiders** from inside the General Live Share settings!  
+>Did you know you can go to **Tools > Options > Live Share > General** to view all the default Live Share settings? Customize your collaboration experience to your needs! You can also try the new Live Share features by choosing **Advanced > Features > Insiders** from inside the General Live Share settings!  
 
 If you run into trouble, check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
 ## Guest limitations
 
-There are currently some shortcomings guests will experience using the features described in these articles. But collaboration session hosts keep the complete functionality of their tool of choice. For more information, see:
+There are currently some shortcomings that guests will experience using the features described in these articles. But collaboration session hosts keep the complete functionality of their tool of choice. For more information, see:
 
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
