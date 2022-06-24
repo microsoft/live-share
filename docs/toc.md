@@ -1,36 +1,25 @@
 <!-- markdownlint-disable MD022 MD025 -->
 # Overview
-## [Introduction](index.md)
+## [What is Live Share?](index.md)
 ## [Features](overview/features.md)
 ## [Common Use Cases](reference/use-cases.md)
-## [What's new](overview/whats-new.md)
 # Quickstarts
 ## [Share your first project](quickstart/share.md)
 ## [Join your first session](quickstart/join.md)
 ## [Join from the browser](quickstart/browser-join.md)
-# How-to Guides: VS Code
-## [Overview](use/vscode.md)
-## [Install](use/vscode.md)
-## [Sign-in](use/vscode.md#sign-in-to-live-share)
-## [Share a project](use/vscode.md#start-and-stop-a-session)
-## [Join a session](use/vscode.md#join-and-leave-a-session)
-## [Co-edit](use/vscode.md#co-editing)
-## [Follow and focus](use/vscode.md#follow-along-with-a-collaborator)
-## [Co-debug](use/vscode.md#co-debugging)
-## [Share a server or terminal](use/vscode.md#share-servers-or-terminals)
-# How-to Guides: Visual Studio
-## [Overview](use/vs.md)
-## [Install](use/vs.md#installation)
-## [Sign-in](use/vs.md#sign-in)
-## [Share a project](use/vs.md#share-a-project)
-## [Join a session](use/vs.md#join-a-collaboration-session)
-## [Co-edit](use/vs.md#co-editing)
-## [Follow and focus](use/vs.md#following)
-## [Co-debug](use/vs.md#co-debugging)
-## [Share a server](use/vs.md#share-a-server)
-## [Share a terminal](use/vs.md#share-a-terminal)
-# How-to Guides: Technical Interviews
-## [Technical Interviews](use/technical-interviews.md)
+# How-to use Live Share: Visual Studio Code
+## [Install and sign in](use/install-live-share-visual-studio-code.md)
+## [Share a project and join a session](use/share-project-join-session-visual-studio-code.md)
+## [Co-edit, follow, and focus](use/coedit-follow-focus-visual-studio-code.md)
+## [Co-debug](use/codebug-visual-studio-code.md)
+## [Share a server or terminal](use/share-server-visual-studio-code.md)
+## [Enable accessibility features](use/enable-accessibility-features-visual-studio-code.md)
+# How-to use Live Share: Visual Studio
+## [Install and sign in](use/install-live-share-visual-studio.md)
+## [Share a project and join a session](use/share-project-join-session-visual-studio.md)
+## [Co-edit, follow, and focus](use/coedit-follow-focus-visual-studio.md)
+## [Co-debug](use/codebug-visual-studio.md)
+## [Share a server or terminal](use/share-server-visual-studio.md)
 # Reference
 ## [Contacts](reference/contacts.md)
 ## [Security](reference/security.md)

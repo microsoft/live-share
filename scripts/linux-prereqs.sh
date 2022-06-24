@@ -169,6 +169,9 @@ elif type apt-get > /dev/null 2>&1; then
             echo "(*) openssl already installed."
         fi
     fi
+    
+    # Install libssl1.1
+    aptSudoIf "install -yq libssl1.1"
 
     checkKeyringDeps aptSudoIf "install -yq gnome-keyring libsecret-1-0"
     checkBrowserDeps aptSudoIf "install -yq desktop-file-utils x11-utils"
@@ -212,7 +215,7 @@ elif type pacman > /dev/null 2>&1; then
     echo "(*) Detected Arch Linux (unoffically/community supported)"
     checkNetCoreDeps sudoIf "pacman -Sq --noconfirm --needed gcr liburcu openssl-1.0 krb5 icu zlib"
     checkKeyringDeps sudoIf "pacman -Sq --noconfirm --needed gnome-keyring libsecret"
-    checkBrowserDeps sudoIf "pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop xdg-utils"
+    checkBrowserDeps sudoIf "pacman -Sq --noconfirm --needed desktop-file-utils xorg-xprop xdg-utils icu69"
 
 #Solus
 elif type eopkg > /dev/null 2>&1; then

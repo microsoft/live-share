@@ -21,8 +21,28 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/overview/whats-new.md",
+            "redirect_url": "/visualstudio/liveshare/troubleshooting",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/getting-started.md",
             "redirect_url": "/visualstudio/liveshare/use/vscode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/use/vscode.md",
+            "redirect_url": "/visualstudio/liveshare/use/install-live-share-visual-studio-code",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/use/vs.md",
+            "redirect_url": "/visualstudio/liveshare/use/install-live-share-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/reference/releases.md",
+            "redirect_url": "/visualstudio/liveshare/index",
             "redirect_document_id": false
         }
     ]
