@@ -1,4 +1,4 @@
-﻿---
+---
 title: Debug & collaborate in Visual Studio
 titleSuffix: Live Share
 description: Learn to co-debug in collaboration sessions using powerful tools included in Visual Studio and Live Share.
