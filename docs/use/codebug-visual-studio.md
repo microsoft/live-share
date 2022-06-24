@@ -28,7 +28,7 @@ To use it, the collaboration session host needs to start debugging via the usual
 
 ![Screenshot that shows the Visual Studio Debug button.](../media/vs-debug-button.png)
 
-After the debugger attaches on the host's side, all guests are automatically attached. While there's one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
+After the debugger attaches on the host's side, all guests are automatically attached. While there's only one debugging "session" running on the host's machine, all participants are connected to it and have their own view.
 
 > [!TIP]
 > If you want to change when and how co-debugging happens, you can change the default behaviors via **Tools > Options > Live Share** settings.
@@ -43,7 +43,7 @@ Anyone can step through the debugging process, which enables seamless switching 
 Each collaborator can investigate different variables, jump to different files in the call stack, inspect variables, and even add or remove breakpoints. Each participant can use co-editing features to track where the others are located. Participants can seamlessly switch between concurrently investigating different aspects of the problem and collaboratively debugging.
 
 > [!NOTE]
-> While in a read-only collaboration session, a guest won't be able to step through the debugging process. They can however, still add or remove breakpoints, and inspect variables.
+> While in a read-only collaboration session, guests won't be able to step through the debugging process. They can however still add or remove breakpoints, and inspect variables.
 
 > [!TIP]
 > You can also participate in Visual Studio Code debugging sessions from Visual Studio and vice versa! Check out the [Visual Studio Code instructions](codebug-visual-studio-code.md) on co-debugging for more information.
