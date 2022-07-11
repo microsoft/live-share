@@ -251,7 +251,7 @@ Your AD admin would need to resolve this for you using the following information
 * **Application Type**: Web App
 * **Applications Status**: Production
 * **Delegated Permissions**: User.Read
-* **Application URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/
+* **Application URL**: https://visualstudio.microsoft.com/services/live-share/
 * **Reply URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
 
 This would only need to be done once for anyone using Live Share. See [here](/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) and [here](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) for details.
