@@ -30,7 +30,7 @@ All collaboration activities described in this series of articles involve a sing
 
 ## Installation
 
-Before you begin, you'll need to install Visual Studio. We recommend **Visual Studio 2022**. At minimum, **Visual Studio 2017 version 16.9 or higher** is required on Windows 7, 8.1, 10, or 11. 
+Before you begin, you'll need to install Visual Studio. We recommend **Visual Studio 2022**. At minimum, **Visual Studio 2019 version 16.9 or higher** is required on Windows 7, 8.1, 10, or 11.
 
 Getting started is simple:
 
@@ -39,12 +39,6 @@ For Visual Studio 2019 and more recent versions
 1. Install any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 2. Install a [supported workload](../reference/platform-support.md#visual-studio), like ASP.NET, .NET Core, C++, Python, or Node.js.
 3. Visual Studio Live Share is installed by default with these workloads.
-
-For Visual Studio 2017
-
-1. Install any edition of [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) 16.9+.
-2. Install a [supported workload](../reference/platform-support.md) like ASP.NET, .NET Core, C++, or Node.js.
-3. [Download](https://aka.ms/vsls-dl/vs) and install the Visual Studio Live Share extension from the marketplace.
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
 
