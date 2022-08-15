@@ -2,7 +2,7 @@
 title: Install & sign in to Live Share in Visual Studio
 titleSuffix: Live Share
 description: Learn to install and sign in to Visual Studio and Live Share so that you can collaborate on projects with your team.
-ms.date: 08/12/2022
+ms.date: 08/15/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
@@ -34,15 +34,19 @@ Before you begin, you'll need to install Visual Studio. We recommend **Visual St
 
 Getting started is simple:
 
-For Visual Studio 2019 and more recent versions
+For Visual Studio 2022
 
-1. Install any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
+1. Install any edition of [Visual Studio 2022](https://visualstudio.microsoft.com/vs/).
+2. Install a [supported workload](../reference/platform-support.md#visual-studio), like ASP.NET, .NET Core, C++, and/or Node.js.
+3. Once installed, you'll see [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs-2022) appear in the top right corner of Visual Studio. You can now begin collaborating with others immediately!
+
+For Visual Studio 2019
+
+1. Install any edition of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/).
 2. Install a [supported workload](../reference/platform-support.md#visual-studio), like ASP.NET, .NET Core, C++, Python, or Node.js.
-3. Visual Studio Live Share is installed by default with these workloads.
+3. Once installed, you'll see [Live Share](https://aka.ms/vsls-dl/vs) appear in the top right corner of Visual Studio. You can now begin collaborating with others immediately!
 
 By downloading and using Visual Studio Live Share, you agree to the [license terms](https://aka.ms/vsls-license) and [privacy statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). See [troubleshooting](../troubleshooting.md) if you run into problems.
-
-[![Download button for Live Share.](../media/download.png)](https://aka.ms/vsls-dl/vs)
 
 ## Sign in
 
