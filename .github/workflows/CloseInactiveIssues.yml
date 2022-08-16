@@ -16,3 +16,4 @@ jobs:
           days-before-issue-close: 7
           operations-per-run: 1000
           close-issue-label: "wontfix"
+          debug-only: true
