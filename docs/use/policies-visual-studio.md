@@ -21,7 +21,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 To control certain aspects of Visual Studio Live Share behavior to achieve consistency or compliance across your organization, you can now configure Visual Studio using [Group Policy Administrative Templates (ADMX/ADML files)](https://aka.ms/vs/admx/details). The Visual Studio group policy settings contained in the ADMX file are machine wide for all users.
 
-With these policies, organization will be able to add an extra layer of protection to prevent accidents on Visual Studio Live Share and increase productivity.
+With these policies, your organization will be able to add an extra layer of protection to prevent accidents on Visual Studio Live Share and increase productivity.
 
 ## Policies Supported
 
@@ -56,7 +56,7 @@ Next, head over to the Microsoft Download Center and grab the [Visual Studio Gro
   Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\
 - Restart your Visual Studio instance to pick up the new policy changes
 
-**Note**: Depending on your organization’s policy, you might need to force a group policy update via gpupdate.exe to apply change.
+**Note**: Depending on your organization’s policy, you might need to force a group policy update via gpupdate.exe to apply the change.
 
 After all desired policies are set, teams across your organization can confidently collaborate with Visual Studio Live Share.
 
