@@ -11,8 +11,9 @@ jobs:
       - uses: actions/stale@v4
         with:
           exempt-issue-labels: "keep"
-          stale-issue-message: 'This issue has been automatically marked as stale because it has not had recent activity. It will be closed automatically in 2 days.'
+          stale-issue-message: 'This issue has been automatically marked as stale because it has not had recent activity. It will be closed automatically in 7 days.'
           days-before-issue-stale: 90
-          days-before-issue-close: 2
+          days-before-issue-close: 7
           operations-per-run: 1000
           close-issue-label: "wontfix"
+          debug-only: true
