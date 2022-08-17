@@ -27,17 +27,17 @@ With these policies, your organization will be able to add an extra layer of pro
 
 ![Screenshot that shows the Local Group Policy Editor](../media/policies-visual-studio/live-share-policies.png)
 
-**Allow only domain accounts:** Prevents users from being able to share their session with any guests who are not part of the domain that the organization allows via policy. Users must also be [signed in](install-live-share-visual-studio#sign-in) with the domain account that the organization allows via this policy to share a session. When enabling this policy, multiple domains can be added by using a semicolon to separate each domain.
+**Allow only domain accounts:** Prevents users from being able to share their session with any guests who are not part of the domain that the organization allows via policy. Users must also be [signed in](install-live-share-visual-studio.md#sign-in) with the domain account that the organization allows via this policy to share a session. When enabling this policy, multiple domains can be added by using a semicolon to separate each domain.
 
-**Disable read-write terminals:** Prevent the host from being able to explicitly share a new [writeable terminal](share-server-visual-studio#share-a-terminal). This policy also suppresses the option for the guest to request write access to a terminal. This would effectively look like the experience you see today in a read-only session (you can’t share writeable terminals) but would apply to read/write sessions too.
+**Disable read-write terminals:** Prevent the host from being able to explicitly share a new [writeable terminal](share-server-visual-studio.md#share-a-terminal). This policy also suppresses the option for the guest to request write access to a terminal. This would effectively look like the experience you see today in a read-only session (you can’t share writeable terminals) but would apply to read/write sessions too.
 
-**Disable shared servers:** Prevent the host from being able to explicitly share a new [server](share-server-visual-studio#share-a-server), as well as auto-sharing of servers from the terminal. In this mode, the “Shared Servers” node in the “Session Details” tree view will be hidden, along with all associated commands.
+**Disable shared servers:** Prevent the host from being able to explicitly share a new [server](share-server-visual-studio.md#share-a-server), as well as auto-sharing of servers from the terminal. In this mode, the “Shared Servers” node in the “Session Details” tree view will be hidden, along with all associated commands.
 
-**Require direct connection:** Prevents hosts from allowing [relay-based guests](../overview/features#flexible-connection-modes) from joining their session. Live Share already supports the “Live Share: Connection Mode” setting, and so this policy is effectively just enforcing it to “direct”.
+**Require direct connection:** Prevents hosts from allowing [relay-based guests](../overview/features.md#flexible-connection-modes) from joining their session. Live Share already supports the “Live Share: Connection Mode” setting, and so this policy is effectively just enforcing it to “direct”.
 
-**Disable anonymous guests:** Disallow anonymous guests from joining a session. We already have the [“Live Share: Anonymous Guest Approval”](../reference/security#auto-rejecting-or-accepting-users-that-are-not-signed-in-anonymous) setting, and so this policy is effectively just enforcing that to “reject”.
+**Disable anonymous guests:** Disallow anonymous guests from joining a session. We already have the [“Live Share: Anonymous Guest Approval”](../reference/security.md#auto-rejecting-or-accepting-users-that-are-not-signed-in-anonymous) setting, and so this policy is effectively just enforcing that to “reject”.
 
-**Enforce accepting/rejecting a guest:** Requires the host to individually accept each guest that attempts to join a session. We already have the ["Live Share: Guest Approval Required"](../reference/security#requiring-guest-approval-for-signed-in-users) setting, so this policy is effectively just enforcing that to "true".
+**Enforce accepting/rejecting a guest:** Requires the host to individually accept each guest that attempts to join a session. We already have the ["Live Share: Guest Approval Required"](../reference/security.md#requiring-guest-approval-for-signed-in-users) setting, so this policy is effectively just enforcing that to "true".
 
 ## Step 1: Download the latest Visual Studio Live Share version
 
