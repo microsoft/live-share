@@ -70,6 +70,6 @@ The [latest version](https://marketplace.visualstudio.com/items?itemName=MS-vsli
 
 No, these policies only apply to Visual Studio.
 
-## Feedback
+## Contact us
 
 Please share with us any feedback you have about Live Share. You can email us at vsls-feedback@microsoft.com or submit feedback [here](https://aka.ms/vs/admx/feedback). We look forward to hearing from you!
