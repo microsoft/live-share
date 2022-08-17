@@ -20,6 +20,7 @@
 ## [Co-edit, follow, and focus](use/coedit-follow-focus-visual-studio.md)
 ## [Co-debug](use/codebug-visual-studio.md)
 ## [Share a server or terminal](use/share-server-visual-studio.md)
+## [Configure Group Policy Admin Templates](use/policies-visual-studio.md)
 # Reference
 ## [Contacts](reference/contacts.md)
 ## [Security](reference/security.md)
