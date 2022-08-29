@@ -52,7 +52,7 @@ To stop sharing a local server, the host needs to click the share / session stat
 
 ## Share a terminal
 
-Modern development makes frequent use of a wide array of command-line tools. Live Share lets you, as a host, to optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative. Fully collaborative means you and your guests can run commands and see the results. You might give guests visibility to terminal output or let them get hands on. Guests can run tests, builds, or even triage environment specific problems that only happen on your machine.
+Modern development makes frequent use of a wide array of command-line tools. Live Share lets you, as a host, optionally "share a terminal" with guests. The shared terminal can be read-only or fully collaborative. Fully collaborative means you and your guests can run commands and see the results. You might give guests visibility to terminal output or let them get hands on. Guests can run tests, builds, or even triage environment specific problems that only happen on your machine.
 
 However, terminals are **not** shared by default since they give guests at least read-only access to the output of commands you run (if not the ability to run commands themselves). This way you can freely run commands in local terminals without risk and only share when actually need to do so. Also, only hosts can start shared terminals to prevent guests from starting one up and doing something you aren't expecting or watching.
 
