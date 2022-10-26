@@ -105,35 +105,11 @@ A prompt to sign in displays. When you select your sign-in preference, a browser
 
 :::image type="content" source="../media/install-live-share-visual-studio-code/live-share-sign-in-options.png" alt-text="Screenshot that shows the Live Share sign in options.":::
 
-> [!NOTE]
-> Linux users: You might be prompted to enter a user code if you're using an older version of Live Share (0.3.295 or earlier). Update to the latest version of the extension or, to see the code, select **Having trouble?** after you sign in. For details, see [Sign in by using a user code](#sign-in-by-using-a-user-code).
-
 > [!TIP]
 > The `liveshare.account` and `liveshare.accountProvider` settings enable you to select the account used for automatic sign-in if you have cached credentials for multiple accounts.
 For example, imagine you work on two projects and you want to sign in to them by using different identities. In your Visual Studio Code workspace settings, you could set `liveshare.account` to a different email address in each project directory. The projects will then automatically sign in with the correct account. You can set the `liveshare.accountProvider` setting to either `"microsoft"` or `"github"` if you use the same email address with multiple providers.
 
-If Visual Studio Code isn't picking up your sign-in after you complete the sign-in process in the browser, see [sign in by using a user code](#sign-in-by-using-a-user-code). Or check out [troubleshooting](../troubleshooting.md#sign-in) for more tips.
-
-### Sign in by using a user code
-
-If Visual Studio Code isn't picking up a completed sign-in, you can enter a *user code* instead.
-
-1. Select **Ctrl+Shift+P** or **Cmd+Shift+P** and then run the **Live Share: Sign in with user code** command.
-
-2. A browser should open. Use it to complete the sign-in process:
-
-    > [!NOTE]
-    > If a browser doesn't open automatically, go to https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login and sign in.
-
-3. After you're done, select **Having trouble? Click here for user code directions** to see the user code.
-
-    ![Screenshot that shows a user code in a browser window.](../media/vscode-user-code-browser.png)
-
-4. Copy the user code.
-
-5. Paste the user code into the input field that appeared when you ran the command. Select **Enter** to complete the sign-in process.
-
-    ![Screenshot that shows the user code input box.](../media/vscode-user-code.png)
+If Visual Studio Code isn't picking up your sign-in after you complete the sign-in process in the browser, see [troubleshooting](../troubleshooting.md#sign-in) for more tips.
 
 ## Next steps
 
