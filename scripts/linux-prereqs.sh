@@ -171,7 +171,13 @@ elif type apt-get > /dev/null 2>&1; then
     fi
     
     # Install libssl1.1
-    aptSudoIf "install -yq libssl1.1"
+    # in case for Ubuntu 22.04 this will fail, therefore we check and print an alternative installation method
+    # the user can decide on
+    if ! aptSudoIf "install -yq libssl1.1"; then
+        echo "(!) libssl1.1 couldn't be installed, probably you're running on Ubuntu 22.04 or later"
+        echo "    please consider installing libssl1.1 from https://packages.ubuntu.com/focal/libssl1.1"
+        exitScript 1
+    fi
 
     checkKeyringDeps aptSudoIf "install -yq gnome-keyring libsecret-1-0"
     checkBrowserDeps aptSudoIf "install -yq desktop-file-utils x11-utils"
