@@ -30,7 +30,6 @@
 ## [Linux install details](reference/linux.md)
 ## [Insiders](reference/insiders.md)
 ## [Notebooks](reference/notebooks.md)
-## [Release Notes](https://aka.ms/vsls-releases)
 # Resources
 ## [Troubleshooting](troubleshooting.md)
 ## [Provide feedback](support.md)
