@@ -45,15 +45,16 @@ To get started with enabling policies, you’ll need to [download](https://marke
 
 ## Step 2: Download the Preview templates
 
-Next, head over to the Microsoft Download Center and grab the [Visual Studio Group Policy Administrative Template files (ADMX/ADML)](https://aka.ms/vs/admx/details). It’ll ask you where you want the files to be downloaded, please ensure the location is ‘C:\Windows\PolicyDefinitions\en-US’.
+Next, head over to the Microsoft Download Center and grab the [Visual Studio Group Policy Administrative Template files (ADMX/ADML)](https://aka.ms/vs/admx/details). It’ll ask you where you want the files to be downloaded, please ensure the location is ‘C:\Windows\PolicyDefinitions\'.
 
 ## Step 3: Test using the Local Group Policy Editor
 
 - Open the Windows Local Group Policy Editor
-- Navigate to the Administrative Templates > Microsoft Visual Studio node
-- Apply the desired policy changes to Visual Studio
-- Ensure the new group policy changes are applied to the respective product's path:
-  Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\
+- Navigate to Computer Configuration > Administrative Templates > Visual Studio > Live Share Settings
+- Apply the desired policy changes to Visual Studio Live Share
+- [Optional] Ensure the new group policy changes are applied to the respective product's path in the Registry Editor:
+  Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\LiveShare
+  ![Screenshot that shows the Registry Editor](../media/policies-visual-studio/registry-editor.png)
 - Restart your Visual Studio instance to pick up the new policy changes
 
 **Note**: Depending on your organization’s policy, you might need to force a group policy update via gpupdate.exe to apply the change.
@@ -69,6 +70,10 @@ The [latest version](https://marketplace.visualstudio.com/items?itemName=MS-vsli
 ### Do these policies apply to Visual Studio Code?
 
 No, these policies only apply to Visual Studio.
+
+### Why isn't the policy I enabled working?
+
+To use the new Live Share policies, you need to have the [latest version](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs-2022) of Visual Studio Live Share. If the issue still persists after updating Live Share, please contact us at vsls-feedback@microsoft.com.
 
 ## Contact us
 
