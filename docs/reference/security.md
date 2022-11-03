@@ -104,7 +104,7 @@ You can **always reject** (disable anonymous guests) or **always accept** anonym
 
 As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. You can therefore independently navigate and edit files in the entire shared file tree. **However, this freedom does pose some risks to the host.** In concept, a developer could opt to go in and modify source code without your knowledge or see sensitive source code or "secrets" located somewhere in the shared file tree. Consequently, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debugging sessions that would normally require access to these files if they wanted to do so on their own.
 
-You can accomplish this by adding a **.vsls.json** file to the folder or project you are sharing. Any settings you add to this json formatted file changes how Live Share processes files. In addition to providing you direct control, these files can also be committed to source control so anyone cloning a project will be able to take advantage of these rules with no additional effort on their part.
+You can accomplish this by adding a **.vsls.json** file to the root of the project you are sharing. This will affect all subfolders in the project. Any settings you add to this json formatted file changes how Live Share processes files. In addition to providing you direct control, these files can also be committed to source control so anyone cloning a project will be able to take advantage of these rules with no additional effort on their part. 
 
 Here's an example .vsls.json file:
 
@@ -123,7 +123,7 @@ Here's an example .vsls.json file:
 > [!NOTE]
 > You can also make the all files/folders you share **read-only** when you start a collaboration session. See [below](#read-only-mode) for details.
 
-The **excludeFiles** property allows you to specify a list of glob file patterns (very much like those found .gitignore files) that prevents Live Share from opening certain files or folders for guests. Be aware that this is inclusive of scenarios like a guest _following or jumping to your edit location, stepping into a file during collaborative debugging, any code navigation features like go to definition, and more._ It is intended for files you never want to share under any circumstances like those containing secrets, certificates, or passwords. For example, since they control security, .vsls.json files are always excluded.
+The **excludeFiles** property allows you to specify a list of glob file patterns (very much like those found .gitignore files) that prevents Live Share from opening certain files or folders for guests. Be aware that this is inclusive of scenarios like a guest _following or jumping to your edit location, stepping into a file during collaborative debugging, any code navigation features like go to definition, and more._ It is intended for files you never want to share under any circumstances like those containing secrets, certificates, or passwords. For example, since they control security, .vsls.json files are always excluded. 
 
 ### Disabling external file sharing
 
