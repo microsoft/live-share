@@ -30,5 +30,4 @@ For Visual Studio problems/feedback, please use the "Report a Problem..." featur
 For VS Code issues, attach verbose logs as follows:
 1. Press F1 (or Ctrl+Shift+P / Cmd+Shift+P), type "export logs" and run the "Live Share: Export Logs" command.
 2a. Drag and drop the zip to the issue on this screen and wait for it to upload before creating the issue.
-2b. Alternatively, send the zip file to <vsls-feedback@microsoft.com>'
 -->

@@ -1,8 +1,8 @@
 ---
-title: Configure Visual Studio using Group Policy Administrative Templates (Preview) 
+title: Configure Visual Studio using Group Policy Administrative Templates
 titleSuffix: Live Share
 description: Learn how to get started with Group Policy Administrative Template files to ensure sessions are controlled the way you want.
-ms.date: 08/15/2022
+ms.date: 11/08/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: curib
@@ -17,7 +17,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# Configure Visual Studio using Group Policy Administrative Templates (Preview)
+# Configure Visual Studio using Group Policy Administrative Templates
 
 To control certain aspects of Visual Studio Live Share behavior to achieve consistency or compliance across your organization, you can now configure Visual Studio using [Group Policy Administrative Templates (ADMX/ADML files)](https://aka.ms/vs/admx/details). The Visual Studio group policy settings contained in the ADMX file are machine wide for all users.
 
@@ -43,7 +43,7 @@ With these policies, your organization will be able to add an extra layer of pro
 
 To get started with enabling policies, you’ll need to [download](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs-2022) the latest Visual Studio Live Share version from the Visual Studio Marketplace.
 
-## Step 2: Download the Preview templates
+## Step 2: Download the templates
 
 Next, head over to the Microsoft Download Center and grab the [Visual Studio Group Policy Administrative Template files (ADMX/ADML)](https://aka.ms/vs/admx/details). It’ll ask you where you want the files to be downloaded, please ensure the location is ‘C:\Windows\PolicyDefinitions\'.
 

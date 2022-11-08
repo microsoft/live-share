@@ -11,10 +11,9 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 In short:
 
 - **Known issues:** See [bugs](https://aka.ms/vsls-bugs) or [feature requests](https://aka.ms/vsls-feature-requests) and up-vote using a 👍 reaction.
-- **VS Code bugs:** [Log a new issue](https://aka.ms/vsls-new-issue). Use the "Live Share: Export logs" command and [drag-and-drop the zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) onto the bug or [email them](mailto:vsls-feedback@microsoft.com).
+- **VS Code bugs:** [Log a new issue](https://aka.ms/vsls-new-issue). Use the "Live Share: Export logs" command and [drag-and-drop the zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) onto the bug.
 - **VS bugs:** [Help > Send Feedback > Report a Problem...](https://learn.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Repro the problem before sending and logs will be auto-attached.
 - **Feature requests:** [Log a new request](https://aka.ms/vsls-new-issue) or use a 👍 reaction to [up-vote an existing one](https://aka.ms/vsls-feature-requests).
-- **Contact us:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter), or [Slack](https://aka.ms/vsls-slack).
 
 More details below.
 
@@ -104,11 +103,6 @@ The more information you can provide, the more likely someone will be successful
 * A code snippet that demonstrates the issue or a link to a code repository we can easily pull down onto our machine to recreate the issue. 
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
-
-## Other ways to contact us!
-
-- Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
-- Hit us up on Twitter using [#vsliveshare](https://twitter.com/search?f=tweets&q=%23vsliveshare&src=typd)!
 
 ## Contributing to documentation
 

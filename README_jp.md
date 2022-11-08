@@ -17,8 +17,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 多くのVisual Studio Live機能は、多くの言語とプラットフォームで利用できます。 [現在サポートしているものについてはこちらをご覧ください。](https://aka.ms/vsls-docs/platform-support) また、今後さらに多くの機能が追加される予定です。
 
-[![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
-
 >**ヒント:** 自分のコラボレーションセッションに参加できることをご存知ですか？これにより、Live Shareを自分で試用したり、VSまたはVS Codeのインスタンスを起動してリモートで接続したりできます！両方のインスタンスで同じIDを使用することもできます。試してみてください！
 
 ## クイックスタート
@@ -87,9 +85,6 @@ Visual Studio Live Shareをダウンロードして使用すると、[ライセ�
 
 - [機能への投票または新しい機能をリクエストをする](https://aka.ms/vsls-feature-requests)
 - [既存のバグ](https://aka.ms/vsls-bugs) の検索や [問題の報告](CONTRIBUTING.md#file-a-problem-report)をする
-- 提案や質問を [メール](mailto:vsls-feedback@microsoft.com) で送信する
-- コミュニティの [Slack](https://aka.ms/vsls-slack) に参加してチャットする
--  [#vsliveshare](https://aka.ms/vsls-twitter) Twitterハッシュタグを使って私たちを見つけてください！
 
 このプロジェクトは、[Microsoftオープンソース行動規範](https://opensource.microsoft.com/codeofconduct/)を採用しています。詳細については、[行動規範に関するFAQ](https://opensource.microsoft.com/codeofconduct/faq/)を参照するか、[opencode@microsoft.com](mailto:opencode@microsoft.com)に追加の質問やコメントをお問い合わせください。
 

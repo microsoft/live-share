@@ -61,7 +61,7 @@ Follow these steps to start a collaboration session and invite a colleague to wo
 
 6. **Send someone the link**
 
-    Send the link over e-mail, Slack, Skype, or another communication app to anyone you want to invite. Given the level of access Live Share sessions can provide to guests, **you should only share with people you trust**. Think carefully about the implications of what you're sharing.
+    Send the link over e-mail, Teams, Slack, Skype, or another communication app to anyone you want to invite. Given the level of access Live Share sessions can provide to guests, **you should only share with people you trust**. Think carefully about the implications of what you're sharing.
 
     > [!TIP]
     > Want to understand the security implications of some of Live Share's features? Check out the [security](../reference/security.md) article.
