@@ -17,8 +17,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Many Visual Studio Live Features are available across a number of languages and platforms. [See here to find out what we currently support](https://aka.ms/vsls-docs/platform-support) and note more will be coming in the future.
 
-[![Twitter](docs/media/Twitter_Social_Icon_24x24.png)](https://aka.ms/vsls-twitter) [![Mail](docs/media/icon-mail-24x24.png)](mailto:vsls-feedback@microsoft.com)
-
 >**Tip:** Did you know you can *join your own collaboration session*? This allows you to try Live Share on your own or to spin up an instance of VS or VS Code and connect to it remotely! You can even use the same identity on both instances. Check it out!
 
 ## Quickstarts
@@ -89,8 +87,6 @@ Have a question or feedback? There are many ways to contribute.
 
 - [Up-vote a feature or request a new one](https://aka.ms/vsls-feature-requests)
 - Search [existing bugs](https://aka.ms/vsls-bugs) or [report a problem](CONTRIBUTING.md#file-a-problem-report)
-- Shoot us a [mail](mailto:vsls-feedback@microsoft.com) with suggestions or questions
-- Hit us up on Twitter using [#vsliveshare](https://aka.ms/vsls-twitter)!
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or

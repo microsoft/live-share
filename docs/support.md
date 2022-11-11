@@ -22,10 +22,9 @@ Have a question or feedback? There are many ways to contribute. We want to hear 
 In short:
 
 - **Known issues:** See [bugs](https://aka.ms/vsls-bugs) or [feature requests](https://aka.ms/vsls-feature-requests) and up-vote using a 👍 reaction.
-- **VS Code bugs:** [Log a new issue](https://aka.ms/vsls-new-issue). Use the "Live Share: Export logs" command and [drag-and-drop the zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) onto the bug or [email them](mailto:vsls-feedback@microsoft.com).
+- **VS Code bugs:** [Log a new issue](https://aka.ms/vsls-new-issue). Use the "Live Share: Export logs" command and [drag-and-drop the zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) onto the bug.
 - **VS bugs:** [Help > Send Feedback > Report a Problem...](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Repro the problem before sending and logs will be auto-attached.
 - **Feature requests:** [Log a new request](https://aka.ms/vsls-new-issue) or use a 👍 reaction to [up-vote an existing one](https://aka.ms/vsls-feature-requests).
-- **Contact us:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter), or the community run [Slack](https://aka.ms/vsls-slack).
 
 More details below.
 
@@ -48,12 +47,6 @@ GitHub issues and Visual Studio problem reports are a great way to connect with 
 - [Report a problem for Visual Studio](https://aka.ms/vsls-vsproblem)
 - [Report a problem for VS Code or the overall service](https://aka.ms/vsls-vscodeproblem)
 - [Check out tips on contributing!](https://aka.ms/vsls-problemtips)
-
-## Other
-
-- **Email:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
-- **Twitter:** Hit us up on Twitter using [#vsliveshare](https://aka.ms/vsls-twitter)!
-- **Slack:** We also hang out on the community run [Live Share Slack](https://aka.ms/vsls-slack).
 
 ## See also
 
