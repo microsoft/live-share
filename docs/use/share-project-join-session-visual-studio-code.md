@@ -87,7 +87,7 @@ After you download and install Visual Studio Live Share, follow these steps to s
 
 6. **Send someone the link**
 
-    Send the link over e-mail, Slack, Skype, or other platforms to the guests you want to invite. Given the level of access Live Share sessions can provide to guests, *you should only share with people you trust*, and you should think through the implications of what you're sharing.
+    Send the link over e-mail, Teams, Slack, Skype, or other platforms to the guests you want to invite. Given the level of access Live Share sessions can provide to guests, *you should only share with people you trust*, and you should think through the implications of what you're sharing.
 
     > [!TIP]
     > Want to understand the security implications of some Live Share features? For more information, see the [security](../reference/security.md) article.
