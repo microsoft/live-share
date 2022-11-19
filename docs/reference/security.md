@@ -175,6 +175,8 @@ The hide and exclude rules are processed separately, so if you still wanted to h
 
 Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hide/exclude rules are determined by starting with the .vsls.json file in the root folder you have shared (if present) and then walking through at each sub-folder from there leading to a given file to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree then supplement (or override) rules established at higher levels.
 
+Note: it is not possible to re-include (!) a file if a parent directory of that file is excluded. Similar to .gitignore, when re-including a file, you'll also need to re-include every parent directory of the file.
+
 ### Disabling external file sharing
 
 By default, Live Share will also share any files the host opens that are external to the shared folder / solution. This makes it easy to quickly open up other related files without having to re-share.
