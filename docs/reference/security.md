@@ -111,19 +111,69 @@ Here's an example .vsls.json file:
 ```json
 {
     "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"none",
     "excludeFiles":[
         "*.p12",
         "*.cer",
         "token",
         ".gitignore"
-    ] 
+    ],
+    "hideFiles": [
+        "bin",
+        "obj"
+    ]
 }
 ```
 
 > [!NOTE]
 > You can also make the all files/folders you share **read-only** when you start a collaboration session. See [below](#read-only-mode) for details.
 
+Let's walk through how these properties change what guests can do.
+
+### Properties
+
 The **excludeFiles** property allows you to specify a list of glob file patterns (very much like those found .gitignore files) that prevents Live Share from opening certain files or folders for guests. Be aware that this is inclusive of scenarios like a guest _following or jumping to your edit location, stepping into a file during collaborative debugging, any code navigation features like go to definition, and more._ It is intended for files you never want to share under any circumstances like those containing secrets, certificates, or passwords. For example, since they control security, .vsls.json files are always excluded.
+
+The **hideFiles** property is similar, but not quite as strict. These files are simply hidden from the file tree. For example, if you happened to step into one of these files during debugging, it is still opened in the editor. This property is primarily useful if you do not have a .gitignore file setup (as would be the case if you are using a different source control system) or if you simply want to augment what is already there to avoid clutter or confusion.
+
+The **gitignore** setting establishes how Live Share should process the contents of .gitignore files in shared folders. By default, any globs found in .gitignore files are treated as if they were specified in the "hideFiles" property. However, you can choose a different behavior using one of the following values:
+
+| Option    | Result                                                                                                                 |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `none`    | .gitignore contents are visible to guests in the file tree (assuming they are not filtered by a guest editor setting). |
+| `hide`    | **The default.** Globs inside .gitignore are processed as if they were in the "hideFiles" property.                   |
+| `exclude` | Globs inside .gitignore are processed as if they were in the "excludeFiles" property.                                 |
+
+A downside of the `exclude` setting is that the contents of folders like node_modules are frequently in .gitignore but can be useful to step into during debugging. Consequently, Live Share supports the ability to reverse a rule using "!" in the excludeFiles property. For example, this .vsls.json file would exclude everything in ".gitignore" except for node_modules:
+
+```json
+{
+    "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"exclude",
+    "excludeFiles":[
+        "!node_modules"
+    ]
+}
+```
+
+The hide and exclude rules are processed separately, so if you still wanted to hide node_modules to reduce clutter without actually excluding it, you can simply edit the file as follows:
+
+```json
+{
+    "$schema": "http://json.schemastore.org/vsls",
+    "gitignore":"exclude",
+    "excludeFiles":[
+        "!node_modules"
+    ],
+    "hideFiles":[
+        "node_modules"
+    ]
+}
+```
+
+### .vsls.json files in sub-folders
+
+Finally, just like .gitignore, .vsls.json files can be placed in sub-folders. Hide/exclude rules are determined by starting with the .vsls.json file in the root folder you have shared (if present) and then walking through at each sub-folder from there leading to a given file to look for .vsls.json files to process. The contents of .vsls.json files in folders farther down the file tree then supplement (or override) rules established at higher levels.
 
 ### Disabling external file sharing
 
