@@ -71,27 +71,24 @@ The connection mode you are in will dictate the specific ports and URLs that nee
 | Any | Outbound access to `*.liveshare.vsengsaas.visualstudio.com:443`. | Ensure your corporate or personal network firewall allows you to connect to this domain. Enter https://visualstudio.microsoft.com/services/live-share/ in a browser and verify you land at the Visual Studio Live Share home page. You may also be running into [proxy issues](#proxies) that need to be resolved.|
 | Any (VS Code) | Outbound access to `download.microsoft.com:443`. | Ensure your corporate or personal network firewall allows you to connect to this domain. You may also be running into [proxy issues](#proxies) that need to be resolved. |
 | Auto | Auto-switches. See direct and relay modes. | Switch to direct or relay mode to troubleshoot. |
-| Direct | Hosts: A port in the range 5990 - 5999 needs to be opened to accept inbound local network connections.<br /><br />Guests: A network route and outbound access to the host on this same port. | Verify "vsls-agent" is not blocked by your desktop firewall software for this port range and that you can ping one another. While Windows and other desktop software should prompt you the first time the agent starts up, we have seen instances where group policies prevent this from happening and you will need to [manually add the entry](#manually-adding-a-firewall-entry). You may also be running into [proxy issues](#proxies) that need to be resolved. |
+| Direct | Hosts: A port in the range 5990 - 5999 needs to be opened to accept inbound local network connections.<br /><br />Guests: A network route and outbound access to the host on this same port. | Verify "vsls-agent" (for VS), "code" (for Visual Studio Code) or "code - insiders" (for Visual Studio Code Insiders) is not blocked by your desktop firewall software for this port range and that you can ping one another. While Windows and other desktop software should prompt you the first time the agent starts up, we have seen instances where group policies prevent this from happening and you will need to [manually add the entry](#manually-adding-a-firewall-entry). You may also be running into [proxy issues](#proxies) that need to be resolved. |
 | Relay | Outbound access to `*.servicebus.windows.net:443`. | Ensure your corporate or personal network firewall allows you to connect to this domain. You may also be running into [proxy issues](#proxies) that need to be resolved.|
 | Any | Outbound access to `*.online.visualstudio.com`. | Ensure your corporate or personal network firewall allows you to connect to this domain. Enter https://sts.online.visualstudio.com/api/swagger/index.html in a browser and verify you land at the swagger page. You may also be running into [proxy issues](#proxies) that need to be resolved.|
 
 ## Manually adding a firewall entry
 
-As outlined above, direct mode requires that your personal firewall allow **vsls-agent** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it manually. How you do this will vary by firewall software, but you can find information about **[configuring the Windows Firewall here](/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)**.
+As outlined above, direct mode requires that your personal firewall allow **vsls-agent**, **code** or **code - insiders** to accept connections in the port range 5990-5999. If you want to use direct mode but have found that your firewall does not have vsls-agent entry, you can add it manually. How you do this will vary by firewall software, but you can find information about **[configuring the Windows Firewall here](/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)**.
 
 If you do not see an entry for vsls-agent, you can find the agent executable in one of the following locations.
 
-### VS Code agent location
+### VS Code install location
 
-Substitute **VERSION** for the extension version number in one of the paths below:
+When configuring the firewall manually for **VS Code** or **VS Code Insiders** on Windows, MacOS or Linux, use the path to the VS Code app install location.
 
-- **macOS, Linux**
+Ex: **Windows (default install location)**
 
-    `$HOME/.vscode/extensions/ms-vsliveshare.vsliveshare-VERSION/dotnet_modules/vsls-agent`
-
-- **Windows**
-
-    `%USERPROFILE%\.vscode\extensions\ms-vsliveshare.vsliveshare-VERSION\dotnet_modules\vsls-agent.exe`
+  - `%applocaldata%\Programs\Microsoft VS Code\code.exe`
+  - `%applocaldata%\Programs\Microsoft VS Code Insiders\code - insiders.exe`
 
 ### Visual Studio agent location
 
@@ -105,7 +102,9 @@ Unfortunately you may need to do this step **each time you update Visual Studio 
 
 ## Proxies
 
-Visual Studio Live Share currently has some limitations around proxy use. While automatic proxy settings should work on Windows, when using macOS or Linux (and with certain proxy configurations on Windows) the **HTTP_PROXY** and **HTTPS_PROXY** environment variables will need to be set *globally*.
+Visual Studio Live Share currently has some limitations around proxy use. While automatic proxy settings should work on Windows, when using macOS or Linux (and with certain proxy configurations on Windows) the **HTTP_PROXY** and **HTTPS_PROXY** environment variables will need to be set *globally* for VS or in *Application > Proxy* settings for VS Code.
+
+Note: if the proxy is not configured in VS Code's *Application > Proxy* settings it will also be inherited from the http_proxy and https_proxy environment variables.
 
 If your proxy doesn't automatically set these for you, you can manually set the variables in the following form:
 
