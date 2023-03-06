@@ -11,10 +11,12 @@ jobs:
       - uses: actions/stale@v4
         with:
           exempt-issue-labels: "keep"
+          any-of-labels: "close-if-no-response"
+          start-date: "2023-01-01T00:00:00Z"
           stale-issue-message: 'This issue has been automatically marked as stale because it has not had recent activity. It will be closed automatically in 7 days.'
-          days-before-issue-stale: 90
+          days-before-issue-stale: 14
           days-before-issue-close: 7
           operations-per-run: 1000
           close-issue-label: "wontfix"
           close-issue-reason: "not_planned"
-          debug-only: true
+          debug-only: false
