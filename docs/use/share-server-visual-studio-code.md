@@ -2,7 +2,7 @@
 title: Share a server or terminal With Live Share in Visual Studio Code
 titleSuffix: Live Share
 description: Learn how to share a server or terminal as a collaboration session host in Visual Studio Code and Live Share.
-ms.date: 12/30/2021
+ms.date: 01/25/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba

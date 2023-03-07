@@ -2,7 +2,7 @@
 title: Share a project and join a session in Visual Studio
 titleSuffix: Live Share
 description: Learn how to share a project and join a session to collaborate by using Visual Studio and Live Share.
-ms.date: 06/21/2022
+ms.date: 11/10/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
