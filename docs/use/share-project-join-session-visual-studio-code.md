@@ -2,7 +2,7 @@
 title: Share a project and join a session in Visual Studio Code
 titleSuffix: Live Share
 description: Learn how to share a project and join a session to collaborate by using Visual Studio Code and Live Share.
-ms.date: 01/22/2022
+ms.date: 11/10/2022
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
