@@ -2,7 +2,7 @@
 title: Install and sign in to Live Share in Visual Studio Code
 titleSuffix: Live Share
 description: Learn how to install and sign in to Visual Studio Code and Live Share so that you can collaborate on projects with your team.
-ms.date: 01/22/2022
+ms.date: 02/17/2023
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: fubaduba
