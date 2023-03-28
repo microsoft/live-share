@@ -28,7 +28,7 @@ Reusable sessions now have a place in the Live Share viewlet. Planned Sessions a
 *Image showing creation of a new planned session from the viewlet*
 
 Doing so enables you to share this link as a part of your regularly scheduled meetings with your teams, your interviews or your pairing sessions.
-Once such a session in planned in advance, you're able access it from the Live Share viewlet directly. 
+Once such a session in planned in advance, you're able to access it from the Live Share viewlet directly. 
 
 ![planned-session-vscode](../media/planned-session-copylink-vscode.png)
 *Image showing 'Planned Sessions' in the Live Share viewlet
