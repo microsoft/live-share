@@ -44,6 +44,11 @@
             "source_path": "docs/reference/releases.md",
             "redirect_url": "/visualstudio/liveshare/index",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/reference/contacts.md",
+            "redirect_url": "/visualstudio/liveshare/overview/features",
+            "redirect_document_id": false
         }
     ]
 }
