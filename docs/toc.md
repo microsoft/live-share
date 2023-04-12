@@ -22,7 +22,6 @@
 ## [Share a server or terminal](use/share-server-visual-studio.md)
 ## [Configure Group Policy Admin Templates](use/policies-visual-studio.md)
 # Reference
-## [Contacts](reference/contacts.md)
 ## [Security](reference/security.md)
 ## [Connectivity](reference/connectivity.md)
 ## [Language Support](reference/platform-support.md)
