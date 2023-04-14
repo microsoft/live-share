@@ -55,10 +55,6 @@ If you've already got Visual Studio or Visual Studio Code installed and opened, 
    2. Opening the command palette and selecting `Live Share: Join Collaboration Session`
 1. **Visual Studio:** Selecting the `File -> Join Collaboration Session` menu
 
-### Using the Desktop by Default
-
-When you click a Live Share session for the first time, you'll be asked which client you'd like to use: desktop or Web. Based on your selection, Live Share will launch the specified client on all susequent visits. That said, you can always open the desktop client from the Web, using the steps mentioned above. If you'd like to change the default client that is always used, you can set the `Live Share: Launcher Client` setting, to either `web`, `visualStudio` or `visualStudioCode`. Then, whenever you click a Live Share link, your preferred client will be automatically launched.
-
 ## Known Issues
 
 Live Share supports most of the same features between desktop and the Web, however, there are currently a few capabilities which aren't available in the Web. We're actively working on closing these gaps, but in the meantime, if you need to leverage any of the following features, you can host/join from a desktop client, as opposed to the web:
