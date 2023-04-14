@@ -132,8 +132,6 @@ Since Live Share allows you to instantly share your project with others, it can 
 
 Additionally, since Live Share allows you to share an arbitrary directory, you can use it to perform code reviews, even if you're not currently using version control (though you should!), or if your team doesn't use PRs (E.g. you do trunk-based development).
 
-Live Share doesn't currently share source control diffs, which is a critical piece of context when using it for code reviews. This is on our roadmap, and any feedback on priority is greatly appreciated ([Vote 👍 Here](https://github.com/MicrosoftDocs/live-share/issues/36)).
-
 ## Technical Interviews
 
 When interviewing candidates for a developer position, it can often be helpful to go beyond whiteboard discussions, and instead, observe them solving a coding problem from within an actual IDE (especially if your team/organization has "standardized" on a tool that you'd like to see them use). This not only gives them the benefit of working in a way that is potentially more natural/comfortable (most developers don't code on whiteboards!), but also, gives them immediate feedback/assistance while working (e.g. build errors, intellisense). Many times, it's more important to understand a candidate's thought process, as opposed to their ability to memorize exact syntax and/or API names. In this way, Live Share provides an experience that is similar to doing a pair programming session, but allows the participant to be in their own environment (including OS settings, such as accessibility), and would work equally as well for local or remote interviews. Joining a session from the web allows the candidate to use the team's development environment and code base without downloading anything. 
