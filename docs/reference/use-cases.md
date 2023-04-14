@@ -122,8 +122,6 @@ To enable this feature:
 - **VS Code:** Add "liveshare.increasedGuestLimit":"true" to settings.json.
 - **VS:** Set Tools > Options > Live Share > Increased guest limit to "True"
 
-To fully optimize Live Share for this scenario, we need to simplify the way that sessions are initiated ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
-
 ## Code Reviews
 
 PRs are a powerful way to collaborate with others, but typically represent the completion of a task (excluding "WIP" PRs), and the desire to merged it in. Many times, the feedback that is given in a PR could  easily have been given earlier, and therefore, there's potentially value for teams to easily and continuously seek advice from their peers, as opposed to waiting until they "complete" a task to ask.
