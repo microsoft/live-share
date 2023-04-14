@@ -27,7 +27,6 @@
 ## [Language Support](reference/platform-support.md)
 ## [Extension Support](reference/extensions.md)
 ## [Linux install details](reference/linux.md)
-## [Insiders](reference/insiders.md)
 ## [Notebooks](reference/notebooks.md)
 # Resources
 ## [Troubleshooting](troubleshooting.md)
