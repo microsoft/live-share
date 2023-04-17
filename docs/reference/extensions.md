@@ -54,10 +54,6 @@ Extensions that support user-specific customizations **must** work for the host,
 
 <sup>5</sup> *These work by connecting to a server of some kind, and can work with either centralized servers, servers that the guest has shared.*
 
-### Visual Studio
-
-Coming soon.
-
 ## Project-Specific Extensions
 
 Host-installed extensions, which support the core editing, building and debugging of an application, and are specific to a language/platform/library/SDK, should be automatically available to guests, without requiring them to install anything. This way, hosts can setup their environment to support productive development of a project, and allow their guests to instantly join them, without additional pre-requisites. Because project-specific extensions aren't subjective or personal in any way, they can be deterministically shared from host-to-guest, without impacting anyone's familiar environment.
@@ -77,7 +73,7 @@ Additionally, in order to support project-specific extensions that a guest has i
 | File/Project Generators | [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions), [C/C++ Project Generator](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-project-generator) | ❌ | ❌<sup>6</sup> |
 | Source control providers | [SVN](https://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm), [Hg](https://marketplace.visualstudio.com/items?itemName=mrcrowl.hg) | ❌ | ❌ |
 
-<sup>1</sup> *Currently only C# and JavaScript/TypeScript, with more support coming soon.*
+<sup>1</sup> *Currently only C# and JavaScript/TypeScript.*
 
 <sup>2</sup> *Would only support the current active document, since guests don't have local file access.*
 
@@ -88,10 +84,6 @@ Additionally, in order to support project-specific extensions that a guest has i
 <sup>5</sup> *The output of a test run would require that any resulting terminals, output panes and errors were also shared with guests.*
 
 <sup>6</sup> *Almost all of these would use the Node.js `fs` module directly to create files, which wouldn't work.*
-
-### Visual Studio
-
-Coming soon.
 
 ## Known Issues
 
@@ -112,33 +104,6 @@ The following are currently known extension issues, that could prevent them from
 | Not specifying a document scheme when registering language services (either via a `LanguageClient`, or the `languages.register*` methods) | Guests receive the language service results from both their local extensions, and the host, and therefore, if both participants have the same language service extension installed, guests will see duplicate entries for certain things (e.g. auto-completion, code actions) | Restrict the language services to only `file` and `untitled` schemes ([example](https://github.com/vuejs/vetur/pull/756/files)) |
 | Not checking a document's `Uri.scheme` before populating a `DiagnosticCollection` for it | *Same as above* | Only generate `Diagnostics` for `documents` whose `Uri.scheme` === `file` ([example](https://github.com/Huachao/vscode-restclient/pull/196)) |
 | Not checking for workspace scheme when returning `Tasks` from a custom `TaskProvider`  | Guests display all remote and local tasks, and therefore, would display duplicates if both participants had the same extension installed  | Only return `Tasks` for `WorkspaceFolder`s whose `Uri.scheme` === `file` ([example](https://github.com/Microsoft/vscode-eslint/blob/0fdb7c74b093cae9dc08355e7235582a254f24c2/client/src/tasks.ts#L42)) |
-
-### Visual Studio
-
-Coming soon.
-
-<!--
-
-## Extensibility API
-
-In addition to the core goals outlined in the beginning of this document, Live Share also wants to enable extension authors to enhance the default sharing experience in the following ways:
-
-1. Contributing to the core collaborative feature set, based on behavior that only the extension would know about. In these scenarios, the host could have an extension installed, and potentially allow guests to benefit from it without also needing to have it installed
-
-2. Enhancing their own experiences to be collaborative (e.g. syncing bookmarks between participants), by synchronizing any custom state and UI interactions. In these scenarios, only participants that had the custom extension installed would be able to take advantage of the added collaboratively.
-
-This will require some form of API/SDK, which extensions can use to determine if/when the end-user is within a Live Share session, and if so, light up additional capabilities. The following represents a high-level overview of some of the extension points we've identified, and look forward to getting further feedback on:
-
-| Shared Resource | Extensibility Point(s) |
-|------------------|---------------------|
-| User status | 1. Retrieving the list of participants within the current Live Share session (e.g. the [Git Co-Authors](https://marketplace.visualstudio.com/items?itemName=drrouman.git-coauthors) extension could use that to populate the host's commit message with)<br /><br /> 2. Updating a participant's location (outside of just editors), as well as allowing other participant's to jump to/pin to them as they move into custom extension UI (e.g. a participant is navigating a MongoDB database using the [Azure Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) extension). |
-| Workspace | *N/A* - Live Share can transparently share all files, edits, cursors and highlights, without requiring an extension to do anything extra if it modified the file system and/or cursor/highlight position. |
-| Language Services | *N/A* - Long-term, Live Share can transparently remote all language services (e.g. go to definition, document formatting, CodeLens) to the guest, including those that are contributed via extensions (e.g. [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense), [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) |
-| Debugging Sessions | *N/A* - Live Share can transparently remote all debugging sessions, including those that are enabled by custom extensions (e.g. [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)) |
-| Servers | 1. Sharing a server that an extension was responsible for starting, and then optionally specifying whether a browser should be launched on the guest's machine as well (e.g. a debug adapter that launched a web server).  |
-| Custom | 1. Synchronizing arbitrary state and/or user interactions (e.g. the [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) extension syncing CRUD operations across participants, the [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven) extension exposing the project-wide view to guests) |
-
--->
 
 ## See also
 
