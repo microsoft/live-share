@@ -73,7 +73,7 @@ If you run into trouble, check out [troubleshooting](../troubleshooting.md#sign-
 
 ## Guest limitations
 
-There are currently some shortcomings that guests will experience using the features described in these articles. But collaboration session hosts keep the complete functionality of their tool of choice. For more information, see the following:
+There are currently some shortcomings that guests will experience using the features described in these articles. But collaboration session hosts keep the complete functionality of their tool of choice. For more information, see:
 
 - [Language and platform support](../reference/platform-support.md)
 - [Extension support](../reference/extensions.md)
