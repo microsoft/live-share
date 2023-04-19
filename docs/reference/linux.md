@@ -45,8 +45,6 @@ As a **workaround**, you can add the following into the product.json:
 ]
 ```
 
-See [above](#tips-for-community-supported-distros) for additional details on whether the distribution you are using is known to work.
-
 ## Linux browser integration
 
 Visual Studio Live Share typically **does not require additional installation steps** to enable browser integration on Linux.
