@@ -18,10 +18,7 @@
     }
   ],
   "notification_subscribers": [
-    "mikejo@microsoft.com",
-    " clantz@microsoft.com",
-    " mschulz@microsoft.com",
-    "joncart@microsoft.com"
+    "mikejo@microsoft.com"
   ],
   "sync_notification_subscribers": null,
   "branches_to_filter": [],
