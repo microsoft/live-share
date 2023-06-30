@@ -100,6 +100,15 @@ You can **always reject** (disable anonymous guests) or **always accept** anonym
 
  **Regardless, remember that you should only send Live Share invitation links to people you trust.**
 
+### Allowing guest command control
+
+![VS Code: The host doesn't allowing running this command.](../media/vscode-guest-command-control.png)
+
+To allow guests to run arbitrary commands via Code Actions (“Quick Fixes”) and CodeLens set the following setting:
+
+* In **VS Code**, set `liveshare.languages.allowGuestCommandControl` in settings.json (File > Preferences > Settings) to `true` or `false` (the default).
+
+
 ## Controlling file access and visibility
 
 As a guest, Live Share's remote model gives you quick read/write access to files and folders the host has shared with you without having to sync the entire contents of a project. You can therefore independently navigate and edit files in the entire shared file tree. **However, this freedom does pose some risks to the host.** In concept, a developer could opt to go in and modify source code without your knowledge or see sensitive source code or "secrets" located somewhere in the shared file tree. Consequently, as a host, you may not always want the guest to have access to the entirety of a project you are sharing. Thankfully, an added advantage of this remote model is that you can opt to "exclude" files you do not want to share with anyone without sacrificing on functionality. Your guests can still participate in things like debugging sessions that would normally require access to these files if they wanted to do so on their own.
