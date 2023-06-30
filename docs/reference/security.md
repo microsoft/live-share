@@ -102,9 +102,9 @@ You can **always reject** (disable anonymous guests) or **always accept** anonym
 
 ### Allowing guest command control
 
-    ![VS Code: The host doesn't allowing running this command.](../media/vscode-guest-command-control.png)
+![VS Code: The host doesn't allowing running this command.](../media/vscode-guest-command-control.png)
 
-To allow guests to run arbitrary commands via Code Actions (“Quick Fixes”) and CodeLens set the following setting.
+To allow guests to run arbitrary commands via Code Actions (“Quick Fixes”) and CodeLens set the following setting:
 
 * In **VS Code**, set `liveshare.languages.allowGuestCommandControl` in settings.json (File > Preferences > Settings) to `true` or `false` (the default).
 
