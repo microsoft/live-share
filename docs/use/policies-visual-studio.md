@@ -19,7 +19,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Configure Visual Studio using Group Policy Administrative Templates
 
-To control certain aspects of Visual Studio Live Share behavior to achieve consistency or compliance across your organization, you can now use [Group Policy Administrative Templates (ADMX/ADML files)](https://aka.ms/vs/admx/details). To configure and deploy these policies, you can use [Microsoft Intune](https://learn.microsoft.com/visualstudio/install/administrative-templates?view=vs-2022#deploying-the-policies) or the Local Group Policy Editor directly on the client machine.
+To control certain aspects of Visual Studio Live Share behavior to achieve consistency or compliance across your organization, you can now use [Group Policy Administrative Templates (ADMX/ADML files)](https://aka.ms/vs/admx/details). To configure and deploy these policies, you can use [Microsoft Intune](/visualstudio/install/administrative-templates?view=vs-2022#deploying-the-policies&preserve-view=true) or the Local Group Policy Editor directly on the client machine.
 
 With these policies, your organization will be able to add an extra layer of protection to prevent accidents on Visual Studio Live Share and increase productivity.
 
@@ -45,7 +45,7 @@ To get started with enabling policies, you’ll need to [download](https://marke
 
 ## Configure policies with Microsoft Endpoint Manager (Intune) settings
 
-Visual Studio global policies are included in the [Microsoft Endpoint Manager (Intune) settings](https://learn.microsoft.com/mem/intune/configuration/settings-catalog). This makes it easier for administrators to configure their organization's devices now that the Visual Studio software policies are readily accessible in the Device Configuration Profile UI. Since Visual Studio will be keeping the policies up to date in Intune's settings catalog, administrators will be able to always access the most current Visual Studio Live Share configuration options without having to do manual imports.
+Visual Studio global policies are included in the [Microsoft Endpoint Manager (Intune) settings](/mem/intune/configuration/settings-catalog). This makes it easier for administrators to configure their organization's devices now that the Visual Studio software policies are readily accessible in the Device Configuration Profile UI. Since Visual Studio will be keeping the policies up to date in Intune's settings catalog, administrators will be able to always access the most current Visual Studio Live Share configuration options without having to do manual imports.
 
 To take advantage of Visual Studio's built-in configuration policy settings in Intune, simply create a Device Configuration Profile, choose "Settings catalog", and then add the desired polices that you want configured on your devices.
 
