@@ -2,7 +2,7 @@
 title: Configure Visual Studio using Group Policy Administrative Templates
 titleSuffix: Live Share
 description: Learn how to get started with Group Policy Administrative Template files to ensure sessions are controlled the way you want.
-ms.date: 11/08/2022
+ms.date: 8/31/2023
 ms.reviewer: mikejo5000
 ms.topic: how-to
 author: curib
@@ -19,9 +19,11 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # Configure Visual Studio using Group Policy Administrative Templates
 
-To control certain aspects of Visual Studio Live Share behavior to achieve consistency or compliance across your organization, you can now configure Visual Studio using [Group Policy Administrative Templates (ADMX/ADML files)](https://aka.ms/vs/admx/details). The Visual Studio group policy settings contained in the ADMX file are machine wide for all users.
+To control certain aspects of Visual Studio Live Share behavior to achieve consistency or compliance across your organization, you can now use [Group Policy Administrative Templates (ADMX/ADML files)](https://aka.ms/vs/admx/details). To configure and deploy these policies, you can use [Microsoft Intune](/visualstudio/install/administrative-templates?view=vs-2022#deploying-the-policies&preserve-view=true) or the Local Group Policy Editor directly on the client machine.
 
 With these policies, your organization will be able to add an extra layer of protection to prevent accidents on Visual Studio Live Share and increase productivity.
+
+To get started with enabling policies, you’ll need to [download](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs-2022) the latest Visual Studio Live Share version from the Visual Studio Marketplace.
 
 ## Policies Supported
 
@@ -39,15 +41,21 @@ With these policies, your organization will be able to add an extra layer of pro
 
 **Enforce accepting/rejecting a guest:** Requires the host to individually accept each guest that attempts to join a session. We already have the ["Live Share: Guest Approval Required"](../reference/security.md#requiring-guest-approval-for-signed-in-users) setting, so this policy is effectively just enforcing that to "true".
 
-## Step 1: Download the latest Visual Studio Live Share version
+**Disable chat:** Prevents the host and guest from using chat within the session.
 
-To get started with enabling policies, you’ll need to [download](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs-2022) the latest Visual Studio Live Share version from the Visual Studio Marketplace.
+## Configure policies with Microsoft Endpoint Manager (Intune) settings
 
-## Step 2: Download the templates
+Visual Studio global policies are included in the [Microsoft Endpoint Manager (Intune) settings](/mem/intune/configuration/settings-catalog). This makes it easier for administrators to configure their organization's devices now that the Visual Studio software policies are readily accessible in the Device Configuration Profile UI. Since Visual Studio will be keeping the policies up to date in Intune's settings catalog, administrators will be able to always access the most current Visual Studio Live Share configuration options without having to do manual imports.
 
-Next, head over to the Microsoft Download Center and grab the [Visual Studio Group Policy Administrative Template files (ADMX/ADML)](https://aka.ms/vs/admx/details). It’ll ask you where you want the files to be downloaded, please ensure the location is ‘C:\Windows\PolicyDefinitions\'.
+To take advantage of Visual Studio's built-in configuration policy settings in Intune, simply create a Device Configuration Profile, choose "Settings catalog", and then add the desired polices that you want configured on your devices.
 
-## Step 3: Test using the Local Group Policy Editor
+## Configure policies with Local Group Policy Editor
+
+### Step 1: Download the templates
+
+Head over to the Microsoft Download Center and grab the [Visual Studio Group Policy Administrative Template files (ADMX/ADML)](https://aka.ms/vs/admx/details). It’ll ask you where you want the files to be downloaded, please ensure the location is ‘C:\Windows\PolicyDefinitions\'.
+
+### Step 2: Test using the Local Group Policy Editor
 
 - Open the Windows Local Group Policy Editor
 - Navigate to Computer Configuration > Administrative Templates > Visual Studio > Live Share Settings
