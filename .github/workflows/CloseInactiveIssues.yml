@@ -11,7 +11,7 @@ jobs:
       - uses: actions/stale@v4
         with:
           exempt-issue-labels: "keep"
-          any-of-labels: "close-if-no-response"
+          any-of-labels: "needs-more-info"
           start-date: "2023-01-01T00:00:00Z"
           stale-issue-message: 'This issue has been automatically marked as stale because it has not had recent activity. It will be closed automatically shortly.'
           days-before-issue-stale: 14
