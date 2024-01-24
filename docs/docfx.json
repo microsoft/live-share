@@ -31,6 +31,8 @@
     "overwrite": [],
 		"externalReference": [],
     "globalMetadata": {
+      "ms.subservice": "live-share",
+      "ms.service": "visual-studio-family",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/live-share",
       "feedback_product_url": "https://aka.ms/vsls-issues/",
@@ -38,8 +40,6 @@
 			"breadcrumb_path": "breadcrumb/toc.yml",
 			"extendBreadcrumb": true,
 			"audience": "developer",
-            "ms.prod": "visual-studio-family",
-            "ms.technology": "live-share",
 			"searchScope": ["Live Share"],
       "uhfHeaderId": "MSDocsHeader-VisualStudio"
     },
