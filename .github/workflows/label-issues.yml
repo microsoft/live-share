@@ -1,4 +1,4 @@
-# See https://github.com/marketplace/actions/close-stale-issues
+## See https://github.com/marketplace/actions/close-stale-issues
 # As used here, "stale" is a misnomer. This uses the predefined action close-stale-issues to
 # label issues that have not been categorized with one of the triage label types
 # shown in line 22. Runs on the 1st day of every month.
