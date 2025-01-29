@@ -1,0 +1,83 @@
+Microsoft 365 subscription benefits
+Microsoft security
+Please Wait
+Accessibility center
+Support
+Account manager for mccoy stevens xvii
+Backup, restore, and recovery options in Windows
+Start Menu
+Backup and restore your files
+files
+Recover your PC
+Recovery options in Windows
+Windows Recovery Environment
+Reset your PC
+Startup Repair
+System Restore
+Recovery Drive
+Configure System Protection
+Fix issues by reinstalling the current version of Windows
+Reinstall Windows with the installation media
+Go back to the previous version of Windows
+Windows Recovery Environment
+Applies To
+Support for Windows 10 will end in October 2025
+After October 14, 2025, Microsoft will no longer provide free software updates from Windows Update, technical assistance, or security fixes for Windows 10. Your PC will still work, but we recommend moving to Windows 11.
+Learn more
+Windows Recovery Environment (Windows RE)
+Windows Tools is a set of tools included with Windows that can help you troubleshoot and fix common problems with your computer. If your PC is having trouble starting up, Windows RE can automatically start and try to repair the issue. Windows RE is also a starting point for various tools for manual system recovery.
+Access to Windows Recovery Environment and There are different ways to access Windows RE:Expand each section to learn more.
+Automatic Repair
+If the system fails to start correctly multiple times, it will automatically enter Windows RE. This can happen if there are issues with the boot process or if the system detects a problem that prevents Windows from starting.
+You can also force Windows to enter automatic repair by interrupting the normal boot process two times. This can be done by turning on the device and then holding down the power button to force a shutdown before Windows finishes loading. After doing this two times, Windows should automatically boot intoWindows RE on the third restart.
+Start your device and wait for the Windows logo (or the manufacturer's logo) to appear
+As soon as the Windows logo appears, press and hold the power button until the device shuts down
+Turn your device off again and repeat step 2
+Turn your device off a third time. Windows should display the Automatic Repair screen
+Select Advanced options
+automatic repair option.
+From Settings
+In the Settings app  on your Windows device, select System > Recovery or use the following shortcut:
+Recovery
+Note: In Windows 10, you can access from Update & Security > Recovery
+Under Recovery options, next to Advanced startup, select Restart now
+Restart your PC
+When you restart your PC, press and hold the Shift key while you select Power  > Restart.
+Hardware recovery button
+Some devices have a dedicated recovery button or a button combination that you can press to boot into Windows RE. This is usually configured by the device manufacturer.​​​​​​
+Using a recovery drive
+If you have created a USB recovery drive, you can boot your computer from the recovery drive. This will take you directly to Windows RE.
+Using a Windows Repair Disc (CD/DVD)
+If you have created a CD/DVD Windows Repair Disc, you can boot your PC from it. This will take you directly to Windows RE.
+Using the Cloud
+If your PC doesn't start and you don't have a recovery drive or a repair disc, you can use the Media Creation Tool to create installation media for Windows. This tool can be used to download the latest version of Windows and create a bootable USB drive or DVD, which can then be used to boot into Windows RE.
+On This working PC, create the installation media for Windows
+Connect the installation media you created to your nonfunctional PC, and then turn it on
+On the initial setup screen, enter your language and other preferences, and then select Next. If you don't see the setup screen, your PC might not be set up to boot from a drive. Check your PC manufacturer's website for info on how to change your PC's boot order, and then try again
+Select Repair my PC
+
+​​​Screenshot of the Windows 11 setup with the selection to repair the PC.​​​​​​​
+
+Select Next, and you'll access Windows RE
+
+Screenshot of the Choose an option screen in Windows RE.
+​​​​​​​​​​​Windows RE tools
+Windows RE provides a set of tools to help diagnose and repair issues that might prevent Windows from starting correctly. These tools include:
+
+Reset this PC: Allows you to reset your computer to its factory settings, with options to keep or remove personal files. To learn more, see Reset your PC
+
+Startup Repair: This tool automatically diagnoses and repairs common issues that can prevent Windows from starting. To learn more, see Startup Repair
+
+Startup Settings: Allows you to change various startup options to help troubleshoot and resolve issues with Windows. To learn more, see Windows startup settings
+
+Command Prompt: Provides access to a command-line interface for advanced troubleshooting​​​​​​​
+
+install Updates: Allows you to install recently updates from Windows
+
+UEFI Firmware Settings: When using this option, your device restarts and takes you to the UEFI firmware settings screen, where you can configure various hardware settings, such as boot order, secure boot, and other system-level options. This can be useful if you need to change settings to resolve hardware compatibility issues or to enable specific features
+
+System Restore: Allows you to revert your PC's state to a previous point in time, undoing recent system changes without affecting personal files. To learn more, see System Restore
+
+System Image Recovery: Enables you to restore your computer using a system image backup
+
+Note: to encrypt the device, you’ll need the BitLocker recovery key to use certain tools. If you don’t know the BitLocker key, see Find your BitLocker recovery key.
