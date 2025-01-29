@@ -1,0 +1,11 @@
+ Document URI: vsls:/src/classes/stationChannel.ts
+Relative path: /src/classes/stationChannel.ts
+Has file client: true
+Buffer contents match document contents: true
+Buffer manager status: {
+  "serverVersion": 6608,
+  "unacknowledgedCount": 0,
+  "waitingForRemoteEditsToBeApplied": false,
+  "localChangesQueue": 0,
+  "remoteMessagesQueue": 0
+}
