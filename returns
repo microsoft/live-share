@@ -1,0 +1,12 @@
+return Document URI:
+file:///e%3A/Documents/GitHub/lagtrain/src/classes/stationChannel.ts
+Relative path: /src/classes/stationChannel.ts
+Has file client: true
+Buffer contents match document contents: true
+Buffer manager status: {
+  "serverVersion": 5052,
+  "unacknowledgedCount": 261,
+  "waitingForRemoteEditsToBeApplied": false,
+  "localChangesQueue": 0,
+  "remoteMessagesQueue": 655
+}
