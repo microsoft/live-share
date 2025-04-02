@@ -1,18 +1,1 @@
-log/
-obj/
-_site/
-.optemp/
-_themes*/
-_repo.*/
 
-.openpublishing.buildcore.ps1
-
-.vs
-
-docfx.console
-
-vslivesharedocs
-
-.vsls.json
-
-.DS_Store
