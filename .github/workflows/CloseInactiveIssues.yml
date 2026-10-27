@@ -8,7 +8,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v4
+      - uses: actions/stale@a20b814fb01b71def3bd6f56e7494d667ddf28da # v4.1.1
         with:
           exempt-issue-labels: "keep"
           any-of-labels: "needs-more-info"
